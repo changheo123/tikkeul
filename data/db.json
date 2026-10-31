@@ -15477,12 +15477,14 @@
    "firstSeen": "2026-10-27",
    "grade": "C",
    "id": "eh-53a934f7b7",
-   "issues": [],
+   "issues": [
+    "원문 링크 접속"
+   ],
    "kind": "라디오",
    "lastSeen": "2026-10-31",
    "linkChecked": "2026-10-31",
    "linkFail": 0,
-   "linkStatus": "ok",
+   "linkStatus": "error ConnectTimeout",
    "listUrl": "https://www.eventhouse.kr/site/view.php?no=316694",
    "max": null,
    "min": null,
@@ -35102,14 +35104,12 @@
    "firstSeen": "2026-10-27",
    "grade": "C",
    "id": "eh-daf6d4e862",
-   "issues": [
-    "원문 링크 접속"
-   ],
+   "issues": [],
    "kind": "퀴즈",
    "lastSeen": "2026-10-31",
    "linkChecked": "2026-10-31",
    "linkFail": 0,
-   "linkStatus": "error ConnectTimeout",
+   "linkStatus": "ok",
    "listUrl": "https://www.eventhouse.kr/site/view.php?no=316441",
    "max": null,
    "min": null,
@@ -90629,6 +90629,6 @@
   }
  },
  "meta": {
-  "updated": "2026-10-31T22:26:43+09:00"
+  "updated": "2026-10-31T22:42:58+09:00"
  }
 }
