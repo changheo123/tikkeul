@@ -11255,5 +11255,130 @@
    }
   },
   "total": 2149
+ },
+ {
+  "active": 1376,
+  "added": 10,
+  "at": "2026-11-01T01:26:18+09:00",
+  "links": {
+   "checked": 60,
+   "dead": 0,
+   "error": 1,
+   "ok": 57,
+   "skip": 1
+  },
+  "merged": 582,
+  "pruned": 0,
+  "quality": {
+   "excluded": 0,
+   "flagged": 8,
+   "merged": 0
+  },
+  "rejected": 0,
+  "requests": 89,
+  "sec": 132.9,
+  "seeded": 0,
+  "sources": {
+   "busan": {
+    "status": "wait"
+   },
+   "danawa": {
+    "listed": 12,
+    "merged": 11,
+    "new": 1,
+    "requests": 2,
+    "sec": 2.2,
+    "skipped": 0,
+    "status": "ok"
+   },
+   "eventhouse": {
+    "listed": 400,
+    "merged": 231,
+    "new": 0,
+    "requests": 10,
+    "sec": 11.7,
+    "skipped": 2,
+    "status": "ok"
+   },
+   "events_kr": {
+    "listed": 166,
+    "merged": 0,
+    "new": 0,
+    "requests": 10,
+    "sec": 10.3,
+    "skipped": 0,
+    "status": "ok"
+   },
+   "gangnam": {
+    "status": "off"
+   },
+   "korissue": {
+    "listed": 242,
+    "merged": 242,
+    "new": 0,
+    "requests": 2,
+    "sec": 3.1,
+    "skipped": 0,
+    "status": "ok"
+   },
+   "mohw": {
+    "listed": 12,
+    "merged": 0,
+    "new": 0,
+    "requests": 1,
+    "sec": 3.2,
+    "skipped": 0,
+    "status": "ok"
+   },
+   "mrblog": {
+    "listed": 28,
+    "merged": 19,
+    "new": 0,
+    "requests": 1,
+    "sec": 1.2,
+    "skipped": 9,
+    "status": "ok"
+   },
+   "naver": {
+    "reason": "NAVER_CLIENT_ID/SECRET 없음",
+    "status": "unconfigured"
+   },
+   "reviewnote": {
+    "listed": 85,
+    "merged": 71,
+    "new": 9,
+    "requests": 1,
+    "sec": 0.5,
+    "skipped": 5,
+    "status": "ok"
+   },
+   "sbs": {
+    "listed": 19,
+    "merged": 8,
+    "new": 0,
+    "requests": 1,
+    "sec": 1.4,
+    "skipped": 11,
+    "status": "ok"
+   },
+   "telegram": {
+    "reason": "수집할 공개 채널 목록이 비어 있음",
+    "status": "unconfigured"
+   },
+   "touredu": {
+    "listed": 2,
+    "merged": 0,
+    "new": 0,
+    "requests": 1,
+    "sec": 1.5,
+    "skipped": 0,
+    "status": "ok"
+   },
+   "youtube": {
+    "reason": "YT_API_KEY 없음",
+    "status": "unconfigured"
+   }
+  },
+  "total": 2159
  }
 ]
