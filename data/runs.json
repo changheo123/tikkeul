@@ -15866,5 +15866,81 @@
    }
   },
   "total": 2688
+ },
+ {
+  "active": 1633,
+  "added": 0,
+  "at": "2026-11-03T01:45:54+09:00",
+  "links": {
+   "checked": 60,
+   "dead": 0,
+   "error": 1,
+   "ok": 57,
+   "skip": 1
+  },
+  "merged": 11,
+  "pruned": 0,
+  "quality": {
+   "excluded": 0,
+   "flagged": 9,
+   "merged": 0
+  },
+  "rejected": 0,
+  "requests": 62,
+  "sec": 82.6,
+  "seeded": 0,
+  "sources": {
+   "busan": {
+    "status": "wait"
+   },
+   "danawa": {
+    "listed": 12,
+    "merged": 11,
+    "new": 0,
+    "requests": 2,
+    "sec": 2.2,
+    "skipped": 1,
+    "status": "ok"
+   },
+   "eventhouse": {
+    "status": "wait"
+   },
+   "events_kr": {
+    "status": "wait"
+   },
+   "gangnam": {
+    "status": "off"
+   },
+   "korissue": {
+    "status": "wait"
+   },
+   "mohw": {
+    "status": "wait"
+   },
+   "mrblog": {
+    "status": "wait"
+   },
+   "naver": {
+    "reason": "NAVER_CLIENT_ID/SECRET 없음",
+    "status": "unconfigured"
+   },
+   "reviewnote": {
+    "status": "wait"
+   },
+   "sbs": {
+    "status": "wait"
+   },
+   "telegram": {
+    "reason": "수집할 공개 채널 목록이 비어 있음",
+    "status": "unconfigured"
+   },
+   "touredu": {
+    "status": "wait"
+   },
+   "youtube": {
+    "status": "wait"
+   }
+  },
+  "total": 2688
  }
 ]
