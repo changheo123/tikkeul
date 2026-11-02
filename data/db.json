@@ -128,11 +128,14 @@
    "firstSeen": "2026-11-02",
    "grade": "C",
    "id": "bs-53a6593ea0",
+   "issues": [
+    "원문 링크 접속"
+   ],
    "kind": "퀴즈",
    "lastSeen": "2026-11-02",
    "linkChecked": "2026-11-02",
    "linkFail": 0,
-   "linkStatus": "ok",
+   "linkStatus": "error ConnectTimeout",
    "listUrl": null,
    "max": null,
    "min": null,
@@ -165,12 +168,14 @@
    "firstSeen": "2026-10-27",
    "grade": "C",
    "id": "bs-74c8aab11c",
-   "issues": [],
+   "issues": [
+    "원문 링크 접속"
+   ],
    "kind": "기타",
    "lastSeen": "2026-11-02",
    "linkChecked": "2026-11-02",
    "linkFail": 0,
-   "linkStatus": "ok",
+   "linkStatus": "error ConnectTimeout",
    "listUrl": null,
    "max": null,
    "min": null,
@@ -18719,11 +18724,14 @@
    "firstSeen": "2026-11-02",
    "grade": "C",
    "id": "eh-55f17d4b2f",
+   "issues": [
+    "원문 링크 접속"
+   ],
    "kind": "설문",
    "lastSeen": "2026-11-02",
    "linkChecked": "2026-11-02",
    "linkFail": 0,
-   "linkStatus": "ok",
+   "linkStatus": "error ConnectTimeout",
    "listUrl": "https://www.eventhouse.kr/site/view.php?no=318974",
    "max": null,
    "min": null,
@@ -49064,12 +49072,14 @@
    "firstSeen": "2026-10-27",
    "grade": "C",
    "id": "ek-572e207381",
-   "issues": [],
+   "issues": [
+    "원문 링크 접속"
+   ],
    "kind": "설문",
    "lastSeen": "2026-11-02",
    "linkChecked": "2026-11-02",
    "linkFail": 0,
-   "linkStatus": "ok",
+   "linkStatus": "error ConnectTimeout",
    "listUrl": "https://events.kr/event.php?id=173",
    "max": null,
    "min": null,
@@ -113198,6 +113208,6 @@
   }
  },
  "meta": {
-  "updated": "2026-11-02T22:58:23+09:00"
+  "updated": "2026-11-02T23:52:27+09:00"
  }
 }
