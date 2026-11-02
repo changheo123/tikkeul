@@ -48948,14 +48948,12 @@
    "firstSeen": "2026-10-27",
    "grade": "C",
    "id": "ek-572e207381",
-   "issues": [
-    "원문 링크 접속"
-   ],
+   "issues": [],
    "kind": "설문",
    "lastSeen": "2026-11-02",
    "linkChecked": "2026-11-02",
    "linkFail": 0,
-   "linkStatus": "error ConnectTimeout",
+   "linkStatus": "ok",
    "listUrl": "https://events.kr/event.php?id=173",
    "max": null,
    "min": null,
@@ -110967,7 +110965,7 @@
    "id": "scnu-education-survey-2026",
    "kind": "설문",
    "lastSeen": "2026-11-02",
-   "linkChecked": "2026-11-01",
+   "linkChecked": "2026-11-02",
    "linkFail": 0,
    "linkStatus": "ok",
    "max": null,
@@ -111211,6 +111209,6 @@
   }
  },
  "meta": {
-  "updated": "2026-11-02T16:00:39+09:00"
+  "updated": "2026-11-02T16:45:39+09:00"
  }
 }
