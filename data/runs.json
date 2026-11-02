@@ -14470,5 +14470,124 @@
    }
   },
   "total": 2479
+ },
+ {
+  "active": 1601,
+  "added": 77,
+  "at": "2026-11-02T12:30:13+09:00",
+  "links": {
+   "checked": 60,
+   "dead": 0,
+   "error": 0,
+   "ok": 60,
+   "skip": 4
+  },
+  "merged": 371,
+  "pruned": 0,
+  "quality": {
+   "excluded": 0,
+   "flagged": 8,
+   "merged": 0
+  },
+  "rejected": 0,
+  "requests": 90,
+  "sec": 93.2,
+  "seeded": 0,
+  "sources": {
+   "busan": {
+    "status": "wait"
+   },
+   "danawa": {
+    "listed": 12,
+    "merged": 9,
+    "new": 2,
+    "requests": 2,
+    "sec": 2.1,
+    "skipped": 1,
+    "status": "ok"
+   },
+   "eventhouse": {
+    "listed": 400,
+    "merged": 219,
+    "new": 3,
+    "requests": 10,
+    "sec": 11.2,
+    "skipped": 3,
+    "status": "ok"
+   },
+   "events_kr": {
+    "listed": 168,
+    "merged": 0,
+    "new": 1,
+    "requests": 12,
+    "sec": 12.3,
+    "skipped": 1,
+    "status": "ok"
+   },
+   "gangnam": {
+    "status": "off"
+   },
+   "korissue": {
+    "listed": 106,
+    "merged": 106,
+    "new": 0,
+    "requests": 2,
+    "sec": 3.0,
+    "skipped": 0,
+    "status": "ok"
+   },
+   "mohw": {
+    "status": "wait"
+   },
+   "mrblog": {
+    "listed": 30,
+    "merged": 15,
+    "new": 5,
+    "requests": 1,
+    "sec": 2.1,
+    "skipped": 10,
+    "status": "ok"
+   },
+   "naver": {
+    "reason": "NAVER_CLIENT_ID/SECRET 없음",
+    "status": "unconfigured"
+   },
+   "reviewnote": {
+    "listed": 86,
+    "merged": 14,
+    "new": 66,
+    "requests": 1,
+    "sec": 0.7,
+    "skipped": 6,
+    "status": "ok"
+   },
+   "sbs": {
+    "listed": 19,
+    "merged": 8,
+    "new": 0,
+    "requests": 1,
+    "sec": 1.6,
+    "skipped": 11,
+    "status": "ok"
+   },
+   "telegram": {
+    "reason": "수집할 공개 채널 목록이 비어 있음",
+    "status": "unconfigured"
+   },
+   "touredu": {
+    "listed": 2,
+    "merged": 0,
+    "new": 0,
+    "requests": 1,
+    "sec": 1.4,
+    "skipped": 0,
+    "status": "ok"
+   },
+   "youtube": {
+    "reason": "YT_API_KEY 없음",
+    "status": "unconfigured"
+   }
+  },
+  "total": 2556
  }
 ]
