@@ -49457,6 +49457,51 @@
    "url": "https://events.kr/event.php?id=120",
    "who": null
   },
+  "ek-7f03f3f2fe": {
+   "announce": null,
+   "cand": true,
+   "checked": null,
+   "count": null,
+   "end": "2026-11-22",
+   "endTime": null,
+   "firstSeen": "2026-11-02",
+   "grade": "C",
+   "id": "ek-7f03f3f2fe",
+   "kind": "댓글",
+   "lastSeen": "2026-11-02",
+   "linkChecked": "2026-11-02",
+   "linkStatus": "skip",
+   "listUrl": "https://events.kr/event.php?id=201",
+   "max": null,
+   "min": null,
+   "mode": "추첨",
+   "needs": [],
+   "org": "지냄",
+   "place": null,
+   "platHint": "insta",
+   "prize": "참여해 주신 분들 중 5분을 추첨해 스타벅스 아메리카노를 선물합니다.",
+   "reasons": [],
+   "src": "ek",
+   "srcUrls": [
+    "https://events.kr/event.php?id=201"
+   ],
+   "start": "2026-11-02",
+   "status": "active",
+   "steps": [
+    "더 감로 공식 인스타그램 @thegamro_official 팔로우",
+    "더 감로 성수점 또는 홍대점에 대한 기대평 또는 응원 댓글 작성",
+    "친구 태그 시 당첨 확률 UP!",
+    "이벤트 안내"
+   ],
+   "tags": [
+    "팔로우 필요",
+    "인스타 참여",
+    "원문 미확인"
+   ],
+   "title": "더 감로 성수, 홍대점 오픈 기념 인스타그램 팔로우 이벤트",
+   "url": "https://events.kr/event.php?id=201",
+   "who": null
+  },
   "ek-87d538ef1c": {
    "announce": null,
    "cand": true,
@@ -111209,6 +111254,6 @@
   }
  },
  "meta": {
-  "updated": "2026-11-02T16:45:39+09:00"
+  "updated": "2026-11-02T17:39:10+09:00"
  }
 }
