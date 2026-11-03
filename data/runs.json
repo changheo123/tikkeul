@@ -18306,5 +18306,128 @@
    }
   },
   "total": 3049
+ },
+ {
+  "active": 1875,
+  "added": 8,
+  "at": "2026-11-04T00:04:42+09:00",
+  "links": {
+   "checked": 60,
+   "dead": 0,
+   "error": 1,
+   "ok": 57,
+   "skip": 592
+  },
+  "merged": 473,
+  "pruned": 0,
+  "quality": {
+   "excluded": 0,
+   "flagged": 9,
+   "merged": 0
+  },
+  "rejected": 0,
+  "requests": 88,
+  "sec": 112.8,
+  "seeded": 0,
+  "sources": {
+   "busan": {
+    "listed": 4,
+    "merged": 4,
+    "new": 0,
+    "requests": 1,
+    "sec": 1.9,
+    "skipped": 0,
+    "status": "ok"
+   },
+   "danawa": {
+    "status": "wait"
+   },
+   "eventhouse": {
+    "listed": 400,
+    "merged": 230,
+    "new": 1,
+    "requests": 10,
+    "sec": 11.0,
+    "skipped": 2,
+    "status": "ok"
+   },
+   "events_kr": {
+    "listed": 179,
+    "merged": 0,
+    "new": 0,
+    "requests": 10,
+    "sec": 10.1,
+    "skipped": 0,
+    "status": "ok"
+   },
+   "gangnam": {
+    "status": "off"
+   },
+   "korissue": {
+    "listed": 140,
+    "merged": 138,
+    "new": 0,
+    "requests": 2,
+    "sec": 3.2,
+    "skipped": 1,
+    "status": "ok"
+   },
+   "mohw": {
+    "listed": 12,
+    "merged": 0,
+    "new": 0,
+    "requests": 1,
+    "sec": 2.6,
+    "skipped": 0,
+    "status": "ok"
+   },
+   "mrblog": {
+    "listed": 28,
+    "merged": 14,
+    "new": 6,
+    "requests": 1,
+    "sec": 1.4,
+    "skipped": 8,
+    "status": "ok"
+   },
+   "naver": {
+    "status": "wait"
+   },
+   "reviewnote": {
+    "listed": 90,
+    "merged": 79,
+    "new": 1,
+    "requests": 1,
+    "sec": 0.7,
+    "skipped": 10,
+    "status": "ok"
+   },
+   "sbs": {
+    "listed": 18,
+    "merged": 8,
+    "new": 0,
+    "requests": 1,
+    "sec": 1.8,
+    "skipped": 10,
+    "status": "ok"
+   },
+   "telegram": {
+    "status": "wait"
+   },
+   "touredu": {
+    "listed": 2,
+    "merged": 0,
+    "new": 0,
+    "requests": 1,
+    "sec": 1.3,
+    "skipped": 0,
+    "status": "ok"
+   },
+   "youtube": {
+    "reason": "YT_API_KEY 없음",
+    "status": "unconfigured"
+   }
+  },
+  "total": 3057
  }
 ]
