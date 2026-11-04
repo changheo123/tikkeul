@@ -33035,7 +33035,8 @@
    "kind": "설문",
    "lastSeen": "2026-11-04",
    "linkChecked": "2026-11-04",
-   "linkStatus": "skip",
+   "linkFail": 0,
+   "linkStatus": "ok",
    "listUrl": "https://www.eventhouse.kr/site/view.php?no=318358",
    "max": null,
    "min": null,
@@ -35012,7 +35013,8 @@
    "kind": "퀴즈",
    "lastSeen": "2026-11-04",
    "linkChecked": "2026-11-04",
-   "linkStatus": "skip",
+   "linkFail": 0,
+   "linkStatus": "ok",
    "listUrl": "https://www.eventhouse.kr/site/view.php?no=317242",
    "max": null,
    "min": null,
@@ -140319,6 +140321,6 @@
   }
  },
  "meta": {
-  "updated": "2026-11-04T19:12:54+09:00"
+  "updated": "2026-11-04T20:06:04+09:00"
  }
 }
