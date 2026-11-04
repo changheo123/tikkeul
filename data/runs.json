@@ -19940,5 +19940,136 @@
    }
   },
   "total": 3276
+ },
+ {
+  "active": 2127,
+  "added": 33,
+  "at": "2026-11-04T14:39:33+09:00",
+  "links": {
+   "checked": 60,
+   "dead": 0,
+   "error": 0,
+   "ok": 60,
+   "skip": 1
+  },
+  "merged": 931,
+  "pruned": 0,
+  "quality": {
+   "excluded": 0,
+   "flagged": 9,
+   "merged": 0
+  },
+  "rejected": 0,
+  "requests": 107,
+  "sec": 114.8,
+  "seeded": 0,
+  "sources": {
+   "busan": {
+    "listed": 4,
+    "merged": 4,
+    "new": 0,
+    "requests": 1,
+    "sec": 1.7,
+    "skipped": 0,
+    "status": "ok"
+   },
+   "danawa": {
+    "listed": 12,
+    "merged": 12,
+    "new": 0,
+    "requests": 2,
+    "sec": 6.6,
+    "skipped": 0,
+    "status": "ok"
+   },
+   "eventhouse": {
+    "listed": 1000,
+    "merged": 689,
+    "new": 0,
+    "requests": 25,
+    "sec": 28.3,
+    "skipped": 9,
+    "status": "ok"
+   },
+   "events_kr": {
+    "listed": 181,
+    "merged": 0,
+    "new": 2,
+    "requests": 12,
+    "sec": 12.0,
+    "skipped": 0,
+    "status": "ok"
+   },
+   "gangnam": {
+    "status": "off"
+   },
+   "korissue": {
+    "listed": 148,
+    "merged": 146,
+    "new": 0,
+    "requests": 2,
+    "sec": 2.9,
+    "skipped": 1,
+    "status": "ok"
+   },
+   "mohw": {
+    "listed": 12,
+    "merged": 0,
+    "new": 0,
+    "requests": 1,
+    "sec": 2.5,
+    "skipped": 0,
+    "status": "ok"
+   },
+   "mrblog": {
+    "listed": 29,
+    "merged": 20,
+    "new": 5,
+    "requests": 1,
+    "sec": 1.0,
+    "skipped": 4,
+    "status": "ok"
+   },
+   "naver": {
+    "reason": "NAVER_CLIENT_ID/SECRET 없음",
+    "status": "unconfigured"
+   },
+   "reviewnote": {
+    "listed": 92,
+    "merged": 54,
+    "new": 26,
+    "requests": 1,
+    "sec": 0.6,
+    "skipped": 12,
+    "status": "ok"
+   },
+   "sbs": {
+    "listed": 15,
+    "merged": 6,
+    "new": 0,
+    "requests": 1,
+    "sec": 0.6,
+    "skipped": 9,
+    "status": "ok"
+   },
+   "telegram": {
+    "reason": "수집할 공개 채널 목록이 비어 있음",
+    "status": "unconfigured"
+   },
+   "touredu": {
+    "listed": 2,
+    "merged": 0,
+    "new": 0,
+    "requests": 1,
+    "sec": 0.9,
+    "skipped": 0,
+    "status": "ok"
+   },
+   "youtube": {
+    "reason": "YT_API_KEY 없음",
+    "status": "unconfigured"
+   }
+  },
+  "total": 3309
  }
 ]
