@@ -82484,7 +82484,7 @@
    "grade": "C",
    "id": "mb-272dc22dbc",
    "kind": "체험단",
-   "lastSeen": "2026-11-05",
+   "lastSeen": "2026-11-06",
    "linkChecked": "2026-11-06",
    "linkFail": 0,
    "linkStatus": "ok",
@@ -88448,6 +88448,46 @@
    "tags": [],
    "title": "[고양 지축역] 블랑드비와이 체험단",
    "url": "https://www.mrblog.net/campaigns/1148078",
+   "who": null
+  },
+  "mb-82982ee04b": {
+   "announce": null,
+   "cand": true,
+   "checked": null,
+   "count": 5,
+   "end": "2026-11-08",
+   "endTime": null,
+   "firstSeen": "2026-11-06",
+   "grade": "C",
+   "id": "mb-82982ee04b",
+   "kind": "체험단",
+   "lastSeen": "2026-11-06",
+   "linkChecked": "2026-11-06",
+   "linkFail": 0,
+   "linkStatus": "ok",
+   "listUrl": null,
+   "max": null,
+   "min": null,
+   "mode": "선정",
+   "needs": [
+    "블로그·SNS 후기 작성 조건",
+    "신청 후 선정되어야 참여"
+   ],
+   "org": "미블",
+   "place": null,
+   "platHint": null,
+   "prize": "50%할인 이용권 (체험 제공, 5명 모집)",
+   "reasons": [],
+   "src": "mb",
+   "srcUrls": [
+    "https://www.mrblog.net/campaigns/1148671"
+   ],
+   "start": null,
+   "status": "active",
+   "steps": [],
+   "tags": [],
+   "title": "[춘천 후평동] 대게생각 체험단",
+   "url": "https://www.mrblog.net/campaigns/1148671",
    "who": null
   },
   "mb-838e77e2f5": {
@@ -100371,6 +100411,48 @@
    "url": "https://www.reviewnote.co.kr/campaigns/1521914",
    "who": null
   },
+  "rn-0b2e4f02c7": {
+   "announce": null,
+   "cand": true,
+   "checked": null,
+   "count": null,
+   "end": "2026-11-16",
+   "endTime": null,
+   "firstSeen": "2026-11-06",
+   "grade": "C",
+   "id": "rn-0b2e4f02c7",
+   "kind": "체험단",
+   "lastSeen": "2026-11-06",
+   "linkChecked": "2026-11-06",
+   "linkFail": 0,
+   "linkStatus": "ok",
+   "listUrl": null,
+   "max": null,
+   "min": null,
+   "mode": "선정",
+   "needs": [
+    "블로그·SNS 후기 작성 조건",
+    "신청 후 선정되어야 참여(방문형)"
+   ],
+   "org": "리뷰노트",
+   "place": null,
+   "platHint": null,
+   "prize": "4만원 식사제공권 (체험 제공)",
+   "reasons": [],
+   "src": "rn",
+   "srcUrls": [
+    "https://www.reviewnote.co.kr/campaigns/1526252"
+   ],
+   "start": null,
+   "status": "active",
+   "steps": [],
+   "tags": [
+    "방문 필요"
+   ],
+   "title": "[경기/수원시] 고기느낌 체험단",
+   "url": "https://www.reviewnote.co.kr/campaigns/1526252",
+   "who": null
+  },
   "rn-0b46599f02": {
    "announce": null,
    "cand": true,
@@ -101791,6 +101873,48 @@
    ],
    "title": "[부산/사하구] 153구포국수 하단점 체험단",
    "url": "https://www.reviewnote.co.kr/campaigns/1507478",
+   "who": null
+  },
+  "rn-12955cb55e": {
+   "announce": null,
+   "cand": true,
+   "checked": null,
+   "count": null,
+   "end": "2026-11-16",
+   "endTime": null,
+   "firstSeen": "2026-11-06",
+   "grade": "C",
+   "id": "rn-12955cb55e",
+   "kind": "체험단",
+   "lastSeen": "2026-11-06",
+   "linkChecked": "2026-11-06",
+   "linkFail": 0,
+   "linkStatus": "ok",
+   "listUrl": null,
+   "max": null,
+   "min": null,
+   "mode": "선정",
+   "needs": [
+    "블로그·SNS 후기 작성 조건",
+    "신청 후 선정되어야 참여(방문형)"
+   ],
+   "org": "리뷰노트",
+   "place": null,
+   "platHint": null,
+   "prize": "20만원의 한상차림+화이트와인1병 제공합니다. (체험 제공)",
+   "reasons": [],
+   "src": "rn",
+   "srcUrls": [
+    "https://www.reviewnote.co.kr/campaigns/1526327"
+   ],
+   "start": null,
+   "status": "active",
+   "steps": [],
+   "tags": [
+    "방문 필요"
+   ],
+   "title": "[제주/서귀포시] 바타타식탁 체험단",
+   "url": "https://www.reviewnote.co.kr/campaigns/1526327",
    "who": null
   },
   "rn-12c40cc8cd": {
@@ -104015,6 +104139,48 @@
    "url": "https://www.reviewnote.co.kr/campaigns/1521131",
    "who": null
   },
+  "rn-1c59fee26d": {
+   "announce": null,
+   "cand": true,
+   "checked": null,
+   "count": null,
+   "end": "2026-11-16",
+   "endTime": null,
+   "firstSeen": "2026-11-06",
+   "grade": "C",
+   "id": "rn-1c59fee26d",
+   "kind": "체험단",
+   "lastSeen": "2026-11-06",
+   "linkChecked": "2026-11-06",
+   "linkFail": 0,
+   "linkStatus": "ok",
+   "listUrl": null,
+   "max": null,
+   "min": null,
+   "mode": "선정",
+   "needs": [
+    "블로그·SNS 후기 작성 조건",
+    "신청 후 선정되어야 참여(방문형)"
+   ],
+   "org": "리뷰노트",
+   "place": null,
+   "platHint": null,
+   "prize": "30,000원 식사금액권+10,000원 포인트 (체험 제공)",
+   "reasons": [],
+   "src": "rn",
+   "srcUrls": [
+    "https://www.reviewnote.co.kr/campaigns/1526321"
+   ],
+   "start": null,
+   "status": "active",
+   "steps": [],
+   "tags": [
+    "방문 필요"
+   ],
+   "title": "[부산/남구] 금빛돼지 본점 체험단",
+   "url": "https://www.reviewnote.co.kr/campaigns/1526321",
+   "who": null
+  },
   "rn-1c62322a88": {
    "announce": null,
    "cand": true,
@@ -104502,7 +104668,8 @@
    "reasons": [],
    "src": "rn",
    "srcUrls": [
-    "https://www.reviewnote.co.kr/campaigns/1525414"
+    "https://www.reviewnote.co.kr/campaigns/1525414",
+    "https://www.reviewnote.co.kr/campaigns/1526516"
    ],
    "start": null,
    "status": "active",
@@ -110822,6 +110989,48 @@
    "url": "https://www.reviewnote.co.kr/campaigns/1507998",
    "who": null
   },
+  "rn-3621ecfe3a": {
+   "announce": null,
+   "cand": true,
+   "checked": null,
+   "count": null,
+   "end": "2026-11-16",
+   "endTime": null,
+   "firstSeen": "2026-11-06",
+   "grade": "C",
+   "id": "rn-3621ecfe3a",
+   "kind": "체험단",
+   "lastSeen": "2026-11-06",
+   "linkChecked": "2026-11-06",
+   "linkFail": 0,
+   "linkStatus": "ok",
+   "listUrl": null,
+   "max": null,
+   "min": null,
+   "mode": "선정",
+   "needs": [
+    "블로그·SNS 후기 작성 조건",
+    "신청 후 선정되어야 참여(방문형)"
+   ],
+   "org": "리뷰노트",
+   "place": null,
+   "platHint": null,
+   "prize": "1만원 상당(고속충전기 증정) + 25,000P 제공 (체험 제공)",
+   "reasons": [],
+   "src": "rn",
+   "srcUrls": [
+    "https://www.reviewnote.co.kr/campaigns/1526994"
+   ],
+   "start": null,
+   "status": "active",
+   "steps": [],
+   "tags": [
+    "방문 필요"
+   ],
+   "title": "[대구/서구] 휴대폰성지 옆커폰 대구서구점 체험단",
+   "url": "https://www.reviewnote.co.kr/campaigns/1526994",
+   "who": null
+  },
   "rn-36341e5125": {
    "announce": null,
    "cand": true,
@@ -112331,6 +112540,48 @@
    "url": "https://www.reviewnote.co.kr/campaigns/1515223",
    "who": null
   },
+  "rn-3ce6d32197": {
+   "announce": null,
+   "cand": true,
+   "checked": null,
+   "count": null,
+   "end": "2026-11-16",
+   "endTime": null,
+   "firstSeen": "2026-11-06",
+   "grade": "C",
+   "id": "rn-3ce6d32197",
+   "kind": "체험단",
+   "lastSeen": "2026-11-06",
+   "linkChecked": "2026-11-06",
+   "linkFail": 0,
+   "linkStatus": "ok",
+   "listUrl": null,
+   "max": null,
+   "min": null,
+   "mode": "선정",
+   "needs": [
+    "블로그·SNS 후기 작성 조건",
+    "신청 후 선정되어야 참여(방문형)"
+   ],
+   "org": "리뷰노트",
+   "place": null,
+   "platHint": null,
+   "prize": "5만원 식사권 (체험 제공)",
+   "reasons": [],
+   "src": "rn",
+   "srcUrls": [
+    "https://www.reviewnote.co.kr/campaigns/1526503"
+   ],
+   "start": null,
+   "status": "active",
+   "steps": [],
+   "tags": [
+    "방문 필요"
+   ],
+   "title": "[서울/양천구] 만선해물보쌈칼국수 양천구청점 체험단",
+   "url": "https://www.reviewnote.co.kr/campaigns/1526503",
+   "who": null
+  },
   "rn-3cf9bfb5a6": {
    "announce": null,
    "cand": true,
@@ -113419,6 +113670,48 @@
    "url": "https://www.reviewnote.co.kr/campaigns/1528920",
    "who": null
   },
+  "rn-3ffac60a1c": {
+   "announce": null,
+   "cand": true,
+   "checked": null,
+   "count": null,
+   "end": "2026-11-16",
+   "endTime": null,
+   "firstSeen": "2026-11-06",
+   "grade": "C",
+   "id": "rn-3ffac60a1c",
+   "kind": "체험단",
+   "lastSeen": "2026-11-06",
+   "linkChecked": "2026-11-06",
+   "linkFail": 0,
+   "linkStatus": "ok",
+   "listUrl": null,
+   "max": null,
+   "min": null,
+   "mode": "선정",
+   "needs": [
+    "블로그·SNS 후기 작성 조건",
+    "신청 후 선정되어야 참여(방문형)"
+   ],
+   "org": "리뷰노트",
+   "place": null,
+   "platHint": null,
+   "prize": "104,000 원 상당 두피 재생관리 (체험 제공)",
+   "reasons": [],
+   "src": "rn",
+   "srcUrls": [
+    "https://www.reviewnote.co.kr/campaigns/1522514"
+   ],
+   "start": null,
+   "status": "active",
+   "steps": [],
+   "tags": [
+    "방문 필요"
+   ],
+   "title": "[서울/송파구] 탑스칼프 송파점 체험단",
+   "url": "https://www.reviewnote.co.kr/campaigns/1522514",
+   "who": null
+  },
   "rn-3fff784360": {
    "announce": null,
    "cand": true,
@@ -113836,6 +114129,46 @@
    ],
    "title": "[경기/오산시] 바다이야기 오산시청점 체험단",
    "url": "https://www.reviewnote.co.kr/campaigns/1523629",
+   "who": null
+  },
+  "rn-4117c1e3be": {
+   "announce": null,
+   "cand": true,
+   "checked": null,
+   "count": null,
+   "end": "2026-11-16",
+   "endTime": null,
+   "firstSeen": "2026-11-06",
+   "grade": "C",
+   "id": "rn-4117c1e3be",
+   "kind": "체험단",
+   "lastSeen": "2026-11-06",
+   "linkChecked": "2026-11-06",
+   "linkFail": 0,
+   "linkStatus": "ok",
+   "listUrl": null,
+   "max": null,
+   "min": null,
+   "mode": "선정",
+   "needs": [
+    "블로그·SNS 후기 작성 조건",
+    "신청 후 선정되어야 참여(기자단)"
+   ],
+   "org": "리뷰노트",
+   "place": null,
+   "platHint": null,
+   "prize": "원고료 1만원 (체험 제공)",
+   "reasons": [],
+   "src": "rn",
+   "srcUrls": [
+    "https://www.reviewnote.co.kr/campaigns/1531895"
+   ],
+   "start": null,
+   "status": "active",
+   "steps": [],
+   "tags": [],
+   "title": "[재택] 품안에 도그앤캣 체험단",
+   "url": "https://www.reviewnote.co.kr/campaigns/1531895",
    "who": null
   },
   "rn-4132e2e2e9": {
@@ -114801,6 +115134,48 @@
    ],
    "title": "[서울/송파구] 밸류마크 잠실지점 체험단",
    "url": "https://www.reviewnote.co.kr/campaigns/1521092",
+   "who": null
+  },
+  "rn-46786cc104": {
+   "announce": null,
+   "cand": true,
+   "checked": null,
+   "count": null,
+   "end": "2026-11-16",
+   "endTime": null,
+   "firstSeen": "2026-11-06",
+   "grade": "C",
+   "id": "rn-46786cc104",
+   "kind": "체험단",
+   "lastSeen": "2026-11-06",
+   "linkChecked": "2026-11-06",
+   "linkFail": 0,
+   "linkStatus": "ok",
+   "listUrl": null,
+   "max": null,
+   "min": null,
+   "mode": "선정",
+   "needs": [
+    "블로그·SNS 후기 작성 조건",
+    "신청 후 선정되어야 참여(방문형)"
+   ],
+   "org": "리뷰노트",
+   "place": null,
+   "platHint": null,
+   "prize": "[페이스] 수분폭탄 페이스관리 (체험 제공)",
+   "reasons": [],
+   "src": "rn",
+   "srcUrls": [
+    "https://www.reviewnote.co.kr/campaigns/1516520"
+   ],
+   "start": null,
+   "status": "active",
+   "steps": [],
+   "tags": [
+    "방문 필요"
+   ],
+   "title": "[경기/김포시] 김기옥 스킨케어 체험단",
+   "url": "https://www.reviewnote.co.kr/campaigns/1516520",
    "who": null
   },
   "rn-46d83beb44": {
@@ -116731,6 +117106,48 @@
    ],
    "title": "[서울/송파구] 공유오피스 드림캐쳐스 송파석촌점 체험단",
    "url": "https://www.reviewnote.co.kr/campaigns/1519595",
+   "who": null
+  },
+  "rn-4e8bcebea0": {
+   "announce": null,
+   "cand": true,
+   "checked": null,
+   "count": null,
+   "end": "2026-11-16",
+   "endTime": null,
+   "firstSeen": "2026-11-06",
+   "grade": "C",
+   "id": "rn-4e8bcebea0",
+   "kind": "체험단",
+   "lastSeen": "2026-11-06",
+   "linkChecked": "2026-11-06",
+   "linkFail": 0,
+   "linkStatus": "ok",
+   "listUrl": null,
+   "max": null,
+   "min": null,
+   "mode": "선정",
+   "needs": [
+    "블로그·SNS 후기 작성 조건",
+    "신청 후 선정되어야 참여(방문형)"
+   ],
+   "org": "리뷰노트",
+   "place": null,
+   "platHint": null,
+   "prize": "무료 30일 이용 or 무료 30일 + 전문 PT 1회(헬스 14만원 + PT 10만원 제공) / 13,000 포인트 제공 (체험 제공)",
+   "reasons": [],
+   "src": "rn",
+   "srcUrls": [
+    "https://www.reviewnote.co.kr/campaigns/1526015"
+   ],
+   "start": null,
+   "status": "active",
+   "steps": [],
+   "tags": [
+    "방문 필요"
+   ],
+   "title": "[서울/송파구] 휴메이크 휘트니스 석촌점 체험단",
+   "url": "https://www.reviewnote.co.kr/campaigns/1526015",
    "who": null
   },
   "rn-4efafb0434": {
@@ -126814,6 +127231,48 @@
    "url": "https://www.reviewnote.co.kr/campaigns/1523364",
    "who": null
   },
+  "rn-73bc30c4f7": {
+   "announce": null,
+   "cand": true,
+   "checked": null,
+   "count": null,
+   "end": "2026-11-16",
+   "endTime": null,
+   "firstSeen": "2026-11-06",
+   "grade": "C",
+   "id": "rn-73bc30c4f7",
+   "kind": "체험단",
+   "lastSeen": "2026-11-06",
+   "linkChecked": "2026-11-06",
+   "linkFail": 0,
+   "linkStatus": "ok",
+   "listUrl": null,
+   "max": null,
+   "min": null,
+   "mode": "선정",
+   "needs": [
+    "블로그·SNS 후기 작성 조건",
+    "신청 후 선정되어야 참여(방문형)"
+   ],
+   "org": "리뷰노트",
+   "place": null,
+   "platHint": null,
+   "prize": "브로우펌40,000 (체험 제공)",
+   "reasons": [],
+   "src": "rn",
+   "srcUrls": [
+    "https://www.reviewnote.co.kr/campaigns/1517296"
+   ],
+   "start": null,
+   "status": "active",
+   "steps": [],
+   "tags": [
+    "방문 필요"
+   ],
+   "title": "[경기/고양시] 뷰티드플로르 체험단",
+   "url": "https://www.reviewnote.co.kr/campaigns/1517296",
+   "who": null
+  },
   "rn-73d1cffd95": {
    "announce": null,
    "cand": true,
@@ -128458,7 +128917,7 @@
    "id": "rn-7a0c0c8f2e",
    "kind": "체험단",
    "lastSeen": "2026-10-30",
-   "linkChecked": "2026-11-05",
+   "linkChecked": "2026-11-06",
    "linkFail": 0,
    "linkStatus": "ok",
    "listUrl": null,
@@ -128500,7 +128959,7 @@
    "id": "rn-7a1dd6086a",
    "kind": "체험단",
    "lastSeen": "2026-10-28",
-   "linkChecked": "2026-11-05",
+   "linkChecked": "2026-11-06",
    "linkFail": 0,
    "linkStatus": "ok",
    "listUrl": null,
@@ -128542,7 +129001,7 @@
    "id": "rn-7aaaa427f6",
    "kind": "체험단",
    "lastSeen": "2026-11-04",
-   "linkChecked": "2026-11-05",
+   "linkChecked": "2026-11-06",
    "linkFail": 0,
    "linkStatus": "ok",
    "listUrl": null,
@@ -128584,7 +129043,7 @@
    "id": "rn-7aae6c067a",
    "kind": "체험단",
    "lastSeen": "2026-11-05",
-   "linkChecked": "2026-11-05",
+   "linkChecked": "2026-11-06",
    "linkFail": 0,
    "linkStatus": "ok",
    "listUrl": null,
@@ -128626,7 +129085,7 @@
    "id": "rn-7ac7c1523d",
    "kind": "체험단",
    "lastSeen": "2026-11-01",
-   "linkChecked": "2026-11-05",
+   "linkChecked": "2026-11-06",
    "linkFail": 0,
    "linkStatus": "ok",
    "listUrl": null,
@@ -128668,7 +129127,7 @@
    "id": "rn-7ae7bf70dd",
    "kind": "체험단",
    "lastSeen": "2026-10-29",
-   "linkChecked": "2026-11-05",
+   "linkChecked": "2026-11-06",
    "linkFail": 0,
    "linkStatus": "ok",
    "listUrl": null,
@@ -128710,7 +129169,7 @@
    "id": "rn-7aef3934c8",
    "kind": "체험단",
    "lastSeen": "2026-11-04",
-   "linkChecked": "2026-11-05",
+   "linkChecked": "2026-11-06",
    "linkFail": 0,
    "linkStatus": "ok",
    "listUrl": null,
@@ -128752,7 +129211,7 @@
    "id": "rn-7af2c6daa0",
    "kind": "체험단",
    "lastSeen": "2026-11-02",
-   "linkChecked": "2026-11-05",
+   "linkChecked": "2026-11-06",
    "linkFail": 0,
    "linkStatus": "ok",
    "listUrl": null,
@@ -128794,7 +129253,7 @@
    "id": "rn-7af3f48b95",
    "kind": "체험단",
    "lastSeen": "2026-11-04",
-   "linkChecked": "2026-11-05",
+   "linkChecked": "2026-11-06",
    "linkFail": 0,
    "linkStatus": "ok",
    "listUrl": null,
@@ -128836,7 +129295,7 @@
    "id": "rn-7b0be4484a",
    "kind": "체험단",
    "lastSeen": "2026-11-03",
-   "linkChecked": "2026-11-05",
+   "linkChecked": "2026-11-06",
    "linkFail": 0,
    "linkStatus": "ok",
    "listUrl": null,
@@ -128878,7 +129337,7 @@
    "id": "rn-7b1cc539e0",
    "kind": "체험단",
    "lastSeen": "2026-10-30",
-   "linkChecked": "2026-11-05",
+   "linkChecked": "2026-11-06",
    "linkFail": 0,
    "linkStatus": "ok",
    "listUrl": null,
@@ -128918,7 +129377,7 @@
    "id": "rn-7b3f9bc8d5",
    "kind": "체험단",
    "lastSeen": "2026-11-03",
-   "linkChecked": "2026-11-05",
+   "linkChecked": "2026-11-06",
    "linkFail": 0,
    "linkStatus": "ok",
    "listUrl": null,
@@ -128958,7 +129417,7 @@
    "id": "rn-7b5ef54ffe",
    "kind": "체험단",
    "lastSeen": "2026-11-02",
-   "linkChecked": "2026-11-05",
+   "linkChecked": "2026-11-06",
    "linkFail": 0,
    "linkStatus": "ok",
    "listUrl": null,
@@ -129000,7 +129459,7 @@
    "id": "rn-7b74d35d29",
    "kind": "체험단",
    "lastSeen": "2026-11-03",
-   "linkChecked": "2026-11-05",
+   "linkChecked": "2026-11-06",
    "linkFail": 0,
    "linkStatus": "ok",
    "listUrl": null,
@@ -129042,7 +129501,7 @@
    "id": "rn-7b8282fea7",
    "kind": "체험단",
    "lastSeen": "2026-10-28",
-   "linkChecked": "2026-11-05",
+   "linkChecked": "2026-11-06",
    "linkFail": 0,
    "linkStatus": "ok",
    "listUrl": null,
@@ -129084,7 +129543,7 @@
    "id": "rn-7bfd769ddf",
    "kind": "체험단",
    "lastSeen": "2026-10-28",
-   "linkChecked": "2026-11-05",
+   "linkChecked": "2026-11-06",
    "linkFail": 0,
    "linkStatus": "ok",
    "listUrl": null,
@@ -129126,7 +129585,7 @@
    "id": "rn-7c2e9fa1a6",
    "kind": "체험단",
    "lastSeen": "2026-11-04",
-   "linkChecked": "2026-11-05",
+   "linkChecked": "2026-11-06",
    "linkFail": 0,
    "linkStatus": "ok",
    "listUrl": null,
@@ -129168,7 +129627,7 @@
    "id": "rn-7c52fe5056",
    "kind": "체험단",
    "lastSeen": "2026-11-04",
-   "linkChecked": "2026-11-05",
+   "linkChecked": "2026-11-06",
    "linkFail": 0,
    "linkStatus": "ok",
    "listUrl": null,
@@ -129210,7 +129669,7 @@
    "id": "rn-7ce3bb2a43",
    "kind": "체험단",
    "lastSeen": "2026-11-06",
-   "linkChecked": "2026-11-05",
+   "linkChecked": "2026-11-06",
    "linkFail": 0,
    "linkStatus": "ok",
    "listUrl": null,
@@ -129252,7 +129711,7 @@
    "id": "rn-7cfe9e53bc",
    "kind": "체험단",
    "lastSeen": "2026-10-30",
-   "linkChecked": "2026-11-05",
+   "linkChecked": "2026-11-06",
    "linkFail": 0,
    "linkStatus": "ok",
    "listUrl": null,
@@ -129294,7 +129753,7 @@
    "id": "rn-7d4c32d095",
    "kind": "체험단",
    "lastSeen": "2026-11-06",
-   "linkChecked": "2026-11-05",
+   "linkChecked": "2026-11-06",
    "linkFail": 0,
    "linkStatus": "ok",
    "listUrl": null,
@@ -129336,7 +129795,7 @@
    "id": "rn-7d788d91ab",
    "kind": "체험단",
    "lastSeen": "2026-10-30",
-   "linkChecked": "2026-11-05",
+   "linkChecked": "2026-11-06",
    "linkFail": 0,
    "linkStatus": "ok",
    "listUrl": null,
@@ -129378,7 +129837,7 @@
    "id": "rn-7de3716f21",
    "kind": "체험단",
    "lastSeen": "2026-10-30",
-   "linkChecked": "2026-11-05",
+   "linkChecked": "2026-11-06",
    "linkFail": 0,
    "linkStatus": "ok",
    "listUrl": null,
@@ -129420,7 +129879,7 @@
    "id": "rn-7de756d98f",
    "kind": "체험단",
    "lastSeen": "2026-10-28",
-   "linkChecked": "2026-11-05",
+   "linkChecked": "2026-11-06",
    "linkFail": 0,
    "linkStatus": "ok",
    "listUrl": null,
@@ -129462,7 +129921,7 @@
    "id": "rn-7e06d72ff1",
    "kind": "체험단",
    "lastSeen": "2026-10-28",
-   "linkChecked": "2026-11-05",
+   "linkChecked": "2026-11-06",
    "linkFail": 0,
    "linkStatus": "ok",
    "listUrl": null,
@@ -129504,7 +129963,7 @@
    "id": "rn-7e0c6d7284",
    "kind": "체험단",
    "lastSeen": "2026-10-29",
-   "linkChecked": "2026-11-05",
+   "linkChecked": "2026-11-06",
    "linkFail": 0,
    "linkStatus": "ok",
    "listUrl": null,
@@ -129546,7 +130005,7 @@
    "id": "rn-7e130c3601",
    "kind": "체험단",
    "lastSeen": "2026-11-02",
-   "linkChecked": "2026-11-05",
+   "linkChecked": "2026-11-06",
    "linkFail": 0,
    "linkStatus": "ok",
    "listUrl": null,
@@ -129586,7 +130045,7 @@
    "id": "rn-7e1a85b1ef",
    "kind": "체험단",
    "lastSeen": "2026-11-06",
-   "linkChecked": "2026-11-05",
+   "linkChecked": "2026-11-06",
    "linkFail": 0,
    "linkStatus": "ok",
    "listUrl": null,
@@ -129644,7 +130103,9 @@
    "reasons": [],
    "src": "rn",
    "srcUrls": [
-    "https://www.reviewnote.co.kr/campaigns/1526242"
+    "https://www.reviewnote.co.kr/campaigns/1526242",
+    "https://www.reviewnote.co.kr/campaigns/1526660",
+    "https://www.reviewnote.co.kr/campaigns/1526447"
    ],
    "start": null,
    "status": "active",
@@ -129666,7 +130127,7 @@
    "id": "rn-7e709f2564",
    "kind": "체험단",
    "lastSeen": "2026-10-28",
-   "linkChecked": "2026-11-05",
+   "linkChecked": "2026-11-06",
    "linkFail": 0,
    "linkStatus": "ok",
    "listUrl": null,
@@ -129708,7 +130169,7 @@
    "id": "rn-7e772d29ca",
    "kind": "체험단",
    "lastSeen": "2026-10-30",
-   "linkChecked": "2026-11-05",
+   "linkChecked": "2026-11-06",
    "linkFail": 0,
    "linkStatus": "ok",
    "listUrl": null,
@@ -129750,7 +130211,7 @@
    "id": "rn-7ec4b29015",
    "kind": "체험단",
    "lastSeen": "2026-11-01",
-   "linkChecked": "2026-11-05",
+   "linkChecked": "2026-11-06",
    "linkFail": 0,
    "linkStatus": "ok",
    "listUrl": null,
@@ -129792,7 +130253,7 @@
    "id": "rn-7ec7f468d5",
    "kind": "체험단",
    "lastSeen": "2026-11-03",
-   "linkChecked": "2026-11-05",
+   "linkChecked": "2026-11-06",
    "linkFail": 0,
    "linkStatus": "ok",
    "listUrl": null,
@@ -129834,7 +130295,7 @@
    "id": "rn-7edcbb92ee",
    "kind": "체험단",
    "lastSeen": "2026-11-04",
-   "linkChecked": "2026-11-05",
+   "linkChecked": "2026-11-06",
    "linkFail": 0,
    "linkStatus": "ok",
    "listUrl": null,
@@ -134800,6 +135261,46 @@
    "url": "https://www.reviewnote.co.kr/campaigns/1511132",
    "who": null
   },
+  "rn-952ccfbd8d": {
+   "announce": null,
+   "cand": true,
+   "checked": null,
+   "count": null,
+   "end": "2026-11-16",
+   "endTime": null,
+   "firstSeen": "2026-11-06",
+   "grade": "C",
+   "id": "rn-952ccfbd8d",
+   "kind": "체험단",
+   "lastSeen": "2026-11-06",
+   "linkChecked": "2026-11-06",
+   "linkFail": 0,
+   "linkStatus": "ok",
+   "listUrl": null,
+   "max": null,
+   "min": null,
+   "mode": "선정",
+   "needs": [
+    "블로그·SNS 후기 작성 조건",
+    "신청 후 선정되어야 참여(기자단)"
+   ],
+   "org": "리뷰노트",
+   "place": null,
+   "platHint": null,
+   "prize": "원고료 10,000원 (체험 제공)",
+   "reasons": [],
+   "src": "rn",
+   "srcUrls": [
+    "https://www.reviewnote.co.kr/campaigns/1531878"
+   ],
+   "start": null,
+   "status": "active",
+   "steps": [],
+   "tags": [],
+   "title": "[재택] 동양철학관 체험단",
+   "url": "https://www.reviewnote.co.kr/campaigns/1531878",
+   "who": null
+  },
   "rn-9542ae82bd": {
    "announce": null,
    "cand": true,
@@ -135213,6 +135714,48 @@
    ],
    "title": "[인천/연수구] 무아베왁싱 송도본점 체험단",
    "url": "https://www.reviewnote.co.kr/campaigns/1512615",
+   "who": null
+  },
+  "rn-96cfb4c675": {
+   "announce": null,
+   "cand": true,
+   "checked": null,
+   "count": null,
+   "end": "2026-11-16",
+   "endTime": null,
+   "firstSeen": "2026-11-06",
+   "grade": "C",
+   "id": "rn-96cfb4c675",
+   "kind": "체험단",
+   "lastSeen": "2026-11-06",
+   "linkChecked": "2026-11-06",
+   "linkFail": 0,
+   "linkStatus": "ok",
+   "listUrl": null,
+   "max": null,
+   "min": null,
+   "mode": "선정",
+   "needs": [
+    "블로그·SNS 후기 작성 조건",
+    "신청 후 선정되어야 참여(방문형)"
+   ],
+   "org": "리뷰노트",
+   "place": null,
+   "platHint": null,
+   "prize": "니혼탕수육(닭 목살튀김) + 하이볼 2잔 or 츄하이 2잔 (체험 제공)",
+   "reasons": [],
+   "src": "rn",
+   "srcUrls": [
+    "https://www.reviewnote.co.kr/campaigns/1526556"
+   ],
+   "start": null,
+   "status": "active",
+   "steps": [],
+   "tags": [
+    "방문 필요"
+   ],
+   "title": "[서울/마포구] 톤토리 체험단",
+   "url": "https://www.reviewnote.co.kr/campaigns/1526556",
    "who": null
   },
   "rn-96e9707192": {
@@ -136895,6 +137438,48 @@
    "url": "https://www.reviewnote.co.kr/campaigns/1512609",
    "who": null
   },
+  "rn-9ccf3f0e77": {
+   "announce": null,
+   "cand": true,
+   "checked": null,
+   "count": null,
+   "end": "2026-11-16",
+   "endTime": null,
+   "firstSeen": "2026-11-06",
+   "grade": "C",
+   "id": "rn-9ccf3f0e77",
+   "kind": "체험단",
+   "lastSeen": "2026-11-06",
+   "linkChecked": "2026-11-06",
+   "linkFail": 0,
+   "linkStatus": "ok",
+   "listUrl": null,
+   "max": null,
+   "min": null,
+   "mode": "선정",
+   "needs": [
+    "블로그·SNS 후기 작성 조건",
+    "신청 후 선정되어야 참여(방문형)"
+   ],
+   "org": "리뷰노트",
+   "place": null,
+   "platHint": null,
+   "prize": "10,000포인트+짐보관 2주 서비스 (7만원 상당, 희망시) (체험 제공)",
+   "reasons": [],
+   "src": "rn",
+   "srcUrls": [
+    "https://www.reviewnote.co.kr/campaigns/1526287"
+   ],
+   "start": null,
+   "status": "active",
+   "steps": [],
+   "tags": [
+    "방문 필요"
+   ],
+   "title": "[경기/안양시] 안양창고 1214 체험단",
+   "url": "https://www.reviewnote.co.kr/campaigns/1526287",
+   "who": null
+  },
   "rn-9d1eccc45f": {
    "announce": null,
    "cand": true,
@@ -137144,6 +137729,48 @@
    "url": "https://www.reviewnote.co.kr/campaigns/1525685",
    "who": null
   },
+  "rn-9db9c05511": {
+   "announce": null,
+   "cand": true,
+   "checked": null,
+   "count": null,
+   "end": "2026-11-16",
+   "endTime": null,
+   "firstSeen": "2026-11-06",
+   "grade": "C",
+   "id": "rn-9db9c05511",
+   "kind": "체험단",
+   "lastSeen": "2026-11-06",
+   "linkChecked": "2026-11-06",
+   "linkFail": 0,
+   "linkStatus": "ok",
+   "listUrl": null,
+   "max": null,
+   "min": null,
+   "mode": "선정",
+   "needs": [
+    "블로그·SNS 후기 작성 조건",
+    "신청 후 선정되어야 참여(방문형)"
+   ],
+   "org": "리뷰노트",
+   "place": null,
+   "platHint": null,
+   "prize": "한돈 셋트 제공 (4만 7천원) + 된장 술밥 또는 5만원 식사권 (체험 제공)",
+   "reasons": [],
+   "src": "rn",
+   "srcUrls": [
+    "https://www.reviewnote.co.kr/campaigns/1526514"
+   ],
+   "start": null,
+   "status": "active",
+   "steps": [],
+   "tags": [
+    "방문 필요"
+   ],
+   "title": "[전북/정읍시] 국수야한돈가자 체험단",
+   "url": "https://www.reviewnote.co.kr/campaigns/1526514",
+   "who": null
+  },
   "rn-9dec136873": {
    "announce": null,
    "cand": true,
@@ -137269,6 +137896,48 @@
    ],
    "title": "[인천/서해구] 카우짐24시 서해구청점 체험단",
    "url": "https://www.reviewnote.co.kr/campaigns/1528916",
+   "who": null
+  },
+  "rn-9e92bcefba": {
+   "announce": null,
+   "cand": true,
+   "checked": null,
+   "count": null,
+   "end": "2026-11-16",
+   "endTime": null,
+   "firstSeen": "2026-11-06",
+   "grade": "C",
+   "id": "rn-9e92bcefba",
+   "kind": "체험단",
+   "lastSeen": "2026-11-06",
+   "linkChecked": "2026-11-06",
+   "linkFail": 0,
+   "linkStatus": "ok",
+   "listUrl": null,
+   "max": null,
+   "min": null,
+   "mode": "선정",
+   "needs": [
+    "블로그·SNS 후기 작성 조건",
+    "신청 후 선정되어야 참여(방문형)"
+   ],
+   "org": "리뷰노트",
+   "place": null,
+   "platHint": null,
+   "prize": "1인 3만원 2인 방문시, 5만원 상당 칵테일 (체험 제공)",
+   "reasons": [],
+   "src": "rn",
+   "srcUrls": [
+    "https://www.reviewnote.co.kr/campaigns/1526738"
+   ],
+   "start": null,
+   "status": "active",
+   "steps": [],
+   "tags": [
+    "방문 필요"
+   ],
+   "title": "[경기/부천시] 해방 혼술바 체험단",
+   "url": "https://www.reviewnote.co.kr/campaigns/1526738",
    "who": null
   },
   "rn-9e992c9958": {
@@ -140107,6 +140776,48 @@
    ],
    "title": "[서울/중구] 언더바 광각도시 체험단",
    "url": "https://www.reviewnote.co.kr/campaigns/1511809",
+   "who": null
+  },
+  "rn-aa242c4bc8": {
+   "announce": null,
+   "cand": true,
+   "checked": null,
+   "count": null,
+   "end": "2026-11-16",
+   "endTime": null,
+   "firstSeen": "2026-11-06",
+   "grade": "C",
+   "id": "rn-aa242c4bc8",
+   "kind": "체험단",
+   "lastSeen": "2026-11-06",
+   "linkChecked": "2026-11-06",
+   "linkFail": 0,
+   "linkStatus": "ok",
+   "listUrl": null,
+   "max": null,
+   "min": null,
+   "mode": "선정",
+   "needs": [
+    "블로그·SNS 후기 작성 조건",
+    "신청 후 선정되어야 참여(방문형)"
+   ],
+   "org": "리뷰노트",
+   "place": null,
+   "platHint": null,
+   "prize": "돼지한판세트 600g 36900원 (체험 제공)",
+   "reasons": [],
+   "src": "rn",
+   "srcUrls": [
+    "https://www.reviewnote.co.kr/campaigns/1526337"
+   ],
+   "start": null,
+   "status": "active",
+   "steps": [],
+   "tags": [
+    "방문 필요"
+   ],
+   "title": "[서울/성북구] 자연숯불화로구이 돌곶이점 체험단",
+   "url": "https://www.reviewnote.co.kr/campaigns/1526337",
    "who": null
   },
   "rn-aa2e65078a": {
@@ -144793,6 +145504,47 @@
    "url": "https://www.reviewnote.co.kr/campaigns/1528777",
    "who": null
   },
+  "rn-bcda9373c6": {
+   "announce": null,
+   "cand": true,
+   "checked": null,
+   "count": null,
+   "end": "2026-11-16",
+   "endTime": null,
+   "firstSeen": "2026-11-06",
+   "grade": "C",
+   "id": "rn-bcda9373c6",
+   "kind": "체험단",
+   "lastSeen": "2026-11-06",
+   "linkChecked": "2026-11-06",
+   "linkFail": 0,
+   "linkStatus": "ok",
+   "listUrl": null,
+   "max": null,
+   "min": null,
+   "mode": "선정",
+   "needs": [
+    "블로그·SNS 후기 작성 조건",
+    "신청 후 선정되어야 참여(배송형)"
+   ],
+   "org": "리뷰노트",
+   "place": null,
+   "platHint": null,
+   "prize": "전문가의 보험점검 + 원고료 5만원 (체험 제공)",
+   "reasons": [],
+   "src": "rn",
+   "srcUrls": [
+    "https://www.reviewnote.co.kr/campaigns/1531810",
+    "https://www.reviewnote.co.kr/campaigns/1531816"
+   ],
+   "start": null,
+   "status": "active",
+   "steps": [],
+   "tags": [],
+   "title": "[재택] 밸류브릿지[ 부산 지역에서만 참여 가능합니다. ] 체험단",
+   "url": "https://www.reviewnote.co.kr/campaigns/1531810",
+   "who": null
+  },
   "rn-bd2d9f714c": {
    "announce": null,
    "cand": true,
@@ -145502,6 +146254,48 @@
    ],
    "title": "[서울/관악구] 별에서온사주타로 체험단",
    "url": "https://www.reviewnote.co.kr/campaigns/1475461",
+   "who": null
+  },
+  "rn-bf5cfbc604": {
+   "announce": null,
+   "cand": true,
+   "checked": null,
+   "count": null,
+   "end": "2026-11-16",
+   "endTime": null,
+   "firstSeen": "2026-11-06",
+   "grade": "C",
+   "id": "rn-bf5cfbc604",
+   "kind": "체험단",
+   "lastSeen": "2026-11-06",
+   "linkChecked": "2026-11-06",
+   "linkFail": 0,
+   "linkStatus": "ok",
+   "listUrl": null,
+   "max": null,
+   "min": null,
+   "mode": "선정",
+   "needs": [
+    "블로그·SNS 후기 작성 조건",
+    "신청 후 선정되어야 참여(방문형)"
+   ],
+   "org": "리뷰노트",
+   "place": null,
+   "platHint": null,
+   "prize": "모둠회 중 69.000 + 석화 생 35.000 + 석화 찜 35.000+ 해물라면12.000+ 50000p (체험 제공)",
+   "reasons": [],
+   "src": "rn",
+   "srcUrls": [
+    "https://www.reviewnote.co.kr/campaigns/1526555"
+   ],
+   "start": null,
+   "status": "active",
+   "steps": [],
+   "tags": [
+    "방문 필요"
+   ],
+   "title": "[경기/화성시] 경자수산 동탄영천점 체험단",
+   "url": "https://www.reviewnote.co.kr/campaigns/1526555",
    "who": null
   },
   "rn-bf9255a9ac": {
@@ -147473,6 +148267,46 @@
    ],
    "title": "[서울/성북구] 멘야하나비 성신여대점 체험단",
    "url": "https://www.reviewnote.co.kr/campaigns/1512681",
+   "who": null
+  },
+  "rn-c7ddaf2a07": {
+   "announce": null,
+   "cand": true,
+   "checked": null,
+   "count": null,
+   "end": "2026-11-16",
+   "endTime": null,
+   "firstSeen": "2026-11-06",
+   "grade": "C",
+   "id": "rn-c7ddaf2a07",
+   "kind": "체험단",
+   "lastSeen": "2026-11-06",
+   "linkChecked": "2026-11-06",
+   "linkFail": 0,
+   "linkStatus": "ok",
+   "listUrl": null,
+   "max": null,
+   "min": null,
+   "mode": "선정",
+   "needs": [
+    "블로그·SNS 후기 작성 조건",
+    "신청 후 선정되어야 참여(기자단)"
+   ],
+   "org": "리뷰노트",
+   "place": null,
+   "platHint": null,
+   "prize": "10,000포인트 (체험 제공)",
+   "reasons": [],
+   "src": "rn",
+   "srcUrls": [
+    "https://www.reviewnote.co.kr/campaigns/1526545"
+   ],
+   "start": null,
+   "status": "active",
+   "steps": [],
+   "tags": [],
+   "title": "[재택] 동신카인테리어 체험단",
+   "url": "https://www.reviewnote.co.kr/campaigns/1526545",
    "who": null
   },
   "rn-c7f9058cab": {
@@ -150075,6 +150909,48 @@
    "url": "https://www.reviewnote.co.kr/campaigns/1507362",
    "who": null
   },
+  "rn-d1b4c28c0f": {
+   "announce": null,
+   "cand": true,
+   "checked": null,
+   "count": null,
+   "end": "2026-11-16",
+   "endTime": null,
+   "firstSeen": "2026-11-06",
+   "grade": "C",
+   "id": "rn-d1b4c28c0f",
+   "kind": "체험단",
+   "lastSeen": "2026-11-06",
+   "linkChecked": "2026-11-06",
+   "linkFail": 0,
+   "linkStatus": "ok",
+   "listUrl": null,
+   "max": null,
+   "min": null,
+   "mode": "선정",
+   "needs": [
+    "블로그·SNS 후기 작성 조건",
+    "신청 후 선정되어야 참여(방문형)"
+   ],
+   "org": "리뷰노트",
+   "place": null,
+   "platHint": null,
+   "prize": "도자기윤곽+전신바디 (체험 제공)",
+   "reasons": [],
+   "src": "rn",
+   "srcUrls": [
+    "https://www.reviewnote.co.kr/campaigns/1526234"
+   ],
+   "start": null,
+   "status": "active",
+   "steps": [],
+   "tags": [
+    "방문 필요"
+   ],
+   "title": "[서울/강남구] 더골드청담 체험단",
+   "url": "https://www.reviewnote.co.kr/campaigns/1526234",
+   "who": null
+  },
   "rn-d1caef36c7": {
    "announce": null,
    "cand": true,
@@ -150491,6 +151367,48 @@
    "tags": [],
    "title": "[재택] 아이스홀릭 체험단",
    "url": "https://www.reviewnote.co.kr/campaigns/1505543",
+   "who": null
+  },
+  "rn-d3946cfcda": {
+   "announce": null,
+   "cand": true,
+   "checked": null,
+   "count": null,
+   "end": "2026-11-16",
+   "endTime": null,
+   "firstSeen": "2026-11-06",
+   "grade": "C",
+   "id": "rn-d3946cfcda",
+   "kind": "체험단",
+   "lastSeen": "2026-11-06",
+   "linkChecked": "2026-11-06",
+   "linkFail": 0,
+   "linkStatus": "ok",
+   "listUrl": null,
+   "max": null,
+   "min": null,
+   "mode": "선정",
+   "needs": [
+    "블로그·SNS 후기 작성 조건",
+    "신청 후 선정되어야 참여(방문형)"
+   ],
+   "org": "리뷰노트",
+   "place": null,
+   "platHint": null,
+   "prize": "메인음식 2인 + 오키나와 생맥 1잔 + 음료수 + 온센다마고 + 쯔케모노 제공 (체험 제공)",
+   "reasons": [],
+   "src": "rn",
+   "srcUrls": [
+    "https://www.reviewnote.co.kr/campaigns/1525573"
+   ],
+   "start": null,
+   "status": "active",
+   "steps": [],
+   "tags": [
+    "방문 필요"
+   ],
+   "title": "[부산/금정구] 우사기야 장전 체험단",
+   "url": "https://www.reviewnote.co.kr/campaigns/1525573",
    "who": null
   },
   "rn-d3bc08c36a": {
@@ -155278,6 +156196,48 @@
    "url": "https://www.reviewnote.co.kr/campaigns/1508325",
    "who": null
   },
+  "rn-e4ccd9fc34": {
+   "announce": null,
+   "cand": true,
+   "checked": null,
+   "count": null,
+   "end": "2026-11-16",
+   "endTime": null,
+   "firstSeen": "2026-11-06",
+   "grade": "C",
+   "id": "rn-e4ccd9fc34",
+   "kind": "체험단",
+   "lastSeen": "2026-11-06",
+   "linkChecked": "2026-11-06",
+   "linkFail": 0,
+   "linkStatus": "ok",
+   "listUrl": null,
+   "max": null,
+   "min": null,
+   "mode": "선정",
+   "needs": [
+    "블로그·SNS 후기 작성 조건",
+    "신청 후 선정되어야 참여(방문형)"
+   ],
+   "org": "리뷰노트",
+   "place": null,
+   "platHint": null,
+   "prize": "모둠소짜한판 (체험 제공)",
+   "reasons": [],
+   "src": "rn",
+   "srcUrls": [
+    "https://www.reviewnote.co.kr/campaigns/1525404"
+   ],
+   "start": null,
+   "status": "active",
+   "steps": [],
+   "tags": [
+    "방문 필요"
+   ],
+   "title": "[부산/수영구] 부산댁 광안리직영점 체험단",
+   "url": "https://www.reviewnote.co.kr/campaigns/1525404",
+   "who": null
+  },
   "rn-e4fd9b3406": {
    "announce": null,
    "cand": true,
@@ -157417,6 +158377,48 @@
    "url": "https://www.reviewnote.co.kr/campaigns/1505221",
    "who": null
   },
+  "rn-ec914d2199": {
+   "announce": null,
+   "cand": true,
+   "checked": null,
+   "count": null,
+   "end": "2026-11-16",
+   "endTime": null,
+   "firstSeen": "2026-11-06",
+   "grade": "C",
+   "id": "rn-ec914d2199",
+   "kind": "체험단",
+   "lastSeen": "2026-11-06",
+   "linkChecked": "2026-11-06",
+   "linkFail": 0,
+   "linkStatus": "ok",
+   "listUrl": null,
+   "max": null,
+   "min": null,
+   "mode": "선정",
+   "needs": [
+    "블로그·SNS 후기 작성 조건",
+    "신청 후 선정되어야 참여(방문형)"
+   ],
+   "org": "리뷰노트",
+   "place": null,
+   "platHint": null,
+   "prize": "자유식사권 4만원 + 10,000P 제공 (체험 제공)",
+   "reasons": [],
+   "src": "rn",
+   "srcUrls": [
+    "https://www.reviewnote.co.kr/campaigns/1526652"
+   ],
+   "start": null,
+   "status": "active",
+   "steps": [],
+   "tags": [
+    "방문 필요"
+   ],
+   "title": "[충북/청주시] 명장갈비 오송점 체험단",
+   "url": "https://www.reviewnote.co.kr/campaigns/1526652",
+   "who": null
+  },
   "rn-ecac35f7b6": {
    "announce": null,
    "cand": true,
@@ -158631,6 +159633,48 @@
    ],
    "title": "[서울/용산구] 간혹 양식주점 체험단",
    "url": "https://www.reviewnote.co.kr/campaigns/1528598",
+   "who": null
+  },
+  "rn-f069122396": {
+   "announce": null,
+   "cand": true,
+   "checked": null,
+   "count": null,
+   "end": "2026-11-16",
+   "endTime": null,
+   "firstSeen": "2026-11-06",
+   "grade": "C",
+   "id": "rn-f069122396",
+   "kind": "체험단",
+   "lastSeen": "2026-11-06",
+   "linkChecked": "2026-11-06",
+   "linkFail": 0,
+   "linkStatus": "ok",
+   "listUrl": null,
+   "max": null,
+   "min": null,
+   "mode": "선정",
+   "needs": [
+    "블로그·SNS 후기 작성 조건",
+    "신청 후 선정되어야 참여(방문형)"
+   ],
+   "org": "리뷰노트",
+   "place": null,
+   "platHint": null,
+   "prize": "2인 버거보이 세트 (체험 제공)",
+   "reasons": [],
+   "src": "rn",
+   "srcUrls": [
+    "https://www.reviewnote.co.kr/campaigns/1526817"
+   ],
+   "start": null,
+   "status": "active",
+   "steps": [],
+   "tags": [
+    "방문 필요"
+   ],
+   "title": "[서울/서초구] 버거보이 이수점 체험단",
+   "url": "https://www.reviewnote.co.kr/campaigns/1526817",
    "who": null
   },
   "rn-f13c7efad7": {
@@ -161364,6 +162408,48 @@
    "url": "https://www.reviewnote.co.kr/campaigns/1511177",
    "who": null
   },
+  "rn-f9b3b3d70e": {
+   "announce": null,
+   "cand": true,
+   "checked": null,
+   "count": null,
+   "end": "2026-11-16",
+   "endTime": null,
+   "firstSeen": "2026-11-06",
+   "grade": "C",
+   "id": "rn-f9b3b3d70e",
+   "kind": "체험단",
+   "lastSeen": "2026-11-06",
+   "linkChecked": "2026-11-06",
+   "linkFail": 0,
+   "linkStatus": "ok",
+   "listUrl": null,
+   "max": null,
+   "min": null,
+   "mode": "선정",
+   "needs": [
+    "블로그·SNS 후기 작성 조건",
+    "신청 후 선정되어야 참여(방문형)"
+   ],
+   "org": "리뷰노트",
+   "place": null,
+   "platHint": null,
+   "prize": "2인세트 + 사이드메뉴 1개 (67,000원) (체험 제공)",
+   "reasons": [],
+   "src": "rn",
+   "srcUrls": [
+    "https://www.reviewnote.co.kr/campaigns/1526828"
+   ],
+   "start": null,
+   "status": "active",
+   "steps": [],
+   "tags": [
+    "방문 필요"
+   ],
+   "title": "[서울/마포구] 육뇽 체험단",
+   "url": "https://www.reviewnote.co.kr/campaigns/1526828",
+   "who": null
+  },
   "rn-f9eb3900f5": {
    "announce": null,
    "cand": true,
@@ -161949,6 +163035,46 @@
    ],
    "title": "[충북/청주시] 굿밤 체험단",
    "url": "https://www.reviewnote.co.kr/campaigns/1528587",
+   "who": null
+  },
+  "rn-fb6c85e25c": {
+   "announce": null,
+   "cand": true,
+   "checked": null,
+   "count": null,
+   "end": "2026-11-16",
+   "endTime": null,
+   "firstSeen": "2026-11-06",
+   "grade": "C",
+   "id": "rn-fb6c85e25c",
+   "kind": "체험단",
+   "lastSeen": "2026-11-06",
+   "linkChecked": "2026-11-06",
+   "linkFail": 0,
+   "linkStatus": "ok",
+   "listUrl": null,
+   "max": null,
+   "min": null,
+   "mode": "선정",
+   "needs": [
+    "블로그·SNS 후기 작성 조건",
+    "신청 후 선정되어야 참여(기자단)"
+   ],
+   "org": "리뷰노트",
+   "place": null,
+   "platHint": null,
+   "prize": "원고료 10,000원 (체험 제공)",
+   "reasons": [],
+   "src": "rn",
+   "srcUrls": [
+    "https://www.reviewnote.co.kr/campaigns/1526335"
+   ],
+   "start": null,
+   "status": "active",
+   "steps": [],
+   "tags": [],
+   "title": "[재택] 위탁 급식 원케어 체험단",
+   "url": "https://www.reviewnote.co.kr/campaigns/1526335",
    "who": null
   },
   "rn-fb772d6278": {
@@ -163573,6 +164699,6 @@
   }
  },
  "meta": {
-  "updated": "2026-11-06T14:43:12+09:00"
+  "updated": "2026-11-06T15:36:34+09:00"
  }
 }
