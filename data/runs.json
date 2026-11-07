@@ -1,131 +1,5 @@
 [
  {
-  "active": 990,
-  "added": 9,
-  "at": "2026-10-27T20:43:37+09:00",
-  "links": {
-   "checked": 25,
-   "dead": 0,
-   "error": 0,
-   "ok": 25,
-   "skip": 0
-  },
-  "merged": 529,
-  "pruned": 0,
-  "rejected": 0,
-  "requests": 55,
-  "sec": 58.5,
-  "seeded": 0,
-  "sources": {
-   "busan": {
-    "listed": 4,
-    "merged": 4,
-    "new": 0,
-    "requests": 1,
-    "sec": 1.9,
-    "skipped": 0,
-    "status": "ok"
-   },
-   "danawa": {
-    "listed": 12,
-    "merged": 12,
-    "new": 0,
-    "requests": 2,
-    "sec": 2.0,
-    "skipped": 0,
-    "status": "ok"
-   },
-   "eventhouse": {
-    "listed": 400,
-    "merged": 253,
-    "new": 0,
-    "requests": 10,
-    "sec": 11.0,
-    "skipped": 1,
-    "status": "ok"
-   },
-   "events_kr": {
-    "listed": 163,
-    "merged": 0,
-    "new": 0,
-    "requests": 10,
-    "sec": 10.0,
-    "skipped": 0,
-    "status": "ok"
-   },
-   "gangnam": {
-    "status": "off"
-   },
-   "korissue": {
-    "listed": 160,
-    "merged": 157,
-    "new": 1,
-    "requests": 2,
-    "sec": 2.5,
-    "skipped": 2,
-    "status": "ok"
-   },
-   "mohw": {
-    "listed": 12,
-    "merged": 0,
-    "new": 0,
-    "requests": 1,
-    "sec": 2.6,
-    "skipped": 0,
-    "status": "ok"
-   },
-   "mrblog": {
-    "listed": 30,
-    "merged": 16,
-    "new": 7,
-    "requests": 1,
-    "sec": 1.4,
-    "skipped": 7,
-    "status": "ok"
-   },
-   "naver": {
-    "reason": "NAVER_CLIENT_ID/SECRET 없음",
-    "status": "unconfigured"
-   },
-   "reviewnote": {
-    "listed": 90,
-    "merged": 79,
-    "new": 1,
-    "requests": 1,
-    "sec": 0.6,
-    "skipped": 10,
-    "status": "ok"
-   },
-   "sbs": {
-    "listed": 19,
-    "merged": 8,
-    "new": 0,
-    "requests": 1,
-    "sec": 0.9,
-    "skipped": 11,
-    "status": "ok"
-   },
-   "telegram": {
-    "reason": "수집할 공개 채널 목록이 비어 있음",
-    "status": "unconfigured"
-   },
-   "touredu": {
-    "listed": 5,
-    "merged": 0,
-    "new": 0,
-    "requests": 1,
-    "sec": 1.2,
-    "skipped": 0,
-    "status": "ok"
-   },
-   "youtube": {
-    "reason": "YT_API_KEY 없음",
-    "status": "unconfigured"
-   }
-  },
-  "total": 1056
- },
- {
   "active": 996,
   "added": 6,
   "at": "2026-10-27T22:58:32+09:00",
@@ -27737,5 +27611,116 @@
    }
   },
   "total": 4045
+ },
+ {
+  "active": 2468,
+  "added": 2,
+  "at": "2026-11-07T23:11:47+09:00",
+  "links": {
+   "checked": 60,
+   "dead": 0,
+   "error": 0,
+   "ok": 60,
+   "skip": 0
+  },
+  "merged": 126,
+  "pruned": 0,
+  "quality": {
+   "excluded": 0,
+   "flagged": 12,
+   "merged": 0
+  },
+  "rejected": 0,
+  "requests": 68,
+  "sec": 71.6,
+  "seeded": 0,
+  "sources": {
+   "busan": {
+    "listed": 5,
+    "merged": 5,
+    "new": 0,
+    "requests": 1,
+    "sec": 2.5,
+    "skipped": 0,
+    "status": "ok"
+   },
+   "danawa": {
+    "listed": 12,
+    "merged": 12,
+    "new": 0,
+    "requests": 2,
+    "sec": 2.4,
+    "skipped": 0,
+    "status": "ok"
+   },
+   "eventhouse": {
+    "status": "wait"
+   },
+   "events_kr": {
+    "status": "wait"
+   },
+   "gangnam": {
+    "status": "off"
+   },
+   "korissue": {
+    "status": "wait"
+   },
+   "mohw": {
+    "listed": 12,
+    "merged": 0,
+    "new": 0,
+    "requests": 1,
+    "sec": 3.2,
+    "skipped": 0,
+    "status": "ok"
+   },
+   "mrblog": {
+    "listed": 30,
+    "merged": 23,
+    "new": 0,
+    "requests": 1,
+    "sec": 1.8,
+    "skipped": 7,
+    "status": "ok"
+   },
+   "naver": {
+    "status": "wait"
+   },
+   "reviewnote": {
+    "listed": 80,
+    "merged": 78,
+    "new": 2,
+    "requests": 1,
+    "sec": 0.3,
+    "skipped": 0,
+    "status": "ok"
+   },
+   "sbs": {
+    "listed": 16,
+    "merged": 8,
+    "new": 0,
+    "requests": 1,
+    "sec": 0.8,
+    "skipped": 8,
+    "status": "ok"
+   },
+   "telegram": {
+    "status": "wait"
+   },
+   "touredu": {
+    "listed": 2,
+    "merged": 0,
+    "new": 0,
+    "requests": 1,
+    "sec": 1.5,
+    "skipped": 0,
+    "status": "ok"
+   },
+   "youtube": {
+    "reason": "YT_API_KEY 없음",
+    "status": "unconfigured"
+   }
+  },
+  "total": 4047
  }
 ]
