@@ -218,6 +218,9 @@ def _kor_page(d, state, events, skipped, seen):
         ann = ds[2] if len(ds) >= 3 else None
         if end and end < today_kst():
             continue  # 주최사 검색은 이미 끝난 이벤트도 돌려준다
+        if start and (start - today_kst()).days > 45:
+            skipped[sid] = "연도 없는 일정이 먼 미래로 해석됨(지난 행사로 판단)"
+            continue
         kind, reason = map_form(fields.get("응모형태"))
         if reason == "유료":
             skipped[sid] = "유료 응모형태"

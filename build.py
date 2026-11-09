@@ -100,6 +100,8 @@ def main():
         "candidates": sum(1 for x in live if x.get("cand") and x.get("is_restricted") is not True),
         "shown": len(live), "ended": len(events) - len(live),
         "withForm": sum(1 for x in live if x.get("form_url")),
+        "withEntry": sum(1 for x in live if x.get("verification_grade") == "A" and x.get("entry_url")),
+        "grades": {g: sum(1 for x in live if x.get("verification_grade") == g) for g in "ABC"},
         "restricted": sum(1 for x in live if x.get("is_restricted") is True),
         "restrictReview": sum(1 for x in live if x.get("restriction_note")),
         "elec": sum(1 for x in live if x.get("elec")),
@@ -113,12 +115,13 @@ def main():
     payload = {"meta": meta, "events": events}
     # 첫 화면에는 기본 노출 이벤트만 싣고, 나머지는 필요할 때 불러온다
     live_ids = {x["id"] for x in live}
-    slim = lambda x: {k: v for k, v in x.items() if k not in ("listUrl", "isAuto", "excluded")}
+    # 첫 화면에는 버튼과 상세 창에 쓰는 검증 값만 싣고, 근거 주소 등은 전체본(events.json)에만 둔다
+    slim = lambda x: {k: v for k, v in x.items() if k not in ("listUrl", "isAuto", "excluded", "verification_evidence_url", "verification_status", "verified_at", "last_checked_at")}
     main = [slim(x) for x in live if x.get("is_restricted") is not True and x.get("grade") != "X"]
     main_ids = {x["id"] for x in main}
     extra = [slim(x) for x in live if x["id"] not in main_ids]
     # 종료 목록은 카테고리 구분과 목록 표시에 쓰는 값만
-    ENDED_KEYS = ("id", "title", "org", "end", "url", "status", "grade", "kind", "plats", "pub", "elec", "card", "pcats", "pmain", "prize", "form_url")
+    ENDED_KEYS = ("id", "title", "org", "end", "url", "status", "grade", "kind", "plats", "pub", "elec", "card", "pcats", "pmain", "prize", "original_url")
     ended = [{k: x.get(k) for k in ENDED_KEYS} for x in events if x["id"] not in live_ids]
     assert len(main) + len(extra) + len(ended) == len(events), "분리 파일 건수 불일치"
     meta["mainCount"], meta["extraCount"] = len(main), len(extra)

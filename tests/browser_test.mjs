@@ -131,21 +131,24 @@ try {
       const kids = [...t.children].map(k => k.tagName).join();
       const as = [...t.querySelectorAll('a')].map(a => a.textContent.trim());
       const words = t.textContent.replace(/\\s+/g, ' ').trim();
-      const exp = e.form_url ? ['응모 폼', '이벤트 공지'] : ['이벤트 공지'];
+      const lab = entryUrl(e) ? ENTRY_LABEL[e.entry_type] : null;
+      const exp = lab ? [lab, '이벤트 공지'] : ['이벤트 공지'];
       const due = t.querySelector('.due').textContent;
       const name = t.querySelector('.pz').textContent.trim();
       if (kids !== 'P,H3,DIV' || as.join() !== exp.join() || !dateRx.test(due) || !name.includes(e.card) || words.replace(/\\s/g, '') !== (due + name + as.join('')).replace(/\\s/g, '')) bad.push(e.id);
       for (const a of t.querySelectorAll('a')) {
-        const want = a.textContent.includes('응모 폼') ? e.form_url : e.url;
+        const want = a.textContent.includes('이벤트 공지') ? noticeUrl(e) : e.entry_url;
         if (a.target !== '_blank' || !/noopener/.test(a.rel) || a.href !== new URL(want).href) bad.push(e.id);
       }
-      if (e.form_url) form++; else plain++;
+      if (lab) form++; else plain++;
       if (!e.end) noDate++;
     }
     return { n: bad.length, bad: bad.slice(0, 3), form, plain, noDate, total: cur.length }; })()`);
-  check("카드 전체: 날짜·경품명·응모 폼·이벤트 공지만, 링크 정확", cards.n === 0 && cards.form > 0, JSON.stringify(cards));
-  const noCardFake = await ev(`live.every(e => e.form_url ? true : !/응모 폼/.test((() => { const d = document.createElement('div'); d.innerHTML = links(e); return d.textContent; })()))`);
-  check("폼이 확인되지 않으면 응모 폼 버튼 없음", noCardFake);
+  check("카드 전체: 날짜·경품명·응모 폼·이벤트 공지만, 링크 정확", cards.n === 0, JSON.stringify(cards));
+  const noCardFake = await ev(`live.filter(e => e.verification_grade !== 'A').every(e => { const d = document.createElement('div'); d.innerHTML = links(e); return d.querySelectorAll('a.go.form').length === 0 && d.querySelectorAll('a.go.note').length === 1; })`);
+  check("A등급이 아니면 응모 버튼 없고 이벤트 공지만", noCardFake);
+  const aOk = await ev(`live.filter(e => e.verification_grade === 'A').every(e => { const d = document.createElement('div'); d.innerHTML = links(e); return d.querySelectorAll('a.go.form').length === 1; })`);
+  check("A등급은 응모 버튼 표시", aOk);
 
   // 카테고리 분류: 선택하면 해당 경품만, 같은 이벤트 중복 없음
   for (const k of ["gifticon", "coffee", "elec", "food", "beauty", "gift", "travel", "life", "etc"]) {

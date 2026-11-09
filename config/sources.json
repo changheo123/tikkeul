@@ -172,5 +172,10 @@
       "channels": []
     }
   },
-  "prize_pages_per_run": 80
+  "prize_pages_per_run": 80,
+  "verify_pages_per_run": 120,
+  "verify_sec": 240,
+  "verify_min_interval_sec": 1.5,
+  "verify_render_per_run": 25,
+  "verify_render_sec": 120
 }
