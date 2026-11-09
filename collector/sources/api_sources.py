@@ -1,5 +1,6 @@
 # 키가 있어야 켜지는 공식 API 출처(유튜브·네이버)와 공개 채널 미리보기(텔레그램)
 # 키·채널이 없으면 '연동 필요'로 기록만 하고 요청하지 않는다
+import html as htmllib
 import os
 import re
 import datetime as dt
@@ -29,14 +30,14 @@ def youtube(f, state, cfg):
     for q in cfg.get("queries", []) + picked:
         r = f.get("https://www.googleapis.com/youtube/v3/search", check_robots=False, params={
             "part": "snippet", "q": q, "type": "video", "regionCode": "KR", "relevanceLanguage": "ko",
-            "publishedAfter": after, "maxResults": 25, "order": "date", "key": key})
+            "publishedAfter": after, "maxResults": 25, "order": "date"}, headers={"X-Goog-Api-Key": key})
         r.raise_for_status()
         ids += [it["id"]["videoId"] for it in r.json().get("items", [])]
     ids = list(dict.fromkeys(ids))
     events, skipped = [], {}
     for i in range(0, len(ids), 50):  # 영상 설명은 videos.list로(50개당 1단위)
         r = f.get("https://www.googleapis.com/youtube/v3/videos", check_robots=False,
-                  params={"part": "snippet", "id": ",".join(ids[i:i + 50]), "key": key})
+                  params={"part": "snippet", "id": ",".join(ids[i:i + 50])}, headers={"X-Goog-Api-Key": key})
         r.raise_for_status()
         for it in r.json().get("items", []):
             sn = it["snippet"]
@@ -66,8 +67,8 @@ def naver(f, state, cfg):
             r.raise_for_status()
             for it in r.json().get("items", []):
                 listed += 1
-                title = re.sub(r"<[^>]+>", "", it["title"])
-                desc = re.sub(r"<[^>]+>", "", it.get("description", ""))
+                title = htmllib.unescape(re.sub(r"<[^>]+>", "", it["title"]))
+                desc = htmllib.unescape(re.sub(r"<[^>]+>", "", it.get("description", "")))
                 # 검색 결과 요약만 쓰므로 경품 단어와 마감 날짜가 요약에 함께 있어야 후보로 둔다
                 if not (STRONG.search(title + desc) and find_dates(desc)):
                     skipped[it["link"]] = "요약에 경품·날짜 없음"

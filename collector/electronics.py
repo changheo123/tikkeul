@@ -8,7 +8,7 @@ TYPES = {  # 키: (화면 이름, 판별 정규식)
     "tablet": ("태블릿", r"아이패드|iPad|갤럭시\s*탭|태블릿"),
     "watch": ("스마트워치", r"애플\s*워치|Apple\s*Watch|갤럭시\s*워치|스마트\s*워치"),
     "console": ("게임기", r"플레이스테이션|PS\s*5|(?<![가-힣])플스\s*5?|닌텐도|Nintendo|스위치\s*2|Xbox|엑스박스"),
-    "other": ("기타", r"모니터(?!링|요원|단)|카메라|고프로|액션캠|빔\s*프로젝터|프로젝터|로봇\s*청소기|(?<![A-Za-z가-힣])TV(?![A-Za-z])|(?<![가-힣])티비"),
+    "other": ("기타", r"모니터(?!링|요원|단)|카메라|고프로|액션캠|인스타\s*360|빔\s*프로젝터|프로젝터|로봇\s*청소기|(?<![A-Za-z가-힣])TV(?![A-Za-z])|(?<![가-힣])티비"),
 }
 _RX = {k: re.compile(v[1], re.I) for k, v in TYPES.items()}
 # 전자기기 본체가 아닌 것: 키워드 바로 뒤에 붙는 액세서리·이용권
@@ -39,6 +39,7 @@ def prize_texts(e):
     """전자기기를 찾아볼 경품 문구들. 경품이 불명확할 때만 제목을, 본문은 경품 안내 줄만 쓴다."""
     prize = (e.get("prize") or "").strip()
     texts = [prize] if prize else []
+    texts += list(e.get("prizeAll") or [])  # 1등 외 전체 경품
     for ln in (e.get("rawText") or "").splitlines():
         if PRIZE_LINE.search(ln) and len(ln) <= 120:
             texts.append(ln)
@@ -56,7 +57,7 @@ def classify(e):
     for t in texts:
         found += _types_in(t)
     used = list(texts)
-    if not prize or ".." in prize or GENERIC_PRIZE.match(prize):
+    if not e.get("prizeAll") and (not prize or ".." in prize or GENERIC_PRIZE.match(prize)):
         # 경품 칸이 비었거나 잘린 경우: 제목에서 기기 이름 바로 뒤에 증정 표현이 있을 때만 인정
         for k, rx in _RX.items():
             if re.search(f"(?:{rx.pattern})" + TITLE_GIVE, title, re.I) and not any(NOT_DEVICE.match(title[m.end():m.end() + 16]) for m in rx.finditer(title)):

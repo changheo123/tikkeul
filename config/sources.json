@@ -12,6 +12,12 @@
     3
    ]
   },
+  "korissue_orgs": {
+   "enabled": true,
+   "interval_min": 60,
+   "per_run": 60,
+   "revisit_days": 3
+  },
   "events_kr": {
    "enabled": true,
    "interval_min": 60,

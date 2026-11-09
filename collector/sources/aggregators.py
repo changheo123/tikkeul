@@ -94,6 +94,8 @@ def _eh_rows(f, url):
             v = text_of((td.xpath("./div[contains(@class,'td_r')]") or [None])[0])
             if k:
                 fields[k] = clean(v)
+        # 목록의 숨은 칸에 1등 외 전체 경품이 들어 있다
+        fields["전체경품"] = [clean(x) for x in det.xpath(".//div[contains(@class,'div_gift_sort')]//li/text()") if clean(x)]
         subj = clean(" ".join(row.xpath(".//div[contains(@class,'list_subject')]//text()")))
         icon = re.search(r"list_(\d+)\.gif", " ".join(row.xpath(".//div[contains(@class,'list_subject')]//img/@src")))
         rows.append((no, subj, fields, EH_ICON.get(icon.group(1)) if icon else None))
@@ -122,6 +124,8 @@ def _eh_add(no, subj, fd, plat, today, events, seen, skipped):
                           list_url=url, plat_hint=plat)
     if ev:
         ev["tags"].append("원문 미확인")
+        if fd.get("전체경품"):
+            ev["prizeAll"] = [tidy_prize(x) for x in fd["전체경품"]]
         events.append(ev)
         seen.append(ev["id"])
     else:
@@ -154,7 +158,8 @@ def eventhouse(f, state, cfg):
     st = state.setdefault("eventhouse", {})
     now = dt.datetime.now().timestamp()
     # 전체 훑기는 full_every_min 간격, 그 사이에는 각 플랫폼 앞쪽 몇 쪽만
-    full = now - st.get("lastFull", 0) >= cfg.get("full_every_min", 360) * 60
+    # 전체 경품 목록(prizeAll)을 기존 이벤트에도 채우기 위해 처음 한 번은 전체를 훑는다
+    full = now - st.get("lastFull", 0) >= cfg.get("full_every_min", 360) * 60 or not st.get("prizeAllDone")
     max_pages = cfg.get("max_pages", 12) if full else cfg.get("quick_pages", 2)
     today = today_kst()
     events, skipped, seen, listed = [], {}, [], 0
@@ -171,6 +176,7 @@ def eventhouse(f, state, cfg):
                 break  # 등록순 목록이라 진행 중인 글이 없는 쪽이 나오면 그 뒤는 모두 지난 글
     if full:
         st["lastFull"] = now
+        st["prizeAllDone"] = True
     return {"events": events, "seen": seen, "listed": listed, "skipped": skipped}
 
 
@@ -179,52 +185,83 @@ KOR = "https://korissue.mycafe24.com/"
 KOR_PLAT = {"홈페이지": "web", "페이스북": "web", "블로그": "naver", "인스타": "insta", "유튜브": "yt"}
 
 
+def _kor_page(d, state, events, skipped, seen):
+    """korissue 목록 HTML(마감별·주최사별 공통)을 읽는다. 주최사 번호는 다음 조회를 위해 기억한다. 읽은 건수를 돌려준다."""
+    parents = state.setdefault("korissue", {}).setdefault("parents", {})
+    listed = 0
+    for g in d.xpath("//div[@class='g']"):
+        sub = g.getnext()
+        if sub is None or "gsub" not in (sub.get("class") or ""):
+            continue
+        listed += 1
+        head = clean(g.text_content()).lstrip("● ").strip()
+        m = re.match(r"\[\s*([^\]]+?)\s*\]\s*(.+)", head)
+        org, title = (m.group(1), m.group(2)) if m else (None, head)
+        for oc in sub.xpath(".//span[@class='sitemore']/@onclick"):
+            pm = re.search(r"\?parent=(\d+)&keyword=([^'\"]+)", oc)
+            if pm:
+                parents.setdefault(pm.group(1), {"kw": pm.group(2), "at": None})
+        fields, links = {}, {}
+        for p in sub.xpath("./p"):
+            t = clean(p.text_content())
+            mm = re.match(r"ㆍ\s*([^ㆍ]+?)\s*ㆍ\s*(.*)", t)
+            if mm:
+                fields[mm.group(1)] = mm.group(2)
+            for a in p.xpath(".//a[@href]"):
+                links[clean(a.text_content())] = a.get("href")
+        num = fields.get("응모번호", "")
+        plat = next((v for k, v in KOR_PLAT.items() if k in num), None)
+        sid = (re.search(r"(\d{4,})-\d+", num) or re.search(r"(\d+)", g.get("id") or "0")).group(1)
+        ds = guess_year_dates(fields.get("응모기간", ""))
+        start, end = (ds[0], ds[1]) if len(ds) >= 2 else (None, None)
+        ann = ds[2] if len(ds) >= 3 else None
+        if end and end < today_kst():
+            continue  # 주최사 검색은 이미 끝난 이벤트도 돌려준다
+        kind, reason = map_form(fields.get("응모형태"))
+        if reason == "유료":
+            skipped[sid] = "유료 응모형태"
+            continue
+        orig = links.get("응모주소") or links.get("폼양식")
+        if not orig or not orig.startswith("http"):
+            skipped[sid] = "응모 주소 없음"
+            continue
+        prize = tidy_prize(fields.get("경품내역"))
+        body = "\n".join([f"응모형태: {fields.get('응모형태', '')}", "참여 방법", *numbered(fields.get("응모메모", ""))])
+        ev, why = build_event(src="ki", sid=sid, title=title, url=orig, org=org, body=body, start=start, end=end,
+                              announce=ann, prize=prize, kind_hint=kind, extra_reasons=[reason] if reason else [],
+                              plat_hint=plat, links=[v for k, v in links.items() if k != "홈"])
+        if ev:
+            if links.get("폼양식") and links.get("폼양식") != orig:
+                ev["needs"] = [f"응모 양식: {links['폼양식']}"]
+            full = [x.strip(" ㆍ") for x in text_of((sub.xpath(".//div[@class='gsort']") or [None])[0]).splitlines() if x.strip(" ㆍ")]
+            if full:
+                ev["prizeAll"] = [tidy_prize(x) for x in full]
+            events.append(ev)
+            seen.append(ev["id"])
+        else:
+            skipped[sid] = why
+    return listed
+
+
 def korissue(f, state, cfg):
     events, skipped, seen, listed = [], {}, [], 0
     for opt in cfg.get("options", [2, 3]):  # 2=오늘 마감, 3=내일 마감
-        d = f.doc(f"{KOR}?option={opt}")
-        for g in d.xpath("//div[@class='g']"):
-            sub = g.getnext()
-            if sub is None or "gsub" not in (sub.get("class") or ""):
-                continue
-            listed += 1
-            head = clean(g.text_content()).lstrip("● ").strip()
-            m = re.match(r"\[\s*([^\]]+?)\s*\]\s*(.+)", head)
-            org, title = (m.group(1), m.group(2)) if m else (None, head)
-            fields, links = {}, {}
-            for p in sub.xpath("./p"):
-                t = clean(p.text_content())
-                mm = re.match(r"ㆍ\s*([^ㆍ]+?)\s*ㆍ\s*(.*)", t)
-                if mm:
-                    fields[mm.group(1)] = mm.group(2)
-                for a in p.xpath(".//a[@href]"):
-                    links[clean(a.text_content())] = a.get("href")
-            num = fields.get("응모번호", "")
-            plat = next((v for k, v in KOR_PLAT.items() if k in num), None)
-            sid = (re.search(r"(\d{4,})-\d+", num) or re.search(r"(\d+)", g.get("id") or "0")).group(1)
-            ds = guess_year_dates(fields.get("응모기간", ""))
-            start, end = (ds[0], ds[1]) if len(ds) >= 2 else (None, None)
-            ann = ds[2] if len(ds) >= 3 else None
-            kind, reason = map_form(fields.get("응모형태"))
-            if reason == "유료":
-                skipped[sid] = "유료 응모형태"
-                continue
-            orig = links.get("응모주소") or links.get("폼양식")
-            if not orig or not orig.startswith("http"):
-                skipped[sid] = "응모 주소 없음"
-                continue
-            prize = tidy_prize(fields.get("경품내역"))
-            body = "\n".join([f"응모형태: {fields.get('응모형태', '')}", "참여 방법", *numbered(fields.get("응모메모", ""))])
-            ev, why = build_event(src="ki", sid=sid, title=title, url=orig, org=org, body=body, start=start, end=end,
-                                  announce=ann, prize=prize, kind_hint=kind, extra_reasons=[reason] if reason else [],
-                                  plat_hint=plat, links=[v for k, v in links.items() if k != "홈"])
-            if ev:
-                if links.get("폼양식") and links.get("폼양식") != orig:
-                    ev["needs"] = [f"응모 양식: {links['폼양식']}"]
-                events.append(ev)
-                seen.append(ev["id"])
-            else:
-                skipped[sid] = why
+        listed += _kor_page(f.doc(f"{KOR}?option={opt}"), state, events, skipped, seen)
+    return {"events": events, "seen": seen, "listed": listed, "skipped": skipped}
+
+
+def korissue_orgs(f, state, cfg):
+    """목록에서 본 주최사의 진행 이벤트를 주최사별로 읽어 원본 응모 링크를 일찍 확보한다.
+    사이트가 화면에 연결해 둔 주최사 번호만 쓴다(번호를 임의로 넘겨 가며 조회하지 않음)."""
+    parents = state.setdefault("korissue", {}).setdefault("parents", {})
+    t = today_kst()
+    revisit = cfg.get("revisit_days", 3)
+    todo = [k for k, v in parents.items() if not v.get("at") or (t - dt.date.fromisoformat(v["at"])).days >= revisit]
+    todo.sort(key=lambda k: parents[k].get("at") or "")
+    events, skipped, seen, listed = [], {}, [], 0
+    for pid in todo[:cfg.get("per_run", 60)]:
+        listed += _kor_page(f.doc(f"{KOR}?parent={pid}&keyword={parents[pid]['kw']}"), state, events, skipped, seen)
+        parents[pid]["at"] = t.isoformat()
     return {"events": events, "seen": seen, "listed": listed, "skipped": skipped}
 
 

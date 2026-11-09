@@ -128,6 +128,7 @@ def test_electronics():
     assert _el(prize="에어팟 Pro 3 1명")[1] == ["에어팟 Pro 3"]
     assert _el(prize="에어팟 5세대 2명")[1] == ["에어팟 5세대"]
     assert _el(prize="템플스테이 1박 2일 체험권")[0] == []
+    assert _el(prize="인스타360 GO 3S 2명")[0] == ["other"]
     # 모델이 없으면 만들지 않는다
     assert _el(prize="노트북 1명") == (["pc"], [])
     # 액세서리·이용권·시청 서비스·다른 뜻은 제외
@@ -149,6 +150,77 @@ def test_restriction_is_boolean_with_note():
     a, b = db["events"]["a"], db["events"]["b"]
     assert a["is_restricted"] is False and a["restriction_reason"] is None and "확인 필요" in a["restriction_note"]  # 불확실은 확정하지 않음
     assert b["is_restricted"] is True and b["restriction_reason"]
+
+
+def test_full_prize_list_and_html():
+    assert _el(prize="올리브영 상품권 10만원권 1명", prizeAll=["올리브영 상품권 10만원권 1명", "에어팟 프로3 2명", "커피 쿠폰 490명"])[0] == ["audio"]
+    # 전체 목록이 있으면 제목의 언급만으로 분류하지 않는다
+    assert _el(title="맥북 받자", prize="상품 1명", prizeAll=["커피 쿠폰 10명"])[0] == []
+    from lxml import html as LH
+    from collector.sources import aggregators as A
+    page = """<div class='g' id='89508'><b> ● [행안부] 퀴즈 풀고 에어팟 받자 이벤트!!</b></div><div class='gsub'>
+    <p>ㆍ응모번호ㆍ 인스타 89508-010</p><p>ㆍ주최회사ㆍ<b>행정안전부<span class='sitemore' onclick="gow('?parent=20978&keyword=%EA%B5%AD');"></span></b></p>
+    <p>ㆍ응모형태ㆍ퀴즈/퍼즐</p><p>ㆍ경품내역ㆍ에어팟-1명</p><p>ㆍ응모기간ㆍ11/01~ 12/30 (12/31)</p>
+    <p>ㆍ응모주소ㆍ<a href='https://www.instagram.com/p/AbC/'>응모주소</a> <a href='https://naver.me/x1'>폼양식</a></p><p>ㆍ응모메모ㆍ① 팔로우 ② 댓글</p>
+    <div class='gsort' id='gift1'>ㆍ에어팟-1명<br>ㆍ커피-30명</div></div>"""
+    st, evs, sk, seen = {}, [], {}, []
+    assert A._kor_page(LH.fromstring("<div>" + page + "</div>"), st, evs, sk, seen) == 1
+    assert evs[0]["url"] == "https://www.instagram.com/p/AbC/" and evs[0]["prizeAll"] == ["에어팟 1명", "커피 30명"]
+    assert st["korissue"]["parents"]["20978"]["kw"] == "%EA%B5%AD" and "https://naver.me/x1" in evs[0]["formLinks"]
+
+
+class _Resp:
+    def __init__(self, data):
+        self.data = data
+
+    def raise_for_status(self):
+        pass
+
+    def json(self):
+        return self.data
+
+
+def test_youtube_api_uses_header_key(monkeypatch):
+    from collector.sources import api_sources as S
+    monkeypatch.setenv("YT_API_KEY", "SECRET123")
+    calls = []
+
+    class F:
+        def get(self, url, **kw):
+            calls.append((url, kw))
+            if url.endswith("/search"):
+                return _Resp({"items": [{"id": {"videoId": "v1"}}, {"id": {"videoId": "v2"}}]})
+            return _Resp({"items": [
+                {"id": "v1", "snippet": {"title": "구독 이벤트", "channelTitle": "채널", "description": "에어팟 프로 3 1명 추첨 증정! 구독 후 댓글. 기간 2099.11.01 ~ 2099.11.30"}},
+                {"id": "v2", "snippet": {"title": "브이로그", "channelTitle": "채널", "description": "오늘의 일상"}}]})
+
+    st = {}
+    r = S.youtube(F(), st, {"queries": ["a"], "elec_queries": ["b", "c", "d"]})
+    assert len(r["events"]) == 1 and r["events"][0]["url"].endswith("v1") and r["events"][0]["end"] == "2099-11-30"
+    assert all("key" not in kw.get("params", {}) and kw["headers"]["X-Goog-Api-Key"] == "SECRET123" for _, kw in calls)
+    assert sum(u.endswith("/search") for u, _ in calls) == 3 and st["youtube"]["elecIdx"] == 2  # 전자기기 검색어 2개만
+
+
+def test_naver_api(monkeypatch):
+    from collector.sources import api_sources as S
+    monkeypatch.setenv("NAVER_CLIENT_ID", "ID1")
+    monkeypatch.setenv("NAVER_CLIENT_SECRET", "SEC1")
+    seen = []
+
+    class F:
+        def get(self, url, **kw):
+            seen.append(url)
+            assert kw["headers"]["X-Naver-Client-Secret"] == "SEC1"
+            return _Resp({"items": [{"title": "<b>에어팟</b> 증정 &amp; 이벤트", "description": "경품 추첨 응모 2099.11.01 ~ 2099.11.30", "link": "https://blog.naver.com/a/1", "bloggername": "브랜드"}]})
+
+    r = S.naver(F(), {}, {"queries": ["q1"], "sns_queries": ["q2"], "types": ["blog", "webkr"]})
+    assert len(seen) == 2 and r["events"][0]["title"] == "에어팟 증정 & 이벤트"
+
+
+def test_hide_secrets(monkeypatch):
+    monkeypatch.setenv("YT_API_KEY", "SECRET123")
+    assert "SECRET123" not in P.hide_secrets("HTTPError for url: https://x/y?part=a&key=SECRET123")
+    assert "abc" not in P.hide_secrets("https://x/y?client_secret=abc&q=1")
 
 
 def test_status_expiry():

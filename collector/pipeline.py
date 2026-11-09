@@ -25,6 +25,7 @@ CONFIG = ROOT / "config" / "sources.json"
 SOURCES = {
     # 원문 링크를 주는 출처를 먼저 돌려, 같은 이벤트가 목록 사이트에서 나오면 원문 쪽에 합쳐지게 한다
     "korissue": aggregators.korissue,
+    "korissue_orgs": aggregators.korissue_orgs,
     "events_kr": events_kr.collect,
     "eventhouse": aggregators.eventhouse,
     "eventhouse_search": aggregators.eventhouse_search,
@@ -148,6 +149,8 @@ def merge(db, ev, today, stats):
     stats["merged"] += 1
     o["lastSeen"] = today
     o.setdefault("srcUrls", [])
+    if len(ev.get("prizeAll") or []) > len(o.get("prizeAll") or []):
+        o["prizeAll"] = ev["prizeAll"]  # 전체 경품 목록은 더 자세한 쪽으로
     for u in ev.get("formLinks", []):  # 응모 폼 후보는 어느 출처에서 왔든 모은다(승인 장부 포함)
         if u not in o.setdefault("formLinks", []):
             o["formLinks"].append(u)
@@ -168,6 +171,15 @@ def merge(db, ev, today, stats):
             o["url"] = ev["url"]
             o["tags"] = [t for t in o["tags"] if t != "원문 미확인"]
     return oid
+
+
+def hide_secrets(text):
+    """공개 저장소에 남는 실행 기록에서 API 키·비밀값을 가린다."""
+    for name in ("YT_API_KEY", "NAVER_CLIENT_ID", "NAVER_CLIENT_SECRET"):
+        v = os.environ.get(name)
+        if v:
+            text = text.replace(v, "***")
+    return re.sub(r"(?i)([?&](?:key|client_secret|token)=)[^&\s'\"]+", r"\1***", text)
 
 
 def normalize_dates(db):
@@ -488,8 +500,8 @@ def main(argv=None):
             state.setdefault("lastRun", {})[name] = now.isoformat(timespec="seconds")
         except Exception as e:
             # 출처 하나가 실패해도 다른 출처와 기존 데이터는 그대로 둔다(다음 실행에서 재시도)
-            run["sources"][name] = {"status": "error", "error": f"{type(e).__name__}: {e}"[:300],
-                                    "trace": traceback.format_exc()[-600:]}
+            run["sources"][name] = {"status": "error", "error": hide_secrets(f"{type(e).__name__}: {e}")[:300],
+                                    "trace": hide_secrets(traceback.format_exc())[-600:]}
             state.setdefault("fails", {})[name] = state.get("fails", {}).get(name, 0) + 1
         else:
             state.setdefault("fails", {})[name] = 0

@@ -428,7 +428,7 @@ function card(e) {
   if (done.has(e.id)) tags.push('<span class="tag mine">참여함</span>');
   if (e.is_restricted === true) tags.push('<span class="tag gX">참여 제한</span>');
   else if (e.restriction_note) tags.push('<span class="tag gX">참여 조건 확인</span>');
-  if ((e.elec || []).length) tags.push(`<span class="tag g gS">전자기기: ${e.elec.map(k => ELEC[k]).join("·")}</span>`);
+  if ((e.elec || []).length) tags.push(`<span class="tag g gS">전자기기: ${(e.elec_models || []).length ? esc(e.elec_models.slice(0, 2).join("·")) : e.elec.map(k => ELEC[k]).join("·")}</span>`);
   tags.push(e.free === "ok" ? '<span class="tag free">무료 참여</span>' : '<span class="tag gX">무료 여부 원문 확인</span>');
   tags.push(gradeTag);
   if (e.tax) tags.push('<span class="tag gX">제세공과금 확인</span>');
@@ -547,6 +547,7 @@ function openDetail(id) {
     fact("무료 여부·추가 비용", p(e.free === "ok" ? "무료 참여" + (e.tax ? " · 제세공과금 확인 필요" : " · 추가 비용 안내 없음") : '<span class="unk">원문 확인 필요</span>')),
     ...(e.is_restricted && e.restriction_reason ? [fact("참여 제한 사유", p(esc(e.restriction_reason)))] : []),
     ...(!e.is_restricted && e.restriction_note ? [fact("참여 조건 확인", p(esc(e.restriction_note)))] : []),
+    ...((e.prizeAll || []).length > 1 ? [fact("전체 경품", ul(e.prizeAll))] : []),
     ...((e.elec_models || []).length ? [fact("경품 모델(원문 표기)", p(esc(e.elec_models.join(", "))))] : []),
     fact("유의사항", ul(notes)),
     ...(safeUrl(e.form_url) ? [fact("응모 폼", `<p class="url">${esc(e.form_url)}</p>`)] : []),
