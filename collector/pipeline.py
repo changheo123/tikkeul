@@ -16,7 +16,7 @@ from lxml import html as LH
 from . import electronics, forms, restrict
 from .common import Fetcher, norm_date, now_kst, today_kst
 from .extract import norm_url, norm_title, is_show_invite, pay_required
-from .sources import events_kr, public_boards, api_sources, aggregators, experience
+from .sources import events_kr, public_boards, api_sources, aggregators, experience, contest_boards
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
@@ -34,6 +34,8 @@ SOURCES = {
     "reviewnote": experience.reviewnote,
     "mrblog": experience.mrblog,
     "gangnam": experience.gangnam,
+    "contestkorea": contest_boards.contestkorea,
+    "wevity": contest_boards.wevity,
     "busan": public_boards.busan,
     "mohw": public_boards.mohw,
     "touredu": public_boards.touredu,
@@ -107,6 +109,12 @@ def find_dup(db, ev, index):
             continue
         if ot and ((len(ot) >= 6 and (t in ot or ot in t)) or difflib.SequenceMatcher(None, t, ot).ratio() >= 0.86):
             return oid
+    # 공모전 포털은 제목을 다르게 쓰는 일이 많아, 주최·시작일·마감일이 모두 같으면 같은 이벤트로 본다
+    if ev.get("src") in ("ck", "wv") and og and len(og) >= 3 and ev.get("start") and ev.get("end"):
+        for oid, ot, oo in by_end.get(ev["end"], []):
+            o = db["events"].get(oid, {})
+            if oo and (og in oo or oo in og) and o.get("start") == ev["start"]:
+                return oid
     return None
 
 
@@ -131,7 +139,7 @@ def _index(db):
     return db["_ix"]
 
 
-AGG_URL = re.compile(r"events\.kr/|t\.me/|eventhouse\.kr/")
+AGG_URL = re.compile(r"events\.kr/|t\.me/|eventhouse\.kr/|contestkorea\.com/|wevity\.com/")
 
 
 def merge(db, ev, today, stats):
@@ -474,6 +482,7 @@ def main(argv=None):
             run["sources"][name] = {"status": "wait"}
             continue
         s0, req0 = time.time(), f.count
+        f.min_interval = sc.get("min_interval_sec", cfg.get("min_interval_sec", 1.0))  # 사이트별 요청 간격
         try:
             r = fn(f, state, sc)
             added0, merged0 = stats["added"], stats["merged"]

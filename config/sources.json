@@ -90,6 +90,19 @@
    "max_items": 80,
    "note": "GitHub(해외) 서버에서 접속 시간 초과. 해외 접속 차단으로 보여 우회하지 않고 끔"
   },
+  "contestkorea": {
+   "enabled": true,
+   "interval_min": 120,
+   "min_interval_sec": 2.0,
+   "max_pages": 8,
+   "max_details": 40
+  },
+  "wevity": {
+   "enabled": true,
+   "interval_min": 360,
+   "min_interval_sec": 3.0,
+   "max_pages": 3
+  },
   "busan": {
    "enabled": true,
    "interval_min": 60

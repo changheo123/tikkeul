@@ -223,6 +223,47 @@ def test_hide_secrets(monkeypatch):
     assert "abc" not in P.hide_secrets("https://x/y?client_secret=abc&q=1")
 
 
+def test_contest_is_separated():
+    e = ev("환경 영상 공모전", "https://a.kr/c1", body="작품 접수 후 심사, 상금 100만원 추첨 아님 이벤트")
+    assert "공모전" in e["reasons"] and e["grade"] == "X"
+    e2 = ev("댓글 달고 커피 받자", "https://a.kr/c2", body="댓글 남기면 커피 기프티콘 10명 추첨")
+    assert e2["grade"] != "X"
+
+
+def test_expand_short_url():
+    from collector import forms as F
+
+    class R:
+        def __init__(self, code, loc=None):
+            self.status_code, self.headers = code, {"Location": loc} if loc else {}
+
+    class Fake:
+        n = 0
+
+        def get(self, url, **kw):
+            Fake.n += 1
+            return R(302, "https://forms.gle/AbC")
+
+    c = {}
+    assert F.expand(Fake(), "https://is.gd/x", c, "2026-11-09") == "https://forms.gle/AbC"
+    assert F.expand(Fake(), "https://is.gd/x", c, "2026-11-09") == "https://forms.gle/AbC" and Fake.n == 1  # 캐시
+    assert F.expand(Fake(), "https://example.com/page", c, "2026-11-09") == "https://example.com/page"
+
+
+def test_portal_duplicate_by_org_and_period():
+    db = {"events": {}}
+    st = {"added": 0, "merged": 0}
+    a = ev("심평원 광고 보고 커피 받자 이벤트!!", "https://a.kr/x1", end="2099-11-15", org="건강보험심사평가원")
+    a["start"] = "2099-10-19"
+    P.merge(db, a, "2026-11-09", st)
+    b = ev("건강보험심사평가원 광고 온에어 기념 이벤트", "https://www.wevity.com/?ix=1", end="2099-11-15", org="건강보험심사평가원")
+    b.update({"start": "2099-10-19", "src": "wv"})
+    assert P.merge(db, b, "2026-11-09", st) == a["id"]
+    c = ev("다른 기간 이벤트", "https://www.wevity.com/?ix=2", end="2099-11-15", org="건강보험심사평가원")
+    c.update({"start": "2099-11-01", "src": "wv"})
+    assert P.merge(db, c, "2026-11-09", st) != a["id"]
+
+
 def test_status_expiry():
     db = {"events": {}}
     st = {"added": 0, "merged": 0}

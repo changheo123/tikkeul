@@ -84,6 +84,31 @@ def resolve_short(f, url, cache, today, retry_days=3):
     return None, ("not_form" if status == "not_form" else "unverified")
 
 
+SHORTENERS = re.compile(r"^https?://(?:www\.)?(?:is\.gd|tinyurl\.com|vo\.la|bit\.ly|han\.gl|url\.kr|me2\.do|buly\.kr|c11\.kr|t\.ly|abit\.ly|shorturl\.at)/", re.I)
+
+
+def expand(f, url, cache, today):
+    """일반 단축 주소를 이동 주소(Location)만 읽어 실제 주소로 푼다. 단축 주소가 아니거나 못 풀면 그대로 돌려준다."""
+    if not url or not SHORTENERS.match(url):
+        return url
+    if url in cache:
+        return cache[url]
+    cur = url
+    try:
+        for _ in range(4):
+            r = f.get(cur, allow_redirects=False)
+            loc = r.headers.get("Location")
+            if r.status_code not in (301, 302, 303, 307, 308) or not loc:
+                break
+            cur = requests_join(cur, loc)
+            if not SHORTENERS.match(cur):
+                break
+    except Exception:
+        return url  # 다음 실행에서 다시 시도(결과를 캐시하지 않음)
+    cache[url] = cur
+    return cur
+
+
 def requests_join(base, loc):
     from urllib.parse import urljoin
     return urljoin(base, loc)

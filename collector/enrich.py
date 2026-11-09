@@ -23,7 +23,7 @@ def platforms(e):
 
 def via_list(e):
     """응모 링크가 주최 원문이 아니라 모음 사이트·공유 채널인 경우."""
-    return bool(re.search(r"events\.kr/|t\.me/|eventhouse\.kr/", e.get("url") or ""))
+    return bool(re.search(r"events\.kr/|t\.me/|eventhouse\.kr/|contestkorea\.com/|wevity\.com/", e.get("url") or ""))
 
 
 def is_public(e):
