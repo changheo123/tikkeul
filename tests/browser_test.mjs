@@ -142,8 +142,8 @@ try {
       const e = DATA.events.find(x => x.id === t.dataset.id), a = t.querySelector('a.go');
       if (!a) continue;
       if (a.target !== '_blank') bad.push(e.id);
-      if (e.form_url) { form++; if (!a.textContent.includes('바로 응모하기') || a.href !== e.form_url) bad.push(e.id); }
-      else { plain++; if (!a.textContent.includes('이벤트 확인하기') || a.href !== e.url) bad.push(e.id); }
+      if (e.form_url) { form++; if (!a.textContent.includes('바로 응모하기') || a.href !== new URL(e.form_url).href) bad.push(e.id); }
+      else { plain++; if (!a.textContent.includes('이벤트 확인하기') || a.href !== new URL(e.url).href) bad.push(e.id); }
     }
     return { bad: bad.slice(0, 3), n: bad.length, form, plain }; })()`);
   check("응모 버튼 문구·주소·새 탭", btn.n === 0, `바로 응모 ${btn.form}, 이벤트 확인 ${btn.plain}, 오류 ${btn.n} ${btn.bad}`);
