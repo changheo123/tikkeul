@@ -16,7 +16,7 @@ SITES = {
     "gangnam": {"src": "gm", "org": "강남맛집 체험단", "lists": ["https://xn--939au0g4vj8sq.net/cp/"],
                 "href": r"/cp/\?id=(\d+)$"},
 }
-META = re.compile(r"^(?:\d+\s*일\s*남음|\d+|일 남음|남음|D-?Day|D-\d+|신청\s*[\d,]+\s*명?|/?\s*모집\s*[\d,]+\s*명?|배송형?|방문형?|기자단|재택|포장|Blog.*|블로그|인스타그램|유튜브|클립|릴스|마감임박|NEW|HOT|프리미엄|/)$", re.I)
+META = re.compile(r"^(?:선착순\s*\d*|\d+\s*일\s*남음|\d+|일 남음|남음|D-?Day|D-\d+|신청\s*[\d,]+\s*명?|/?\s*모집\s*[\d,]+\s*명?|배송형?|방문형?|기자단|재택|포장|Blog.*|블로그|인스타그램|유튜브|클립|릴스|마감임박|NEW|HOT|프리미엄|/)$", re.I)
 
 
 def _card(a):

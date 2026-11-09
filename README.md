@@ -39,6 +39,14 @@ GitHub Actions(수집·빌드)와 GitHub Pages(호스팅)만 써서 월 운영�
 
 키가 없으면 해당 출처는 '연동 필요'로 표시되고 요청을 보내지 않습니다. 결제 수단 등록이 필요한 요금제는 쓰지 않습니다.
 
+## 응모 폼·종료·참여 제한
+
+- **`form_url`**: 네이버폼, 구글폼, 모아폼, 스모어를 글·HTML 링크에서 추출(`collector/forms.py`). `naver.me`·`forms.gle` 단축 링크는
+  이동 주소를 확인해 폼일 때만 저장하고, 확인되지 않으면 `null`로 둔다. `url`(원문 공지)은 그대로 유지
+- **`status`**: 한국 날짜 기준 `end < 오늘`이면 `ended`. `end: null`은 유지하고, 한 번 종료된 이벤트는 다시 수집돼도 되살리지 않는다
+- **`is_restricted`**: 지역 거주·현장 방문 제한이면 `true`, 표현은 있지만 불확실하면 `null`(검토 대상), 아니면 `false`
+  (`collector/restrict.py`, 사유는 `restriction_reason`). 잘못 판별된 건은 `data/overrides.json`의 `edit`로 고친다
+
 ## 자동 실행 방식
 
 - **예약(cron)**: 매시 23분. GitHub 사정으로 늦거나 빠질 수 있음(이 저장소는 만든 직후 예약이 돌지 않았음)

@@ -11,7 +11,10 @@ import time
 import traceback
 from pathlib import Path
 
-from .common import Fetcher, now_kst, today_kst
+from lxml import html as LH
+
+from . import forms, restrict
+from .common import Fetcher, norm_date, now_kst, today_kst
 from .extract import norm_url, norm_title, is_show_invite, pay_required
 from .sources import events_kr, public_boards, api_sources, aggregators, experience
 
@@ -144,6 +147,11 @@ def merge(db, ev, today, stats):
     stats["merged"] += 1
     o["lastSeen"] = today
     o.setdefault("srcUrls", [])
+    for u in ev.get("formLinks", []):  # 응모 폼 후보는 어느 출처에서 왔든 모은다(승인 장부 포함)
+        if u not in o.setdefault("formLinks", []):
+            o["formLinks"].append(u)
+    if ev.get("rawText") and not o.get("rawText"):
+        o["rawText"] = ev["rawText"]
     for u in (ev["url"], ev.get("listUrl")):
         if u and u not in o["srcUrls"]:
             o["srcUrls"].append(u)
@@ -161,18 +169,33 @@ def merge(db, ev, today, stats):
     return oid
 
 
-def month_expiry(title):
-    """마감일이 없는 'YYYY년 M월 …' 글은 그 달이 지나면 내린다(화면에는 마감일로 표시하지 않음)."""
-    m = re.search(r"(20\d{2})년\s*(\d{1,2})월", title or "")
-    if not m:
-        return None
-    y, mo = int(m.group(1)), int(m.group(2))
-    nxt = dt.date(y + (mo == 12), mo % 12 + 1, 1)
-    return (nxt - dt.timedelta(days=1)).isoformat()
+def normalize_dates(db):
+    """날짜를 YYYY-MM-DD로 맞춘다. 해석 못 한 값은 원문을 남기고 비운다(종료로 처리하지 않음)."""
+    fixed = 0
+    for e in db["events"].values():
+        for k in ("start", "end", "announce"):
+            v = e.get(k)
+            if v is None:
+                continue
+            n = norm_date(v)
+            if n != v:
+                e[k] = n
+                if n is None:
+                    e[k + "Raw"] = str(v)
+                fixed += 1
+    return fixed
+
+
+def drop_broken(db):
+    """파서 오류로 제목이 깨진 글을 지운다(아직 모집 중이면 다음 수집 때 올바른 제목으로 다시 들어온다)."""
+    bad = [k for k, e in db["events"].items() if e.get("src") == "rn" and re.fullmatch(r"선착순 \d+ 체험단", e.get("title") or "")]
+    for k in bad:
+        del db["events"][k]
+    return len(bad)
 
 
 def update_status(db, today, cfg):
-    stale = cfg.get("no_end_stale_days", 21)
+    """한국 날짜 기준: 마감일이 지난 건만 종료. 마감일 미상은 유지하고, 한 번 종료된 건은 되살리지 않는다."""
     keep = cfg.get("keep_ended_days", 45)
     t = dt.date.fromisoformat(today)
     pruned = 0
@@ -180,13 +203,8 @@ def update_status(db, today, cfg):
         e = db["events"][oid]
         if e.get("status") in ("rejected", "removed", "excluded", "merged"):
             continue
-        if e.get("end"):
-            e["status"] = "ended" if e["end"] < today else "active"
-        else:
-            exp = month_expiry(e["title"])
-            last = dt.date.fromisoformat(e.get("lastSeen") or today)
-            gone = (exp and exp < today) or (e.get("cand") and (t - last).days > stale)
-            e["status"] = "ended" if gone else "active"
+        if e.get("status") != "ended":
+            e["status"] = "ended" if e.get("end") and e["end"] < today else "active"
         # 오래 지난 종료 이벤트는 DB에서 정리(이력은 git에 남음)
         endd = e.get("end") or e.get("lastSeen")
         if e["status"] == "ended" and endd and (t - dt.date.fromisoformat(endd)).days > keep:
@@ -279,6 +297,100 @@ def audit(db, today):
     return res
 
 
+FORM_NO_FETCH = re.compile(r"instagram\.com|youtube\.com|youtu\.be|blog\.naver\.com|cafe\.naver\.com|facebook\.com|//x\.com/|twitter\.com|t\.me/|eventhouse\.kr|reviewnote\.co\.kr|mrblog\.net|event\.danawa\.com")  # 체험단·다나와는 자체 사이트에서 신청
+
+
+def _page_html(f, url):
+    """원본 페이지에서 메뉴·스크립트를 뺀 (HTML, 글자). robots 차단·오류는 예외로 올린다."""
+    d = f.doc(url)
+    for bad in d.xpath("//script|//style|//nav|//header|//footer"):
+        bad.drop_tree()
+    return LH.tostring(d, encoding="unicode"), d.text_content()
+
+
+def process_forms(db, state, today, cfg):
+    """모든 이벤트의 form_url을 정한다. 저장된 글·링크를 먼저 보고, 없으면 원본 페이지를 예산 안에서 다시 읽는다."""
+    res = {"direct": 0, "short_ok": 0, "pages": 0, "page_found": 0, "page_err": 0}
+    f = Fetcher(min_interval=cfg.get("min_interval_sec", 1.0), timeout=10, retries=0)
+    cache = state.setdefault("shortlinks", {})
+    budget = {"short": cfg.get("short_checks_per_run", 150)}
+
+    def resolver(u):
+        if u not in cache and budget["short"] <= 0:
+            return None, "unverified"
+        if u not in cache:
+            budget["short"] -= 1
+        return forms.resolve_short(f, u, cache, today)
+
+    def decide(e, active):
+        text = " ".join(x or "" for x in [e.get("title"), e.get("prize"), e.get("url"), *(e.get("steps") or []), *(e.get("needs") or []),
+                                          *(e.get("srcUrls") or []), e.get("rawText")])
+        final, pending = forms.pick(text, e.get("formLinks") or [], resolver if active else None)
+        if final:
+            res["direct" if not (e.get("formLinks") and final not in e["formLinks"] and final not in text) else "short_ok"] += 1
+        return final, pending
+
+    events = list(db["events"].values())
+    for e in events:
+        e.setdefault("form_url", None)
+        if e["form_url"]:
+            continue
+        e["form_url"], pending = decide(e, e.get("status") == "active")
+        if pending:
+            e["formPending"] = pending
+        else:
+            e.pop("formPending", None)
+
+    # 저장된 글에 폼이 없는 진행 중 이벤트: 마감이 가까운 것부터 원본 페이지를 다시 읽는다(7일에 한 번)
+    t = dt.date.fromisoformat(today)
+    todo = [e for e in events if e.get("status") == "active" and not e["form_url"] and not e.get("formPending")
+            and (not e.get("formChecked") or (t - dt.date.fromisoformat(e["formChecked"])).days >= 7)]
+    todo.sort(key=lambda e: e.get("end") or "9999")
+    t0, limit, cap = time.time(), cfg.get("form_pages_per_run", 300), cfg.get("form_pages_sec", 480)
+    for e in todo:
+        pages = [u for u in [e.get("url"), *(e.get("srcUrls") or [])]
+                 if u and u.startswith("http") and not FORM_NO_FETCH.search(u) and not forms.is_form(u)
+                 and (u == e.get("url") or "events.kr/event.php" in u)]
+        pages = list(dict.fromkeys(pages))
+        if not pages:
+            continue
+        if res["pages"] >= limit or time.time() - t0 > cap:
+            break
+        e["formChecked"] = today
+        for u in pages:
+            res["pages"] += 1
+            try:
+                page, text = _page_html(f, u)
+            except Exception:
+                res["page_err"] += 1
+                continue
+            direct, short = forms.candidates(page)
+            if len(direct) + len(short) > 3:
+                continue  # 폼이 여러 개인 페이지(목록·메뉴 등)는 어느 것이 이 이벤트인지 확정할 수 없다
+            for x in direct + short:
+                if x not in e.setdefault("formLinks", []):
+                    e["formLinks"].append(x)
+            flags = restrict.scan_strong(text)
+            if flags:
+                e["pageFlags"] = flags
+        if e.get("formLinks"):
+            e["form_url"], pending = decide(e, True)
+            res["page_found"] += bool(e["form_url"])
+            if pending:
+                e["formPending"] = pending
+    return res
+
+
+def classify_restrictions(db):
+    """전체 이벤트의 참여 제한을 다시 판별한다(규칙이 바뀌어도 매 실행 반영)."""
+    res = {"restricted": 0, "review": 0}
+    for e in db["events"].values():
+        e["is_restricted"], e["restriction_reason"] = restrict.classify(e)
+        res["restricted"] += e["is_restricted"] is True
+        res["review"] += e["is_restricted"] is None
+    return res
+
+
 def apply_overrides(db):
     """관리자 수정(data/overrides.json): approve·reject·edit. GitHub 저장소 권한이 있는 사람만 고칠 수 있다."""
     ov = load(DATA / "overrides.json", {})
@@ -368,13 +480,20 @@ def main(argv=None):
         else:
             state.setdefault("fails", {})[name] = 0
 
-    apply_overrides(db)
-    pruned = update_status(db, today, cfg)
+    db.pop("_ix", None)  # 색인은 수집 중에만 쓴다(아래에서 항목을 지울 수 있음)
+    broken = drop_broken(db)
+    dates = normalize_dates(db)
+    pruned = update_status(db, today, cfg)  # 폼 재조회 예산을 끝난 이벤트에 쓰지 않도록 먼저 종료 처리
+    fcfg = {**cfg, "form_pages_per_run": 0, "short_checks_per_run": 0} if a.no_links else cfg  # --no-links면 네트워크 조회 없음
+    form = process_forms(db, state, today, fcfg)
+    restricted = classify_restrictions(db)
+    apply_overrides(db)  # 관리자 수정이 자동 판별보다 우선
+    pruned += update_status(db, today, cfg)
     links = {} if a.no_links else check_links(f, db, today, cfg.get("link_checks_per_run", 25))
     quality = audit(db, today)
     active = sum(1 for e in db["events"].values() if e.get("status") == "active")
     run.update({"added": stats["added"], "merged": stats["merged"], "rejected": stats["rejected"], "pruned": pruned,
-                "links": links, "quality": quality, "active": active, "total": len(db["events"]), "requests": f.count,
+                "links": links, "quality": quality, "form": form, "restricted": restricted, "dates": dates, "broken": broken, "active": active, "total": len(db["events"]), "requests": f.count,
                 "sec": round(time.time() - t0, 1)})
 
     # 안전장치: 진행 중 건수가 이전의 절반 아래로 급감하면 저장하지 않고 실패로 끝낸다(기존 사이트 유지)

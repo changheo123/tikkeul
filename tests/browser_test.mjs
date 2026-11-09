@@ -75,9 +75,9 @@ try {
   await send("Page.navigate", { url: URL_ }); await ready();
   await ev(`localStorage.clear()`);  // 지난 실행의 저장·참여함 기록을 지우고 시작
   await send("Page.reload"); await ready();
-  const total = await ev(`DATA.events.filter(e => (!e.end || e.end >= kstToday()) && e.grade !== 'X').length`);
+  const total = await ev(`DATA.events.filter(e => e.status !== 'ended' && (!e.end || e.end >= kstToday()) && e.grade !== 'X' && e.is_restricted !== true).length`);
   const shown = await ev(`document.querySelectorAll('#list .tk').length`);
-  check("데이터 건수 = 화면 카드 수(조건 많음 제외)", total === shown, `데이터 ${total} / 화면 ${shown}`);
+  check("데이터 건수 = 화면 카드 수(조건 많음·제한 제외)", total === shown, `데이터 ${total} / 화면 ${shown}`);
   const chipSum = await ev(`[...document.querySelectorAll('.chip')].map(c => c.textContent)`);
   check("카테고리 칩 11개", chipSum.length === 11, chipSum.join(" | "));
 
@@ -132,9 +132,36 @@ try {
 
   // 종료 이벤트 목록·출처 현황 표(전체 카테고리 기준)
   await ev(`document.querySelector('.chip[data-k="전체 이벤트"]').click()`); await sleep(300);
-  const goneN = await ev(`DATA.events.filter(e => e.end && e.end < kstToday()).length`);
+  const goneN = await ev(`DATA.events.filter(e => e.status === 'ended' || (e.end && e.end < kstToday())).length`);
   const ended = await ev(`({ended: document.querySelectorAll('#ended li').length, src: document.querySelectorAll('#src tr').length})`);
   check("종료 이벤트 목록·출처 현황 표", ended.src >= 8 && ended.ended === goneN, `종료 ${ended.ended}/${goneN}건, 출처 행 ${ended.src}개`);
+
+  // 응모 버튼: 폼이 있으면 폼으로, 없으면 원문으로, 새 탭
+  const btn = await ev(`(() => { const bad = []; let form = 0, plain = 0;
+    for (const t of document.querySelectorAll('#list .tk')) {
+      const e = DATA.events.find(x => x.id === t.dataset.id), a = t.querySelector('a.go');
+      if (!a) continue;
+      if (a.target !== '_blank') bad.push(e.id);
+      if (e.form_url) { form++; if (!a.textContent.includes('바로 응모하기') || a.href !== e.form_url) bad.push(e.id); }
+      else { plain++; if (!a.textContent.includes('이벤트 확인하기') || a.href !== e.url) bad.push(e.id); }
+    }
+    return { bad: bad.slice(0, 3), n: bad.length, form, plain }; })()`);
+  check("응모 버튼 문구·주소·새 탭", btn.n === 0, `바로 응모 ${btn.form}, 이벤트 확인 ${btn.plain}, 오류 ${btn.n} ${btn.bad}`);
+
+  // 제한 이벤트: 기본 제외, 필터로 포함, 종료 이벤트는 피드에 없음
+  const r0 = await ev(`document.querySelectorAll('#list .tk').length`);
+  const leak = await ev(`[...document.querySelectorAll('#list .tk')].filter(t => { const e = DATA.events.find(x => x.id === t.dataset.id); return e.is_restricted === true || e.status === 'ended'; }).length`);
+  await ev(`(() => { const c = document.getElementById('fRestricted'); c.checked = true; c.dispatchEvent(new Event('change')); })()`); await sleep(500);
+  const r1 = await ev(`document.querySelectorAll('#list .tk').length`);
+  const nRes = await ev(`DATA.events.filter(e => e.status !== 'ended' && (!e.end || e.end >= kstToday()) && e.grade !== 'X' && e.is_restricted === true).length`);
+  check("제한 이벤트 기본 제외·필터로 포함", leak === 0 && r1 - r0 === nRes, `기본 ${r0}, 포함 ${r1}, 제한 ${nRes}, 피드에 섞인 제한·종료 ${leak}`);
+  const reason = await ev(`(() => { const t = [...document.querySelectorAll('#list .tk')].find(t => DATA.events.find(x => x.id === t.dataset.id).is_restricted === true); if (!t) return 'none'; t.querySelector('[data-act="open"]').click(); return 'open'; })()`); await sleep(400);
+  if (reason === 'open') {
+    const txt = await ev(`document.getElementById('dBody').textContent`);
+    check("상세 창에 제한 사유 표시", txt.includes('참여 제한 사유'));
+    await ev(`document.getElementById('dClose').click()`);
+  }
+  await ev(`document.getElementById('fReset').click()`); await sleep(400);
 
   // 원문 링크가 모두 http(s)
   const badLinks = await ev(`[...document.querySelectorAll('a.go')].filter(a => !/^https?:\\/\\//.test(a.href)).length`);

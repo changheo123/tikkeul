@@ -159,5 +159,24 @@ def iso(d):
     return d.isoformat() if d else None
 
 
+def norm_date(v):
+    """여러 날짜 표기를 YYYY-MM-DD로. 해석할 수 없으면 None(임의로 추측하지 않음)."""
+    if v is None or v == "":
+        return None
+    if isinstance(v, dt.date):
+        return v.isoformat()
+    s = str(v).strip()
+    try:
+        return dt.date.fromisoformat(s[:10]).isoformat()
+    except ValueError:
+        pass
+    m = re.match(r"^(20\d{2}|\d{2})\s*[.\-/년]\s*(\d{1,2})\s*[.\-/월]\s*(\d{1,2})", s)  # 연도가 있어야 확정한다
+    if m:
+        y = int(m.group(1))
+        d = _mk(y if y > 99 else 2000 + y, m.group(2), m.group(3))
+        return d.isoformat() if d else None
+    return None
+
+
 def absurl(base, href):
     return urljoin(base, href) if href else None

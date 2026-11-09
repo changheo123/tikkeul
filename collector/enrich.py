@@ -110,5 +110,8 @@ def enrich(e):
         # ok=사람이 확인한 장부에 유료 조건 없음, check=자동 수집·원문 미확인이라 원문 확인 필요
         "free": "check" if (e.get("cand") or e.get("issues") or "원문 미확인" in e["tags"] or via_list(e)) else "ok",
         "freeNote": e.get("freeNote"),
+        "form_url": e.get("form_url"),
+        "is_restricted": e.get("is_restricted", False),
+        "restriction_reason": e.get("restriction_reason"),
     })
     return out

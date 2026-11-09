@@ -4,6 +4,7 @@ import hashlib
 from urllib.parse import urlparse, parse_qsl, urlencode, urlunparse
 
 from .common import find_dates, period, iso, clean, today_kst
+from . import forms
 
 # 이벤트로 볼 신호(제목·본문에 하나 이상)
 EVENT_WORDS = re.compile(r"이벤트|경품|추첨|증정|기프티콘|상품권|당첨|사은품|선물|쿠폰|체험단|EVENT|event")
@@ -166,7 +167,7 @@ def make_id(prefix, key):
 
 
 def build_event(*, src, sid, title, url, org=None, body="", start=None, end=None, announce=None,
-                prize=None, kind_hint=None, extra_reasons=(), extra_tags=(), list_url=None, plat_hint=None):
+                prize=None, kind_hint=None, extra_reasons=(), extra_tags=(), list_url=None, plat_hint=None, links=()):
     """수집기 하나가 찾은 글을 사이트 장부 형식으로 바꾼다. 무료가 아니면 (None, 사유)."""
     title = clean(title)
     full = f"{title}\n{body or ''}"
@@ -201,6 +202,10 @@ def build_event(*, src, sid, title, url, org=None, body="", start=None, end=None
         "place": None, "url": url, "checked": None, "cand": True,
         "src": src, "listUrl": list_url, "platHint": plat_hint,
     }
+    # 응모 폼 후보(단축 링크 검증은 파이프라인에서)와 참여 제한 판별용 본문
+    direct, short = forms.candidates(f"{full}\n{url}", links)
+    ev["formLinks"] = direct + short
+    ev["rawText"] = (body or "")[:1500]
     if not ev["steps"] and prize is None and end is None:
         return None, "기간·경품·참여 방법 모두 확인 안 됨"
     return ev, None

@@ -73,7 +73,7 @@ def parse(f, eid):
         start, end = period(body)
     ev, why = build_event(
         src="ek", sid=str(eid), title=title, url=orig or url, org=org, body=body, start=start, end=end,
-        kind_hint=kind, extra_reasons=[reason] if reason else [], list_url=url, plat_hint=plat)
+        kind_hint=kind, extra_reasons=[reason] if reason else [], list_url=url, plat_hint=plat, links=links)
     if ev and not orig:
         ev["tags"].append("원문 미확인")
     return ev, why

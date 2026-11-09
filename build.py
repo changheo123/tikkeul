@@ -1,6 +1,7 @@
 # DB(data/db.json) → 사이트(_site/). 검증에 실패하면 0이 아닌 코드로 끝나 배포가 멈추고 기존 사이트가 유지된다
 import datetime as dt
 import json
+import os
 import shutil
 import subprocess
 import sys
@@ -37,6 +38,12 @@ SOURCE_ROWS = [
 ]
 
 
+def site_url():
+    """사이트 대표 주소. 저장소 이름이 바뀌어도 Actions가 알려 주는 저장소 이름을 따라간다."""
+    owner, name = os.environ.get("GITHUB_REPOSITORY", "changheo123/1234").split("/", 1)
+    return f"https://{owner}.github.io/{name}/"
+
+
 def source_meta(state, runs):
     last_run = runs[-1]["sources"] if runs else {}
     out = []
@@ -69,7 +76,7 @@ def main():
             continue  # 반려(rejected)·링크 끊김(removed)은 싣지 않는다
         x = enrich(e)
         x["via"] = sorted(via.get(e["id"], []))
-        for k in ("srcUrls", "linkFail", "platHint", "firstSeen"):
+        for k in ("srcUrls", "linkFail", "platHint", "firstSeen", "rawText", "formLinks", "pageFlags", "formPending", "formChecked", "linkChecked", "lastSeen", "linkStatus"):
             x.pop(k, None)
         x["isAuto"] = bool(e.get("cand"))
         events.append(x)
@@ -78,12 +85,17 @@ def main():
 
     now = now_kst()
     today = now.date().isoformat()
-    live = [x for x in events if not x.get("end") or x["end"] >= today]
+    # 종료는 status 기준(마감일 미상이라도 이미 종료된 건 진행 중으로 세지 않는다)
+    live = [x for x in events if x.get("status") != "ended" and (not x.get("end") or x["end"] >= today)]
     meta = {
         "built": now.strftime("%Y-%m-%d %H:%M"), "date": today,
-        "approved": sum(1 for x in live if not x.get("cand")),
-        "candidates": sum(1 for x in live if x.get("cand")),
+        # 상단 안내의 건수는 기본 화면 기준(참여 제한 이벤트 제외)
+        "approved": sum(1 for x in live if not x.get("cand") and x.get("is_restricted") is not True),
+        "candidates": sum(1 for x in live if x.get("cand") and x.get("is_restricted") is not True),
         "shown": len(live), "ended": len(events) - len(live),
+        "withForm": sum(1 for x in live if x.get("form_url")),
+        "restricted": sum(1 for x in live if x.get("is_restricted") is True),
+        "restrictReview": sum(1 for x in live if x.get("is_restricted") is None),
         "sources": source_meta(state, runs),
         "lastRun": runs[-1]["at"] if runs else None,
     }
@@ -107,7 +119,7 @@ def main():
     # GitHub Pages는 문서 뼈대가 필요하다(Artifact는 자동으로 감싸 주지만 일반 호스팅은 아님)
     html = ('<!doctype html>\n<html lang="ko"><head><meta charset="utf-8">'
             '<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">\n'
-            '<link rel="canonical" href="https://changheo123.github.io/tteum-events/">\n'
+            f'<link rel="canonical" href="{site_url()}">\n'
             '<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22%3E'
             '%3Crect width=%2232%22 height=%2232%22 rx=%227%22 fill=%22%230e7a55%22/%3E%3Ccircle cx=%2216%22 cy=%2216%22 r=%227%22 fill=%22%23ffce3d%22/%3E%3C/svg%3E">\n'
             f'{page.split("<header", 1)[0]}</head>\n<body>\n<header{page.split("<header", 1)[1]}\n</body></html>\n')

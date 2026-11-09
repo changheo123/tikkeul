@@ -182,7 +182,7 @@ def korissue(f, state, cfg):
             body = "\n".join([f"응모형태: {fields.get('응모형태', '')}", "참여 방법", *numbered(fields.get("응모메모", ""))])
             ev, why = build_event(src="ki", sid=sid, title=title, url=orig, org=org, body=body, start=start, end=end,
                                   announce=ann, prize=prize, kind_hint=kind, extra_reasons=[reason] if reason else [],
-                                  plat_hint=plat)
+                                  plat_hint=plat, links=[v for k, v in links.items() if k != "홈"])
             if ev:
                 if links.get("폼양식") and links.get("폼양식") != orig:
                     ev["needs"] = [f"응모 양식: {links['폼양식']}"]

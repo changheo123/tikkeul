@@ -222,6 +222,7 @@ footer p { margin: 0; max-width: 46em; }
         <label class="more" for="fNoSns"><input type="checkbox" id="fNoSns"> SNS 계정 없이</label>
         <label class="more" for="fNoCost"><input type="checkbox" id="fNoCost"> 추가 비용 확인된 것 빼기</label>
         <label class="more" for="fOrig"><input type="checkbox" id="fOrig"> 원문 링크 있는 것만</label>
+        <label class="more" for="fRestricted"><input type="checkbox" id="fRestricted"> 제한 이벤트 포함</label>
         <label class="more" for="fFav"><input type="checkbox" id="fFav"> 저장한 것만</label>
         <label class="more" for="fHideDone"><input type="checkbox" id="fHideDone"> 참여한 것 숨기기</label>
         <label class="more" for="onlyOk"><input type="checkbox" id="onlyOk"> 승인된 것만 보기</label>
@@ -293,7 +294,7 @@ const DUE = [["all", "전체"], ["d1", "오늘·내일"], ["d6", "이번 주(6�
 const SORTS = { due: "마감 임박순", new: "최신 등록순", easy: "참여 간편순", value: "경품 가치순" };
 
 const state = { cat: "전체 이벤트", q: "", sort: "due", plat: "all", prize: "all", due: "all", time: "all",
-  noAcct: false, noSns: false, noCost: false, orig: false, fav: false, hideDone: false, showX: false, onlyOk: false };
+  noAcct: false, noSns: false, noCost: false, orig: false, restricted: false, fav: false, hideDone: false, showX: false, onlyOk: false };
 
 function esc(s) { return String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c])); }
 function kstToday() { return new Date(Date.now() + 9 * 3600e3).toISOString().slice(0, 10); }
@@ -319,10 +320,12 @@ const fav = load("tt-fav"), done = load("tt-done");
 const today = kstToday();
 const all = DATA.events.map(e => ({ ...e, days: e.end ? Math.round((utc(e.end) - utc(today)) / 864e5) : null,
   isNew: !!e.checked && (utc(today) - utc(e.checked)) / 864e5 <= 3 }));
-const live = all.filter(e => e.days === null || e.days >= 0);
-const gone = all.filter(e => e.days !== null && e.days < 0).sort((a, b) => b.end.localeCompare(a.end));
+// 종료는 수집기가 정한 status 기준 + 오늘(한국 시간) 지난 마감일. 마감일 미상도 종료 처리된 건 진행 중이 아니다
+const isLive = e => e.status !== "ended" && (e.days === null || e.days >= 0);
+const live = all.filter(isLive);
+const gone = all.filter(e => !isLive(e)).sort((a, b) => (b.end || "").localeCompare(a.end || ""));
 const byId = new Map(all.map(e => [e.id, e]));
-const easy = live.filter(e => e.grade !== "X");
+const easy = live.filter(e => e.grade !== "X" && e.is_restricted !== true);
 document.getElementById("sHot").textContent = easy.filter(e => e.days !== null && e.days <= 1).length;
 document.getElementById("sWeek").textContent = easy.filter(e => e.days !== null && e.days >= 2 && e.days <= 6).length;
 document.getElementById("sAll").textContent = easy.length;
@@ -347,7 +350,8 @@ function passBase(e) {
   if (state.noAcct && e.acct) return false;
   if (state.noSns && e.sns) return false;
   if (state.noCost && e.tax) return false;
-  if (state.orig && e.viaList) return false;
+  if (state.orig && e.viaList && !e.form_url) return false;
+  if (!state.restricted && e.is_restricted === true) return false;  // 지역 거주·현장 방문 제한은 기본 제외
   if (state.fav && !fav.has(e.id)) return false;
   if (state.hideDone && done.has(e.id)) return false;
   if (state.q) {
@@ -384,7 +388,12 @@ function timeText(e) {
 function platIcons(e) {
   return `<span class="plats">${e.plats.map(p => `<span class="pf" title="${PLATS[p][0]}">${SVG(PLATS[p][1])}<span class="sr">${PLATS[p][0]}</span></span>`).join("")}</span>`;
 }
-function linkLabel(e, detail) { return e.viaList ? "목록에서 원문 찾기" : detail ? "응모하러 가기" : "원문 바로가기"; }
+// 응모 폼이 확인되면 폼으로 바로, 없으면 원문 공지로 보낸다(새 탭)
+function goLink(e) {
+  const form = safeUrl(e.form_url), url = form || safeUrl(e.url);
+  if (!url) return "";
+  return `<a class="go${form || !e.viaList ? "" : " alt"}" href="${esc(url)}" target="_blank" rel="noopener noreferrer">${form ? "바로 응모하기" : "이벤트 확인하기"}${ARROW}</a>`;
+}
 function toggles(e) {
   return `<button type="button" class="ib" data-act="fav" data-id="${esc(e.id)}" aria-pressed="${fav.has(e.id)}" title="저장">${I_SAVE}<span>저장</span></button>` +
     `<button type="button" class="ib" data-act="done" data-id="${esc(e.id)}" aria-pressed="${done.has(e.id)}" title="참여함 표시">${I_DONE}<span>참여함</span></button>`;
@@ -399,6 +408,8 @@ function card(e) {
   const tags = [];
   if (e.isNew) tags.push('<span class="tag new">신규</span>');
   if (done.has(e.id)) tags.push('<span class="tag mine">참여함</span>');
+  if (e.is_restricted === true) tags.push('<span class="tag gX">참여 제한</span>');
+  else if (e.is_restricted === null) tags.push('<span class="tag gX">참여 조건 확인</span>');
   tags.push(e.free === "ok" ? '<span class="tag free">무료 참여</span>' : '<span class="tag gX">무료 여부 원문 확인</span>');
   tags.push(gradeTag);
   if (e.tax) tags.push('<span class="tag gX">제세공과금 확인</span>');
@@ -417,7 +428,7 @@ function card(e) {
       ${note ? `<p class="note">${esc(note)}</p>` : ""}
       <p class="ttl">${esc(e.title)}</p>
       <div class="tags">${tags.join("")}</div>
-      <div class="foot"><span>${checked} · 참여 전 원문 확인</span><div class="acts">${toggles(e)}<button type="button" class="ib" data-act="open" data-id="${esc(e.id)}">자세히</button>${url ? `<a class="go${e.viaList ? " alt" : ""}" href="${esc(url)}" target="_blank" rel="noopener noreferrer">${linkLabel(e)}${ARROW}</a>` : ""}</div></div>
+      <div class="foot"><span>${checked} · 참여 전 원문 확인</span><div class="acts">${toggles(e)}<button type="button" class="ib" data-act="open" data-id="${esc(e.id)}">자세히</button>${goLink(e)}</div></div>
     </div></li>`;
 }
 
@@ -460,9 +471,9 @@ function renderList() {
   const g = gone.filter(e => catTest(state.cat)(e));
   document.getElementById("endedBox").hidden = !g.length;
   document.getElementById("endedSum").textContent = `종료된 이벤트 ${g.length}건`;
-  document.getElementById("ended").innerHTML = g.map(e => `<li><b>${esc(e.title)}</b><span>${esc(e.org)} · ${md(e.end)} 마감${safeUrl(e.url) ? ` · <a href="${esc(e.url)}" target="_blank" rel="noopener noreferrer">원문</a>` : ""}</span></li>`).join("");
+  document.getElementById("ended").innerHTML = g.map(e => `<li><b>${esc(e.title)}</b><span>${esc(e.org)} · ${e.end ? md(e.end) + " 마감" : "종료"}${safeUrl(e.url) ? ` · <a href="${esc(e.url)}" target="_blank" rel="noopener noreferrer">원문</a>` : ""}</span></li>`).join("");
 
-  const n = ["plat", "prize", "due", "time"].filter(k => state[k] !== "all").length + ["noAcct", "noSns", "noCost", "orig", "fav", "hideDone", "onlyOk", "showX"].filter(k => state[k]).length;
+  const n = ["plat", "prize", "due", "time"].filter(k => state[k] !== "all").length + ["noAcct", "noSns", "noCost", "orig", "restricted", "fav", "hideDone", "onlyOk", "showX"].filter(k => state[k]).length;
   const fN = document.getElementById("fN"); fN.hidden = !n; fN.textContent = n;
 }
 
@@ -515,13 +526,15 @@ function openDetail(id) {
     fact("당첨자 발표일", p(e.announce ? md(e.announce) : UNK)),
     fact("예상 참여 시간", p(timeText(e) ? esc(timeText(e)) : UNK)),
     fact("무료 여부·추가 비용", p(e.free === "ok" ? "무료 참여" + (e.tax ? " · 제세공과금 확인 필요" : " · 추가 비용 안내 없음") : '<span class="unk">원문 확인 필요</span>')),
+    ...(e.is_restricted !== false && e.restriction_reason ? [fact(e.is_restricted ? "참여 제한 사유" : "참여 조건 확인", p(esc(e.restriction_reason)))] : []),
     fact("유의사항", ul(notes)),
-    fact("원문 링크", url ? `<p class="url">${esc(url)}</p>` : p(UNK)),
+    ...(safeUrl(e.form_url) ? [fact("응모 폼", `<p class="url">${esc(e.form_url)}</p>`)] : []),
+    fact("원문 공지", url ? `<p class="url"><a href="${esc(url)}" target="_blank" rel="noopener noreferrer">${esc(url)}</a></p>` : p(UNK)),
     fact("마지막 정보 확인", p(e.checked ? `${md(e.checked)} 사람이 원문 확인` : "확인 기록 없음(목록 정보)")),
   ];
   document.getElementById("dMeta").innerHTML = `${platIcons(e)}<span class="k">${esc(e.kind)}</span><span>${e.days === null ? "마감일 원문 확인" : e.days < 0 ? "종료" : e.days === 0 ? "오늘 마감" : `D-${e.days}`}</span>`;
   document.getElementById("dBody").innerHTML = `<h2 id="dTitle">${esc(e.title)}</h2><div class="facts">${facts.join("")}</div>`;
-  document.getElementById("dFoot").innerHTML = toggles(e) + (url ? `<a class="go${e.viaList ? " alt" : ""}" href="${esc(url)}" target="_blank" rel="noopener noreferrer">${linkLabel(e, true)}${ARROW}</a>` : "");
+  document.getElementById("dFoot").innerHTML = toggles(e) + goLink(e);
   if (!dlg.open) { if (dlg.showModal) dlg.showModal(); else dlg.setAttribute("open", ""); }
   dlg.scrollTop = 0;
 }
@@ -532,11 +545,11 @@ function toggle(set, key, id) {
   set.has(id) ? set.delete(id) : set.add(id); save(key, set);
 }
 function resetFilters() {
-  Object.assign(state, { q: "", plat: "all", prize: "all", due: "all", time: "all", noAcct: false, noSns: false, noCost: false, orig: false, fav: false, hideDone: false, showX: false, onlyOk: false });
+  Object.assign(state, { q: "", plat: "all", prize: "all", due: "all", time: "all", noAcct: false, noSns: false, noCost: false, orig: false, restricted: false, fav: false, hideDone: false, showX: false, onlyOk: false });
   syncInputs(); render();
 }
 const BIND = { fPlat: "plat", fPrize: "prize", fDue: "due", fTime: "time", sort: "sort" };
-const CHK = { fNoAcct: "noAcct", fNoSns: "noSns", fNoCost: "noCost", fOrig: "orig", fFav: "fav", fHideDone: "hideDone", onlyOk: "onlyOk", showX: "showX" };
+const CHK = { fNoAcct: "noAcct", fNoSns: "noSns", fNoCost: "noCost", fOrig: "orig", fRestricted: "restricted", fFav: "fav", fHideDone: "hideDone", onlyOk: "onlyOk", showX: "showX" };
 function syncInputs() {
   document.getElementById("q").value = state.q;
   for (const [id, k] of Object.entries(BIND)) document.getElementById(id).value = state[k];
