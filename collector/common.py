@@ -8,7 +8,7 @@ from urllib.parse import urlparse, urljoin
 import requests
 from lxml import html as LH
 
-UA = "Mozilla/5.0 (compatible; tikkeulmoa-bot/1.0)"
+UA = "Mozilla/5.0 (compatible; tikkeul-bot/1.0)"
 KST = dt.timezone(dt.timedelta(hours=9))
 
 
