@@ -79,7 +79,7 @@ try {
   const shown = await ev(`document.querySelectorAll('#list .tk').length`);
   check("데이터 건수 = 화면 카드 수(조건 많음·제한 제외)", total === shown, `데이터 ${total} / 화면 ${shown}`);
   const chipSum = await ev(`[...document.querySelectorAll('.chip')].map(c => c.textContent)`);
-  check("카테고리 칩 11개", chipSum.length === 11, chipSum.join(" | "));
+  check("카테고리 칩 12개", chipSum.length === 12, chipSum.join(" | "));
 
   // 검색
   await ev(`(() => { const q = document.getElementById('q'); q.value = '스타벅스'; q.dispatchEvent(new Event('input')); })()`); await sleep(400);
@@ -162,6 +162,23 @@ try {
     await ev(`document.getElementById('dClose').click()`);
   }
   await ev(`document.getElementById('fReset').click()`); await sleep(400);
+
+  // 전자기기 경품 카테고리와 세부 필터
+  const nElec = await ev(`live.filter(e => passBase(e) && e.elec.length).length`);
+  await ev(`document.querySelector('.chip[data-k="전자기기 경품"]').click()`); await sleep(400);
+  const eCards = await ev(`document.querySelectorAll('#list .tk').length`);
+  const subs = await ev(`[...document.querySelectorAll('#subchips .chip')].map(c => c.textContent)`);
+  const key = await ev(`Object.keys(ELEC).find(k => live.some(e => passBase(e) && e.elec.includes(k))) || ''`);
+  let subOk = true, subN = 0;
+  if (key) {
+    await ev(`document.querySelector('#subchips .chip[data-e="${key}"]').click()`); await sleep(400);
+    subOk = await ev(`[...document.querySelectorAll('#list .tk')].every(t => DATA.events.find(x => x.id === t.dataset.id).elec.includes('${key}'))`);
+    subN = await ev(`document.querySelectorAll('#list .tk').length`);
+  }
+  check("전자기기 경품 카테고리·세부 필터", eCards === nElec && subs.length === 8 && subOk, `카드 ${eCards}/${nElec}, 세부 ${subs.join(" | ")}, ${key} ${subN}건`);
+  await ev(`document.querySelector('.chip[data-k="전체 이벤트"]').click()`); await sleep(400);
+  check("세부 필터는 전자기기 선택 시만 표시", await ev(`document.getElementById('subchips').hidden`));
+  check("is_restricted는 true/false만", await ev(`DATA.events.every(e => e.is_restricted === true || e.is_restricted === false)`));
 
   // 원문 링크가 모두 http(s)
   const badLinks = await ev(`[...document.querySelectorAll('a.go')].filter(a => !/^https?:\\/\\//.test(a.href)).length`);

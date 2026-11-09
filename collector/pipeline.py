@@ -13,7 +13,7 @@ from pathlib import Path
 
 from lxml import html as LH
 
-from . import forms, restrict
+from . import electronics, forms, restrict
 from .common import Fetcher, norm_date, now_kst, today_kst
 from .extract import norm_url, norm_title, is_show_invite, pay_required
 from .sources import events_kr, public_boards, api_sources, aggregators, experience
@@ -27,6 +27,7 @@ SOURCES = {
     "korissue": aggregators.korissue,
     "events_kr": events_kr.collect,
     "eventhouse": aggregators.eventhouse,
+    "eventhouse_search": aggregators.eventhouse_search,
     "danawa": aggregators.danawa,
     "sbs": aggregators.sbs,
     "reviewnote": experience.reviewnote,
@@ -385,10 +386,23 @@ def classify_restrictions(db):
     """전체 이벤트의 참여 제한을 다시 판별한다(규칙이 바뀌어도 매 실행 반영)."""
     res = {"restricted": 0, "review": 0}
     for e in db["events"].values():
-        e["is_restricted"], e["restriction_reason"] = restrict.classify(e)
-        res["restricted"] += e["is_restricted"] is True
-        res["review"] += e["is_restricted"] is None
+        verdict, reason = restrict.classify(e)
+        # is_restricted는 true/false만. 불확실하면 제한으로 확정하지 않고 검토 메모만 남긴다
+        e["is_restricted"] = verdict is True
+        e["restriction_reason"] = reason if verdict is True else None
+        e["restriction_note"] = reason if verdict is None else None
+        res["restricted"] += verdict is True
+        res["review"] += verdict is None
     return res
+
+
+def classify_electronics(db):
+    """전체 이벤트의 전자기기 경품 분류를 매 실행 다시 계산한다."""
+    n = 0
+    for e in db["events"].values():
+        e["elec"], e["elec_models"] = electronics.classify(e)
+        n += bool(e["elec"])
+    return n
 
 
 def apply_overrides(db):
@@ -487,13 +501,14 @@ def main(argv=None):
     fcfg = {**cfg, "form_pages_per_run": 0, "short_checks_per_run": 0} if a.no_links else cfg  # --no-links면 네트워크 조회 없음
     form = process_forms(db, state, today, fcfg)
     restricted = classify_restrictions(db)
+    elec = classify_electronics(db)
     apply_overrides(db)  # 관리자 수정이 자동 판별보다 우선
     pruned += update_status(db, today, cfg)
     links = {} if a.no_links else check_links(f, db, today, cfg.get("link_checks_per_run", 25))
     quality = audit(db, today)
     active = sum(1 for e in db["events"].values() if e.get("status") == "active")
     run.update({"added": stats["added"], "merged": stats["merged"], "rejected": stats["rejected"], "pruned": pruned,
-                "links": links, "quality": quality, "form": form, "restricted": restricted, "dates": dates, "broken": broken, "active": active, "total": len(db["events"]), "requests": f.count,
+                "links": links, "quality": quality, "form": form, "restricted": restricted, "dates": dates, "broken": broken, "elec": elec, "active": active, "total": len(db["events"]), "requests": f.count,
                 "sec": round(time.time() - t0, 1)})
 
     # 안전장치: 진행 중 건수가 이전의 절반 아래로 급감하면 저장하지 않고 실패로 끝낸다(기존 사이트 유지)

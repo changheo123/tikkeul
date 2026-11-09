@@ -47,6 +47,9 @@ GitHub Actions(수집·빌드)와 GitHub Pages(호스팅)만 써서 월 운영�
 - **`is_restricted`**: 지역 거주·현장 방문 제한이면 `true`, 표현은 있지만 불확실하면 `null`(검토 대상), 아니면 `false`
   (`collector/restrict.py`, 사유는 `restriction_reason`). 잘못 판별된 건은 `data/overrides.json`의 `edit`로 고친다
 
+- **`elec`·`elec_models`**: 전자기기 경품 종류와 원문에 적힌 모델명(`collector/electronics.py`). 체험단·액세서리는 제외하고, 모델명은 추측하지 않는다.
+  `is_restricted`는 true/false만 쓰고, 불확실한 건은 `restriction_note`에 메모만 남긴다
+
 ## 자동 실행 방식
 
 - **예약(cron)**: 매시 23분. GitHub 사정으로 늦거나 빠질 수 있음(이 저장소는 만든 직후 예약이 돌지 않았음)

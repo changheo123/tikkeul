@@ -21,7 +21,12 @@ def youtube(f, state, cfg):
         raise NotConfigured("YT_API_KEY 없음")
     after = (now_kst() - dt.timedelta(days=cfg.get("days", 14))).astimezone(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
     ids = []
-    for q in cfg.get("queries", []):
+    # 전자기기 검색어는 할당량을 아끼려 회차마다 2개씩 돌아가며 쓴다(검색 1회 100단위)
+    extra = cfg.get("elec_queries", [])
+    st = state.setdefault("youtube", {"elecIdx": 0})
+    picked = [extra[(st["elecIdx"] + i) % len(extra)] for i in range(min(2, len(extra)))] if extra else []
+    st["elecIdx"] = st["elecIdx"] + 2
+    for q in cfg.get("queries", []) + picked:
         r = f.get("https://www.googleapis.com/youtube/v3/search", check_robots=False, params={
             "part": "snippet", "q": q, "type": "video", "regionCode": "KR", "relevanceLanguage": "ko",
             "publishedAfter": after, "maxResults": 25, "order": "date", "key": key})

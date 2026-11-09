@@ -18,6 +18,7 @@ SOURCE_ROWS = [
     ("ledger", "사람 확인 장부", ["ledger"], "1단계에서 사람이 공식 원문과 대조해 승인한 이벤트"),
     ("korissue", "경품 이벤트 모음(korissue)", ["ki"], "오늘·내일 마감 이벤트와 주최 원문 응모 링크(인스타그램·블로그·구글폼 등)"),
     ("eventhouse", "경품 이벤트 모음(이벤트하우스)", ["eh"], "플랫폼별 진행 이벤트 목록. 응모 링크는 로그인 전용이라 쓰지 않고, 원문은 다른 출처와 합쳐 찾음"),
+    ("eventhouse_search", "이벤트하우스 상세 검색(전자기기·X·카페)", ["eh"], "경품 분류·키워드 검색으로 진행 중 이벤트 탐색. 위 이벤트하우스와 같은 글은 하나로 합침"),
     ("events_kr", "경품 이벤트 모음(events.kr)", ["ek"], "목록·상세 공개 페이지(robots.txt 허용)"),
     ("danawa", "다나와 이벤트", ["dn"], "다나와 자체 무료 이벤트 목록(퀴즈·체험단 등, 다나와 로그인 필요)"),
     ("sbs", "SBS 방송 이벤트", ["sb"], "SBS 공식 이벤트 목록(투표·방청·시청 이벤트)"),
@@ -95,7 +96,8 @@ def main():
         "shown": len(live), "ended": len(events) - len(live),
         "withForm": sum(1 for x in live if x.get("form_url")),
         "restricted": sum(1 for x in live if x.get("is_restricted") is True),
-        "restrictReview": sum(1 for x in live if x.get("is_restricted") is None),
+        "restrictReview": sum(1 for x in live if x.get("restriction_note")),
+        "elec": sum(1 for x in live if x.get("elec")),
         "sources": source_meta(state, runs),
         "lastRun": runs[-1]["at"] if runs else None,
     }

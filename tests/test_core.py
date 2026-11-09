@@ -111,6 +111,46 @@ def test_audit():
     assert db["events"][d["id"]]["status"] == "excluded"
 
 
+def _el(**kw):
+    from collector.electronics import classify
+    return classify({"title": "", "kind": "댓글", **kw})
+
+
+def test_electronics():
+    assert _el(prize="애플워치 SE3(1명)&네이버페이 3만원권(12명)") == (["watch"], ["애플워치 SE3"])
+    assert _el(prize="에어팟 프로 3 외 굿즈")[0] == ["audio"]
+    assert _el(prize="맥북 에어 1명, 아이패드 미니 2명, PS5 3명")[0] == ["pc", "tablet", "console"]  # 여러 종류 중복 분류
+    assert _el(prize="LG 그램 노트북")[0] == ["pc"]
+    assert _el(prize="갤럭시 S26 울트라 1명")[0] == ["phone"]
+    assert _el(prize="갤럭시 워치9 1명, 갤럭시 버즈4 프로 2명")[0] == ["audio", "watch"]
+    assert _el(prize="로봇청소기 1명, 빔프로젝터 2명, 고프로 액션캠")[0] == ["other"]
+    assert _el(prize="에어팟 2명 160명") == (["audio"], ["에어팟"])  # 인원을 세대로 읽지 않는다
+    assert _el(prize="에어팟 Pro 3 1명")[1] == ["에어팟 Pro 3"]
+    assert _el(prize="에어팟 5세대 2명")[1] == ["에어팟 5세대"]
+    assert _el(prize="템플스테이 1박 2일 체험권")[0] == []
+    # 모델이 없으면 만들지 않는다
+    assert _el(prize="노트북 1명") == (["pc"], [])
+    # 액세서리·이용권·시청 서비스·다른 뜻은 제외
+    for p in ["아이폰 케이스 10명", "맥북 파우치", "노트북 가방 5명", "TV 시청권", "프로그램 100그램 세트", "모니터링 요원 기념품", "스타벅스 아메리카노"]:
+        assert _el(prize=p)[0] == [], p
+    # 체험단(리뷰 조건)은 추첨 경품이 아니다
+    assert _el(kind="체험단", prize="에어팟 프로 3")[0] == []
+    # 제목은 경품 칸이 불명확하고 기기 바로 뒤에 증정 표현이 있을 때만
+    assert _el(title="맥북 받자 이벤트!!", prize="상품 1명")[0] == ["pc"]
+    assert _el(title="갤럭시 GALAX 지포스 RTX 타자게임 이벤트!")[0] == []
+    assert _el(title="갤럭시 Z 플립 출시 기념 퀴즈 풀고 커피쿠폰 받자", prize="커피 쿠폰 10명")[0] == []
+    # 본문은 경품 안내 줄만
+    assert _el(rawText="최우수(3명): 에어팟 프로 3 외 굿즈\n노트북으로 접속하세요")[0] == ["audio"]
+
+
+def test_restriction_is_boolean_with_note():
+    db = {"events": {"a": {"id": "a", "title": "양산시민과 함께하는 퀴즈", "tags": []}, "b": {"id": "b", "title": "부산시민만 참여 가능", "tags": []}}}
+    P.classify_restrictions(db)
+    a, b = db["events"]["a"], db["events"]["b"]
+    assert a["is_restricted"] is False and a["restriction_reason"] is None and "확인 필요" in a["restriction_note"]  # 불확실은 확정하지 않음
+    assert b["is_restricted"] is True and b["restriction_reason"]
+
+
 def test_status_expiry():
     db = {"events": {}}
     st = {"added": 0, "merged": 0}

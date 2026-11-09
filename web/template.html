@@ -200,6 +200,7 @@ footer p { margin: 0; max-width: 46em; }
 <div class="bar">
   <div class="wrap">
     <div class="chips" id="chips" role="group" aria-label="이벤트 종류로 걸러보기"></div>
+    <div class="chips" id="subchips" role="group" aria-label="전자기기 종류로 걸러보기" hidden></div>
     <div class="tools">
       <label class="sr" for="q">이벤트 검색</label>
       <input class="field search" id="q" type="search" placeholder="이벤트·주최·경품 검색" autocomplete="off">
@@ -287,13 +288,15 @@ const CATS = [
   ["쇼핑몰 이벤트", e => e.plats.includes("shop")],
   ["공공기관 이벤트", e => e.pub],
   ["기타 무료 이벤트", e => e.kind === "기타"],
+  ["전자기기 경품", e => (e.elec || []).length > 0],
 ];
 const PRIZE = { coffee: "커피·음료", gift: "상품권·포인트", food: "음식", goods: "실물 경품", none: "경품 확인 필요" };
 const TIME = ["10초 이내", "1분 이내", "5분 이내", "5분 이상"];
 const DUE = [["all", "전체"], ["d1", "오늘·내일"], ["d6", "이번 주(6일 이내)"], ["d14", "2주 이내"], ["d30", "30일 이내"], ["none", "마감일 미표기"]];
 const SORTS = { due: "마감 임박순", new: "최신 등록순", easy: "참여 간편순", value: "경품 가치순" };
 
-const state = { cat: "전체 이벤트", q: "", sort: "due", plat: "all", prize: "all", due: "all", time: "all",
+const ELEC = { audio: "이어폰·헤드폰", pc: "노트북·PC", phone: "스마트폰", tablet: "태블릿", watch: "스마트워치", console: "게임기", other: "기타" };
+const state = { cat: "전체 이벤트", elec: "all", q: "", sort: "due", plat: "all", prize: "all", due: "all", time: "all",
   noAcct: false, noSns: false, noCost: false, orig: false, restricted: false, fav: false, hideDone: false, showX: false, onlyOk: false };
 
 function esc(s) { return String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c])); }
@@ -362,7 +365,22 @@ function passBase(e) {
 }
 const catTest = name => (CATS.find(c => c[0] === name) || CATS[0])[1];
 
+// '전자기기 경품'을 골랐을 때만 세부 종류로 한 번 더 거른다
+const isElecCat = () => state.cat === "전자기기 경품";
+const elecPass = e => !isElecCat() || state.elec === "all" || (e.elec || []).includes(state.elec);
+function subchips() {
+  const box = document.getElementById("subchips");
+  box.hidden = !isElecCat();
+  if (box.hidden) return;
+  const base = live.filter(e => passBase(e) && (e.elec || []).length);
+  box.innerHTML = [["all", "전체"], ...Object.entries(ELEC)].map(([k, n]) => {
+    const c = k === "all" ? base.length : base.filter(e => e.elec.includes(k)).length;
+    return `<button type="button" class="chip${c ? "" : " zero"}" data-e="${k}" aria-pressed="${k === state.elec}">${esc(n)}<span class="n">${c}</span></button>`;
+  }).join("");
+}
+
 function chips() {
+  subchips();
   const base = live.filter(passBase);
   document.getElementById("chips").innerHTML = CATS.map(([k, t]) => {
     const n = base.filter(t).length;
@@ -409,7 +427,8 @@ function card(e) {
   if (e.isNew) tags.push('<span class="tag new">신규</span>');
   if (done.has(e.id)) tags.push('<span class="tag mine">참여함</span>');
   if (e.is_restricted === true) tags.push('<span class="tag gX">참여 제한</span>');
-  else if (e.is_restricted === null) tags.push('<span class="tag gX">참여 조건 확인</span>');
+  else if (e.restriction_note) tags.push('<span class="tag gX">참여 조건 확인</span>');
+  if ((e.elec || []).length) tags.push(`<span class="tag g gS">전자기기: ${e.elec.map(k => ELEC[k]).join("·")}</span>`);
   tags.push(e.free === "ok" ? '<span class="tag free">무료 참여</span>' : '<span class="tag gX">무료 여부 원문 확인</span>');
   tags.push(gradeTag);
   if (e.tax) tags.push('<span class="tag gX">제세공과금 확인</span>');
@@ -457,7 +476,7 @@ function emptyHtml() {
 
 function renderList() {
   chips();
-  const list = live.filter(e => passBase(e) && catTest(state.cat)(e)).sort(SORTERS[state.sort]);
+  const list = live.filter(e => passBase(e) && catTest(state.cat)(e) && elecPass(e)).sort(SORTERS[state.sort]);
   let html;
   if (state.sort === "due") {
     html = GROUPS.map(([name, test]) => sec(name, list.filter(test))).join("");
@@ -526,7 +545,9 @@ function openDetail(id) {
     fact("당첨자 발표일", p(e.announce ? md(e.announce) : UNK)),
     fact("예상 참여 시간", p(timeText(e) ? esc(timeText(e)) : UNK)),
     fact("무료 여부·추가 비용", p(e.free === "ok" ? "무료 참여" + (e.tax ? " · 제세공과금 확인 필요" : " · 추가 비용 안내 없음") : '<span class="unk">원문 확인 필요</span>')),
-    ...(e.is_restricted !== false && e.restriction_reason ? [fact(e.is_restricted ? "참여 제한 사유" : "참여 조건 확인", p(esc(e.restriction_reason)))] : []),
+    ...(e.is_restricted && e.restriction_reason ? [fact("참여 제한 사유", p(esc(e.restriction_reason)))] : []),
+    ...(!e.is_restricted && e.restriction_note ? [fact("참여 조건 확인", p(esc(e.restriction_note)))] : []),
+    ...((e.elec_models || []).length ? [fact("경품 모델(원문 표기)", p(esc(e.elec_models.join(", "))))] : []),
     fact("유의사항", ul(notes)),
     ...(safeUrl(e.form_url) ? [fact("응모 폼", `<p class="url">${esc(e.form_url)}</p>`)] : []),
     fact("원문 공지", url ? `<p class="url"><a href="${esc(url)}" target="_blank" rel="noopener noreferrer">${esc(url)}</a></p>` : p(UNK)),
@@ -559,7 +580,11 @@ function syncInputs() {
 // 이벤트 연결
 document.getElementById("chips").addEventListener("click", ev => {
   const b = ev.target.closest(".chip"); if (!b) return;
-  state.cat = b.dataset.k; render();
+  state.cat = b.dataset.k; state.elec = "all"; render();
+});
+document.getElementById("subchips").addEventListener("click", ev => {
+  const b = ev.target.closest(".chip"); if (!b) return;
+  state.elec = b.dataset.e; render();
 });
 document.addEventListener("click", ev => {
   const a = ev.target.closest("[data-act]");

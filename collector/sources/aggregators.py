@@ -5,6 +5,7 @@
 #  - SBS 이벤트(www.sbs.co.kr/event): 방송사 공식 이벤트 목록(robots.txt 없음)
 import re
 import datetime as dt
+from urllib.parse import urlencode
 
 from ..common import text_of, find_dates, clean, today_kst
 from ..extract import build_event
@@ -70,8 +71,16 @@ EH = "https://www.eventhouse.kr/site/"
 EH_PLATS = {"website.php": "web", "instagram.php": "insta", "youtube.php": "yt", "blog.php": "naver", "facebook.php": "web"}
 
 
+# 목록 제목 앞 아이콘 번호 → 플랫폼(검색 결과에는 플랫폼별 페이지 구분이 없다)
+EH_ICON = {"1": "web", "2": "web", "3": "naver", "4": "naver", "5": "x", "6": "web", "7": "insta", "9": "yt"}
+
+
 def _eh_page(f, page_file, page):
-    d = f.doc(f"{EH}{page_file}?p=1&page={page}")
+    return _eh_rows(f, f"{EH}{page_file}?p=1&page={page}")
+
+
+def _eh_rows(f, url):
+    d = f.doc(url)
     rows = []
     for row in d.xpath("//div[contains(@class,'list_row')]"):
         a = row.xpath(".//div[@class='list_no']/a/@href")
@@ -86,8 +95,59 @@ def _eh_page(f, page_file, page):
             if k:
                 fields[k] = clean(v)
         subj = clean(" ".join(row.xpath(".//div[contains(@class,'list_subject')]//text()")))
-        rows.append((no, subj, fields))
+        icon = re.search(r"list_(\d+)\.gif", " ".join(row.xpath(".//div[contains(@class,'list_subject')]//img/@src")))
+        rows.append((no, subj, fields, EH_ICON.get(icon.group(1)) if icon else None))
     return rows
+
+
+def _eh_add(no, subj, fd, plat, today, events, seen, skipped):
+    """목록 항목 하나를 이벤트로 만든다. 진행 중이면 True."""
+    ds = find_dates(fd.get("응모기간", ""))
+    start, end = (ds[0], ds[1]) if len(ds) >= 2 else (None, ds[0] if ds else None)
+    if end and end < today:
+        return False
+    m = re.match(r"\[([^\]]+)\]\s*(.+?)\s*(\d[\d,]*)?$", subj)
+    title = m.group(2) if m else subj
+    org = fd.get("주최회사") or (m.group(1) if m else None)
+    kind, reason = map_form(fd.get("응모형태"))
+    if reason == "유료":
+        skipped[no] = "유료 응모형태"
+        return True
+    ann = find_dates(fd.get("발표일정", ""))
+    body = "\n".join([f"응모형태: {fd.get('응모형태', '')}", "참여 방법", *numbered(fd.get("응모방법", ""))])
+    url = f"{EH}view.php?no={no}"
+    ev, why = build_event(src="eh", sid=no, title=title + " 이벤트" if "이벤트" not in title else title, url=url,
+                          org=org, body=body, start=start, end=end, announce=ann[0] if ann else None,
+                          prize=tidy_prize(fd.get("경품내역")), kind_hint=kind, extra_reasons=[reason] if reason else [],
+                          list_url=url, plat_hint=plat)
+    if ev:
+        ev["tags"].append("원문 미확인")
+        events.append(ev)
+        seen.append(ev["id"])
+    else:
+        skipped[no] = why
+    return True
+
+
+def eventhouse_search(f, state, cfg):
+    """이벤트하우스 상세 검색: 경품 분류(가전·디지털, 노트북·태블릿), 플랫폼(X·카페), 경품 내역 키워드. 진행 중인 경품만."""
+    today = today_kst()
+    events, skipped, seen, listed, done = [], {}, [], 0, set()
+    queries = [dict(q, smode=1, mgid=1) for q in cfg.get("searches", [])]
+    queries += [{"smode": 1, "mgid": 1, "msview": 4, "keyword": k} for k in cfg.get("keywords", [])]
+    for q in queries:
+        for page in range(1, cfg.get("max_pages", 3) + 1):
+            rows = _eh_rows(f, f"{EH}index.php?" + urlencode({**q, "page": page}))
+            fresh = [r for r in rows if r[0] not in done]
+            if not fresh:
+                break  # 결과가 없거나 페이지 번호를 넘어 같은 목록이 반복되면 멈춘다
+            for no, subj, fd, plat in fresh:
+                done.add(no)
+                listed += 1
+                if q.get("mplat") == 5:
+                    plat = "x"
+                _eh_add(no, subj, fd, plat, today, events, seen, skipped)
+    return {"events": events, "seen": seen, "listed": listed, "skipped": skipped}
 
 
 def eventhouse(f, state, cfg):
@@ -104,34 +164,9 @@ def eventhouse(f, state, cfg):
             if not rows:
                 break
             live_on_page = 0
-            for no, subj, fd in rows:
+            for no, subj, fd, _icon in rows:
                 listed += 1
-                ds = find_dates(fd.get("응모기간", ""))
-                start, end = (ds[0], ds[1]) if len(ds) >= 2 else (None, ds[0] if ds else None)
-                if end and end < today:
-                    continue
-                live_on_page += 1
-                m = re.match(r"\[([^\]]+)\]\s*(.+?)\s*(\d[\d,]*)?$", subj)
-                title = m.group(2) if m else subj
-                org = fd.get("주최회사") or (m.group(1) if m else None)
-                kind, reason = map_form(fd.get("응모형태"))
-                if reason == "유료":
-                    skipped[no] = "유료 응모형태"
-                    continue
-                ann = find_dates(fd.get("발표일정", ""))
-                method = fd.get("응모방법", "")
-                body = "\n".join([f"응모형태: {fd.get('응모형태', '')}", "참여 방법", *numbered(method)])
-                url = f"{EH}view.php?no={no}"
-                ev, why = build_event(src="eh", sid=no, title=title + " 이벤트" if "이벤트" not in title else title, url=url,
-                                      org=org, body=body, start=start, end=end, announce=ann[0] if ann else None,
-                                      prize=tidy_prize(fd.get("경품내역")), kind_hint=kind, extra_reasons=[reason] if reason else [],
-                                      list_url=url, plat_hint=plat)
-                if ev:
-                    ev["tags"].append("원문 미확인")
-                    events.append(ev)
-                    seen.append(ev["id"])
-                else:
-                    skipped[no] = why
+                live_on_page += _eh_add(no, subj, fd, plat, today, events, seen, skipped)
             if page > 1 and live_on_page == 0:
                 break  # 등록순 목록이라 진행 중인 글이 없는 쪽이 나오면 그 뒤는 모두 지난 글
     if full:

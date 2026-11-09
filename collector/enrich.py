@@ -111,7 +111,10 @@ def enrich(e):
         "free": "check" if (e.get("cand") or e.get("issues") or "원문 미확인" in e["tags"] or via_list(e)) else "ok",
         "freeNote": e.get("freeNote"),
         "form_url": e.get("form_url"),
-        "is_restricted": e.get("is_restricted", False),
+        "is_restricted": e.get("is_restricted") is True,
+        "restriction_note": e.get("restriction_note"),
+        "elec": e.get("elec") or [],
+        "elec_models": e.get("elec_models") or [],
         "restriction_reason": e.get("restriction_reason"),
     })
     return out
