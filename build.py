@@ -82,7 +82,7 @@ def main():
             continue  # 반려(rejected)·링크 끊김(removed)은 싣지 않는다
         x = enrich(e)
         x["via"] = sorted(via.get(e["id"], []))
-        for k in ("srcUrls", "linkFail", "platHint", "firstSeen", "rawText", "formLinks", "pageFlags", "formPending", "formChecked", "formScanV", "linkChecked", "lastSeen", "linkStatus"):
+        for k in ("srcUrls", "linkFail", "platHint", "rawText", "formLinks", "pageFlags", "formPending", "formChecked", "formScanV", "linkChecked", "lastSeen", "linkStatus"):
             x.pop(k, None)
         x["isAuto"] = bool(e.get("cand"))
         events.append(x)
@@ -118,7 +118,7 @@ def main():
     main_ids = {x["id"] for x in main}
     extra = [slim(x) for x in live if x["id"] not in main_ids]
     # 종료 목록은 카테고리 구분과 목록 표시에 쓰는 값만
-    ENDED_KEYS = ("id", "title", "org", "end", "url", "status", "grade", "kind", "plats", "pub", "elec")
+    ENDED_KEYS = ("id", "title", "org", "end", "url", "status", "grade", "kind", "plats", "pub", "elec", "card", "pcats", "pmain", "prize", "form_url")
     ended = [{k: x.get(k) for k in ENDED_KEYS} for x in events if x["id"] not in live_ids]
     assert len(main) + len(extra) + len(ended) == len(events), "분리 파일 건수 불일치"
     meta["mainCount"], meta["extraCount"] = len(main), len(extra)
@@ -133,6 +133,7 @@ def main():
     tpl = (ROOT / "web" / "template.html").read_text(encoding="utf-8")
     assert tpl.count("/*__DATA__*/") == 1
     data_js = json.dumps({"meta": meta, "events": main}, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
+    tpl = tpl.replace("__SITE_URL__", site_url())  # 공유 정보·구조화 데이터의 주소(데이터 삽입 전에 바꾼다)
     page = tpl.replace("/*__DATA__*/", data_js)
 
     tmp = ROOT / "_site.tmp"
@@ -142,8 +143,9 @@ def main():
     html = ('<!doctype html>\n<html lang="ko"><head><meta charset="utf-8">'
             '<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">\n'
             f'<link rel="canonical" href="{site_url()}">\n'
-            '<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22%3E'
-            '%3Crect width=%2232%22 height=%2232%22 rx=%227%22 fill=%22%230e7a55%22/%3E%3Ccircle cx=%2216%22 cy=%2216%22 r=%227%22 fill=%22%23ffce3d%22/%3E%3C/svg%3E">\n'
+            '<link rel="icon" type="image/png" href="assets/icon-192.png">\n'
+            '<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">\n'
+            '<link rel="manifest" href="assets/site.webmanifest">\n'
             f'{page.split("<header", 1)[0]}</head>\n<body>\n<header{page.split("<header", 1)[1]}\n</body></html>\n')
     (tmp / "index.html").write_text(html, encoding="utf-8")
     (tmp / "data" / "events.json").write_text(json.dumps(payload, ensure_ascii=False, indent=1), encoding="utf-8")
@@ -152,6 +154,7 @@ def main():
     status = [{k: v for k, v in r.items() if k != "sources"} | {"sources": {s: {a: b for a, b in v.items() if a != "trace"} for s, v in r["sources"].items()}} for r in runs[-100:]]
     (tmp / "data" / "status.json").write_text(json.dumps(status, ensure_ascii=False, indent=1), encoding="utf-8")
     (tmp / ".nojekyll").write_text("")
+    shutil.copytree(ROOT / "web" / "assets", tmp / "assets")  # 파비콘·앱 아이콘·공유 이미지
 
     # 검증 3: 페이지 스크립트 문법(node가 있으면)
     script = html.rsplit("<script>", 1)[1].rsplit("</script>", 1)[0]

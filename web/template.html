@@ -1,342 +1,344 @@
-<title>틈틈 이벤트 줍줍</title>
-<meta name="claude:viewport-fit-sides" content="cover">
-<meta name="description" content="무료로 참여할 수 있는 경품·댓글·퀴즈·설문 이벤트를 매시간 자동으로 모아 마감 순으로 보여주는 사이트">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Noto+Sans+KR:wght@400;500;700;800&display=swap">
+<title>티끌모아 티끌 - 무료 경품 이벤트 모음</title>
+<meta name="description" content="작은 경품도 모으면 즐거움이 된다. 무료 경품 이벤트를 종류별로 찾아보고 빠르게 응모하는 플랫폼, 티끌모아 티끌.">
+<meta name="application-name" content="티끌모아 티끌">
+<meta name="apple-mobile-web-app-title" content="티끌모아 티끌">
+<meta name="theme-color" content="#ffffff">
+<meta name="color-scheme" content="light">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="티끌모아 티끌">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:title" content="티끌모아 티끌">
+<meta property="og:description" content="작은 경품도 모으면 즐거움이 된다. 무료 경품 이벤트를 종류별로 찾아보고 빠르게 응모하세요.">
+<meta property="og:url" content="__SITE_URL__">
+<meta property="og:image" content="__SITE_URL__assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="티끌모아 티끌 - 작은 경품도 모으면 즐거움이 된다">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="티끌모아 티끌">
+<meta name="twitter:description" content="작은 경품도 모으면 즐거움이 된다. 무료 경품 이벤트를 종류별로 찾아보고 빠르게 응모하세요.">
+<meta name="twitter:image" content="__SITE_URL__assets/og.png">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"티끌모아 티끌","alternateName":"티끌모아","url":"__SITE_URL__","description":"무료 경품 이벤트를 종류별로 찾아보고 빠르게 응모하는 플랫폼","inLanguage":"ko-KR"}</script>
 <style>
-/* 쿠폰 티켓: 초록 머리띠 + 마감 도장(D-n)이 붙은 티켓 카드. 휴대폰 한 줄, 넓으면 두 줄 */
+/* 경품 중심의 미니멀 화면: 흰 바탕 + 민트 포인트. 휴대폰 세로 목록, 넓으면 2~3열 */
 :root {
-  --ground: #f3f6f4; --card: #ffffff; --ink: #14211b; --ink2: #2a3731; --muted: #55645d;
-  --line: #dce4df; --line2: #e7ece9; --dash: #c6d2cb;
-  --band: #0e7a55; --brand: #0e7a55; --on-brand: #ffffff; --brand-ink: #0e7a55;
-  --sun: #ffce3d; --on-sun: #14211b; --calm: #e3f3ea; --calm-ink: #0b6646;
-  --s-bg: #ddf1e7; --s-fg: #0b6646; --a-bg: #eef1ef; --a-fg: #2a3731; --x-bg: #fce9d9; --x-fg: #9a3f07;
-  --pill: #14211b; --on-pill: #ffffff;
-  --band-text: #ffffff; --band-soft: #e4f4ec; --band-tile: rgba(255,255,255,.13);
-  --shade: rgba(10, 20, 15, .48);
-  --f-display: "Do Hyeon", "Noto Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
-  --f-body: "Noto Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", system-ui, sans-serif;
+  --ground: #f6f8f7; --card: #ffffff; --ink: #1f2926; --ink2: #47524e; --muted: #717c78;
+  --line: #e7ecea; --soft: #f1f5f3;
+  --mint: #3ddbb0; --on-mint: #06342a; --tint: #e2f9f2; --emerald: #0a7a60;
+  --hot: #d6452b; --shade: rgba(20, 30, 26, .45);
+  --f: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", system-ui, sans-serif;
+  color-scheme: light;
 }
-@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
-  --ground: #0e1512; --card: #17201c; --ink: #e8f0ec; --ink2: #c9d6cf; --muted: #9aaba3;
-  --line: #2a3631; --line2: #222c28; --dash: #33413a;
-  --band: #0b4f38; --brand: #3fbf8c; --on-brand: #06281b; --brand-ink: #5ed3a3;
-  --calm: #173a2c; --calm-ink: #8be0b8;
-  --s-bg: #173a2c; --s-fg: #8be0b8; --a-bg: #222c28; --a-fg: #c9d6cf; --x-bg: #3a2614; --x-fg: #f2b07a;
-  --pill: #e8f0ec; --on-pill: #0e1512;
-  --shade: rgba(0, 0, 0, .62);
-  color-scheme: dark } }
-:root[data-theme="dark"] {
-  --ground: #0e1512; --card: #17201c; --ink: #e8f0ec; --ink2: #c9d6cf; --muted: #9aaba3;
-  --line: #2a3631; --line2: #222c28; --dash: #33413a;
-  --band: #0b4f38; --brand: #3fbf8c; --on-brand: #06281b; --brand-ink: #5ed3a3;
-  --calm: #173a2c; --calm-ink: #8be0b8;
-  --s-bg: #173a2c; --s-fg: #8be0b8; --a-bg: #222c28; --a-fg: #c9d6cf; --x-bg: #3a2614; --x-fg: #f2b07a;
-  --pill: #e8f0ec; --on-pill: #0e1512;
-  --shade: rgba(0, 0, 0, .62);
-  color-scheme: dark }
-
 * { box-sizing: border-box; }
 [hidden] { display: none !important; }
-body { margin: 0; background: var(--ground); color: var(--ink); font-family: var(--f-body); font-size: 15px; line-height: 1.6;
-  -webkit-text-size-adjust: 100%; word-break: keep-all; overflow-wrap: anywhere; }
-body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--band); }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--ground); color: var(--ink); font-family: var(--f); font-size: 15px; line-height: 1.55;
+  word-break: keep-all; overflow-wrap: anywhere; padding-bottom: calc(72px + env(safe-area-inset-bottom, 0px)); }
 .wrap { max-width: 1120px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
-a { color: var(--brand-ink); }
-:focus-visible { outline: 3px solid var(--sun); outline-offset: 2px; border-radius: 8px; }
+a { color: inherit; }
+button, input, select { font: inherit; color: inherit; }
+:focus-visible { outline: 2px solid var(--emerald); outline-offset: 2px; border-radius: 8px; }
 .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 
-/* 머리띠 */
-.band { background: var(--band); color: var(--band-text); }
-.band .wrap { padding-block: 22px 26px; display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 18px 28px; }
-.intro { display: grid; gap: 12px; flex: 1 1 420px; min-width: 0; }
-.mark { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 10px; font-size: 13px; color: var(--band-soft); }
-.mark b { font-family: var(--f-display); font-weight: 400; font-size: 18px; line-height: 1; background: #ffffff; color: #0e7a55; border-radius: 8px; padding: 5px 9px 3px; }
-h1 { margin: 0; display: flex; flex-wrap: wrap; align-items: baseline; gap: 0 14px; font-weight: 400; }
-h1 small { font-size: clamp(17px, 3vw, 26px); font-weight: 700; color: var(--band-soft); flex-basis: 100%; }
-h1 span { font-family: var(--f-display); font-size: clamp(64px, 12vw, 96px); line-height: .92; color: var(--sun); }
-.lede { margin: 0; max-width: 34em; font-size: 15px; line-height: 1.65; color: var(--band-soft); }
-.stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; flex: 1 1 300px; max-width: 440px; }
-.stat { background: var(--band-tile); border-radius: 14px; padding: 12px 12px 10px; display: grid; gap: 2px; }
-.stat b { font-family: var(--f-display); font-weight: 400; font-size: clamp(28px, 6vw, 40px); line-height: 1; font-variant-numeric: tabular-nums; }
-.stat.hot b { color: var(--sun); }
-.stat span { font-size: 12.5px; color: var(--band-soft); }
+/* 머리말과 메뉴 */
+.top { background: var(--card); }
+.top .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-top: max(14px, env(safe-area-inset-top, 0px)); padding-bottom: 6px; }
+h1 { margin: 0; font-size: 20px; font-weight: 800; letter-spacing: -.02em; line-height: 1.3; }
+.logo { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; text-decoration: none; }
+.mk { width: 28px; height: 28px; flex: none; display: grid; place-items: center; border-radius: 9px; background: var(--mint); color: var(--on-mint); font-size: 16px; font-weight: 800; letter-spacing: 0; }
+.slogan { display: none; margin: 0; font-size: 13px; color: var(--muted); }
+.nav { position: fixed; z-index: 8; left: 0; right: 0; bottom: 0; display: grid; grid-template-columns: repeat(4, 1fr); background: var(--card); border-top: 1px solid var(--line); padding-bottom: env(safe-area-inset-bottom, 0px); }
+.nav a { display: grid; justify-items: center; align-content: center; gap: 2px; min-height: 58px; font-size: 11.5px; color: var(--muted); text-decoration: none; }
+.nav svg { width: 22px; height: 22px; }
+.nav a[aria-current="page"] { color: var(--emerald); font-weight: 700; }
 
-/* 걸러보기 */
-.bar { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--ground); border-bottom: 1px solid var(--line); }
-.bar .wrap { padding-block: 10px; display: grid; gap: 8px; }
-.chips { display: flex; gap: 6px; overflow-x: auto; scrollbar-width: none; min-width: 0; padding: 2px; margin: -2px; }
-.chips::-webkit-scrollbar { display: none; }
-.chip { flex: none; font: inherit; font-size: 14.5px; font-weight: 500; min-height: 40px; padding: 0 15px; border-radius: 999px;
-  border: 1px solid var(--line); background: var(--card); color: var(--ink); cursor: pointer; }
-.chip[aria-pressed="true"] { background: var(--pill); color: var(--on-pill); border-color: var(--pill); font-weight: 700; }
-.chip .n { margin-left: 5px; font-variant-numeric: tabular-nums; opacity: .75; }
-.chip.zero:not([aria-pressed="true"]) { color: var(--muted); border-style: dashed; }
-.more { display: inline-flex; align-items: center; gap: 8px; font-size: 13.5px; color: var(--muted); cursor: pointer; min-height: 40px; }
-.more input { width: 18px; height: 18px; accent-color: var(--brand); margin: 0; flex: none; }
-.tools { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
-.field { font: inherit; font-size: 14.5px; min-height: 40px; border-radius: 10px; border: 1px solid var(--line); background: var(--card); color: var(--ink); padding: 0 12px; }
-.search { flex: 1 1 220px; min-width: 0; }
-select.field { padding-right: 8px; cursor: pointer; }
-.btn { font: inherit; font-size: 14px; font-weight: 700; min-height: 40px; padding: 0 14px; border-radius: 10px; border: 1px solid var(--line); background: var(--card); color: var(--ink); cursor: pointer; display: inline-flex; align-items: center; gap: 6px; }
-.btn[aria-expanded="true"] { background: var(--pill); color: var(--on-pill); border-color: var(--pill); }
-.btn .n { font-variant-numeric: tabular-nums; background: var(--sun); color: var(--on-sun); border-radius: 999px; padding: 0 7px; font-size: 12px; }
-.panel { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 200px), 1fr)); gap: 8px 14px; padding: 12px; background: var(--card); border: 1px solid var(--line); border-radius: 14px; max-height: 58vh; overflow-y: auto; }
-.panel label.sel { display: grid; gap: 3px; font-size: 12.5px; font-weight: 700; color: var(--muted); }
-.panel .checks { grid-column: 1 / -1; display: flex; flex-wrap: wrap; gap: 0 18px; }
-.panel .row { grid-column: 1 / -1; display: flex; justify-content: flex-end; }
+/* 검색 */
+.searchbar { position: sticky; top: 0; z-index: 6; background: var(--card); padding-block: 6px 8px; }
+.search { position: relative; display: block; }
+.search svg { position: absolute; left: 14px; top: 50%; width: 19px; height: 19px; margin-top: -9.5px; color: var(--muted); pointer-events: none; }
+.search input { width: 100%; height: 48px; padding: 0 14px 0 42px; border: 0; border-radius: 14px; background: var(--soft); font-size: 16px; }
+.search input::placeholder { color: var(--muted); }
 
-/* 목록 */
-main .wrap { padding-block: 22px 12px; display: grid; gap: 30px; }
-section { display: grid; gap: 12px; }
-h2 { margin: 0; display: flex; align-items: baseline; gap: 8px; font-size: clamp(19px, 3vw, 22px); font-weight: 800; text-wrap: balance; }
-h2 span { font-size: 14.5px; font-weight: 500; color: var(--muted); }
-.grid { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 440px), 1fr)); gap: 12px; align-items: start; }
-.tk { display: grid; grid-template-columns: 74px minmax(0, 1fr); background: var(--card); border: 1px solid var(--line); border-radius: 16px; overflow: hidden; cursor: pointer; }
-.tk:hover { border-color: var(--dash); }
-.tk { content-visibility: auto; contain-intrinsic-size: auto 240px; }  /* 화면 밖 카드는 그리기를 미룬다 */
-.lazy { margin: 0; color: var(--muted); font-size: 13.5px; display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
-.stub { background: var(--calm); color: var(--calm-ink); border-right: 2px dashed var(--dash); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; padding: 14px 4px; text-align: center; }
-.stub b { font-family: var(--f-display); font-weight: 400; font-size: 26px; line-height: 1; font-variant-numeric: tabular-nums; }
-.stub span { font-size: 12px; color: var(--ink2); }
-.tk.hot .stub { background: var(--sun); color: var(--on-sun); }
-.tk.hot .stub span { color: #3e4c45; }
-.tk.done .body > :not(.foot) { opacity: .55; }
-.body { padding: 14px 15px 12px; display: grid; gap: 7px; min-width: 0; }
-.meta { display: flex; flex-wrap: wrap; align-items: center; gap: 2px 8px; font-size: 12.5px; color: var(--muted); }
-.meta .k { font-weight: 700; color: var(--brand-ink); }
-.plats { display: inline-flex; gap: 3px; }
-.pf { width: 22px; height: 22px; border-radius: 6px; display: inline-grid; place-items: center; background: var(--ground); border: 1px solid var(--line); color: var(--ink2); }
-.pf svg { width: 14px; height: 14px; }
-.prize { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 8px; }
-.prize strong { font-size: 18px; font-weight: 800; line-height: 1.4; }
-.prize em { font-style: normal; font-size: 13px; font-weight: 700; background: var(--pill); color: var(--on-pill); border-radius: 999px; padding: 1px 9px; white-space: nowrap; }
-.note { margin: 0; font-size: 13px; line-height: 1.55; color: var(--muted); }
-.ttl { margin: 0; font-size: 15px; line-height: 1.55; font-weight: 500; color: var(--ink2); }
-.tags { display: flex; flex-wrap: wrap; gap: 5px; }
-.tag { font-size: 12.5px; border-radius: 6px; padding: 2px 8px; background: var(--ground); border: 1px solid var(--line); color: var(--ink2); }
-.tag.g { font-weight: 700; border-color: transparent; }
-.tag.free { font-weight: 700; background: transparent; border-color: var(--brand-ink); color: var(--brand-ink); }
-.tag.new { font-weight: 800; background: var(--sun); color: var(--on-sun); border-color: transparent; }
-.tag.mine { font-weight: 700; background: var(--pill); color: var(--on-pill); border-color: transparent; }
-.gS { background: var(--s-bg); color: var(--s-fg); }
-.gA { background: var(--a-bg); color: var(--a-fg); }
-.gC { background: var(--x-bg); color: var(--x-fg); }
-.tk.cand { border-style: dashed; }
-.gX, .tag.wait { background: var(--x-bg); color: var(--x-fg); border-color: transparent; }
-details { font-size: 14px; }
-summary { cursor: pointer; color: var(--muted); font-size: 13.5px; font-weight: 500; min-height: 32px; display: flex; align-items: center; gap: 6px; list-style: none; }
-summary::-webkit-details-marker { display: none; }
-summary::before { content: "+"; font-weight: 700; width: 18px; height: 18px; border-radius: 5px; display: grid; place-items: center; background: var(--ground); border: 1px solid var(--line); font-size: 13px; line-height: 1; flex: none; }
-details[open] summary::before { content: "−"; }
-.facts { display: grid; gap: 12px; padding: 6px 0 4px; }
-.facts h3 { margin: 0 0 2px; font-size: 12.5px; letter-spacing: .03em; color: var(--muted); font-weight: 700; }
-.facts p, .facts ul, .facts ol { margin: 0; color: var(--ink2); line-height: 1.6; }
-.facts ul, .facts ol { padding-left: 1.2em; display: grid; gap: 3px; }
-.unk { color: var(--x-fg); font-weight: 700; }
-.foot { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px; padding-top: 9px; border-top: 1px solid var(--line2); font-size: 12px; color: var(--muted); }
-.acts { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin-left: auto; }
-.ib { font: inherit; font-size: 13px; font-weight: 700; min-height: 42px; padding: 0 11px; border-radius: 10px; border: 1px solid var(--line); background: var(--card); color: var(--ink2); cursor: pointer; display: inline-flex; align-items: center; gap: 5px; }
-.ib svg { width: 15px; height: 15px; }
-.ib[aria-pressed="true"] { background: var(--calm); color: var(--calm-ink); border-color: var(--calm-ink); }
-.go { display: inline-flex; align-items: center; gap: 5px; min-height: 42px; padding: 0 15px; border-radius: 10px; background: var(--brand); color: var(--on-brand); font-size: 14.5px; font-weight: 700; text-decoration: none; }
-.go:hover { filter: brightness(1.08); }
-.go svg { width: 14px; height: 14px; }
-.go.alt { background: var(--card); color: var(--brand-ink); border: 1px solid var(--brand-ink); }
-.empty { padding: 32px 16px; text-align: center; color: var(--muted); background: var(--card); border: 1px dashed var(--line); border-radius: 16px; display: grid; gap: 10px; justify-items: center; }
-.empty p { margin: 0; max-width: 34em; }
+/* 카테고리·정렬 */
+.tools { background: var(--card); border-bottom: 1px solid var(--line); }
+.tools .wrap { display: grid; gap: 8px; padding-block: 6px 10px; }
+.cats { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 2px; }
+.cat { display: grid; justify-items: center; gap: 3px; min-height: 72px; padding: 4px 0; border: 0; border-radius: 14px; background: none; font-size: 12.5px; color: var(--ink2); cursor: pointer; white-space: nowrap; }
+.cat i { width: 44px; height: 44px; display: grid; place-items: center; border-radius: 15px; background: var(--soft); font-size: 23px; font-style: normal; line-height: 1; }
+.cat[aria-pressed="true"] { color: var(--emerald); font-weight: 700; }
+.cat[aria-pressed="true"] i { background: var(--tint); box-shadow: inset 0 0 0 1.5px var(--mint); }
+.subs { display: flex; gap: 6px; overflow-x: auto; scrollbar-width: none; padding: 1px; }
+.subs::-webkit-scrollbar { display: none; }
+.chip { flex: none; min-height: 44px; padding: 0 13px; border-radius: 999px; border: 1px solid var(--line); background: var(--card); font-size: 13.5px; cursor: pointer; }
+.chip[aria-pressed="true"] { background: var(--tint); border-color: var(--mint); color: var(--emerald); font-weight: 700; }
+.chip .n { margin-left: 4px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.sortbar { display: flex; align-items: center; gap: 4px; }
+.sort { min-height: 44px; padding: 0 9px; border: 0; background: none; font-size: 14px; color: var(--muted); cursor: pointer; }
+.sort:first-child { padding-left: 2px; }
+.sort[aria-pressed="true"] { color: var(--ink); font-weight: 700; }
+.count { margin-left: auto; font-size: 13px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.fbtn { display: inline-flex; align-items: center; gap: 5px; min-height: 44px; padding: 0 2px 0 8px; border: 0; background: none; font-size: 14px; font-weight: 600; cursor: pointer; }
+.fbtn svg { width: 17px; height: 17px; }
+.fbtn .n { min-width: 18px; padding: 0 5px; border-radius: 999px; background: var(--mint); color: var(--on-mint); font-size: 12px; text-align: center; }
+.panel { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 200px), 1fr)); gap: 10px 14px; padding: 14px; border-radius: 14px; background: var(--soft); }
+.panel label.sel { display: grid; gap: 3px; font-size: 13px; font-weight: 600; color: var(--ink2); }
+.panel select { min-height: 44px; padding: 0 8px; border: 1px solid var(--line); border-radius: 10px; background: var(--card); font-size: 15px; }
+.checks { grid-column: 1 / -1; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 210px), 1fr)); gap: 0 14px; }
+.check { display: flex; align-items: center; gap: 9px; min-height: 44px; font-size: 14px; cursor: pointer; }
+.check input { width: 19px; height: 19px; margin: 0; flex: none; accent-color: var(--emerald); }
+.preset { grid-column: 1 / -1; display: flex; justify-content: flex-end; }
 
-/* 종료·출처 */
-.fold { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 10px 15px; }
-.fold > summary { font-size: 15px; font-weight: 700; color: var(--ink); min-height: 40px; }
-.ended { list-style: none; margin: 8px 0 4px; padding: 0; display: grid; }
-.ended li { display: flex; flex-wrap: wrap; gap: 2px 10px; justify-content: space-between; padding: 9px 0; border-top: 1px solid var(--line2); font-size: 13.5px; color: var(--muted); }
-.ended li b { color: var(--ink2); font-weight: 500; }
-.tbl { overflow-x: auto; margin-top: 6px; }
-.tbl table { border-collapse: collapse; width: 100%; min-width: 560px; font-size: 13.5px; }
-.tbl th, .tbl td { text-align: left; vertical-align: top; padding: 8px 10px 8px 0; border-top: 1px solid var(--line2); }
-.tbl th { font-size: 12.5px; color: var(--muted); font-weight: 700; }
-.tbl td.n { font-variant-numeric: tabular-nums; text-align: right; padding-right: 14px; }
-.st { font-size: 12px; font-weight: 700; border-radius: 6px; padding: 1px 7px; white-space: nowrap; }
-.st.on { background: var(--s-bg); color: var(--s-fg); }
-.st.ref { background: var(--a-bg); color: var(--a-fg); }
-.st.off, .st.no { background: var(--x-bg); color: var(--x-fg); }
-.st.ledger { background: var(--a-bg); color: var(--a-fg); }
-.st.err { background: var(--sun); color: var(--on-sun); }
-.fold p { margin: 8px 0 0; font-size: 13px; color: var(--muted); max-width: 52em; }
+/* 카드 */
+main .wrap { padding-block: 14px 24px; display: grid; gap: 14px; }
+.vh { margin: 2px 0 0; font-size: 20px; font-weight: 800; letter-spacing: -.02em; }
+.grid { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: minmax(0, 1fr); gap: 10px; }
+.tk { display: flex; flex-direction: column; gap: 4px; padding: 15px 16px 14px; border: 1px solid var(--line); border-radius: 18px; background: var(--card); cursor: pointer; }
+.tk.done { opacity: .55; }
+.due { margin: 0; font-size: 13px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.due.hot { color: var(--hot); font-weight: 600; }
+.tk h3 { margin: 0 0 8px; font-size: 18px; font-weight: 800; line-height: 1.38; letter-spacing: -.02em; }
+.pz { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden; width: 100%; padding: 0; border: 0; background: none; font-weight: inherit; letter-spacing: inherit; line-height: inherit; text-align: left; cursor: pointer; }
+.cta { display: flex; gap: 8px; margin-top: auto; }
+.go { flex: 1 1 0; min-width: 0; display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 0 8px; border-radius: 12px; font-size: 14.5px; font-weight: 700; text-decoration: none; white-space: nowrap; }
+.go.form { background: var(--mint); color: var(--on-mint); }
+.go.note { background: var(--card); color: var(--ink2); border: 1px solid #d5dcd9; }
+.go.form:hover { background: #34cfa5; }
+.go.note:hover { background: var(--soft); }
+.more { justify-self: center; min-height: 46px; padding: 0 26px; border: 1px solid #d5dcd9; border-radius: 999px; background: var(--card); font-size: 14.5px; font-weight: 600; cursor: pointer; }
+.empty { display: grid; justify-items: center; gap: 12px; padding: 48px 16px; color: var(--muted); text-align: center; }
+.empty p { margin: 0; max-width: 32em; }
+.lazy { margin: 0; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; color: var(--muted); font-size: 13.5px; }
+.tbtn { min-height: 44px; padding: 0 16px; border: 1px solid #d5dcd9; border-radius: 12px; background: var(--card); font-size: 14px; font-weight: 600; cursor: pointer; }
+
+/* 안내(운영 정보) */
+.info { display: grid; gap: 12px; }
+.intro { margin: 0; color: var(--ink2); }
+.stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
+.stat { display: grid; gap: 1px; padding: 12px; border: 1px solid var(--line); border-radius: 14px; background: var(--card); }
+.stat b { font-size: 22px; font-weight: 800; font-variant-numeric: tabular-nums; }
+.stat span { font-size: 12.5px; color: var(--muted); }
+.stamp { margin: 0; font-size: 13px; color: var(--muted); }
+.fold { padding: 4px 16px; border: 1px solid var(--line); border-radius: 16px; background: var(--card); }
+.fold > summary { min-height: 48px; display: flex; align-items: center; font-weight: 700; cursor: pointer; }
+.fold p { margin: 4px 0 12px; font-size: 13.5px; color: var(--muted); }
+.ended { list-style: none; margin: 0 0 8px; padding: 0; }
+.ended li { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 2px 10px; padding: 9px 0; border-top: 1px solid var(--line); font-size: 13.5px; color: var(--muted); }
+.ended li b { font-weight: 500; color: var(--ink2); }
+.ended a { color: var(--emerald); }
+.tbl { overflow-x: auto; margin-bottom: 8px; }
+.tbl table { width: 100%; min-width: 560px; border-collapse: collapse; font-size: 13.5px; }
+.tbl th, .tbl td { padding: 8px 10px 8px 0; border-top: 1px solid var(--line); text-align: left; vertical-align: top; }
+.tbl th { font-size: 12.5px; color: var(--muted); }
+.tbl td.n { text-align: right; padding-right: 14px; font-variant-numeric: tabular-nums; }
+.st { padding: 1px 7px; border-radius: 6px; background: var(--soft); font-size: 12px; font-weight: 600; white-space: nowrap; }
+.st.on { background: var(--tint); color: var(--emerald); }
+.st.err { background: #fdeae5; color: var(--hot); }
+.notes { display: grid; gap: 6px; margin: 0; padding-left: 1.1em; font-size: 13.5px; color: var(--muted); }
 
 /* 상세 창 */
-dialog { width: min(640px, calc(100% - 24px)); max-height: 88vh; padding: 0; border: 1px solid var(--line); border-radius: 18px; background: var(--card); color: var(--ink); }
+dialog { width: 100%; max-width: 560px; max-height: 90vh; margin: auto auto 0; padding: 0; border: 0; border-radius: 22px 22px 0 0; background: var(--card); color: var(--ink); }
 dialog::backdrop { background: var(--shade); }
-.dh { position: sticky; top: 0; z-index: 1; background: var(--card); display: flex; align-items: center; gap: 10px; padding: 12px 14px 10px 18px; border-bottom: 1px solid var(--line2); }
-.dh .meta { flex: 1 1 auto; min-width: 0; }
-.x { font: inherit; font-size: 22px; line-height: 1; width: 40px; height: 40px; flex: none; border-radius: 10px; border: 1px solid var(--line); background: var(--ground); color: var(--ink); cursor: pointer; }
-.db { padding: 14px 18px 18px; display: grid; gap: 14px; }
-.db h2 { font-size: clamp(18px, 3vw, 21px); line-height: 1.45; }
-.db .facts { gap: 14px; }
-.df { position: sticky; bottom: 0; background: var(--card); display: flex; flex-wrap: wrap; gap: 8px; align-items: center; justify-content: flex-end; padding: 10px 14px 12px; border-top: 1px solid var(--line2); }
-.df .go { flex: 1 1 200px; justify-content: center; }
-.url { font-size: 12.5px; color: var(--muted); word-break: break-all; }
+.dh { position: sticky; top: 0; z-index: 1; display: flex; align-items: center; gap: 10px; padding: 10px 10px 8px 20px; background: var(--card); }
+.dh .due { flex: 1 1 auto; }
+.x { width: 44px; height: 44px; flex: none; border: 0; border-radius: 12px; background: none; font-size: 24px; line-height: 1; color: var(--muted); cursor: pointer; }
+.db { display: grid; gap: 16px; padding: 0 20px 18px; }
+.db h2 { margin: 0; font-size: 21px; font-weight: 800; line-height: 1.36; letter-spacing: -.02em; }
+.sub { margin: 4px 0 0; font-size: 14px; color: var(--muted); }
+.facts { display: grid; gap: 14px; font-size: 14.5px; }
+.facts h3 { margin: 0 0 2px; font-size: 12.5px; font-weight: 700; color: var(--muted); }
+.facts p, .facts ul, .facts ol { margin: 0; color: var(--ink2); }
+.facts ul, .facts ol { display: grid; gap: 3px; padding-left: 1.2em; }
+.unk { color: var(--muted); }
+.url { font-size: 12.5px; word-break: break-all; }
+.url a { color: var(--emerald); }
+.df { position: sticky; bottom: 0; display: grid; gap: 8px; padding: 10px 16px calc(12px + env(safe-area-inset-bottom, 0px)); border-top: 1px solid var(--line); background: var(--card); }
+.df .row { display: flex; gap: 8px; }
+.ib { flex: 1 1 0; min-height: 44px; display: inline-flex; align-items: center; justify-content: center; gap: 5px; border: 1px solid var(--line); border-radius: 12px; background: var(--card); font-size: 14px; font-weight: 600; cursor: pointer; }
+.ib svg { width: 16px; height: 16px; }
+.ib[aria-pressed="true"] { background: var(--tint); border-color: var(--mint); color: var(--emerald); }
 
-footer .wrap { padding-block: 18px 40px; display: grid; gap: 6px; font-size: 13px; color: var(--muted); }
-footer p { margin: 0; max-width: 46em; }
-@media (prefers-reduced-motion: no-preference) { .chip, .go, .ib { transition: background-color .15s, color .15s, filter .15s; } }
+@media (min-width: 720px) {
+  body { padding-bottom: 0; }
+  .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+  .cats { grid-template-columns: repeat(10, minmax(0, 1fr)); }
+  .slogan { display: block; }
+  .brand { display: flex; align-items: center; gap: 14px; }
+  .nav { position: static; display: flex; gap: 2px; border: 0; padding: 0; }
+  .nav a { display: inline-flex; align-items: center; gap: 6px; min-height: 44px; padding: 0 12px; border-radius: 10px; font-size: 14px; }
+  .nav svg { width: 18px; height: 18px; }
+  .nav a:hover { background: var(--soft); }
+  dialog { margin: auto; border-radius: 22px; }
+}
+@media (min-width: 1040px) { .grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
 </style>
 
-<header class="band">
+<header class="top">
   <div class="wrap">
-    <div class="intro">
-      <div class="mark"><b>틈틈</b><span id="stamp"></span></div>
-      <h1><small>도움되는 이벤트</small><span>줍줍</span></h1>
-      <p class="lede">돈 들이지 않고 참여할 수 있는 경품·댓글·퀴즈·설문 이벤트를 매시간 자동으로 모아 마감 순으로 보여줘요. 구매·결제·참가비가 필요한 이벤트는 싣지 않아요. <b>승인 전</b>·<b>무료 여부 원문 확인</b> 표시가 있는 건은 자동 수집한 값이라 참여 전에 원문을 꼭 먼저 확인해 주세요.</p>
+    <div class="brand">
+      <h1><a class="logo" href="#"><span class="mk" aria-hidden="true">티</span>티끌모아 티끌</a></h1>
+      <p class="slogan">작은 경품도 모으면 즐거움이 된다</p>
     </div>
-    <div class="stats" aria-label="마감 현황">
-      <div class="stat hot"><b id="sHot">0</b><span>오늘·내일 마감</span></div>
-      <div class="stat"><b id="sWeek">0</b><span>이번 주 마감</span></div>
-      <div class="stat"><b id="sAll">0</b><span>지금 참여 가능</span></div>
-    </div>
+    <nav class="nav" id="nav" aria-label="주요 메뉴">
+      <a href="#" data-v="home"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11l8-7 8 7v9h-5v-5H9v5H4z"/></svg>홈</a>
+      <a href="#saved" data-v="fav"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.5l2.6 5.3 5.8.8-4.2 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8-4.2-4.1 5.8-.8z"/></svg>저장</a>
+      <a href="#joined" data-v="done"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="M8 12.5l2.8 2.8L16 9.8"/></svg>참여</a>
+      <a href="#info" data-v="info"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="M12 11v5.5M12 7.8v.2"/></svg>안내</a>
+    </nav>
   </div>
 </header>
 
-<div class="bar">
+<div class="searchbar" id="searchbar">
   <div class="wrap">
-    <div class="chips" id="chips" role="group" aria-label="이벤트 종류로 걸러보기"></div>
-    <div class="chips" id="subchips" role="group" aria-label="전자기기 종류로 걸러보기" hidden></div>
-    <div class="tools">
-      <label class="sr" for="q">이벤트 검색</label>
-      <input class="field search" id="q" type="search" placeholder="이벤트·주최·경품 검색" autocomplete="off">
-      <label class="sr" for="sort">정렬</label>
-      <select class="field" id="sort">
-        <option value="due">마감 임박순</option>
-        <option value="new">최신 등록순</option>
-        <option value="easy">참여 간편순</option>
-        <option value="value">경품 가치순</option>
-      </select>
-      <button type="button" class="btn" id="fBtn" aria-expanded="false" aria-controls="panel">필터<span class="n" id="fN" hidden>0</span></button>
+    <label class="search" for="q"><span class="sr">경품 검색</span>
+      <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.2 4.2"/></svg>
+      <input id="q" type="search" placeholder="어떤 경품을 찾으세요?" autocomplete="off">
+    </label>
+  </div>
+</div>
+
+<div class="tools" id="tools">
+  <div class="wrap">
+    <div class="cats" id="chips" role="group" aria-label="경품 카테고리"></div>
+    <div class="subs" id="subchips" role="group" aria-label="전자기기 종류" hidden></div>
+    <div class="sortbar">
+      <div role="group" aria-label="정렬">
+        <button type="button" class="sort" data-sort="new" aria-pressed="false">최신 등록순</button>
+        <button type="button" class="sort" data-sort="due" aria-pressed="true">마감 임박순</button>
+      </div>
+      <span class="count" id="count" role="status"></span>
+      <button type="button" class="fbtn" id="fBtn" aria-expanded="false" aria-controls="panel">
+        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M4 7h16M7 12h10M10 17h4"/></svg>필터<span class="n" id="fN" hidden>0</span>
+      </button>
     </div>
     <div class="panel" id="panel" hidden>
-      <label class="sel" for="fPlat">이벤트 플랫폼<select class="field" id="fPlat"></select></label>
-      <label class="sel" for="fPrize">경품 종류<select class="field" id="fPrize"></select></label>
-      <label class="sel" for="fDue">마감일<select class="field" id="fDue"></select></label>
-      <label class="sel" for="fTime">예상 참여 시간<select class="field" id="fTime"></select></label>
+      <label class="sel" for="fType">이벤트 유형<select id="fType"></select></label>
+      <label class="sel" for="fPlat">플랫폼<select id="fPlat"></select></label>
+      <label class="sel" for="fPrize">경품 종류<select id="fPrize"></select></label>
+      <label class="sel" for="fDue">마감일<select id="fDue"></select></label>
+      <label class="sel" for="fTime">예상 참여 시간<select id="fTime"></select></label>
       <div class="checks">
-        <label class="more" for="fNoAcct"><input type="checkbox" id="fNoAcct"> 회원가입·로그인 없이</label>
-        <label class="more" for="fNoSns"><input type="checkbox" id="fNoSns"> SNS 계정 없이</label>
-        <label class="more" for="fNoCost"><input type="checkbox" id="fNoCost"> 추가 비용 확인된 것 빼기</label>
-        <label class="more" for="fOrig"><input type="checkbox" id="fOrig"> 원문 링크 있는 것만</label>
-        <label class="more" for="fRestricted"><input type="checkbox" id="fRestricted"> 제한 이벤트 포함</label>
-        <label class="more" for="fFav"><input type="checkbox" id="fFav"> 저장한 것만</label>
-        <label class="more" for="fHideDone"><input type="checkbox" id="fHideDone"> 참여한 것 숨기기</label>
-        <label class="more" for="onlyOk"><input type="checkbox" id="onlyOk"> 승인된 것만 보기</label>
-        <label class="more" for="showX"><input type="checkbox" id="showX"> 조건 많은 이벤트도 보기</label>
+        <label class="check" for="fNoAcct"><input type="checkbox" id="fNoAcct">회원가입·로그인 없이</label>
+        <label class="check" for="fNoSns"><input type="checkbox" id="fNoSns">SNS 계정 없이</label>
+        <label class="check" for="fNoCost"><input type="checkbox" id="fNoCost">추가 비용 확인된 것 빼기</label>
+        <label class="check" for="fOrig"><input type="checkbox" id="fOrig">원문 링크 있는 것만</label>
+        <label class="check" for="fHideDone"><input type="checkbox" id="fHideDone">참여한 것 숨기기</label>
+        <label class="check" for="onlyOk"><input type="checkbox" id="onlyOk">승인된 것만 보기</label>
+        <label class="check" for="fRestricted"><input type="checkbox" id="fRestricted">참여 제한 이벤트 포함</label>
+        <label class="check" for="showX"><input type="checkbox" id="showX">조건 많은 이벤트도 보기</label>
       </div>
-      <div class="row"><button type="button" class="btn" id="fReset">필터 초기화</button></div>
+      <div class="preset"><button type="button" class="tbtn" id="fReset">필터 초기화</button></div>
     </div>
   </div>
 </div>
 
-<main><div class="wrap">
-  <p class="lazy" id="lazyNote" role="status" hidden></p>
-  <div id="list" aria-live="polite"></div>
-  <details class="fold" id="endedBox"><summary id="endedSum">종료된 이벤트</summary><ol class="ended" id="ended"></ol></details>
-  <details class="fold" id="srcBox"><summary>수집 출처 현황</summary>
-    <p>수집기가 매시간 공개 게시판·모음 사이트를 robots.txt 규칙대로 읽고, 구매·결제 조건이 있는 글과 공연초대를 빼고, 같은 이벤트는 하나로 합쳐요. 자동 수집한 이벤트는 '승인 전'으로 표시되고, 사람이 원문을 확인하면 승인으로 바뀌어요.</p>
-    <div class="tbl"><table><thead><tr><th>출처</th><th>상태</th><th>현재 건수</th><th>가져오는 방식</th></tr></thead><tbody id="src"></tbody></table></div>
-  </details>
-</div></main>
+<main>
+  <div class="wrap" id="listView">
+    <h2 class="vh" id="viewTitle" hidden></h2>
+    <p class="lazy" id="lazyNote" role="status" hidden></p>
+    <ol class="grid" id="list" aria-label="이벤트 목록"></ol>
+    <div id="emptyBox" hidden></div>
+    <button type="button" class="more" id="more" hidden>더 보기</button>
+  </div>
+  <div class="wrap info" id="infoView" hidden>
+    <h2 class="vh">안내</h2>
+    <p class="intro">티끌모아 티끌은 무료 경품 이벤트를 종류별로 찾아보고 빠르게 응모할 수 있도록 모아 보여줘요. 구매·결제·참가비가 필요한 이벤트는 싣지 않아요.</p>
+    <div class="stats" aria-label="마감 현황">
+      <div class="stat"><b id="sHot">0</b><span>오늘·내일 마감</span></div>
+      <div class="stat"><b id="sWeek">0</b><span>이번 주 마감</span></div>
+      <div class="stat"><b id="sAll">0</b><span>지금 참여 가능</span></div>
+    </div>
+    <p class="stamp" id="stamp"></p>
+    <details class="fold" id="endedBox"><summary id="endedSum">종료된 이벤트</summary><ol class="ended" id="ended"></ol></details>
+    <details class="fold" id="srcBox"><summary>수집 출처 현황</summary>
+      <p>수집기가 매시간 공개 게시판·모음 사이트를 robots.txt 규칙대로 읽고, 구매·결제 조건이 있는 글과 공연초대를 빼고, 같은 이벤트는 하나로 합쳐요.</p>
+      <div class="tbl"><table><thead><tr><th>출처</th><th>상태</th><th>현재 건수</th><th>가져오는 방식</th></tr></thead><tbody id="src"></tbody></table></div>
+    </details>
+    <ul class="notes">
+      <li>응모 폼 버튼은 실제 응모 폼 주소가 확인된 이벤트에만 보여요.</li>
+      <li>경품·마감·조건은 자동으로 읽은 값이라 틀릴 수 있어요. 참여 전에 이벤트 공지를 꼭 확인해 주세요.</li>
+      <li>참여 제한 이벤트와 조건이 많은 이벤트는 기본 목록에서 빠져 있어요. 필터에서 포함할 수 있어요.</li>
+      <li>저장·참여 표시는 이 브라우저에만 남는 개인 기록이고, 실제 응모 여부를 보증하지 않아요.</li>
+      <li>포스터와 사진은 권리를 확인하지 않아 싣지 않아요. 이 페이지는 개인정보를 받지 않아요.</li>
+    </ul>
+  </div>
+</main>
 
 <dialog id="dlg" aria-labelledby="dTitle">
-  <div class="dh"><div class="meta" id="dMeta"></div><button type="button" class="x" id="dClose" aria-label="닫기">×</button></div>
+  <div class="dh"><p class="due" id="dMeta"></p><button type="button" class="x" id="dClose" aria-label="닫기">×</button></div>
   <div class="db" id="dBody"></div>
   <div class="df" id="dFoot"></div>
 </dialog>
 
-<footer>
-  <div class="wrap">
-    <p>간단 참여·조건 있음·예상 참여 시간·경품 종류는 장부 내용을 도구로 분류한 값이라 틀릴 수 있어요. '추정' 표시는 참여 절차로 어림한 시간이에요. 마감·경품·조건은 원문이 기준이에요.</p>
-    <p>저장·참여함 표시는 이 브라우저에만 남는 개인 기록이고, 실제 응모가 됐는지를 보증하지 않아요.</p>
-    <p>포스터와 사진은 권리를 확인하지 않아 싣지 않았어요. 이 페이지는 개인정보를 받지 않아요.</p>
-  </div>
-</footer>
-
 <script>
 const DATA = /*__DATA__*/;
 const WD = "일월화수목금토";
-const ARROW = '<svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>';
 const SVG = p => `<svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">${p}</svg>`;
 const I_SAVE = SVG('<path d="M12 3.5l2.6 5.3 5.8.8-4.2 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8-4.2-4.1 5.8-.8z"/>');
 const I_DONE = SVG('<path d="M4.5 12.5l5 5 10-11"/>');
 
-// 플랫폼: 이름과 아이콘(일반 도형)
-const PLATS = {
-  insta: ["인스타그램", '<rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r=".6" fill="currentColor"/>'],
-  yt: ["유튜브", '<rect x="2.5" y="5.5" width="19" height="13" rx="4"/><path d="M10 9.2v5.6l4.8-2.8z" fill="currentColor"/>'],
-  naver: ["네이버", '<rect x="3.5" y="3.5" width="17" height="17" rx="3"/><path d="M8.5 16V8l7 8V8"/>'],
-  x: ["X", '<path d="M5 5l14 14M19 5L5 19"/>'],
-  tg: ["텔레그램", '<path d="M21 4L3 11l6 2 2 6 3-4 5 4z"/>'],
-  shop: ["쇼핑몰", '<path d="M5 8h14l-1 12H6z"/><path d="M9 8a3 3 0 0 1 6 0"/>'],
-  web: ["공식 누리집", '<circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17M12 3.5c3 3.2 3 13.8 0 17M12 3.5c-3 3.2-3 13.8 0 17"/>'],
-};
-// 메인 카테고리(이벤트 유형). 한 이벤트가 여러 카테고리에 속할 수 있음
+const PLATS = { insta: "인스타그램", yt: "유튜브", naver: "네이버", x: "X", tg: "텔레그램", shop: "쇼핑몰", web: "공식 누리집" };
+// 경품 카테고리: [키, 이름, 아이콘]. 분류는 사이트를 만들 때 실제 경품명으로 계산한다(e.pcats)
 const CATS = [
-  ["전체 이벤트", () => true],
-  ["간편 응모", e => e.grade === "S"],
-  ["댓글·퀴즈", e => ["댓글", "퀴즈", "투표"].includes(e.kind)],
-  ["SNS 이벤트", e => e.plats.some(p => ["insta", "naver", "x", "tg"].includes(p))],
-  ["유튜브 이벤트", e => e.plats.includes("yt")],
-  ["라디오·사연", e => e.kind === "라디오"],
-  ["설문조사", e => e.kind === "설문"],
-  ["무료 체험단", e => e.kind === "체험단"],
-  ["쇼핑몰 이벤트", e => e.plats.includes("shop")],
-  ["공공기관 이벤트", e => e.pub],
-  ["기타 무료 이벤트", e => e.kind === "기타"],
-  ["전자기기 경품", e => (e.elec || []).length > 0],
+  ["all", "전체", "✨"], ["gifticon", "기프티콘", "🎫"], ["coffee", "커피", "☕"], ["elec", "전자기기", "🎧"], ["food", "음식", "🍗"],
+  ["beauty", "뷰티", "💄"], ["gift", "상품권", "💳"], ["travel", "여행·숙박", "✈️"], ["life", "생활용품", "🧺"], ["etc", "기타", "🎁"],
+];
+const ICON = Object.fromEntries(CATS.map(c => [c[0], c[2]]));
+const ELEC = { audio: "이어폰·헤드폰", pc: "노트북·PC", phone: "스마트폰", tablet: "태블릿", watch: "스마트워치", console: "게임기", other: "기타" };
+const ELEC_ICON = { audio: "🎧", pc: "💻", phone: "📱", tablet: "📱", watch: "⌚", console: "🎮", other: "🔌" };
+// 이벤트 유형은 상세 필터로 옮겼다
+const TYPES = [
+  ["all", "전체", () => true],
+  ["easy", "간편 응모", e => e.grade === "S"],
+  ["quiz", "댓글·퀴즈", e => ["댓글", "퀴즈", "투표"].includes(e.kind)],
+  ["sns", "SNS 이벤트", e => e.plats.some(p => ["insta", "naver", "x", "tg"].includes(p))],
+  ["yt", "유튜브 이벤트", e => e.plats.includes("yt")],
+  ["radio", "라디오·사연", e => e.kind === "라디오"],
+  ["survey", "설문조사", e => e.kind === "설문"],
+  ["trial", "무료 체험단", e => e.kind === "체험단"],
+  ["shop", "쇼핑몰 이벤트", e => e.plats.includes("shop")],
+  ["pub", "공공기관 이벤트", e => e.pub],
+  ["etc", "기타 무료 이벤트", e => e.kind === "기타"],
 ];
 const PRIZE = { coffee: "커피·음료", gift: "상품권·포인트", food: "음식", goods: "실물 경품", none: "경품 확인 필요" };
 const TIME = ["10초 이내", "1분 이내", "5분 이내", "5분 이상"];
 const DUE = [["all", "전체"], ["d1", "오늘·내일"], ["d6", "이번 주(6일 이내)"], ["d14", "2주 이내"], ["d30", "30일 이내"], ["none", "마감일 미표기"]];
-const SORTS = { due: "마감 임박순", new: "최신 등록순", easy: "참여 간편순", value: "경품 가치순" };
 
-const ELEC = { audio: "이어폰·헤드폰", pc: "노트북·PC", phone: "스마트폰", tablet: "태블릿", watch: "스마트워치", console: "게임기", other: "기타" };
-const state = { cat: "전체 이벤트", elec: "all", q: "", sort: "due", plat: "all", prize: "all", due: "all", time: "all",
-  noAcct: false, noSns: false, noCost: false, orig: false, restricted: false, fav: false, hideDone: false, showX: false, onlyOk: false };
+const state = { cat: "all", elec: "all", q: "", sort: "due", type: "all", plat: "all", prize: "all", due: "all", time: "all",
+  noAcct: false, noSns: false, noCost: false, orig: false, restricted: false, hideDone: false, showX: false, onlyOk: false };
+const $ = id => document.getElementById(id);
 
 function esc(s) { return String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c])); }
 function kstToday() { return new Date(Date.now() + 9 * 3600e3).toISOString().slice(0, 10); }
 function utc(d) { const [y, m, dd] = d.split("-").map(Number); return Date.UTC(y, m - 1, dd); }
 function md(d) { if (!d) return ""; const t = new Date(utc(d)); return `${t.getUTCMonth() + 1}/${t.getUTCDate()} ${WD[t.getUTCDay()]}`; }
 function safeUrl(u) { return /^https?:\/\//i.test(u || "") ? u : null; }
-function splitPrize(p) {
-  if (!p) return ["경품은 원문 확인", ""];
-  const cut = [p.indexOf("("), p.indexOf(", ")].filter(i => i > 1);
-  if (!cut.length) return [p, ""];
-  const i = Math.min(...cut);
-  let rest = p.slice(i).replace(/^,\s*/, "").trim();
-  if (/^\([^()]*\)$/.test(rest)) rest = rest.slice(1, -1);
-  return [p.slice(0, i).trim(), rest];
-}
 const UNK = '<span class="unk">확인 필요</span>';
 
-// 저장·참여함: 이 브라우저에만 저장(실패해도 화면은 동작)
+// 저장·참여 기록: 이 브라우저에만 저장(기존 키를 그대로 써서 예전 기록이 유지된다)
 function load(k) { try { return new Set(JSON.parse(localStorage.getItem(k) || "[]")); } catch { return new Set(); } }
 function save(k, s) { try { localStorage.setItem(k, JSON.stringify([...s])); } catch {} }
 const fav = load("tt-fav"), done = load("tt-done");
 
 const today = kstToday();
-const decorate = e => ({ ...e, days: e.end ? Math.round((utc(e.end) - utc(today)) / 864e5) : null,
-  isNew: !!e.checked && (utc(today) - utc(e.checked)) / 864e5 <= 3 });
+// 종료 목록은 필드가 일부만 있으므로 빈 값을 채우고, 검색용 글자를 미리 만들어 둔다
+const decorate = raw => {
+  const e = { steps: [], needs: [], reasons: [], tags: [], plats: [], elec: [], elec_models: [], prizeAll: [], pcats: [], ptypes: [], via: [], ...raw };
+  for (const k of ["steps", "needs", "reasons", "tags", "plats", "elec", "elec_models", "pcats", "ptypes"]) e[k] = e[k] || [];
+  e.days = e.end ? Math.round((utc(e.end) - utc(today)) / 864e5) : null;
+  e.hay = [e.card, e.title, e.org, e.prize, ...(e.prizeAll || []), e.kind, ...e.tags, ...e.elec_models, ...e.plats.map(p => PLATS[p])].join(" ").toLowerCase();
+  return e;
+};
 const all = DATA.events.map(decorate);
 // 종료는 수집기가 정한 status 기준 + 오늘(한국 시간) 지난 마감일. 마감일 미상도 종료 처리된 건 진행 중이 아니다
 const isLive = e => e.status !== "ended" && (e.days === null || e.days >= 0);
 const live = all.filter(isLive);
-const gone = all.filter(e => !isLive(e)).sort((a, b) => (b.end || "").localeCompare(a.end || ""));
+const gone = all.filter(e => !isLive(e));
 const byId = new Map(all.map(e => [e.id, e]));
-const easy = live.filter(e => e.grade !== "X" && e.is_restricted !== true);
-document.getElementById("sHot").textContent = easy.filter(e => e.days !== null && e.days <= 1).length;
-document.getElementById("sWeek").textContent = easy.filter(e => e.days !== null && e.days >= 2 && e.days <= 6).length;
-document.getElementById("sAll").textContent = easy.length;
 const m = DATA.meta;
+$("sHot").textContent = live.filter(e => e.days !== null && e.days <= 1).length;
+$("sWeek").textContent = live.filter(e => e.days !== null && e.days >= 2 && e.days <= 6).length;
+$("sAll").textContent = live.length;
+$("stamp").textContent = `${m.built.slice(5, 10).replace("-", "/")} ${m.built.slice(11, 16)} 자동 수집 반영 · 사람 확인 ${m.approved}건 · 자동 수집 후보 ${m.candidates}건`;
 
 // 첫 화면에는 기본 노출 이벤트만 있다. 제한·조건 많음(extra)과 종료(ended)는 필요할 때 불러온다
 const loaded = { extra: false, ended: false }, loading = {}, failed = {};
@@ -359,18 +361,26 @@ function loadPart(name) {
   }
   return loading[name];
 }
+// 지금 화면에 필요한데 아직 받지 않은 데이터
 function neededParts() {
   const need = [];
-  if (state.restricted || state.showX || state.fav || !live.some(catTest(state.cat))) need.push("extra");
-  if (document.getElementById("endedBox").open) need.push("ended");
+  if (view === "home" && (state.restricted || state.showX || !live.some(catTest(state.cat)))) need.push("extra");
+  if (view === "fav" || view === "done") {
+    const set = view === "fav" ? fav : done;
+    if ([...set].some(id => !byId.has(id))) need.push("extra", "ended");
+  }
+  if (view === "info" && $("endedBox").open) need.push("ended");
   return need.filter(n => !loaded[n]);
 }
-document.getElementById("stamp").textContent = `${m.built.slice(5, 10).replace("-", "/")} ${m.built.slice(11, 16)} 자동 수집 반영 · 사람 확인 ${m.approved}건 · 자동 수집 후보 ${m.candidates}건`;
 
-// 카테고리를 뺀 나머지 조건(검색·필터·토글)
+const catTest = key => key === "all" ? () => true : e => e.pcats.includes(key);
+const typeTest = key => (TYPES.find(t => t[0] === key) || TYPES[0])[2];
+
+// 카테고리를 뺀 나머지 조건(검색·필터)
 function passBase(e) {
   if (!state.showX && e.grade === "X") return false;
   if (state.onlyOk && e.cand) return false;
+  if (state.type !== "all" && !typeTest(state.type)(e)) return false;
   if (state.plat !== "all" && !e.plats.includes(state.plat)) return false;
   if (state.prize !== "all" && !(state.prize === "none" ? !e.ptypes.length : e.ptypes.includes(state.prize))) return false;
   if (state.due !== "all") {
@@ -387,179 +397,175 @@ function passBase(e) {
   if (state.noCost && e.tax) return false;
   if (state.orig && e.viaList && !e.form_url) return false;
   if (!state.restricted && e.is_restricted === true) return false;  // 지역 거주·현장 방문 제한은 기본 제외
-  if (state.fav && !fav.has(e.id)) return false;
   if (state.hideDone && done.has(e.id)) return false;
-  if (state.q) {
-    const hay = [e.title, e.org, e.prize, e.kind, ...e.tags, ...e.plats.map(p => PLATS[p][0])].join(" ").toLowerCase();
-    if (!state.q.toLowerCase().split(/\s+/).filter(Boolean).every(w => hay.includes(w))) return false;
-  }
+  if (state.q && !state.q.toLowerCase().split(/\s+/).filter(Boolean).every(w => e.hay.includes(w))) return false;
   return true;
 }
-const catTest = name => (CATS.find(c => c[0] === name) || CATS[0])[1];
+// '전자기기'를 골랐을 때만 세부 종류로 한 번 더 거른다
+const isElecCat = () => state.cat === "elec";
+const elecPass = e => !isElecCat() || state.elec === "all" || e.elec.includes(state.elec);
 
-// '전자기기 경품'을 골랐을 때만 세부 종류로 한 번 더 거른다
-const isElecCat = () => state.cat === "전자기기 경품";
-const elecPass = e => !isElecCat() || state.elec === "all" || (e.elec || []).includes(state.elec);
-function subchips() {
-  const box = document.getElementById("subchips");
+$("chips").innerHTML = CATS.map(([k, n, icon]) => `<button type="button" class="cat" data-k="${k}" aria-pressed="false"><i aria-hidden="true">${icon}</i>${esc(n)}</button>`).join("");
+function chips() {
+  for (const b of document.querySelectorAll(".cat")) b.setAttribute("aria-pressed", String(b.dataset.k === state.cat));
+  for (const b of document.querySelectorAll(".sort")) b.setAttribute("aria-pressed", String(b.dataset.sort === state.sort));
+  const box = $("subchips");
   box.hidden = !isElecCat();
   if (box.hidden) return;
-  const base = live.filter(e => passBase(e) && (e.elec || []).length);
+  const base = live.filter(e => passBase(e) && e.elec.length);
   box.innerHTML = [["all", "전체"], ...Object.entries(ELEC)].map(([k, n]) => {
     const c = k === "all" ? base.length : base.filter(e => e.elec.includes(k)).length;
-    return `<button type="button" class="chip${c ? "" : " zero"}" data-e="${k}" aria-pressed="${k === state.elec}">${esc(n)}<span class="n">${c}</span></button>`;
+    return `<button type="button" class="chip" data-e="${k}" aria-pressed="${k === state.elec}">${esc(n)}<span class="n">${c}</span></button>`;
   }).join("");
 }
 
-function chips() {
-  subchips();
-  const base = live.filter(passBase);
-  document.getElementById("chips").innerHTML = CATS.map(([k, t]) => {
-    const n = base.filter(t).length;
-    return `<button type="button" class="chip${n ? "" : " zero"}" data-k="${esc(k)}" aria-pressed="${k === state.cat}">${esc(k)}<span class="n">${n}</span></button>`;
-  }).join("");
-}
-
-// 필터 선택지(건수는 현재 진행 중 기준)
+// 상세 필터 선택지(건수는 현재 진행 중 기준)
 function fillSelects() {
   const opt = (v, label, n) => `<option value="${v}">${esc(label)}${n === undefined ? "" : ` (${n})`}</option>`;
   const cnt = f => live.filter(f).length;
-  document.getElementById("fPlat").innerHTML = opt("all", "전체") + Object.entries(PLATS).map(([k, [n]]) => opt(k, n, cnt(e => e.plats.includes(k)))).join("");
-  document.getElementById("fPrize").innerHTML = opt("all", "전체") + Object.entries(PRIZE).map(([k, n]) => opt(k, n, cnt(e => k === "none" ? !e.ptypes.length : e.ptypes.includes(k)))).join("");
-  document.getElementById("fDue").innerHTML = DUE.map(([k, n]) => opt(k, n)).join("");
-  document.getElementById("fTime").innerHTML = opt("all", "전체") + TIME.map((n, i) => opt(String(i), n)).join("") + opt("unk", "확인 필요");
+  $("fType").innerHTML = TYPES.map(([k, n, t]) => opt(k, n, k === "all" ? undefined : cnt(t))).join("");
+  $("fPlat").innerHTML = opt("all", "전체") + Object.entries(PLATS).map(([k, n]) => opt(k, n, cnt(e => e.plats.includes(k)))).join("");
+  $("fPrize").innerHTML = opt("all", "전체") + Object.entries(PRIZE).map(([k, n]) => opt(k, n, cnt(e => k === "none" ? !e.ptypes.length : e.ptypes.includes(k)))).join("");
+  $("fDue").innerHTML = DUE.map(([k, n]) => opt(k, n)).join("");
+  $("fTime").innerHTML = opt("all", "전체") + TIME.map((n, i) => opt(String(i), n)).join("") + opt("unk", "확인 필요");
 }
 
 function timeText(e) {
   if (e.max) return e.min && e.min !== e.max ? `약 ${e.min}~${e.max}분` : `약 ${e.max}분`;
-  if (e.tb === null) return "";
+  if (e.tb === null || e.tb === undefined) return "";
   return TIME[e.tb] + (e.est ? " (추정)" : "");
 }
-function platIcons(e) {
-  return `<span class="plats">${e.plats.map(p => `<span class="pf" title="${PLATS[p][0]}">${SVG(PLATS[p][1])}<span class="sr">${PLATS[p][0]}</span></span>`).join("")}</span>`;
+// 날짜: 11.15 마감 / 마감일 미확인 / 11.02 종료
+const dot = d => `${d.slice(5, 7)}.${d.slice(8, 10)}`;
+function dueText(e) {
+  if (!isLive(e)) return (e.end ? dot(e.end) + " " : "") + "종료";
+  return e.end ? `${dot(e.end)} 마감` : "마감일 미확인";
 }
-// 응모 폼이 확인되면 폼으로 바로, 없으면 원문 공지로 보낸다(새 탭)
-function goLink(e) {
-  const form = safeUrl(e.form_url), url = form || safeUrl(e.url);
-  if (!url) return "";
-  return `<a class="go${form || !e.viaList ? "" : " alt"}" href="${esc(url)}" target="_blank" rel="noopener noreferrer">${form ? "바로 응모하기" : "이벤트 확인하기"}${ARROW}</a>`;
+const isHot = e => isLive(e) && e.days !== null && e.days <= 1;
+function icon(e) {
+  if (e.pmain === "elec") return ELEC_ICON[e.elec[0]] || ICON.elec;
+  return ICON[e.pmain] || ICON.etc;
 }
-function toggles(e) {
-  return `<button type="button" class="ib" data-act="fav" data-id="${esc(e.id)}" aria-pressed="${fav.has(e.id)}" title="저장">${I_SAVE}<span>저장</span></button>` +
-    `<button type="button" class="ib" data-act="done" data-id="${esc(e.id)}" aria-pressed="${done.has(e.id)}" title="참여함 표시">${I_DONE}<span>참여함</span></button>`;
+// 응모 폼은 검증된 form_url이 있을 때만. 원문 공지를 응모 폼으로 표시하지 않는다
+function links(e) {
+  const name = esc(e.card || e.title), form = safeUrl(e.form_url), url = safeUrl(e.url);
+  return (form ? `<a class="go form" href="${esc(form)}" target="_blank" rel="noopener noreferrer" aria-label="${name} 응모 폼">응모 폼</a>` : "") +
+    (url ? `<a class="go note" href="${esc(url)}" target="_blank" rel="noopener noreferrer" aria-label="${name} 이벤트 공지">이벤트 공지</a>` : "");
 }
-
+// 카드에는 날짜·경품명·응모 폼·이벤트 공지만 표시한다
 function card(e) {
-  const d = e.days === null ? "원문" : e.days === 0 ? "오늘" : `D-${e.days}`;
-  const hot = e.days !== null && e.days <= 1;
-  const [main, note] = splitPrize(e.prize);
-  const count = e.count ? `${e.count.toLocaleString()}명${e.mode ? " " + e.mode : ""}` : (e.mode || "");
-  const gradeTag = { S: '<span class="tag g gS">간단 참여</span>', A: '<span class="tag g gA">조건 있음</span>', X: '<span class="tag g gX">조건 많음</span>', C: '<span class="tag g gC">승인 전</span>' }[e.grade];
-  const tags = [];
-  if (e.isNew) tags.push('<span class="tag new">신규</span>');
-  if (done.has(e.id)) tags.push('<span class="tag mine">참여함</span>');
-  if (e.needs_proof) tags.push('<span class="tag g gC">인증 필요</span>');
-  if (e.is_restricted === true) tags.push('<span class="tag gX">참여 제한</span>');
-  else if (e.restriction_note) tags.push('<span class="tag gX">참여 조건 확인</span>');
-  if ((e.elec || []).length) tags.push(`<span class="tag g gS">전자기기: ${(e.elec_models || []).length ? esc(e.elec_models.slice(0, 2).join("·")) : e.elec.map(k => ELEC[k]).join("·")}</span>`);
-  tags.push(e.free === "ok" ? '<span class="tag free">무료 참여</span>' : '<span class="tag gX">무료 여부 원문 확인</span>');
-  tags.push(gradeTag);
-  if (e.tax) tags.push('<span class="tag gX">제세공과금 확인</span>');
-  if ((e.issues || []).length) tags.push(`<span class="tag gX">확인 필요: ${esc(e.issues.join("·"))}</span>`);
-  if (e.start && e.start > today) tags.push(`<span class="tag wait">${md(e.start)} 시작</span>`);
-  e.tags.filter(t => t !== "원문 미확인").forEach(t => tags.push(`<span class="tag">${esc(t)}</span>`));
-  if (e.grade === "X") e.reasons.forEach(r => tags.push(`<span class="tag gX">${esc(r)}</span>`));
-  const time = timeText(e);
-  const url = safeUrl(e.url);
-  const checked = e.cand ? "승인 전" : e.checked ? e.checked.slice(5).replace("-", "/") + " 확인" : "목록 정보";
-  return `<li class="tk${hot ? " hot" : ""}${e.cand ? " cand" : ""}${done.has(e.id) ? " done" : ""}" data-id="${esc(e.id)}">
-    <div class="stub"><b>${d}</b><span>${e.end ? md(e.end) : "마감 확인"}</span></div>
-    <div class="body">
-      <div class="meta">${platIcons(e)}<span class="k">${esc(e.kind)}</span><span>${esc(e.org)}</span>${time ? `<span>${time}</span>` : ""}</div>
-      <div class="prize"><strong>${esc(main)}</strong>${count ? `<em>${esc(count)}</em>` : ""}</div>
-      ${note ? `<p class="note">${esc(note)}</p>` : ""}
-      <p class="ttl">${esc(e.title)}</p>
-      <div class="tags">${tags.join("")}</div>
-      <div class="foot"><span>${checked} · 참여 전 원문 확인</span><div class="acts">${toggles(e)}<button type="button" class="ib" data-act="open" data-id="${esc(e.id)}">자세히</button>${goLink(e)}</div></div>
-    </div></li>`;
+  return `<li class="tk${done.has(e.id) ? " done" : ""}" data-id="${esc(e.id)}">
+    <p class="due${isHot(e) ? " hot" : ""}">${dueText(e)}</p>
+    <h3><button type="button" class="pz" data-act="open" data-id="${esc(e.id)}"><span aria-hidden="true">${icon(e)} </span>${esc(e.card || e.title)}</button></h3>
+    <div class="cta">${links(e)}</div></li>`;
 }
 
-const GROUPS = [
-  ["오늘·내일 마감", e => e.days !== null && e.days <= 1],
-  ["이번 주 마감", e => e.days !== null && e.days >= 2 && e.days <= 6],
-  ["여유 있게", e => e.days !== null && e.days >= 7],
-  ["마감일은 원문 확인", e => e.days === null],
-];
 const nl = v => v === null || v === undefined;
 const SORTERS = {
   due: (a, b) => (nl(a.days) - nl(b.days)) || (a.days ?? 0) - (b.days ?? 0),
-  new: (a, b) => (b.checked || "").localeCompare(a.checked || "") || (b.start || "").localeCompare(a.start || ""),
-  easy: (a, b) => ((a.grade === "S" ? 0 : 1) - (b.grade === "S" ? 0 : 1)) || (nl(a.tb) - nl(b.tb)) || (a.tb ?? 0) - (b.tb ?? 0) || SORTERS.due(a, b),
-  value: (a, b) => (nl(a.value) - nl(b.value)) || (b.value ?? 0) - (a.value ?? 0) || SORTERS.due(a, b),
+  new: (a, b) => (b.firstSeen || "").localeCompare(a.firstSeen || "") || SORTERS.due(a, b),
 };
-const sec = (name, items, sub) => items.length ? `<section><h2>${esc(name)} <span>${items.length}건${sub ? " · " + esc(sub) : ""}</span></h2><ol class="grid">${items.map(card).join("")}</ol></section>` : "";
 
-function emptyHtml() {
-  const zeroCat = loaded.extra && !live.some(catTest(state.cat));
-  const msg = zeroCat
-    ? `'${esc(state.cat)}'은 아직 이 종류를 모으는 출처가 연동되지 않아 수집된 이벤트가 없어요. 아래 수집 출처 현황에서 상태를 볼 수 있어요.`
-    : "조건에 맞는 진행 중 이벤트가 없어요. 검색어를 지우거나 필터를 줄여 보세요.";
-  return `<div class="empty"><p>${msg}</p>${zeroCat ? "" : '<button type="button" class="btn" data-act="reset">필터 초기화</button>'}</div>`;
-}
-
-function renderList() {
-  chips();
-  const list = live.filter(e => passBase(e) && catTest(state.cat)(e) && elecPass(e)).sort(SORTERS[state.sort]);
-  let html;
-  if (state.sort === "due") {
-    html = GROUPS.map(([name, test]) => sec(name, list.filter(test))).join("");
-  } else {
-    // 마감 임박 영역은 정렬과 관계없이 맨 위에 따로 둔다
-    const hot = list.filter(GROUPS[0][1]);
-    html = sec("오늘·내일 마감", hot) + sec(hot.length ? "그 밖의 이벤트" : "진행 중 이벤트", list.filter(e => !GROUPS[0][1](e)), SORTS[state.sort]);
+// 현재 화면의 이벤트 목록. 긴 목록은 조금씩 그린다
+const PAGE = 40;
+const VIEWS = { "": "home", "#saved": "fav", "#joined": "done", "#info": "info" };
+let view = VIEWS[location.hash] || "home";
+let cur = [], drawn = 0;
+function currentList() {
+  if (view === "fav" || view === "done") {
+    const set = view === "fav" ? fav : done;
+    return all.filter(e => set.has(e.id)).sort((a, b) => (isLive(b) - isLive(a)) || SORTERS.due(a, b));
   }
-  document.getElementById("list").innerHTML = `<div style="display:grid;gap:30px">${html || emptyHtml()}</div>`;
-
-  const g = loaded.ended ? gone.filter(e => catTest(state.cat)(e)) : [];
-  document.getElementById("endedBox").hidden = loaded.ended ? !g.length : !m.ended;
-  document.getElementById("endedSum").textContent = `종료된 이벤트 ${loaded.ended ? g.length : m.ended}건`;
-  document.getElementById("ended").innerHTML = g.map(e => `<li><b>${esc(e.title)}</b><span>${esc(e.org)} · ${e.end ? md(e.end) + " 마감" : "종료"}${safeUrl(e.url) ? ` · <a href="${esc(e.url)}" target="_blank" rel="noopener noreferrer">원문</a>` : ""}</span></li>`).join("");
-
-  const n = ["plat", "prize", "due", "time"].filter(k => state[k] !== "all").length + ["noAcct", "noSns", "noCost", "orig", "restricted", "fav", "hideDone", "onlyOk", "showX"].filter(k => state[k]).length;
-  const fN = document.getElementById("fN"); fN.hidden = !n; fN.textContent = n;
+  return live.filter(e => passBase(e) && catTest(state.cat)(e) && elecPass(e)).sort(SORTERS[state.sort]);
 }
-
-function render() {
+function updateMore() {
+  const rest = cur.length - drawn, more = $("more");
+  more.hidden = rest <= 0;
+  more.textContent = `더 보기 (${rest.toLocaleString()}건 남음)`;
+}
+function drawMore() {
+  const next = cur.slice(drawn, drawn + PAGE);
+  if (!next.length) return;
+  $("list").insertAdjacentHTML("beforeend", next.map(card).join(""));
+  drawn += next.length;
+  updateMore();
+}
+function emptyHtml() {
+  if (view === "fav") return "<p>저장한 이벤트가 없어요. 경품을 눌러 저장해 보세요.</p>";
+  if (view === "done") return "<p>참여한 이벤트가 없어요. 경품을 눌러 참여 표시를 해 보세요.</p>";
+  if (loaded.extra && !live.some(catTest(state.cat))) return "<p>이 카테고리에는 지금 진행 중인 이벤트가 없어요.</p>";
+  return '<p>조건에 맞는 이벤트가 없어요.</p><button type="button" class="tbtn" data-act="reset">검색·필터 초기화</button>';
+}
+function renderEnded() {
+  const g = loaded.ended ? gone : [];
+  $("endedBox").hidden = loaded.ended ? !g.length : !m.ended;
+  $("endedSum").textContent = `종료된 이벤트 ${(loaded.ended ? g.length : m.ended).toLocaleString()}건`;
+  if ($("endedBox").open) $("ended").innerHTML = g.map(e => `<li><b>${esc(e.title)}</b><span>${esc(e.org)} · ${e.end ? md(e.end) + " 마감" : "종료"}${safeUrl(e.url) ? ` · <a href="${esc(e.url)}" target="_blank" rel="noopener noreferrer">공지</a>` : ""}</span></li>`).join("");
+}
+function renderList(keep) {
+  chips();
+  cur = currentList();
+  const want = keep ? Math.max(drawn, PAGE) : PAGE;
+  drawn = Math.min(want, cur.length);
+  $("list").innerHTML = cur.slice(0, drawn).map(card).join("");
+  updateMore();
+  const box = $("emptyBox");
+  box.hidden = cur.length > 0;
+  if (!cur.length) box.innerHTML = `<div class="empty">${emptyHtml()}</div>`;
+  $("count").textContent = view === "home" ? `${cur.length.toLocaleString()}건` : "";
+  const n = ["type", "plat", "prize", "due", "time"].filter(k => state[k] !== "all").length + ["noAcct", "noSns", "noCost", "orig", "restricted", "hideDone", "onlyOk", "showX"].filter(k => state[k]).length;
+  $("fN").hidden = !n; $("fN").textContent = n;
+}
+function applyView() {
+  const home = view === "home", info = view === "info";
+  $("searchbar").hidden = !home;
+  $("tools").hidden = !home;
+  $("listView").hidden = info;
+  $("infoView").hidden = !info;
+  $("viewTitle").hidden = home;
+  $("viewTitle").textContent = view === "fav" ? "저장한 이벤트" : view === "done" ? "참여한 이벤트" : "";
+  for (const a of document.querySelectorAll("#nav a")) {
+    if (a.dataset.v === view) a.setAttribute("aria-current", "page"); else a.removeAttribute("aria-current");
+  }
+}
+function render(keep) {
   const missing = neededParts();
-  const note = document.getElementById("lazyNote");
+  const note = $("lazyNote");
   if (missing.some(n => failed[n])) {
     note.hidden = false;
-    note.innerHTML = '추가 이벤트를 불러오지 못했어요. <button type="button" class="btn" data-act="reload">다시 시도</button>';
+    note.innerHTML = '이벤트를 더 불러오지 못했어요. <button type="button" class="tbtn" data-act="reload">다시 시도</button>';
   } else if (missing.length) {
     note.hidden = false;
-    note.textContent = "추가 이벤트를 불러오는 중이에요.";
-    Promise.all(missing.map(loadPart)).then(() => { note.hidden = true; fillSelects(); syncInputs(); render(); }, () => render());
+    note.textContent = "이벤트를 불러오는 중이에요.";
+    Promise.all(missing.map(loadPart)).then(() => { fillSelects(); syncInputs(); render(); }, () => render());
   } else {
     note.hidden = true;
   }
-  try { renderList(); }
+  applyView();
+  renderEnded();
+  try { renderList(keep); }
   catch (err) {
-    document.getElementById("list").innerHTML = `<div class="empty"><p>목록을 그리는 중 문제가 생겼어요(${esc(err.message)}). 다시 시도하거나 필터를 초기화해 주세요.</p><button type="button" class="btn" data-act="retry">다시 시도</button></div>`;
+    $("list").innerHTML = "";
+    $("emptyBox").hidden = false;
+    $("emptyBox").innerHTML = `<div class="empty"><p>목록을 그리는 중 문제가 생겼어요(${esc(err.message)}).</p><button type="button" class="tbtn" data-act="retry">다시 시도</button></div>`;
   }
 }
 
-// 수집 출처 현황: 수집기 실행 기록(DATA.meta.sources)과 실제 진행 중 건수로 표시
+// 수집 출처 현황
 function sources() {
   const label = { on: "자동 수집 중", ledger: "사람 확인", off: "연동 필요", err: "오류·재시도 중", no: "수집 안 함" };
-  document.getElementById("src").innerHTML = (m.sources || []).map(s => {
-    const n = s.count;
+  $("src").innerHTML = (m.sources || []).map(s => {
     const when = s.last ? ` · 마지막 성공 ${s.last.slice(5, 10).replace("-", "/")} ${s.last.slice(11, 16)}` : "";
-    return `<tr><td>${esc(s.label)}</td><td><span class="st ${s.st}">${label[s.st]}</span></td><td class="n">${s.match.length ? n : "-"}</td><td>${esc(s.how)}${esc(when)}</td></tr>`;
+    return `<tr><td>${esc(s.label)}</td><td><span class="st ${s.st}">${label[s.st]}</span></td><td class="n">${s.match.length ? s.count : "-"}</td><td>${esc(s.how)}${esc(when)}</td></tr>`;
   }).join("");
 }
 
-// 상세 창
-const dlg = document.getElementById("dlg");
+function toggles(e) {
+  return `<button type="button" class="ib" data-act="fav" data-id="${esc(e.id)}" aria-pressed="${fav.has(e.id)}">${I_SAVE}저장</button>` +
+    `<button type="button" class="ib" data-act="done" data-id="${esc(e.id)}" aria-pressed="${done.has(e.id)}">${I_DONE}참여함</button>`;
+}
+// 상세 창: 긴 설명과 참여 제한 조건은 여기서 확인한다
+const dlg = $("dlg");
 function openDetail(id) {
   const e = byId.get(id); if (!e) return;
   const fact = (h, body) => `<div><h3>${h}</h3>${body}</div>`;
@@ -572,66 +578,72 @@ function openDetail(id) {
   if (e.who) cond.push(e.who);
   e.needs.forEach(x => cond.push(x));
   if (e.grade === "X") e.reasons.forEach(r => cond.push("조건 많음: " + r));
-  cond.push(e.acct ? "회원가입 또는 로그인이 필요해요" : "장부 기준으로 회원가입·로그인 조건은 없어요");
-  cond.push(e.sns ? "SNS 계정이 필요해요" : "장부 기준으로 SNS 계정 없이 참여할 수 있어요");
+  if (isLive(e)) {
+    cond.push(e.acct ? "회원가입 또는 로그인이 필요해요" : "회원가입·로그인 조건은 확인되지 않았어요");
+    cond.push(e.sns ? "SNS 계정이 필요해요" : "SNS 계정 없이 참여할 수 있어요");
+  }
   const notes = [];
+  if (e.cand) notes.push("자동으로 모은 정보예요. 사람이 아직 원문을 확인하지 않았어요.");
   if (e.free === "ok") notes.push("구매·결제·참가비 조건은 승인 장부에서 확인되지 않았어요." + (e.freeNote ? ` (${e.freeNote})` : ""));
-  else notes.push("주최 원문을 아직 열어보지 않은 목록 정보라, 무료 여부와 조건을 원문에서 꼭 확인해 주세요." + (e.freeNote ? ` (${e.freeNote})` : ""));
-  if ((e.issues || []).length) notes.push(`자동 점검에서 ${e.issues.join("·")} 확인이 필요하다고 나왔어요. 원문에서 직접 확인해 주세요.`);
-  if (e.tax) notes.push("고가 경품이 있어 당첨 시 제세공과금(보통 경품가의 22%)을 낼 수 있어요. 원문 안내를 확인해 주세요.");
-  if (e.viaList) notes.push("응모 링크가 이벤트 목록 사이트로 연결돼요. 그 페이지에서 주최 원문으로 이동해 응모해 주세요.");
-  notes.push("마감·경품·조건이 바뀔 수 있어요. 원문이 기준이에요.");
+  else if (e.free) notes.push("주최 원문을 아직 열어보지 않은 목록 정보라, 무료 여부와 조건을 이벤트 공지에서 꼭 확인해 주세요." + (e.freeNote ? ` (${e.freeNote})` : ""));
+  if ((e.issues || []).length) notes.push(`자동 점검에서 ${e.issues.join("·")} 확인이 필요하다고 나왔어요. 이벤트 공지에서 직접 확인해 주세요.`);
+  if (e.tax) notes.push("고가 경품이 있어 당첨 시 제세공과금(보통 경품가의 22%)을 낼 수 있어요. 공지 안내를 확인해 주세요.");
+  if (e.viaList) notes.push("이벤트 공지가 이벤트 목록 사이트로 연결돼요. 그 페이지에서 주최 원문으로 이동해 응모해 주세요.");
+  notes.push("마감·경품·조건이 바뀔 수 있어요. 이벤트 공지가 기준이에요.");
   const facts = [
-    fact("이벤트 설명", p(esc(e.title) + (e.org ? ` · ${esc(e.org)} 주최` : ""))),
-    fact(e.cand ? "참여 방법 (조사 메모)" : "참여 방법", e.steps.length ? `<ol>${e.steps.map(x => `<li>${esc(x)}</li>`).join("")}</ol>` : p(UNK)),
-    fact("참여 조건", ul(cond)),
-    fact("경품 정보", p(e.prize ? esc(e.prize) : UNK) + (count ? p(esc(count)) : "") + (e.value ? p(`확인된 최고 경품 금액 ${e.value.toLocaleString()}원`) : "")),
-    fact("응모 기간", p(period)),
-    fact("당첨자 발표일", p(e.announce ? md(e.announce) : UNK)),
-    fact("예상 참여 시간", p(timeText(e) ? esc(timeText(e)) : UNK)),
-    fact("무료 여부·추가 비용", p(e.free === "ok" ? "무료 참여" + (e.tax ? " · 제세공과금 확인 필요" : " · 추가 비용 안내 없음") : '<span class="unk">원문 확인 필요</span>')),
     ...(e.is_restricted && e.restriction_reason ? [fact("참여 제한 사유", p(esc(e.restriction_reason)))] : []),
     ...(!e.is_restricted && e.restriction_note ? [fact("참여 조건 확인", p(esc(e.restriction_note)))] : []),
     ...(e.needs_proof ? [fact("필요한 인증", p(esc(e.proof_reason || "참여 조건에 인증 자료 제출이 있어요")))] : []),
+    fact(e.cand ? "참여 방법 (조사 메모)" : "참여 방법", e.steps.length ? `<ol>${e.steps.map(x => `<li>${esc(x)}</li>`).join("")}</ol>` : p(UNK)),
+    fact("참여 조건", cond.length ? ul(cond) : p(UNK)),
+    fact("경품 정보", p(e.prize ? esc(e.prize) : UNK) + (count ? p(esc(count)) : "") + (e.value ? p(`확인된 최고 경품 금액 ${e.value.toLocaleString()}원`) : "")),
     ...((e.prizeAll || []).length > 1 ? [fact("전체 경품", ul(e.prizeAll))] : []),
-    ...((e.elec_models || []).length ? [fact("경품 모델(원문 표기)", p(esc(e.elec_models.join(", "))))] : []),
+    ...(e.elec_models.length ? [fact("경품 모델(원문 표기)", p(esc(e.elec_models.join(", "))))] : []),
+    fact("응모 기간", p(period)),
+    ...(isLive(e) ? [
+      fact("당첨자 발표일", p(e.announce ? md(e.announce) : UNK)),
+      fact("예상 참여 시간", p(timeText(e) ? esc(timeText(e)) : UNK)),
+      fact("무료 여부·추가 비용", p(e.free === "ok" ? "무료 참여" + (e.tax ? " · 제세공과금 확인 필요" : " · 추가 비용 안내 없음") : '<span class="unk">공지 확인 필요</span>')),
+    ] : []),
     fact("유의사항", ul(notes)),
     ...(safeUrl(e.form_url) ? [fact("응모 폼", `<p class="url">${esc(e.form_url)}</p>`)] : []),
-    fact("원문 공지", url ? `<p class="url"><a href="${esc(url)}" target="_blank" rel="noopener noreferrer">${esc(url)}</a></p>` : p(UNK)),
+    fact("이벤트 공지", url ? `<p class="url"><a href="${esc(url)}" target="_blank" rel="noopener noreferrer">${esc(url)}</a></p>` : p(UNK)),
     fact("마지막 정보 확인", p(e.checked ? `${md(e.checked)} 사람이 원문 확인` : "확인 기록 없음(목록 정보)")),
   ];
-  document.getElementById("dMeta").innerHTML = `${platIcons(e)}<span class="k">${esc(e.kind)}</span><span>${e.days === null ? "마감일 원문 확인" : e.days < 0 ? "종료" : e.days === 0 ? "오늘 마감" : `D-${e.days}`}</span>`;
-  document.getElementById("dBody").innerHTML = `<h2 id="dTitle">${esc(e.title)}</h2><div class="facts">${facts.join("")}</div>`;
-  document.getElementById("dFoot").innerHTML = toggles(e) + goLink(e);
+  $("dMeta").textContent = `${dueText(e)}${e.org ? " · " + e.org : ""}`;
+  $("dBody").innerHTML = `<div><h2 id="dTitle"><span aria-hidden="true">${icon(e)} </span>${esc(e.card || e.title)}</h2><p class="sub">${esc(e.title)}</p></div><div class="facts">${facts.join("")}</div>`;
+  $("dFoot").innerHTML = `<div class="row">${toggles(e)}</div>${links(e) ? `<div class="row">${links(e)}</div>` : ""}`;
   if (!dlg.open) { if (dlg.showModal) dlg.showModal(); else dlg.setAttribute("open", ""); }
   dlg.scrollTop = 0;
 }
-document.getElementById("dClose").addEventListener("click", () => dlg.close ? dlg.close() : dlg.removeAttribute("open"));
+$("dClose").addEventListener("click", () => dlg.close ? dlg.close() : dlg.removeAttribute("open"));
 dlg.addEventListener("click", ev => { if (ev.target === dlg) dlg.close(); });
 
-function toggle(set, key, id) {
-  set.has(id) ? set.delete(id) : set.add(id); save(key, set);
-}
+function toggle(set, key, id) { set.has(id) ? set.delete(id) : set.add(id); save(key, set); }
 function resetFilters() {
-  Object.assign(state, { q: "", plat: "all", prize: "all", due: "all", time: "all", noAcct: false, noSns: false, noCost: false, orig: false, restricted: false, fav: false, hideDone: false, showX: false, onlyOk: false });
+  Object.assign(state, { q: "", type: "all", plat: "all", prize: "all", due: "all", time: "all", noAcct: false, noSns: false, noCost: false, orig: false, restricted: false, hideDone: false, showX: false, onlyOk: false });
   syncInputs(); render();
 }
-const BIND = { fPlat: "plat", fPrize: "prize", fDue: "due", fTime: "time", sort: "sort" };
-const CHK = { fNoAcct: "noAcct", fNoSns: "noSns", fNoCost: "noCost", fOrig: "orig", fRestricted: "restricted", fFav: "fav", fHideDone: "hideDone", onlyOk: "onlyOk", showX: "showX" };
+const BIND = { fType: "type", fPlat: "plat", fPrize: "prize", fDue: "due", fTime: "time" };
+const CHK = { fNoAcct: "noAcct", fNoSns: "noSns", fNoCost: "noCost", fOrig: "orig", fRestricted: "restricted", fHideDone: "hideDone", onlyOk: "onlyOk", showX: "showX" };
 function syncInputs() {
-  document.getElementById("q").value = state.q;
-  for (const [id, k] of Object.entries(BIND)) document.getElementById(id).value = state[k];
-  for (const [id, k] of Object.entries(CHK)) document.getElementById(id).checked = state[k];
+  $("q").value = state.q;
+  for (const [id, k] of Object.entries(BIND)) $(id).value = state[k];
+  for (const [id, k] of Object.entries(CHK)) $(id).checked = state[k];
 }
 
 // 이벤트 연결
-document.getElementById("chips").addEventListener("click", ev => {
-  const b = ev.target.closest(".chip"); if (!b) return;
+$("chips").addEventListener("click", ev => {
+  const b = ev.target.closest(".cat"); if (!b) return;
   state.cat = b.dataset.k; state.elec = "all"; render();
 });
-document.getElementById("subchips").addEventListener("click", ev => {
+$("subchips").addEventListener("click", ev => {
   const b = ev.target.closest(".chip"); if (!b) return;
   state.elec = b.dataset.e; render();
+});
+document.querySelector(".sortbar").addEventListener("click", ev => {
+  const b = ev.target.closest(".sort"); if (!b) return;
+  state.sort = b.dataset.sort; render();
 });
 document.addEventListener("click", ev => {
   const a = ev.target.closest("[data-act]");
@@ -639,7 +651,7 @@ document.addEventListener("click", ev => {
     const act = a.dataset.act, id = a.dataset.id;
     if (act === "fav" || act === "done") {
       toggle(act === "fav" ? fav : done, act === "fav" ? "tt-fav" : "tt-done", id);
-      render();
+      render(true);  // 보던 위치를 유지한다
       if (dlg.open) openDetail(id);
     } else if (act === "open") openDetail(id);
     else if (act === "reset") resetFilters();
@@ -652,13 +664,15 @@ document.addEventListener("click", ev => {
   if (tk && !ev.target.closest("a, button")) openDetail(tk.dataset.id);
 });
 let qTimer;
-document.getElementById("q").addEventListener("input", ev => { clearTimeout(qTimer); qTimer = setTimeout(() => { state.q = ev.target.value.trim(); render(); }, 150); });
-for (const [id, k] of Object.entries(BIND)) document.getElementById(id).addEventListener("change", ev => { state[k] = ev.target.value; render(); });
-for (const [id, k] of Object.entries(CHK)) document.getElementById(id).addEventListener("change", ev => { state[k] = ev.target.checked; render(); });
-document.getElementById("fReset").addEventListener("click", resetFilters);
-document.getElementById("endedBox").addEventListener("toggle", ev => { if (ev.target.open) render(); });
-const fBtn = document.getElementById("fBtn"), panel = document.getElementById("panel");
-fBtn.addEventListener("click", () => { panel.hidden = !panel.hidden; fBtn.setAttribute("aria-expanded", String(!panel.hidden)); });
+$("q").addEventListener("input", ev => { clearTimeout(qTimer); qTimer = setTimeout(() => { state.q = ev.target.value.trim(); render(); }, 120); });
+for (const [id, k] of Object.entries(BIND)) $(id).addEventListener("change", ev => { state[k] = ev.target.value; render(); });
+for (const [id, k] of Object.entries(CHK)) $(id).addEventListener("change", ev => { state[k] = ev.target.checked; render(); });
+$("fReset").addEventListener("click", resetFilters);
+$("endedBox").addEventListener("toggle", ev => { if (ev.target.open) render(); });
+$("fBtn").addEventListener("click", () => { const p = $("panel"); p.hidden = !p.hidden; $("fBtn").setAttribute("aria-expanded", String(!p.hidden)); });
+$("more").addEventListener("click", drawMore);
+if ("IntersectionObserver" in window) new IntersectionObserver(es => { if (es.some(x => x.isIntersecting)) drawMore(); }, { rootMargin: "800px" }).observe($("more"));
+window.addEventListener("hashchange", () => { view = VIEWS[location.hash] || "home"; window.scrollTo(0, 0); render(); });
 
 fillSelects();
 syncInputs();

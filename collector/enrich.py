@@ -98,13 +98,86 @@ def need_sns(e, plats):
     return bool(re.search(r"팔로우|구독|SNS|공유·게시형|인스타|유튜브", txt))
 
 
+# 경품 카테고리: 경품명에 실제로 적힌 말로만 나눈다(복수 허용). 전자기기는 기존 elec 분류를 따른다
+PRIZE_CATS = [
+    ("coffee", r"커피|아메리카노|(?:카페\s*)?라떼|스타벅스|투썸|메가\s*(?:MGC|엠지씨)|컴포즈|이디야|빽다방|할리스|폴바셋|공차|프라페|밀크티|바리스타룰스"),
+    ("food", r"치킨|피자|케이크|디저트|한우|브리또|햄버거|분식|베이글|도넛|마카롱|떡|빵|쌀|과일|식품|간식|아이스크림|배스킨|배라|파리바게|뚜레쥬르|교촌|굽네|BBQ|bhc|외식|식사권|식단|밀키트|고기|삼겹|라면|초콜릿|쿠키|과자|스낵|즙|차\s*세트|티박스|스초생|특산물|김치|버거|맥도날드|롯데리아|맘스터치|KFC|한솥|베이커리|약과|빼빼로|사과|벌꿀|밤꿀|어묵|곰탕|갈비|시리얼|후레이크|소스|반찬|누룽지|우유|음료|콜라|이온워터|수분워터|생수|유산균|낙산균|마그네슘|영양제|건강기능|콜라겐|비오틴"),
+    ("beauty", r"화장품|올리브영|립스틱|립밤|틴트|향수|마스크팩|세럼|에센스|선크림|뷰티|바디로션|핸드크림|네일|(?<![이스생])크림(?!빵)|퍼프|미스트|헤나|립\s*시럽|톤업"),
+    ("travel", r"숙박|호텔|리조트|펜션|항공권|(?<!여행용\s)여행(?!용)|캠핑|템플스테이|투어"),
+    ("gift", r"상품권|금액권|네이버\s*페이|네이버\s*(?:모바일\s*)?포인트|포인트|\d\s*(?:만|천)\s*원권|온누리|컬쳐|배민|배달의민족|땡겨요|요기요|쿠팡이츠|서울페이|지역화폐|기프트\s*카드|현금|캐시|머니|올리브영|교통카드|주유권|적립금|11pay|(?:편의점|배달앱)\s*이용권"),
+    ("gifticon", r"기프티콘|기프트콘|해피콘|쿠폰|교환권|모바일\s*상품권"),
+    ("life", r"텀블러|에코백|수건|타월|타올|아이깨끗해|수면안대|다리미|지갑|마사지기|세제|휴지|물티슈|담요|우산|캐리어|레디백|파우치|식기|테이블웨어|머그|방향제|치약|칫솔|청소|주방|샴푸|비누|핸드워시|양말|슬리퍼|수면조끼|독서등|다이어리|달력|모자|가방|이불|베개"),
+]
+PRIZE_CATS = [(k, re.compile(p, re.I)) for k, p in PRIZE_CATS]
+# 체험단 원고료·적립 포인트는 경품이 아니다
+REWARD_ONLY = re.compile(r"원고료\s*[\d,]*\s*(?:포인트|원|p)?|\+?\s*[\d,만]+\s*(?:포인트|p)(?![가-힣])", re.I)
+TRAIL_COUNT = re.compile(r"(?:\s*(?:최대|총)?\s*[\d,]+\s*(?:명|분|팀)|\s+[xX]\s*\d+|\s*×\s*\d+)+\s*$")
+GENERIC = re.compile(r"^[가-힣\d\s]{0,8}(?:선물|상품|경품(?:\s*미공개)?)$")  # 실제 경품명이 아닌 말
+
+
+def _clean_item(s):
+    """카드에 쓸 경품명 한 개: 등수·당첨 인원·해시태그·출처 표시 등을 뺀다(없는 말을 만들지 않음)."""
+    if "▶" in s:
+        s = s.rsplit("▶", 1)[1]
+    s = re.sub(r"[#＃]\S+", "", s).split("(")[0]
+    s = re.sub(r"\s*\+\s*[\d,.만]+\s*(?:포인트|p)\s*$", "", s.strip(), flags=re.I)  # 체험단 적립 포인트
+    s = re.sub(r"\s*(?:\.{2,}|…)\s*", "…", s)  # 출처가 줄여 놓은 말은 줄임표로 남긴다
+    s = re.sub(r"^[\s◇◆■□●○·\-]+", "", s)
+    s = re.sub(r"^(?:(?:이벤트\s*)?경품|[가-힣]{1,6}상|\d+등)\s*[:：]\s*", "", s)
+    s = re.sub(r"^\d+등\s+", "", s)
+    s = re.sub(r"^추첨을?\s*통해\s*", "", s)
+    s = TRAIL_COUNT.sub("", s.strip())
+    s = re.sub(r"\s*증정$", "", s).strip(" ,·/+-")
+    s = re.sub(r"\s+", " ", s)
+    return "" if GENERIC.match(s) else s
+
+
+def prize_items(e):
+    """경품 목록. 여러 경품이 한 칸에 적힌 경우 나눈다."""
+    many = e.get("prizeAll") or []
+    if len(many) > 1:
+        raw = many
+    else:
+        p = re.sub(r"\([^()]*\)", " ", e.get("prize") or "")
+        raw = re.split(r"\s+·\s+|,\s+", p)
+    out = []
+    for x in raw:
+        c = _clean_item(x)
+        if c and c not in out:
+            out.append(c)
+    return out
+
+
+def card_name(e):
+    """카드의 큰 글씨. 경품명이 없으면 간결한 제목으로 대체한다."""
+    items = prize_items(e)
+    if items:
+        return items[0] if len(items) == 1 else f"{items[0]} 외 {len(items) - 1}종"
+    t = (e.get("title") or "").strip()
+    return re.sub(r"\s*(?:경품\s*)?이벤트\s*[!~.]*\s*$", "", t) or t
+
+
+def prize_cats(e):
+    """(카테고리 목록, 대표 카테고리). 하나의 이벤트가 여러 카테고리에 속할 수 있다."""
+    text = REWARD_ONLY.sub(" ", " ".join([e.get("prize") or "", *(e.get("prizeAll") or [])]))
+    cats = [k for k, rx in PRIZE_CATS if rx.search(text)]
+    if e.get("elec"):
+        cats.insert(0, "elec")
+    items = prize_items(e)
+    first = REWARD_ONLY.sub(" ", items[0]) if items else ""
+    main = next((k for k, rx in PRIZE_CATS if rx.search(first)), None) or ("elec" if e.get("elec") else "etc")
+    return cats or ["etc"], main
+
+
 def enrich(e):
     plats = platforms(e)
+    pcats, pmain = prize_cats(e)
     v = prize_value(e)
     tb, est = time_bucket(e)
     out = dict(e)
     out.update({
         "plats": plats, "pub": is_public(e), "viaList": via_list(e), "ptypes": prize_types(e),
+        "card": card_name(e), "pcats": pcats, "pmain": pmain,
         "value": v, "tax": tax_flag(e, v), "tb": tb, "est": est,
         "acct": need_account(e), "sns": need_sns(e, plats),
         # ok=사람이 확인한 장부에 유료 조건 없음, check=자동 수집·원문 미확인이라 원문 확인 필요

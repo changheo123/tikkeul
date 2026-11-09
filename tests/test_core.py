@@ -1,6 +1,9 @@
 # 핵심 규칙 단위 테스트: python -m pytest tests (pytest가 없으면 python tests/test_core.py)
 import datetime as dt
 import pytest
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
 import sys
 from pathlib import Path
 
@@ -349,6 +352,63 @@ def test_needs_proof():
     assert _pf(title="팔로우 인증하고 커피 받자") is True
     db = {"events": {"a": {"id": "a", "title": "t", "tags": [], "steps": ["구독 캡처 제출"], "is_restricted": False}}}
     assert P.classify_proof(db) == 1 and db["events"]["a"]["needs_proof"] is True and db["events"]["a"]["is_restricted"] is False
+
+
+def _cn(**kw):
+    from collector.enrich import card_name
+    return card_name({"title": "제목", **kw})
+
+
+def test_card_name():
+    assert _cn(prize="네이버페이 2만원권 33명") == "네이버페이 2만원권"
+    assert _cn(prize="Apple 에어팟 프로 1명 251명", prizeAll=["Apple 에어팟 프로 1명", "네이버페이 1만원권 100명", "투썸 아메리카노 150명"]) == "Apple 에어팟 프로 외 2종"
+    assert _cn(prize="유기농 배도라지즙 30포 (체험 제공)") == "유기농 배도라지즙 30포"
+    assert _cn(prize="◇ 최우수상 : 네이버페이 10만 원권 (2명) · ◇ 우수상 : 네이버페이 5만 원권 (5명)") == "네이버페이 10만 원권 외 1종"
+    assert _cn(prize="◇ 커피 모바일 쿠폰 (총 400명) · #커피쿠폰 #이벤트") == "커피 모바일 쿠폰"
+    assert _cn(prize="우수 후기 작성자 (매달 1인 추첨) ▶ BBQ 치킨 쿠폰") == "BBQ 치킨 쿠폰"
+    assert _cn(prize="일화 음료 1BOX 10명") == "일화 음료 1BOX"  # 박스의 X를 곱하기로 읽지 않는다
+    assert _cn(prize="대상 150만원 1명") == "대상 150만원"
+    assert _cn(prize="스타벅스 아메리카노.. 30명") == "스타벅스 아메리카노…"  # 출처가 줄인 말을 지어내지 않는다
+    assert _cn(prize="국립중앙박물관 키보드 ×1, 네이버페이 2천원 ×109") == "국립중앙박물관 키보드 외 1종"
+    # 경품명이 없거나 실제 이름이 아니면 제목으로 대체
+    assert _cn(prize=None, title="부산시보 다른그림 찾기 이벤트!") == "부산시보 다른그림 찾기"
+    assert _cn(prize="선물 10명", title="걷기 챌린지 이벤트") == "걷기 챌린지"
+    assert _cn(prize="", title="이벤트") == "이벤트"
+
+
+def _pc(**kw):
+    from collector.enrich import prize_cats
+    return prize_cats({"title": "", **kw})
+
+
+def test_prize_categories():
+    assert _pc(prize="커피 쿠폰 100명")[0] == ["coffee", "gifticon"]  # 커피 쿠폰은 커피에서 찾을 수 있다
+    assert _pc(prize="투썸플레이스 아메리카노 30명") == (["coffee"], "coffee")
+    assert _pc(prize="네이버페이 2만원권 33명") == (["gift"], "gift")
+    assert _pc(prize="올리브영 1만원권 25명") == (["beauty", "gift"], "beauty")
+    assert _pc(prize="강원 리조트 숙박권 30박 1명") == (["travel"], "travel")
+    assert _pc(prize="스탠리 텀블러 5명") == (["life"], "life")
+    assert _pc(prize="BHC 치킨 기프티콘 3명") == (["food", "gifticon"], "food")
+    assert _pc(prize="생크림 케이크")[0] == ["food"]  # '크림'이 들어가도 뷰티가 아니다
+    assert _pc(prize="핸드크림 세트")[0] == ["beauty"]
+    # 여러 경품은 복수 카테고리, 대표는 첫 경품
+    cats, main = _pc(prize="에어팟 1명 11명", prizeAll=["에어팟 1명", "메가커피 아메리카노 10명"], elec=["audio"])
+    assert cats == ["elec", "coffee"] and main == "elec"
+    cats, main = _pc(prize="네이버페이 1만원 외", prizeAll=["네이버페이 1만원 3명", "에어팟 1명"], elec=["audio"])
+    assert "elec" in cats and main == "gift"
+    # 확인되지 않으면 기타, 체험단 원고료는 경품이 아니다
+    assert _pc(prize=None) == (["etc"], "etc")
+    assert _pc(prize="영화예매권 10명") == (["etc"], "etc")
+    assert _pc(prize="원고료 10,000 포인트 (체험 제공)") == (["etc"], "etc")
+
+
+def test_no_old_brand_in_site_source():
+    for rel in ("web/template.html", "README.md", "redirect/index.html", "web/assets/site.webmanifest"):
+        text = (ROOT / rel).read_text(encoding="utf-8")
+        assert "틈틈" not in text and "줍줍" not in text, rel
+    tpl = (ROOT / "web/template.html").read_text(encoding="utf-8")
+    assert "티끌모아 티끌" in tpl and "__SITE_URL__assets/og.png" in tpl and tpl.count("/*__DATA__*/") == 1
+    assert 'localStorage' in tpl and '"tt-fav"' in tpl and '"tt-done"' in tpl  # 저장 기록 호환
 
 
 def test_status_expiry():
