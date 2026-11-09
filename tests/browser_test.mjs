@@ -78,6 +78,8 @@ try {
       return { sw: document.documentElement.scrollWidth, iw: innerWidth, cards: document.querySelectorAll('.tk').length, small: small.slice(0, 5), n: small.length, over, cols, nav: getComputedStyle(document.getElementById('nav')).position };
     })()`);
     check(`${label}: 가로 넘침·카드 깨짐 없음`, m.sw <= m.iw && m.over === 0 && m.cards > 0, `scrollWidth ${m.sw}/${m.iw}, 카드 ${m.cards}, 넘친 카드 ${m.over}`);
+    const clip = await ev(`[...document.querySelectorAll('.pz')].filter(b => getComputedStyle(b).webkitLineClamp !== 'none' || b.scrollHeight > b.clientHeight + 1 || b.getBoundingClientRect().right > b.closest('.tk').getBoundingClientRect().right).length`);
+    check(`${label}: 경품명 잘림 없음`, clip === 0, `잘린 카드 ${clip}`);
     check(`${label}: 터치 영역 44px 이상`, m.n === 0, m.small.join(" | "));
     const colsOk = mobile ? m.cols === 1 && m.nav === "fixed" : m.cols >= 2 && m.cols <= 3 && m.nav !== "fixed";
     check(`${label}: 열 수·메뉴 위치`, colsOk, `${m.cols}열, 메뉴 ${m.nav}`);

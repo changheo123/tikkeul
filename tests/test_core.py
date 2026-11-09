@@ -368,7 +368,6 @@ def test_card_name():
     assert _cn(prize="우수 후기 작성자 (매달 1인 추첨) ▶ BBQ 치킨 쿠폰") == "BBQ 치킨 쿠폰"
     assert _cn(prize="일화 음료 1BOX 10명") == "일화 음료 1BOX"  # 박스의 X를 곱하기로 읽지 않는다
     assert _cn(prize="대상 150만원 1명") == "대상 150만원"
-    assert _cn(prize="스타벅스 아메리카노.. 30명") == "스타벅스 아메리카노…"  # 출처가 줄인 말을 지어내지 않는다
     assert _cn(prize="국립중앙박물관 키보드 ×1, 네이버페이 2천원 ×109") == "국립중앙박물관 키보드 외 1종"
     # 경품명이 없거나 실제 이름이 아니면 제목으로 대체
     assert _cn(prize=None, title="부산시보 다른그림 찾기 이벤트!") == "부산시보 다른그림 찾기"
@@ -409,6 +408,111 @@ def test_no_old_brand_in_site_source():
     tpl = (ROOT / "web/template.html").read_text(encoding="utf-8")
     assert "티끌모아 티끌" in tpl and "__SITE_URL__assets/og.png" in tpl and tpl.count("/*__DATA__*/") == 1
     assert 'localStorage' in tpl and '"tt-fav"' in tpl and '"tt-done"' in tpl  # 저장 기록 호환
+
+
+def test_card_name_more():
+    assert _cn(prize="스타벅스 아메리카노.. 30명") == "스타벅스 아메리카노"  # 온전한 낱말에서 끊긴 경우
+    assert _cn(prize="메가커피 달콤한 하.. 20명") == "메가커피 달콤한 하…"
+    assert _cn(prize="30명을 무작위로 선정해 1만원 상당의 모바일 문화상품권을 드립니다.") == "1만원 상당의 모바일 문화상품권"
+
+
+def test_truncated_prize_restored_on_merge():
+    db = {"events": {"ki-1": {"id": "ki-1", "title": "커피 받자 퀴즈 이벤트", "org": "기관", "end": "2026-12-01", "url": "https://i.example/1",
+                              "prize": "스타벅스 아메리카노.. 30명", "cand": True, "tags": [], "srcUrls": []}}}
+    ev = {"id": "eh-1", "title": "커피 받자 퀴즈 이벤트", "org": "기관", "end": "2026-12-01", "url": "https://www.eventhouse.kr/site/view.php?no=1",
+          "prize": "스타벅스 아메리카노 T 기프티콘 30명", "tags": [], "cand": True}
+    P.merge(db, ev, "2026-11-09", {"added": 0, "merged": 0})
+    assert db["events"]["ki-1"]["prize"] == "스타벅스 아메리카노 T 기프티콘 30명"
+    assert db["events"]["ki-1"]["url"] == "https://i.example/1"  # 원문 링크는 유지
+
+
+def test_original_replaces_aggregator_link_only():
+    db = {"events": {"eh-1": {"id": "eh-1", "title": "커피 받자 퀴즈 이벤트", "org": "기관", "end": "2026-12-01", "url": "https://www.eventhouse.kr/site/view.php?no=1",
+                              "prize": "커피", "cand": True, "tags": ["원문 미확인"], "srcUrls": []}}}
+    P.merge(db, {"id": "ki-1", "title": "커피 받자 퀴즈 이벤트", "org": "기관", "end": "2026-12-01", "url": "https://blog.example/9", "prize": "커피", "tags": []}, "2026-11-09", {"added": 0, "merged": 0})
+    e = db["events"]["eh-1"]
+    assert e["url"] == "https://blog.example/9" and "원문 미확인" not in e["tags"]
+
+
+def test_adopt_known_originals():
+    from collector import backfill as B
+    mk = lambda **k: {"id": "x", "status": "active", "src": "ek", "url": "https://events.kr/event.php?id=1", "tags": ["원문 미확인"], "srcUrls": ["https://events.kr/event.php?id=1"], "title": "t", **k}
+    db = {"events": {"a": mk(rawText="자세히 https://www.instagram.com/p/AAA/ 참고")}}
+    assert B.adopt_known_originals(db) == 1 and db["events"]["a"]["url"] == "https://www.instagram.com/p/AAA/"
+    two = {"events": {"a": mk(rawText="https://a.example/1 그리고 https://b.example/2")}}
+    assert B.adopt_known_originals(two) == 0 and "events.kr" in two["events"]["a"]["url"]  # 여러 개면 추측하지 않음
+    none = {"events": {"a": mk(rawText="링크 없음")}}
+    assert B.adopt_known_originals(none) == 0
+    eh = {"events": {"a": mk(src="eh", url="https://www.eventhouse.kr/site/view.php?no=1", rawText="https://a.example/1")}}
+    assert B.adopt_known_originals(eh) == 0
+
+
+class _NoNet:
+    count = 0
+
+
+def test_fill_prizes(monkeypatch):
+    from collector import backfill as B
+    pages = {"https://city.example/1": "안내\n30명을 무작위로 선정해 1만원 상당의 모바일 문화상품권을 드립니다.\n당첨자 발표는 12월",
+             "https://city.example/2": "※ 상품권 및 네이버페이 등은 10일 내 모바일로 전송됩니다.\n경품은 사정에 따라 변경될 수 있습니다."}
+    called = []
+    monkeypatch.setattr(B, "_page_text", lambda f, u: called.append(u) or pages[u])
+    mk = lambda i, **k: {"id": i, "status": "active", "title": "제목", "prize": None, "url": "https://city.example/9", "end": "2026-12-01", **k}
+    db = {"events": {
+        "body": mk("body", rawText="경품: 스타벅스 아메리카노 10명"),
+        "title": mk("title", title="강의 보고 네이버페이 3만P 받기! 교육 이벤트"),
+        "page": mk("page", url="https://city.example/1"),
+        "notice": mk("notice", url="https://city.example/2"),
+        "insta": mk("insta", url="https://www.instagram.com/p/AAA/"),
+        "vague": mk("vague", prize="선물 10명", url="https://www.instagram.com/p/BBB/"),
+        "keep": mk("keep", prize="치킨 쿠폰 3명", url="https://city.example/3"),
+    }}
+    r = B.fill_prizes(db, "2026-11-09", {"min_interval_sec": 0})
+    ev = db["events"]
+    assert ev["body"]["prize"] == "스타벅스 아메리카노 10명" and ev["body"]["prizeFrom"] == "본문"
+    assert ev["title"]["prize"] == "네이버페이 3만P" and ev["title"]["prizeFrom"] == "제목"
+    assert "문화상품권" in ev["page"]["prize"] and ev["page"]["prizeFrom"] == "공지"
+    assert ev["notice"]["prize"] is None  # 유의사항 문장은 경품이 아니다
+    assert ev["insta"]["prize"] is None and "https://www.instagram.com/p/AAA/" not in called  # 읽지 않는 곳
+    assert ev["vague"]["prize"] == "선물 10명" and ev["keep"]["prize"] == "치킨 쿠폰 3명"
+    assert r["page"] == 1 and r["text"] == 1 and r["title"] == 1
+    before = len(called)
+    B.fill_prizes(db, "2026-11-10", {"min_interval_sec": 0})
+    assert len(called) == before  # 7일 안에는 같은 페이지를 다시 읽지 않는다
+
+
+def test_org_priority():
+    from collector import backfill as B
+    assert B.is_priority("%EA%B5%AD%EB%AF%BC%EC%97%B0%EA%B8%88..", ["국민연금공단"])
+    assert not B.is_priority("삼성", ["국민연금공단"]) and not B.is_priority("가", ["가나다"])
+
+
+def test_prize_sentence_cleanup():
+    assert _cn(prize="매주 20명을 추첨하여 커피 쿠폰을 드려요.") == "커피 쿠폰"
+    assert _cn(prize="추첨을 통해 100명에게 커피 기프티콘을 드립니다.") == "커피 기프티콘"
+    assert _cn(prize="스탬프 2개 이상: 노모어피자 5만원권 40명") == "노모어피자 5만원권"
+    assert _cn(prize="20,000원 모바일 온누리 상품권회차당 25명 · 아이스 아메리카노 회차당 50명") == "20,000원 모바일 온누리 상품권 외 1종"
+    assert _cn(prize="보험 1:1 무료 컨설팅 1회") == "보험 1:1 무료 컨설팅 1회"  # 시간·비율의 콜론은 건드리지 않는다
+
+
+def test_restore_truncated(monkeypatch):
+    from collector import backfill as B
+    from collector.sources import aggregators as A
+    rows = [("1", "[ 재단 ] 기숙사 다섯글자 댓글로 커피 노리자 이벤트!! 20", {"경품내역": "메가커피 달콤한 하루 세트-20명"}, None),
+            ("2", "[ 다른곳 ] 완전히 다른 이벤트입니다 20", {"경품내역": "메가커피 달콤한 간식-20명"}, None)]
+    calls = []
+    monkeypatch.setattr(A, "_eh_rows", lambda f, u: calls.append(u) or rows)
+    mk = lambda **k: {"status": "active", "title": "기숙사 다섯글자 댓글로 커피 노리자 이벤트!!", "prize": "메가커피 달콤한 하.. 20명", **k}
+    db = {"events": {"ok": mk(), "other": mk(title="아무 관련 없는 퀴즈 제목입니다"), "diff": mk(prize="스타벅스 디저트 세.. 10명"), "many": mk(prizeAll=["a", "b"])}}
+    r = B.restore_truncated(db, "2026-11-09", {"eh_search_interval_sec": 0})
+    ev = db["events"]
+    assert ev["ok"]["prize"] == "메가커피 달콤한 하루 세트 20명" and ev["ok"]["prizeFrom"] == "복원"
+    assert ev["other"]["prize"].endswith(".. 10명") is False and ".." in ev["other"]["prize"]  # 제목이 다르면 그대로
+    assert ".." in ev["diff"]["prize"] and ".." in ev["many"]["prize"]
+    assert r == {"checked": 3, "restored": 1, "err": 0}
+    n = len(calls)
+    B.restore_truncated(db, "2026-11-10", {"eh_search_interval_sec": 0})
+    assert len(calls) == n  # 7일 안에는 다시 검색하지 않는다
 
 
 def test_status_expiry():

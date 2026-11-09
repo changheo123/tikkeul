@@ -1,170 +1,176 @@
 {
- "min_interval_sec": 1.0,
- "link_checks_per_run": 60,
- "no_end_stale_days": 21,
- "keep_ended_days": 45,
- "sources": {
-  "korissue": {
-   "enabled": true,
-   "interval_min": 60,
-   "options": [
-    2,
-    3
-   ]
-  },
-  "korissue_orgs": {
-   "enabled": true,
-   "interval_min": 60,
-   "per_run": 60,
-   "revisit_days": 3
-  },
-  "events_kr": {
-   "enabled": true,
-   "interval_min": 60,
-   "max_pages": 10,
-   "max_details": 40
-  },
-  "eventhouse": {
-   "enabled": true,
-   "interval_min": 60,
-   "max_pages": 15,
-   "quick_pages": 2,
-   "full_every_min": 360
-  },
-  "eventhouse_search": {
-   "enabled": true,
-   "interval_min": 180,
-   "max_pages": 3,
-   "keywords": [
-    "에어팟",
-    "맥북",
-    "아이패드",
-    "노트북",
-    "갤럭시 버즈",
-    "아이폰",
-    "갤럭시 워치",
-    "애플워치",
-    "닌텐도",
-    "플레이스테이션",
-    "모니터",
-    "로봇청소기",
-    "빔프로젝터"
-   ],
-   "searches": [
-    {
-     "mgift": 4
+  "min_interval_sec": 1.0,
+  "link_checks_per_run": 60,
+  "no_end_stale_days": 21,
+  "keep_ended_days": 45,
+  "sources": {
+    "korissue": {
+      "enabled": true,
+      "interval_min": 60,
+      "options": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
     },
-    {
-     "mgift": 5
+    "korissue_orgs": {
+      "enabled": true,
+      "interval_min": 60,
+      "per_run": 200,
+      "revisit_days": 3,
+      "priority_revisit_days": 1,
+      "min_interval_sec": 1.5
     },
-    {
-     "mplat": 5
+    "events_kr": {
+      "enabled": true,
+      "interval_min": 60,
+      "max_pages": 10,
+      "max_details": 40
     },
-    {
-     "mplat": 4
+    "eventhouse": {
+      "enabled": true,
+      "interval_min": 60,
+      "max_pages": 15,
+      "quick_pages": 2,
+      "full_every_min": 360
+    },
+    "eventhouse_search": {
+      "enabled": true,
+      "interval_min": 180,
+      "max_pages": 3,
+      "keywords": [
+        "에어팟",
+        "맥북",
+        "아이패드",
+        "노트북",
+        "갤럭시 버즈",
+        "아이폰",
+        "갤럭시 워치",
+        "애플워치",
+        "닌텐도",
+        "플레이스테이션",
+        "모니터",
+        "로봇청소기",
+        "빔프로젝터"
+      ],
+      "searches": [
+        {
+          "mgift": 4
+        },
+        {
+          "mgift": 5
+        },
+        {
+          "mplat": 5
+        },
+        {
+          "mplat": 4
+        }
+      ]
+    },
+    "danawa": {
+      "enabled": true,
+      "interval_min": 120,
+      "max_pages": 3
+    },
+    "sbs": {
+      "enabled": true,
+      "interval_min": 180
+    },
+    "reviewnote": {
+      "enabled": true,
+      "interval_min": 180,
+      "max_items": 80
+    },
+    "mrblog": {
+      "enabled": true,
+      "interval_min": 180,
+      "max_items": 80
+    },
+    "gangnam": {
+      "enabled": false,
+      "interval_min": 180,
+      "max_items": 80,
+      "note": "GitHub(해외) 서버에서 접속 시간 초과. 해외 접속 차단으로 보여 우회하지 않고 끔"
+    },
+    "contestkorea": {
+      "enabled": true,
+      "interval_min": 120,
+      "min_interval_sec": 2.0,
+      "max_pages": 8,
+      "max_details": 40
+    },
+    "wevity": {
+      "enabled": true,
+      "interval_min": 360,
+      "min_interval_sec": 3.0,
+      "max_pages": 3
+    },
+    "busan": {
+      "enabled": true,
+      "interval_min": 60
+    },
+    "mohw": {
+      "enabled": true,
+      "interval_min": 60,
+      "max_details": 15
+    },
+    "touredu": {
+      "enabled": true,
+      "interval_min": 180
+    },
+    "youtube": {
+      "enabled": true,
+      "interval_min": 180,
+      "days": 14,
+      "queries": [
+        "댓글 이벤트 경품 추첨",
+        "구독 이벤트 기프티콘 증정",
+        "댓글 퀴즈 이벤트 당첨"
+      ],
+      "elec_queries": [
+        "에어팟 증정 이벤트",
+        "맥북 경품 이벤트",
+        "아이패드 추첨 이벤트",
+        "노트북 무료 증정",
+        "갤럭시 버즈 이벤트",
+        "전자기기 경품 응모",
+        "고가 경품 이벤트"
+      ]
+    },
+    "naver": {
+      "enabled": true,
+      "interval_min": 120,
+      "queries": [
+        "댓글 이벤트 경품 추첨 마감",
+        "퀴즈 이벤트 기프티콘 증정",
+        "설문조사 이벤트 경품",
+        "에어팟 증정 이벤트",
+        "맥북 경품 이벤트",
+        "아이패드 추첨 이벤트",
+        "노트북 무료 증정",
+        "갤럭시 버즈 이벤트",
+        "전자기기 경품 응모",
+        "고가 경품 이벤트"
+      ],
+      "types": [
+        "blog",
+        "cafearticle",
+        "webkr"
+      ],
+      "sns_queries": [
+        "인스타그램 댓글 이벤트 경품 추첨",
+        "유튜브 댓글 이벤트 경품",
+        "트위터 리트윗 이벤트 경품 추첨"
+      ]
+    },
+    "telegram": {
+      "enabled": true,
+      "interval_min": 120,
+      "channels": []
     }
-   ]
   },
-  "danawa": {
-   "enabled": true,
-   "interval_min": 120,
-   "max_pages": 3
-  },
-  "sbs": {
-   "enabled": true,
-   "interval_min": 180
-  },
-  "reviewnote": {
-   "enabled": true,
-   "interval_min": 180,
-   "max_items": 80
-  },
-  "mrblog": {
-   "enabled": true,
-   "interval_min": 180,
-   "max_items": 80
-  },
-  "gangnam": {
-   "enabled": false,
-   "interval_min": 180,
-   "max_items": 80,
-   "note": "GitHub(해외) 서버에서 접속 시간 초과. 해외 접속 차단으로 보여 우회하지 않고 끔"
-  },
-  "contestkorea": {
-   "enabled": true,
-   "interval_min": 120,
-   "min_interval_sec": 2.0,
-   "max_pages": 8,
-   "max_details": 40
-  },
-  "wevity": {
-   "enabled": true,
-   "interval_min": 360,
-   "min_interval_sec": 3.0,
-   "max_pages": 3
-  },
-  "busan": {
-   "enabled": true,
-   "interval_min": 60
-  },
-  "mohw": {
-   "enabled": true,
-   "interval_min": 60,
-   "max_details": 15
-  },
-  "touredu": {
-   "enabled": true,
-   "interval_min": 180
-  },
-  "youtube": {
-   "enabled": true,
-   "interval_min": 180,
-   "days": 14,
-   "queries": [
-    "댓글 이벤트 경품 추첨",
-    "구독 이벤트 기프티콘 증정",
-    "댓글 퀴즈 이벤트 당첨"
-   ],
-   "elec_queries": [
-    "에어팟 증정 이벤트",
-    "맥북 경품 이벤트",
-    "아이패드 추첨 이벤트",
-    "노트북 무료 증정",
-    "갤럭시 버즈 이벤트",
-    "전자기기 경품 응모",
-    "고가 경품 이벤트"
-   ]
-  },
-  "naver": {
-   "enabled": true,
-   "interval_min": 120,
-   "queries": [
-    "댓글 이벤트 경품 추첨 마감",
-    "퀴즈 이벤트 기프티콘 증정",
-    "설문조사 이벤트 경품",
-    "에어팟 증정 이벤트",
-    "맥북 경품 이벤트",
-    "아이패드 추첨 이벤트",
-    "노트북 무료 증정",
-    "갤럭시 버즈 이벤트",
-    "전자기기 경품 응모",
-    "고가 경품 이벤트"
-   ],
-   "types": [
-    "blog",
-    "cafearticle",
-    "webkr"
-   ],
-   "sns_queries": [
-    "인스타그램 댓글 이벤트 경품 추첨",
-    "유튜브 댓글 이벤트 경품",
-    "트위터 리트윗 이벤트 경품 추첨"
-   ]
-  },
-  "telegram": {
-   "enabled": true,
-   "interval_min": 120,
-   "channels": []
-  }
- }
+  "prize_pages_per_run": 80
 }

@@ -7,6 +7,7 @@ import re
 import datetime as dt
 from urllib.parse import urlencode
 
+from .. import backfill
 from ..common import text_of, find_dates, clean, today_kst
 from ..extract import build_event
 
@@ -159,7 +160,7 @@ def eventhouse(f, state, cfg):
     now = dt.datetime.now().timestamp()
     # 전체 훑기는 full_every_min 간격, 그 사이에는 각 플랫폼 앞쪽 몇 쪽만
     # 전체 경품 목록(prizeAll)을 기존 이벤트에도 채우기 위해 처음 한 번은 전체를 훑는다
-    full = now - st.get("lastFull", 0) >= cfg.get("full_every_min", 360) * 60 or not st.get("prizeAllDone")
+    full = now - st.get("lastFull", 0) >= cfg.get("full_every_min", 360) * 60 or not st.get("prizeAllDone") or not st.get("prizeFixDone")
     max_pages = cfg.get("max_pages", 12) if full else cfg.get("quick_pages", 2)
     today = today_kst()
     events, skipped, seen, listed = [], {}, [], 0
@@ -176,7 +177,7 @@ def eventhouse(f, state, cfg):
                 break  # 등록순 목록이라 진행 중인 글이 없는 쪽이 나오면 그 뒤는 모두 지난 글
     if full:
         st["lastFull"] = now
-        st["prizeAllDone"] = True
+        st["prizeAllDone"] = st["prizeFixDone"] = True  # 잘린 경품명 복원을 위해 배포 뒤 한 번은 전체를 훑는다
     return {"events": events, "seen": seen, "listed": listed, "skipped": skipped}
 
 
@@ -255,9 +256,11 @@ def korissue_orgs(f, state, cfg):
     사이트가 화면에 연결해 둔 주최사 번호만 쓴다(번호를 임의로 넘겨 가며 조회하지 않음)."""
     parents = state.setdefault("korissue", {}).setdefault("parents", {})
     t = today_kst()
-    revisit = cfg.get("revisit_days", 3)
-    todo = [k for k, v in parents.items() if not v.get("at") or (t - dt.date.fromisoformat(v["at"])).days >= revisit]
-    todo.sort(key=lambda k: parents[k].get("at") or "")
+    revisit, first_revisit = cfg.get("revisit_days", 3), cfg.get("priority_revisit_days", 1)
+    orgs = cfg.get("priority") or []
+    pri = {k for k, v in parents.items() if backfill.is_priority(v.get("kw"), orgs)}  # 원문 링크가 아직 없는 주최사
+    todo = [k for k, v in parents.items() if not v.get("at") or (t - dt.date.fromisoformat(v["at"])).days >= (first_revisit if k in pri else revisit)]
+    todo.sort(key=lambda k: (k not in pri, parents[k].get("at") or ""))
     events, skipped, seen, listed = [], {}, [], 0
     for pid in todo[:cfg.get("per_run", 60)]:
         listed += _kor_page(f.doc(f"{KOR}?parent={pid}&keyword={parents[pid]['kw']}"), state, events, skipped, seen)

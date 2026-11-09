@@ -13,7 +13,7 @@ from pathlib import Path
 
 from lxml import html as LH
 
-from . import electronics, forms, proof, restrict
+from . import backfill, electronics, forms, proof, restrict
 from .common import Fetcher, norm_date, now_kst, today_kst
 from .extract import norm_url, norm_title, is_show_invite, pay_required
 from .sources import events_kr, public_boards, api_sources, aggregators, experience, contest_boards
@@ -139,7 +139,7 @@ def _index(db):
     return db["_ix"]
 
 
-AGG_URL = re.compile(r"events\.kr/|t\.me/|eventhouse\.kr/|contestkorea\.com/|wevity\.com/")
+AGG_URL = backfill.AGG_URL
 
 
 def merge(db, ev, today, stats):
@@ -168,6 +168,10 @@ def merge(db, ev, today, stats):
         if u and u not in o["srcUrls"]:
             o["srcUrls"].append(u)
     if o.get("cand"):
+        # 출처가 잘라 놓은 경품명('스타벅스 아메리카노..')은 같은 말로 시작하는 온전한 표기로 복원한다
+        head = (o.get("prize") or "").split("..")[0].strip()
+        if ".." in (o.get("prize") or "") and len(head) >= 2 and ".." not in (ev.get("prize") or "") and (ev.get("prize") or "").startswith(head):
+            o["prize"] = ev["prize"]
         # 자동 후보끼리는 비어 있던 값만 채운다(이미 있는 값을 덮어쓰지 않음)
         for k in ("org", "prize", "count", "start", "end", "announce"):
             if not o.get(k) and ev.get(k):
@@ -495,6 +499,8 @@ def main(argv=None):
             continue
         s0, req0 = time.time(), f.count
         f.min_interval = sc.get("min_interval_sec", cfg.get("min_interval_sec", 1.0))  # 사이트별 요청 간격
+        if name == "korissue_orgs":
+            sc = {**sc, "priority": backfill.via_orgs(db)}  # 아직 모음 사이트 링크인 주최사부터 원문을 찾는다
         try:
             r = fn(f, state, sc)
             added0, merged0 = stats["added"], stats["merged"]
@@ -532,6 +538,9 @@ def main(argv=None):
     dates = normalize_dates(db)
     pruned = update_status(db, today, cfg)  # 폼 재조회 예산을 끝난 이벤트에 쓰지 않도록 먼저 종료 처리
     fcfg = {**cfg, "form_pages_per_run": 0, "short_checks_per_run": 0} if a.no_links else cfg  # --no-links면 네트워크 조회 없음
+    originals = backfill.adopt_known_originals(db)
+    prize_fill = backfill.fill_prizes(db, today, {**cfg, "prize_pages_per_run": 0} if a.no_links else cfg)
+    prize_fill["truncated"] = backfill.restore_truncated(db, today, {**cfg, "truncated_checks_per_run": 0} if a.no_links else cfg)
     form = process_forms(db, state, today, fcfg)
     restricted = classify_restrictions(db)
     elec = classify_electronics(db)
@@ -542,7 +551,7 @@ def main(argv=None):
     quality = audit(db, today)
     active = sum(1 for e in db["events"].values() if e.get("status") == "active")
     run.update({"added": stats["added"], "merged": stats["merged"], "rejected": stats["rejected"], "pruned": pruned,
-                "links": links, "quality": quality, "form": form, "restricted": restricted, "dates": dates, "broken": broken, "elec": elec, "proof": proofs, "active": active, "total": len(db["events"]), "requests": f.count,
+                "links": links, "quality": quality, "form": form, "restricted": restricted, "dates": dates, "broken": broken, "elec": elec, "proof": proofs, "originals": originals, "prizeFill": prize_fill, "viaLeft": sum(1 for e in db["events"].values() if e.get("status") == "active" and AGG_URL.search(e.get("url") or "")), "active": active, "total": len(db["events"]), "requests": f.count,
                 "sec": round(time.time() - t0, 1)})
 
     # 안전장치: 진행 중 건수가 이전의 절반 아래로 급감하면 저장하지 않고 실패로 끝낸다(기존 사이트 유지)

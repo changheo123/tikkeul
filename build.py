@@ -82,7 +82,7 @@ def main():
             continue  # 반려(rejected)·링크 끊김(removed)은 싣지 않는다
         x = enrich(e)
         x["via"] = sorted(via.get(e["id"], []))
-        for k in ("srcUrls", "linkFail", "platHint", "rawText", "formLinks", "pageFlags", "formPending", "formChecked", "formScanV", "linkChecked", "lastSeen", "linkStatus"):
+        for k in ("srcUrls", "linkFail", "platHint", "rawText", "formLinks", "pageFlags", "formPending", "formChecked", "formScanV", "prizeChecked", "truncChecked", "prizeFrom", "linkChecked", "lastSeen", "linkStatus"):
             x.pop(k, None)
         x["isAuto"] = bool(e.get("cand"))
         events.append(x)

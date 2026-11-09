@@ -111,7 +111,8 @@ PRIZE_CATS = [
 PRIZE_CATS = [(k, re.compile(p, re.I)) for k, p in PRIZE_CATS]
 # 체험단 원고료·적립 포인트는 경품이 아니다
 REWARD_ONLY = re.compile(r"원고료\s*[\d,]*\s*(?:포인트|원|p)?|\+?\s*[\d,만]+\s*(?:포인트|p)(?![가-힣])", re.I)
-TRAIL_COUNT = re.compile(r"(?:\s*(?:최대|총)?\s*[\d,]+\s*(?:명|분|팀)|\s+[xX]\s*\d+|\s*×\s*\d+)+\s*$")
+TRAIL_COUNT = re.compile(r"(?:\s*(?:최대|총|회차당|매주)?\s*[\d,]+\s*(?:명|분|팀)|\s+[xX]\s*\d+|\s*×\s*\d+)+\s*$")
+COMPLETE = re.compile(r"(?:아메리카노|커피|라떼|상품권|금액권|교환권|쿠폰|기프티콘|포인트|케이크|세트|파인트|프라페|치약)$")
 GENERIC = re.compile(r"^[가-힣\d\s]{0,8}(?:선물|상품|경품(?:\s*미공개)?)$")  # 실제 경품명이 아닌 말
 
 
@@ -125,10 +126,18 @@ def _clean_item(s):
     s = re.sub(r"^[\s◇◆■□●○·\-]+", "", s)
     s = re.sub(r"^(?:(?:이벤트\s*)?경품|[가-힣]{1,6}상|\d+등)\s*[:：]\s*", "", s)
     s = re.sub(r"^\d+등\s+", "", s)
+    s = re.sub(r"^[^:：]{2,14}[:：]\s+", "", s)  # '스탬프 2개 이상: 경품' 같은 앞말
+    s = re.sub(r"^(?:매주|매일|매월|회차별)\s*", "", s)
     s = re.sub(r"^추첨을?\s*통해\s*", "", s)
+    s = re.sub(r"^[\d,]+\s*명(?:을|에게)?\s*(?:무작위로|추첨(?:을\s*통해|으로|하여)?)?\s*(?:선정해|선정하여)?\s*", "", s)
+    s = re.sub(r"(?:을|를)?\s*(?:드립니다|드려요|증정합니다|받아보세요)[.!”\"]*$", "", s)
+    s = re.sub(r"도$", "", s)
     s = TRAIL_COUNT.sub("", s.strip())
     s = re.sub(r"\s*증정$", "", s).strip(" ,·/+-")
     s = re.sub(r"\s+", " ", s)
+    # 잘렸더라도 끝말이 온전한 낱말이면 줄임표 없이 보여 준다(그 뒤의 말은 지어내지 않는다)
+    if s.endswith("…") and COMPLETE.search(s[:-1].strip()):
+        s = s[:-1].strip()
     return "" if GENERIC.match(s) else s
 
 
