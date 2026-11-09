@@ -1,91 +1,5 @@
 [
  {
-  "active": 1292,
-  "added": 0,
-  "at": "2026-10-30T07:44:05+09:00",
-  "links": {
-   "checked": 60,
-   "dead": 0,
-   "error": 0,
-   "ok": 60,
-   "skip": 0
-  },
-  "merged": 545,
-  "pruned": 0,
-  "quality": {
-   "excluded": 0,
-   "flagged": 33,
-   "merged": 0
-  },
-  "rejected": 0,
-  "requests": 82,
-  "sec": 84.0,
-  "seeded": 0,
-  "sources": {
-   "busan": {
-    "status": "wait"
-   },
-   "danawa": {
-    "status": "wait"
-   },
-   "eventhouse": {
-    "listed": 400,
-    "merged": 249,
-    "new": 0,
-    "requests": 10,
-    "sec": 11.6,
-    "skipped": 1,
-    "status": "ok"
-   },
-   "events_kr": {
-    "listed": 166,
-    "merged": 0,
-    "new": 0,
-    "requests": 10,
-    "sec": 10.2,
-    "skipped": 0,
-    "status": "ok"
-   },
-   "gangnam": {
-    "status": "off"
-   },
-   "korissue": {
-    "listed": 298,
-    "merged": 296,
-    "new": 0,
-    "requests": 2,
-    "sec": 2.9,
-    "skipped": 2,
-    "status": "ok"
-   },
-   "mohw": {
-    "status": "wait"
-   },
-   "mrblog": {
-    "status": "wait"
-   },
-   "naver": {
-    "status": "wait"
-   },
-   "reviewnote": {
-    "status": "wait"
-   },
-   "sbs": {
-    "status": "wait"
-   },
-   "telegram": {
-    "status": "wait"
-   },
-   "touredu": {
-    "status": "wait"
-   },
-   "youtube": {
-    "status": "wait"
-   }
-  },
-  "total": 1726
- },
- {
   "active": 1313,
   "added": 21,
   "at": "2026-10-30T08:36:53+09:00",
@@ -28415,6 +28329,161 @@
    "failed": 0,
    "future_fixed": 126,
    "no_request": 12,
+   "rendered": 25,
+   "requests": 120,
+   "stale_ended": 0
+  },
+  "viaLeft": 454
+ },
+ {
+  "active": 2334,
+  "added": 0,
+  "at": "2026-11-10T01:34:40+09:00",
+  "broken": 0,
+  "dates": 0,
+  "elec": 55,
+  "form": {
+   "direct": 0,
+   "page_err": 0,
+   "page_found": 0,
+   "pages": 0,
+   "short_ok": 0
+  },
+  "links": {
+   "checked": 60,
+   "dead": 0,
+   "error": 4,
+   "ok": 48,
+   "skip": 515
+  },
+  "merged": 378,
+  "originals": 0,
+  "prizeFill": {
+   "left": 49,
+   "page": 0,
+   "page_err": 0,
+   "pages": 0,
+   "text": 0,
+   "title": 0,
+   "truncated": {
+    "checked": 0,
+    "err": 0,
+    "restored": 0
+   }
+  },
+  "proof": 380,
+  "pruned": 0,
+  "quality": {
+   "excluded": 0,
+   "flagged": 19,
+   "merged": 0
+  },
+  "rejected": 0,
+  "requests": 90,
+  "restricted": {
+   "restricted": 2376,
+   "review": 12
+  },
+  "sec": 642.3,
+  "seeded": 0,
+  "sources": {
+   "busan": {
+    "listed": 4,
+    "merged": 4,
+    "new": 0,
+    "requests": 1,
+    "sec": 2.7,
+    "skipped": 0,
+    "status": "ok"
+   },
+   "contestkorea": {
+    "status": "wait"
+   },
+   "danawa": {
+    "status": "wait"
+   },
+   "eventhouse": {
+    "listed": 400,
+    "merged": 232,
+    "new": 0,
+    "requests": 10,
+    "sec": 11.8,
+    "skipped": 2,
+    "status": "ok"
+   },
+   "eventhouse_search": {
+    "status": "wait"
+   },
+   "events_kr": {
+    "listed": 195,
+    "merged": 0,
+    "new": 0,
+    "requests": 10,
+    "sec": 10.6,
+    "skipped": 0,
+    "status": "ok"
+   },
+   "gangnam": {
+    "status": "off"
+   },
+   "korissue": {
+    "listed": 417,
+    "merged": 142,
+    "new": 0,
+    "requests": 5,
+    "sec": 5.7,
+    "skipped": 2,
+    "status": "ok"
+   },
+   "korissue_orgs": {
+    "listed": 0,
+    "merged": 0,
+    "new": 0,
+    "requests": 0,
+    "sec": 0.0,
+    "skipped": 0,
+    "status": "ok"
+   },
+   "mohw": {
+    "listed": 12,
+    "merged": 0,
+    "new": 0,
+    "requests": 1,
+    "sec": 3.4,
+    "skipped": 0,
+    "status": "ok"
+   },
+   "mrblog": {
+    "status": "wait"
+   },
+   "naver": {
+    "status": "wait"
+   },
+   "reviewnote": {
+    "status": "wait"
+   },
+   "sbs": {
+    "status": "wait"
+   },
+   "telegram": {
+    "status": "wait"
+   },
+   "touredu": {
+    "status": "wait"
+   },
+   "wevity": {
+    "status": "wait"
+   },
+   "youtube": {
+    "status": "wait"
+   }
+  },
+  "total": 4854,
+  "verify": {
+   "checked": 125,
+   "due": 1363,
+   "failed": 0,
+   "no_request": 5,
    "rendered": 25,
    "requests": 120,
    "stale_ended": 0
