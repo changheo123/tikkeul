@@ -74,13 +74,13 @@ def test_wrong_redirect_is_not_a_form():
 
 def test_unrelated_page_is_not_verified():
     r, _ = check({OFFICIAL: R(html="<title>회사 소개</title><body>우리 회사는 좋은 회사입니다. " + "소개 " * 200)})
-    assert r["verification_grade"] == "B" and r["entry_url"] is None and r["verification_code"] == "identity_unconfirmed"
+    assert r["verification_grade"] == "C" and r["entry_url"] is None and r["candidate_url"] is None and r["verification_code"] == "mismatch"
 
 
 def test_same_organizer_different_event():
     html = "<title>노원구보건소 금연 캠페인</title><body>노원구보건소 금연 캠페인 참여 안내 응모 방법 " + "안내 " * 200
     r, _ = check({OFFICIAL: R(html=html)})
-    assert r["verification_grade"] == "B" and r["entry_url"] is None
+    assert r["verification_grade"] == "C" and r["candidate_url"] is None  # 같은 기관의 다른 이벤트는 근거가 아니다
 
 
 def test_closed_form():
@@ -153,7 +153,7 @@ def test_date_conflict():
 def test_multiple_forms_not_guessed():
     other = "https://docs.google.com/forms/d/e/DEF/viewform"
     r, _ = check({OFFICIAL: R(html=BASE + f'<a href="{FORM}">바로가기</a><a href="{other}">바로가기</a>')})
-    assert r["verification_grade"] == "B" and r["verification_code"] == "multiple_forms"
+    assert r["verification_grade"] == "C" and r["verification_code"] == "multiple_forms" and r["candidate_url"] is None
 
 
 def test_multiple_forms_with_clear_cue():
@@ -164,9 +164,9 @@ def test_multiple_forms_with_clear_cue():
 
 def test_form_self_identified_and_not():
     r, _ = check({FORM: R(html=FORM_PAGE)}, ev(url="https://www.instagram.com/p/A/", form_url=FORM))
-    assert r["verification_grade"] == "A" and r["verification_code"] == "form_self"
+    assert r["verification_grade"] == "B" and r["verification_code"] == "form_self" and r["candidate_url"] == FORM and r["entry_url"] is None
     r, _ = check({FORM: R(html="<title>다른 설문</title><body>" + "무관한 설문 " * 100)}, ev(url="https://www.instagram.com/p/A/", form_url=FORM))
-    assert r["verification_grade"] == "B" and r["entry_url"] is None
+    assert r["verification_grade"] == "C" and r["verification_code"] == "mismatch" and r["candidate_url"] is None
 
 
 def test_aggregator_login_only():
@@ -238,7 +238,7 @@ def test_current_year_not_stale():
 def test_list_and_home_pages_not_entry():
     for url in ("https://city.example/board/BoardList.html?x=1", "https://city.example/", "https://city.example/app/index.do", "https://city.example/main.do"):
         r, _ = check({url: R(html=BASE)}, ev(url=url))
-        assert r["verification_grade"] == "B" and r["verification_code"] == "list_page" and r["entry_url"] is None, url
+        assert r["verification_grade"] == "C" and r["verification_code"] == "list_page" and r["candidate_url"] is None, url
 
 
 def test_event_landing_index_ok_for_collected_page():
@@ -250,7 +250,7 @@ def test_event_landing_index_ok_for_collected_page():
 def test_home_page_sns_link_not_entry():
     url = "https://city.example/main.do"
     r, _ = check({url: R(html=BASE + '<a href="https://www.youtube.com/watch?v=abc">홍보 영상</a>')}, ev(url=url))
-    assert r["verification_grade"] == "B" and r["entry_url"] is None
+    assert r["verification_grade"] == "C" and r["candidate_url"] is None
 
 
 def test_future_dated_ki_event_is_ended(monkeypatch):
@@ -271,6 +271,64 @@ def test_korissue_skips_far_future_dates():
     A._kor_page(H.fromstring("<div>" + page + "</div>"), {}, events, skipped, seen)
     if fut.month >= dt.date.today().month or dt.date.today().month - fut.month <= 6:
         assert events == [] and "먼 미래" in list(skipped.values())[0]
+
+
+def test_b_grade_requires_evidence():
+    # 계정 주소는 게시물 단위가 아니어서 근거가 없다
+    r, _ = check({}, ev(url="https://www.instagram.com/nowon_official/"))
+    assert r["verification_grade"] == "C" and r["verification_code"] == "sns_profile" and r["candidate_url"] is None
+    # 게시물 주소는 이벤트 글에 적힌 근거가 있어 B, 검증 완료로 취급하지 않는다
+    r, _ = check({}, ev(url="https://www.instagram.com/p/AAA/"))
+    assert r["verification_grade"] == "B" and r["link_evidence"] == "source_row" and r["destination_checked"] is False and r["verification_status"] == "needs_review"
+
+
+def test_b_partial_match_page():
+    html = "<title>제목 다름</title><body>건강도시 안내 이벤트. 2026.11.30 까지 " + "안내 " * 200
+    r, _ = check({OFFICIAL: R(html=html)})
+    assert r["verification_grade"] == "B" and r["verification_code"] == "partial" and r["candidate_url"] == OFFICIAL
+
+
+def test_login_form_from_event_text_is_b():
+    r, _ = check({FORM: R(302, loc="https://accounts.google.com/x")}, ev(url="https://www.instagram.com/p/A/", form_url=FORM))
+    assert r["verification_grade"] == "B" and r["link_evidence"] == "event_text" and r["candidate_url"] == FORM
+
+
+def test_official_link_to_login_form_is_a_but_destination_unchecked():
+    r, _ = check({OFFICIAL: R(html=BASE + f'<a href="{FORM}">응모하기</a>'), FORM: R(302, loc="https://accounts.google.com/x")})
+    assert r["verification_grade"] == "A" and r["destination_checked"] is False and r["entry_url"] == FORM
+
+
+def test_c_grade_has_no_entry_address():
+    for routes, e in (({OFFICIAL: R(404)}, ev()), ({FORM: R(html=FORM_PAGE + " 더 이상 응답을 받지 않습니다")}, ev(url=FORM, form_url=FORM))):
+        r, _ = check(routes, e)
+        assert r["verification_grade"] == "C" and r["entry_url"] is None and r["candidate_url"] is None
+
+
+def test_year_regressions():
+    # 표본 검증에서 나온 실제 사례의 회귀 테스트
+    page = lambda t: L.Page(url="x", text=t)
+    assert V.stale_year(ev(end="2026-11-16"), page("[참여 기간]25.11.11(화) ~ 11.16(일) [당첨자 발표]2025. 11.21 (금)"))
+    assert V.stale_year(ev(end="2027-03-17"), page("참여 기간2026. 3. 17(화)까지 당첨자 발표2026. 3. 23(월)"))
+    assert V.stale_year(ev(end="2026-11-17", title="2025년 서울시 블로그 만족도 조사 이벤트"), page(""))
+    assert not V.stale_year(ev(end="2026-02-10", title="2025년 결산 이벤트"), page(""))  # 연초의 전년도 결산은 지난 행사가 아니다
+    assert not V.stale_year(ev(end="2026-11-16"), page("참여 기간 2026.11.01 ~ 2026.11.16"))
+
+
+def test_deep_main_and_index_pages_are_home():
+    # 전수 대조에서 나온 실제 사례의 회귀 테스트
+    assert V.is_list_page("https://www.kamis.or.kr/customer/main/main.do", False)
+    assert V.is_list_page("https://hub.kaia.re.kr/index", True)  # 수집 원본이어도 사이트 첫 화면은 응모 페이지가 아니다
+    assert not V.is_list_page("https://event.sbs.co.kr/doctorx/index.html", True)  # 행사 전용 페이지
+    assert not V.is_list_page("https://a.example/board/view.do?id=1", False)
+    url = "https://www.kamis.or.kr/customer/main/main.do"
+    r, _ = check({url: R(html=BASE + '<a href="https://www.youtube.com/watch?v=abc">영상</a>')}, ev(url=url))
+    assert r["verification_grade"] == "C" and r["verification_code"] == "list_page" and r["entry_url"] is None
+
+
+def test_form_title_match_with_date_difference_is_b():
+    html = FORM_PAGE + " 이벤트 기간: 2026.09.01 ~ 2026.09.20"
+    r, _ = check({FORM: R(html=html)}, ev(url="https://www.instagram.com/p/A/", form_url=FORM))
+    assert r["verification_grade"] == "B" and r["verification_code"] == "form_date_differs"
 
 
 # ---- SSRF 방어 ----
@@ -448,4 +506,4 @@ def test_change_history_records_old_url(monkeypatch):
 
 def test_no_secret_or_personal_fields_in_record():
     r, _ = check({OFFICIAL: R(html=BASE)})
-    assert set(r) == {"entry_type", "entry_url", "original_url", "candidate_url", "verification_grade", "verification_reason", "verification_code", "verification_evidence_url", "verification_status", "last_checked_at"}
+    assert set(r) == {"entry_type", "entry_url", "original_url", "candidate_url", "link_evidence", "destination_checked", "verification_grade", "verification_reason", "verification_code", "verification_evidence_url", "verification_status", "last_checked_at"}

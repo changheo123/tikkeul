@@ -14,6 +14,7 @@ from .enrich import prize_items
 
 # 약관·robots상 페이지를 읽지 않는 곳(공식 공지에서 직접 연결될 때만 인정)
 NO_FETCH = re.compile(r"instagram\.com|facebook\.com|//(?:www\.)?x\.com/|twitter\.com|youtube\.com|youtu\.be|cafe\.naver\.com|t\.me/|moaform\.com", re.I)
+SNS_POST = re.compile(r"instagram\.com/(?:p|reel|tv)/|youtube\.com/(?:watch\?|shorts/|post/|live/)|youtu\.be/|facebook\.com/.+/(?:posts|photos|videos)/|facebook\.com/(?:permalink|share|photo)|(?:x|twitter)\.com/\w+/status/|cafe\.naver\.com/.+/\d+|t\.me/\w+/\d+", re.I)
 POST_LINK = re.compile(r"instagram\.com/(?:p|reel)/[\w\-]+|youtube\.com/(?:watch\?|shorts/)|youtu\.be/[\w\-]+", re.I)
 # 수집기가 바로 그 페이지에서 글을 읽어 온 출처(공지 자체가 이벤트 원문)
 SELF_SOURCE = {"rn", "mb", "dn", "sb", "bs", "te", "mo", "ledger", "ck", "wv"}
@@ -23,7 +24,7 @@ LINK_CUE = re.compile(r"응모|참여|신청|설문|바로 ?가기|이벤트|제
 PERIOD_LINE = re.compile(r"(?:응모|이벤트|참여|접수)\s*기간")
 # 목록·첫 화면은 응모 페이지가 아니다(게시판 목록, 사이트 첫 화면)
 LIST_PAGE = re.compile(r"(?:list|List)(?:\.\w+)?$|boardlist|bbs/list", re.I)
-HOME_PAGE = re.compile(r"^/?(?:[\w\-]+/)?(?:index|main|home)(?:\.\w+)?$", re.I)
+HOME_PAGE = re.compile(r"^/?(?:[\w\-]+/){0,3}(?:index|main|home)(?:\.\w+)?$", re.I)
 YEAR_NEAR = re.compile(r"(?:기간|발표|참여|응모|접수)[^0-9]{0,12}((?:20)?\d{2})\s*[.년/\-]\s*\d{1,2}\s*[.월/\-]\s*\d{1,2}")
 FUTURE_DAYS = 45  # 연도 없는 목록 표기를 미래로 잘못 해석한 것으로 볼 기준
 STOP = set("이벤트 경품 경품이벤트 받자 받아요 받아가자 챙기자 노리자 얻자 도전 참여 참여하고 참여로 하고 풀고 남기고 댓글 댓글로 퀴즈 설문 설문하고 응모 인증 인증하고 증정 선물 커피 상품권 추첨 무료 기념 안내 공지 네이버페이 기프티콘 쿠폰 받기 맞히고 작성 작성하고 구독 구독하고 팔로우 팔로우하고 EVENT event".split())
@@ -105,11 +106,17 @@ def stale_year(e, page):
     if not end:
         return False
     y = int(end[:4])
-    titled = [int(x) for x in re.findall(r"(20\d{2})", e.get("title") or "")]
-    if titled and max(titled) < y:
+    if title_is_stale(e):
         return True
     years = {(lambda n: 2000 + n if n < 100 else n)(int(m.group(1))) for m in YEAR_NEAR.finditer(page.text)}
     return bool(years) and max(years) < y
+
+
+def title_is_stale(e):
+    """제목의 연도가 마감 연도보다 앞선다(연말 마감의 지난해 행사). 연초의 '전년도 결산'류는 제외."""
+    end = e.get("end")
+    years = [int(x) for x in re.findall(r"(20\d{2})", e.get("title") or "")]
+    return bool(end and years and max(years) < int(end[:4]) and int(end[5:7]) >= 3)
 
 
 def is_list_page(url, self_src):
@@ -117,7 +124,26 @@ def is_list_page(url, self_src):
     path = urlparse(url).path
     if LIST_PAGE.search(path):
         return True
-    return not self_src and (path in ("", "/") or bool(HOME_PAGE.match(path)))
+    if path in ("", "/") or not HOME_PAGE.match(path):
+        return path in ("", "/")
+    # 수집 원본 페이지의 '/행사이름/index.html'은 행사 전용 페이지다. 그 외의 index·main은 사이트 첫 화면으로 본다
+    return not (self_src and path.count("/") >= 2 and "main" not in path.lower())
+
+
+def partial(idn):
+    """이벤트 고유 정보가 일부 일치(주최자만 같은 것은 같은 기관의 다른 이벤트일 수 있어 근거로 보지 않는다)."""
+    return not idn["conflict"] and not idn.get("stale") and (idn["title_ratio"] >= 0.34 or idn["prize"] or idn["date"])
+
+
+def link_evidence(e, url):
+    """이 주소가 이 이벤트의 것이라는 최소 근거. 단순히 주소가 있는 것만으로는 인정하지 않는다."""
+    if not url:
+        return None
+    if url == e.get("form_url") or forms.is_form(url):
+        return "event_text"
+    if NO_FETCH.search(url):
+        return "source_row" if SNS_POST.search(url) else None
+    return None if is_list_page(url, False) else "source_row"
 
 
 def confirmed(idn):
@@ -126,9 +152,11 @@ def confirmed(idn):
     return (idn["title"] and (idn["org"] or idn["prize"] or idn["date"])) or (idn["org"] and idn["prize"] and idn["date"])
 
 
-def _rec(grade, kind, reason, code, today, entry=None, original=None, evidence=None):
-    return {"entry_type": kind, "entry_url": entry if grade == "A" else None, "original_url": original,
-            "candidate_url": entry if grade != "A" else None, "verification_grade": grade, "verification_reason": reason, "verification_code": code,
+def _rec(grade, kind, reason, code, today, entry=None, original=None, evidence=None, link=None, destination_checked=None):
+    # entry_url은 A등급만, candidate_url은 B등급만 채운다. C등급에는 어떤 응모 주소도 남기지 않는다
+    return {"entry_type": kind, "entry_url": entry if grade == "A" else None, "original_url": original, "link_evidence": link or ("official_notice" if grade == "A" else None),
+            "destination_checked": destination_checked if destination_checked is not None else (grade == "A"),
+            "candidate_url": entry if grade == "B" else None, "verification_grade": grade, "verification_reason": reason, "verification_code": code,
             "verification_evidence_url": evidence, "verification_status": STATUS[grade], "last_checked_at": today}
 
 
@@ -191,98 +219,111 @@ class Checker:
         src = e.get("src")
         is_agg = bool(AGG_URL.search(url))
         kind = entry_type(url if not is_agg else form or "")
+        if src == "ki" and title_is_stale(e):
+            return _rec("C", kind, "제목의 연도가 지난 행사를 가리킴", "stale_year", today, entry=url)
 
-        # 1) 폼을 공지 없이 스스로 확인(폼 제목·설명이 이벤트와 일치)
         def from_form(extra=None):
+            """이벤트 글에서 나온 폼을 연다. 공식 공지의 직접 연결이 없으므로 최고 B등급이다."""
             if not form:
                 return None
             st, p, idn = self.check_form(e, form)
-            if st == "ok" and idn and idn.get("stale"):
+            if st == "ok" and idn.get("stale"):
                 return _rec("C", "form", "폼에 적힌 기간이 지난 행사와 일치", "stale_year", today, entry=form, original=extra, evidence=p.final)
-            if st == "ok" and idn and confirmed(idn):
-                return _rec("A", "form", "폼 제목·설명이 이벤트와 일치", "form_self", today, entry=form, original=extra, evidence=p.final)
             if st == "closed":
                 return _rec("C", "form", "응답이 마감된 폼", "closed", today, entry=form, original=extra, evidence=p.final if p else None)
-            if st in ("not_found",):
+            if st == "not_found":
                 return _rec("C", "form", "폼 페이지를 찾을 수 없음", "not_found", today, entry=form, original=extra)
+            if st == "blocked":
+                return _rec("C", "form", "안전하지 않은 주소", "blocked", today, entry=form, original=extra)
+            if st == "ok" and confirmed(idn):
+                return _rec("B", "form", "폼 내용은 이벤트와 일치하지만 공식 공지의 직접 연결은 확인하지 못함", "form_self", today, entry=form, original=extra, evidence=p.final, link="form_content")
+            if st == "ok" and idn["title"] and idn["conflict"] and not idn.get("stale"):
+                return _rec("B", "form", "폼 제목은 이벤트와 일치하지만 기간 표기가 수집 정보와 다름", "form_date_differs", today, entry=form, original=extra, evidence=p.final, link="form_content")
+            if st == "ok" and partial(idn):
+                return _rec("B", "form", "폼 내용이 이벤트와 일부 일치", "form_partial", today, entry=form, original=extra, evidence=p.final, link="partial_match")
+            if st == "ok":
+                return _rec("C", "form", "폼 내용이 이벤트와 일치하지 않음", "mismatch", today, entry=form, original=extra, evidence=p.final)
             reason = {"login": "로그인이 필요한 폼이라 내용을 확인하지 못함", "robots": "robots.txt로 폼을 읽지 않음", "no_fetch": "약관·robots상 폼을 읽지 않음",
-                      "forbidden": "접근이 제한된 폼", "error": "폼 접속 오류", "blocked": "안전하지 않은 주소"}.get(st, "폼과 이벤트의 일치를 확인하지 못함")
-            return _rec("B", "form", reason, "form_" + st if st != "ok" else "identity_unconfirmed", today, entry=form, original=extra)
+                      "forbidden": "접근이 제한된 폼이라 내용을 확인하지 못함", "error": "폼 접속 오류"}.get(st, "폼을 확인하지 못함")
+            return _rec("B", "form", reason + " (이벤트 글에 적힌 폼)", "form_" + st, today, entry=form, original=extra, link="event_text")
 
-        # 2) 모음 사이트 글: 로그인 전용이면 추적하지 않고, 공개 글이면 본문의 외부 링크를 원문 후보로 본다
+        # 1) 모음 사이트 글: 로그인 전용이면 추적하지 않고, 공개 글이면 본문의 외부 링크를 원문 후보로 본다
         if is_agg:
             if "eventhouse.kr" in url:
-                r = from_form()
-                return r or _rec("C", "unknown", "모음 사이트의 응모 링크가 로그인 전용이라 원문을 확인하지 못함", "aggregator_login", today)
+                return from_form() or _rec("C", "unknown", "모음 사이트의 응모 링크가 로그인 전용이라 원문을 확인하지 못함", "aggregator_login", today)
             p = self.page(url)
             cands = [u for u, _lab, k in p.links if k != "meta" and not AGG_URL.search(u)] if p.status == "ok" else []
             if len(cands) != 1:
-                r = from_form()
-                return r or _rec("C", "unknown", "모음 글에서 주최 원문을 하나로 특정하지 못함", "no_original", today)
+                return from_form() or _rec("C", "unknown", "모음 글에서 주최 원문을 하나로 특정하지 못함", "no_original", today)
             url, is_agg = cands[0], False
             kind = entry_type(url)
 
-        # 3) 약관·robots상 읽지 않는 SNS: 폼으로 확인되면 A, 아니면 확인 필요
+        # 2) 약관·robots상 읽지 않는 SNS: 이벤트 글의 폼이 있으면 폼 기준, 없으면 게시물 단위 링크만 인정
         if NO_FETCH.search(url):
             r = from_form()
-            if r and r["verification_grade"] != "B":
+            if r:
                 return r
-            return _rec("B", kind, "공식 게시물 후보지만 약관·robots상 내용을 읽을 수 없어 이벤트 일치를 확인하지 못함", "sns_no_fetch", today, entry=url)
+            if link_evidence(e, url):
+                return _rec("B", kind, "이벤트 글에 적힌 게시물이지만 약관·robots상 내용을 읽을 수 없음", "sns_no_fetch", today, entry=url, link="source_row")
+            return _rec("C", kind, "특정 게시물이 아닌 계정 주소라 이벤트와의 연결을 확인하지 못함", "sns_profile", today)
         if not url.startswith("http"):
             return from_form() or _rec("C", "unknown", "확인 가능한 링크 없음", "no_link", today)
         if forms.is_form(url) or kind == "form":
             form = forms.is_form(url) or form or url
-            r = from_form()
-            if r:
-                return r
+            return from_form()
 
-        # 4) 공식 공지 페이지 열기
+        # 3) 공지 페이지 열기
         p = self.page(url)
         if p.status != "ok":
             r = from_form()
-            if r and r["verification_grade"] == "A":
+            if r:
                 return r
             reason = {"closed": "종료·마감 안내가 있는 페이지", "not_found": "페이지를 찾을 수 없음", "login": "로그인이 필요한 페이지", "robots": "robots.txt로 페이지를 읽지 않음",
                       "forbidden": "접근이 제한된 페이지", "blocked": "안전하지 않은 주소", "non_html": "웹 페이지가 아님", "too_many": "리다이렉트가 너무 많음"}.get(p.status, "페이지 접속 오류")
-            grade = "C" if p.status in ("closed", "not_found", "blocked", "too_many") else "B"
-            return _rec(grade, kind, reason, p.status, today, entry=url)
+            ev_type = link_evidence(e, url)
+            if p.status in ("closed", "not_found", "blocked", "too_many") or not ev_type:
+                return _rec("C", kind, reason, p.status, today, entry=url)
+            return _rec("B", kind, reason + " (이벤트 글에 적힌 주소)", p.status, today, entry=url, link=ev_type)
         idn = identity(e, p)
         if idn["stale"]:
             return _rec("C", kind, "페이지에 적힌 기간이 지난 행사와 일치", "stale_year", today, entry=url, evidence=p.final)
         self_src = src in SELF_SOURCE and idn["title_ratio"] >= 0.6 and not idn["conflict"]
         if not (confirmed(idn) or self_src):
             r = from_form()
-            if r and r["verification_grade"] == "A":
+            if r:
                 return r
-            code = "date_conflict" if idn["conflict"] else "identity_unconfirmed"
-            why = "페이지의 응모 기간이 수집 정보와 다름" if idn["conflict"] else "페이지와 이벤트의 일치를 확인하지 못함"
-            return _rec("C" if idn["conflict"] else "B", kind, why, code, today, entry=url, evidence=p.final)
-
+            if idn["conflict"]:
+                return _rec("C", kind, "페이지의 응모 기간이 수집 정보와 다름", "date_conflict", today, entry=url, evidence=p.final)
+            if partial(idn) and not is_list_page(p.final, src in SELF_SOURCE):
+                return _rec("B", kind, "페이지가 이벤트와 일부 일치", "partial", today, entry=url, evidence=p.final, link="partial_match")
+            return _rec("C", kind, "페이지와 이벤트의 일치를 확인하지 못함", "mismatch", today, entry=url, evidence=p.final)
         if is_list_page(p.final, src in SELF_SOURCE):
             r = from_form()
-            if r and r["verification_grade"] == "A":
+            if r:
                 return r
-            return _rec("B", kind, "게시판 목록이나 사이트 첫 화면이라 이 이벤트의 응모 페이지로 볼 수 없음", "list_page", today, entry=url, evidence=p.final)
+            return _rec("C", kind, "게시판 목록이나 사이트 첫 화면이라 이 이벤트의 응모 페이지가 아님", "list_page", today, entry=url, evidence=p.final)
 
-        # 5) 공식 공지 확인 → 공지에서 직접 연결된 실제 응모 페이지
+        # 4) 공식 공지 확인 → 공지에서 직접 연결된 실제 응모 페이지
         original = p.final
         found, ambiguous = self.forms_on(p)
         if ambiguous:
-            return _rec("B", "form", "공지에 응모 폼이 여러 개라 하나로 특정하지 못함", "multiple_forms", today, entry=found[0], original=original, evidence=p.final)
+            return _rec("C", "form", "공지에 응모 폼이 여러 개라 하나로 특정하지 못함", "multiple_forms", today, original=original, evidence=p.final)
         if found:
-            st, fp, _ = self.check_form(e, found[0])
-            if st in ("closed", "not_found"):
+            st, fp, fid = self.check_form(e, found[0])
+            if st in ("closed", "not_found", "blocked"):
                 return _rec("C", "form", "공지에 연결된 폼이 마감되었거나 없음", st, today, entry=found[0], original=original, evidence=p.final)
-            if st in ("ok", "no_fetch", "robots", "login"):
+            if st == "ok" and fid.get("stale"):
+                return _rec("C", "form", "공지에 연결된 폼의 기간이 지난 행사와 일치", "stale_year", today, entry=found[0], original=original, evidence=p.final)
+            if st in ("ok", "no_fetch", "robots", "login", "forbidden"):
                 note = "" if st == "ok" else " (폼 내용은 약관·로그인으로 확인 불가)"
-                return _rec("A", "form", "공식 공지에서 폼으로 직접 연결" + note, "official_form", today, entry=found[0], original=original, evidence=p.final)
-            return _rec("B", "form", "공지에 연결된 폼에 접속하지 못함", "form_" + st, today, entry=found[0], original=original, evidence=p.final)
+                return _rec("A", "form", "공식 공지에서 폼으로 직접 연결" + note, "official_form", today, entry=found[0], original=original, evidence=p.final, destination_checked=st == "ok")
+            return _rec("B", "form", "공지에 연결된 폼에 접속하지 못함", "form_" + st, today, entry=found[0], original=original, evidence=p.final, link="official_link")
         posts = list(dict.fromkeys(u for u, _l, k in p.links if k in ("a", "data", "onclick") and POST_LINK.search(u)))
-        if len(posts) == 1 and not NO_FETCH.search(url):
-            return _rec("A", entry_type(posts[0]), "공식 공지에서 게시물로 직접 연결 (게시물 내용은 약관·robots상 확인 불가)", "official_sns", today, entry=posts[0], original=original, evidence=p.final)
+        if len(posts) == 1:
+            return _rec("A", entry_type(posts[0]), "공식 공지에서 게시물로 직접 연결 (게시물 내용은 약관·robots상 확인 불가)", "official_sns", today, entry=posts[0], original=original, evidence=p.final, destination_checked=False)
         if ENTRY_CUE.search(p.text):
             return _rec("A", kind if kind in BUTTON_TYPES else "website", "공식 공지에서 이벤트 일치와 참여 안내를 확인", "official_page", today, entry=p.final, original=original, evidence=p.final)
-        return _rec("B", kind, "공지는 확인했지만 참여 방법을 찾지 못함", "no_entry_cue", today, entry=p.final, original=original, evidence=p.final)
+        return _rec("B", kind, "공지는 확인했지만 참여 방법을 찾지 못함", "no_entry_cue", today, entry=p.final, original=original, evidence=p.final, link="partial_match")
 
 
 def _bucket(e):
@@ -303,7 +344,9 @@ def end_stale(e, reason, history, today):
     """지난 행사로 확인된 이벤트는 삭제하지 않고 종료 처리한다."""
     if e.get("status") == "active":
         e["status"], e["ended_reason"] = "ended", reason
-        history.setdefault(e["id"], []).append({"at": today, "field": "status", "old": "active", "new": "ended", "reason": reason})
+        h = history.setdefault(e["id"], [])
+        if not any(x["field"] == "status" for x in h):  # 같은 종료 사유를 매 실행 중복 기록하지 않는다
+            h.append({"at": today, "field": "status", "old": "active", "new": "ended", "reason": reason})
 
 
 def apply_record(e, rec, history, today):
@@ -311,12 +354,12 @@ def apply_record(e, rec, history, today):
     if rec.get("verification_code") == "stale_year":
         end_stale(e, "페이지의 기간이 지난 행사로 확인됨", history, today)
     keep_verified = e.get("verified_at")
-    for k in ("entry_url", "original_url", "entry_type", "verification_grade"):
+    for k in ("entry_url", "candidate_url", "original_url", "entry_type", "verification_grade"):
         old, new = e.get(k), rec.get(k)
         if old and old != new:
             history.setdefault(e["id"], []).append({"at": today, "field": k, "old": old, "new": new, "reason": rec.get("verification_reason")})
             history[e["id"]] = history[e["id"]][-5:]
-    for k in ("entry_type", "entry_url", "original_url", "verification_grade", "verification_reason", "verification_evidence_url", "verification_status", "last_checked_at"):
+    for k in ("entry_type", "entry_url", "candidate_url", "original_url", "link_evidence", "destination_checked", "verification_grade", "verification_reason", "verification_evidence_url", "verification_status", "last_checked_at"):
         e[k] = rec.get(k)
     e["verified_at"] = (keep_verified or today) if rec["verification_grade"] == "A" else None
 

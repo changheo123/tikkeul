@@ -100,7 +100,7 @@ def main():
         "candidates": sum(1 for x in live if x.get("cand") and x.get("is_restricted") is not True),
         "shown": len(live), "ended": len(events) - len(live),
         "withForm": sum(1 for x in live if x.get("form_url")),
-        "withEntry": sum(1 for x in live if x.get("verification_grade") == "A" and x.get("entry_url")),
+        "withEntry": sum(1 for x in live if x.get("entry_url") or x.get("candidate_url")),
         "grades": {g: sum(1 for x in live if x.get("verification_grade") == g) for g in "ABC"},
         "restricted": sum(1 for x in live if x.get("is_restricted") is True),
         "restrictReview": sum(1 for x in live if x.get("restriction_note")),
@@ -116,7 +116,7 @@ def main():
     # 첫 화면에는 기본 노출 이벤트만 싣고, 나머지는 필요할 때 불러온다
     live_ids = {x["id"] for x in live}
     # 첫 화면에는 버튼과 상세 창에 쓰는 검증 값만 싣고, 근거 주소 등은 전체본(events.json)에만 둔다
-    slim = lambda x: {k: v for k, v in x.items() if k not in ("listUrl", "isAuto", "excluded", "verification_evidence_url", "verification_status", "verified_at", "last_checked_at")}
+    slim = lambda x: {k: v for k, v in x.items() if k not in ("listUrl", "isAuto", "excluded", "verification_evidence_url", "verification_status", "verified_at", "last_checked_at", "link_evidence", "destination_checked")}
     main = [slim(x) for x in live if x.get("is_restricted") is not True and x.get("grade") != "X"]
     main_ids = {x["id"] for x in main}
     extra = [slim(x) for x in live if x["id"] not in main_ids]

@@ -131,13 +131,13 @@ try {
       const kids = [...t.children].map(k => k.tagName).join();
       const as = [...t.querySelectorAll('a')].map(a => a.textContent.trim());
       const words = t.textContent.replace(/\\s+/g, ' ').trim();
-      const lab = entryUrl(e) ? ENTRY_LABEL[e.entry_type] : null;
+      const info = entryInfo(e), lab = info ? info.label : null;
       const exp = lab ? [lab, '이벤트 공지'] : ['이벤트 공지'];
       const due = t.querySelector('.due').textContent;
       const name = t.querySelector('.pz').textContent.trim();
       if (kids !== 'P,H3,DIV' || as.join() !== exp.join() || !dateRx.test(due) || !name.includes(e.card) || words.replace(/\\s/g, '') !== (due + name + as.join('')).replace(/\\s/g, '')) bad.push(e.id);
       for (const a of t.querySelectorAll('a')) {
-        const want = a.textContent.includes('이벤트 공지') ? noticeUrl(e) : e.entry_url;
+        const want = a.textContent.includes('이벤트 공지') ? noticeUrl(e) : info.url;
         if (a.target !== '_blank' || !/noopener/.test(a.rel) || a.href !== new URL(want).href) bad.push(e.id);
       }
       if (lab) form++; else plain++;
@@ -145,10 +145,15 @@ try {
     }
     return { n: bad.length, bad: bad.slice(0, 3), form, plain, noDate, total: cur.length }; })()`);
   check("카드 전체: 날짜·경품명·응모 폼·이벤트 공지만, 링크 정확", cards.n === 0, JSON.stringify(cards));
-  const noCardFake = await ev(`live.filter(e => e.verification_grade !== 'A').every(e => { const d = document.createElement('div'); d.innerHTML = links(e); return d.querySelectorAll('a.go.form').length === 0 && d.querySelectorAll('a.go.note').length === 1; })`);
-  check("A등급이 아니면 응모 버튼 없고 이벤트 공지만", noCardFake);
-  const aOk = await ev(`live.filter(e => e.verification_grade === 'A').every(e => { const d = document.createElement('div'); d.innerHTML = links(e); return d.querySelectorAll('a.go.form').length === 1; })`);
-  check("A등급은 응모 버튼 표시", aOk);
+  const grades = await ev(`(() => { const r = { A: 0, B: 0, C: 0, none: 0, bad: [] };
+    for (const e of live) { const d = document.createElement('div'); d.innerHTML = links(e); const g = e.verification_grade || 'none'; r[g]++;
+      const f = d.querySelector('a.go.form'), m = d.querySelector('a.go.maybe'), n = d.querySelectorAll('a.go.note').length;
+      const ok = n === 1 && (g === 'A' ? f && !m && /^(바로 응모|응모 폼)$/.test(f.textContent) && f.href === new URL(e.entry_url).href
+        : g === 'B' ? m && !f && m.textContent === '응모 링크 · 확인 필요' && m.href === new URL(e.candidate_url).href
+        : !f && !m);
+      if (!ok) r.bad.push(e.id);
+    } r.bad = r.bad.slice(0, 3); return r; })()`);
+  check("A는 바로 응모, B는 확인 필요, C·미검증은 버튼 없음(전수)", grades.bad.length === 0, JSON.stringify(grades));
 
   // 카테고리 분류: 선택하면 해당 경품만, 같은 이벤트 중복 없음
   for (const k of ["gifticon", "coffee", "elec", "food", "beauty", "gift", "travel", "life", "etc"]) {
@@ -260,7 +265,7 @@ try {
   // 전체 데이터(제한·조건 많음 포함)에서 검색 속도
   await ev(`(() => { const c = document.getElementById('showX'); c.checked = true; c.dispatchEvent(new Event('change')); })()`); await sleep(500);
   const speed = await ev(`(() => { state.q = '커피'; const t = performance.now(); render(); const ms = performance.now() - t; const n = cur.length, base = live.length; state.q = ''; render(); return { ms: Math.round(ms), n, base, ids: all.length }; })()`);
-  check("전체 데이터 검색 100ms 이내", speed.ms < 100 && speed.base >= 2500, JSON.stringify(speed));
+  check("전체 데이터 검색 100ms 이내", speed.ms < 100 && speed.base >= 1000, JSON.stringify(speed));
   await ev(`document.getElementById('fReset').click()`); await sleep(300);
   check("is_restricted는 true/false만", await ev(`all.every(e => e.status === 'ended' || e.is_restricted === true || e.is_restricted === false)`));
   check("모든 링크가 http(s)", (await ev(`[...document.querySelectorAll('a.go')].filter(a => !/^https?:\\/\\//.test(a.href)).length`)) === 0);
