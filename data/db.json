@@ -4507,6 +4507,13 @@
    "place": null,
    "platHint": "insta",
    "prize": "롯데호텔 라세느 2인 이용.. 1명 61명",
+   "prizeAll": [
+    "롯데호텔 라세느 2인 이용권 1명",
+    "월드콘 40주년 기념 굿즈 10명",
+    "월드콘 24개입 1박스 10명",
+    "월드콘 바닐라 모바일 교환권 40명"
+   ],
+   "rawText": "응모형태: 참여인증\n참여 방법\n1. 팔로우\n2. 월드콘 게시\n3. 계정 필수태그",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -4603,6 +4610,10 @@
    "place": null,
    "platHint": "web",
    "prize": "네이버페이 1만원 30명 40명",
+   "prizeAll": [
+    "네이버페이 1만원 30명",
+    "네이버페이 3만원 10명"
+   ],
    "rawText": "응모형태: 단순응모\n참여 방법\n1. 쪽지 열기\n2. 이름·전화 응모\n3. 5일 열람",
    "reasons": [],
    "restriction_note": null,
@@ -4652,6 +4663,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "다이소 모바일상품권 1만원권 20명",
+   "rawText": "응모형태: 퀴즈/퍼즐\n참여 방법\n1. 홈페이지 힌트확인\n2. 정답 네이버폼 제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -4845,6 +4857,13 @@
    "place": null,
    "platHint": "insta",
    "prize": "스냅영상화보촬영 및 커스.. 3명 33명",
+   "prizeAll": [
+    "스냅영상화보촬영 및 커스텀 포토 스토리북 3명",
+    "현대오일뱅크 주유권 5만원 10명",
+    "현대백화점 모바일 상품권 5만원 10명",
+    "2027 액막이 인형 10명"
+   ],
+   "rawText": "응모형태: 댓글/단문\n참여 방법\n1. 차 소개·추억\n2. 편지 400자·사진\n3. 폼/DM",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -5140,6 +5159,10 @@
    "place": null,
    "platHint": "yt",
    "prize": "문화상품권 5명 50명",
+   "prizeAll": [
+    "문화상품권 5명",
+    "편의점 상품권 45명"
+   ],
    "rawText": "응모형태: 댓글/단문\n참여 방법\n1. 유튜브 구독\n2. 영상 좋아요\n3. 댓글 작성",
    "reasons": [],
    "restriction_note": null,
@@ -5241,6 +5264,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "네이버페이 1천원 150명",
+   "rawText": "응모형태: 소문내기\n참여 방법\n1. 3곳 구독\n2. 엽서 두문장 게시\n3. 폼제출",
    "reasons": [
     "공유·게시형"
    ],
@@ -5392,6 +5416,7 @@
    "place": null,
    "platHint": "web",
    "prize": "편의점 3천원권 500명",
+   "rawText": "응모형태: 설문/투표\n참여 방법\n1. 소방안전 빅데이터 플랫폼 만족도 조사 참여\n2. 폼제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -5488,6 +5513,11 @@
    "place": null,
    "platHint": "insta",
    "prize": "BBQ 치킨 기프티콘 3명 13명",
+   "prizeAll": [
+    "BBQ 치킨 기프티콘 3명",
+    "폴바셋 상품권 2만원권 10명"
+   ],
+   "rawText": "응모형태: 댓글/단문\n참여 방법\n1. 팔로우\n2. 나만의 TMI 댓글\n3. 스토리 공유",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -5736,6 +5766,7 @@
    "place": null,
    "platHint": "web",
    "prize": "편의점 상품권 40명",
+   "rawText": "응모형태: 단순응모\n참여 방법\n1. 마음뽀짝 - ÷ 참여\n2. 각 만족도 조사",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -5934,6 +5965,12 @@
    "place": null,
    "platHint": "insta",
    "prize": "고디바 다크 초콜릿 케이.. 3명 38명",
+   "prizeAll": [
+    "고디바 다크 초콜릿 케이크+아메리카노 3명",
+    "화이트리에 생식빵+잼 5명",
+    "던킨 베스트도넛 4개+먼치킨 10개 10명",
+    "투썸플레이스 아메리카노 R 20명"
+   ],
    "rawText": "응모형태: 댓글/단문\n참여 방법\n1. 팔로우\n2. 친구태그\n3. 응원·콘텐츠 댓글",
    "reasons": [],
    "restriction_note": null,
@@ -6032,6 +6069,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "투썸 아메리카노 기프티콘 50명",
+   "rawText": "응모형태: 댓글/단문\n참여 방법\n1. 11번가 팔로우\n2. 갖고 싶은 삼성가전 댓글",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -6375,6 +6413,11 @@
    "place": null,
    "platHint": "insta",
    "prize": "BHC 뿌링클 콤보+콜라 10명 210명",
+   "prizeAll": [
+    "BHC 뿌링클 콤보+콜라 10명",
+    "음료 기프티콘 200명"
+   ],
+   "rawText": "응모형태: 단순응모\n참여 방법\n1. MBTI 캡처\n2. 필수태그 SNS게시\n3. 폼제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -6424,6 +6467,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "메가커피 아메리카노 1잔 기프티콘 50명",
+   "rawText": "응모형태: 댓글/단문\n참여 방법\n1. 팔로우\n2. 14주년 축하댓글\n3. 친구 태그",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -6767,6 +6811,15 @@
    "place": null,
    "platHint": "insta",
    "prize": "대상 150만원 1명 27명",
+   "prizeAll": [
+    "대상 150만원 1명",
+    "최우수상 100만원 1명",
+    "우수상 70만원 2명",
+    "장려상 50만원 5명",
+    "특선 30만원 9명",
+    "입선 10만원 9명"
+   ],
+   "rawText": "응모형태: 동영상\n참여 방법\n1. AI 숏폼 제작\n2. 신청서 등 영상 메일 제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -6815,6 +6868,10 @@
    "place": null,
    "platHint": "yt",
    "prize": "치킨 상품권 50명 350명",
+   "prizeAll": [
+    "치킨 상품권 50명",
+    "이디야 아메리카노 300명"
+   ],
    "rawText": "응모형태: 단순응모\n참여 방법\n1. 유튜브 구독\n2. 퀴즈 정답 댓글 작성\n3. 폼제출",
    "reasons": [],
    "restriction_note": null,
@@ -6866,6 +6923,11 @@
    "place": null,
    "platHint": "insta",
    "prize": "네이버페이 포인트 2만원 5명 15명",
+   "prizeAll": [
+    "네이버페이 포인트 2만원 5명",
+    "네이버페이 포인트 1만원 10명"
+   ],
+   "rawText": "응모형태: 참여인증\n참여 방법\n1. 배경 설정 캡처\n2. 팔로우 좋아요\n3. 폼",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -6916,6 +6978,10 @@
    "place": null,
    "platHint": "yt",
    "prize": "창원사랑상품권 10만원권 10명 110명",
+   "prizeAll": [
+    "창원사랑상품권 10만원권 10명",
+    "창원사랑상품권 1만원권 100명"
+   ],
    "rawText": "응모형태: 댓글/단문\n참여 방법\n1. 끼루 캐릭터로 게임 완료\n2. 축하 댓글 작성\n3. 폼제출",
    "reasons": [],
    "restriction_note": null,
@@ -7013,6 +7079,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "베베박스 육아용품 16종 세트 50명",
+   "rawText": "응모형태: 단순응모\n참여 방법\n1. 프로필 링크\n2. 베베박스 신청\n3. 리그램",
    "reasons": [
     "공유·게시형"
    ],
@@ -7064,6 +7131,12 @@
    "place": null,
    "platHint": "insta",
    "prize": "뮤지컬 시카고 티켓 2매 20명 50명",
+   "prizeAll": [
+    "뮤지컬 시카고 티켓 2매 20명",
+    "웨스틴 조선 서울 루브리카 2인 식사권 10명",
+    "투썸플레이스 스트로베리 생크림케이크 20명"
+   ],
+   "rawText": "응모형태: 댓글/단문\n참여 방법\n1. 팔로우\n2. 추억 댓글·친구 태그\n3. 1등 폼",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -7210,6 +7283,10 @@
    "place": null,
    "platHint": "insta",
    "prize": "R 키태그 10명 70명",
+   "prizeAll": [
+    "R 키태그 10명",
+    "컴포즈 아이스아메리카노 T 60명"
+   ],
    "rawText": "응모형태: 퀴즈/퍼즐\n참여 방법\n1. 계정 팔로우\n2. 좋아요\n3. 차종 정답 댓글",
    "reasons": [],
    "restriction_note": null,
@@ -7260,6 +7337,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "커피쿠폰 5천원권 10명",
+   "rawText": "응모형태: 설문/투표\n참여 방법\n1. 알파캠퍼스 가입\n2. 네이버폼 작성·제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -7526,8 +7604,13 @@
    "cand": true,
    "checked": null,
    "count": 66,
-   "elec": [],
-   "elec_models": [],
+   "elec": [
+    "audio",
+    "other"
+   ],
+   "elec_models": [
+    "갤럭시 버즈4"
+   ],
    "end": "2026-11-15",
    "endTime": null,
    "firstSeen": "2026-10-27",
@@ -7549,6 +7632,12 @@
    "place": null,
    "platHint": "insta",
    "prize": "인스타360 GO 3S 2명 64명",
+   "prizeAll": [
+    "인스타360 GO 3S 2명",
+    "삼성 갤럭시 버즈4 2명",
+    "오아 아이브릭 미니 블루투스 스피커 10명",
+    "배스킨라빈스 파인트 아이스크림 50명"
+   ],
    "rawText": "응모형태: 동영상\n참여 방법\n1. MV·음원 확인\n2. 개사·촬영\n3. 해시태그 게시\n4. 영상 제출·폼 인증",
    "reasons": [
     "공유·게시형"
@@ -8097,6 +8186,11 @@
    "place": null,
    "platHint": "web",
    "prize": "배달의민족 5만원권 10명 206명",
+   "prizeAll": [
+    "배달의민족 5만원권 10명",
+    "올리브영 3만원권 30명",
+    "이디야 1만원권 166명"
+   ],
    "rawText": "응모형태: 설문/투표\n참여 방법\n1. 하반기 이용실태 및 만족도 조사 참여\n2. 폼제출",
    "reasons": [],
    "restriction_note": null,
@@ -8297,6 +8391,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "올리브영 상품권 100명",
+   "rawText": "응모형태: 소문내기\n참여 방법\n1. 팔로우\n2. 선언문 스토리태그\n3. 완료댓글",
    "reasons": [
     "공유·게시형"
    ],
@@ -8843,6 +8938,11 @@
    "place": null,
    "platHint": "insta",
    "prize": "에어팟 2명 160명",
+   "prizeAll": [
+    "에어팟 2명",
+    "지역 농특산물 10만원 상당 8명",
+    "메가커피 아메리카노 150명"
+   ],
    "rawText": "응모형태: 댓글/단문\n참여 방법\n1. 구독\n2. 여행영상 댓글\n3. 캡처 폼제출",
    "reasons": [],
    "restriction_note": null,
@@ -8943,6 +9043,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "GS편의점 상품권 1만원권 40명",
+   "rawText": "응모형태: 설문/투표\n참여 방법\n1. SNS 팔로우\n2. 인증샷 첨부\n3. 설문 제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -9193,6 +9294,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "문화상품권 5천원권 50명",
+   "rawText": "응모형태: 설문/투표\n참여 방법\n1. 의견제출\n2. 의견제출완료 댓글\n3. 좋아요",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -9341,6 +9443,12 @@
    "place": null,
    "platHint": "insta",
    "prize": "외식 상품권 5만원 4명 34명",
+   "prizeAll": [
+    "외식 상품권 5만원 4명",
+    "배스킨라빈스 교환권 2만원 10명",
+    "네이버페이 포인트 교환권 5천원 20명"
+   ],
+   "rawText": "응모형태: 단순응모\n참여 방법\n1. 팔로우·좋아요\n2. 등록캡처DM\n3. 인증댓글",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -9391,6 +9499,12 @@
    "place": null,
    "platHint": "insta",
    "prize": "10만원 상품권",
+   "prizeAll": [
+    "10만원 상품권",
+    "5만원 상품권",
+    "1만원 상품권"
+   ],
+   "rawText": "응모형태: 설문/투표\n참여 방법\n1. 구글폼 접속\n2. 교육부 정책 설문 제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -9689,6 +9803,12 @@
    "place": null,
    "platHint": "web",
    "prize": "밤캘 28인치 캐리어 1명 23명",
+   "prizeAll": [
+    "밤캘 28인치 캐리어 1명",
+    "경주 지역사랑화폐 5만원 4명",
+    "신세계 상품권 5만원 3명",
+    "메가커피 1만원권 15명"
+   ],
    "rawText": "응모형태: 설문/투표\n참여 방법\n1. 홈페이지\n2. 문화권 투표\n3. 정보 입력",
    "reasons": [],
    "restriction_note": null,
@@ -10231,6 +10351,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "메가커피 아메리카노 100명",
+   "rawText": "응모형태: 설문/투표\n참여 방법\n1. 프로필 링크\n2. 설문\n3. 시리즈 골라 제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -10525,6 +10646,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "편의점 상품권 20명",
+   "rawText": "응모형태: 퀴즈/퍼즐\n참여 방법\n1. SNS 팔로우\n2. 퀴즈 응답\n3. 감사글 남기기",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -10768,6 +10890,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "햄버거 세트",
+   "rawText": "응모형태: 퀴즈/퍼즐\n참여 방법\n1. OX 2문항 확인\n2. 링크서 정답·정보 제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -10815,6 +10938,12 @@
    "place": null,
    "platHint": "insta",
    "prize": "가족상 15명 35명",
+   "prizeAll": [
+    "가족상 15명",
+    "리뷰상 20명",
+    "참여상"
+   ],
+   "rawText": "응모형태: 참여인증\n참여 방법\n1. 관람\n2. 티켓·후기·태그 게시\n3. 팔로우",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -10915,6 +11044,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "투썸플레이스 아메리카노 L 30명",
+   "rawText": "응모형태: 댓글/단문\n참여 방법\n1. 팔로우\n2. 꿈 빈칸 댓글\n3. 팔로우·댓글 캡처 폼제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -10965,6 +11095,11 @@
    "place": null,
    "platHint": "yt",
    "prize": "장보기 3만원권 2명 35명",
+   "prizeAll": [
+    "장보기 3만원권 2명",
+    "편의점 1만원권 3명",
+    "커피 기프티콘 30명"
+   ],
    "rawText": "응모형태: 단순응모\n참여 방법\n1. 유튜브 구독\n2. 감상평 작성",
    "reasons": [],
    "restriction_note": null,
@@ -11016,6 +11151,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "BBQ 황금올리브치킨 50명",
+   "rawText": "응모형태: 소문내기\n참여 방법\n1. 팔로우\n2. 친구태그 1375 시행소식 댓글",
    "reasons": [
     "공유·게시형"
    ],
@@ -11406,6 +11542,7 @@
    "place": null,
    "platHint": "web",
    "prize": "모바일 기프티콘 100명",
+   "rawText": "응모형태: 설문/투표\n참여 방법\n1. SGIS 활용 우수사례 공모전 심사",
    "reasons": [
     "공모전"
    ],
@@ -11552,6 +11689,11 @@
    "place": null,
    "platHint": "insta",
    "prize": "네이버페이 5만원권 1명 9명",
+   "prizeAll": [
+    "네이버페이 5만원권 1명",
+    "네이버페이 3만원권 3명",
+    "네이버페이 1만원권 5명"
+   ],
    "rawText": "응모형태: 댓글/단문 북마크\n참여 방법\n1. 팔로우\n2. 스토리 공유태그\n3. 친구 댓글태그",
    "reasons": [],
    "restriction_note": null,
@@ -11602,6 +11744,13 @@
    "place": null,
    "platHint": "insta",
    "prize": "백화점 상품권 300만원 1명 16명",
+   "prizeAll": [
+    "백화점 상품권 300만원 1명",
+    "백화점 상품권 100만원 2명",
+    "백화점 상품권 50만원 3명",
+    "명문 메치니 금수저 세트 10명"
+   ],
+   "rawText": "응모형태: 참여인증\n참여 방법\n1. 신제품 기획\n2. 프로필 폼에 제안 제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -11797,6 +11946,10 @@
    "place": null,
    "platHint": "insta",
    "prize": "무자기 3종 꽃 종지 보울 .. 5명 35명",
+   "prizeAll": [
+    "무자기 3종 꽃 종지 보울 세트 5명",
+    "투썸플레이스 아메리카노 쿠폰 30명"
+   ],
    "rawText": "응모형태: 참여인증\n참여 방법\n1. 팔로우·좋아요\n2. 브랜드 캡처\n3. 댓글",
    "reasons": [],
    "restriction_note": null,
@@ -11896,6 +12049,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "네이버페이 5만원권 10명",
+   "rawText": "응모형태: 댓글/단문\n참여 방법\n1. 계정 팔로우\n2. 수험생 응원 댓글 작성",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -12041,6 +12195,11 @@
    "place": null,
    "platHint": "insta",
    "prize": "네이버페이 포인트 5천원 10명 15명",
+   "prizeAll": [
+    "네이버페이 포인트 5천원 10명",
+    "디지털 온누리상품권 5천원 5명"
+   ],
+   "rawText": "응모형태: 설문/투표\n참여 방법\n1. TIPA 팔로우\n2. 좋아요\n3. 만족도 설문 제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -12285,6 +12444,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "투썸플레이스 HOT 카페라떼 R 모바일쿠폰",
+   "rawText": "응모형태: 퀴즈/퍼즐\n참여 방법\n1. 채널 구독\n2. OX정답·소감 댓글\n3. 폼 제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -12431,6 +12591,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "빼빼로 기프티콘 100명",
+   "rawText": "응모형태: 참여인증\n참여 방법\n1. 버스 촬영\n2. 4개 해시태그·계정태그 게시",
    "reasons": [
     "공유·게시형"
    ],
@@ -12732,6 +12893,11 @@
    "place": null,
    "platHint": "insta",
    "prize": "에어팟 5 액티브 노이즈 캔.. 1명 13명",
+   "prizeAll": [
+    "에어팟 5 액티브 노이즈 캔슬링 1명",
+    "보바 보조배터리 10000mAh 2명",
+    "메가커피 아이스 아메리카노 10명"
+   ],
    "rawText": "응모형태: 댓글/단문\n참여 방법\n1. 팔로우\n2. 지역맛집 댓글\n3. 스토리 공유",
    "reasons": [],
    "restriction_note": null,
@@ -12783,6 +12949,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "네이버페이 포인트 1만원권 50명",
+   "rawText": "응모형태: 참여인증\n참여 방법\n1. 손잡이 촬영\n2. 손꾸 태그 게시\n3. 폼 제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -13380,6 +13547,10 @@
    "place": null,
    "platHint": "insta",
    "prize": "상품교환권 1만원권 15명 30명",
+   "prizeAll": [
+    "상품교환권 1만원권 15명",
+    "메가커피 아메리카노 쿠폰 15명"
+   ],
    "rawText": "응모형태: 댓글/단문\n참여 방법\n1. 팔로우\n2. 15주년 축하댓글\n3. 친구 태그",
    "reasons": [],
    "restriction_note": null,
@@ -13526,6 +13697,11 @@
    "place": null,
    "platHint": "insta",
    "prize": "배달의민족 상품권 3만원.. 10명 100명",
+   "prizeAll": [
+    "배달의민족 상품권 3만원권 10명",
+    "BHC 뿌링클+콜라125L 30명",
+    "이디야커피 ICED 아메리카노 60명"
+   ],
    "rawText": "응모형태: 퀴즈/퍼즐\n참여 방법\n1. 3채널 구독·좋아요\n2. 정답댓글\n3. 폼인증",
    "reasons": [],
    "restriction_note": null,
@@ -13630,6 +13806,11 @@
    "place": null,
    "platHint": "insta",
    "prize": "고인돌 고체방향제 3명 38명",
+   "prizeAll": [
+    "고인돌 고체방향제 3명",
+    "고인돌 레진 오브제인센스 홀더 5명",
+    "이디야 커피 쿠폰 30명"
+   ],
    "rawText": "응모형태: 설문/투표 북마크\n참여 방법\n1. 프로필 링크 접속\n2. 32종 굿즈 설문 제출",
    "reasons": [],
    "restriction_note": null,
@@ -13781,6 +13962,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "메가MGC커피 아이스 아메리카노 30명",
+   "rawText": "응모형태: 댓글/단문\n참여 방법\n1. 리로스쿨 팔로우\n2. 자유롭게 댓글 남기기",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -14030,6 +14212,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "농촌사랑상품권 1만원권 30명",
+   "rawText": "응모형태: 참여인증\n참여 방법\n1. 대동커넥트\n2. 수확사진 작물명 소감 등록",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -14566,6 +14749,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "투썸플레이스 아메리카노 30명",
+   "rawText": "응모형태: 댓글/단문\n참여 방법\n1. 팔로우\n2. 시승 희망 토요타 차종 댓글",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -14665,6 +14849,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "장보기 상품권 5천원 상당 30명",
+   "rawText": "응모형태: 댓글/단문\n참여 방법\n1. 팔로우·좋아요\n2. 감상·정책반가움 댓글",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -14813,6 +14998,11 @@
    "place": null,
    "platHint": "web",
    "prize": "배달의 민족 1만원권 50명 150명",
+   "prizeAll": [
+    "배달의 민족 1만원권 50명",
+    "메가커피 5천원권 100명"
+   ],
+   "rawText": "응모형태: 설문/투표\n참여 방법\n1. 참여하기 클릭\n2. 설문 참여\n3. 제출하기",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -15202,6 +15392,11 @@
    "place": null,
    "platHint": "insta",
    "prize": "템플스테이 1박 2일 체험권.. 1명 31명",
+   "prizeAll": [
+    "템플스테이 1박 2일 체험권 1명",
+    "다이소 모바일 상품권 30명"
+   ],
+   "rawText": "응모형태: 퀴즈/퍼즐\n참여 방법\n1. 팔로우\n2. 참여 완료 댓글\n3. 정답 폼 제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -15251,6 +15446,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "모바일 상품권 100명",
+   "rawText": "응모형태: 설문/투표\n참여 방법\n1. 전북도민 설문 접속\n2. 이용 경험과 만족도 제출",
    "reasons": [],
    "restriction_note": "참여 지역 확인 필요: 전북도민 설문 접속",
    "restriction_reason": null,
@@ -15549,6 +15745,12 @@
    "place": null,
    "platHint": "insta",
    "prize": "온라인통합상품권 20만원.. 1명 9명",
+   "prizeAll": [
+    "온라인통합상품권 20만원권 1명",
+    "스타벅스 5만원권 3명",
+    "네이버페이 2만원 5명"
+   ],
+   "rawText": "응모형태: 참여인증\n참여 방법\n1. 이미지·기대평 게시\n2. 태그3개·계정태그",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -15597,6 +15799,16 @@
    "place": null,
    "platHint": "web",
    "prize": "캐스퍼 전기차 1명 등 100% 당첨",
+   "prizeAll": [
+    "캐스퍼 전기차 1명",
+    "순금 골드바 10돈 1명",
+    "최슨 폴더블폰 2명",
+    "전자제품 3명",
+    "10만원 상품권 10명",
+    "5만원 상품권 100명",
+    "4천원 상품권-전원"
+   ],
+   "rawText": "응모형태: 설문/투표\n참여 방법\n1. 개인통행 실태조사 참여",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -15789,6 +16001,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "양승원자연벌꿀 밤꿀 500g 8명",
+   "rawText": "응모형태: 댓글/단문\n참여 방법\n1. 팔로우\n2. 3개 글 좋아요 댓글\n3. 친구태그",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -16089,6 +16302,11 @@
    "place": null,
    "platHint": "yt",
    "prize": "장보기 3만원권 3명 28명",
+   "prizeAll": [
+    "장보기 3만원권 3명",
+    "문화상품권 1만원권 5명",
+    "편의점 3천원권 20명"
+   ],
    "rawText": "응모형태: 댓글/단문\n참여 방법\n1. 유튜브 구독\n2. 감상평 댓글 작성",
    "reasons": [],
    "restriction_note": null,
@@ -16189,6 +16407,10 @@
    "place": null,
    "platHint": "insta",
    "prize": "네이버페이 3만원권 5명 35명",
+   "prizeAll": [
+    "네이버페이 3만원권 5명",
+    "커피 기프티콘 30명"
+   ],
    "rawText": "응모형태: 댓글/단문 북마크\n참여 방법\n1. 팔로우\n2. 친구태그\n3. 4종 40만 조합 댓글",
    "reasons": [],
    "restriction_note": null,
@@ -16727,6 +16949,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "초코티라미수케이크+아메리카노 2잔 15명",
+   "rawText": "응모형태: 댓글/단문\n참여 방법\n1. 팔로우\n2. 성장항목·이유 댓글\n3. 폼제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -16978,6 +17201,7 @@
    "place": null,
    "platHint": "web",
    "prize": "BHC 뿌링클 100명",
+   "rawText": "응모형태: 설문/투표\n참여 방법\n1. 대한항공 설문조사 참여\n2. 제출하기",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -17071,6 +17295,11 @@
    "place": null,
    "platHint": "insta",
    "prize": "네이버페이 1만원권 3명 18명",
+   "prizeAll": [
+    "네이버페이 1만원권 3명",
+    "메가커피 아메리카노 15명"
+   ],
+   "rawText": "응모형태: 댓글/단문\n참여 방법\n1. 팔로우\n2. 친구태그 댓글\n3. 스토리 공유",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -17125,6 +17354,11 @@
    "place": null,
    "platHint": "insta",
    "prize": "애플 에어팟 5세대 2명 257명",
+   "prizeAll": [
+    "애플 에어팟 5세대 2명",
+    "지역 농특산물 10만원 상당 5명",
+    "메가커피 아메리카노 쿠폰 250명"
+   ],
    "rawText": "응모형태: 댓글/단문\n참여 방법\n1. 구독\n2. 숏폼5편 시청·댓글\n3. 폼인증",
    "reasons": [],
    "restriction_note": null,
@@ -17175,6 +17409,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "아메리카노 커피쿠폰 30명",
+   "rawText": "응모형태: 설문/투표\n참여 방법\n1. 팔로우·구독\n2. 좋아요\n3. 설문폼 제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -17224,6 +17459,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "네이버 모바일 포인트 1만원권 30명",
+   "rawText": "응모형태: 퀴즈/퍼즐\n참여 방법\n1. 팔로우\n2. 숨은 메시지 댓글\n3. 좋아요",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -17274,6 +17510,13 @@
    "place": null,
    "platHint": "insta",
    "prize": "강원 리조트 숙박권 30박 1명 9명",
+   "prizeAll": [
+    "강원 리조트 숙박권 30박 1명",
+    "강원 리조트 숙박권 20박 1명",
+    "강원 리조트 숙박권 10박 3명",
+    "강원 리조트 숙박권 5박 4명"
+   ],
+   "rawText": "응모형태: 동영상\n참여 방법\n1. 영상제작\n2. 슬로건태그 업로드\n3. 폼제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -17420,6 +17663,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "투썸플레이스 아메리카노 R 교환권 20명",
+   "rawText": "응모형태: 퀴즈/퍼즐\n참여 방법\n1. 팔로우\n2. 제품명·친구태그 댓글",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -17566,6 +17810,10 @@
    "place": null,
    "platHint": "insta",
    "prize": "올리브영 모바일상품권 1.. 20명 80명",
+   "prizeAll": [
+    "올리브영 모바일상품권 1만원 20명",
+    "올리브영 모바일상품권 5000원 60명"
+   ],
    "rawText": "응모형태: 퀴즈/퍼즐 북마크\n참여 방법\n1. 계정 팔로우\n2. 좋아요\n3. 초성 정답댓글",
    "reasons": [],
    "restriction_note": null,
@@ -18589,6 +18837,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "투썸플레이스 아메리카노 50명",
+   "rawText": "응모형태: 댓글/단문\n참여 방법\n1. 양쪽 팔로우\n2. 명소댓글\n3. 캡처 폼제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -18786,6 +19035,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "네이버페이 포인트 1만원권 50명",
+   "rawText": "응모형태: 퀴즈/퍼즐\n참여 방법\n1. 계정 팔로우\n2. 좋아요\n3. QR폼 퀴즈 제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -18884,6 +19134,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "배달의민족 2만원권 15명",
+   "rawText": "응모형태: 퀴즈/퍼즐\n참여 방법\n1. 웹진접속\n2. 응모하기\n3. 정답·개인정보 제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -18933,6 +19184,14 @@
    "place": null,
    "platHint": "insta",
    "prize": "bhc 치킨 1년 이용권 1명 68명",
+   "prizeAll": [
+    "bhc 치킨 1년 이용권 1명",
+    "bhc 30만원권 2명",
+    "bhc 10만원권 5명",
+    "bhc 3만원권 10명",
+    "알싹킹+콜라 125L 50명"
+   ],
+   "rawText": "응모형태: 참여인증\n참여 방법\n1. 뚝닭송 춤 릴스\n2. 음원·필수태그 추가",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -18980,6 +19239,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "S-OIL 1만원 주유권 100명",
+   "rawText": "응모형태: 단순응모\n참여 방법\n1. SNS팔로우\n2. 주차TF영상 좋아요\n3. 네이버폼 제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -19424,6 +19684,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "투썸플레이스 모바일 쿠폰 1만원권 90명",
+   "rawText": "응모형태: 댓글/단문\n참여 방법\n1. 문화포털 탐색\n2. 발견 정보와 이유 댓글",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -19526,6 +19787,11 @@
    "place": null,
    "platHint": "web",
    "prize": "블루투스 헤드폰 3명 15명",
+   "prizeAll": [
+    "블루투스 헤드폰 3명",
+    "모바일페이 3만원 2명",
+    "커피 기프티콘 10명"
+   ],
    "rawText": "응모형태: 후기/리뷰\n참여 방법\n1. K리그 트립데이 후기 작성\n2. 폼제출",
    "reasons": [],
    "restriction_note": null,
@@ -19575,6 +19841,11 @@
    "place": null,
    "platHint": "insta",
    "prize": "올리브영 상품권 10만원권 1명 498명",
+   "prizeAll": [
+    "올리브영 상품권 10만원권 1명",
+    "배달의민족 상품권 3만원권 7명",
+    "커피 쿠폰 490명"
+   ],
    "rawText": "응모형태: 참여인증\n참여 방법\n1. 사진촬영\n2. 폼 첨부\n3. 참여완료 댓글",
    "reasons": [],
    "restriction_note": null,
@@ -19624,6 +19895,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "따뜻한 아메리카노 기프티콘 50명",
+   "rawText": "응모형태: 댓글/단문\n참여 방법\n1. 산행 안전수칙 생각\n2. 나만의 꿀팁 댓글",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -19770,6 +20042,11 @@
    "place": null,
    "platHint": "insta",
    "prize": "배달의민족 상품권 3만원.. 4명 40명",
+   "prizeAll": [
+    "배달의민족 상품권 3만원권 4명",
+    "올리브영 상품권 2만원권 6명",
+    "네이버페이 1만원권 30명"
+   ],
    "rawText": "응모형태: 댓글/단문 북마크\n참여 방법\n1. 계정 팔로우\n2. 보기 번호와 이유 댓글",
    "reasons": [],
    "restriction_note": null,
@@ -19919,6 +20196,11 @@
    "place": null,
    "platHint": "web",
    "prize": "피자세트 20명 200명",
+   "prizeAll": [
+    "피자세트 20명",
+    "치킨세트 20명",
+    "커피쿠폰 160명"
+   ],
    "rawText": "응모형태: 설문/투표\n참여 방법\n1. 신고센터 접속\n2. 설문 클릭\n3. 답변 제출",
    "reasons": [],
    "restriction_note": null,
@@ -19969,6 +20251,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "네이버페이 포인트 1만원 모바일쿠폰 100명",
+   "rawText": "응모형태: 설문/투표\n참여 방법\n1. 팔로우\n2. 설문완료\n3. 참여완료 댓글",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -20455,6 +20738,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "갤럭시 X 리센느 포토카드 세트 20명",
+   "rawText": "응모형태: 소문내기\n참여 방법\n1. 캡처\n2. 기능·이유·필수태그 피드 게시",
    "reasons": [
     "공유·게시형"
    ],
@@ -20561,6 +20845,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "BBQ 황금올리브치킨+콜라 125L 기프티콘 300명",
+   "rawText": "응모형태: 퀴즈/퍼즐\n참여 방법\n1. 팔로우\n2. 정답댓글\n3. 연락처 정답 제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -20706,6 +20991,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "투썸플레이스 아이스 아메리카노 50명",
+   "rawText": "응모형태: 단순응모\n참여 방법\n1. 팔로우·좋아요\n2. 검색 캡처\n3. 폼제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -21107,6 +21393,11 @@
    "place": null,
    "platHint": "web",
    "prize": "교촌치킨 허니콤보 콜라 5명 105명",
+   "prizeAll": [
+    "교촌치킨 허니콤보 콜라 5명",
+    "투썸플레이스 커피 100명"
+   ],
+   "rawText": "응모형태: 퀴즈/퍼즐\n참여 방법\n1. 퀴즈 정답\n2. 소문 작성\n3. 정보 입력",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -21251,6 +21542,11 @@
    "place": null,
    "platHint": "insta",
    "prize": "치킨 기프티콘 20명 120명",
+   "prizeAll": [
+    "치킨 기프티콘 20명",
+    "햄버거 기프티콘 100명"
+   ],
+   "rawText": "응모형태: 설문/투표\n참여 방법\n1. 설문 응답\n2. 연락처 입력·개인정보 동의",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -21348,6 +21644,12 @@
    "place": null,
    "platHint": "web",
    "prize": "온누리 상품권 100만원 3명 503명",
+   "prizeAll": [
+    "온누리 상품권 100만원 3명",
+    "온누리 상품권 10만원 10명",
+    "온누리 상품권 5만원권 30명",
+    "온누리 상품권 1만원권 460명"
+   ],
    "rawText": "응모형태: 단순응모\n참여 방법\n1. 소비 현장 사진 SNS 게시\n2. 인스타그램 DM으로 제출",
    "reasons": [],
    "restriction_note": null,
@@ -21693,6 +21995,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "네이버페이 1만원권 100명",
+   "rawText": "응모형태: 퀴즈/퍼즐\n참여 방법\n1. 네이버 검색\n2. 키워드 찾기\n3. 폼제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -21741,6 +22044,10 @@
    "place": null,
    "platHint": "insta",
    "prize": "BHC 치킨 기프티콘 3명 23명",
+   "prizeAll": [
+    "BHC 치킨 기프티콘 3명",
+    "메가커피 아이스 아메리카노 20명"
+   ],
    "rawText": "응모형태: 퀴즈/퍼즐 북마크\n참여 방법\n1. 팔로우\n2. 업무 정답 댓글\n3. 좋아요·공유",
    "reasons": [],
    "restriction_note": null,
@@ -21937,6 +22244,11 @@
    "place": null,
    "platHint": "insta",
    "prize": "신세계 상품권 2만원 1명 5명",
+   "prizeAll": [
+    "신세계 상품권 2만원 1명",
+    "신세계 상품권 1만원 1명",
+    "스타벅스 아메리카노 Tall 3명"
+   ],
    "rawText": "응모형태: 참여인증\n참여 방법\n1. 팔로우\n2. Pal 2 찜 캡처\n3. 네이버폼 제출",
    "reasons": [],
    "restriction_note": null,
@@ -21988,6 +22300,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "굽네치킨 고추바사삭 세트 모바일 쿠폰 30명",
+   "rawText": "응모형태: 설문/투표\n참여 방법\n1. QR코드 스캔\n2. 광주비전 만족도 설문 제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -22159,10 +22472,12 @@
    "checked": null,
    "count": 139,
    "elec": [
+    "audio",
     "tablet"
    ],
    "elec_models": [
-    "아이패드 에어 11"
+    "아이패드 에어 11",
+    "에어팟 프로 3"
    ],
    "end": "2026-11-10",
    "endTime": null,
@@ -22185,6 +22500,13 @@
    "place": null,
    "platHint": "insta",
    "prize": "아이패드 에어 11 1명 138명",
+   "prizeAll": [
+    "아이패드 에어 11 1명",
+    "에어팟 프로 3 2명",
+    "네이버페이 포인트 10만원권 5명",
+    "배달의민족 5만원권 10명",
+    "메가커피 1만원권 120명"
+   ],
    "rawText": "응모형태: 설문/투표 북마크\n참여 방법\n1. 3작품 투표\n2. 인증댓글\n3. 친구 태그",
    "reasons": [],
    "restriction_note": null,
@@ -22332,6 +22654,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "편의점 5천원 쿠폰 100명",
+   "rawText": "응모형태: 설문/투표\n참여 방법\n1. 대상맞는 설문접속\n2. 만족도조사 완료",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -22380,6 +22703,7 @@
    "place": null,
    "platHint": "web",
    "prize": "전북 지역특산품 100명",
+   "rawText": "응모형태: 소문내기\n참여 방법\n1. 전북사랑도민증 소문내기",
    "reasons": [
     "공유·게시형"
    ],
@@ -23622,6 +23946,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "아메리카노 기프티콘 50명",
+   "rawText": "응모형태: 설문/투표\n참여 방법\n1. QR·링크트리 접속\n2. 시민의견 설문 제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -23762,6 +24087,11 @@
    "place": null,
    "platHint": "web",
    "prize": "상품권 3만원권 1명 204명",
+   "prizeAll": [
+    "상품권 3만원권 1명",
+    "치킨 상품권 3명",
+    "커피 기프티콘 200명"
+   ],
    "rawText": "응모형태: 댓글/단문\n참여 방법\n1. 밸런스게임 참여하기\n2. 개인정보 동의 후 응모",
    "reasons": [],
    "restriction_note": null,
@@ -23954,6 +24284,11 @@
    "place": null,
    "platHint": "insta",
    "prize": "배달의민족 3만원 상품권 20명 50명",
+   "prizeAll": [
+    "배달의민족 3만원 상품권 20명",
+    "배스킨라빈스 더블주니어 30명"
+   ],
+   "rawText": "응모형태: 설문/투표\n참여 방법\n1. 팔로우\n2. 촬영작 선택\n3. 폼에 이유 제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -24052,6 +24387,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "문화상품권 1만원 50명",
+   "rawText": "응모형태: 설문/투표\n참여 방법\n1. 구글폼 접속\n2. 상황별 선택\n3. 답변 제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -24100,6 +24436,12 @@
    "place": null,
    "platHint": "insta",
    "prize": "강아지 원목 하우스 10명 50명",
+   "prizeAll": [
+    "강아지 원목 하우스 10명",
+    "자동 급식기 20명",
+    "캠핑 의자 20명"
+   ],
+   "rawText": "응모형태: 단순응모\n참여 방법\n1. 팔로우·좋아요\n2. 진단\n3. 점수·글 댓글",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -24199,6 +24541,12 @@
    "place": null,
    "platHint": "insta",
    "prize": "미스터피자 포테이토M+콜.. 12명 72명",
+   "prizeAll": [
+    "미스터피자 포테이토M+콜라 125L 12명",
+    "맥도날드 불고기 버거 세트 15명",
+    "스타벅스 아이스 카페 아메리카노 T 45명"
+   ],
+   "rawText": "응모형태: 소문내기\n참여 방법\n1. 팔로우\n2. 리포스트\n3. 폼제출\n4. 완료댓",
    "reasons": [
     "공유·게시형"
    ],
@@ -24298,6 +24646,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "네이버페이 5천원 상품권 10명",
+   "rawText": "응모형태: 퀴즈/퍼즐\n참여 방법\n1. 러닝영상 시청\n2. 정답과 가고픈 섬 댓글",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -24492,6 +24841,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "모바일 주유권 1만원 30명",
+   "rawText": "응모형태: 설문/투표\n참여 방법\n1. 팔로우\n2. 좋아요·3명 소환\n3. 설문 제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -24792,6 +25142,13 @@
    "place": null,
    "platHint": "insta",
    "prize": "모바일 금액권 10만원권 1명 30명",
+   "prizeAll": [
+    "모바일 금액권 10만원권 1명",
+    "모바일 금액권 5만원권 2명",
+    "모바일 금액권 1만원권 7명",
+    "분식 무료 앱쿠폰 20명"
+   ],
+   "rawText": "응모형태: 참여인증\n참여 방법\n1. 분식영상 제작\n2. SNS 태그게시\n3. 폼제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -24889,6 +25246,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "편의점 상품권 5천원 30명",
+   "rawText": "응모형태: 댓글/단문\n참여 방법\n1. 기후행동 실천약속 댓글\n2. 친구태그",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -24936,6 +25294,10 @@
    "place": null,
    "platHint": "web",
    "prize": "메가커피 꿀조합 세트 1명 40명",
+   "prizeAll": [
+    "메가커피 꿀조합 세트 1명",
+    "메가커피 아메리카노 39명"
+   ],
    "rawText": "응모형태: 단순응모\n참여 방법\n1. 응원 카드 작성\n2. '카드 보내기' 버튼 눌러 전송",
    "reasons": [],
    "restriction_note": null,
@@ -24984,6 +25346,12 @@
    "place": null,
    "platHint": "insta",
    "prize": "네이버페이 5만원권 3명 323명",
+   "prizeAll": [
+    "네이버페이 5만원권 3명",
+    "올리브영 3만원권 20명",
+    "투썸플레이스 5천원권 300명"
+   ],
+   "rawText": "응모형태: 설문/투표\n참여 방법\n1. 팔로우\n2. 프로필 링크 설문 응답 제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -25082,6 +25450,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "네이버페이 5천원권 40명",
+   "rawText": "응모형태: 댓글/단문\n참여 방법\n1. 구독\n2. 좋아요\n3. 패자·벌칙 댓글",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -25671,6 +26040,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "답례 온라인상품권 3천원권 30명",
+   "rawText": "응모형태: 퀴즈/퍼즐\n참여 방법\n1. 참여링크 접속\n2. OX퀴즈 정답 모두 제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -25864,6 +26234,10 @@
    "place": null,
    "platHint": "insta",
    "prize": "배달의민족 상품권 1만원.. 20명 50명",
+   "prizeAll": [
+    "배달의민족 상품권 1만원권 20명",
+    "배달의민족 상품권 5천원권 30명"
+   ],
    "rawText": "응모형태: 댓글/단문 북마크\n참여 방법\n1. 인천항 팔로우\n2. 후보 번호·응원 댓글",
    "reasons": [],
    "restriction_note": null,
@@ -26011,6 +26385,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "동키다래즙 2박스 10명",
+   "rawText": "응모형태: 퀴즈/퍼즐\n참여 방법\n1. 계정 팔로우\n2. 좋아요\n3. 다래 댓글",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -26155,6 +26530,10 @@
    "place": null,
    "platHint": "insta",
    "prize": "치킨 콜라 세트 4명 34명",
+   "prizeAll": [
+    "치킨 콜라 세트 4명",
+    "커피 케이크 세트 30명"
+   ],
    "rawText": "응모형태: 퀴즈/퍼즐 북마크\n참여 방법\n1. 팔로우\n2. 17주년 정답과 축하 댓글",
    "reasons": [],
    "restriction_note": null,
@@ -26348,6 +26727,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "배달의민족 5천원 상품권 250명",
+   "rawText": "응모형태: 댓글/단문\n참여 방법\n1. 팔로우\n2. 응원댓글 캡처\n3. 구글폼 제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -26398,6 +26778,12 @@
    "place": null,
    "platHint": "insta",
    "prize": "신세계 상품권 10만원권 1명 7명",
+   "prizeAll": [
+    "신세계 상품권 10만원권 1명",
+    "BHC 치킨 세트 3명",
+    "스타벅스 1만원권 3명"
+   ],
+   "rawText": "응모형태: 퀴즈/퍼즐\n참여 방법\n1. 팔로우\n2. 빵정답·응원댓글\n3. 친구태그",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -26447,6 +26833,10 @@
    "place": null,
    "platHint": "insta",
    "prize": "GS25 모바일 상품권 2만원권.. 25명 45명",
+   "prizeAll": [
+    "GS25 모바일 상품권 2만원권 25명",
+    "풀무원 요거트그릭 세트 20명"
+   ],
    "rawText": "응모형태: 댓글/단문 북마크\n참여 방법\n1. 두 계정 팔로우\n2. 요거트볼 선택 댓글",
    "reasons": [],
    "restriction_note": null,
@@ -26496,6 +26886,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "투썸 아메리카노R 1잔 50명",
+   "rawText": "응모형태: 설문/투표\n참여 방법\n1. 네이버폼 접속\n2. 만족도 조사\n3. 폼 제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -26692,6 +27083,7 @@
    "place": null,
    "platHint": "web",
    "prize": "커피 기프티콘 50명",
+   "rawText": "응모형태: 설문/투표\n참여 방법\n1. 홈페이지 이용 만족도 조사 참여\n2. 폼제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -26937,6 +27329,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "햄버거세트 기프티콘 100명",
+   "rawText": "응모형태: 설문/투표\n참여 방법\n1. 건강증진 설문 접속\n2. 문항 응답·제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -27135,6 +27528,10 @@
    "place": null,
    "platHint": "yt",
    "prize": "윤경호 싸인 폴라로이드 5명 10명",
+   "prizeAll": [
+    "윤경호 싸인 폴라로이드 5명",
+    "올리브영 1만원권 5명"
+   ],
    "rawText": "응모형태: 댓글/단문\n참여 방법\n1. 스타뱅킹 경호요원 나타나주었으면 하는 순간 작성\n2. 참여완료 남기기",
    "reasons": [],
    "restriction_note": null,
@@ -27578,6 +27975,10 @@
    "place": null,
    "platHint": "insta",
    "prize": "와구리 키링+메가MGC커피 IC.. 25명 130명",
+   "prizeAll": [
+    "와구리 키링+메가MGC커피 ICE 아메리카노마카롱 25명",
+    "메가MGC커피 ICE 아메리카노마카롱 105명"
+   ],
    "rawText": "응모형태: 설문/투표 북마크\n참여 방법\n1. SNS 구독\n2. 화면 캡처\n3. 설문·인증 제출",
    "reasons": [],
    "restriction_note": null,
@@ -27776,6 +28177,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "CU편의점 5천원 모바일 상품권 100명",
+   "rawText": "응모형태: 설문/투표\n참여 방법\n1. 링크 접속\n2. 1~4호 읽기\n3. 설문·번호제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -27824,6 +28226,10 @@
    "place": null,
    "platHint": "yt",
    "prize": "치킨 상품권 10명 70명",
+   "prizeAll": [
+    "치킨 상품권 10명",
+    "투썸플레이스 아메리카노 60명"
+   ],
    "rawText": "응모형태: 댓글/단문 북마크\n참여 방법\n1. 유튜브 채널 구독\n2. 영상 시청\n3. 댓글 작성",
    "reasons": [],
    "restriction_note": null,
@@ -27923,6 +28329,11 @@
    "place": null,
    "platHint": "insta",
    "prize": "도미노피자 씬 슈퍼디럭스.. 4명 10명",
+   "prizeAll": [
+    "도미노피자 씬 슈퍼디럭스 M 콜라 125L 4명",
+    "메가MGC커피 모바일 금액권 1만원권 6명"
+   ],
+   "rawText": "응모형태: 퀴즈/퍼즐\n참여 방법\n1. 팔로우\n2. 힌트 확인\n3. 4명 순서 댓글",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -27976,6 +28387,12 @@
    "place": null,
    "platHint": "web",
    "prize": "아메리카노 쿠폰 100명 150명",
+   "prizeAll": [
+    "아메리카노 쿠폰 100명",
+    "생활용품 상품권 3만원 5명",
+    "생활용품 상품권 1만원 15명",
+    "생활용품 상품권 5천원 30명"
+   ],
    "rawText": "응모형태: 퀴즈/퍼즐 북마크\n참여 방법\n1. 챗봇 퀴즈\n2. 정답 폼제출\n3. 오류제보",
    "reasons": [],
    "restriction_note": null,
@@ -28070,6 +28487,10 @@
    "place": null,
    "platHint": "insta",
    "prize": "신세계 상품권 5만원권 2명 22명",
+   "prizeAll": [
+    "신세계 상품권 5만원권 2명",
+    "이디야커피 아메리카노 20명"
+   ],
    "rawText": "응모형태: 설문/투표\n참여 방법\n1. QR·프로필 링크 접속\n2. 만족도 설문 제출",
    "reasons": [],
    "restriction_note": null,
@@ -28212,6 +28633,11 @@
    "place": null,
    "platHint": "insta",
    "prize": "bhc 콰삭톡+웨지감자+콜라12.. 5명 70명",
+   "prizeAll": [
+    "bhc 콰삭톡+웨지감자+콜라125L 5명",
+    "메가MGC커피 귤톡톡젤리스무디 65명"
+   ],
+   "rawText": "응모형태: 퀴즈/퍼즐\n참여 방법\n1. 가입\n2. SNS 추가\n3. 좋아요\n4. 라비앙 댓글",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -28261,6 +28687,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "네이버페이 3천원권 100명",
+   "rawText": "응모형태: 댓글/단문\n참여 방법\n1. 두 SNS 팔로우\n2. 체험권 댓글\n3. 폼 제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -28408,6 +28835,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "커피쿠폰 1만원 30명",
+   "rawText": "응모형태: 댓글/단문\n참여 방법\n1. 영암이야기 118호 59쪽 확인\n2. 안내된 방법으로 영암에 전할 한마디 작성해 참여",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -28455,6 +28883,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "GS25 모바일 금액권 2만원 5명",
+   "rawText": "응모형태: 퀴즈/퍼즐\n참여 방법\n1. 팔로우·좋아요\n2. 빈칸 정답 댓글 작성",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -28550,6 +28979,7 @@
    "place": null,
    "platHint": "web",
    "prize": "GS25 상품권 1만원권 50명",
+   "rawText": "응모형태: 단순응모\n참여 방법\n1. 참여하기 버튼 클릭\n2. 아이디어 작성\n3. 제출하기",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -28599,6 +29029,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "올리브영 모바일상품권 5천원권 50명",
+   "rawText": "응모형태: 단순응모\n참여 방법\n1. 팔로우·좋아요\n2. 검색 캡처\n3. 폼제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -28695,6 +29126,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "커피 모바일 쿠폰 218명",
+   "rawText": "응모형태: 퀴즈/퍼즐\n참여 방법\n1. 퀴즈폼 접속\n2. OX 정답과 응원글 제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -28791,6 +29223,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "편의점 모바일쿠폰 5천원권 600명",
+   "rawText": "응모형태: 설문/투표\n참여 방법\n1. 네이버폼 설문\n2. 개인정보 입력 후 제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -28838,6 +29271,10 @@
    "place": null,
    "platHint": "yt",
    "prize": "올리브영 모바일 금액권 5.. 10명 110명",
+   "prizeAll": [
+    "올리브영 모바일 금액권 5만원권 10명",
+    "올리브영 모바일 금액권 1만원권 100명"
+   ],
    "rawText": "응모형태: 단순응모\n참여 방법\n1. 구독\n2. 영상댓글\n3. 구독·댓글 캡처 제출",
    "reasons": [],
    "restriction_note": null,
@@ -28987,6 +29424,7 @@
    "place": null,
    "platHint": "web",
    "prize": "아임비타 이뮨샷 10입 50명",
+   "rawText": "응모형태: 행시응모\n참여 방법\n1. 타이거커버드콜 7행시 짓기\n2. 폼제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -29034,6 +29472,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "투썸플레이스 모바일 기프티콘 5천원권 200명",
+   "rawText": "응모형태: 단순응모\n참여 방법\n1. WFK 구독\n2. 화면 캡처\n3. 네이버폼 제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -29325,6 +29764,11 @@
    "place": null,
    "platHint": "insta",
    "prize": "솔라스피어 W 또는 솔라스.. 1명 11명",
+   "prizeAll": [
+    "솔라스피어 W 또는 솔라스피어 이그니스 WS 다운 1명",
+    "배달의민족 1만원 상품권 5명",
+    "할리스커피 아메리카노 R 5명"
+   ],
    "rawText": "응모형태: 퀴즈/퍼즐 북마크\n참여 방법\n1. 팔로우·좋아요\n2. 다운명·친구태그 댓글",
    "reasons": [],
    "restriction_note": null,
@@ -29520,6 +29964,13 @@
    "place": null,
    "platHint": "insta",
    "prize": "온누리 상품권 5만원 1명 501명",
+   "prizeAll": [
+    "온누리 상품권 5만원 1명",
+    "네이버페이 상품권 3만원 20명",
+    "커피 상품권 1만원 200명",
+    "다이소 상품권 5천원 280명"
+   ],
+   "rawText": "응모형태: 후기/리뷰\n참여 방법\n1. 이용\n2. 사진후기\n3. 달서맛나 영수증후기",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -29739,10 +30190,11 @@
    "checked": null,
    "count": 55,
    "elec": [
-    "audio"
+    "audio",
+    "other"
    ],
    "elec_models": [
-    "에어팟"
+    "에어팟 5"
    ],
    "end": "2026-11-23",
    "endTime": null,
@@ -29764,6 +30216,13 @@
    "place": null,
    "platHint": "insta",
    "prize": "다이슨 슈퍼소닉 트래블 .. 1명 54명",
+   "prizeAll": [
+    "다이슨 슈퍼소닉 트래블 헤어드라이어 1명",
+    "인스탁스 와이드 400 카메라 1명",
+    "애플 에어팟 5 1명",
+    "조말론 잉글리쉬 페어 앤 프리지아 바디 앤 핸드 워시 250ml 1명",
+    "메가MGC커피 아이스 아메리카노 50명"
+   ],
    "rawText": "응모형태: 소문내기\n참여 방법\n1. GIF스토리 태그업로드\n2. 팔로우·폼인증",
    "reasons": [
     "공유·게시형"
@@ -29863,6 +30322,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "네이버페이 포인트 3천원 100명",
+   "rawText": "응모형태: 퀴즈/퍼즐\n참여 방법\n1. 팔로우\n2. 릴스시청·좋아요\n3. 비율 댓글",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -30010,6 +30470,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "투썸플레이스 5천원권 100명",
+   "rawText": "응모형태: 댓글/단문\n참여 방법\n1. 팔로우\n2. 금융안전진단\n3. 후기댓글 작성",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -30253,6 +30714,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "쿠팡 기프트카드 1만원권 20명",
+   "rawText": "응모형태: 댓글/단문\n참여 방법\n1. 팔로우\n2. 좋아요\n3. 응원글\n4. 공유·태그",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -30306,6 +30768,12 @@
    "place": null,
    "platHint": "insta",
    "prize": "블루투스 접이식 휴대용 .. 20명 210명",
+   "prizeAll": [
+    "블루투스 접이식 휴대용 키보드 20명",
+    "손끝비 밀랍백 40명",
+    "국립박물관 도자 코스터 50명",
+    "투썸플레이스 기프티콘 5천원권 100명"
+   ],
    "rawText": "응모형태: 설문/투표 북마크\n참여 방법\n1. 네이버폼 접속\n2. 만족도 설문 응답·제출",
    "reasons": [],
    "restriction_note": null,
@@ -30933,6 +31401,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "커피 쿠폰 100명",
+   "rawText": "응모형태: 단순응모\n참여 방법\n1. 팔로우\n2. 팔로잉 제출\n3. 참여완료 댓글",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -30982,6 +31451,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "무기체계 조립블록 20명",
+   "rawText": "응모형태: 참여인증\n참여 방법\n1. 쿠폰\n2. 2곳팔로우\n3. 태그후기\n4. URL DM",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -31081,6 +31551,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "배달의민족 1만원 상품권 20명",
+   "rawText": "응모형태: 소문내기\n참여 방법\n1. 팔로우\n2. 좋아요\n3. 공유\n4. 응원 댓글",
    "reasons": [
     "공유·게시형"
    ],
@@ -31806,6 +32277,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "디지털 도서 구독 이용권 300명",
+   "rawText": "응모형태: 설문/투표\n참여 방법\n1. 온책방 로그인\n2. 팝업 설문 구글폼 제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -32739,6 +33211,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "메가MGC 더블 아아 세트 50명",
+   "rawText": "응모형태: 퀴즈/퍼즐\n참여 방법\n1. 구독\n2. 영상시청\n3. AB물 댓글\n4. 폼제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -32975,6 +33448,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "음료교환권 250명",
+   "rawText": "응모형태: 설문/투표\n참여 방법\n1. 법령 검색\n2. 한눈보기 확인\n3. 설문 제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -33023,6 +33497,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "편의점 상품권 5천원권 150명",
+   "rawText": "응모형태: 댓글/단문\n참여 방법\n1. 하이라이트 테스트\n2. 결과유형 댓글 작성",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -33163,6 +33638,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "더벤티 상품권 1만원권 100명",
+   "rawText": "응모형태: 설문/투표\n참여 방법\n1. 팔로우\n2. 프로필 설문\n3. 좋아요 댓글",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -33655,6 +34131,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "스타벅스 아메리카노 Tall 및 바질 치킨 토마토 브리또 세트 100명",
+   "rawText": "응모형태: 설문/투표\n참여 방법\n1. QR 설문 접속\n2. 이용 만족도 답변 제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -33702,6 +34179,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "올리브영 5천원권 20명",
+   "rawText": "응모형태: 댓글/단문\n참여 방법\n1. 좋아요\n2. 너를 믿어 포함 수능 응원 댓글",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -33798,6 +34276,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "올리브영 모바일 상품권 1만원권 60명",
+   "rawText": "응모형태: 댓글/단문\n참여 방법\n1. 팔로우\n2. 기대평과 친구태그 댓글",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -34041,6 +34520,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "투썸플레이스 뉴욕치즈 피스+아메리카노 2잔 20명",
+   "rawText": "응모형태: 댓글/단문\n참여 방법\n1. 팔로우\n2. 제안 댓글\n3. 두 인증샷 폼제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -34287,6 +34767,11 @@
    "place": null,
    "platHint": "insta",
    "prize": "GS25 모바일 금액권 5천원권.. 12명 32명",
+   "prizeAll": [
+    "GS25 모바일 금액권 5천원권 12명",
+    "메가MGC커피 아이스 아메리카노 20명"
+   ],
+   "rawText": "응모형태: 퀴즈/퍼즐\n참여 방법\n1. 웹진 접속\n2. 이벤트 QR\n3. 퀴즈 설문 제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -34384,6 +34869,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "자사몰 적립금 10명",
+   "rawText": "응모형태: 댓글/단문\n참여 방법\n1. 팔로우\n2. 할리스몰 회원가입\n3. 완료 또는 응원댓글",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -34830,6 +35316,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "버거킹 몬스터와퍼세트 e-쿠폰 50명",
+   "rawText": "응모형태: 퀴즈/퍼즐\n참여 방법\n1. 팔로우\n2. 로고색 정답 댓글\n3. 11/30 유지",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -34928,6 +35415,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "네이버페이 포인트 1만원 10명",
+   "rawText": "응모형태: 댓글/단문\n참여 방법\n1. 팔로우\n2. 음악 장르 댓글\n3. 친구 태그",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -35058,7 +35546,10 @@
    "end": "2026-11-12",
    "endTime": null,
    "firstSeen": "2026-11-08",
-   "form_url": null,
+   "formLinks": [
+    "https://form.naver.com/response/4VUiiWkJdEk"
+   ],
+   "form_url": "https://form.naver.com/response/4VUiiWkJdEk",
    "grade": "C",
    "id": "eh-6202b075ed",
    "is_restricted": false,
@@ -35081,7 +35572,8 @@
    "restriction_reason": null,
    "src": "eh",
    "srcUrls": [
-    "https://www.eventhouse.kr/site/view.php?no=319507"
+    "https://www.eventhouse.kr/site/view.php?no=319507",
+    "https://grandpark.seoul.go.kr/eventBoard/eventBoardView/ko/S001005003001.do?pageIndex=1&e_bbs_no=45383&search_sdate=&search_edate=&search_gubun=&searchWord="
    ],
    "start": "2026-10-30",
    "status": "active",
@@ -35089,11 +35581,9 @@
     "홈페이지 만족도 조사 참여",
     "폼제출"
    ],
-   "tags": [
-    "원문 미확인"
-   ],
+   "tags": [],
    "title": "홈페이지 만족도 조사 참여하고 커피 받자 이벤트!!",
-   "url": "https://www.eventhouse.kr/site/view.php?no=319507",
+   "url": "https://grandpark.seoul.go.kr/eventBoard/eventBoardView/ko/S001005003001.do?pageIndex=1&e_bbs_no=45383&search_sdate=&search_edate=&search_gubun=&searchWord=",
    "who": null
   },
   "eh-62cfd225e6": {
@@ -35276,6 +35766,12 @@
    "place": null,
    "platHint": "web",
    "prize": "블루투스 접이식 휴대용 .. 20명 210명",
+   "prizeAll": [
+    "블루투스 접이식 휴대용 키보드 20명",
+    "손끝비 밀랍백 40명",
+    "국립박물관 도자 코스터 50명",
+    "투썸플레이스 기프티콘 5천원권 100명"
+   ],
    "rawText": "응모형태: 설문/투표 북마크\n참여 방법\n1. 설문 접속\n2. 만족도 조사 응답\n3. 폼 제출",
    "reasons": [],
    "restriction_note": null,
@@ -35614,6 +36110,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "배달의민족 모바일 상품권 1만원권 30명",
+   "rawText": "응모형태: 퀴즈/퍼즐\n참여 방법\n1. 팔로우·좋아요\n2. 케룡이 수 댓글",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -35810,6 +36307,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "올리브영 1만원 20명",
+   "rawText": "응모형태: 퀴즈/퍼즐\n참여 방법\n1. 현대차 팔로우\n2. 틀린 설명 번호 댓글",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -35858,6 +36356,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "커피 기프티콘 50명",
+   "rawText": "응모형태: 퀴즈/퍼즐\n참여 방법\n1. 팔로우\n2. 좋아요\n3. 책제목 정답 댓글",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -35907,6 +36406,10 @@
    "place": null,
    "platHint": "insta",
    "prize": "BHC 뿌링클+콜라 125L 10명 40명",
+   "prizeAll": [
+    "BHC 뿌링클+콜라 125L 10명",
+    "메가MGC커피 아이스 아메리카노 30명"
+   ],
    "rawText": "응모형태: 단순응모\n참여 방법\n1. 한줄 3미션\n2. 화면 캡처\n3. 네이버폼 제출",
    "reasons": [],
    "restriction_note": null,
@@ -35957,6 +36460,11 @@
    "place": null,
    "platHint": "insta",
    "prize": "CJ기프트카드 3만원권 1명 73명",
+   "prizeAll": [
+    "CJ기프트카드 3만원권 1명",
+    "배달의민족 모바일금액권 1만원권 3명",
+    "컴포즈커피 아메리카노 69명"
+   ],
    "rawText": "응모형태: 설문/투표\n참여 방법\n1. SNS 구독·캡처\n2. 설문응답\n3. 인증샷 제출",
    "reasons": [],
    "restriction_note": null,
@@ -36008,6 +36516,10 @@
    "place": null,
    "platHint": "insta",
    "prize": "배달의민족 모바일 쿠폰 5.. 2명 12명",
+   "prizeAll": [
+    "배달의민족 모바일 쿠폰 5만원권 2명",
+    "네이버페이 포인트 1만원권 10명"
+   ],
    "rawText": "응모형태: 참여인증 북마크\n참여 방법\n1. 팔로우\n2. 여행사진 게시\n3. 계정·태그",
    "reasons": [],
    "restriction_note": null,
@@ -36058,6 +36570,12 @@
    "place": null,
    "platHint": "insta",
    "prize": "굽네치킨 모바일 금액권 3.. 1명 8명",
+   "prizeAll": [
+    "굽네치킨 모바일 금액권 3만원권 1명",
+    "CU 모바일상품권 1만원권 2명",
+    "맥도날드 맥스파이시 상하이버거 세트 5명"
+   ],
+   "rawText": "응모형태: 퀴즈/퍼즐\n참여 방법\n1. 팔로우\n2. 좋아요\n3. 위치 정답\n4. 댓글",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -36153,6 +36671,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "CU 모바일상품권 5천원권 20명",
+   "rawText": "응모형태: 댓글/단문\n참여 방법\n1. 팔로우\n2. 좋아요\n3. 초능력 빼빼로 댓글",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -36503,6 +37022,10 @@
    "place": null,
    "platHint": "web",
    "prize": "총상금 700만원",
+   "prizeAll": [
+    "총상금 700만원",
+    "이스타항공 국제선 왕복 항공권"
+   ],
    "rawText": "응모형태: 레시피\n참여 방법\n1. 레시피 구상\n2. 신청서 다운·작성\n3. 제출",
    "reasons": [],
    "restriction_note": null,
@@ -36601,6 +37124,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "키캡 키링 50명",
+   "rawText": "응모형태: 댓글/단문\n참여 방법\n1. 한컴타자 가입 게임\n2. 점수댓글\n3. 캡처",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -36650,6 +37174,11 @@
    "place": null,
    "platHint": "insta",
    "prize": "BBQ 황금올리브치킨+콜라125.. 30명 230명",
+   "prizeAll": [
+    "BBQ 황금올리브치킨+콜라125L 30명",
+    "컴포즈커피 아이스 아메리카노 200명"
+   ],
+   "rawText": "응모형태: 퀴즈/퍼즐\n참여 방법\n1. SNS 친구추가\n2. 빈칸 조합\n3. 정답 폼제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -36896,6 +37425,11 @@
    "place": null,
    "platHint": "yt",
    "prize": "애플 에어팟 5세대 1명 101명",
+   "prizeAll": [
+    "애플 에어팟 5세대 1명",
+    "배달의민족 2만원권 10명",
+    "투썸플레이스 아메리카노 90명"
+   ],
    "rawText": "응모형태: 단순/간단 북마크\n참여 방법\n1. 구독\n2. 서초/서리풀 영상 캡처\n3. 폼 제출",
    "reasons": [],
    "restriction_note": null,
@@ -37099,6 +37633,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "일화 음료 1BOX 10명",
+   "rawText": "응모형태: 퀴즈/퍼즐\n참여 방법\n1. 일화 팔로우\n2. 이모지 보고 음료명 댓글",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -37147,6 +37682,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "스타벅스 디카페인 아메리카노 쿠폰 200명",
+   "rawText": "응모형태: 설문/투표\n참여 방법\n1. 앱 설치·이용\n2. 네이버폼 설문 제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -37337,6 +37873,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "맥도날드 빅맥 세트 100명",
+   "rawText": "응모형태: 퀴즈/퍼즐\n참여 방법\n1. 팔로우\n2. 퍼즐 정답 폼 제출\n3. 댓글",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -37483,6 +38020,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "투썸플레이스 아메리카노 R 70명",
+   "rawText": "응모형태: 퀴즈/퍼즐\n참여 방법\n1. 팔로우\n2. 좋아요\n3. 온공 퀴즈 정답 댓글",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -37730,6 +38268,11 @@
    "place": null,
    "platHint": "insta",
    "prize": "컴포즈커피 HOT 아메리카노.. 50명 100명",
+   "prizeAll": [
+    "컴포즈커피 HOT 아메리카노 50명",
+    "컴포즈커피 HOT 과일티 50명"
+   ],
+   "rawText": "응모형태: 설문/투표\n참여 방법\n1. 팔로우 또는 구독\n2. 인증샷 폼설문 제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -38312,6 +38855,10 @@
    "place": null,
    "platHint": "insta",
    "prize": "BBQ 후라이드치킨+콜라 125L 10명 40명",
+   "prizeAll": [
+    "BBQ 후라이드치킨+콜라 125L 10명",
+    "CU 모바일상품권 5천원권 30명"
+   ],
    "rawText": "응모형태: 댓글/단문\n참여 방법\n1. 뚜비 팔로우\n2. 친구태그·응원댓글",
    "reasons": [],
    "restriction_note": null,
@@ -38456,6 +39003,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "편의점 모바일 상품권 1만원권 180명",
+   "rawText": "응모형태: 단순응모\n참여 방법\n1. 카톡추가\n2. 화면캡처\n3. 구글폼 제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -38561,6 +39109,13 @@
    "place": null,
    "platHint": "insta",
    "prize": "에어팟 5세대",
+   "prizeAll": [
+    "에어팟 5세대",
+    "버즈 4세대",
+    "올리브영 상품권 5만원",
+    "네이버페이 1만원",
+    "투썸플레이스 아메리카노R"
+   ],
    "rawText": "응모형태: 설문/투표\n참여 방법\n1. 팔로우\n2. 구글폼 작성\n3. 참여완료 댓글",
    "reasons": [],
    "restriction_note": null,
@@ -38851,6 +39406,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "커피 모바일쿠폰 10명",
+   "rawText": "응모형태: 댓글/단문\n참여 방법\n1. 팔로우\n2. 좋아요\n3. ㅅㅎ 든 내이름 댓글",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -38995,6 +39551,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "파리바게뜨 상품권 1만원권 50명",
+   "rawText": "응모형태: 댓글/단문\n참여 방법\n1. 구독\n2. 인생수업 감상댓글\n3. 폼제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -39191,6 +39748,11 @@
    "place": null,
    "platHint": "insta",
    "prize": "편의점 모바일 상품권 5천.. 40명 45명",
+   "prizeAll": [
+    "편의점 모바일 상품권 5천원 40명",
+    "치킨 기프티콘 5명"
+   ],
+   "rawText": "응모형태: 단순응모\n참여 방법\n1. 채널추가 또는 평가\n2. 상담 연결로 전송",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -39334,6 +39896,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "배달의민족 1만원 쿠폰 10명",
+   "rawText": "응모형태: 퀴즈/퍼즐\n참여 방법\n1. 팔로우\n2. 모델 맞히기\n3. 답글 친구태그",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -39383,6 +39946,10 @@
    "place": null,
    "platHint": "web",
    "prize": "올리브영 3만원권 3명 103명",
+   "prizeAll": [
+    "올리브영 3만원권 3명",
+    "네이버페이 5천원권 100명"
+   ],
    "rawText": "응모형태: 사진응모\n참여 방법\n1. 캠핑 야경 사진 촬영\n2. 폼제출",
    "reasons": [],
    "restriction_note": null,
@@ -39880,6 +40447,12 @@
    "place": null,
    "platHint": "insta",
    "prize": "네이버페이 3만원권 5명 70명",
+   "prizeAll": [
+    "네이버페이 3만원권 5명",
+    "네이버페이 1만원권 25명",
+    "네이버페이 5천원권 40명"
+   ],
+   "rawText": "응모형태: 댓글/단문\n참여 방법\n1. 영상 보고 새로 알게 된 사실 댓글 작성",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -39926,6 +40499,7 @@
    "place": null,
    "platHint": "web",
    "prize": "신세계 5천원권 100명",
+   "rawText": "응모형태: 설문/투표\n참여 방법\n1. 팝업창 만족도 조사 클릭\n2. 폼제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -40167,6 +40741,11 @@
    "place": null,
    "platHint": "insta",
    "prize": "BBQ 황금올리브치킨+콜라 .. 5명 30명",
+   "prizeAll": [
+    "BBQ 황금올리브치킨+콜라 모바일쿠폰 5명",
+    "투썸플레이스 아메리카노 모바일쿠폰 25명"
+   ],
+   "rawText": "응모형태: 단순응모\n참여 방법\n1. SNS 구독\n2. 구글폼에 구독 인증 제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -40215,6 +40794,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "GS25 편의점 상품권 3천원권 30명",
+   "rawText": "응모형태: 참여인증\n참여 방법\n1. 앱 설치\n2. 별점·리뷰 캡처\n3. 폼 제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -40242,8 +40822,12 @@
    "cand": true,
    "checked": null,
    "count": 3751,
-   "elec": [],
-   "elec_models": [],
+   "elec": [
+    "phone"
+   ],
+   "elec_models": [
+    "갤럭시 Z폴드8"
+   ],
    "end": "2026-11-15",
    "endTime": null,
    "firstSeen": "2026-10-27",
@@ -40264,6 +40848,13 @@
    "place": null,
    "platHint": "naver",
    "prize": "카카오메이커스 모바일 상.. 1500명 2,251명",
+   "prizeAll": [
+    "카카오메이커스 모바일 상품권 3만원 1500명",
+    "카카오메이커스 모바일 상품권 5만원 450명",
+    "카카오메이커스 모바일 상품권 7만원 200명",
+    "카카오메이커스 모바일 상품권 10만원 100명",
+    "삼성 갤럭시 Z폴드8 1명"
+   ],
    "rawText": "응모형태: 모바일앱\n참여 방법\n1. 앱 설치\n2. 장소 방문해 스탬프 획득\n3. 선물 신청",
    "reasons": [],
    "restriction_note": null,
@@ -40649,6 +41240,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "컬쳐랜드 모바일상품권 5천원 20명",
+   "rawText": "응모형태: 퀴즈/퍼즐\n참여 방법\n1. 현충원 팔로우\n2. 추모일 정답 댓글 작성",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -40746,6 +41338,11 @@
    "place": null,
    "platHint": "insta",
    "prize": "우수참여자 20만원 상당 선.. 10명 410명",
+   "prizeAll": [
+    "우수참여자 20만원 상당 선물 10명",
+    "1만원 상당 선물 400명"
+   ],
+   "rawText": "응모형태: 참여인증\n참여 방법\n1. 위모방품 발견\n2. QR접속\n3. 제품사진·정보 제보",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -40794,6 +41391,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "메가커피 HOT 아메리카노 300명",
+   "rawText": "응모형태: 설문/투표\n참여 방법\n1. 링크 접속\n2. 인식 설문\n3. 연락처 입력",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -40987,6 +41585,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "컴포즈커피 아메리카노 50명",
+   "rawText": "응모형태: 소문내기\n참여 방법\n1. 팔로우\n2. 게시글 공유\n3. 캡처 링크 댓글",
    "reasons": [
     "공유·게시형"
    ],
@@ -41089,6 +41688,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "커피 기프티콘 100명",
+   "rawText": "응모형태: 소문내기\n참여 방법\n1. 팔로우\n2. 고정글 리포스트\n3. 2종 폼 제출",
    "reasons": [
     "공유·게시형"
    ],
@@ -41189,6 +41789,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "네이버페이 5천원권 20명",
+   "rawText": "응모형태: 댓글/단문\n참여 방법\n1. 팔로우\n2. 좋아요\n3. 희망 콘텐츠 댓글",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -41285,6 +41886,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "배스킨라빈스 파인트 20명",
+   "rawText": "응모형태: 소문내기\n참여 방법\n1. 팔로우\n2. 좋아요\n3. 게시글 리그램",
    "reasons": [
     "공유·게시형"
    ],
@@ -41385,6 +41987,12 @@
    "place": null,
    "platHint": "insta",
    "prize": "챔피언 키즈 테마파크 이.. 10명 240명",
+   "prizeAll": [
+    "챔피언 키즈 테마파크 이용권 성인 2매 아동 2매 10명",
+    "CJ 기프트카드 5만원권 30명",
+    "메가커피 상품권 1만원권 200명"
+   ],
+   "rawText": "응모형태: 퀴즈/퍼즐\n참여 방법\n1. 진단\n2. 결과확인\n3. 교육보기\n4. 응모",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -41434,6 +42042,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "편의점 이용권 3천원 30명",
+   "rawText": "응모형태: 댓글/단문\n참여 방법\n1. 팔로우\n2. 좋아요\n3. 감상평과 응원댓글",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -41730,6 +42339,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "치킨 기프티콘 20명",
+   "rawText": "응모형태: 설문/투표\n참여 방법\n1. 참여링크 접속\n2. 이용 만족도 설문 제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -42172,6 +42782,13 @@
    "place": null,
    "platHint": "insta",
    "prize": "치킨쿠폰 10명 140명",
+   "prizeAll": [
+    "치킨쿠폰 10명",
+    "올리브영쿠폰 30명",
+    "커피쿠폰 30명",
+    "구로구 캐릭터 굿즈 70명"
+   ],
+   "rawText": "응모형태: 설문/투표\n참여 방법\n1. SNS 팔로우\n2. 화면캡처\n3. 설문 작성 제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -42222,6 +42839,10 @@
    "place": null,
    "platHint": "insta",
    "prize": "싸이벡스 제로나 Gi 카시트.. 1명 31명",
+   "prizeAll": [
+    "싸이벡스 제로나 Gi 카시트 1명",
+    "스타벅스 카페라떼 T 30명"
+   ],
    "rawText": "응모형태: 댓글/단문 북마크\n참여 방법\n1. 두계정 팔로우\n2. 좋아요\n3. 완료댓글",
    "reasons": [],
    "restriction_note": null,
@@ -42619,6 +43240,11 @@
    "place": null,
    "platHint": "web",
    "prize": "갤럭시 버즈 1명 30명",
+   "prizeAll": [
+    "갤럭시 버즈 1명",
+    "오설록 티박스 선물 세트 5명",
+    "백화점 상품권 1만원권 24명"
+   ],
    "rawText": "응모형태: 참여인증 북마크\n참여 방법\n1. 빵앱 설치·알림허용\n2. 예약캡처\n3. 응모",
    "reasons": [],
    "restriction_note": null,
@@ -42718,6 +43344,12 @@
    "place": null,
    "platHint": "insta",
    "prize": "배달 어플 이용권 1명 26명",
+   "prizeAll": [
+    "배달 어플 이용권 1명",
+    "치킨 모바일 상품권 5명",
+    "카페 모바일 상품권 20명"
+   ],
+   "rawText": "응모형태: 댓글/단문\n참여 방법\n1. 채널팔로우\n2. 35자 문구와 인증샷 폼제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -42767,6 +43399,12 @@
    "place": null,
    "platHint": "insta",
    "prize": "피자헛 피자콜라 40명 300명",
+   "prizeAll": [
+    "피자헛 피자콜라 40명",
+    "다이소 모바일 금액권 2만원 60명",
+    "빽다방 카페라떼 200명"
+   ],
+   "rawText": "응모형태: 퀴즈/퍼즐\n참여 방법\n1. 경기관광플랫폼 접속\n2. 퀴즈 3번 제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -42814,6 +43452,12 @@
    "place": null,
    "platHint": "insta",
    "prize": "통영사랑상품권 10만원 3명 43명",
+   "prizeAll": [
+    "통영사랑상품권 10만원 3명",
+    "통영사랑상품권 5만원 5명",
+    "통영사랑상품권 1만원 35명"
+   ],
+   "rawText": "응모형태: 설문/투표\n참여 방법\n1. 설문 접속\n2. 분야별 발전 의견 제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -43056,6 +43700,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "이온워터 1박스 26명",
+   "rawText": "응모형태: 퀴즈/퍼즐\n참여 방법\n1. 영상 시청\n2. 정답 댓글",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -43202,6 +43847,11 @@
    "place": null,
    "platHint": "insta",
    "prize": "스탠다드 객실 숙박권 1명 21명",
+   "prizeAll": [
+    "스탠다드 객실 숙박권 1명",
+    "스타벅스 아메리카노 쿠폰 20명"
+   ],
+   "rawText": "응모형태: 댓글/단문\n참여 방법\n1. 호텔 인스타 팔로우\n2. 팔로우 완료 댓글",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -43251,6 +43901,12 @@
    "place": null,
    "platHint": "insta",
    "prize": "신세계상품권 5만원권 3명 60명",
+   "prizeAll": [
+    "신세계상품권 5만원권 3명",
+    "교촌치킨 허니콤보세트 7명",
+    "메가커피 아메리카노 쿠폰 50명"
+   ],
+   "rawText": "응모형태: 댓글/단문\n참여 방법\n1. 팔로우 좋아요\n2. 1~3번 선택 댓글과 이유",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -43349,6 +44005,11 @@
    "place": null,
    "platHint": "yt",
    "prize": "문화상품권 3만원권 5명 75명",
+   "prizeAll": [
+    "문화상품권 3만원권 5명",
+    "뷰티헬스상품권 10명",
+    "커피 5천원권 60명"
+   ],
    "rawText": "응모형태: 댓글/단문\n참여 방법\n1. 유튜브 구독\n2. 댓글 작성",
    "reasons": [],
    "restriction_note": null,
@@ -43399,6 +44060,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "통합 편의점 5천원권 500명",
+   "rawText": "응모형태: 선착순\n참여 방법\n1. 링크 접속\n2. 인지도 설문과 연락처 제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -43692,6 +44354,12 @@
    "place": null,
    "platHint": "insta",
    "prize": "BHC 후라이드 치킨 3명 40명",
+   "prizeAll": [
+    "BHC 후라이드 치킨 3명",
+    "편의점 상품권 5천원권 7명",
+    "메가커피 아메리카노 30명"
+   ],
+   "rawText": "응모형태: 단순응모\n참여 방법\n1. 인스타 팔로우\n2. 네이버폼 신청서 제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -43788,6 +44456,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "5천원 상당 모바일쿠폰 200명",
+   "rawText": "응모형태: 설문/투표\n참여 방법\n1. 설문 접속\n2. AI 사용과 정책 응답\n3. 폼 제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -43836,6 +44505,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "모바일 상품권 1만원권 50명",
+   "rawText": "응모형태: 참여인증\n참여 방법\n1. 식전후 촬영\n2. 블로그 업소명·사진 댓글",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -43884,6 +44554,11 @@
    "place": null,
    "platHint": "insta",
    "prize": "배달의민족 상품권 5만원 5명 35명",
+   "prizeAll": [
+    "배달의민족 상품권 5만원 5명",
+    "메가커피 아이스 아메리카노 30명"
+   ],
+   "rawText": "응모형태: 댓글/단문\n참여 방법\n1. 마이디어 팔로우\n2. A/B 선택·이유 댓글",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -44030,6 +44705,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "네이버페이 포인트 2천원 50명",
+   "rawText": "응모형태: 소문내기\n참여 방법\n1. 팔로우\n2. 스토리공유 댓글\n3. 폼인증샷",
    "reasons": [
     "공유·게시형"
    ],
@@ -44231,6 +44907,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "메가커피 5천원권 50명",
+   "rawText": "응모형태: 퀴즈/퍼즐\n참여 방법\n1. 구독\n2. 영상시청\n3. 정답과 소감 댓글",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -44572,6 +45249,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "모바일 문화상품권 2만원권",
+   "rawText": "응모형태: 퀴즈/퍼즐\n참여 방법\n1. 팔로우·좋아요\n2. 정답·읽고픈책 댓글",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -44815,6 +45493,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "네이버페이 5천원권 20명",
+   "rawText": "응모형태: 댓글/단문\n참여 방법\n1. 팔로우\n2. 좋아요\n3. 수험생 응원댓글",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -44864,6 +45543,7 @@
    "place": null,
    "platHint": "web",
    "prize": "배달의민족 3천원권 2000명",
+   "rawText": "응모형태: 회원가입\n참여 방법\n1. 누리집 접속\n2. 본인인증\n3. 약관 동의 및 신청서 작성\n4. 도민증 발급",
    "reasons": [
     "신규 회원가입 필요"
    ],
@@ -44962,6 +45642,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "CU 편의점 모바일 금액권 2만원권 10명",
+   "rawText": "응모형태: 참여인증\n참여 방법\n1. 양쪽 팔로우\n2. 완강\n3. 수료증폼\n4. 댓글",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -45209,6 +45890,12 @@
    "place": null,
    "platHint": "insta",
    "prize": "해비치 호텔리조트 제주 .. 1명 52명",
+   "prizeAll": [
+    "해비치 호텔리조트 제주 숙박권 1명",
+    "뱅앤올룹슨 베오플레이 일레븐 이어버드 1명",
+    "네이버페이 5천원권 50명"
+   ],
+   "rawText": "응모형태: 참여인증\n참여 방법\n1. 룸미러 제작\n2. 계정·해시태그 공개공유",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -45306,6 +45993,11 @@
    "place": null,
    "platHint": "insta",
    "prize": "서울사랑상품권 7천원권 70명 170명",
+   "prizeAll": [
+    "서울사랑상품권 7천원권 70명",
+    "서울사랑상품권 2천원권 100명"
+   ],
+   "rawText": "응모형태: 참여인증\n참여 방법\n1. 생일문구 찾기\n2. SNS 구독 캡처\n3. 폼 제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -45409,6 +46101,12 @@
    "place": null,
    "platHint": "insta",
    "prize": "에어팟 5 2명 90명",
+   "prizeAll": [
+    "에어팟 5 2명",
+    "배달의민족 포인트 3만원권 20명",
+    "해남 특산품 김쌀고구마칩 55명",
+    "메가커피 아메리카노 13명"
+   ],
    "rawText": "응모형태: 참여인증\n참여 방법\n1. 팔로우\n2. 사진·필수태그 게시\n3. 폼 제출",
    "reasons": [],
    "restriction_note": null,
@@ -45508,6 +46206,12 @@
    "place": null,
    "platHint": "insta",
    "prize": "대상 50만원 1명 25명",
+   "prizeAll": [
+    "대상 50만원 1명",
+    "최우수상 30만원 2명",
+    "우수상 10만원 2명",
+    "커피 교환권 20명"
+   ],
    "rawText": "응모형태: 전문공모 북마크\n참여 방법\n1. 신청서 제안서 작성\n2. 이메일로 제출",
    "reasons": [
     "공모전"
@@ -45763,6 +46467,11 @@
    "place": null,
    "platHint": "insta",
    "prize": "에어팟 5 1명 31명",
+   "prizeAll": [
+    "에어팟 5 1명",
+    "수능까지 올패스 10명",
+    "아메리카노 20명"
+   ],
    "rawText": "응모형태: 소문/공유 북마크\n참여 방법\n1. 팔로우\n2. 릴스·기록샷 공유\n3. 친구태그",
    "reasons": [
     "공유·게시형"
@@ -45863,6 +46572,11 @@
    "place": null,
    "platHint": "insta",
    "prize": "펫 드라이룸 3명 113명",
+   "prizeAll": [
+    "펫 드라이룸 3명",
+    "관절 영양제 10명",
+    "네이버페이 상품권 100명"
+   ],
    "rawText": "응모형태: 참여인증 북마크\n참여 방법\n1. 챌린지 영상 게시\n2. 폼에 링크 정보 제출",
    "reasons": [],
    "restriction_note": null,
@@ -46005,6 +46719,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "배달의민족 상품권 1만원권 25명",
+   "rawText": "응모형태: 퀴즈/퍼즐\n참여 방법\n1. 팔로우\n2. 좋아요\n3. 폼 제출\n4. 인증댓글",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -46248,6 +46963,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "CU 모바일상품권 1만원권 10명",
+   "rawText": "응모형태: 댓글/단문\n참여 방법\n1. 팔로우\n2. 좋아요\n3. 팔로워 1만 축하 댓글",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -46301,6 +47017,10 @@
    "place": null,
    "platHint": "insta",
    "prize": "삼성 갤럭시 워치9 2명 12명",
+   "prizeAll": [
+    "삼성 갤럭시 워치9 2명",
+    "메디쏠라 식단 랜덤박스 10명"
+   ],
    "rawText": "응모형태: 퀴즈/퍼즐 북마크\n참여 방법\n1. 팔로우\n2. 좋아요\n3. 두 글자 정답 댓글",
    "reasons": [],
    "restriction_note": null,
@@ -46399,6 +47119,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "스타벅스 아메리카노 Tall+바질 치킨 토마토 브리또 100명",
+   "rawText": "응모형태: 설문/투표\n참여 방법\n1. 게시물 QR 또는 프로필 링크\n2. 설문 완료",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -46446,6 +47167,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "모바일 상품권 1만원 100명",
+   "rawText": "응모형태: 참여인증\n참여 방법\n1. 얼굴샷\n2. 3해시태그·계정태그\n3. 팔로우",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -46930,6 +47652,11 @@
    "place": null,
    "platHint": "insta",
    "prize": "카앤피플 출장세차 5만원 .. 1명 11명",
+   "prizeAll": [
+    "카앤피플 출장세차 5만원 이용권 1명",
+    "투썸플레이스 아메리카노 R 10명"
+   ],
+   "rawText": "응모형태: 댓글/단문\n참여 방법\n1. 팔로우\n2. 좋아요\n3. 세차이유 댓글",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -46979,6 +47706,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "카페 기프티콘 30명",
+   "rawText": "응모형태: 퀴즈/퍼즐\n참여 방법\n1. 4분 정답 댓글\n2. 구글폼 개인정보 제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -47026,6 +47754,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "5천원 상당 기프티콘 200명",
+   "rawText": "응모형태: 설문/투표\n참여 방법\n1. 하남시 프로필링크\n2. 청정하남 만족도 설문 제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -47074,6 +47803,11 @@
    "place": null,
    "platHint": "insta",
    "prize": "백화점 상품권 3만원 10명 50명",
+   "prizeAll": [
+    "백화점 상품권 3만원 10명",
+    "베이커리 교환권 5천원 40명"
+   ],
+   "rawText": "응모형태: 댓글/단문\n참여 방법\n1. 팔로우·좋아요\n2. 영상 장면·부모님 댓글",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -47366,6 +48100,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "배스킨라빈스 싱글레귤러 아이스크림 20명",
+   "rawText": "응모형태: 댓글/단문\n참여 방법\n1. 팔로우\n2. 참여완료 댓글\n3. 친구태그",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -47608,6 +48343,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "커피 기프티콘 150명",
+   "rawText": "응모형태: 퀴즈/퍼즐\n참여 방법\n1. 인정기관 확인\n2. 참여링크 정답 제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -47703,6 +48439,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "피자케이크햄버거세트음료 등 240명",
+   "rawText": "응모형태: 단순응모\n참여 방법\n1. 채널추가\n2. 첫문자 캡처\n3. 인증폼 제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -47848,6 +48585,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "음료 디저트 세트 50명",
+   "rawText": "응모형태: 댓글/단문\n참여 방법\n1. 팔로우\n2. 소감댓글 작성\n3. 구글폼 제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -48143,6 +48881,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "특별한 선물 30명",
+   "rawText": "응모형태: 참여인증\n참여 방법\n1. 요리영상 촬영\n2. 팔로우\n3. 태그해 게시",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -48241,6 +48980,11 @@
    "place": null,
    "platHint": "insta",
    "prize": "도미노피자 포테이토 L+콜.. 25명 85명",
+   "prizeAll": [
+    "도미노피자 포테이토 L+콜라 125L 25명",
+    "공차 브라운슈가 쥬얼리 밀크티 L 60명"
+   ],
+   "rawText": "응모형태: 설문/투표\n참여 방법\n1. SNS 팔로우·좋아요\n2. 네이버폼 설문 제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -48340,6 +49084,7 @@
    "place": null,
    "platHint": "web",
    "prize": "CU 5천원권 60명",
+   "rawText": "응모형태: 소문내기\n참여 방법\n1. 마음에 드는 카드뉴스 고르기\n2. SNS 업로드\n3. 폼제출",
    "reasons": [
     "공유·게시형"
    ],
@@ -48983,6 +49728,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "네이버페이 포인트 쿠폰 1만원권 80명",
+   "rawText": "응모형태: 설문/투표\n참여 방법\n1. 프로필 링크\n2. 사이트·상담실 설문 제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -49514,6 +50260,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "커피 기프티콘 5천원권 30명",
+   "rawText": "응모형태: 단순응모\n참여 방법\n1. 응원댓글\n2. 게시글 댓글 캡처\n3. 폼 제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -49856,6 +50603,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "서울페이 3000원 450명",
+   "rawText": "응모형태: 참여인증\n참여 방법\n1. 반려견과 주간 5만보 걷기\n2. 걸음수 인증",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -50244,6 +50992,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "투썸플레이스 모바일쿠폰 1만원권 30명",
+   "rawText": "응모형태: 퀴즈/퍼즐\n참여 방법\n1. 팔로우\n2. 10.5cm 정답댓글\n3. 스토리 공유",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -50344,6 +51093,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "따뜻한 아메리카노 10명",
+   "rawText": "응모형태: 퀴즈/퍼즐\n참여 방법\n1. 소재 퀴즈 정답 댓글\n2. 친구 태그",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -50440,6 +51190,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "코코리 제주 감귤 핸드워시 40명",
+   "rawText": "응모형태: 댓글/단문\n참여 방법\n1. JCA 유튜브 구독\n2. 인스타 게시물 응원댓글",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -50490,6 +51241,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "파리바게뜨 모바일 금액권 1만원권 20명",
+   "rawText": "응모형태: 설문/투표\n참여 방법\n1. 프로필 링크\n2. 만족도 설문 작성 후 제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -51271,6 +52023,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "5천원 상당 기프티콘 120명",
+   "rawText": "응모형태: 설문/투표\n참여 방법\n1. 설문조사 탭 접속\n2. 만족도 응답 제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -51366,6 +52119,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "수면안대 세트 10명",
+   "rawText": "응모형태: 댓글/단문\n참여 방법\n1. 숙면법 댓글\n2. 네이버폼 개인정보 제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -51413,6 +52167,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "커피 모바일 상품권 30명",
+   "rawText": "응모형태: 댓글/단문\n참여 방법\n1. 코시프 팔로우\n2. 원하는 ESG 주제 댓글",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -51561,6 +52316,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "모바일 상품권 1만원 60명",
+   "rawText": "응모형태: 설문/투표\n참여 방법\n1. 인터넷방송 참여마당\n2. 소식지 설문 제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -51657,6 +52413,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "네이버페이 포인트 5천원권 40명",
+   "rawText": "응모형태: 댓글/단문\n참여 방법\n1. 팔로우\n2. 최애 영상 좋아요\n3. 이유 댓글",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -51945,6 +52702,10 @@
    "place": null,
    "platHint": "yt",
    "prize": "배달의민족 1만원권 5명 15명",
+   "prizeAll": [
+    "배달의민족 1만원권 5명",
+    "아메리카노 기프티콘 10명"
+   ],
    "rawText": "응모형태: 댓글/단문\n참여 방법\n1. 직장 생활 고민이나 스트레스 상황 작성",
    "reasons": [],
    "restriction_note": null,
@@ -52136,6 +52897,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "투썸플레이스 아메리카노 R 20명",
+   "rawText": "응모형태: 참여인증\n참여 방법\n1. 본방캡처\n2. 폼제출\n3. SNS팔로우\n4. 댓글",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -52575,6 +53337,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "음료 기프티콘 100명",
+   "rawText": "응모형태: 설문/투표\n참여 방법\n1. SNS 구독\n2. 설문 제출\n3. 참여완료 댓글",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -52624,6 +53387,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "파리바게뜨 교환권 1만원권 100명",
+   "rawText": "응모형태: 설문/투표\n참여 방법\n1. SNS 좋아요 인증\n2. 정보화교육 설문 제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -52671,6 +53435,11 @@
    "place": null,
    "platHint": "web",
    "prize": "알류미늄프레임 캐리어 10명 260명",
+   "prizeAll": [
+    "알류미늄프레임 캐리어 10명",
+    "메가커피 아메리카노 250명"
+   ],
+   "rawText": "응모형태: 단순응모\n참여 방법\n1. 하이GT에 재미있는 질문\n2. 답변 캡처\n3. 응모하기",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -52720,6 +53489,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "편의점 상품권 1만원권 20명",
+   "rawText": "응모형태: 사진응모\n참여 방법\n1. 공식 SNS 구독\n2. 네이버폼 참여 인증 제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -52817,6 +53587,11 @@
    "place": null,
    "platHint": "insta",
    "prize": "배달의민족 모바일상품권 .. 10명 60명",
+   "prizeAll": [
+    "배달의민족 모바일상품권 5만원권 10명",
+    "투썸플레이스 아메리카노 R 50명"
+   ],
+   "rawText": "응모형태: 참여인증\n참여 방법\n1. LUXX 촬영\n2. 계정태그 필수태그 SNS 게시",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -53300,6 +54075,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "커피 쿠폰 15명",
+   "rawText": "응모형태: 퀴즈/퍼즐\n참여 방법\n1. 웹진 94호 확인\n2. 프로필 링크 퀴즈 제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -53347,6 +54123,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "네이버페이 3천원권 30명",
+   "rawText": "응모형태: 단순응모\n참여 방법\n1. 시흥쏙 팔로우\n2. 팔로우 캡처\n3. 폼 제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -53935,6 +54712,7 @@
    "place": null,
    "platHint": "web",
    "prize": "커피 1만원권 30명",
+   "rawText": "응모형태: 단순응모\n참여 방법\n1. 카카오같이가치 모금 응원댓글\n2. 폼제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -54122,6 +54900,12 @@
    "place": null,
    "platHint": "insta",
    "prize": "교촌 허니콤보+콜라 2명 132명",
+   "prizeAll": [
+    "교촌 허니콤보+콜라 2명",
+    "투썸플레이스 스트로베리 초콜릿 생크림 30명",
+    "음료 기프티콘 100명"
+   ],
+   "rawText": "응모형태: 설문/투표\n참여 방법\n1. QR·프로필 접속\n2. 구글폼 설문 작성·제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -54218,6 +55002,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "경품 미공개",
+   "rawText": "응모형태: 댓글/단문\n참여 방법\n1. 유튜브 구독\n2. 좋아요·감상평\n3. 폼 제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -54301,6 +55086,7 @@
    "end": "2026-11-15",
    "endTime": null,
    "firstSeen": "2026-10-30",
+   "formChecked": "2026-11-09",
    "form_url": null,
    "grade": "C",
    "id": "eh-9ddee6b078",
@@ -54318,13 +55104,18 @@
    "place": null,
    "platHint": "web",
    "prize": "투썸플레이스 모바일 상품.. 100명 200명",
+   "prizeAll": [
+    "투썸플레이스 모바일 상품권 1만원권 100명",
+    "GS25 모바일 상품권 1만원권 100명"
+   ],
    "rawText": "응모형태: 설문/투표\n참여 방법\n1. 회원대상 ,모두의 한국어 접속\n2. 만족도 설문 제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
    "src": "eh",
    "srcUrls": [
-    "https://www.eventhouse.kr/site/view.php?no=318807"
+    "https://www.eventhouse.kr/site/view.php?no=318807",
+    "https://korean.edunet.net/lms/cm/mcom/pmco000b00.do"
    ],
    "start": "2026-10-27",
    "status": "active",
@@ -54332,11 +55123,9 @@
     "회원대상 ,모두의 한국어 접속",
     "만족도 설문 제출"
    ],
-   "tags": [
-    "원문 미확인"
-   ],
+   "tags": [],
    "title": "모두의 한국어 설문하고 상품권 받자 이벤트!!",
-   "url": "https://www.eventhouse.kr/site/view.php?no=318807",
+   "url": "https://korean.edunet.net/lms/cm/mcom/pmco000b00.do",
    "who": null
   },
   "eh-9e0ddce4b6": {
@@ -54463,6 +55252,7 @@
    "place": null,
    "platHint": "web",
    "prize": "상품",
+   "rawText": "응모형태: 설문/투표\n참여 방법\n1. 응모팁이 없습니다.",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -54606,6 +55396,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "1만원 상품권 200명",
+   "rawText": "응모형태: 참여인증\n참여 방법\n1. 팔로우\n2. 복 글자 촬영\n3. 폼에 사진 제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -55241,6 +56032,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "이디야커피 아이스 아메리카노 쿠폰 100명",
+   "rawText": "응모형태: 퀴즈/퍼즐\n참여 방법\n1. 유형 확인\n2. 개인정보 입력\n3. 퀴즈 제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -55289,6 +56081,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "GS25 모바일 상품권 1만원권 8명",
+   "rawText": "응모형태: 퀴즈/퍼즐\n참여 방법\n1. 계정 팔로우\n2. 초성퀴즈 정답 싼야 댓글",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -55530,6 +56323,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "배달의민족 1만원 상품권 10명",
+   "rawText": "응모형태: 댓글/단문\n참여 방법\n1. 팔로우 좋아요\n2. 꿈돌이 가을활동 댓글",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -55625,6 +56419,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "신세계상품권 5만원권 4명",
+   "rawText": "응모형태: 단순응모\n참여 방법\n1. 멘션글 확인\n2. KTL 경험담 네이버폼 제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -55815,6 +56610,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "교보문고 기프트카드 1만원권 100명",
+   "rawText": "응모형태: 퀴즈/퍼즐\n참여 방법\n1. 팔로우\n2. 초성정답·준비과목·지역 댓글",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -56057,6 +56853,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "CU상품권 60명",
+   "rawText": "응모형태: 퀴즈/퍼즐\n참여 방법\n1. 웹진 접속\n2. 이벤트 클릭\n3. 정답 제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -56153,6 +56950,11 @@
    "place": null,
    "platHint": "insta",
    "prize": "글래드 북캉스 패키지 1박+.. 1명 11명",
+   "prizeAll": [
+    "글래드 북캉스 패키지 1박+블라인드 북굿즈 세트 1명",
+    "펭귄클래식 도서 2권+키링 3명",
+    "펭귄클래식 도서 2권 7명"
+   ],
    "rawText": "응모형태: 댓글/단문\n참여 방법\n1. 3계정 팔로우\n2. 북캉스 친구 태그 댓글",
    "reasons": [],
    "restriction_note": null,
@@ -56493,6 +57295,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "네이버페이 포인트 1만원 100명",
+   "rawText": "응모형태: 설문/투표\n참여 방법\n1. 팔로우\n2. 만족해 댓글\n3. DM 설문 제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -56542,6 +57345,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "투썸플레이스 떠먹는 스트로베리 초콜릿 생크림 30명",
+   "rawText": "응모형태: 퀴즈/퍼즐\n참여 방법\n1. 사진 속 인쇄물 찾기\n2. 개수 댓글 작성",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -56882,6 +57686,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "네이버페이 5천원권 343명",
+   "rawText": "응모형태: 설문/투표\n참여 방법\n1. 폼 설문 응모정보 제출\n2. 완료 의견 댓글",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -57025,6 +57830,11 @@
    "place": null,
    "platHint": "web",
    "prize": "네이버페이 5만원권 1명 13명",
+   "prizeAll": [
+    "네이버페이 5만원권 1명",
+    "네이버페이 3만원권 2명",
+    "네이버페이 3천원권 10명"
+   ],
    "rawText": "응모형태: 단순응모\n참여 방법\n1. 삼다소담 구독\n2. 폼 제출",
    "reasons": [],
    "restriction_note": null,
@@ -57124,6 +57934,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "메가커피 아이스 아메리카노 교환권 50명",
+   "rawText": "응모형태: 댓글/단문\n참여 방법\n1. 응원 댓글·친구 태그\n2. 프로필 폼 제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -57220,6 +58031,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "베이커리 이용권 3천원 상당 30명",
+   "rawText": "응모형태: 댓글/단문\n참여 방법\n1. 팔로우·좋아요\n2. 감상·상품과 이유 댓글",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -57316,6 +58128,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "네이버페이 모바일 쿠폰 20명",
+   "rawText": "응모형태: 댓글/단문\n참여 방법\n1. 계정 팔로우\n2. 청년정책 알릴 친구 태그",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -57364,6 +58177,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "올리브영 모바일상품권 5천원권 30명",
+   "rawText": "응모형태: 참여인증\n참여 방법\n1. 팔로우\n2. 축제샷 태그게시\n3. 캡처폼제출",
    "reasons": [],
    "restriction_note": "현장 참여 여부 확인 필요: 축제 방문 인증샷 올려 올리브영 받자 이벤트",
    "restriction_reason": null,
@@ -57559,6 +58373,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "커피 교환권 200명",
+   "rawText": "응모형태: 설문/투표\n참여 방법\n1. QR·프로필 접속\n2. 마음성장 설문 제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -58181,6 +58996,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "올리브영 모바일 상품권 5천원권 200명",
+   "rawText": "응모형태: 설문/투표\n참여 방법\n1. 네이버폼 접속\n2. 인천시 SNS 만족도 설문 제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -58475,6 +59291,10 @@
    "place": null,
    "platHint": "naver",
    "prize": "신세계 3천원권 15명 35명",
+   "prizeAll": [
+    "신세계 3천원권 15명",
+    "메가커피 아메리카노 20명"
+   ],
    "rawText": "응모형태: 퀴즈/퍼즐 북마크\n참여 방법\n1. 블로그 이웃추가\n2. 퀴즈 정답 작성\n3. 폼제출",
    "reasons": [],
    "restriction_note": null,
@@ -58525,6 +59345,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "메가MGC커피 2만원권 30명",
+   "rawText": "응모형태: 댓글/단문\n참여 방법\n1. 팔로우\n2. 좋아요\n3. 국산과일 표어댓글",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -58670,6 +59491,10 @@
    "place": null,
    "platHint": "naver",
    "prize": "롯데백화점 모바일 상품권.. 5명 35명",
+   "prizeAll": [
+    "롯데백화점 모바일 상품권 3만원권 5명",
+    "메가커피 아메리카노 30명"
+   ],
    "rawText": "응모형태: 설문/투표 북마크\n참여 방법\n1. 블로그 이웃추가\n2. 여름·겨울 택해 댓글",
    "reasons": [],
    "restriction_note": null,
@@ -58814,12 +59639,14 @@
    "place": null,
    "platHint": "insta",
    "prize": "CU 모바일상품권 5천원권 10명",
+   "rawText": "응모형태: 댓글/단문\n참여 방법\n1. CU 팔로우\n2. 칸쵸 과자 우유 중 선택 댓글",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
    "src": "eh",
    "srcUrls": [
-    "https://www.eventhouse.kr/site/view.php?no=319314"
+    "https://www.eventhouse.kr/site/view.php?no=319314",
+    "https://www.instagram.com/p/DfTnfivARdg/"
    ],
    "start": "2026-11-04",
    "status": "active",
@@ -58828,11 +59655,10 @@
     "칸쵸 과자 우유 중 선택 댓글"
    ],
    "tags": [
-    "팔로우 필요",
-    "원문 미확인"
+    "팔로우 필요"
    ],
    "title": "칸쵸 밸런스게임 댓글로 상품권 받자 이벤트!!",
-   "url": "https://www.eventhouse.kr/site/view.php?no=319314",
+   "url": "https://www.instagram.com/p/DfTnfivARdg/",
    "who": null
   },
   "eh-ada5f3a584": {
@@ -58862,6 +59688,10 @@
    "place": null,
    "platHint": "web",
    "prize": "쌀 가공식품 꾸러미 5만원 .. 40명 50명",
+   "prizeAll": [
+    "쌀 가공식품 꾸러미 5만원 상당 40명",
+    "모바일 농촌사랑상품권 3만원권 10명"
+   ],
    "rawText": "응모형태: 참여인증\n참여 방법\n1. 촬영\n2. 포털응모\n3. 피드\n4. 활동명댓글",
    "reasons": [],
    "restriction_note": null,
@@ -59009,6 +59839,10 @@
    "place": null,
    "platHint": "insta",
    "prize": "아너드투어 10만원 여행권 2명 7명",
+   "prizeAll": [
+    "아너드투어 10만원 여행권 2명",
+    "신세계백화점 1만원 상품권 5명"
+   ],
    "rawText": "응모형태: 퀴즈/퍼즐\n참여 방법\n1. 팔로우\n2. 좋아요\n3. 정답 친구태그 댓글",
    "reasons": [],
    "restriction_note": null,
@@ -59095,7 +59929,7 @@
    "id": "eh-ae571150ba",
    "is_restricted": false,
    "kind": "퀴즈",
-   "lastSeen": "2026-10-31",
+   "lastSeen": "2026-11-09",
    "linkChecked": "2026-10-31",
    "linkFail": 0,
    "linkStatus": "ok",
@@ -59108,13 +59942,15 @@
    "place": null,
    "platHint": "web",
    "prize": "상품 30명",
+   "rawText": "응모형태: 퀴즈/퍼즐\n참여 방법\n1. 성인지통계 퀴즈 풀기",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
    "src": "eh",
    "srcUrls": [
     "https://www.eventhouse.kr/site/view.php?no=316453",
-    "https://gsis.kwdi.re.kr/gsis/kr/event/EventView.html"
+    "https://gsis.kwdi.re.kr/gsis/kr/event/EventView.html",
+    "https://gsis.kwdi.re.kr/gsis/kr/event/EventView.html#2"
    ],
    "start": "2026-10-01",
    "status": "ended",
@@ -59153,6 +59989,7 @@
    "place": null,
    "platHint": "web",
    "prize": "네이버페이 5천원권 100명",
+   "rawText": "응모형태: 단순응모\n참여 방법\n1. 기후행동 약속 마라톤\n2. 실천 소감 남기기",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -59403,6 +60240,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "네이버페이 5천원권 140명",
+   "rawText": "응모형태: 선착순\n참여 방법\n1. 팔로우 좋아요\n2. 양쪽 앱 설치 가입 연동",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -59501,6 +60339,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "1만원 상당 기프티콘 100명",
+   "rawText": "응모형태: 설문/투표\n참여 방법\n1. 프로필 링크\n2. 청아람 만족도 설문 제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -59943,6 +60782,11 @@
    "place": null,
    "platHint": "yt",
    "prize": "에어팟 프로3 1명 91명",
+   "prizeAll": [
+    "에어팟 프로3 1명",
+    "BBQ 황금올리브 치킨+콜라 125L 10명",
+    "투썸플레이스 아메리카노 R 80명"
+   ],
    "rawText": "응모형태: 설문/투표\n참여 방법\n1. 종로티비 구독\n2. 채널 만족도 설문 제출",
    "reasons": [],
    "restriction_note": null,
@@ -60773,6 +61617,10 @@
    "place": null,
    "platHint": "web",
    "prize": "에어팟 프로3 3명 163명",
+   "prizeAll": [
+    "에어팟 프로3 3명",
+    "투썸플레이스 디저트 세트 160명"
+   ],
    "rawText": "응모형태: 단순응모\n참여 방법\n1. 문화관광해설 예약\n2. 만족도 조사 참여",
    "reasons": [],
    "restriction_note": null,
@@ -60918,6 +61766,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "투썸플레이스 아이스 아메리카노 20명",
+   "rawText": "응모형태: 댓글/단문\n참여 방법\n1. 팔로우\n2. 좋아요\n3. 응원댓글\n4. 폼 제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -61067,6 +61916,11 @@
    "place": null,
    "platHint": "naver",
    "prize": "신세계백화점 상품권 1명 36명",
+   "prizeAll": [
+    "신세계백화점 상품권 1명",
+    "네이버페이포인트쿠폰 3천원권 15명",
+    "메가MGC 아메리카노 20명"
+   ],
    "rawText": "응모형태: 퀴즈/퍼즐 북마크\n참여 방법\n1. 이웃·공감\n2. OX 4개 비밀답글\n3. 폼 제출",
    "reasons": [],
    "restriction_note": null,
@@ -61163,6 +62017,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "투썸플레이스 2만원권 모바일쿠폰 15명",
+   "rawText": "응모형태: 댓글/단문\n참여 방법\n1. 팔로우캡처\n2. 친구태그 명소댓글\n3. 제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -61260,6 +62115,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "스타벅스 카페라떼 T 30명",
+   "rawText": "응모형태: 댓글/단문\n참여 방법\n1. 싸이벡스 팔로우\n2. 기대 제품·혜택 댓글",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -61308,6 +62164,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "투썸플레이스 1만원권 30명",
+   "rawText": "응모형태: 댓글/단문\n참여 방법\n1. 부천시 팔로우\n2. 수능 응원댓글\n3. 친구태그",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -61450,6 +62307,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "네이버페이 2만원권 125명",
+   "rawText": "응모형태: 참여인증\n참여 방법\n1. 컵사진\n2. NFC반납·적립\n3. 후기 폼제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -61545,6 +62403,12 @@
    "place": null,
    "platHint": "insta",
    "prize": "10CC 쇼퍼백 1명 56명",
+   "prizeAll": [
+    "10CC 쇼퍼백 1명",
+    "TEKLA Washcloth 1매 5명",
+    "투썸플레이스 아메리카노 교환권 50명"
+   ],
+   "rawText": "응모형태: 댓글/단문\n참여 방법\n1. 팔로우\n2. 좋아요 저장\n3. 친구태그 댓글 작성",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -61867,7 +62731,10 @@
    "end": "2026-11-13",
    "endTime": null,
    "firstSeen": "2026-11-04",
-   "form_url": null,
+   "formLinks": [
+    "https://forms.gle/PNocBDwke5Np6pzi6"
+   ],
+   "form_url": "https://docs.google.com/forms/d/e/1FAIpQLSfj2uhxEEJqi_BGXAacPGN_HpgR_OYmIXkBlQsOy5III5OzhA/viewform",
    "grade": "C",
    "id": "eh-b735b0cdb6",
    "is_restricted": false,
@@ -61884,12 +62751,14 @@
    "place": null,
    "platHint": "insta",
    "prize": "배달의민족 모바일상품권 5천원권 10명",
+   "rawText": "응모형태: 댓글/단문\n참여 방법\n1. 구독\n2. 영상시청\n3. 소감 댓글\n4. 폼 제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
    "src": "eh",
    "srcUrls": [
-    "https://www.eventhouse.kr/site/view.php?no=319246"
+    "https://www.eventhouse.kr/site/view.php?no=319246",
+    "https://www.instagram.com/p/DfT77dBgZrQ/"
    ],
    "start": "2026-11-04",
    "status": "active",
@@ -61900,11 +62769,10 @@
     "폼 제출"
    ],
    "tags": [
-    "팔로우 필요",
-    "원문 미확인"
+    "팔로우 필요"
    ],
    "title": "원장님 영상 소감 댓글로 배민권 받자 이벤트!!",
-   "url": "https://www.eventhouse.kr/site/view.php?no=319246",
+   "url": "https://www.instagram.com/p/DfT77dBgZrQ/",
    "who": null
   },
   "eh-b73bbb9295": {
@@ -62174,6 +63042,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "CU 편의점 모바일 상품권 3천원권-전원",
+   "rawText": "응모형태: 설문/투표\n참여 방법\n1. 모아폼 접속\n2. 만족도 설문 작성 후 제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -62221,6 +63090,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "멀티 퍼프+톤업UV 핑크 15명",
+   "rawText": "응모형태: 체험단\n참여 방법\n1. 바이유르 팔로우\n2. 기대 이모지 댓글",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -62319,6 +63189,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "편의점 교환권 5천원권 50명",
+   "rawText": "응모형태: 댓글/단문\n참여 방법\n1. 과일 별명·이유 댓글\n2. 계정 팔로우",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -62367,6 +63238,11 @@
    "place": null,
    "platHint": "yt",
    "prize": "산리오 캐릭터 굿즈 25명 40명",
+   "prizeAll": [
+    "산리오 캐릭터 굿즈 25명",
+    "투썸플레이스 디저트 세트 5명",
+    "메가커피 기프티콘 10명"
+   ],
    "rawText": "응모형태: 댓글/단문\n참여 방법\n1. 유튜브 감상평 댓글 작성\n2. 폼제출",
    "reasons": [],
    "restriction_note": null,
@@ -62563,6 +63439,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "커피 기프티콘 100명",
+   "rawText": "응모형태: 퀴즈/퍼즐\n참여 방법\n1. 자음모음 조합\n2. 정답·안전응원 댓글",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -62610,6 +63487,11 @@
    "place": null,
    "platHint": "yt",
    "prize": "장보기 3만원권 5명 115명",
+   "prizeAll": [
+    "장보기 3만원권 5명",
+    "문화상품권 1만원권 10명",
+    "커피 3천원권 100명"
+   ],
    "rawText": "응모형태: 댓글/단문\n참여 방법\n1. 유튜브 구독\n2. 댓글 작성",
    "reasons": [],
    "restriction_note": null,
@@ -63003,6 +63885,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "맘스터치 딥치즈버거 단품 모바일쿠폰 50명",
+   "rawText": "응모형태: 댓글/단문\n참여 방법\n1. 팔로우 좋아요\n2. 국 시작 해 끝 주접댓글",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -63199,6 +64082,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "네이버페이 포인트 1만원권 100명",
+   "rawText": "응모형태: 댓글/단문\n참여 방법\n1. 공연중 댓글 친구 태그\n2. 당첨 시 답글",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -63246,6 +64130,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "CU 모바일 상품권 5천원권 40명",
+   "rawText": "응모형태: 퀴즈/퍼즐\n참여 방법\n1. 팔로우\n2. 친구태그\n3. 불상정답 폼제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -63391,6 +64276,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "투썸플레이스 떠먹는 화이트 스초생+아메리카노 R 2잔 30명",
+   "rawText": "응모형태: 소문내기\n참여 방법\n1. 팔로우\n2. 피드/리포스트\n3. 완료 댓글",
    "reasons": [
     "공모전",
     "공유·게시형"
@@ -63589,6 +64475,10 @@
    "place": null,
    "platHint": "web",
    "prize": "스탠리 텀블러+수건 세트 5명 25명",
+   "prizeAll": [
+    "스탠리 텀블러+수건 세트 5명",
+    "투썸플레이스 커피 쿠폰 20명"
+   ],
    "rawText": "응모형태: 퀴즈/퍼즐\n참여 방법\n1. 자음퀴즈 풀고 제출",
    "reasons": [],
    "restriction_note": null,
@@ -63783,6 +64673,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "원하는 대로 이루어지리 1만원권 20명",
+   "rawText": "응모형태: 댓글/단문\n참여 방법\n1. 응원댓글\n2. 팔로우·좋아요·공유",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -63831,6 +64722,11 @@
    "place": null,
    "platHint": "insta",
    "prize": "BHC 후라이드치킨+콜라 세.. 20명 120명",
+   "prizeAll": [
+    "BHC 후라이드치킨+콜라 세트 20명",
+    "맥도날드 햄버거 세트 40명",
+    "컴포즈커피 아메리카노 60명"
+   ],
    "rawText": "응모형태: 설문/투표 북마크\n참여 방법\n1. 팔로우\n2. 응원댓글\n3. 인증·학교선택 폼",
    "reasons": [],
    "restriction_note": null,
@@ -63881,6 +64777,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "커피 기프티콘 100명",
+   "rawText": "응모형태: 댓글/단문\n참여 방법\n1. 공식SNS 팔로우\n2. 참여완료 댓글\n3. 구글폼 제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -63975,6 +64872,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "네이버페이 1만원 상품권 30명",
+   "rawText": "응모형태: 퀴즈/퍼즐\n참여 방법\n1. 구독\n2. 댓글 캡처\n3. 폼 정답 인증 제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -64009,7 +64907,10 @@
    "end": "2026-11-17",
    "endTime": null,
    "firstSeen": "2026-11-06",
-   "form_url": null,
+   "formLinks": [
+    "https://docs.google.com/forms/d/e/1FAIpQLSfROqwUCLZhxjQlVPB_bG6cDrBEPRrUiTE_pZHATL0OtEkmhQ/viewform"
+   ],
+   "form_url": "https://docs.google.com/forms/d/e/1FAIpQLSfROqwUCLZhxjQlVPB_bG6cDrBEPRrUiTE_pZHATL0OtEkmhQ/viewform",
    "grade": "X",
    "id": "eh-bdc7ecd3a8",
    "is_restricted": false,
@@ -64034,7 +64935,8 @@
    "restriction_reason": null,
    "src": "eh",
    "srcUrls": [
-    "https://www.eventhouse.kr/site/view.php?no=319419"
+    "https://www.eventhouse.kr/site/view.php?no=319419",
+    "https://nl.go.kr/koreanmemory/USER/contents/SV0104000.do?schM=view&id=20261104084230735640&announcement=true"
    ],
    "start": "2026-11-04",
    "status": "active",
@@ -64044,11 +64946,10 @@
     "이유 폼 제출"
    ],
    "tags": [
-    "캡처 인증",
-    "원문 미확인"
+    "캡처 인증"
    ],
    "title": "콘텐츠 골라 SNS 공유하고 커피 받자 이벤트!!",
-   "url": "https://www.eventhouse.kr/site/view.php?no=319419",
+   "url": "https://nl.go.kr/koreanmemory/USER/contents/SV0104000.do?schM=view&id=20261104084230735640&announcement=true",
    "who": null
   },
   "eh-bdfe0b483f": {
@@ -64367,6 +65268,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "커피 모바일 쿠폰 100명",
+   "rawText": "응모형태: 단순응모\n참여 방법\n1. 구독·좋아요\n2. 동네 댓글\n3. 캡처 폼제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -64517,6 +65419,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "GS25 모바일상품권 5천원 40명",
+   "rawText": "응모형태: 퀴즈/퍼즐\n참여 방법\n1. 블로그 이웃\n2. 퀴즈 비밀댓글\n3. 폼 인증",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -64548,6 +65451,7 @@
    "end": "2026-11-16",
    "endTime": null,
    "firstSeen": "2026-11-04",
+   "formChecked": "2026-11-09",
    "form_url": null,
    "grade": "C",
    "id": "eh-bf9d2b74f4",
@@ -64571,7 +65475,8 @@
    "restriction_reason": null,
    "src": "eh",
    "srcUrls": [
-    "https://www.eventhouse.kr/site/view.php?no=319243"
+    "https://www.eventhouse.kr/site/view.php?no=319243",
+    "https://www.eduinfo.go.kr/portal/bbs/secretYnChk.do?bbsCd=NOTICE&seq=44037&ansTag=N&currPage=1&pageSize=10&searchWd="
    ],
    "start": "2026-11-02",
    "status": "active",
@@ -64579,11 +65484,9 @@
     "교육재정알리미 접속",
     "팝업 설문 제출"
    ],
-   "tags": [
-    "원문 미확인"
-   ],
+   "tags": [],
    "title": "교육재정 설문하고 카페상품권 받자 이벤트!!",
-   "url": "https://www.eventhouse.kr/site/view.php?no=319243",
+   "url": "https://www.eduinfo.go.kr/portal/bbs/secretYnChk.do?bbsCd=NOTICE&seq=44037&ansTag=N&currPage=1&pageSize=10&searchWd=",
    "who": null
   },
   "eh-bfd03476e0": {
@@ -65083,10 +65986,12 @@
    "checked": null,
    "count": 54,
    "elec": [
+    "audio",
     "watch"
    ],
    "elec_models": [
-    "갤럭시워치 9"
+    "갤럭시워치 9",
+    "에어팟 프로 3"
    ],
    "end": "2026-11-10",
    "endTime": null,
@@ -65111,6 +66016,11 @@
    "place": null,
    "platHint": "insta",
    "prize": "갤럭시워치 9 블루투스 40mm.. 1명 53명",
+   "prizeAll": [
+    "갤럭시워치 9 블루투스 40mm 1명",
+    "에어팟 프로 3 2명",
+    "네이버페이 포인트 1만원 50명"
+   ],
    "rawText": "응모형태: 댓글/단문 북마크\n참여 방법\n1. 팔로우\n2. 직업검색\n3. 이유글\n4. 폼제출",
    "reasons": [],
    "restriction_note": null,
@@ -65211,6 +66121,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "커피쿠폰 700명",
+   "rawText": "응모형태: 설문/투표\n참여 방법\n1. 네이버폼 접속\n2. 만족도 설문 작성 제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -65357,6 +66268,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "네이버페이 1만원권 100명",
+   "rawText": "응모형태: 설문/투표\n참여 방법\n1. 설문\n2. SNS 팔로우 캡처 제출\n3. 완료댓글",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -65848,6 +66760,11 @@
    "place": null,
    "platHint": "yt",
    "prize": "문화상품권 3만원권 3명 28명",
+   "prizeAll": [
+    "문화상품권 3만원권 3명",
+    "커피 1만원권 5명",
+    "편의점 3천원권 20명"
+   ],
    "rawText": "응모형태: 댓글/단문\n참여 방법\n1. 유튜브 구독\n2. 감상평 댓글 작성",
    "reasons": [],
    "restriction_note": null,
@@ -65996,6 +66913,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "파지약과 50명",
+   "rawText": "응모형태: 댓글/단문\n참여 방법\n1. 팔로우·좋아요\n2. 오픈 응원댓글\n3. 공유",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -66386,6 +67304,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "한솥 6천원 시식권 100명",
+   "rawText": "응모형태: 단순응모\n참여 방법\n1. 팔로우\n2. 카톡 한솥추가 캡처\n3. 폼 제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -66535,6 +67454,11 @@
    "place": null,
    "platHint": "insta",
    "prize": "BBQ 황금올리브 치킨+콜라 1.. 10명 50명",
+   "prizeAll": [
+    "BBQ 황금올리브 치킨+콜라 125L 10명",
+    "배스킨라빈스 싱글레귤러 40명"
+   ],
+   "rawText": "응모형태: 댓글/단문\n참여 방법\n1. 팔로우\n2. 연주회 응원댓글\n3. 친구태그",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -66584,6 +67508,13 @@
    "place": null,
    "platHint": "insta",
    "prize": "2027 입시설명회 무료 제공 2명 7명",
+   "prizeAll": [
+    "2027 입시설명회 무료 제공 2명",
+    "스탠리 텀블러 2명",
+    "멀티비타민 이뮨 샷 3명",
+    "인서울 5등급제 환산 자료집"
+   ],
+   "rawText": "응모형태: 댓글/단문\n참여 방법\n1. 좋아요\n2. 5만 축하 댓글\n3. 팔로우",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -66732,6 +67663,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "카페 기프티콘 25명",
+   "rawText": "응모형태: 설문/투표\n참여 방법\n1. SNS 채널 팔로우\n2. 네이버폼 설문 제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -67366,6 +68298,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "배달의민족 2만원 모바일 상품권 20명",
+   "rawText": "응모형태: 단순응모\n참여 방법\n1. 유튜브 틱톡 구독\n2. 화면캡처\n3. 폼 제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -67417,6 +68350,12 @@
    "place": null,
    "platHint": "insta",
    "prize": "TOOLO 상품권 100만원권 1명 100명",
+   "prizeAll": [
+    "TOOLO 상품권 100만원권 1명",
+    "BBQ 황금올리브 치킨 기프티콘 19명",
+    "메가커피 아메리카노 기프티콘 80명"
+   ],
+   "rawText": "응모형태: 참여인증\n참여 방법\n1. 버스 촬영\n2. 필수태그 넣어 게시\n3. 신청",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -67618,6 +68557,11 @@
    "place": null,
    "platHint": "web",
    "prize": "배달의민족 1만원권 10명 90명",
+   "prizeAll": [
+    "배달의민족 1만원권 10명",
+    "배달의민족 5천원권 80명"
+   ],
+   "rawText": "응모형태: 설문/투표\n참여 방법\n1. 홈페이지 방문\n2. 네이버폼 질문 작성",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -67665,6 +68609,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "투썸플레이스 초콜릿 라떼 R 50명",
+   "rawText": "응모형태: 퀴즈/퍼즐\n참여 방법\n1. KPRC 팔로우\n2. 전용수거함·친구태그 댓글",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -67713,6 +68658,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "네이버페이 포인트 쿠폰 1만원권 250명",
+   "rawText": "응모형태: 댓글/단문\n참여 방법\n1. 청구서진단\n2. 절감액댓글\n3. DM폼제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -67858,6 +68804,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "커피쿠폰 100명",
+   "rawText": "응모형태: 설문/투표\n참여 방법\n1. 두채널 구독\n2. 구독캡처\n3. 폼 투표 첨부",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -68004,6 +68951,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "투썸플레이스 소금 프레첼 베이글+아메리카노 100명",
+   "rawText": "응모형태: 설문/투표\n참여 방법\n1. 안산시 SNS 팔로우\n2. 네이버폼 설문 제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -68145,6 +69093,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "BBQ 황금올리브치킨+콜라 125L 30명",
+   "rawText": "응모형태: 댓글/단문\n참여 방법\n1. 팔로우·구독\n2. 좋아요·댓글\n3. 캡처제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -68386,6 +69335,7 @@
    "place": null,
    "platHint": "web",
    "prize": "대한항공 기프트카드 5만원권 50명",
+   "rawText": "응모형태: 댓글/단문\n참여 방법\n1. 멜버른에서 하고싶은 것 고르기\n2. 응모하기",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -68581,6 +69531,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "CU 1만원권 모바일쿠폰 100명",
+   "rawText": "응모형태: 소문내기\n참여 방법\n1. 광고촬영\n2. 태그·해시태그 업로드\n3. 폼",
    "reasons": [
     "공유·게시형"
    ],
@@ -68631,6 +69582,11 @@
    "place": null,
    "platHint": "insta",
    "prize": "올리브영 3만원 쿠폰 10명 30명",
+   "prizeAll": [
+    "올리브영 3만원 쿠폰 10명",
+    "커피 1만원 쿠폰 20명"
+   ],
+   "rawText": "응모형태: 댓글/단문\n참여 방법\n1. 팔로우\n2. 좋아요\n3. 찐친댓글·태그·공유",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -68878,6 +69834,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "커피 기프티콘 30명",
+   "rawText": "응모형태: 소문내기\n참여 방법\n1. 팔로우\n2. 원글 좋아요\n3. 공유\n4. 폼 인증",
    "reasons": [
     "공유·게시형"
    ],
@@ -68930,6 +69887,10 @@
    "place": null,
    "platHint": "web",
    "prize": "네이버페이 1만원 쿠폰 5명 60명",
+   "prizeAll": [
+    "네이버페이 1만원 쿠폰 5명",
+    "아메리카노 1잔 55명"
+   ],
    "rawText": "응모형태: 퀴즈/퍼즐\n참여 방법\n1. 페북팔로우\n2. 정답댓글\n3. 폼제출",
    "reasons": [],
    "restriction_note": null,
@@ -68980,6 +69941,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "음료 교환권 150명",
+   "rawText": "응모형태: 설문/투표\n참여 방법\n1. 서울·경기·인천\n2. 설문 응답 후 제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -69181,6 +70143,11 @@
    "place": null,
    "platHint": "web",
    "prize": "Apple 에어팟 프로 1명 251명",
+   "prizeAll": [
+    "Apple 에어팟 프로 1명",
+    "네이버페이 1만원권 100명",
+    "투썸 아메리카노 150명"
+   ],
    "rawText": "응모형태: 설문/투표\n참여 방법\n1. 문화포털 접속\n2. 만족도조사 응답 제출",
    "reasons": [],
    "restriction_note": null,
@@ -69714,6 +70681,12 @@
    "place": null,
    "platHint": "insta",
    "prize": "네이버페이 포인트 2만원 10명 90명",
+   "prizeAll": [
+    "네이버페이 포인트 2만원 10명",
+    "네이버페이 포인트 1만원 20명",
+    "투썸플레이스 아이스 아메리카노 R 60명"
+   ],
+   "rawText": "응모형태: 단순응모\n참여 방법\n1. 유튜브구독\n2. 응원댓글\n3. 인증샷 폼제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -69910,6 +70883,10 @@
    "place": null,
    "platHint": "insta",
    "prize": "배달의민족 3만원권 10명 200명",
+   "prizeAll": [
+    "배달의민족 3만원권 10명",
+    "스타벅스 아메리카노 교환권 190명"
+   ],
    "rawText": "응모형태: 설문/투표 북마크\n참여 방법\n1. 팔로우\n2. 프로필 설문 제출\n3. 완료 댓글",
    "reasons": [],
    "restriction_note": null,
@@ -70106,6 +71083,12 @@
    "place": null,
    "platHint": "insta",
    "prize": "배달의민족 2만원권 3명 60명",
+   "prizeAll": [
+    "배달의민족 2만원권 3명",
+    "뚜레쥬르 BELT 샌드위치+커피 7명",
+    "컴포즈커피 카페모카 50명"
+   ],
+   "rawText": "응모형태: 설문/투표\n참여 방법\n1. 만족도 조사 제출\n2. 알리미 채널 추가",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -70298,6 +71281,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "누비전 1만원권 50명",
+   "rawText": "응모형태: 댓글/단문\n참여 방법\n1. 구독\n2. 좋아요·구별 장점 댓글\n3. 폼제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -70444,6 +71428,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "하누소 갈비탕+보양곰탕 10명",
+   "rawText": "응모형태: 퀴즈/퍼즐\n참여 방법\n1. 팔로우\n2. 좋아요\n3. 퀴즈2개 정답댓글",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -70541,6 +71526,10 @@
    "place": null,
    "platHint": "web",
    "prize": "배달의민족 상품권 30명 130명",
+   "prizeAll": [
+    "배달의민족 상품권 30명",
+    "메가커피 기프티콘 100명"
+   ],
    "rawText": "응모형태: 퀴즈/퍼즐\n참여 방법\n1. 호친소 특가 퀴즈풀기\n2. 응모하기",
    "reasons": [],
    "restriction_note": null,
@@ -70784,6 +71773,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "커피쿠폰 1만원 상당 60명",
+   "rawText": "응모형태: 설문/투표\n참여 방법\n1. 네이버폼\n2. 속초홀릭 만족도 조사 제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -70927,6 +71917,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "메가커피 커피 마카롱 세트 기프티콘 100명",
+   "rawText": "응모형태: 참여인증\n참여 방법\n1. 팔로우\n2. 안전서약\n3. 인증서캡처\n4. 구글폼제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -71080,6 +72071,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "배달의민족 상품권 2만원권 5명",
+   "rawText": "응모형태: 퀴즈/퍼즐\n참여 방법\n1. 팔로우\n2. 좋아요\n3. 이모지 사료명 댓글",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -71175,6 +72167,11 @@
    "place": null,
    "platHint": "web",
    "prize": "신세계 10만원권 10명 260명",
+   "prizeAll": [
+    "신세계 10만원권 10명",
+    "메가커피 아메리카노 250명"
+   ],
+   "rawText": "응모형태: 단순응모\n참여 방법\n1. 여행계획 질문\n2. 답변 캡처&카드 공유\n3. 응모하기",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -71514,6 +72511,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "네이버페이 5천원권 20명",
+   "rawText": "응모형태: 댓글/단문\n참여 방법\n1. 팔로우\n2. 이름 ㄴ·ㄹ 댓글 또는 친구태그",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -71752,6 +72750,11 @@
    "place": null,
    "platHint": "yt",
    "prize": "피자 3만원권 3명 28명",
+   "prizeAll": [
+    "피자 3만원권 3명",
+    "장보기 1만원권 5명",
+    "편의점 3천원권 20명"
+   ],
    "rawText": "응모형태: 댓글/단문\n참여 방법\n1. 유튜브 구독\n2. 감상평 댓글 작성",
    "reasons": [],
    "restriction_note": null,
@@ -72291,6 +73294,11 @@
    "place": null,
    "platHint": "insta",
    "prize": "굽네치킨 New 오리지널+모.. 1명 11명",
+   "prizeAll": [
+    "굽네치킨 New 오리지널+모짜치즈볼+콜라125L 1명",
+    "배달의민족 모바일상품권 5천원 10명"
+   ],
+   "rawText": "응모형태: 댓글/단문\n참여 방법\n1. 팔로우\n2. 11월글 좋아요 댓글\n3. 친구태그",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -72388,6 +73396,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "네이버페이 1만원 30명",
+   "rawText": "응모형태: 설문/투표\n참여 방법\n1. PLS 설문 접속\n2. 모든 문항 응답 후 제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -72486,6 +73495,11 @@
    "place": null,
    "platHint": "insta",
    "prize": "네이버페이 포인트 3천원.. 60명 120명",
+   "prizeAll": [
+    "네이버페이 포인트 3천원권 60명",
+    "올리브영 상품권 3천원권 60명"
+   ],
+   "rawText": "응모형태: 단순응모\n참여 방법\n1. 어빌리브 접속\n2. 카카오 가입·자동응모",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -72735,6 +73749,12 @@
    "place": null,
    "platHint": "insta",
    "prize": "심플의 발견 한정판 도서 500명 525명",
+   "prizeAll": [
+    "심플의 발견 한정판 도서 500명",
+    "이룸 프라임 필기 독서대 5명",
+    "투썸플레이스 떠먹는 스초생+아메리카노 20명"
+   ],
+   "rawText": "응모형태: 댓글/단문\n참여 방법\n1. 팔로우\n2. 심플의 발견 댓글\n3. DM폼 제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -72784,6 +73804,7 @@
    "place": null,
    "platHint": "web",
    "prize": "GS25 상품권 1만원권 50명",
+   "rawText": "응모형태: 소문내기\n참여 방법\n1. 포스터 SNS 공유\n2. 응모하기",
    "reasons": [
     "공모전",
     "공유·게시형"
@@ -73130,6 +74151,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "투썸플레이스 아이스 아메리카노 12명",
+   "rawText": "응모형태: 댓글/단문\n참여 방법\n1. 유튜브 시청\n2. 바이오플락 소감 댓글",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -73715,6 +74737,7 @@
    "place": null,
    "platHint": "web",
    "prize": "편의점 5천원권 10명",
+   "rawText": "응모형태: 설문/투표\n참여 방법\n1. KTX청량리역 스마트도서관 이용 활성화 설문 참여",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -73764,6 +74787,10 @@
    "place": null,
    "platHint": "insta",
    "prize": "교촌 허니콤보 콜라 125L 모.. 3명 18명",
+   "prizeAll": [
+    "교촌 허니콤보 콜라 125L 모바일쿠폰 3명",
+    "맥도날드 베이컨 에그 맥머핀 세트 모바일쿠폰 15명"
+   ],
    "rawText": "응모형태: 단순/간단 북마크\n참여 방법\n1. 3채널 구독\n2. 퀴즈 정답\n3. 캡처 폼 제출",
    "reasons": [],
    "restriction_note": null,
@@ -74201,6 +75228,11 @@
    "place": null,
    "platHint": "insta",
    "prize": "국산 과일 1박스 10명 40명",
+   "prizeAll": [
+    "국산 과일 1박스 10명",
+    "모바일 편의점 5천원 교환권 30명"
+   ],
+   "rawText": "응모형태: 참여인증\n참여 방법\n1. 과일 사진·릴스 업로드\n2. 태그 3개\n3. DM",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -74299,6 +75331,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "투썸플레이스 1만원권 모바일 쿠폰 100명",
+   "rawText": "응모형태: 설문/투표\n참여 방법\n1. SNS 팔로우\n2. 구글폼 설문\n3. 완료 댓글",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -74448,6 +75481,10 @@
    "place": null,
    "platHint": "insta",
    "prize": "온누리상품권 1만원권 20명 50명",
+   "prizeAll": [
+    "온누리상품권 1만원권 20명",
+    "아마존 e-gift card 10달러권 30명"
+   ],
    "rawText": "응모형태: 퀴즈/퍼즐 북마크\n참여 방법\n1. 팔로우·좋아요\n2. 지도확대\n3. 문구댓글",
    "reasons": [],
    "restriction_note": null,
@@ -74549,6 +75586,11 @@
    "place": null,
    "platHint": "insta",
    "prize": "갤럭시 버즈4 1명 131명",
+   "prizeAll": [
+    "갤럭시 버즈4 1명",
+    "온누리상품권 3만원 + 새령이 인형 30명",
+    "커피 기프티콘 100명"
+   ],
    "rawText": "응모형태: 참여인증\n참여 방법\n1. 팔로우\n2. 3종 촬영\n3. 태그·# 스토리 게시",
    "reasons": [],
    "restriction_note": null,
@@ -74603,6 +75645,12 @@
    "place": null,
    "platHint": "insta",
    "prize": "에어팟 Pro 3 1명 89명",
+   "prizeAll": [
+    "에어팟 Pro 3 1명",
+    "신세계 상품권 5만원 3명",
+    "BBQ 황금올리브 치킨 콜라 5명",
+    "GS25 모바일상품권 3천원 80명"
+   ],
    "rawText": "응모형태: 참여인증\n참여 방법\n1. 피코 참여\n2. 단풍사진 촬영\n3. 후기작성",
    "reasons": [],
    "restriction_note": null,
@@ -74652,6 +75700,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "네이버페이 2만원권 50명",
+   "rawText": "응모형태: 참여인증\n참여 방법\n1. 단디체 다운\n2. 꾸미기\n3. 사진 QR 제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -74754,6 +75803,10 @@
    "place": null,
    "platHint": "insta",
    "prize": "LG 스탠바이미 2 MAX 2명 102명",
+   "prizeAll": [
+    "LG 스탠바이미 2 MAX 2명",
+    "파리바게뜨 케이크 교환권 100명"
+   ],
    "rawText": "응모형태: 참여인증\n참여 방법\n1. KBS Joy 로고 촬영\n2. #7733 문자 전송",
    "reasons": [],
    "restriction_note": null,
@@ -75046,6 +76099,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "스타벅스 카드 3만원권 및 크리스마스 in서초 초대권 2매 10명",
+   "rawText": "응모형태: 댓글/단문\n참여 방법\n1. 팔로우\n2. 좋아요\n3. 친구태그 사연 댓글",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -75095,6 +76149,11 @@
    "place": null,
    "platHint": "insta",
    "prize": "커피 쿠폰",
+   "prizeAll": [
+    "커피 쿠폰",
+    "e카드 교환권"
+   ],
+   "rawText": "응모형태: 설문/투표\n참여 방법\n1. 하이라이트\n2. 설문\n3. 동의·연락처 제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -75290,6 +76349,10 @@
    "place": null,
    "platHint": "insta",
    "prize": "네이버페이 포인트 1만원 .. 30명 60명",
+   "prizeAll": [
+    "네이버페이 포인트 1만원 모바일쿠폰 30명",
+    "투썸플레이스 HOT 아메리카노 R 2잔 모바일쿠폰 30명"
+   ],
    "rawText": "응모형태: 댓글/단문 북마크\n참여 방법\n1. 철도영상 2편 댓글\n2. 네이버폼 인증 제출",
    "reasons": [],
    "restriction_note": null,
@@ -75435,6 +76498,11 @@
    "place": null,
    "platHint": "insta",
    "prize": "네이버페이 포인트 5천원.. 등 100% 당첨",
+   "prizeAll": [
+    "네이버페이 포인트 5천원권-전원",
+    "신세계상품권 10만원권"
+   ],
+   "rawText": "응모형태: 참여인증\n참여 방법\n1. 정품마크 촬영\n2. 사진 업로드\n3. 후기 작성",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -75622,6 +76690,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "네이버페이 1만원권 100명",
+   "rawText": "응모형태: 참여인증\n참여 방법\n1. 색상 촬영\n2. 태그 게시\n3. 사진 링크 제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -75813,6 +76882,7 @@
    "place": null,
    "platHint": "web",
    "prize": "기프티콘 10명",
+   "rawText": "응모형태: 설문/투표\n참여 방법\n1. 중구 주요사업 인지도 및 체감도 조사 참여",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -75859,6 +76929,12 @@
    "place": null,
    "platHint": "insta",
    "prize": "네이버페이 포인트 4만원.. 1명 13명",
+   "prizeAll": [
+    "네이버페이 포인트 4만원권 1명",
+    "네이버페이 포인트 1만원권 2명",
+    "네이버페이 포인트 5천원권 10명"
+   ],
+   "rawText": "응모형태: 퀴즈/퍼즐\n참여 방법\n1. 팔로우\n2. 정답댓글·좋아요\n3. 친구태그",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -75956,6 +77032,10 @@
    "place": null,
    "platHint": "web",
    "prize": "네이버페이 3만원권 2명 12명",
+   "prizeAll": [
+    "네이버페이 3만원권 2명",
+    "편의점 5천원권 10명"
+   ],
    "rawText": "응모형태: 댓글/단문\n참여 방법\n1. 친구맺기 소비자시대\n2. 웹진 속 숨은 문장 찾기\n3. 응모하기",
    "reasons": [],
    "restriction_note": null,
@@ -76249,6 +77329,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "편의점 모바일 상품권 5천원권",
+   "rawText": "응모형태: 단순응모\n참여 방법\n1. 팔로우\n2. 캡처\n3. 구글폼에 인증 제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -76494,6 +77575,11 @@
    "place": null,
    "platHint": "naver",
    "prize": "네이버페이 3만원권 3명 63명",
+   "prizeAll": [
+    "네이버페이 3만원권 3명",
+    "도서 10명",
+    "바나나맛 우유 기프티콘 50명"
+   ],
    "rawText": "응모형태: 댓글/단문 북마크\n참여 방법\n1. <기적의 계산법> 기대하는 점 댓글 작성",
    "reasons": [],
    "restriction_note": null,
@@ -76586,6 +77672,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "투썸플레이스 아이스 아메리카노 R 50명",
+   "rawText": "응모형태: 단순응모\n참여 방법\n1. 카톡 채널 추가\n2. 친구 추가 완료 전송",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -76684,6 +77771,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "주유권 3천원 상당 30명",
+   "rawText": "응모형태: 댓글/단문\n참여 방법\n1. 팔로우·좋아요\n2. 관리비·감상·응원 댓글",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -77006,7 +78094,10 @@
    "end": "2026-11-18",
    "endTime": null,
    "firstSeen": "2026-11-06",
-   "form_url": null,
+   "formLinks": [
+    "https://naver.me/xTy27h12"
+   ],
+   "form_url": "https://form.naver.com/response/AELslbvtAkO",
    "grade": "C",
    "id": "eh-e747260aae",
    "is_restricted": false,
@@ -77023,12 +78114,14 @@
    "place": null,
    "platHint": "insta",
    "prize": "네이버페이 포인트 쿠폰 1만원권 30명",
+   "rawText": "응모형태: 설문/투표\n참여 방법\n1. 인스타 팔로우\n2. QR접속\n3. 네이버폼 제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
    "src": "eh",
    "srcUrls": [
-    "https://www.eventhouse.kr/site/view.php?no=319420"
+    "https://www.eventhouse.kr/site/view.php?no=319420",
+    "https://www.instagram.com/p/DfWH6d0Ahe7/"
    ],
    "start": "2026-11-05",
    "status": "active",
@@ -77039,11 +78132,10 @@
    ],
    "tags": [
     "팔로우 필요",
-    "인스타 참여",
-    "원문 미확인"
+    "인스타 참여"
    ],
    "title": "해썹 설문 참여하고 네이버페이 받자 이벤트!!",
-   "url": "https://www.eventhouse.kr/site/view.php?no=319420",
+   "url": "https://www.instagram.com/p/DfWH6d0Ahe7/",
    "who": null
   },
   "eh-e76818e38d": {
@@ -77217,6 +78309,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "네이버페이 5천원권 100명",
+   "rawText": "응모형태: 댓글/단문\n참여 방법\n1. 팔로우\n2. 인천 명소 댓글\n3. 구글폼 제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -77313,6 +78406,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "모바일 상품권 100명",
+   "rawText": "응모형태: 설문/투표\n참여 방법\n1. 소식지 확인\n2. 네이버폼 만족도 설문제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -77559,6 +78653,12 @@
    "place": null,
    "platHint": "insta",
    "prize": "문화상품권 10만원권 2명 24명",
+   "prizeAll": [
+    "문화상품권 10만원권 2명",
+    "문화상품권 5만원권 2명",
+    "문화상품권 5천원권 20명"
+   ],
+   "rawText": "응모형태: 설문/투표\n참여 방법\n1. 돌봄사회 은하투표\n2. 전화번호 입력",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -77755,6 +78855,12 @@
    "place": null,
    "platHint": "insta",
    "prize": "BBQ 황금올리브치킨 세트 5명 125명",
+   "prizeAll": [
+    "BBQ 황금올리브치킨 세트 5명",
+    "다이소 5천원권 20명",
+    "메가커피 아메리카노 100명"
+   ],
+   "rawText": "응모형태: 단순응모\n참여 방법\n1. 홈페이지 배너 찾기\n2. 캡처\n3. 폼 제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -77897,6 +79003,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "치킨 기프티콘 30명",
+   "rawText": "응모형태: 댓글/단문\n참여 방법\n1. 친구태그 응원댓글\n2. 구글폼 응모 제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -77992,6 +79099,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "이디야 디카페인 HOT 카페모카 모바일 쿠폰 20명",
+   "rawText": "응모형태: 퀴즈/퍼즐\n참여 방법\n1. 팔로우\n2. 장소 댓글\n3. 인증샷 폼 제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -78137,6 +79245,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "모바일 기프티콘 5천원권 500명",
+   "rawText": "응모형태: 설문/투표\n참여 방법\n1. QR 스캔\n2. 만족도 조사\n3. 제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -78377,6 +79486,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "편의점 모바일상품권 5천원권 200명",
+   "rawText": "응모형태: 퀴즈/퍼즐\n참여 방법\n1. 네이버폼 접속\n2. 음주 OX퀴즈 풀고 제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -78815,6 +79925,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "배달의민족 열정국밥 상품권 2만원권 5명",
+   "rawText": "응모형태: 댓글/단문\n참여 방법\n1. 팔로우\n2. 좋아요\n3. 국밥 조합 댓글",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -78864,6 +79975,10 @@
    "place": null,
    "platHint": "web",
    "prize": "배달의민족 상품권 10명 160명",
+   "prizeAll": [
+    "배달의민족 상품권 10명",
+    "이디야 아메리카노 150명"
+   ],
    "rawText": "응모형태: 단순응모\n참여 방법\n1. 채무조정제도 제목 확인\n2. 내용 확인\n3. 개인정보 입력",
    "reasons": [],
    "restriction_note": null,
@@ -78913,6 +80028,10 @@
    "place": null,
    "platHint": "web",
    "prize": "치킨 상품권 10명 160명",
+   "prizeAll": [
+    "치킨 상품권 10명",
+    "컴포즈 5천원권 150명"
+   ],
    "rawText": "응모형태: 단순응모\n참여 방법\n1. 1375 질문 확인\n2. 답변 확인\n3. 개인정보 입력",
    "reasons": [],
    "restriction_note": null,
@@ -79105,6 +80224,10 @@
    "place": null,
    "platHint": "naver",
    "prize": "파리바게뜨 케이크 10명 160명",
+   "prizeAll": [
+    "파리바게뜨 케이크 10명",
+    "투썸플레이스 아메리카노 150명"
+   ],
    "rawText": "응모형태: 퀴즈/퍼즐\n참여 방법\n1. 정답 댓글 작성\n2. 폼제출",
    "reasons": [],
    "restriction_note": null,
@@ -79255,6 +80378,12 @@
    "place": null,
    "platHint": "insta",
    "prize": "올리브영 상품권 3만원권 3명 19명",
+   "prizeAll": [
+    "올리브영 상품권 3만원권 3명",
+    "BHC 후라이드 모바일쿠폰 4명",
+    "올리브영 상품권 1만원권 12명"
+   ],
+   "rawText": "응모형태: 댓글/단문\n참여 방법\n1. 팔로우\n2. 번호·이유 댓글\n3. 친구태그",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -79453,6 +80582,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "다이소 3천원권 모바일 쿠폰 10명",
+   "rawText": "응모형태: 퀴즈/퍼즐\n참여 방법\n1. 팔로우 좋아요\n2. 정답 댓글\n3. 친구 태그",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -79732,6 +80862,7 @@
    "end": "2026-11-13",
    "endTime": null,
    "firstSeen": "2026-10-27",
+   "formChecked": "2026-11-09",
    "form_url": null,
    "grade": "C",
    "id": "eh-f11bd7a82c",
@@ -79749,12 +80880,14 @@
    "place": null,
    "platHint": "web",
    "prize": "배달 모바일 상품권 1만원권 100명",
+   "rawText": "응모형태: 설문/투표\n참여 방법\n1. 위두랑 접속\n2. 추억100자·감사20자 작성",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
    "src": "eh",
    "srcUrls": [
-    "https://www.eventhouse.kr/site/view.php?no=318327"
+    "https://www.eventhouse.kr/site/view.php?no=318327",
+    "https://rang.edunet.net/main.do"
    ],
    "start": "2026-10-16",
    "status": "active",
@@ -79762,11 +80895,9 @@
     "위두랑 접속",
     "추억100자·감사20자 작성"
    ],
-   "tags": [
-    "원문 미확인"
-   ],
+   "tags": [],
    "title": "위두랑 추억 남기고 배달상품권 받자 이벤트!!",
-   "url": "https://www.eventhouse.kr/site/view.php?no=318327",
+   "url": "https://rang.edunet.net/main.do",
    "who": null
   },
   "eh-f15a4928e3": {
@@ -79990,6 +81121,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "투썸플레이스 아메리카노 R 30명",
+   "rawText": "응모형태: 퀴즈/퍼즐\n참여 방법\n1. 팔로우\n2. 좋아요\n3. 사자성어 정답 댓글",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -80185,6 +81317,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "2만원 상당 선물 100명",
+   "rawText": "응모형태: 설문/투표\n참여 방법\n1. 네이버폼\n2. 만족도 설문·연락처 제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -80281,6 +81414,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "맘스터치 싸이버거 세트 20명",
+   "rawText": "응모형태: 퀴즈/퍼즐\n참여 방법\n1. 3채널 추가\n2. 좋아요\n3. 정답과 완료 댓글",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -80484,6 +81618,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "커피 기프티콘 100명",
+   "rawText": "응모형태: 댓글/단문\n참여 방법\n1. 펫스타 팔로우\n2. 함께 갈 친구 @태그 댓글",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -80678,6 +81813,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "음료 교환권 1만원 100명",
+   "rawText": "응모형태: 설문/투표\n참여 방법\n1. 사이트 접속\n2. 누리집 만족도 설문 제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -81099,7 +82235,10 @@
    "end": "2026-11-18",
    "endTime": null,
    "firstSeen": "2026-11-05",
-   "form_url": null,
+   "formLinks": [
+    "https://naver.me/F05nEhuf"
+   ],
+   "form_url": "https://form.naver.com/response/65p31DagNxd",
    "grade": "C",
    "id": "eh-f5206df5fb",
    "is_restricted": false,
@@ -81116,12 +82255,14 @@
    "place": null,
    "platHint": "insta",
    "prize": "CGV 영화관람권 1매 30명",
+   "rawText": "응모형태: 참여인증\n참여 방법\n1. 구독\n2. 응원댓글\n3. 캡처해 폼 제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
    "src": "eh",
    "srcUrls": [
-    "https://www.eventhouse.kr/site/view.php?no=319298"
+    "https://www.eventhouse.kr/site/view.php?no=319298",
+    "https://www.instagram.com/p/DfOKJpYHZ7i/"
    ],
    "start": "2026-11-02",
    "status": "active",
@@ -81132,11 +82273,10 @@
    ],
    "tags": [
     "팔로우 필요",
-    "캡처 인증",
-    "원문 미확인"
+    "캡처 인증"
    ],
    "title": "수능 응원댓글 인증해 CGV관람권 받자 이벤트!!",
-   "url": "https://www.eventhouse.kr/site/view.php?no=319298",
+   "url": "https://www.instagram.com/p/DfOKJpYHZ7i/",
    "who": null
   },
   "eh-f53b557018": {
@@ -81166,6 +82306,11 @@
    "place": null,
    "platHint": "insta",
    "prize": "네이버페이 포인트 쿠폰 2.. 5명 35명",
+   "prizeAll": [
+    "네이버페이 포인트 쿠폰 2만원권 5명",
+    "올리브영 모바일 상품권 5천원권 30명"
+   ],
+   "rawText": "응모형태: 댓글/단문\n참여 방법\n1. 팔로우\n2. 재난대비 환경실천 댓글 작성",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -81263,6 +82408,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "모바일 백화점상품권 5천원권 200명",
+   "rawText": "응모형태: 설문/투표\n참여 방법\n1. 만족도조사 접속\n2. 설문 응답\n3. 제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -81405,6 +82551,11 @@
    "place": null,
    "platHint": "insta",
    "prize": "메가커피 5천원권 50명 100명",
+   "prizeAll": [
+    "메가커피 5천원권 50명",
+    "CU 5천원권 50명"
+   ],
+   "rawText": "응모형태: 댓글/단문\n참여 방법\n1. 구독\n2. 시청·좋아요·댓글\n3. 캡처폼제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -81502,6 +82653,10 @@
    "place": null,
    "platHint": "web",
    "prize": "투썸플레이스 1만원권 100명 200명",
+   "prizeAll": [
+    "투썸플레이스 1만원권 100명",
+    "GS25 1만원권 100명"
+   ],
    "rawText": "응모형태: 설문/투표\n참여 방법\n1. 홈페이지 로그인\n2. 한국어 서비스 만족도 조사\n3. 폼제출",
    "reasons": [],
    "restriction_note": null,
@@ -81693,6 +82848,10 @@
    "place": null,
    "platHint": "insta",
    "prize": "KBL 30주년 다큐멘터리 시사.. 30명 70명",
+   "prizeAll": [
+    "KBL 30주년 다큐멘터리 시사회 초대권 30명",
+    "TVING 이용권 1개월3개월 40명"
+   ],
    "rawText": "응모형태: 댓글/단문\n참여 방법\n1. 네이버폼 접속\n2. KBL 추억 사연 작성·제출",
    "reasons": [],
    "restriction_note": null,
@@ -81837,6 +82996,13 @@
    "place": null,
    "platHint": "web",
    "prize": "치킨 상품권 20명 100명",
+   "prizeAll": [
+    "치킨 상품권 20명",
+    "커피 5천원권 30명",
+    "푸드위크 코리아 입장권 25명",
+    "우리술 대축제 할인권 25명"
+   ],
+   "rawText": "응모형태: 사진응모\n참여 방법\n1. K푸드페스타 인증샷\n2. SNS 업로드",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -81982,6 +83148,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "아메리카노 쿠폰",
+   "rawText": "응모형태: 단순응모\n참여 방법\n1. 울산경제자유구역청 공식 SNS 팔로우",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -82322,6 +83489,11 @@
    "place": null,
    "platHint": "insta",
    "prize": "네이버페이 포인트 1만원.. 5명 25명",
+   "prizeAll": [
+    "네이버페이 포인트 1만원권 5명",
+    "메가MGC커피 아메리카노 쿠폰 20명"
+   ],
+   "rawText": "응모형태: 설문/투표\n참여 방법\n1. 프로필 구글폼\n2. 캐릭터 2개 선택 제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -82405,6 +83577,7 @@
    "end": "2026-11-17",
    "endTime": null,
    "firstSeen": "2026-11-06",
+   "formChecked": "2026-11-09",
    "form_url": null,
    "grade": "C",
    "id": "eh-f8727ec2ff",
@@ -82428,7 +83601,8 @@
    "restriction_reason": null,
    "src": "eh",
    "srcUrls": [
-    "https://www.eventhouse.kr/site/view.php?no=319463"
+    "https://www.eventhouse.kr/site/view.php?no=319463",
+    "https://www.edunet.net/eventInfo/view/193/8278"
    ],
    "start": "2026-11-04",
    "status": "active",
@@ -82437,11 +83611,9 @@
     "설문·동의",
     "11문항 답변·제출"
    ],
-   "tags": [
-    "원문 미확인"
-   ],
+   "tags": [],
    "title": "에듀넷 설문 참여하고 GS25상품권 받자 이벤트!!",
-   "url": "https://www.eventhouse.kr/site/view.php?no=319463",
+   "url": "https://www.edunet.net/eventInfo/view/193/8278",
    "who": null
   },
   "eh-f8738996e6": {
@@ -82812,6 +83984,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "GS25 모바일 상품권 5천원권 100명",
+   "rawText": "응모형태: 단순응모\n참여 방법\n1. 영상 시청\n2. 좋아요 캡처\n3. 구글폼 제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -82958,6 +84131,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "메가커피 HOT 아메리카노 모바일 쿠폰 100명",
+   "rawText": "응모형태: 설문/투표\n참여 방법\n1. 네이버폼 설문 제출 후\n2. 참여완료 댓글",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -83250,6 +84424,12 @@
    "place": null,
    "platHint": "insta",
    "prize": "티빙 스탠다드 1개월 이용.. 60명 95명",
+   "prizeAll": [
+    "티빙 스탠다드 1개월 이용권 60명",
+    "롯데시네마 2D 2인 관람권 2장 30명",
+    "씨네드쉐프 10만원권 5명"
+   ],
+   "rawText": "응모형태: 참여인증\n참여 방법\n1. OTT설정\n2. 캡처\n3. 인증·서약제출\n4. 공유",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -83446,6 +84626,11 @@
    "place": null,
    "platHint": "insta",
    "prize": "CU편의점 기프티콘 1만원권.. 300명 350명",
+   "prizeAll": [
+    "CU편의점 기프티콘 1만원권 300명",
+    "신세계백화점 상품권 5만원권 50명"
+   ],
+   "rawText": "응모형태: 퀴즈/퍼즐\n참여 방법\n1. 양쪽 팔로우\n2. 정답 댓글\n3. 친구 공유",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -83589,6 +84774,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "메가커피 아메리카노 100명",
+   "rawText": "응모형태: 후기/리뷰\n참여 방법\n1. 앱 이용\n2. 별점·리뷰\n3. 링크로 응모",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -83620,7 +84806,10 @@
    "end": "2026-11-13",
    "endTime": null,
    "firstSeen": "2026-10-27",
-   "form_url": null,
+   "formLinks": [
+    "https://docs.google.com/forms/d/e/1FAIpQLSc17em8N_khhbor5NQY_Tcb7e4yfpF7cnRiMzDJcbeD862iCA/viewform"
+   ],
+   "form_url": "https://docs.google.com/forms/d/e/1FAIpQLSc17em8N_khhbor5NQY_Tcb7e4yfpF7cnRiMzDJcbeD862iCA/viewform",
    "grade": "C",
    "id": "eh-fc9c4e45bd",
    "is_restricted": false,
@@ -83637,12 +84826,14 @@
    "place": null,
    "platHint": "insta",
    "prize": "모바일 커피 쿠폰 500명",
+   "rawText": "응모형태: 설문/투표\n참여 방법\n1. 설문 링크 접속\n2. 책이음 인지도·이용경험 응답\n3. 제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
    "src": "eh",
    "srcUrls": [
-    "https://www.eventhouse.kr/site/view.php?no=317538"
+    "https://www.eventhouse.kr/site/view.php?no=317538",
+    "https://www.instagram.com/p/DeiYLnBGKUw/"
    ],
    "start": "2026-10-15",
    "status": "active",
@@ -83651,11 +84842,9 @@
     "책이음 인지도·이용경험 응답",
     "제출"
    ],
-   "tags": [
-    "원문 미확인"
-   ],
+   "tags": [],
    "title": "책이음서비스 인지도 설문하고 커피쿠폰 챙기자 이벤트!!",
-   "url": "https://www.eventhouse.kr/site/view.php?no=317538",
+   "url": "https://www.instagram.com/p/DeiYLnBGKUw/",
    "who": null
   },
   "eh-fcba05b6fe": {
@@ -83832,6 +85021,11 @@
    "place": null,
    "platHint": "yt",
    "prize": "치킨 상품권",
+   "prizeAll": [
+    "치킨 상품권",
+    "투썸플레이스 1만원권",
+    "GS25 상품권"
+   ],
    "rawText": "응모형태: 댓글/단문\n참여 방법\n1. 유튜브 구독\n2. 구독 화면 캡쳐\n3. 폼제출",
    "reasons": [],
    "restriction_note": null,
@@ -84027,6 +85221,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "모바일 상품권 1만원권 300명",
+   "rawText": "응모형태: 단순응모\n참여 방법\n1. 링크 접속\n2. 자격확인\n3. 응모 후 폼 제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -84124,6 +85319,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "모바일 상품권 5천원권 100명",
+   "rawText": "응모형태: 댓글/단문\n참여 방법\n1. 좋아요\n2. 응원댓글\n3. 친구에겏 공유",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -84366,6 +85562,7 @@
    "place": null,
    "platHint": "insta",
    "prize": "네이버페이 5천원권 100명",
+   "rawText": "응모형태: 설문/투표\n참여 방법\n1. 누리집 공지\n2. 우리말 명칭 구글폼 제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -89073,6 +90270,12 @@
    "org": "한국부동산원",
    "place": null,
    "prize": "피자 20·치킨 20·커피 160명",
+   "prizeAll": [
+    "피자세트 20명",
+    "치킨세트 20명",
+    "커피쿠폰 160명"
+   ],
+   "rawText": "응모형태: 설문/투표\n참여 방법\n1. 신고센터 접속\n2. 설문 클릭\n3. 답변 제출",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
@@ -90165,6 +91368,55 @@
    "url": "https://www.instagram.com/p/DeqI33gkvbs/",
    "who": null
   },
+  "ki-0d7ceca91d": {
+   "announce": "2026-11-17",
+   "cand": true,
+   "checked": null,
+   "count": 400,
+   "elec": [],
+   "elec_models": [],
+   "end": "2026-11-11",
+   "endTime": null,
+   "firstSeen": "2026-11-09",
+   "formLinks": [],
+   "form_url": null,
+   "grade": "C",
+   "id": "ki-0d7ceca91d",
+   "is_restricted": false,
+   "kind": "설문",
+   "lastSeen": "2026-11-09",
+   "linkChecked": "2026-11-09",
+   "linkStatus": "skip",
+   "listUrl": null,
+   "max": null,
+   "min": null,
+   "mode": null,
+   "needs": [
+    "응모 양식: https://answer.moaform.com/answers/WaAmDj"
+   ],
+   "org": "한국보건산업진..",
+   "place": null,
+   "platHint": "insta",
+   "prize": "커피 모바일 쿠폰 400명",
+   "rawText": "응모형태: 설문/투표\n참여 방법\n1. 모아폼 접속\n2. 만족도 설문 작성·제출",
+   "reasons": [],
+   "restriction_note": null,
+   "restriction_reason": null,
+   "src": "ki",
+   "srcUrls": [
+    "https://www.instagram.com/p/DfG8-ZNBhvL/"
+   ],
+   "start": "2026-10-29",
+   "status": "active",
+   "steps": [
+    "모아폼 접속",
+    "만족도 설문 작성·제출"
+   ],
+   "tags": [],
+   "title": "바이오헬스 설문하고 커피쿠폰 받자 이벤트!!",
+   "url": "https://www.instagram.com/p/DfG8-ZNBhvL/",
+   "who": null
+  },
   "ki-0e3bc766f1": {
    "announce": "2026-11-09",
    "cand": true,
@@ -90302,7 +91554,8 @@
    "restriction_reason": null,
    "src": "ki",
    "srcUrls": [
-    "https://www.instagram.com/p/DfWq4Q3D_KY/"
+    "https://www.instagram.com/p/DfWq4Q3D_KY/",
+    "https://www.eventhouse.kr/site/view.php?no=319627"
    ],
    "start": "2026-11-08",
    "status": "active",
@@ -91872,7 +93125,8 @@
    "restriction_reason": null,
    "src": "ki",
    "srcUrls": [
-    "https://www.instagram.com/p/DfY_h-BBBUs/"
+    "https://www.instagram.com/p/DfY_h-BBBUs/",
+    "https://www.eventhouse.kr/site/view.php?no=319626"
    ],
    "start": "2026-11-06",
    "status": "active",
@@ -93449,7 +94703,8 @@
    "restriction_reason": null,
    "src": "ki",
    "srcUrls": [
-    "https://www.instagram.com/p/DfT5RVBo7qF/"
+    "https://www.instagram.com/p/DfT5RVBo7qF/",
+    "https://www.eventhouse.kr/site/view.php?no=319629"
    ],
    "start": "2026-11-04",
    "status": "active",
@@ -93593,7 +94848,8 @@
    "restriction_reason": null,
    "src": "ki",
    "srcUrls": [
-    "https://www.instagram.com/p/DfRZxyfjdGk/"
+    "https://www.instagram.com/p/DfRZxyfjdGk/",
+    "https://www.eventhouse.kr/site/view.php?no=319632"
    ],
    "start": "2026-11-03",
    "status": "active",
@@ -94592,13 +95848,18 @@
    "place": null,
    "platHint": "insta",
    "prize": "레모나산 카카오프렌.. 20명",
+   "prizeAll": [
+    "레모나산 카카오프렌즈 제품 10명",
+    "네이버페이 포인트 쿠폰 1만원권 10명"
+   ],
    "rawText": "응모형태: 댓글/단문 북마크\n참여 방법\n1. 팔로우\n2. 번호·응원댓글\n3. 친구태그",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": null,
    "src": "ki",
    "srcUrls": [
-    "https://www.instagram.com/p/DfTw-wny7IM/"
+    "https://www.instagram.com/p/DfTw-wny7IM/",
+    "https://www.eventhouse.kr/site/view.php?no=319630"
    ],
    "start": "2026-11-04",
    "status": "active",
@@ -96499,6 +97760,54 @@
    "url": "https://www.instagram.com/p/DfUB_a4DaGw/",
    "who": null
   },
+  "ki-a6235a45bf": {
+   "announce": "2026-12-15",
+   "cand": true,
+   "checked": null,
+   "count": 25,
+   "elec": [],
+   "elec_models": [],
+   "end": "2026-12-11",
+   "endTime": null,
+   "firstSeen": "2026-11-09",
+   "formLinks": [
+    "https://docs.google.com/forms/d/e/1FAIpQLSdpunerOPU-D1IKLAAgGghgPuk7d4FavxckYI3LBLu521DrFw/viewform"
+   ],
+   "form_url": "https://docs.google.com/forms/d/e/1FAIpQLSdpunerOPU-D1IKLAAgGghgPuk7d4FavxckYI3LBLu521DrFw/viewform",
+   "grade": "C",
+   "id": "ki-a6235a45bf",
+   "is_restricted": false,
+   "kind": "설문",
+   "lastSeen": "2026-11-09",
+   "linkChecked": "2026-11-09",
+   "linkStatus": "skip",
+   "listUrl": null,
+   "max": null,
+   "min": null,
+   "mode": null,
+   "needs": [
+    "응모 양식: https://docs.google.com/forms/d/e/1FAIpQLSdpunerOPU-D1IKLAAgGghgPuk7d4FavxckYI3LBLu521DrFw/viewform"
+   ],
+   "org": "한국청소년활동..",
+   "place": null,
+   "platHint": "insta",
+   "prize": "온라인 상품권 1만원 25명",
+   "rawText": "응모형태: 설문/투표\n참여 방법",
+   "reasons": [],
+   "restriction_note": null,
+   "restriction_reason": null,
+   "src": "ki",
+   "srcUrls": [
+    "https://www.instagram.com/p/DR_sNgsEz5d/"
+   ],
+   "start": "2026-12-08",
+   "status": "active",
+   "steps": [],
+   "tags": [],
+   "title": "정책과제 발굴결과 공유 경품이벤트!!",
+   "url": "https://www.instagram.com/p/DR_sNgsEz5d/",
+   "who": null
+  },
   "ki-a6300c7f55": {
    "announce": "2026-10-29",
    "cand": true,
@@ -96939,7 +98248,8 @@
    "restriction_reason": null,
    "src": "ki",
    "srcUrls": [
-    "https://www.instagram.com/p/DfTNqH-AVXd/"
+    "https://www.instagram.com/p/DfTNqH-AVXd/",
+    "https://www.eventhouse.kr/site/view.php?no=319631"
    ],
    "start": "2026-11-04",
    "status": "active",
@@ -99780,7 +101090,8 @@
    "restriction_reason": null,
    "src": "ki",
    "srcUrls": [
-    "https://www.instagram.com/p/DfgUNxhiqZF/"
+    "https://www.instagram.com/p/DfgUNxhiqZF/",
+    "https://www.eventhouse.kr/site/view.php?no=319623"
    ],
    "start": "2026-11-09",
    "status": "active",
@@ -106740,6 +108051,7 @@
    "place": null,
    "platHint": null,
    "prize": "로얄참치회 (58,000원 상당/포장체험) (체험 제공, 5명 모집)",
+   "rawText": "송파역\n탑참치\n로얄참치회 (58,000원 상당/포장체험)",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": "현장 방문 필요: 매장 방문·포장 체험단",
@@ -108035,6 +109347,7 @@
    "place": null,
    "platHint": null,
    "prize": "스폐셜 60분 이용권 (10만원 상당) (체험 제공, 5명 모집)",
+   "rawText": "강남역\n한국풍수컨설팅협회\n스폐셜 60분 이용권 (10만원 상당)",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": "현장 방문 필요: 매장 방문·포장 체험단",
@@ -110438,6 +111751,7 @@
    "place": null,
    "platHint": null,
    "prize": "1. 월남쌈샤브 2인 + 고기 1인분 (체험 제공, 5명 모집)",
+   "rawText": "수원 권선동\n소담촌 롯데마트수원권선점\n1. 월남쌈샤브 2인 + 고기 1인분\n2. 와규샤브 2인\n3. 버섯샤브 2인\n4. 얼큰미나리샤브 2인\n중 택 1\n- 블로그리뷰 + 영수증리뷰 작성 필수 캠페인입니다\n** 캠페인미션 확인 후 진행 필수",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": "현장 방문 필요: 매장 방문·포장 체험단",
@@ -111828,6 +113142,7 @@
    "place": null,
    "platHint": null,
    "prize": "헤어라인 smp or 가르마 smp 중 택1 (체험 제공, 5명 모집)",
+   "rawText": "대전 둔산동\n컨투어비\n헤어라인 smp or 가르마 smp 중 택1",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": "현장 방문 필요: 매장 방문·포장 체험단",
@@ -113073,6 +114388,7 @@
    "place": null,
    "platHint": null,
    "prize": "94.000원 식사권 (체험 제공, 5명 모집)",
+   "rawText": "부산 광안리\n조개대표 광안본점\n94.000원 식사권\n* 웨이팅 중일 시 웨이팅 등록 후 식사 가능한점 참고부탁드립니다",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": "현장 방문 필요: 매장 방문·포장 체험단",
@@ -113564,7 +114880,7 @@
    "id": "mb-9dc437b154",
    "is_restricted": true,
    "kind": "체험단",
-   "lastSeen": "2026-11-08",
+   "lastSeen": "2026-11-09",
    "linkChecked": "2026-11-09",
    "linkFail": 0,
    "linkStatus": "ok",
@@ -113580,6 +114896,7 @@
    "place": null,
    "platHint": null,
    "prize": "2인 식사권 (1인 9만원 상당 제공 > 2인 18만원 상당 제공 ) (체험 제공, 5명 모집)",
+   "rawText": "삼성역\n사조회참치 삼성점\n2인 식사권 (1인 9만원 상당 제공 > 2인 18만원 상당 제공 )\n** 저녁 체험\n** 당첨 후 3일 내 예약조율 필수 미션 !!",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": "현장 방문 필요: 매장 방문·포장 체험단",
@@ -114733,6 +116050,7 @@
    "place": null,
    "platHint": null,
    "prize": "4만원 식사권 (체험 제공, 5명 모집)",
+   "rawText": "창원 진해\n고단수 진해점\n4만원 식사권",
    "reasons": [],
    "restriction_note": null,
    "restriction_reason": "현장 방문 필요: 매장 방문·포장 체험단",
@@ -194504,7 +195822,7 @@
    "is_restricted": true,
    "kind": "체험단",
    "lastSeen": "2026-11-07",
-   "linkChecked": "2026-11-08",
+   "linkChecked": "2026-11-09",
    "linkFail": 0,
    "linkStatus": "ok",
    "listUrl": null,
@@ -194552,7 +195870,7 @@
    "is_restricted": true,
    "kind": "체험단",
    "lastSeen": "2026-10-30",
-   "linkChecked": "2026-11-08",
+   "linkChecked": "2026-11-09",
    "linkFail": 0,
    "linkStatus": "ok",
    "listUrl": null,
@@ -194600,7 +195918,7 @@
    "is_restricted": true,
    "kind": "체험단",
    "lastSeen": "2026-11-09",
-   "linkChecked": "2026-11-08",
+   "linkChecked": "2026-11-09",
    "linkFail": 0,
    "linkStatus": "ok",
    "listUrl": null,
@@ -194742,7 +196060,7 @@
    "is_restricted": true,
    "kind": "체험단",
    "lastSeen": "2026-11-05",
-   "linkChecked": "2026-11-08",
+   "linkChecked": "2026-11-09",
    "linkFail": 0,
    "linkStatus": "ok",
    "listUrl": null,
@@ -194839,7 +196157,7 @@
    "is_restricted": true,
    "kind": "체험단",
    "lastSeen": "2026-11-02",
-   "linkChecked": "2026-11-08",
+   "linkChecked": "2026-11-09",
    "linkFail": 0,
    "linkStatus": "ok",
    "listUrl": null,
@@ -194887,7 +196205,7 @@
    "is_restricted": true,
    "kind": "체험단",
    "lastSeen": "2026-11-04",
-   "linkChecked": "2026-11-08",
+   "linkChecked": "2026-11-09",
    "linkFail": 0,
    "linkStatus": "ok",
    "listUrl": null,
@@ -194935,7 +196253,7 @@
    "is_restricted": true,
    "kind": "체험단",
    "lastSeen": "2026-11-03",
-   "linkChecked": "2026-11-08",
+   "linkChecked": "2026-11-09",
    "linkFail": 0,
    "linkStatus": "ok",
    "listUrl": null,
@@ -194983,7 +196301,7 @@
    "is_restricted": true,
    "kind": "체험단",
    "lastSeen": "2026-11-05",
-   "linkChecked": "2026-11-08",
+   "linkChecked": "2026-11-09",
    "linkFail": 0,
    "linkStatus": "ok",
    "listUrl": null,
@@ -195031,7 +196349,7 @@
    "is_restricted": true,
    "kind": "체험단",
    "lastSeen": "2026-11-03",
-   "linkChecked": "2026-11-08",
+   "linkChecked": "2026-11-09",
    "linkFail": 0,
    "linkStatus": "ok",
    "listUrl": null,
@@ -195079,7 +196397,7 @@
    "is_restricted": true,
    "kind": "체험단",
    "lastSeen": "2026-11-08",
-   "linkChecked": "2026-11-08",
+   "linkChecked": "2026-11-09",
    "linkFail": 0,
    "linkStatus": "ok",
    "listUrl": null,
@@ -195271,7 +196589,7 @@
    "is_restricted": true,
    "kind": "체험단",
    "lastSeen": "2026-11-08",
-   "linkChecked": "2026-11-08",
+   "linkChecked": "2026-11-09",
    "linkFail": 0,
    "linkStatus": "ok",
    "listUrl": null,
@@ -195319,7 +196637,7 @@
    "is_restricted": true,
    "kind": "체험단",
    "lastSeen": "2026-11-01",
-   "linkChecked": "2026-11-08",
+   "linkChecked": "2026-11-09",
    "linkFail": 0,
    "linkStatus": "ok",
    "listUrl": null,
@@ -195367,7 +196685,7 @@
    "is_restricted": true,
    "kind": "체험단",
    "lastSeen": "2026-11-05",
-   "linkChecked": "2026-11-08",
+   "linkChecked": "2026-11-09",
    "linkFail": 0,
    "linkStatus": "ok",
    "listUrl": null,
@@ -195463,7 +196781,7 @@
    "is_restricted": true,
    "kind": "체험단",
    "lastSeen": "2026-10-31",
-   "linkChecked": "2026-11-08",
+   "linkChecked": "2026-11-09",
    "linkFail": 0,
    "linkStatus": "ok",
    "listUrl": null,
@@ -195560,7 +196878,7 @@
    "is_restricted": true,
    "kind": "체험단",
    "lastSeen": "2026-10-30",
-   "linkChecked": "2026-11-08",
+   "linkChecked": "2026-11-09",
    "linkFail": 0,
    "linkStatus": "ok",
    "listUrl": null,
@@ -195608,7 +196926,7 @@
    "is_restricted": true,
    "kind": "체험단",
    "lastSeen": "2026-11-08",
-   "linkChecked": "2026-11-08",
+   "linkChecked": "2026-11-09",
    "linkFail": 0,
    "linkStatus": "ok",
    "listUrl": null,
@@ -195656,7 +196974,7 @@
    "is_restricted": true,
    "kind": "체험단",
    "lastSeen": "2026-10-30",
-   "linkChecked": "2026-11-08",
+   "linkChecked": "2026-11-09",
    "linkFail": 0,
    "linkStatus": "ok",
    "listUrl": null,
@@ -195704,7 +197022,7 @@
    "is_restricted": true,
    "kind": "체험단",
    "lastSeen": "2026-11-06",
-   "linkChecked": "2026-11-08",
+   "linkChecked": "2026-11-09",
    "linkFail": 0,
    "linkStatus": "ok",
    "listUrl": null,
@@ -195752,7 +197070,7 @@
    "is_restricted": true,
    "kind": "체험단",
    "lastSeen": "2026-10-30",
-   "linkChecked": "2026-11-08",
+   "linkChecked": "2026-11-09",
    "linkFail": 0,
    "linkStatus": "ok",
    "listUrl": null,
@@ -195800,7 +197118,7 @@
    "is_restricted": true,
    "kind": "체험단",
    "lastSeen": "2026-10-30",
-   "linkChecked": "2026-11-08",
+   "linkChecked": "2026-11-09",
    "linkFail": 0,
    "linkStatus": "ok",
    "listUrl": null,
@@ -195848,7 +197166,7 @@
    "is_restricted": true,
    "kind": "체험단",
    "lastSeen": "2026-11-08",
-   "linkChecked": "2026-11-08",
+   "linkChecked": "2026-11-09",
    "linkFail": 0,
    "linkStatus": "ok",
    "listUrl": null,
@@ -195896,7 +197214,7 @@
    "is_restricted": true,
    "kind": "체험단",
    "lastSeen": "2026-11-04",
-   "linkChecked": "2026-11-08",
+   "linkChecked": "2026-11-09",
    "linkFail": 0,
    "linkStatus": "ok",
    "listUrl": null,
@@ -195944,7 +197262,7 @@
    "is_restricted": true,
    "kind": "체험단",
    "lastSeen": "2026-10-30",
-   "linkChecked": "2026-11-08",
+   "linkChecked": "2026-11-09",
    "linkFail": 0,
    "linkStatus": "ok",
    "listUrl": null,
@@ -196038,7 +197356,7 @@
    "is_restricted": true,
    "kind": "체험단",
    "lastSeen": "2026-11-02",
-   "linkChecked": "2026-11-08",
+   "linkChecked": "2026-11-09",
    "linkFail": 0,
    "linkStatus": "ok",
    "listUrl": null,
@@ -196086,7 +197404,7 @@
    "is_restricted": true,
    "kind": "체험단",
    "lastSeen": "2026-11-07",
-   "linkChecked": "2026-11-08",
+   "linkChecked": "2026-11-09",
    "linkFail": 0,
    "linkStatus": "ok",
    "listUrl": null,
@@ -196134,7 +197452,7 @@
    "is_restricted": false,
    "kind": "체험단",
    "lastSeen": "2026-11-03",
-   "linkChecked": "2026-11-08",
+   "linkChecked": "2026-11-09",
    "linkFail": 0,
    "linkStatus": "ok",
    "listUrl": null,
@@ -196228,7 +197546,7 @@
    "is_restricted": true,
    "kind": "체험단",
    "lastSeen": "2026-11-01",
-   "linkChecked": "2026-11-08",
+   "linkChecked": "2026-11-09",
    "linkFail": 0,
    "linkStatus": "ok",
    "listUrl": null,
@@ -196373,7 +197691,7 @@
    "is_restricted": true,
    "kind": "체험단",
    "lastSeen": "2026-11-04",
-   "linkChecked": "2026-11-08",
+   "linkChecked": "2026-11-09",
    "linkFail": 0,
    "linkStatus": "ok",
    "listUrl": null,
@@ -196470,7 +197788,7 @@
    "is_restricted": false,
    "kind": "체험단",
    "lastSeen": "2026-11-03",
-   "linkChecked": "2026-11-08",
+   "linkChecked": "2026-11-09",
    "linkFail": 0,
    "linkStatus": "ok",
    "listUrl": null,
@@ -196517,7 +197835,7 @@
    "is_restricted": true,
    "kind": "체험단",
    "lastSeen": "2026-11-07",
-   "linkChecked": "2026-11-08",
+   "linkChecked": "2026-11-09",
    "linkFail": 0,
    "linkStatus": "ok",
    "listUrl": null,
@@ -196613,7 +197931,7 @@
    "is_restricted": true,
    "kind": "체험단",
    "lastSeen": "2026-11-03",
-   "linkChecked": "2026-11-08",
+   "linkChecked": "2026-11-09",
    "linkFail": 0,
    "linkStatus": "ok",
    "listUrl": null,
@@ -196661,7 +197979,7 @@
    "is_restricted": true,
    "kind": "체험단",
    "lastSeen": "2026-11-03",
-   "linkChecked": "2026-11-08",
+   "linkChecked": "2026-11-09",
    "linkFail": 0,
    "linkStatus": "ok",
    "listUrl": null,
@@ -196709,7 +198027,7 @@
    "is_restricted": true,
    "kind": "체험단",
    "lastSeen": "2026-11-03",
-   "linkChecked": "2026-11-08",
+   "linkChecked": "2026-11-09",
    "linkFail": 0,
    "linkStatus": "ok",
    "listUrl": null,
@@ -196757,7 +198075,7 @@
    "is_restricted": true,
    "kind": "체험단",
    "lastSeen": "2026-11-07",
-   "linkChecked": "2026-11-08",
+   "linkChecked": "2026-11-09",
    "linkFail": 0,
    "linkStatus": "ok",
    "listUrl": null,
@@ -196805,7 +198123,7 @@
    "is_restricted": true,
    "kind": "체험단",
    "lastSeen": "2026-11-06",
-   "linkChecked": "2026-11-08",
+   "linkChecked": "2026-11-09",
    "linkFail": 0,
    "linkStatus": "ok",
    "listUrl": null,
@@ -196901,7 +198219,7 @@
    "is_restricted": true,
    "kind": "체험단",
    "lastSeen": "2026-11-02",
-   "linkChecked": "2026-11-08",
+   "linkChecked": "2026-11-09",
    "linkFail": 0,
    "linkStatus": "ok",
    "listUrl": null,
@@ -196997,7 +198315,7 @@
    "is_restricted": true,
    "kind": "체험단",
    "lastSeen": "2026-11-07",
-   "linkChecked": "2026-11-08",
+   "linkChecked": "2026-11-09",
    "linkFail": 0,
    "linkStatus": "ok",
    "listUrl": null,
@@ -197045,7 +198363,7 @@
    "is_restricted": true,
    "kind": "체험단",
    "lastSeen": "2026-11-01",
-   "linkChecked": "2026-11-08",
+   "linkChecked": "2026-11-09",
    "linkFail": 0,
    "linkStatus": "ok",
    "listUrl": null,
@@ -197139,7 +198457,7 @@
    "is_restricted": true,
    "kind": "체험단",
    "lastSeen": "2026-10-30",
-   "linkChecked": "2026-11-08",
+   "linkChecked": "2026-11-09",
    "linkFail": 0,
    "linkStatus": "ok",
    "listUrl": null,
@@ -197283,7 +198601,7 @@
    "is_restricted": true,
    "kind": "체험단",
    "lastSeen": "2026-11-03",
-   "linkChecked": "2026-11-08",
+   "linkChecked": "2026-11-09",
    "linkFail": 0,
    "linkStatus": "ok",
    "listUrl": null,
@@ -197331,7 +198649,7 @@
    "is_restricted": true,
    "kind": "체험단",
    "lastSeen": "2026-10-30",
-   "linkChecked": "2026-11-08",
+   "linkChecked": "2026-11-09",
    "linkFail": 0,
    "linkStatus": "ok",
    "listUrl": null,
@@ -197379,7 +198697,7 @@
    "is_restricted": true,
    "kind": "체험단",
    "lastSeen": "2026-10-30",
-   "linkChecked": "2026-11-08",
+   "linkChecked": "2026-11-09",
    "linkFail": 0,
    "linkStatus": "ok",
    "listUrl": null,
@@ -197427,7 +198745,7 @@
    "is_restricted": true,
    "kind": "체험단",
    "lastSeen": "2026-11-01",
-   "linkChecked": "2026-11-08",
+   "linkChecked": "2026-11-09",
    "linkFail": 0,
    "linkStatus": "ok",
    "listUrl": null,
@@ -197475,7 +198793,7 @@
    "is_restricted": true,
    "kind": "체험단",
    "lastSeen": "2026-11-01",
-   "linkChecked": "2026-11-08",
+   "linkChecked": "2026-11-09",
    "linkFail": 0,
    "linkStatus": "ok",
    "listUrl": null,
@@ -197523,7 +198841,7 @@
    "is_restricted": false,
    "kind": "체험단",
    "lastSeen": "2026-11-06",
-   "linkChecked": "2026-11-08",
+   "linkChecked": "2026-11-09",
    "linkFail": 0,
    "linkStatus": "ok",
    "listUrl": null,
@@ -197569,7 +198887,7 @@
    "is_restricted": true,
    "kind": "체험단",
    "lastSeen": "2026-11-03",
-   "linkChecked": "2026-11-08",
+   "linkChecked": "2026-11-09",
    "linkFail": 0,
    "linkStatus": "ok",
    "listUrl": null,
@@ -197617,7 +198935,7 @@
    "is_restricted": true,
    "kind": "체험단",
    "lastSeen": "2026-11-08",
-   "linkChecked": "2026-11-08",
+   "linkChecked": "2026-11-09",
    "linkFail": 0,
    "linkStatus": "ok",
    "listUrl": null,
@@ -197763,7 +199081,7 @@
    "is_restricted": true,
    "kind": "체험단",
    "lastSeen": "2026-11-08",
-   "linkChecked": "2026-11-08",
+   "linkChecked": "2026-11-09",
    "linkFail": 0,
    "linkStatus": "ok",
    "listUrl": null,
@@ -197811,7 +199129,7 @@
    "is_restricted": true,
    "kind": "체험단",
    "lastSeen": "2026-10-30",
-   "linkChecked": "2026-11-08",
+   "linkChecked": "2026-11-09",
    "linkFail": 0,
    "linkStatus": "ok",
    "listUrl": null,
@@ -197955,7 +199273,7 @@
    "is_restricted": true,
    "kind": "체험단",
    "lastSeen": "2026-11-07",
-   "linkChecked": "2026-11-08",
+   "linkChecked": "2026-11-09",
    "linkFail": 0,
    "linkStatus": "ok",
    "listUrl": null,
@@ -198003,7 +199321,7 @@
    "is_restricted": true,
    "kind": "체험단",
    "lastSeen": "2026-11-07",
-   "linkChecked": "2026-11-08",
+   "linkChecked": "2026-11-09",
    "linkFail": 0,
    "linkStatus": "ok",
    "listUrl": null,
@@ -198051,7 +199369,7 @@
    "is_restricted": false,
    "kind": "체험단",
    "lastSeen": "2026-11-04",
-   "linkChecked": "2026-11-08",
+   "linkChecked": "2026-11-09",
    "linkFail": 0,
    "linkStatus": "ok",
    "listUrl": null,
@@ -198098,7 +199416,7 @@
    "is_restricted": true,
    "kind": "체험단",
    "lastSeen": "2026-10-31",
-   "linkChecked": "2026-11-08",
+   "linkChecked": "2026-11-09",
    "linkFail": 0,
    "linkStatus": "ok",
    "listUrl": null,
@@ -198194,7 +199512,7 @@
    "is_restricted": true,
    "kind": "체험단",
    "lastSeen": "2026-11-03",
-   "linkChecked": "2026-11-08",
+   "linkChecked": "2026-11-09",
    "linkFail": 0,
    "linkStatus": "ok",
    "listUrl": null,
@@ -198242,7 +199560,7 @@
    "is_restricted": true,
    "kind": "체험단",
    "lastSeen": "2026-10-30",
-   "linkChecked": "2026-11-08",
+   "linkChecked": "2026-11-09",
    "linkFail": 0,
    "linkStatus": "ok",
    "listUrl": null,
@@ -198386,7 +199704,7 @@
    "is_restricted": true,
    "kind": "체험단",
    "lastSeen": "2026-11-08",
-   "linkChecked": "2026-11-08",
+   "linkChecked": "2026-11-09",
    "linkFail": 0,
    "linkStatus": "ok",
    "listUrl": null,
@@ -198434,7 +199752,7 @@
    "is_restricted": true,
    "kind": "체험단",
    "lastSeen": "2026-11-05",
-   "linkChecked": "2026-11-08",
+   "linkChecked": "2026-11-09",
    "linkFail": 0,
    "linkStatus": "ok",
    "listUrl": null,
@@ -198531,7 +199849,7 @@
    "is_restricted": true,
    "kind": "체험단",
    "lastSeen": "2026-11-07",
-   "linkChecked": "2026-11-08",
+   "linkChecked": "2026-11-09",
    "linkFail": 0,
    "linkStatus": "ok",
    "listUrl": null,
@@ -198628,7 +199946,7 @@
    "is_restricted": true,
    "kind": "체험단",
    "lastSeen": "2026-11-02",
-   "linkChecked": "2026-11-08",
+   "linkChecked": "2026-11-09",
    "linkFail": 0,
    "linkStatus": "ok",
    "listUrl": null,
@@ -198676,7 +199994,7 @@
    "is_restricted": true,
    "kind": "체험단",
    "lastSeen": "2026-11-08",
-   "linkChecked": "2026-11-08",
+   "linkChecked": "2026-11-09",
    "linkFail": 0,
    "linkStatus": "ok",
    "listUrl": null,
@@ -220901,6 +222219,6 @@
   }
  },
  "meta": {
-  "updated": "2026-11-09T18:45:20+09:00"
+  "updated": "2026-11-09T19:01:16+09:00"
  }
 }
