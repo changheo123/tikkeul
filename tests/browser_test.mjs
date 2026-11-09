@@ -80,6 +80,8 @@ try {
     check(`${label}: 가로 넘침·카드 깨짐 없음`, m.sw <= m.iw && m.over === 0 && m.cards > 0, `scrollWidth ${m.sw}/${m.iw}, 카드 ${m.cards}, 넘친 카드 ${m.over}`);
     const clip = await ev(`[...document.querySelectorAll('.pz')].filter(b => getComputedStyle(b).webkitLineClamp !== 'none' || b.scrollHeight > b.clientHeight + 1 || b.getBoundingClientRect().right > b.closest('.tk').getBoundingClientRect().right).length`);
     check(`${label}: 경품명 잘림 없음`, clip === 0, `잘린 카드 ${clip}`);
+    const head = await ev(`(() => { const a = document.querySelector('.logo').getBoundingClientRect(), b = document.getElementById('todayStat').getBoundingClientRect(), n = document.getElementById('nav').getBoundingClientRect(); return { gap: Math.round(b.left - a.right), right: Math.round(b.right), iw: innerWidth, nav: Math.round(n.left), fixed: getComputedStyle(document.getElementById('nav')).position === 'fixed' }; })()`);
+    check(`${label}: 제목 옆 현황 겹침 없음`, head.gap >= 0 && head.right <= head.iw && (head.fixed || head.right <= head.nav), JSON.stringify(head));
     check(`${label}: 터치 영역 44px 이상`, m.n === 0, m.small.join(" | "));
     const colsOk = mobile ? m.cols === 1 && m.nav === "fixed" : m.cols >= 2 && m.cols <= 3 && m.nav !== "fixed";
     check(`${label}: 열 수·메뉴 위치`, colsOk, `${m.cols}열, 메뉴 ${m.nav}`);
@@ -97,6 +99,8 @@ try {
     ld: JSON.parse(document.querySelector('script[type="application/ld+json"]').textContent).name, logo: document.querySelector('h1').textContent.trim().replace(/^티/, ''),
     img: document.querySelector('meta[property="og:image"]').content, chrome: document.querySelector('header').textContent + document.getElementById('tools').textContent + document.querySelector('.searchbar').textContent + document.getElementById('infoView').textContent })`);
   check("사이트명 변경(제목·설명·OG·구조화 데이터·로고)", brand.title.includes("티끌모아 티끌") && brand.desc.includes("티끌모아 티끌") && brand.og === "티끌모아 티끌" && brand.ld === "티끌모아 티끌" && brand.logo === "티끌모아 티끌" && /^https:.*assets\/og\.png$/.test(brand.img), JSON.stringify({ t: brand.title, l: brand.logo, i: brand.img }));
+  const stat = await ev(`({ text: document.getElementById('todayStat').textContent, all: DATA.events.filter(e => e.status !== 'ended' && (!e.end || e.end >= kstToday())).length, due: DATA.events.filter(e => e.end === kstToday() && e.status !== 'ended').length, date: kstToday().slice(5).replace('-', '.') })`);
+  check("제목 옆 날짜·전체 응모 가능 수·오늘 마감", stat.text.includes(stat.date) && stat.text.includes(`전체 ${stat.all.toLocaleString()}`) && stat.text.includes(`오늘 마감 ${stat.due.toLocaleString()}`), stat.text);
   check("옛 이름이 화면에 없음", !/틈틈|줍줍/.test(brand.title + brand.desc + brand.og + brand.chrome));
   for (const f of ["assets/icon-192.png", "assets/apple-touch-icon.png", "assets/og.png", "assets/site.webmanifest"]) {
     const st = await ev(`fetch(${JSON.stringify(f)}).then(r => r.status)`);
