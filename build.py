@@ -46,7 +46,7 @@ SOURCE_ROWS = [
 
 def site_url():
     """사이트 대표 주소. 저장소 이름이 바뀌어도 Actions가 알려 주는 저장소 이름을 따라간다."""
-    owner, name = os.environ.get("GITHUB_REPOSITORY", "changheo123/tikkeulmoa").split("/", 1)
+    owner, name = os.environ.get("GITHUB_REPOSITORY", "changheo123/tikkeul").split("/", 1)
     return f"https://{owner}.github.io/{name}/"
 
 
