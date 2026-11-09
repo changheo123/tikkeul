@@ -1,6 +1,18 @@
 {
  "alias": {
   "bs-91540dc991": "hub-bs-288",
+  "ck-3618382248": "eh-1f7c7c7a62",
+  "ck-5367b455bd": "eh-8c19323a9a",
+  "ck-6428cc964f": "eh-18cb5251e4",
+  "ck-8a2eb146cc": "ek-61188f2439",
+  "ck-94e13fd7ef": "eh-4031730980",
+  "ck-9c3674b0ec": "e182",
+  "ck-aed02ae896": "eh-8c65285dfb",
+  "ck-c640e39a9e": "eh-b2f1b6c495",
+  "ck-cf4a12ee1a": "eh-cfc4173ef5",
+  "ck-e27e06ba21": "ek-1e7b95c561",
+  "ck-ecd6d06204": "ek-097ccd4f03",
+  "ck-f014a6661b": "ek-a165fbd61c",
   "dn-0ef96bf327": "dn-e2477254db",
   "dn-7c06e3b5f1": "dn-a7ab923caf",
   "eh-014ee67409": "eh-5dd74482d2",
@@ -313,6 +325,7 @@
   "ki-0e31c7d43b": "eh-dc163687bb",
   "ki-0e5344f1a7": "eh-61da13df90",
   "ki-0e9e5b55c5": "eh-5381bcbc11",
+  "ki-0ee2b7b3ea": "ki-de802a9e77",
   "ki-0ef10d9166": "eh-1020eb1601",
   "ki-0f31c051b7": "eh-1e86e5be57",
   "ki-0f6364a4ce": "eh-1071ac0d74",
@@ -667,6 +680,7 @@
   "ki-5f2342660f": "hi10039",
   "ki-5fb2c5b973": "eh-aea47adc8d",
   "ki-5fd90e6cdc": "eh-e7ad0abb3f",
+  "ki-600884e305": "ki-ba4d5c855b",
   "ki-608bdb1c8f": "eh-58daf8d125",
   "ki-6096a0fa99": "eh-f6fd1dc0a9",
   "ki-60a350a0a8": "eh-5edc18c5bf",
@@ -726,6 +740,7 @@
   "ki-6b9f1364b0": "eh-4738c98329",
   "ki-6bdbd8aaf8": "eh-c977630157",
   "ki-6c1c6f2a55": "eh-999cd0bdd1",
+  "ki-6c5beb0b9c": "ki-6a8404fa58",
   "ki-6cb2b83dc5": "eh-1dbe858661",
   "ki-6cb34313e7": "eh-337cf72fa4",
   "ki-6cc1c907a5": "eh-afcef96715",
@@ -834,6 +849,7 @@
   "ki-8948bf92c2": "eh-36346bbba7",
   "ki-89629aa069": "eh-90159fe625",
   "ki-89c38d3254": "eh-2ad509acb8",
+  "ki-89c3c2fd95": "ki-de802a9e77",
   "ki-8a51968358": "eh-0ba26abd72",
   "ki-8a540ba85c": "eh-b8e862e45e",
   "ki-8a7570f67a": "eh-2915864d4a",
@@ -944,6 +960,7 @@
   "ki-a11ec45b66": "eh-b89d0fda7c",
   "ki-a11f9b1912": "eh-a560d0ffc4",
   "ki-a12541ef30": "eh-14bc6d247c",
+  "ki-a1301a9790": "eh-66b28a8e88",
   "ki-a17bda0dba": "eh-d626b00667",
   "ki-a240192fd0": "eh-2edaea8e1d",
   "ki-a25aeb060e": "eh-d8ea24a0f3",
@@ -953,6 +970,7 @@
   "ki-a2bcf2b5ea": "eh-2edddff87b",
   "ki-a320d2cdf9": "eh-7d17aeb275",
   "ki-a33b7a7fde": "eh-dae839929a",
+  "ki-a369cee474": "eh-488e3e5e6b",
   "ki-a422209d43": "eh-932e6a3129",
   "ki-a445f51435": "eh-dd76efcf2f",
   "ki-a46475c585": "eh-b413cedc93",
@@ -976,6 +994,7 @@
   "ki-a7faef8106": "eh-671b623a7c",
   "ki-a85e4796de": "eh-367fceb153",
   "ki-a8edc0ed55": "eh-7b84a59548",
+  "ki-a9a4effe7b": "ki-e64731d31f",
   "ki-a9baee33bc": "eh-cfc4173ef5",
   "ki-a9bdd5c501": "eh-89ebcee6d7",
   "ki-a9e8b4b4df": "eh-269527a9b0",
@@ -1025,6 +1044,7 @@
   "ki-b549d97443": "eh-402e9679f5",
   "ki-b59b371f6f": "eh-47ce9cd942",
   "ki-b5cf3e6019": "eh-e7e944dea8",
+  "ki-b61f9a6d48": "eh-f6928b0a41",
   "ki-b6433b79d0": "eh-46649832f7",
   "ki-b65af82695": "eh-94c1a0ea34",
   "ki-b666e00096": "eh-58bc93af37",
@@ -1054,6 +1074,7 @@
   "ki-babed05fa7": "eh-c83397a241",
   "ki-bac98b1cdc": "eh-8d2402fd3b",
   "ki-bae6fa513a": "eh-3d903c7b72",
+  "ki-bb1b3b5a88": "eh-889dd40f73",
   "ki-bb50c0ef68": "eh-44449dc426",
   "ki-bc6536292f": "eh-eac47767ca",
   "ki-bcac862839": "eh-099101499b",
@@ -1113,6 +1134,7 @@
   "ki-c6be6078ee": "eh-092adc70b9",
   "ki-c6d38dcfad": "eh-9fa65fe077",
   "ki-c717263325": "eh-6c1ca8a2bf",
+  "ki-c72994a810": "eh-fb4d3940a7",
   "ki-c77021e5e5": "eh-846c15f199",
   "ki-c780d47c95": "eh-e55ee0eb9a",
   "ki-c7d3d4b910": "eh-2a6fed2a76",
@@ -1127,6 +1149,7 @@
   "ki-c8eb5600d8": "eh-6dbb3bda1d",
   "ki-c8eeda1c1c": "hi9874",
   "ki-c8f7557399": "eh-ac194ad545",
+  "ki-c941f4575c": "eh-6f05a94c74",
   "ki-c971728911": "eh-f8738996e6",
   "ki-c97fa7ce0f": "eh-5381bcbc11",
   "ki-c9caf9cc98": "eh-e55ee0eb9a",
@@ -1146,6 +1169,7 @@
   "ki-cd3cf7daab": "eh-2a48923c70",
   "ki-cd40df202c": "eh-b46966f3e4",
   "ki-cd622a625a": "eh-be686a7941",
+  "ki-cda027d86f": "ki-ba4d5c855b",
   "ki-cdaf69fd50": "eh-e6a633c855",
   "ki-cdcef611f6": "eh-d2cedf64aa",
   "ki-cde874b842": "eh-47a2273db6",
@@ -1241,6 +1265,7 @@
   "ki-e0121bb38c": "eh-3bd1cd331a",
   "ki-e0308979d6": "eh-0a6e5eb518",
   "ki-e037839555": "eh-212a8bad0c",
+  "ki-e0541d7c16": "eh-ab88f8e425",
   "ki-e0e9031579": "eh-549ca39a93",
   "ki-e0f24b49bd": "eh-9c59672d3a",
   "ki-e12440dac5": "eh-cf7261cf5f",
@@ -1283,6 +1308,7 @@
   "ki-ea9404f791": "eh-3158d072e5",
   "ki-eaa3d65266": "eh-f350bc501b",
   "ki-ebbe84f23b": "eh-7e88c9d548",
+  "ki-ec53a1810b": "eh-b5a92fc581",
   "ki-ed4cdcd46a": "eh-37876c4b15",
   "ki-edc4b7358b": "eh-02157c92bd",
   "ki-ee338dda72": "eh-a3c23885a9",
@@ -1300,6 +1326,7 @@
   "ki-f117528c4d": "eh-9c940c6b39",
   "ki-f14e209d3a": "eh-419e664407",
   "ki-f15a111e88": "eh-d3fae3e207",
+  "ki-f15e6d5d3d": "eh-8fd05c5c4e",
   "ki-f19ac2ba51": "eh-e3d3765e48",
   "ki-f26bc52779": "eh-8691d6dae1",
   "ki-f2a60091a3": "eh-651d1ebad8",
@@ -1308,6 +1335,7 @@
   "ki-f3f054eaef": "eh-8050751908",
   "ki-f4194abdb7": "eh-e6285c0167",
   "ki-f41b4d7fd6": "eh-5e627fe8a5",
+  "ki-f4268b2de9": "eh-7332ff8965",
   "ki-f46c44068c": "eh-aa13d4b0df",
   "ki-f50a0b4d44": "eh-8353bcb25b",
   "ki-f5631a4f1e": "eh-cfb1778985",
@@ -1323,6 +1351,7 @@
   "ki-f83790b832": "eh-d50bf59c52",
   "ki-f8cb41e64a": "eh-f5be9852a6",
   "ki-f904026e18": "eh-0ffaf674f0",
+  "ki-f95e524578": "eh-9837637170",
   "ki-f991210a2d": "eh-bdc7ecd3a8",
   "ki-f9a849133f": "eh-1c75c29a81",
   "ki-f9b50c8bb5": "eh-25089a5f29",
@@ -1553,6 +1582,49 @@
   "te-31eb31bf7d": "hub-te-14170",
   "te-f55e014197": "hub-te-13478"
  },
+ "contestkorea": {
+  "parsed": {
+   "11558": "skip:이벤트 신호 없음",
+   "11723": "ck-513b39dbad",
+   "12249": "skip:유료 조건: 결제",
+   "12539": "ck-948bcb9918",
+   "12958": "ck-c640e39a9e",
+   "13008": "ck-aed02ae896",
+   "13033": "ck-df09c073e7",
+   "13042": "ck-f21c7ad9b4",
+   "13065": "ck-ecd6d06204",
+   "13070": "ck-2dfd5c2967",
+   "13084": "ck-9c3674b0ec",
+   "13089": "ck-5be38579f8",
+   "13093": "ck-6428cc964f",
+   "13098": "ck-cf4a12ee1a",
+   "13111": "skip:유료 조건: 구매,원 이상 구매,페이백",
+   "13114": "ck-3618382248",
+   "13122": "ck-b295ab412a",
+   "13128": "ck-5367b455bd",
+   "13129": "ck-1397e7199d",
+   "13131": "ck-ca136bc3b0",
+   "13132": "ck-e27e06ba21",
+   "13133": "ck-8a2eb146cc",
+   "13141": "ck-94e13fd7ef",
+   "13144": "skip:유료 조건: 결제",
+   "13147": "ck-f014a6661b",
+   "13149": "ck-3652d294ef",
+   "13157": "skip:공연초대",
+   "13159": "ck-7d8344daea",
+   "13161": "ck-083a016fbe",
+   "13166": "ck-f04b50754d",
+   "13167": "ck-9763e603c8",
+   "13168": "ck-a90e956c24",
+   "13169": "ck-282b32d553",
+   "13170": "ck-9376b18f9b",
+   "13171": "ck-a4b12e4483",
+   "13173": "ck-b2a5d26eee",
+   "13179": "ck-f04675cbc5",
+   "13180": "ck-2a7c139a19",
+   "13182": "ck-3c749b8b07"
+  }
+ },
  "eventhouse": {
   "lastFull": 1794218549.444453,
   "prizeAllDone": true
@@ -1685,6 +1757,7 @@
    "218": "ek-3d5bdf107d",
    "219": "ek-c0ba17c23a",
    "22": "ek-12c6fc06c9",
+   "220": "ek-f37062d9a6",
    "23": "ek-d435a6cdd7",
    "24": "ek-4d134bc072",
    "25": "ek-f6e1126ced",
@@ -1756,8 +1829,13 @@
    "99": "ek-9a79be611e"
   }
  },
+ "expand": {
+  "https://is.gd/maesilcontest": "https://script.google.com/macros/s/AKfycbylu_9QPFSTdMdD6AAEartmvcmmCvthS8ztnOkWAitRhgi75rCOqK4M-E7YTjjYP_yV/exec?from=contest",
+  "https://vo.la/O5a6KCv": "https://m.blog.naver.com/ok_hira/224442524892"
+ },
  "fails": {
   "busan": 0,
+  "contestkorea": 0,
   "danawa": 0,
   "eventhouse": 0,
   "eventhouse_search": 0,
@@ -1769,7 +1847,8 @@
   "mrblog": 0,
   "reviewnote": 0,
   "sbs": 0,
-  "touredu": 0
+  "touredu": 0,
+  "wevity": 0
  },
  "korissue": {
   "parents": {
@@ -1778,11 +1857,11 @@
     "kw": "%ED%95%9C%EA%B5%AD%EA%B5%90%EC%9C%A1%ED%95%99%EC%88%A0%EC%A0%95.."
    },
    "10056": {
-    "at": null,
+    "at": "2026-11-09",
     "kw": "%EC%84%9C%EC%9A%B8%EC%8B%9C%EC%9D%98%ED%9A%8C"
    },
    "11163": {
-    "at": null,
+    "at": "2026-11-09",
     "kw": "%EC%BD%94%EC%98%A4%EB%A1%B1"
    },
    "11172": {
@@ -1790,7 +1869,7 @@
     "kw": "%EC%84%9C%EC%9A%B8%EB%8C%80%EA%B3%B5%EC%9B%90"
    },
    "11317": {
-    "at": null,
+    "at": "2026-11-09",
     "kw": "Sh%EC%88%98%ED%98%91%EC%9D%80%ED%96%89"
    },
    "12063": {
@@ -1798,11 +1877,11 @@
     "kw": "%EA%B5%AD%EB%A6%BD%EC%A4%91%EC%95%99%EB%8F%84%EC%84%9C%EA%B4%80"
    },
    "12274": {
-    "at": null,
+    "at": "2026-11-09",
     "kw": "%EB%B9%84%EC%83%81%EA%B5%90%EC%9C%A1+%EB%A7%98%EC%95%A4%ED%86%A1.."
    },
    "1242": {
-    "at": null,
+    "at": "2026-11-09",
     "kw": "%EB%A7%A4%EC%9D%BC+%EC%95%B1%EC%86%94%EB%A3%A8%ED%8A%B8"
    },
    "12572": {
@@ -1818,7 +1897,7 @@
     "kw": "%ED%95%9C%EA%B5%AD%EC%8B%9D%ED%92%88%EC%95%88%EC%A0%84%EA%B4%80.."
    },
    "13325": {
-    "at": null,
+    "at": "2026-11-09",
     "kw": "%EC%82%BC%EC%96%91%EA%B7%B8%EB%A3%B9"
    },
    "14026": {
@@ -1826,11 +1905,11 @@
     "kw": "%EC%B2%AD%EC%A3%BC%EA%B8%B0%EC%83%81%EC%A7%80%EC%B2%AD"
    },
    "14379": {
-    "at": null,
+    "at": "2026-11-09",
     "kw": "%EA%B1%B4%EC%96%91%EB%8C%80%ED%95%99%EA%B5%90"
    },
    "15874": {
-    "at": null,
+    "at": "2026-11-09",
     "kw": "%EC%9B%90%EC%9E%90%EB%A0%A5%EC%95%88%EC%A0%84%EC%9C%84%EC%9B%90.."
    },
    "16337": {
@@ -1846,19 +1925,19 @@
     "kw": "%EA%B8%B8%EB%B2%97%EC%8A%A4%EC%BF%A8"
    },
    "1731": {
-    "at": null,
+    "at": "2026-11-09",
     "kw": "%EC%95%8C%EB%9D%BC%EB%94%98"
    },
    "1752": {
-    "at": null,
+    "at": "2026-11-09",
     "kw": "%EC%9B%B0%EC%B4%8C"
    },
    "1788": {
-    "at": null,
+    "at": "2026-11-09",
     "kw": "%ED%86%B5%EC%9D%BC%EB%B6%80"
    },
    "19024": {
-    "at": null,
+    "at": "2026-11-09",
     "kw": "%EA%B4%91%EC%A3%BC%EC%9D%80%ED%96%89"
    },
    "19278": {
@@ -1866,7 +1945,7 @@
     "kw": "%EA%B5%AD%EB%A6%BD%EC%84%B8%EC%A2%85%EB%8F%84%EC%84%9C%EA%B4%80"
    },
    "20978": {
-    "at": null,
+    "at": "2026-11-09",
     "kw": "%EA%B5%AD%EB%A6%BD%EC%88%98%EC%82%B0%EB%AC%BC%ED%92%88%EC%A7%88.."
    },
    "21412": {
@@ -1878,15 +1957,15 @@
     "kw": "%EB%91%90%EB%B0%94%EC%9D%B4%EA%B4%80%EA%B4%91%EC%B2%AD"
    },
    "23960": {
-    "at": null,
+    "at": "2026-11-09",
     "kw": "%EA%B5%AD%EB%A6%BD%ED%98%84%EB%8C%80%EB%AF%B8%EC%88%A0%EA%B4%80"
    },
    "24069": {
-    "at": null,
+    "at": "2026-11-09",
     "kw": "%EC%82%BC%EC%84%B1%EC%9B%B0%EC%8A%A4%ED%86%A0%EB%A6%AC"
    },
    "2426": {
-    "at": null,
+    "at": "2026-11-09",
     "kw": "%EC%BD%94%EC%97%91%EC%8A%A4"
    },
    "24355": {
@@ -1894,11 +1973,11 @@
     "kw": "%EC%84%9C%EC%9A%B8%EC%83%81%EC%83%81%EB%82%98%EB%9D%BC"
    },
    "2444": {
-    "at": null,
+    "at": "2026-11-09",
     "kw": "%EB%8C%80%EA%B5%AC%EC%8B%9C"
    },
    "24480": {
-    "at": null,
+    "at": "2026-11-09",
     "kw": "%EC%B9%B4%EC%B9%B4%EC%98%A4%EB%B1%85%ED%81%AC"
    },
    "24491": {
@@ -1906,19 +1985,19 @@
     "kw": "KB%EA%B8%88%EC%9C%B5%EA%B7%B8%EB%A3%B9"
    },
    "24816": {
-    "at": null,
+    "at": "2026-11-09",
     "kw": "%ED%9B%84%EB%9D%BC%EC%9D%B4%EB%93%9C+%EC%B0%B8+%EC%9E%98.."
    },
    "2518": {
-    "at": null,
+    "at": "2026-11-09",
     "kw": "%EC%9D%B8%EC%B2%9C%EC%8B%9C"
    },
    "25925": {
-    "at": null,
+    "at": "2026-11-09",
     "kw": "%EC%8A%A4%EB%A7%88%ED%8A%B8%EB%B2%A0%EC%96%B4"
    },
    "2607": {
-    "at": null,
+    "at": "2026-11-09",
     "kw": "%EB%8F%99%EC%95%84%EC%98%A4%EC%B8%A0%EC%B9%B4"
    },
    "26824": {
@@ -1926,7 +2005,7 @@
     "kw": "%EA%B5%AD%EA%B0%80%ED%99%98%EA%B2%BD%EA%B5%90%EC%9C%A1%EC%84%BC.."
    },
    "27623": {
-    "at": null,
+    "at": "2026-11-09",
     "kw": "%EC%A0%95%EB%B3%B4%ED%86%B5%EC%8B%A0%EA%B8%B0%ED%9A%8D%ED%8F%89.."
    },
    "28553": {
@@ -1934,11 +2013,11 @@
     "kw": "%EC%86%A1%EC%9B%94%ED%83%80%EC%98%AC"
    },
    "29975": {
-    "at": null,
+    "at": "2026-11-09",
     "kw": "%ED%95%B4%EC%96%91%EC%88%98%EC%82%B0%EA%B3%BC%ED%95%99%EA%B8%B0.."
    },
    "30008": {
-    "at": null,
+    "at": "2026-11-09",
     "kw": "%EC%96%B4%EC%8B%9D%EB%B0%B1%EC%84%B8"
    },
    "30124": {
@@ -1966,7 +2045,7 @@
     "kw": "%EC%9D%B8%EC%B2%9C%EC%8B%9C+%EB%8F%84%EC%8B%9C%EC%9E%AC%EC%83%9D.."
    },
    "31887": {
-    "at": null,
+    "at": "2026-11-09",
     "kw": "%EB%8C%80%EA%B5%AC%EC%A0%84%ED%86%B5%EC%8B%9C%EC%9E%A5%EC%A7%84.."
    },
    "32058": {
@@ -1974,7 +2053,7 @@
     "kw": "%EB%8C%80%EA%B5%AC%EA%B3%B5%EA%B3%B5%EC%8B%9C%EC%84%A4%EA%B4%80.."
    },
    "32341": {
-    "at": null,
+    "at": "2026-11-09",
     "kw": "%EC%8B%B8%EC%9D%B4%EB%B2%A1%EC%8A%A4"
    },
    "32351": {
@@ -1998,11 +2077,11 @@
     "kw": "SH%EC%88%98%ED%98%91%EB%B3%B4%ED%97%98"
    },
    "32780": {
-    "at": null,
+    "at": "2026-11-09",
     "kw": "%EA%B0%95%EC%9B%90%EB%8D%94%EB%AA%B0"
    },
    "32891": {
-    "at": null,
+    "at": "2026-11-09",
     "kw": "%EC%9D%B8%EC%B2%9C%EC%8B%9C%EC%9E%90%EC%82%B4%EC%98%88%EB%B0%A9.."
    },
    "32925": {
@@ -2018,19 +2097,19 @@
     "kw": "%EB%B0%94%EC%9D%B4%EC%98%A4%EA%B0%80"
    },
    "33364": {
-    "at": null,
+    "at": "2026-11-09",
     "kw": "%EC%97%AC%ED%96%89%EA%B0%80%EB%8A%94+%EB%8B%AC"
    },
    "33394": {
-    "at": null,
+    "at": "2026-11-09",
     "kw": "%EC%88%9C%EC%B0%BD%EB%B0%9C%ED%9A%A8%EA%B4%80%EA%B4%91%EC%9E%AC.."
    },
    "33560": {
-    "at": null,
+    "at": "2026-11-09",
     "kw": "KT%ED%94%8C%EB%9D%BC%EC%9E%90"
    },
    "33600": {
-    "at": null,
+    "at": "2026-11-09",
     "kw": "%EC%A0%9C%EB%A1%9C%EC%8A%A4%ED%91%BC"
    },
    "33743": {
@@ -2038,19 +2117,19 @@
     "kw": "%EB%B2%A0%EC%8A%A4%ED%8B%B0%EC%95%88%EC%9E%AC%EB%8B%A8"
    },
    "33779": {
-    "at": null,
+    "at": "2026-11-09",
     "kw": "%ED%95%9C%EA%B5%AD%EA%B4%80%EA%B4%91%EA%B3%B5%EC%82%AC+%EC%84%B8.."
    },
    "33987": {
-    "at": null,
+    "at": "2026-11-09",
     "kw": "%EA%B2%BD%EB%82%A8%EA%B8%80%EB%A1%9C%EB%B2%8C%EA%B2%8C%EC%9E%84.."
    },
    "34109": {
-    "at": null,
+    "at": "2026-11-09",
     "kw": "%EC%A0%9C%EB%AC%BC%ED%8F%AC%EA%B5%AC%EC%A0%95%EC%8B%A0%EA%B1%B4.."
    },
    "34484": {
-    "at": null,
+    "at": "2026-11-09",
     "kw": "%ED%95%9C%EA%B5%AD%EA%B3%A0%EC%9A%A9%EC%A0%95%EB%B3%B4%EC%9B%90+.."
    },
    "34563": {
@@ -2062,7 +2141,7 @@
     "kw": "%EB%A7%A5PC%EC%B9%B4%ED%8E%98"
    },
    "34758": {
-    "at": null,
+    "at": "2026-11-09",
     "kw": "%EB%B4%84%EB%82%A0%EC%97%94"
    },
    "34759": {
@@ -2070,7 +2149,7 @@
     "kw": "%ED%94%BC%EC%9E%90%EB%A8%B9%EB%8B%A4"
    },
    "34771": {
-    "at": null,
+    "at": "2026-11-09",
     "kw": "%EA%BC%BC%EA%BC%BCHE+%ED%99%88%EC%BC%80%EC%96%B4"
    },
    "34819": {
@@ -2082,15 +2161,15 @@
     "kw": "%ED%95%9C%EA%B5%AD%EC%82%B0%EB%A6%BC%EC%9E%AC%EB%82%9C%EC%95%88.."
    },
    "34972": {
-    "at": null,
+    "at": "2026-11-09",
     "kw": "%ED%95%9C%EA%B5%AD%EC%82%AC%ED%95%99%EC%A7%84%ED%9D%A5%EC%9E%AC.."
    },
    "35007": {
-    "at": null,
+    "at": "2026-11-09",
     "kw": "%EC%A0%9C%EC%A3%BC%EB%B9%84%EC%97%94%EB%82%A0%EB%A0%88"
    },
    "35156": {
-    "at": null,
+    "at": "2026-11-09",
     "kw": "%ED%92%80%EB%AC%B4%EC%9B%90+%EC%9A%94%EA%B1%B0%ED%8A%B8%EC%B9%B4.."
    },
    "35166": {
@@ -2098,7 +2177,7 @@
     "kw": "%EA%B5%AD%EA%B0%80%EA%B8%B0%ED%9B%84%EC%97%90%EB%84%88%EC%A7%80.."
    },
    "35214": {
-    "at": null,
+    "at": "2026-11-09",
     "kw": "%EC%9D%BC%EC%9D%BC%EC%88%98%EC%9E%91"
    },
    "35222": {
@@ -2106,43 +2185,43 @@
     "kw": "%EB%8F%84%EB%B4%89%EA%B5%AC%EC%9D%98%ED%9A%8C"
    },
    "35224": {
-    "at": null,
+    "at": "2026-11-09",
     "kw": "%EC%B2%9C%EC%95%88NGO%EC%84%BC%ED%84%B0"
    },
    "35231": {
-    "at": null,
+    "at": "2026-11-09",
     "kw": "%EC%9E%A1%EC%8A%A4%ED%8F%AC%EC%9D%B4%EC%A6%88"
    },
    "35237": {
-    "at": null,
+    "at": "2026-11-09",
     "kw": "%EC%A0%84%EB%82%A8%EA%B4%91%EC%A3%BC%ED%86%B5%ED%95%A9%EC%8B%9C.."
    },
    "35255": {
-    "at": null,
+    "at": "2026-11-09",
     "kw": "%EC%B2%AD%EB%85%84%EC%9D%BC%EC%9E%90%EB%A6%AC+%EA%B0%95%EC%86%8C.."
    },
    "35260": {
-    "at": null,
+    "at": "2026-11-09",
     "kw": "%EB%8B%A5%ED%84%B0%EB%A3%A8%ED%85%9C"
    },
    "35266": {
-    "at": null,
+    "at": "2026-11-09",
     "kw": "%ED%81%AC%EB%9D%BC%EC%8A%A4%ED%83%84+%EC%98%A4%EB%A5%B4%EC%A1%B0.."
    },
    "35273": {
-    "at": null,
+    "at": "2026-11-09",
     "kw": "%ED%93%A8%EB%9D%BC%EC%A7%80%EC%97%A0"
    },
    "35277": {
-    "at": null,
+    "at": "2026-11-09",
     "kw": "%EA%B9%8C%EB%A7%9D"
    },
    "35285": {
-    "at": null,
+    "at": "2026-11-09",
     "kw": "CJ%ED%94%84%EB%A0%88%EC%8B%9C%EC%9B%A8%EC%9D%B4+%EC%95%84.."
    },
    "35291": {
-    "at": null,
+    "at": "2026-11-09",
     "kw": "%EB%9D%BC%EB%9D%BC%EB%8B%A5%ED%84%B0"
    },
    "35308": {
@@ -2150,7 +2229,7 @@
     "kw": "%EC%8A%A4%ED%83%81%EC%82%AC%EC%9D%B8"
    },
    "35309": {
-    "at": null,
+    "at": "2026-11-09",
     "kw": "%EB%A9%94%EB%94%94%EC%8F%A0%EB%9D%BC"
    },
    "35310": {
@@ -2166,27 +2245,27 @@
     "kw": "cpbc"
    },
    "35314": {
-    "at": null,
+    "at": "2026-11-09",
     "kw": "%EB%84%AC%EB%A1%9C"
    },
    "35325": {
-    "at": null,
+    "at": "2026-11-09",
     "kw": "%EC%9B%8C%ED%81%AC%EB%A7%A8"
    },
    "35326": {
-    "at": null,
+    "at": "2026-11-09",
     "kw": "%EC%82%BC%EC%B2%9C%EB%A6%AC%EA%B8%B0%EA%B3%84"
    },
    "35327": {
-    "at": null,
+    "at": "2026-11-09",
     "kw": "%EA%B5%AD%EC%9D%BC%EC%B6%9C%ED%8C%90%EC%82%AC"
    },
    "3547": {
-    "at": null,
+    "at": "2026-11-09",
     "kw": "%EA%B3%A0%EC%9A%A9%EB%85%B8%EB%8F%99%EB%B6%80"
    },
    "3568": {
-    "at": null,
+    "at": "2026-11-09",
     "kw": "%EC%84%9C%EC%9A%B8%EC%8B%9C"
    },
    "3641": {
@@ -2336,46 +2415,52 @@
   }
  },
  "lastOk": {
-  "busan": "2026-11-09T19:01:16+09:00",
-  "danawa": "2026-11-09T19:01:16+09:00",
-  "eventhouse": "2026-11-09T19:01:16+09:00",
-  "eventhouse_search": "2026-11-09T19:01:16+09:00",
-  "events_kr": "2026-11-09T19:01:16+09:00",
-  "korissue": "2026-11-09T19:01:16+09:00",
-  "korissue_orgs": "2026-11-09T19:01:16+09:00",
-  "mohw": "2026-11-09T19:01:16+09:00",
-  "mrblog": "2026-11-09T19:01:16+09:00",
-  "reviewnote": "2026-11-09T19:01:16+09:00",
-  "sbs": "2026-11-09T19:01:16+09:00",
-  "touredu": "2026-11-09T19:01:16+09:00"
+  "busan": "2026-11-09T19:21:19+09:00",
+  "contestkorea": "2026-11-09T19:21:19+09:00",
+  "danawa": "2026-11-09T19:21:19+09:00",
+  "eventhouse": "2026-11-09T19:21:19+09:00",
+  "eventhouse_search": "2026-11-09T19:21:19+09:00",
+  "events_kr": "2026-11-09T19:21:19+09:00",
+  "korissue": "2026-11-09T19:21:19+09:00",
+  "korissue_orgs": "2026-11-09T19:21:19+09:00",
+  "mohw": "2026-11-09T19:21:19+09:00",
+  "mrblog": "2026-11-09T19:21:19+09:00",
+  "reviewnote": "2026-11-09T19:21:19+09:00",
+  "sbs": "2026-11-09T19:21:19+09:00",
+  "touredu": "2026-11-09T19:21:19+09:00",
+  "wevity": "2026-11-09T19:21:19+09:00"
  },
  "lastRun": {
-  "busan": "2026-11-09T19:01:16+09:00",
-  "danawa": "2026-11-09T19:01:16+09:00",
-  "eventhouse": "2026-11-09T19:01:16+09:00",
-  "eventhouse_search": "2026-11-09T19:01:16+09:00",
-  "events_kr": "2026-11-09T19:01:16+09:00",
-  "korissue": "2026-11-09T19:01:16+09:00",
-  "korissue_orgs": "2026-11-09T19:01:16+09:00",
-  "mohw": "2026-11-09T19:01:16+09:00",
-  "mrblog": "2026-11-09T19:01:16+09:00",
-  "naver": "2026-11-09T19:01:16+09:00",
-  "reviewnote": "2026-11-09T19:01:16+09:00",
-  "sbs": "2026-11-09T19:01:16+09:00",
-  "telegram": "2026-11-09T19:01:16+09:00",
-  "touredu": "2026-11-09T19:01:16+09:00",
-  "youtube": "2026-11-09T19:01:16+09:00"
+  "busan": "2026-11-09T19:21:19+09:00",
+  "contestkorea": "2026-11-09T19:21:19+09:00",
+  "danawa": "2026-11-09T19:21:19+09:00",
+  "eventhouse": "2026-11-09T19:21:19+09:00",
+  "eventhouse_search": "2026-11-09T19:21:19+09:00",
+  "events_kr": "2026-11-09T19:21:19+09:00",
+  "korissue": "2026-11-09T19:21:19+09:00",
+  "korissue_orgs": "2026-11-09T19:21:19+09:00",
+  "mohw": "2026-11-09T19:21:19+09:00",
+  "mrblog": "2026-11-09T19:21:19+09:00",
+  "naver": "2026-11-09T19:21:19+09:00",
+  "reviewnote": "2026-11-09T19:21:19+09:00",
+  "sbs": "2026-11-09T19:21:19+09:00",
+  "telegram": "2026-11-09T19:21:19+09:00",
+  "touredu": "2026-11-09T19:21:19+09:00",
+  "wevity": "2026-11-09T19:21:19+09:00",
+  "youtube": "2026-11-09T19:21:19+09:00"
  },
  "lastSkipped": {
   "busan": {},
+  "contestkorea": {
+   "11558": "이벤트 신호 없음",
+   "12249": "유료 조건: 결제",
+   "13111": "유료 조건: 구매,원 이상 구매,페이백",
+   "13144": "유료 조건: 결제",
+   "13157": "공연초대"
+  },
   "danawa": {},
   "eventhouse": {
-   "315756": "유료 조건: 구매",
-   "318311": "유료 조건: 결제",
    "318737": "유료 조건: 구매",
-   "318815": "유료 조건: 구매",
-   "318949": "유료 조건: 유료",
-   "319102": "유료 응모형태",
    "319572": "유료 조건: 구매"
   },
   "eventhouse_search": {
@@ -2390,10 +2475,7 @@
   "mohw": {},
   "mrblog": {
    "1148961": "유료 조건: 구매",
-   "1149188": "유료 조건: 결제,페이백",
-   "1149746": "유료 조건: 결제,페이백",
-   "1150599": "유료 조건: 결제,페이백",
-   "1150600": "유료 조건: 결제,페이백"
+   "1150598": "유료 조건: 결제,페이백"
   },
   "reviewnote": {
    "1527626": "유료 조건: 구매",
@@ -2412,7 +2494,8 @@
    "[출첵 이벤트] SBS가 매일매일 포인트를 쏩니다!": "기간 없음(상시 이벤트)",
    "[틈만나면,] 당신의 '틈'에 초대해 주세요!": "기간 없음(상시 이벤트)"
   },
-  "touredu": {}
+  "touredu": {},
+  "wevity": {}
  },
  "mohw": {
   "parsed": {
@@ -2445,11 +2528,35 @@
    "status": "form",
    "to": "https://docs.google.com/forms/d/e/1FAIpQLSeCZY44O0qheByOA8FXDllIa_nugELb-M_qb8b8id_pm4nzyg/viewform?usp=send_form"
   },
+  "https://forms.gle/E2a6udF761guPAPk6": {
+   "at": "2026-11-09",
+   "final": "https://docs.google.com/forms/d/e/1FAIpQLSf6QBejlR8rEuqbmVsng5lQABomkzDHIbJi7kSUpeasgnS3fw/viewform",
+   "status": "form",
+   "to": "https://docs.google.com/forms/d/e/1FAIpQLSf6QBejlR8rEuqbmVsng5lQABomkzDHIbJi7kSUpeasgnS3fw/viewform?usp=send_form"
+  },
+  "https://forms.gle/E9WsGbuAKSypcwgVA": {
+   "at": "2026-11-09",
+   "final": "https://docs.google.com/forms/d/e/1FAIpQLSdVktCCkSaWrtrqLMoRNXOdQgvmLcaaaEWJ2zH98y3UeIJTzg/viewform",
+   "status": "form",
+   "to": "https://docs.google.com/forms/d/e/1FAIpQLSdVktCCkSaWrtrqLMoRNXOdQgvmLcaaaEWJ2zH98y3UeIJTzg/viewform?usp=send_form"
+  },
+  "https://forms.gle/FEuiiniziMP3cfxK6": {
+   "at": "2026-11-09",
+   "final": "https://docs.google.com/forms/d/e/1FAIpQLSc2Tfmh9lfeYh7XTm-eP5Xal80DKyNJQVqAgG8r2prF863hmg/viewform",
+   "status": "form",
+   "to": "https://docs.google.com/forms/d/e/1FAIpQLSc2Tfmh9lfeYh7XTm-eP5Xal80DKyNJQVqAgG8r2prF863hmg/viewform?usp=send_form"
+  },
   "https://forms.gle/PNocBDwke5Np6pzi6": {
    "at": "2026-11-09",
    "final": "https://docs.google.com/forms/d/e/1FAIpQLSfj2uhxEEJqi_BGXAacPGN_HpgR_OYmIXkBlQsOy5III5OzhA/viewform",
    "status": "form",
    "to": "https://docs.google.com/forms/d/e/1FAIpQLSfj2uhxEEJqi_BGXAacPGN_HpgR_OYmIXkBlQsOy5III5OzhA/viewform?usp=send_form"
+  },
+  "https://forms.gle/PUquAoTh95nCjMGcA": {
+   "at": "2026-11-09",
+   "final": "https://docs.google.com/forms/d/e/1FAIpQLSfO-X31ekPvo2p92GxvFKq2DxtwGt4oVPdercSaMmUxP2D_SQ/viewform",
+   "status": "form",
+   "to": "https://docs.google.com/forms/d/e/1FAIpQLSfO-X31ekPvo2p92GxvFKq2DxtwGt4oVPdercSaMmUxP2D_SQ/viewform?usp=send_form"
   },
   "https://forms.gle/UAEuY4XCvh3DDNP26": {
    "at": "2026-11-09",
@@ -2481,6 +2588,12 @@
    "status": "form",
    "to": "https://docs.google.com/forms/d/e/1FAIpQLSfjLvW5T8bIp9aEGyz4ZKL34-nAH1ilclqMb6NTKnxpVOZ1nA/viewform?usp=send_form"
   },
+  "https://forms.gle/dm2Pb91HLq5sExKg9": {
+   "at": "2026-11-09",
+   "final": "https://docs.google.com/forms/d/e/1FAIpQLSdsqdKnYy9p9YP3-Y2bFNVvnAdL7DMHP1ZmHnHFvoznTIwD3Q/viewform",
+   "status": "form",
+   "to": "https://docs.google.com/forms/d/e/1FAIpQLSdsqdKnYy9p9YP3-Y2bFNVvnAdL7DMHP1ZmHnHFvoznTIwD3Q/viewform?usp=send_form"
+  },
   "https://forms.gle/gd2KHEMnLEMaojFR9": {
    "at": "2026-11-09",
    "final": "https://docs.google.com/forms/d/e/1FAIpQLSe48sKijCfyKutsWpPMHtyksIg8sfkT9PMA-315UL25lsXQOw/viewform",
@@ -2493,6 +2606,12 @@
    "status": "form",
    "to": "https://docs.google.com/forms/d/e/1FAIpQLScfrcVNrnS9o0Wn2Yhk_lzxYDrDIk8GQd-5K7MI47qaZmvc2g/viewform?usp=send_form"
   },
+  "https://forms.gle/ucJ2UMxtcqTCJdj76": {
+   "at": "2026-11-09",
+   "final": "https://docs.google.com/forms/d/e/1FAIpQLSfge-HTbz0f37maK63ES64eWRgCnvCL8Ru6i3Kf1xOJSRfD4w/viewform",
+   "status": "form",
+   "to": "https://docs.google.com/forms/d/e/1FAIpQLSfge-HTbz0f37maK63ES64eWRgCnvCL8Ru6i3Kf1xOJSRfD4w/viewform?usp=send_form"
+  },
   "https://forms.gle/uwLKoZemp9GR2B21A": {
    "at": "2026-11-09",
    "final": "https://docs.google.com/forms/d/e/1FAIpQLSdpMfmFGmpB8NWNS8His7Tj8rWSMSqZWzxB4ZQETFRqyZp5Rg/viewform",
@@ -2504,6 +2623,12 @@
    "final": "https://docs.google.com/forms/d/e/1FAIpQLSce7sXn84DglTpkpWRtAtPH7lcM3QpLKuVsYsTOuynLuEfazA/viewform",
    "status": "form",
    "to": "https://docs.google.com/forms/d/e/1FAIpQLSce7sXn84DglTpkpWRtAtPH7lcM3QpLKuVsYsTOuynLuEfazA/viewform?usp=send_form"
+  },
+  "https://forms.gle/ytww1ShszE9ZqV6N8": {
+   "at": "2026-11-09",
+   "final": "https://docs.google.com/forms/d/e/1FAIpQLSd9cl1QKOQTPucw_Jg4j1qqL5P1AHgSL5oE9f7ro8FF29Pd5A/viewform",
+   "status": "form",
+   "to": "https://docs.google.com/forms/d/e/1FAIpQLSd9cl1QKOQTPucw_Jg4j1qqL5P1AHgSL5oE9f7ro8FF29Pd5A/viewform?usp=send_form"
   },
   "https://naver.me/51ui2lgl": {
    "at": "2026-11-09",
@@ -2559,6 +2684,12 @@
    "status": "form",
    "to": "https://form.naver.com/response/1nu38Gnq9wQ"
   },
+  "https://naver.me/FIc2xf8Y": {
+   "at": "2026-11-09",
+   "final": "https://form.naver.com/response/KarzaVn4pJ3",
+   "status": "form",
+   "to": "https://form.naver.com/response/KarzaVn4pJ3"
+  },
   "https://naver.me/FOR7hFCt": {
    "at": "2026-11-09",
    "final": "https://form.naver.com/response/JYfPLPLgrDz",
@@ -2576,6 +2707,12 @@
    "final": "https://form.naver.com/response/Afv1pJxjpDt",
    "status": "form",
    "to": "https://form.naver.com/response/Afv1pJxjpDt"
+  },
+  "https://naver.me/FoX5EKjt": {
+   "at": "2026-11-09",
+   "final": "https://form.naver.com/response/Gal2NmuRsrZ",
+   "status": "form",
+   "to": "https://form.naver.com/response/Gal2NmuRsrZ"
   },
   "https://naver.me/GJZn3ADz": {
    "at": "2026-11-09",
@@ -2595,6 +2732,18 @@
    "status": "form",
    "to": "https://form.naver.com/response/3FRxHcXwJFQ"
   },
+  "https://naver.me/x4l3nKg6": {
+   "at": "2026-11-09",
+   "final": "https://form.naver.com/response/GuPcaxAmjPL",
+   "status": "form",
+   "to": "https://form.naver.com/response/GuPcaxAmjPL"
+  },
+  "https://naver.me/x4lwT34J": {
+   "at": "2026-11-09",
+   "final": "https://form.naver.com/response/6yXi6sNZr0q",
+   "status": "form",
+   "to": "https://form.naver.com/response/6yXi6sNZr0q"
+  },
   "https://naver.me/xCjy8UaL": {
    "at": "2026-11-09",
    "final": "https://form.naver.com/response/7yeOV2psvgP",
@@ -2613,6 +2762,12 @@
    "status": "form",
    "to": "https://form.naver.com/response/7vYFZhrMl1E"
   },
+  "https://naver.me/xXnvZGbH": {
+   "at": "2026-11-09",
+   "final": "https://form.naver.com/response/CXUa9K3jy8U",
+   "status": "form",
+   "to": "https://form.naver.com/response/CXUa9K3jy8U"
+  },
   "https://naver.me/xfb0KU7g": {
    "at": "2026-11-09",
    "final": "https://form.naver.com/response/thRwC2O9op",
@@ -2630,6 +2785,12 @@
    "final": "https://form.naver.com/response/WkWkf44SnT",
    "status": "form",
    "to": "https://form.naver.com/response/WkWkf44SnT"
+  },
+  "https://naver.me/xoG9HPGN": {
+   "at": "2026-11-09",
+   "final": "https://form.naver.com/response/BvY3EMbU6sW",
+   "status": "form",
+   "to": "https://form.naver.com/response/BvY3EMbU6sW"
   }
  },
  "touredu": {
@@ -2640,6 +2801,11 @@
    "14071": "te-8b7359bfda",
    "14170": "te-31eb31bf7d",
    "14395": "te-f8b19ccece"
+  }
+ },
+ "wevity": {
+  "parsed": {
+   "112074": "wv-ff315395bf"
   }
  }
 }
