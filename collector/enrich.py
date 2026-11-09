@@ -113,6 +113,8 @@ def enrich(e):
         "form_url": e.get("form_url"),
         "is_restricted": e.get("is_restricted") is True,
         "restriction_note": e.get("restriction_note"),
+        "needs_proof": e.get("needs_proof") is True,
+        "proof_reason": e.get("proof_reason"),
         "elec": e.get("elec") or [],
         "elec_models": e.get("elec_models") or [],
         "restriction_reason": e.get("restriction_reason"),

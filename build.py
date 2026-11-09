@@ -82,7 +82,7 @@ def main():
             continue  # 반려(rejected)·링크 끊김(removed)은 싣지 않는다
         x = enrich(e)
         x["via"] = sorted(via.get(e["id"], []))
-        for k in ("srcUrls", "linkFail", "platHint", "firstSeen", "rawText", "formLinks", "pageFlags", "formPending", "formChecked", "linkChecked", "lastSeen", "linkStatus"):
+        for k in ("srcUrls", "linkFail", "platHint", "firstSeen", "rawText", "formLinks", "pageFlags", "formPending", "formChecked", "formScanV", "linkChecked", "lastSeen", "linkStatus"):
             x.pop(k, None)
         x["isAuto"] = bool(e.get("cand"))
         events.append(x)
@@ -103,10 +103,25 @@ def main():
         "restricted": sum(1 for x in live if x.get("is_restricted") is True),
         "restrictReview": sum(1 for x in live if x.get("restriction_note")),
         "elec": sum(1 for x in live if x.get("elec")),
+        "needsProof": sum(1 for x in live if x.get("needs_proof")),
         "sources": source_meta(state, runs),
         "lastRun": runs[-1]["at"] if runs else None,
     }
+    # 출처별 진행 중 건수(화면에 일부만 싣더라도 정확하도록 여기서 계산)
+    for s in meta["sources"]:
+        s["count"] = sum(1 for x in live if x["src"] in s["match"] or set(x["via"]) & set(s["match"]))
     payload = {"meta": meta, "events": events}
+    # 첫 화면에는 기본 노출 이벤트만 싣고, 나머지는 필요할 때 불러온다
+    live_ids = {x["id"] for x in live}
+    slim = lambda x: {k: v for k, v in x.items() if k not in ("listUrl", "isAuto", "excluded")}
+    main = [slim(x) for x in live if x.get("is_restricted") is not True and x.get("grade") != "X"]
+    main_ids = {x["id"] for x in main}
+    extra = [slim(x) for x in live if x["id"] not in main_ids]
+    # 종료 목록은 카테고리 구분과 목록 표시에 쓰는 값만
+    ENDED_KEYS = ("id", "title", "org", "end", "url", "status", "grade", "kind", "plats", "pub", "elec")
+    ended = [{k: x.get(k) for k in ENDED_KEYS} for x in events if x["id"] not in live_ids]
+    assert len(main) + len(extra) + len(ended) == len(events), "분리 파일 건수 불일치"
+    meta["mainCount"], meta["extraCount"] = len(main), len(extra)
 
     # 검증 1: DB의 진행 중·종료 건수와 사이트 데이터 건수가 같아야 한다
     n_db = sum(1 for e in db["events"].values() if e.get("status") in ("active", "ended"))
@@ -117,7 +132,7 @@ def main():
 
     tpl = (ROOT / "web" / "template.html").read_text(encoding="utf-8")
     assert tpl.count("/*__DATA__*/") == 1
-    data_js = json.dumps(payload, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
+    data_js = json.dumps({"meta": meta, "events": main}, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
     page = tpl.replace("/*__DATA__*/", data_js)
 
     tmp = ROOT / "_site.tmp"
@@ -132,6 +147,8 @@ def main():
             f'{page.split("<header", 1)[0]}</head>\n<body>\n<header{page.split("<header", 1)[1]}\n</body></html>\n')
     (tmp / "index.html").write_text(html, encoding="utf-8")
     (tmp / "data" / "events.json").write_text(json.dumps(payload, ensure_ascii=False, indent=1), encoding="utf-8")
+    for name, part in (("extra", extra), ("ended", ended)):
+        (tmp / "data" / f"{name}.json").write_text(json.dumps({"events": part}, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
     status = [{k: v for k, v in r.items() if k != "sources"} | {"sources": {s: {a: b for a, b in v.items() if a != "trace"} for s, v in r["sources"].items()}} for r in runs[-100:]]
     (tmp / "data" / "status.json").write_text(json.dumps(status, ensure_ascii=False, indent=1), encoding="utf-8")
     (tmp / ".nojekyll").write_text("")

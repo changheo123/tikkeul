@@ -95,6 +95,8 @@ h2 span { font-size: 14.5px; font-weight: 500; color: var(--muted); }
 .grid { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 440px), 1fr)); gap: 12px; align-items: start; }
 .tk { display: grid; grid-template-columns: 74px minmax(0, 1fr); background: var(--card); border: 1px solid var(--line); border-radius: 16px; overflow: hidden; cursor: pointer; }
 .tk:hover { border-color: var(--dash); }
+.tk { content-visibility: auto; contain-intrinsic-size: auto 240px; }  /* 화면 밖 카드는 그리기를 미룬다 */
+.lazy { margin: 0; color: var(--muted); font-size: 13.5px; display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
 .stub { background: var(--calm); color: var(--calm-ink); border-right: 2px dashed var(--dash); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; padding: 14px 4px; text-align: center; }
 .stub b { font-family: var(--f-display); font-weight: 400; font-size: 26px; line-height: 1; font-variant-numeric: tabular-nums; }
 .stub span { font-size: 12px; color: var(--ink2); }
@@ -235,6 +237,7 @@ footer p { margin: 0; max-width: 46em; }
 </div>
 
 <main><div class="wrap">
+  <p class="lazy" id="lazyNote" role="status" hidden></p>
   <div id="list" aria-live="polite"></div>
   <details class="fold" id="endedBox"><summary id="endedSum">종료된 이벤트</summary><ol class="ended" id="ended"></ol></details>
   <details class="fold" id="srcBox"><summary>수집 출처 현황</summary>
@@ -321,8 +324,9 @@ function save(k, s) { try { localStorage.setItem(k, JSON.stringify([...s])); } c
 const fav = load("tt-fav"), done = load("tt-done");
 
 const today = kstToday();
-const all = DATA.events.map(e => ({ ...e, days: e.end ? Math.round((utc(e.end) - utc(today)) / 864e5) : null,
-  isNew: !!e.checked && (utc(today) - utc(e.checked)) / 864e5 <= 3 }));
+const decorate = e => ({ ...e, days: e.end ? Math.round((utc(e.end) - utc(today)) / 864e5) : null,
+  isNew: !!e.checked && (utc(today) - utc(e.checked)) / 864e5 <= 3 });
+const all = DATA.events.map(decorate);
 // 종료는 수집기가 정한 status 기준 + 오늘(한국 시간) 지난 마감일. 마감일 미상도 종료 처리된 건 진행 중이 아니다
 const isLive = e => e.status !== "ended" && (e.days === null || e.days >= 0);
 const live = all.filter(isLive);
@@ -333,6 +337,34 @@ document.getElementById("sHot").textContent = easy.filter(e => e.days !== null &
 document.getElementById("sWeek").textContent = easy.filter(e => e.days !== null && e.days >= 2 && e.days <= 6).length;
 document.getElementById("sAll").textContent = easy.length;
 const m = DATA.meta;
+
+// 첫 화면에는 기본 노출 이벤트만 있다. 제한·조건 많음(extra)과 종료(ended)는 필요할 때 불러온다
+const loaded = { extra: false, ended: false }, loading = {}, failed = {};
+function addEvents(list) {
+  for (const raw of list) {
+    if (byId.has(raw.id)) continue;
+    const e = decorate(raw);
+    all.push(e); byId.set(e.id, e);
+    (isLive(e) ? live : gone).push(e);
+  }
+  gone.sort((a, b) => (b.end || "").localeCompare(a.end || ""));
+}
+function loadPart(name) {
+  if (!loading[name]) {
+    loading[name] = fetch(`data/${name}.json?v=${encodeURIComponent(m.built)}`)
+      .then(r => { if (!r.ok) throw new Error(`HTTP ${r.status}`); return r.json(); })
+      .then(d => { addEvents(d.events); loaded[name] = true; })
+      .catch(err => { failed[name] = true; throw err; })
+      .finally(() => { delete loading[name]; });
+  }
+  return loading[name];
+}
+function neededParts() {
+  const need = [];
+  if (state.restricted || state.showX || state.fav || !live.some(catTest(state.cat))) need.push("extra");
+  if (document.getElementById("endedBox").open) need.push("ended");
+  return need.filter(n => !loaded[n]);
+}
 document.getElementById("stamp").textContent = `${m.built.slice(5, 10).replace("-", "/")} ${m.built.slice(11, 16)} 자동 수집 반영 · 사람 확인 ${m.approved}건 · 자동 수집 후보 ${m.candidates}건`;
 
 // 카테고리를 뺀 나머지 조건(검색·필터·토글)
@@ -426,6 +458,7 @@ function card(e) {
   const tags = [];
   if (e.isNew) tags.push('<span class="tag new">신규</span>');
   if (done.has(e.id)) tags.push('<span class="tag mine">참여함</span>');
+  if (e.needs_proof) tags.push('<span class="tag g gC">인증 필요</span>');
   if (e.is_restricted === true) tags.push('<span class="tag gX">참여 제한</span>');
   else if (e.restriction_note) tags.push('<span class="tag gX">참여 조건 확인</span>');
   if ((e.elec || []).length) tags.push(`<span class="tag g gS">전자기기: ${(e.elec_models || []).length ? esc(e.elec_models.slice(0, 2).join("·")) : e.elec.map(k => ELEC[k]).join("·")}</span>`);
@@ -467,7 +500,7 @@ const SORTERS = {
 const sec = (name, items, sub) => items.length ? `<section><h2>${esc(name)} <span>${items.length}건${sub ? " · " + esc(sub) : ""}</span></h2><ol class="grid">${items.map(card).join("")}</ol></section>` : "";
 
 function emptyHtml() {
-  const zeroCat = !live.some(catTest(state.cat));
+  const zeroCat = loaded.extra && !live.some(catTest(state.cat));
   const msg = zeroCat
     ? `'${esc(state.cat)}'은 아직 이 종류를 모으는 출처가 연동되지 않아 수집된 이벤트가 없어요. 아래 수집 출처 현황에서 상태를 볼 수 있어요.`
     : "조건에 맞는 진행 중 이벤트가 없어요. 검색어를 지우거나 필터를 줄여 보세요.";
@@ -487,9 +520,9 @@ function renderList() {
   }
   document.getElementById("list").innerHTML = `<div style="display:grid;gap:30px">${html || emptyHtml()}</div>`;
 
-  const g = gone.filter(e => catTest(state.cat)(e));
-  document.getElementById("endedBox").hidden = !g.length;
-  document.getElementById("endedSum").textContent = `종료된 이벤트 ${g.length}건`;
+  const g = loaded.ended ? gone.filter(e => catTest(state.cat)(e)) : [];
+  document.getElementById("endedBox").hidden = loaded.ended ? !g.length : !m.ended;
+  document.getElementById("endedSum").textContent = `종료된 이벤트 ${loaded.ended ? g.length : m.ended}건`;
   document.getElementById("ended").innerHTML = g.map(e => `<li><b>${esc(e.title)}</b><span>${esc(e.org)} · ${e.end ? md(e.end) + " 마감" : "종료"}${safeUrl(e.url) ? ` · <a href="${esc(e.url)}" target="_blank" rel="noopener noreferrer">원문</a>` : ""}</span></li>`).join("");
 
   const n = ["plat", "prize", "due", "time"].filter(k => state[k] !== "all").length + ["noAcct", "noSns", "noCost", "orig", "restricted", "fav", "hideDone", "onlyOk", "showX"].filter(k => state[k]).length;
@@ -497,6 +530,18 @@ function renderList() {
 }
 
 function render() {
+  const missing = neededParts();
+  const note = document.getElementById("lazyNote");
+  if (missing.some(n => failed[n])) {
+    note.hidden = false;
+    note.innerHTML = '추가 이벤트를 불러오지 못했어요. <button type="button" class="btn" data-act="reload">다시 시도</button>';
+  } else if (missing.length) {
+    note.hidden = false;
+    note.textContent = "추가 이벤트를 불러오는 중이에요.";
+    Promise.all(missing.map(loadPart)).then(() => { note.hidden = true; fillSelects(); syncInputs(); render(); }, () => render());
+  } else {
+    note.hidden = true;
+  }
   try { renderList(); }
   catch (err) {
     document.getElementById("list").innerHTML = `<div class="empty"><p>목록을 그리는 중 문제가 생겼어요(${esc(err.message)}). 다시 시도하거나 필터를 초기화해 주세요.</p><button type="button" class="btn" data-act="retry">다시 시도</button></div>`;
@@ -507,7 +552,7 @@ function render() {
 function sources() {
   const label = { on: "자동 수집 중", ledger: "사람 확인", off: "연동 필요", err: "오류·재시도 중", no: "수집 안 함" };
   document.getElementById("src").innerHTML = (m.sources || []).map(s => {
-    const n = live.filter(e => s.match.some(k => e.src === k || (e.via || []).includes(k))).length;
+    const n = s.count;
     const when = s.last ? ` · 마지막 성공 ${s.last.slice(5, 10).replace("-", "/")} ${s.last.slice(11, 16)}` : "";
     return `<tr><td>${esc(s.label)}</td><td><span class="st ${s.st}">${label[s.st]}</span></td><td class="n">${s.match.length ? n : "-"}</td><td>${esc(s.how)}${esc(when)}</td></tr>`;
   }).join("");
@@ -547,6 +592,7 @@ function openDetail(id) {
     fact("무료 여부·추가 비용", p(e.free === "ok" ? "무료 참여" + (e.tax ? " · 제세공과금 확인 필요" : " · 추가 비용 안내 없음") : '<span class="unk">원문 확인 필요</span>')),
     ...(e.is_restricted && e.restriction_reason ? [fact("참여 제한 사유", p(esc(e.restriction_reason)))] : []),
     ...(!e.is_restricted && e.restriction_note ? [fact("참여 조건 확인", p(esc(e.restriction_note)))] : []),
+    ...(e.needs_proof ? [fact("필요한 인증", p(esc(e.proof_reason || "참여 조건에 인증 자료 제출이 있어요")))] : []),
     ...((e.prizeAll || []).length > 1 ? [fact("전체 경품", ul(e.prizeAll))] : []),
     ...((e.elec_models || []).length ? [fact("경품 모델(원문 표기)", p(esc(e.elec_models.join(", "))))] : []),
     fact("유의사항", ul(notes)),
@@ -598,6 +644,7 @@ document.addEventListener("click", ev => {
     } else if (act === "open") openDetail(id);
     else if (act === "reset") resetFilters();
     else if (act === "retry") render();
+    else if (act === "reload") { Object.keys(failed).forEach(k => delete failed[k]); render(); }
     return;
   }
   // 카드의 빈 곳을 누르면 상세 창
@@ -609,6 +656,7 @@ document.getElementById("q").addEventListener("input", ev => { clearTimeout(qTim
 for (const [id, k] of Object.entries(BIND)) document.getElementById(id).addEventListener("change", ev => { state[k] = ev.target.value; render(); });
 for (const [id, k] of Object.entries(CHK)) document.getElementById(id).addEventListener("change", ev => { state[k] = ev.target.checked; render(); });
 document.getElementById("fReset").addEventListener("click", resetFilters);
+document.getElementById("endedBox").addEventListener("toggle", ev => { if (ev.target.open) render(); });
 const fBtn = document.getElementById("fBtn"), panel = document.getElementById("panel");
 fBtn.addEventListener("click", () => { panel.hidden = !panel.hidden; fBtn.setAttribute("aria-expanded", String(!panel.hidden)); });
 

@@ -13,7 +13,7 @@ from pathlib import Path
 
 from lxml import html as LH
 
-from . import electronics, forms, restrict
+from . import electronics, forms, proof, restrict
 from .common import Fetcher, norm_date, now_kst, today_kst
 from .extract import norm_url, norm_title, is_show_invite, pay_required
 from .sources import events_kr, public_boards, api_sources, aggregators, experience, contest_boards
@@ -321,6 +321,9 @@ def audit(db, today):
 FORM_NO_FETCH = re.compile(r"instagram\.com|youtube\.com|youtu\.be|blog\.naver\.com|cafe\.naver\.com|facebook\.com|//x\.com/|twitter\.com|t\.me/|eventhouse\.kr|reviewnote\.co\.kr|mrblog\.net|event\.danawa\.com")  # 체험단·다나와는 자체 사이트에서 신청
 
 
+FORM_SCAN_V = 2  # 추출 규칙이 넓어지면 올린다(원본 페이지를 다시 읽어 재분석)
+
+
 def _page_html(f, url):
     """원본 페이지에서 메뉴·스크립트를 뺀 (HTML, 글자). robots 차단·오류는 예외로 올린다."""
     d = f.doc(url)
@@ -365,7 +368,7 @@ def process_forms(db, state, today, cfg):
     # 저장된 글에 폼이 없는 진행 중 이벤트: 마감이 가까운 것부터 원본 페이지를 다시 읽는다(7일에 한 번)
     t = dt.date.fromisoformat(today)
     todo = [e for e in events if e.get("status") == "active" and not e["form_url"] and not e.get("formPending")
-            and (not e.get("formChecked") or (t - dt.date.fromisoformat(e["formChecked"])).days >= 7)]
+            and (e.get("formScanV") != FORM_SCAN_V or not e.get("formChecked") or (t - dt.date.fromisoformat(e["formChecked"])).days >= 7)]
     todo.sort(key=lambda e: e.get("end") or "9999")
     t0, limit, cap = time.time(), cfg.get("form_pages_per_run", 300), cfg.get("form_pages_sec", 480)
     for e in todo:
@@ -377,7 +380,7 @@ def process_forms(db, state, today, cfg):
             continue
         if res["pages"] >= limit or time.time() - t0 > cap:
             break
-        e["formChecked"] = today
+        e["formChecked"], e["formScanV"] = today, FORM_SCAN_V
         for u in pages:
             res["pages"] += 1
             try:
@@ -386,7 +389,7 @@ def process_forms(db, state, today, cfg):
                 res["page_err"] += 1
                 continue
             direct, short = forms.candidates(page)
-            if len(direct) + len(short) > 3:
+            if len(direct) > 3 or len(short) > 5:
                 continue  # 폼이 여러 개인 페이지(목록·메뉴 등)는 어느 것이 이 이벤트인지 확정할 수 없다
             for x in direct + short:
                 if x not in e.setdefault("formLinks", []):
@@ -414,6 +417,15 @@ def classify_restrictions(db):
         res["restricted"] += verdict is True
         res["review"] += verdict is None
     return res
+
+
+def classify_proof(db):
+    """전체 이벤트의 인증 필요 여부를 매 실행 다시 계산한다(목록 제외 조건이 아님)."""
+    n = 0
+    for e in db["events"].values():
+        e["needs_proof"], e["proof_reason"] = proof.classify(e)
+        n += e["needs_proof"]
+    return n
 
 
 def classify_electronics(db):
@@ -523,13 +535,14 @@ def main(argv=None):
     form = process_forms(db, state, today, fcfg)
     restricted = classify_restrictions(db)
     elec = classify_electronics(db)
+    proofs = classify_proof(db)
     apply_overrides(db)  # 관리자 수정이 자동 판별보다 우선
     pruned += update_status(db, today, cfg)
     links = {} if a.no_links else check_links(f, db, today, cfg.get("link_checks_per_run", 25))
     quality = audit(db, today)
     active = sum(1 for e in db["events"].values() if e.get("status") == "active")
     run.update({"added": stats["added"], "merged": stats["merged"], "rejected": stats["rejected"], "pruned": pruned,
-                "links": links, "quality": quality, "form": form, "restricted": restricted, "dates": dates, "broken": broken, "elec": elec, "active": active, "total": len(db["events"]), "requests": f.count,
+                "links": links, "quality": quality, "form": form, "restricted": restricted, "dates": dates, "broken": broken, "elec": elec, "proof": proofs, "active": active, "total": len(db["events"]), "requests": f.count,
                 "sec": round(time.time() - t0, 1)})
 
     # 안전장치: 진행 중 건수가 이전의 절반 아래로 급감하면 저장하지 않고 실패로 끝낸다(기존 사이트 유지)

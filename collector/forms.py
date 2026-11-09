@@ -1,6 +1,8 @@
 # 실제 응모 폼 링크 추출. 텍스트·HTML에서 후보를 찾고, 단축 링크는 이동 주소를 확인해 폼일 때만 확정한다
 import html as htmllib
+import ipaddress
 import re
+import socket
 from urllib.parse import unquote, urlparse
 
 # 앞에 있는 것일수록 우선. 긴 주소 폼(direct)을 단축 링크(short)보다 먼저 쓴다
@@ -14,7 +16,14 @@ DIRECT = [
 SHORT = [
     ("gle", re.compile(_B + r"(forms\.gle/[\w\-]+)", re.I | re.A)),
     ("naverme", re.compile(_B + r"(naver\.me/[\w\-]+)", re.I | re.A)),
+    ("urlkr", re.compile(_B + r"(url\.kr/[\w\-]+)", re.I | re.A)),
+    ("bitly", re.compile(_B + r"(bit\.ly/[\w\-]+)", re.I | re.A)),
+    ("me2do", re.compile(_B + r"(me2\.do/[\w\-]+)", re.I | re.A)),
+    ("hangl", re.compile(_B + r"(han\.gl/[\w\-]+)", re.I | re.A)),
 ]
+MAX_REDIRECTS = 5  # 단축 링크 추적 횟수 제한
+SHORT_TIMEOUT = 8  # 한 번의 요청 제한 시간(초)
+SHORT_HOST = re.compile(r"^https?://(?:www\.)?(?:forms\.gle|naver\.me|url\.kr|bit\.ly|me2\.do|han\.gl)/", re.I)
 # 구글 폼에서 응답 화면으로 인정하는 경로(/edit 같은 편집 화면은 참여자가 열 수 없다)
 GOOGLE_OK = {None, "/viewform", "/formResponse", "/closedform"}
 
@@ -51,37 +60,61 @@ def is_form(url):
     return d[0] if d else None
 
 
+def _ips(host):
+    """호스트가 가리키는 IP 목록."""
+    return [i[4][0] for i in socket.getaddrinfo(host, None)]
+
+
+def is_safe_url(url):
+    """외부 공개 주소만 허용한다: http(s), 표준 포트, 계정 정보 없음, 사설·루프백·링크로컬 IP 금지."""
+    p = urlparse(url)
+    if p.scheme not in ("http", "https") or p.username or p.password or not p.hostname:
+        return False
+    try:
+        if p.port not in (None, 80, 443):
+            return False
+        addrs = _ips(p.hostname)
+    except (ValueError, OSError):
+        return False
+    return bool(addrs) and all(ipaddress.ip_address(x.split("%")[0]).is_global for x in addrs)
+
+
+def _follow(f, url):
+    """리다이렉트를 한 번씩 안전 검사하며 따라간다(목적지 본문은 받지 않음). (마지막 주소, 상태)
+    상태: 'form' 폼 도착, 'not_form' 다른 곳·응답 끝, 'blocked' 안전하지 않은 주소, 'error' 오류"""
+    cur = url
+    for _ in range(MAX_REDIRECTS):
+        if is_form(cur):
+            return cur, "form"
+        if not is_safe_url(cur):
+            return cur, "blocked"
+        r = f.get(cur, allow_redirects=False, timeout=SHORT_TIMEOUT)
+        loc = r.headers.get("Location")
+        if r.status_code not in (301, 302, 303, 307, 308) or not loc:
+            return cur, ("not_form" if r.status_code < 400 else "error")
+        cur = requests_join(cur, loc)
+        if not is_form(cur) and not SHORT_HOST.match(cur):
+            return cur, "not_form"  # 폼도 단축 주소도 아닌 곳으로 이동
+    return cur, ("form" if is_form(cur) else "error")  # 횟수 제한 초과
+
+
 def resolve_short(f, url, cache, today, retry_days=3):
-    """단축 링크의 이동 주소만 따라가(목적지 페이지 내용은 받지 않음) 폼이면 그 주소, 아니면 None.
+    """단축 링크가 실제 폼으로 이어지면 그 폼 주소, 아니면 None.
     결과: (폼 주소 또는 None, 'form'|'not_form'|'unverified')"""
     c = cache.get(url)
     if c and (c["status"] != "error" or (_days(today, c["at"]) < retry_days)):
         if c["status"] == "form":
             return c["final"], "form"
-        return None, ("not_form" if c["status"] == "not_form" else "unverified")
-    cur, status, final = url, "error", None
+        return None, ("unverified" if c["status"] == "error" else "not_form")
     try:
-        for _ in range(4):
-            r = f.get(cur, allow_redirects=False)
-            loc = r.headers.get("Location")
-            if r.status_code not in (301, 302, 303, 307, 308) or not loc:
-                status = "not_form" if r.status_code < 400 else "error"
-                break
-            cur = requests_join(cur, loc)
-            final = is_form(cur)
-            if final:
-                status = "form"
-                break
-            host = urlparse(cur).netloc.lower()
-            if "naver.me" not in host and "forms.gle" not in host:
-                status = "not_form"  # 폼이 아닌 다른 사이트로 이동
-                break
+        cur, status = _follow(f, url)
     except Exception:
-        status = "error"
+        cur, status = url, "error"
+    final = is_form(cur) if status == "form" else None
     cache[url] = {"final": final, "status": status, "at": today, "to": cur[:200]}
-    if status == "form":
+    if final:
         return final, "form"
-    return None, ("not_form" if status == "not_form" else "unverified")
+    return None, ("unverified" if status == "error" else "not_form")
 
 
 SHORTENERS = re.compile(r"^https?://(?:www\.)?(?:is\.gd|tinyurl\.com|vo\.la|bit\.ly|han\.gl|url\.kr|me2\.do|buly\.kr|c11\.kr|t\.ly|abit\.ly|shorturl\.at)/", re.I)
@@ -95,8 +128,10 @@ def expand(f, url, cache, today):
         return cache[url]
     cur = url
     try:
-        for _ in range(4):
-            r = f.get(cur, allow_redirects=False)
+        for _ in range(MAX_REDIRECTS):
+            if not is_safe_url(cur):
+                return url  # 안전하지 않은 주소로는 요청하지 않는다
+            r = f.get(cur, allow_redirects=False, timeout=SHORT_TIMEOUT)
             loc = r.headers.get("Location")
             if r.status_code not in (301, 302, 303, 307, 308) or not loc:
                 break

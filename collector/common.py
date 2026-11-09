@@ -67,7 +67,8 @@ class Fetcher:
             self._wait(host)
             try:
                 self.count += 1
-                r = self.s.get(url, timeout=self.timeout, **kw)
+                kw.setdefault("timeout", self.timeout)
+                r = self.s.get(url, **kw)
                 if r.status_code >= 500 or r.status_code == 429:
                     err = RuntimeError(f"HTTP {r.status_code}: {url}")
                     time.sleep(2 * (attempt + 1))

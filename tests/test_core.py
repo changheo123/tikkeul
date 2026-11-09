@@ -1,5 +1,6 @@
 # 핵심 규칙 단위 테스트: python -m pytest tests (pytest가 없으면 python tests/test_core.py)
 import datetime as dt
+import pytest
 import sys
 from pathlib import Path
 
@@ -8,6 +9,13 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 from collector.common import period, find_dates
 from collector.extract import build_event, pay_required, is_show_invite, norm_url
 from collector import pipeline as P
+
+
+@pytest.fixture(autouse=True)
+def _public_dns(monkeypatch):
+    """단위 테스트는 DNS를 쓰지 않는다(공개 IP로 가정). 내부 IP 테스트는 따로 덮어쓴다."""
+    from collector import forms as F
+    monkeypatch.setattr(F, "_ips", lambda host: ["8.8.8.8"])
 
 
 def ev(title, url, end="2099-12-31", body="댓글 남기면 커피 기프티콘 10명 추첨", **kw):
@@ -262,6 +270,85 @@ def test_portal_duplicate_by_org_and_period():
     c = ev("다른 기간 이벤트", "https://www.wevity.com/?ix=2", end="2099-11-15", org="건강보험심사평가원")
     c.update({"start": "2099-11-01", "src": "wv"})
     assert P.merge(db, c, "2026-11-09", st) != a["id"]
+
+
+def test_new_short_domains():
+    from collector import forms as F
+    d, s = F.candidates("url.kr/aB1 https://bit.ly/x2 me2.do/y3 han.gl/z4, example.com/bit.ly/no")
+    assert d == [] and s == ["https://url.kr/aB1", "https://bit.ly/x2", "https://me2.do/y3", "https://han.gl/z4"]
+
+    class R:
+        def __init__(self, code, loc=None):
+            self.status_code, self.headers = code, {"Location": loc} if loc else {}
+
+    class Fake:
+        routes = {"https://bit.ly/f": R(302, "https://forms.gle/g"), "https://forms.gle/g": R(302, "https://docs.google.com/forms/d/e/ID/viewform"),
+                  "https://url.kr/n": R(302, "https://form.naver.com/response/N1"), "https://me2.do/b": R(302, "https://blog.naver.com/a/1"),
+                  "https://han.gl/i": R(302, "http://127.0.0.1/admin"), "https://han.gl/loop": R(302, "https://han.gl/loop")}
+
+        def get(self, url, **kw):
+            assert kw["allow_redirects"] is False and kw["timeout"] == F.SHORT_TIMEOUT
+            return self.routes[url]
+
+    c, f, t = {}, Fake(), "2026-11-09"
+    assert F.resolve_short(f, "https://bit.ly/f", c, t) == ("https://docs.google.com/forms/d/e/ID/viewform", "form")  # 단축→단축→폼
+    assert F.resolve_short(f, "https://url.kr/n", c, t) == ("https://form.naver.com/response/N1", "form")
+    assert F.resolve_short(f, "https://me2.do/b", c, t) == (None, "not_form")  # 폼이 아닌 곳
+    assert F.resolve_short(f, "https://han.gl/i", c, t) == (None, "not_form")  # 폼·단축 주소가 아닌 내부 주소에는 요청하지 않음
+    assert F.resolve_short(f, "https://han.gl/loop", c, t) == (None, "unverified")  # 횟수 제한
+
+
+def test_ssrf_blocking(monkeypatch):
+    from collector import forms as F
+    for bad in ("ftp://bit.ly/a", "https://user:pw@bit.ly/a", "https://bit.ly:8080/a"):
+        assert not F.is_safe_url(bad), bad
+    for ip in ("127.0.0.1", "10.0.0.5", "192.168.1.1", "169.254.169.254", "::1", "100.64.0.1"):
+        monkeypatch.setattr(F, "_ips", lambda host, ip=ip: [ip])
+        assert not F.is_safe_url("https://bit.ly/a"), ip
+    monkeypatch.setattr(F, "_ips", lambda host: ["8.8.8.8", "10.0.0.1"])
+    assert not F.is_safe_url("https://bit.ly/a")  # 하나라도 내부면 거부
+    monkeypatch.setattr(F, "_ips", lambda host: ["8.8.8.8"])
+    assert F.is_safe_url("https://bit.ly/a")
+    monkeypatch.setattr(F, "_ips", lambda host: ["10.0.0.1"])
+
+    class NoCall:
+        def get(self, *a, **k):
+            raise AssertionError("내부 주소에 요청하면 안 됨")
+
+    assert F.resolve_short(NoCall(), "https://bit.ly/a", {}, "2026-11-09") == (None, "not_form")
+    assert F.expand(NoCall(), "https://bit.ly/a", {}, "2026-11-09") == "https://bit.ly/a"
+
+
+def _pf(**kw):
+    from collector.proof import classify
+    return classify({"title": "", "tags": [], **kw})[0]
+
+
+def test_needs_proof():
+    assert _pf(steps=["카카오톡 채널 추가", "추가 화면 캡처 후 폼 제출"]) is True
+    assert _pf(needs=["영수증 사진 제출"]) is True
+    assert _pf(steps=["구매 인증 후 응모"]) is True
+    assert _pf(steps=["팔로우 인증 구글폼"]) is True
+    assert _pf(steps=["구독 인증샷 업로드"]) is True
+    assert _pf(needs=["증빙 자료 첨부 필수"]) is True
+    assert _pf(rawText="참여 방법\n인스타그램 팔로우 후 화면 캡처를 폼에 제출해 주세요") is True
+    assert _pf(steps=["팔로우", "댓글", "폼인증"]) is True
+    assert _pf(steps=["주간 5만보 걷기", "걸음수 인증"]) is True
+    assert _pf(title="컵 인증하고 네이버페이 받자", steps=["컵사진", "폼제출"]) is True
+    assert _pf(steps=["본인인증 로그인", "설문 제출"]) is False
+    assert _pf(title="과일 고르고 커피 받자", steps=["사진 업로드"]) is False
+    # 단순 등장·선택·당첨 뒤 절차는 아니다
+    assert _pf(steps=["팔로우", "댓글 작성"]) is False
+    assert _pf(steps=["인증샷 올리면 당첨 확률 UP"]) is False
+    assert _pf(needs=["캡처 없이 댓글만 남겨도 참여"]) is False
+    assert _pf(needs=["당첨 시 신분증 사본 제출"]) is False
+    assert _pf(needs=["휴대폰 본인 인증 후 응모"]) is False
+    assert _pf(steps=["직접 찍은 사진과 한 줄 메시지를 댓글로"]) is False
+    assert _pf(rawText="이벤트 안내 캡처 이미지입니다") is False  # 본문은 제출 표현이 있어야
+    assert _pf(steps=["댓글"], title="팔로우 인증하고 커피 받자") is False  # 절차를 알면 제목은 보지 않음
+    assert _pf(title="팔로우 인증하고 커피 받자") is True
+    db = {"events": {"a": {"id": "a", "title": "t", "tags": [], "steps": ["구독 캡처 제출"], "is_restricted": False}}}
+    assert P.classify_proof(db) == 1 and db["events"]["a"]["needs_proof"] is True and db["events"]["a"]["is_restricted"] is False
 
 
 def test_status_expiry():
