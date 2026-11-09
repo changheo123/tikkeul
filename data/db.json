@@ -42301,7 +42301,7 @@
    "kind": "설문",
    "lastSeen": "2026-11-09",
    "linkChecked": "2026-11-09",
-   "linkStatus": "robots",
+   "linkStatus": "error ConnectTimeout",
    "listUrl": "https://www.eventhouse.kr/site/view.php?no=319113",
    "max": null,
    "min": null,
@@ -242548,6 +242548,6 @@
   }
  },
  "meta": {
-  "updated": "2026-11-09T22:13:46+09:00"
+  "updated": "2026-11-09T23:07:35+09:00"
  }
 }
