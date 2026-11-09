@@ -5748,11 +5748,14 @@
    "grade": "X",
    "id": "e183",
    "is_restricted": false,
+   "issues": [
+    "원문 링크 접속"
+   ],
    "kind": "기타",
    "lastSeen": "2026-11-09",
    "linkChecked": "2026-11-09",
    "linkFail": 0,
-   "linkStatus": "skip",
+   "linkStatus": "robots",
    "max": null,
    "min": null,
    "mode": null,
@@ -19192,11 +19195,14 @@
    "grade": "C",
    "id": "eh-28542cd432",
    "is_restricted": false,
+   "issues": [
+    "원문 링크 접속"
+   ],
    "kind": "설문",
    "lastSeen": "2026-11-09",
    "linkChecked": "2026-11-09",
    "linkFail": 0,
-   "linkStatus": "skip",
+   "linkStatus": "error ReadTimeout",
    "listUrl": "https://www.eventhouse.kr/site/view.php?no=318298",
    "max": null,
    "min": null,
@@ -19627,7 +19633,8 @@
    "kind": "퀴즈",
    "lastSeen": "2026-11-09",
    "linkChecked": "2026-11-09",
-   "linkStatus": "skip",
+   "linkFail": 0,
+   "linkStatus": "ok",
    "listUrl": "https://www.eventhouse.kr/site/view.php?no=318592",
    "max": null,
    "min": null,
@@ -25444,7 +25451,8 @@
    "kind": "설문",
    "lastSeen": "2026-11-09",
    "linkChecked": "2026-11-09",
-   "linkStatus": "skip",
+   "linkFail": 0,
+   "linkStatus": "ok",
    "listUrl": "https://www.eventhouse.kr/site/view.php?no=319448",
    "max": null,
    "min": null,
@@ -31460,7 +31468,8 @@
    "kind": "기타",
    "lastSeen": "2026-11-09",
    "linkChecked": "2026-11-09",
-   "linkStatus": "skip",
+   "linkFail": 0,
+   "linkStatus": "ok",
    "listUrl": "https://www.eventhouse.kr/site/view.php?no=318301",
    "max": null,
    "min": null,
@@ -31924,10 +31933,14 @@
    "grade": "C",
    "id": "eh-4c254bf4bd",
    "is_restricted": false,
+   "issues": [
+    "원문 링크 접속"
+   ],
    "kind": "기타",
    "lastSeen": "2026-11-09",
    "linkChecked": "2026-11-09",
-   "linkStatus": "skip",
+   "linkFail": 0,
+   "linkStatus": "http 403",
    "listUrl": "https://www.eventhouse.kr/site/view.php?no=318491",
    "max": null,
    "min": null,
@@ -38325,7 +38338,8 @@
    "kind": "설문",
    "lastSeen": "2026-11-09",
    "linkChecked": "2026-11-09",
-   "linkStatus": "skip",
+   "linkFail": 0,
+   "linkStatus": "ok",
    "listUrl": "https://www.eventhouse.kr/site/view.php?no=319507",
    "max": null,
    "min": null,
@@ -41597,7 +41611,8 @@
    "kind": "댓글",
    "lastSeen": "2026-11-09",
    "linkChecked": "2026-11-09",
-   "linkStatus": "skip",
+   "linkFail": 0,
+   "linkStatus": "ok",
    "listUrl": "https://www.eventhouse.kr/site/view.php?no=319402",
    "max": null,
    "min": null,
@@ -42280,10 +42295,13 @@
    "grade": "C",
    "id": "eh-6f05a94c74",
    "is_restricted": false,
+   "issues": [
+    "원문 링크 접속"
+   ],
    "kind": "설문",
    "lastSeen": "2026-11-09",
    "linkChecked": "2026-11-09",
-   "linkStatus": "skip",
+   "linkStatus": "robots",
    "listUrl": "https://www.eventhouse.kr/site/view.php?no=319113",
    "max": null,
    "min": null,
@@ -242530,6 +242548,6 @@
   }
  },
  "meta": {
-  "updated": "2026-11-09T21:20:09+09:00"
+  "updated": "2026-11-09T22:13:46+09:00"
  }
 }
