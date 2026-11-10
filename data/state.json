@@ -1900,6 +1900,8 @@
    "219": "ek-c0ba17c23a",
    "22": "ek-12c6fc06c9",
    "220": "ek-f37062d9a6",
+   "221": "ek-9a70776c74",
+   "222": "skip:이벤트 신호 없음",
    "23": "ek-d435a6cdd7",
    "24": "ek-4d134bc072",
    "25": "ek-f6e1126ced",
@@ -3581,15 +3583,15 @@
   }
  },
  "lastOk": {
-  "busan": "2026-11-10T11:16:57+09:00",
+  "busan": "2026-11-10T12:15:06+09:00",
   "contestkorea": "2026-11-10T10:18:48+09:00",
   "danawa": "2026-11-10T10:18:48+09:00",
-  "eventhouse": "2026-11-10T11:16:57+09:00",
+  "eventhouse": "2026-11-10T12:15:06+09:00",
   "eventhouse_search": "2026-11-10T11:16:57+09:00",
-  "events_kr": "2026-11-10T11:16:57+09:00",
-  "korissue": "2026-11-10T11:16:57+09:00",
-  "korissue_orgs": "2026-11-10T11:16:57+09:00",
-  "mohw": "2026-11-10T11:16:57+09:00",
+  "events_kr": "2026-11-10T12:15:06+09:00",
+  "korissue": "2026-11-10T12:15:06+09:00",
+  "korissue_orgs": "2026-11-10T12:15:06+09:00",
+  "mohw": "2026-11-10T12:15:06+09:00",
   "mrblog": "2026-11-10T11:16:57+09:00",
   "reviewnote": "2026-11-10T11:16:57+09:00",
   "sbs": "2026-11-10T11:16:57+09:00",
@@ -3597,15 +3599,15 @@
   "wevity": "2026-11-10T07:21:37+09:00"
  },
  "lastRun": {
-  "busan": "2026-11-10T11:16:57+09:00",
+  "busan": "2026-11-10T12:15:06+09:00",
   "contestkorea": "2026-11-10T10:18:48+09:00",
   "danawa": "2026-11-10T10:18:48+09:00",
-  "eventhouse": "2026-11-10T11:16:57+09:00",
+  "eventhouse": "2026-11-10T12:15:06+09:00",
   "eventhouse_search": "2026-11-10T11:16:57+09:00",
-  "events_kr": "2026-11-10T11:16:57+09:00",
-  "korissue": "2026-11-10T11:16:57+09:00",
-  "korissue_orgs": "2026-11-10T11:16:57+09:00",
-  "mohw": "2026-11-10T11:16:57+09:00",
+  "events_kr": "2026-11-10T12:15:06+09:00",
+  "korissue": "2026-11-10T12:15:06+09:00",
+  "korissue_orgs": "2026-11-10T12:15:06+09:00",
+  "mohw": "2026-11-10T12:15:06+09:00",
   "mrblog": "2026-11-10T11:16:57+09:00",
   "naver": "2026-11-10T10:18:48+09:00",
   "reviewnote": "2026-11-10T11:16:57+09:00",
@@ -3628,7 +3630,9 @@
    "318949": "유료 조건: 유료",
    "319102": "유료 응모형태"
   },
-  "events_kr": {},
+  "events_kr": {
+   "222": "이벤트 신호 없음"
+  },
   "korissue": {
    "69852": "연도 없는 일정이 먼 미래로 해석됨(지난 행사로 판단)",
    "88811": "유료 조건: 구매"
@@ -3821,6 +3825,12 @@
    "final": "https://docs.google.com/forms/d/e/1FAIpQLScyOHNQ0m1kKy8APfYPyIVc2OitKc6qsxtm3HC9lAK3LqCV1Q/viewform",
    "status": "form",
    "to": "https://docs.google.com/forms/d/e/1FAIpQLScyOHNQ0m1kKy8APfYPyIVc2OitKc6qsxtm3HC9lAK3LqCV1Q/viewform?usp=send_form"
+  },
+  "https://forms.gle/cgXFehVZ8aJfkbmU8": {
+   "at": "2026-11-10",
+   "final": "https://docs.google.com/forms/d/e/1FAIpQLSdsqdKnYy9p9YP3-Y2bFNVvnAdL7DMHP1ZmHnHFvoznTIwD3Q/viewform",
+   "status": "form",
+   "to": "https://docs.google.com/forms/d/e/1FAIpQLSdsqdKnYy9p9YP3-Y2bFNVvnAdL7DMHP1ZmHnHFvoznTIwD3Q/viewform?usp=send_form"
   },
   "https://forms.gle/cszf6864hfmbCubG8": {
    "at": "2026-11-09",
