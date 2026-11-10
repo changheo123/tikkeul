@@ -14098,6 +14098,20 @@
    "verification_reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)",
    "verification_status": "needs_review"
   },
+  "mb-19b8648f48": {
+   "candidate_url": "https://www.mrblog.net/campaigns/1149732",
+   "destination_checked": false,
+   "entry_type": "website",
+   "entry_url": null,
+   "last_checked_at": "2026-11-10",
+   "link_evidence": "source_row",
+   "original_url": null,
+   "verification_code": "login",
+   "verification_evidence_url": null,
+   "verification_grade": "B",
+   "verification_reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)",
+   "verification_status": "needs_review"
+  },
   "mb-1f5a403979": {
    "candidate_url": "https://www.mrblog.net/campaigns/1149690",
    "destination_checked": false,
@@ -14966,6 +14980,20 @@
    "verification_reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)",
    "verification_status": "needs_review"
   },
+  "mb-a5985e7979": {
+   "candidate_url": "https://www.mrblog.net/campaigns/1150127",
+   "destination_checked": false,
+   "entry_type": "website",
+   "entry_url": null,
+   "last_checked_at": "2026-11-10",
+   "link_evidence": "source_row",
+   "original_url": null,
+   "verification_code": "login",
+   "verification_evidence_url": null,
+   "verification_grade": "B",
+   "verification_reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)",
+   "verification_status": "needs_review"
+  },
   "mb-a8e6071b22": {
    "candidate_url": "https://www.mrblog.net/campaigns/1149278",
    "destination_checked": false,
@@ -15220,6 +15248,20 @@
   },
   "mb-d25dd0eecb": {
    "candidate_url": "https://www.mrblog.net/campaigns/1148844",
+   "destination_checked": false,
+   "entry_type": "website",
+   "entry_url": null,
+   "last_checked_at": "2026-11-10",
+   "link_evidence": "source_row",
+   "original_url": null,
+   "verification_code": "login",
+   "verification_evidence_url": null,
+   "verification_grade": "B",
+   "verification_reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)",
+   "verification_status": "needs_review"
+  },
+  "mb-d56505c9d6": {
+   "candidate_url": "https://www.mrblog.net/campaigns/1151280",
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
@@ -43778,6 +43820,10 @@
    "at": "2026-11-09",
    "status": "login"
   },
+  "https://www.mrblog.net/campaigns/1149732": {
+   "at": "2026-11-10",
+   "status": "login"
+  },
   "https://www.mrblog.net/campaigns/1149743": {
    "at": "2026-11-10",
    "status": "login"
@@ -43814,6 +43860,10 @@
    "at": "2026-11-09",
    "status": "login"
   },
+  "https://www.mrblog.net/campaigns/1150127": {
+   "at": "2026-11-10",
+   "status": "login"
+  },
   "https://www.mrblog.net/campaigns/1150134": {
    "at": "2026-11-09",
    "status": "login"
@@ -43843,6 +43893,10 @@
    "status": "login"
   },
   "https://www.mrblog.net/campaigns/1150861": {
+   "at": "2026-11-10",
+   "status": "login"
+  },
+  "https://www.mrblog.net/campaigns/1151280": {
    "at": "2026-11-10",
    "status": "login"
   },
