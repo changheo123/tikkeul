@@ -12922,6 +12922,20 @@
    "verification_reason": "이벤트 글에 적힌 게시물이지만 약관·robots상 내용을 읽을 수 없음",
    "verification_status": "needs_review"
   },
+  "ki-2dae769973": {
+   "candidate_url": null,
+   "destination_checked": false,
+   "entry_type": "blog",
+   "entry_url": null,
+   "last_checked_at": "2026-11-11",
+   "link_evidence": null,
+   "original_url": null,
+   "verification_code": "stale_year",
+   "verification_evidence_url": "https://blog.naver.com/editionblog/224123262214",
+   "verification_grade": "C",
+   "verification_reason": "페이지에 적힌 기간이 지난 행사와 일치",
+   "verification_status": "unverified"
+  },
   "ki-2f2f738e8a": {
    "candidate_url": null,
    "destination_checked": false,
@@ -12978,6 +12992,34 @@
    "verification_reason": "이벤트 글에 적힌 게시물이지만 약관·robots상 내용을 읽을 수 없음",
    "verification_status": "needs_review"
   },
+  "ki-388ae56c62": {
+   "candidate_url": null,
+   "destination_checked": false,
+   "entry_type": "blog",
+   "entry_url": null,
+   "last_checked_at": "2026-11-11",
+   "link_evidence": null,
+   "original_url": null,
+   "verification_code": "stale_year",
+   "verification_evidence_url": "https://blog.naver.com/editionblog/224068135355",
+   "verification_grade": "C",
+   "verification_reason": "페이지에 적힌 기간이 지난 행사와 일치",
+   "verification_status": "unverified"
+  },
+  "ki-391195382a": {
+   "candidate_url": null,
+   "destination_checked": false,
+   "entry_type": "form",
+   "entry_url": null,
+   "last_checked_at": "2026-11-11",
+   "link_evidence": null,
+   "original_url": null,
+   "verification_code": "mismatch",
+   "verification_evidence_url": "https://form.naver.com/response/TXQ0D5XWhs6-RKhLREjSAQ",
+   "verification_grade": "C",
+   "verification_reason": "폼 내용이 이벤트와 일치하지 않음",
+   "verification_status": "unverified"
+  },
   "ki-3d46647b1f": {
    "candidate_url": null,
    "destination_checked": false,
@@ -13006,6 +13048,20 @@
    "verification_reason": "폼에 적힌 기간이 지난 행사와 일치",
    "verification_status": "unverified"
   },
+  "ki-4354a8509b": {
+   "candidate_url": null,
+   "destination_checked": false,
+   "entry_type": "blog",
+   "entry_url": null,
+   "last_checked_at": "2026-11-11",
+   "link_evidence": null,
+   "original_url": null,
+   "verification_code": "stale_year",
+   "verification_evidence_url": "https://blog.naver.com/editionblog/224082480903",
+   "verification_grade": "C",
+   "verification_reason": "페이지에 적힌 기간이 지난 행사와 일치",
+   "verification_status": "unverified"
+  },
   "ki-447362f651": {
    "candidate_url": "https://docs.google.com/forms/d/e/1FAIpQLScNBOabQm1c_bdeLpcbj96DyEbv3Q73Judu1XPLyCWADDW0hg/viewform",
    "destination_checked": false,
@@ -13018,6 +13074,20 @@
    "verification_evidence_url": null,
    "verification_grade": "B",
    "verification_reason": "접근이 제한된 폼이라 내용을 확인하지 못함 (이벤트 글에 적힌 폼)",
+   "verification_status": "needs_review"
+  },
+  "ki-4817ceaf33": {
+   "candidate_url": "https://www.instagram.com/p/DDrQbwjPGio/",
+   "destination_checked": false,
+   "entry_type": "instagram",
+   "entry_url": null,
+   "last_checked_at": "2026-11-11",
+   "link_evidence": "source_row",
+   "original_url": null,
+   "verification_code": "sns_no_fetch",
+   "verification_evidence_url": null,
+   "verification_grade": "B",
+   "verification_reason": "이벤트 글에 적힌 게시물이지만 약관·robots상 내용을 읽을 수 없음",
    "verification_status": "needs_review"
   },
   "ki-4ba900cff4": {
@@ -13076,6 +13146,20 @@
    "verification_reason": "접근이 제한된 폼이라 내용을 확인하지 못함 (이벤트 글에 적힌 폼)",
    "verification_status": "needs_review"
   },
+  "ki-544976639d": {
+   "candidate_url": null,
+   "destination_checked": false,
+   "entry_type": "form",
+   "entry_url": null,
+   "last_checked_at": "2026-11-11",
+   "link_evidence": null,
+   "original_url": null,
+   "verification_code": "not_found",
+   "verification_evidence_url": null,
+   "verification_grade": "C",
+   "verification_reason": "폼 페이지를 찾을 수 없음",
+   "verification_status": "unverified"
+  },
   "ki-559c8c84d3": {
    "candidate_url": "https://www.youtube.com/watch?v=VLl52cRfVqU",
    "destination_checked": false,
@@ -13096,6 +13180,20 @@
    "entry_type": "instagram",
    "entry_url": null,
    "last_checked_at": "2026-11-10",
+   "link_evidence": "source_row",
+   "original_url": null,
+   "verification_code": "sns_no_fetch",
+   "verification_evidence_url": null,
+   "verification_grade": "B",
+   "verification_reason": "이벤트 글에 적힌 게시물이지만 약관·robots상 내용을 읽을 수 없음",
+   "verification_status": "needs_review"
+  },
+  "ki-592b7dd941": {
+   "candidate_url": "https://www.instagram.com/p/DRMXqD4EcyB/",
+   "destination_checked": false,
+   "entry_type": "instagram",
+   "entry_url": null,
+   "last_checked_at": "2026-11-11",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "sns_no_fetch",
@@ -13370,6 +13468,20 @@
    "verification_reason": "이벤트 글에 적힌 게시물이지만 약관·robots상 내용을 읽을 수 없음",
    "verification_status": "needs_review"
   },
+  "ki-7c7c260089": {
+   "candidate_url": null,
+   "destination_checked": false,
+   "entry_type": "form",
+   "entry_url": null,
+   "last_checked_at": "2026-11-11",
+   "link_evidence": null,
+   "original_url": null,
+   "verification_code": "closed",
+   "verification_evidence_url": "https://form.naver.com/response/as-tLj9tAMDCGBXmJGJvsg",
+   "verification_grade": "C",
+   "verification_reason": "응답이 마감된 폼",
+   "verification_status": "unverified"
+  },
   "ki-7f2c136090": {
    "candidate_url": "https://www.instagram.com/p/DQ3xQ5SEiTL",
    "destination_checked": false,
@@ -13438,6 +13550,20 @@
    "verification_evidence_url": null,
    "verification_grade": "B",
    "verification_reason": "이벤트 글에 적힌 게시물이지만 약관·robots상 내용을 읽을 수 없음",
+   "verification_status": "needs_review"
+  },
+  "ki-886c2db87e": {
+   "candidate_url": "https://form.naver.com/response/WTMKvU-aPtcCwWjcpfw5_w",
+   "destination_checked": false,
+   "entry_type": "form",
+   "entry_url": null,
+   "last_checked_at": "2026-11-11",
+   "link_evidence": "event_text",
+   "original_url": null,
+   "verification_code": "form_login",
+   "verification_evidence_url": null,
+   "verification_grade": "B",
+   "verification_reason": "로그인이 필요한 폼이라 내용을 확인하지 못함 (이벤트 글에 적힌 폼)",
    "verification_status": "needs_review"
   },
   "ki-8b95c57344": {
@@ -13537,6 +13663,20 @@
    "verification_grade": "B",
    "verification_reason": "이벤트 글에 적힌 게시물이지만 약관·robots상 내용을 읽을 수 없음",
    "verification_status": "needs_review"
+  },
+  "ki-99e2a82d15": {
+   "candidate_url": null,
+   "destination_checked": false,
+   "entry_type": "website",
+   "entry_url": null,
+   "last_checked_at": "2026-11-11",
+   "link_evidence": null,
+   "original_url": null,
+   "verification_code": "date_conflict",
+   "verification_evidence_url": "https://aihscity.com/",
+   "verification_grade": "C",
+   "verification_reason": "페이지의 응모 기간이 수집 정보와 다름",
+   "verification_status": "unverified"
   },
   "ki-9a3127dd5b": {
    "candidate_url": "https://form.naver.com/response/JioADeJQGXLLHHeIvdTLJw",
@@ -13692,12 +13832,40 @@
    "verification_reason": "폼에 적힌 기간이 지난 행사와 일치",
    "verification_status": "unverified"
   },
+  "ki-ae65f5b76c": {
+   "candidate_url": "https://www.instagram.com/p/DScCZx9kZ8X/",
+   "destination_checked": false,
+   "entry_type": "instagram",
+   "entry_url": null,
+   "last_checked_at": "2026-11-11",
+   "link_evidence": "source_row",
+   "original_url": null,
+   "verification_code": "sns_no_fetch",
+   "verification_evidence_url": null,
+   "verification_grade": "B",
+   "verification_reason": "이벤트 글에 적힌 게시물이지만 약관·robots상 내용을 읽을 수 없음",
+   "verification_status": "needs_review"
+  },
   "ki-b01707f71b": {
    "candidate_url": "https://www.youtube.com/watch?v=Xj6UY9SHywU",
    "destination_checked": false,
    "entry_type": "youtube",
    "entry_url": null,
    "last_checked_at": "2026-11-10",
+   "link_evidence": "source_row",
+   "original_url": null,
+   "verification_code": "sns_no_fetch",
+   "verification_evidence_url": null,
+   "verification_grade": "B",
+   "verification_reason": "이벤트 글에 적힌 게시물이지만 약관·robots상 내용을 읽을 수 없음",
+   "verification_status": "needs_review"
+  },
+  "ki-b3094bfc8c": {
+   "candidate_url": "https://www.youtube.com/watch?v=SCW3aF4Tcqk",
+   "destination_checked": false,
+   "entry_type": "youtube",
+   "entry_url": null,
+   "last_checked_at": "2026-11-11",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "sns_no_fetch",
@@ -13746,6 +13914,20 @@
    "verification_evidence_url": "https://docs.google.com/forms/d/e/1FAIpQLSfuBUACXBwlFY4YVye-2eQVDEmPqjHUQO8583_9xPYElr1qEQ/viewform",
    "verification_grade": "C",
    "verification_reason": "폼에 적힌 기간이 지난 행사와 일치",
+   "verification_status": "unverified"
+  },
+  "ki-bd7ffecdfb": {
+   "candidate_url": null,
+   "destination_checked": false,
+   "entry_type": "form",
+   "entry_url": null,
+   "last_checked_at": "2026-11-11",
+   "link_evidence": null,
+   "original_url": null,
+   "verification_code": "closed",
+   "verification_evidence_url": "https://docs.google.com/forms/d/e/1FAIpQLSfYXtDMRoqUFAVsbqS0NGBvDcmeSRB-xDZQfcrbTvemdMtStQ/closedform",
+   "verification_grade": "C",
+   "verification_reason": "응답이 마감된 폼",
    "verification_status": "unverified"
   },
   "ki-bf96f44420": {
@@ -13832,12 +14014,40 @@
    "verification_reason": "이벤트 글에 적힌 게시물이지만 약관·robots상 내용을 읽을 수 없음",
    "verification_status": "needs_review"
   },
+  "ki-c94ace43bb": {
+   "candidate_url": "https://idbins-promotion.com/insurance/event02.do?utm_source=viral&utm_medium=ehouse&utm_campaign=25y10m",
+   "destination_checked": false,
+   "entry_type": "website",
+   "entry_url": null,
+   "last_checked_at": "2026-11-11",
+   "link_evidence": "partial_match",
+   "original_url": null,
+   "verification_code": "partial",
+   "verification_evidence_url": "https://idbins-promotion.com/insurance/event_202510_02.do",
+   "verification_grade": "B",
+   "verification_reason": "페이지가 이벤트와 일부 일치",
+   "verification_status": "needs_review"
+  },
   "ki-cc2c6f8750": {
    "candidate_url": "https://www.instagram.com/p/DRT5_NPk3Ht/",
    "destination_checked": false,
    "entry_type": "instagram",
    "entry_url": null,
    "last_checked_at": "2026-11-10",
+   "link_evidence": "source_row",
+   "original_url": null,
+   "verification_code": "sns_no_fetch",
+   "verification_evidence_url": null,
+   "verification_grade": "B",
+   "verification_reason": "이벤트 글에 적힌 게시물이지만 약관·robots상 내용을 읽을 수 없음",
+   "verification_status": "needs_review"
+  },
+  "ki-cc5e02b7e5": {
+   "candidate_url": "https://www.instagram.com/p/DQ5-MWtAX1T/",
+   "destination_checked": false,
+   "entry_type": "instagram",
+   "entry_url": null,
+   "last_checked_at": "2026-11-11",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "sns_no_fetch",
@@ -13873,6 +14083,34 @@
    "verification_grade": "B",
    "verification_reason": "이벤트 글에 적힌 게시물이지만 약관·robots상 내용을 읽을 수 없음",
    "verification_status": "needs_review"
+  },
+  "ki-d69f70e150": {
+   "candidate_url": null,
+   "destination_checked": false,
+   "entry_type": "form",
+   "entry_url": null,
+   "last_checked_at": "2026-11-11",
+   "link_evidence": null,
+   "original_url": null,
+   "verification_code": "not_found",
+   "verification_evidence_url": null,
+   "verification_grade": "C",
+   "verification_reason": "폼 페이지를 찾을 수 없음",
+   "verification_status": "unverified"
+  },
+  "ki-d7e975b0d0": {
+   "candidate_url": null,
+   "destination_checked": false,
+   "entry_type": "website",
+   "entry_url": null,
+   "last_checked_at": "2026-11-11",
+   "link_evidence": null,
+   "original_url": null,
+   "verification_code": "mismatch",
+   "verification_evidence_url": "http://post.naver.com/",
+   "verification_grade": "C",
+   "verification_reason": "페이지와 이벤트의 일치를 확인하지 못함",
+   "verification_status": "unverified"
   },
   "ki-db910ba3cb": {
    "candidate_url": "https://form.naver.com/response/T0qXt1ubmJ76jb6_VxRRkQ",
@@ -13958,6 +14196,20 @@
    "verification_reason": "폼 내용은 이벤트와 일치하지만 공식 공지의 직접 연결은 확인하지 못함",
    "verification_status": "needs_review"
   },
+  "ki-e992ff34bc": {
+   "candidate_url": "https://idbins-promotion.com/insurance/event_202510_01.do",
+   "destination_checked": false,
+   "entry_type": "website",
+   "entry_url": null,
+   "last_checked_at": "2026-11-11",
+   "link_evidence": "partial_match",
+   "original_url": "https://idbins-promotion.com/insurance/event_202510_01.do",
+   "verification_code": "no_entry_cue",
+   "verification_evidence_url": "https://idbins-promotion.com/insurance/event_202510_01.do",
+   "verification_grade": "B",
+   "verification_reason": "공지는 확인했지만 참여 방법을 찾지 못함",
+   "verification_status": "needs_review"
+  },
   "ki-e9d94a44fc": {
    "candidate_url": "https://www.instagram.com/p/DSJR4HSkouB/",
    "destination_checked": false,
@@ -14040,6 +14292,20 @@
    "verification_evidence_url": "https://blog.naver.com/kfdazzang/224103596525",
    "verification_grade": "C",
    "verification_reason": "페이지에 적힌 기간이 지난 행사와 일치",
+   "verification_status": "unverified"
+  },
+  "ki-f8ac36725e": {
+   "candidate_url": null,
+   "destination_checked": false,
+   "entry_type": "form",
+   "entry_url": null,
+   "last_checked_at": "2026-11-11",
+   "link_evidence": null,
+   "original_url": null,
+   "verification_code": "not_found",
+   "verification_evidence_url": null,
+   "verification_grade": "C",
+   "verification_reason": "폼 페이지를 찾을 수 없음",
    "verification_status": "unverified"
   },
   "ki-fc3e2b2a92": {
@@ -41018,6 +41284,15 @@
     "reason": "연도 없는 목록 표기를 미래로 잘못 해석함"
    }
   ],
+  "ki-2dae769973": [
+   {
+    "at": "2026-11-11",
+    "field": "status",
+    "new": "ended",
+    "old": "active",
+    "reason": "페이지의 기간이 지난 행사로 확인됨"
+   }
+  ],
   "ki-2e0af4f3ab": [
    {
     "at": "2026-11-10",
@@ -41096,6 +41371,15 @@
     "new": "ended",
     "old": "active",
     "reason": "연도 없는 목록 표기를 미래로 잘못 해석함"
+   }
+  ],
+  "ki-388ae56c62": [
+   {
+    "at": "2026-11-11",
+    "field": "status",
+    "new": "ended",
+    "old": "active",
+    "reason": "페이지의 기간이 지난 행사로 확인됨"
    }
   ],
   "ki-39e6335605": [
@@ -41192,6 +41476,15 @@
     "new": "ended",
     "old": "active",
     "reason": "연도 없는 목록 표기를 미래로 잘못 해석함"
+   }
+  ],
+  "ki-4354a8509b": [
+   {
+    "at": "2026-11-11",
+    "field": "status",
+    "new": "ended",
+    "old": "active",
+    "reason": "페이지의 기간이 지난 행사로 확인됨"
    }
   ],
   "ki-4485c4a2a6": [
@@ -43104,6 +43397,14 @@
    "at": "2026-11-10",
    "status": "forbidden"
   },
+  "https://docs.google.com/forms/d/e/1FAIpQLSd2h4eeHLVH2p8vNNn2q-8CIMD_OjX9AlaHI3wBzcMZeS4uKw/viewform": {
+   "at": "2026-11-11",
+   "status": "not_found"
+  },
+  "https://docs.google.com/forms/d/e/1FAIpQLSd479jcet7r5xtdWdk2q8bXSMr5E2OQ-sEon9romTxvvH5akg/viewform": {
+   "at": "2026-11-11",
+   "status": "not_found"
+  },
   "https://docs.google.com/forms/d/e/1FAIpQLSd6s843x6uudTDCOT53ipczQDLi94xAC1zfSKYLOxmiP3jhRg/viewform": {
    "at": "2026-11-09",
    "status": "forbidden"
@@ -43192,6 +43493,10 @@
    "at": "2026-11-10",
    "status": "closed"
   },
+  "https://docs.google.com/forms/d/e/1FAIpQLSfYXtDMRoqUFAVsbqS0NGBvDcmeSRB-xDZQfcrbTvemdMtStQ/viewform": {
+   "at": "2026-11-11",
+   "status": "closed"
+  },
   "https://docs.google.com/forms/d/e/1FAIpQLSfj2uhxEEJqi_BGXAacPGN_HpgR_OYmIXkBlQsOy5III5OzhA/viewform": {
    "at": "2026-11-09",
    "status": "forbidden"
@@ -43203,6 +43508,10 @@
   "https://docs.google.com/forms/d/e/1FAIpQLSfvze7aoyAnZtflKvfflxwAHrKxemul5dFLEqq4Qga7KzgY3A/viewform": {
    "at": "2026-11-09",
    "status": "forbidden"
+  },
+  "https://docs.google.com/forms/d/e/1FAIpQLSfwKHBfwa2UgN5c7_QoqfmxJwrkUTlAVxVTpH1qeEWxZ2507A/viewform": {
+   "at": "2026-11-11",
+   "status": "not_found"
   },
   "https://form.naver.com/response/-hh2kavMsh9fKwGnN641MA": {
    "at": "2026-11-09",
@@ -43364,6 +43673,10 @@
    "at": "2026-11-09",
    "status": "login"
   },
+  "https://form.naver.com/response/WTMKvU-aPtcCwWjcpfw5_w": {
+   "at": "2026-11-11",
+   "status": "login"
+  },
   "https://form.naver.com/response/W_aoO95j5pAf3pVx3LNBCA": {
    "at": "2026-11-09",
    "status": "login"
@@ -43374,6 +43687,10 @@
   },
   "https://form.naver.com/response/XTrLfoWDOiX7KtklRIpfcw": {
    "at": "2026-11-10",
+   "status": "closed"
+  },
+  "https://form.naver.com/response/as-tLj9tAMDCGBXmJGJvsg": {
+   "at": "2026-11-11",
    "status": "closed"
   },
   "https://form.naver.com/response/dYuOMoijbwHnh81yo3Cp2A": {
