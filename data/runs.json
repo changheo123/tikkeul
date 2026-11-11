@@ -1,98 +1,6 @@
 [
  {
   "active": 1383,
-  "added": 1,
-  "at": "2026-11-01T09:20:04+09:00",
-  "links": {
-   "checked": 60,
-   "dead": 0,
-   "error": 0,
-   "ok": 60,
-   "skip": 1
-  },
-  "merged": 805,
-  "pruned": 0,
-  "quality": {
-   "excluded": 0,
-   "flagged": 8,
-   "merged": 0
-  },
-  "rejected": 0,
-  "requests": 96,
-  "sec": 100.9,
-  "seeded": 0,
-  "sources": {
-   "busan": {
-    "status": "wait"
-   },
-   "danawa": {
-    "status": "wait"
-   },
-   "eventhouse": {
-    "listed": 920,
-    "merged": 562,
-    "new": 0,
-    "requests": 23,
-    "sec": 24.7,
-    "skipped": 6,
-    "status": "ok"
-   },
-   "events_kr": {
-    "listed": 166,
-    "merged": 0,
-    "new": 0,
-    "requests": 10,
-    "sec": 10.4,
-    "skipped": 0,
-    "status": "ok"
-   },
-   "gangnam": {
-    "status": "off"
-   },
-   "korissue": {
-    "listed": 244,
-    "merged": 243,
-    "new": 1,
-    "requests": 2,
-    "sec": 3.4,
-    "skipped": 0,
-    "status": "ok"
-   },
-   "mohw": {
-    "listed": 12,
-    "merged": 0,
-    "new": 0,
-    "requests": 1,
-    "sec": 3.1,
-    "skipped": 0,
-    "status": "ok"
-   },
-   "mrblog": {
-    "status": "wait"
-   },
-   "naver": {
-    "status": "wait"
-   },
-   "reviewnote": {
-    "status": "wait"
-   },
-   "sbs": {
-    "status": "wait"
-   },
-   "telegram": {
-    "status": "wait"
-   },
-   "touredu": {
-    "status": "wait"
-   },
-   "youtube": {
-    "status": "wait"
-   }
-  },
-  "total": 2166
- },
- {
-  "active": 1383,
   "added": 0,
   "at": "2026-11-01T10:13:01+09:00",
   "links": {
@@ -31898,6 +31806,160 @@
    "telegram": {
     "reason": "수집할 공개 채널 목록이 비어 있음",
     "status": "unconfigured"
+   },
+   "touredu": {
+    "status": "wait"
+   },
+   "wevity": {
+    "status": "wait"
+   },
+   "youtube": {
+    "status": "wait"
+   }
+  },
+  "total": 5587,
+  "verify": {
+   "checked": 0,
+   "due": 0,
+   "failed": 0,
+   "no_request": 0,
+   "rendered": 0,
+   "requests": 0
+  },
+  "viaLeft": 481
+ },
+ {
+  "active": 2524,
+  "added": 0,
+  "at": "2026-11-12T05:09:12+09:00",
+  "broken": 0,
+  "dates": 0,
+  "elec": 59,
+  "form": {
+   "direct": 0,
+   "page_err": 0,
+   "page_found": 0,
+   "pages": 0,
+   "short_ok": 0
+  },
+  "links": {
+   "checked": 60,
+   "dead": 0,
+   "error": 3,
+   "ok": 48,
+   "skip": 310
+  },
+  "merged": 402,
+  "originals": 0,
+  "prizeFill": {
+   "left": 49,
+   "page": 0,
+   "page_err": 0,
+   "pages": 0,
+   "text": 0,
+   "title": 0,
+   "truncated": {
+    "checked": 0,
+    "err": 0,
+    "restored": 0
+   }
+  },
+  "proof": 452,
+  "pruned": 0,
+  "quality": {
+   "excluded": 0,
+   "flagged": 24,
+   "merged": 0
+  },
+  "rejected": 3,
+  "requests": 84,
+  "restricted": {
+   "restricted": 2784,
+   "review": 14
+  },
+  "sec": 303.6,
+  "seeded": 0,
+  "sources": {
+   "busan": {
+    "listed": 4,
+    "merged": 4,
+    "new": 0,
+    "requests": 1,
+    "sec": 1.6,
+    "skipped": 0,
+    "status": "ok"
+   },
+   "contestkorea": {
+    "status": "wait"
+   },
+   "danawa": {
+    "status": "wait"
+   },
+   "eventhouse": {
+    "listed": 400,
+    "merged": 256,
+    "new": 0,
+    "requests": 10,
+    "sec": 10.8,
+    "skipped": 1,
+    "status": "ok"
+   },
+   "eventhouse_search": {
+    "status": "wait"
+   },
+   "events_kr": {
+    "listed": 200,
+    "merged": 0,
+    "new": 0,
+    "requests": 10,
+    "sec": 10.2,
+    "skipped": 0,
+    "status": "ok"
+   },
+   "gangnam": {
+    "status": "off"
+   },
+   "korissue": {
+    "listed": 432,
+    "merged": 142,
+    "new": 0,
+    "requests": 5,
+    "sec": 5.7,
+    "skipped": 2,
+    "status": "ok"
+   },
+   "korissue_orgs": {
+    "listed": 0,
+    "merged": 0,
+    "new": 0,
+    "requests": 0,
+    "sec": 0.0,
+    "skipped": 0,
+    "status": "ok"
+   },
+   "mohw": {
+    "listed": 12,
+    "merged": 0,
+    "new": 0,
+    "requests": 1,
+    "sec": 2.5,
+    "skipped": 0,
+    "status": "ok"
+   },
+   "mrblog": {
+    "status": "wait"
+   },
+   "naver": {
+    "status": "wait"
+   },
+   "reviewnote": {
+    "status": "wait"
+   },
+   "sbs": {
+    "status": "wait"
+   },
+   "telegram": {
+    "status": "wait"
    },
    "touredu": {
     "status": "wait"
