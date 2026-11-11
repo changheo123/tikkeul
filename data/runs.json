@@ -1,79 +1,5 @@
 [
  {
-  "active": 1381,
-  "added": 0,
-  "at": "2026-11-01T07:09:04+09:00",
-  "links": {
-   "checked": 60,
-   "dead": 0,
-   "error": 0,
-   "ok": 60,
-   "skip": 0
-  },
-  "merged": 2,
-  "pruned": 0,
-  "quality": {
-   "excluded": 0,
-   "flagged": 8,
-   "merged": 0
-  },
-  "rejected": 0,
-  "requests": 61,
-  "sec": 61.7,
-  "seeded": 0,
-  "sources": {
-   "busan": {
-    "listed": 2,
-    "merged": 2,
-    "new": 0,
-    "requests": 1,
-    "sec": 2.5,
-    "skipped": 0,
-    "status": "ok"
-   },
-   "danawa": {
-    "status": "wait"
-   },
-   "eventhouse": {
-    "status": "wait"
-   },
-   "events_kr": {
-    "status": "wait"
-   },
-   "gangnam": {
-    "status": "off"
-   },
-   "korissue": {
-    "status": "wait"
-   },
-   "mohw": {
-    "status": "wait"
-   },
-   "mrblog": {
-    "status": "wait"
-   },
-   "naver": {
-    "status": "wait"
-   },
-   "reviewnote": {
-    "status": "wait"
-   },
-   "sbs": {
-    "status": "wait"
-   },
-   "telegram": {
-    "status": "wait"
-   },
-   "touredu": {
-    "status": "wait"
-   },
-   "youtube": {
-    "status": "wait"
-   }
-  },
-  "total": 2164
- },
- {
   "active": 1382,
   "added": 1,
   "at": "2026-11-01T07:34:51+09:00",
@@ -31711,6 +31637,192 @@
    "no_request": 0,
    "rendered": 0,
    "requests": 1,
+   "stale_ended": 0
+  },
+  "viaLeft": 481
+ },
+ {
+  "active": 2524,
+  "added": 28,
+  "at": "2026-11-12T02:17:46+09:00",
+  "broken": 0,
+  "dates": 0,
+  "elec": 59,
+  "form": {
+   "direct": 0,
+   "page_err": 0,
+   "page_found": 0,
+   "pages": 0,
+   "short_ok": 0
+  },
+  "links": {
+   "checked": 60,
+   "dead": 0,
+   "error": 0,
+   "ok": 60,
+   "skip": 0
+  },
+  "merged": 548,
+  "originals": 0,
+  "prizeFill": {
+   "left": 49,
+   "page": 0,
+   "page_err": 0,
+   "pages": 0,
+   "text": 0,
+   "title": 0,
+   "truncated": {
+    "checked": 0,
+    "err": 0,
+    "restored": 0
+   }
+  },
+  "proof": 452,
+  "pruned": 0,
+  "quality": {
+   "excluded": 0,
+   "flagged": 23,
+   "merged": 0
+  },
+  "rejected": 3,
+  "requests": 244,
+  "restricted": {
+   "restricted": 2784,
+   "review": 14
+  },
+  "sec": 368.2,
+  "seeded": 0,
+  "sources": {
+   "busan": {
+    "listed": 4,
+    "merged": 4,
+    "new": 0,
+    "requests": 1,
+    "sec": 2.3,
+    "skipped": 0,
+    "status": "ok"
+   },
+   "contestkorea": {
+    "status": "wait"
+   },
+   "danawa": {
+    "status": "wait"
+   },
+   "eventhouse": {
+    "listed": 400,
+    "merged": 256,
+    "new": 0,
+    "requests": 10,
+    "sec": 11.3,
+    "skipped": 1,
+    "status": "ok"
+   },
+   "eventhouse_search": {
+    "listed": 27,
+    "merged": 25,
+    "new": 0,
+    "requests": 18,
+    "sec": 18.1,
+    "skipped": 2,
+    "status": "ok"
+   },
+   "events_kr": {
+    "listed": 200,
+    "merged": 0,
+    "new": 0,
+    "requests": 10,
+    "sec": 10.6,
+    "skipped": 0,
+    "status": "ok"
+   },
+   "gangnam": {
+    "status": "off"
+   },
+   "korissue": {
+    "listed": 432,
+    "merged": 142,
+    "new": 0,
+    "requests": 5,
+    "sec": 5.6,
+    "skipped": 2,
+    "status": "ok"
+   },
+   "korissue_orgs": {
+    "listed": 681,
+    "merged": 37,
+    "new": 0,
+    "requests": 135,
+    "sec": 202.3,
+    "skipped": 35,
+    "status": "ok"
+   },
+   "mohw": {
+    "listed": 12,
+    "merged": 0,
+    "new": 0,
+    "requests": 1,
+    "sec": 2.9,
+    "skipped": 0,
+    "status": "ok"
+   },
+   "mrblog": {
+    "listed": 29,
+    "merged": 5,
+    "new": 19,
+    "requests": 1,
+    "sec": 3.5,
+    "skipped": 5,
+    "status": "ok"
+   },
+   "naver": {
+    "status": "wait"
+   },
+   "reviewnote": {
+    "listed": 87,
+    "merged": 71,
+    "new": 9,
+    "requests": 1,
+    "sec": 0.4,
+    "skipped": 7,
+    "status": "ok"
+   },
+   "sbs": {
+    "listed": 16,
+    "merged": 8,
+    "new": 0,
+    "requests": 1,
+    "sec": 1.4,
+    "skipped": 8,
+    "status": "ok"
+   },
+   "telegram": {
+    "status": "wait"
+   },
+   "touredu": {
+    "listed": 2,
+    "merged": 0,
+    "new": 0,
+    "requests": 1,
+    "sec": 1.6,
+    "skipped": 0,
+    "status": "ok"
+   },
+   "wevity": {
+    "status": "wait"
+   },
+   "youtube": {
+    "reason": "YT_API_KEY 없음",
+    "status": "unconfigured"
+   }
+  },
+  "total": 5587,
+  "verify": {
+   "checked": 28,
+   "due": 28,
+   "failed": 0,
+   "no_request": 0,
+   "rendered": 9,
+   "requests": 28,
    "stale_ended": 0
   },
   "viaLeft": 481
