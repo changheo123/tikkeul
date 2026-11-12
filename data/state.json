@@ -283,6 +283,7 @@
   "ki-00bff0408a": "eh-5fbb2f0594",
   "ki-00d7c6a765": "eh-70af51cd67",
   "ki-00e70e984c": "eh-4eb1622cda",
+  "ki-0134304980": "eh-4e981474f1",
   "ki-0171d287cc": "eh-91dc23311f",
   "ki-01e4f05cee": "eh-3c18be5201",
   "ki-01f69be476": "eh-9e12fddcdd",
@@ -451,6 +452,7 @@
   "ki-203d16c862": "eh-5836b68372",
   "ki-204c5f687a": "eh-64eb3e6c80",
   "ki-20862c2f2b": "eh-b301fbf99c",
+  "ki-2094ea87bc": "eh-d431957a09",
   "ki-20aa367afc": "eh-c2ee90755e",
   "ki-20bf04adb6": "eh-ff991f36b6",
   "ki-20d77a981a": "eh-bbf2a46c60",
@@ -574,6 +576,7 @@
   "ki-364ccd247c": "eh-f008502bd9",
   "ki-365082549f": "eh-8c4c665bf4",
   "ki-36695ea006": "eh-20d1075e40",
+  "ki-366d66d403": "eh-360fa867c7",
   "ki-36bde1075d": "eh-fc107541e3",
   "ki-36c52f9917": "eh-cf567669bc",
   "ki-36dad5856e": "eh-cf04407ce5",
@@ -690,8 +693,10 @@
   "ki-4b61559924": "eh-85c53c406c",
   "ki-4ba4e7d927": "eh-c4cc1515bb",
   "ki-4babca909b": "eh-0ba4bfb670",
+  "ki-4bc3935c78": "eh-2a99953c0b",
   "ki-4bde2824f5": "eh-0d44ddc9de",
   "ki-4be3f60555": "eh-9319a13bdb",
+  "ki-4c03ae797d": "eh-b791bdfeff",
   "ki-4c79970592": "eh-b31900fd73",
   "ki-4c8d71d976": "eh-83cde85667",
   "ki-4c990d5edc": "eh-c11125e8cb",
@@ -957,6 +962,7 @@
   "ki-755f5a92a2": "eh-aff1bb1827",
   "ki-75b4be87f3": "eh-20a84588a1",
   "ki-75c22a299c": "eh-f3ac5c92a7",
+  "ki-75f3e74143": "eh-ca70fa9d57",
   "ki-76074cf6e2": "eh-cc7b693e59",
   "ki-76370ea26b": "eh-b99bd9e117",
   "ki-7665969d95": "eh-62cfd225e6",
@@ -1582,6 +1588,7 @@
   "ki-e29383fea2": "eh-2d55b856bb",
   "ki-e2c253edfa": "eh-91e239974c",
   "ki-e2f229df37": "eh-6e916f8bf3",
+  "ki-e31c46489f": "eh-ad924d9e70",
   "ki-e3bdbe3338": "eh-c225d542bd",
   "ki-e3d253b493": "eh-8e5549ff0d",
   "ki-e438c58599": "eh-d5b77e783e",
@@ -1673,6 +1680,7 @@
   "ki-f69437d094": "eh-e76818e38d",
   "ki-f6bb1d9277": "eh-1b527dcf5c",
   "ki-f6cb90dfb8": "eh-478af4380d",
+  "ki-f7ad7621a2": "eh-3d4d0bcc01",
   "ki-f7b2b3b2d3": "eh-958d862d84",
   "ki-f7b89f8637": "eh-a85e75ed10",
   "ki-f80f4323e8": "eh-0fcc93f2df",
@@ -2017,7 +2025,7 @@
   }
  },
  "eventhouse": {
-  "lastFull": 1794424208.544693,
+  "lastFull": 1794446918.164395,
   "prizeAllDone": true,
   "prizeFixDone": true
  },
@@ -2157,7 +2165,11 @@
    "225": "ek-cfe21c6800",
    "226": "ek-c1a38b8a67",
    "227": "ek-42d2a6ad49",
+   "228": "ek-cad06f3c49",
+   "229": "skip:유료 조건: 결제",
    "23": "ek-d435a6cdd7",
+   "230": "ek-2815f6b98b",
+   "231": "ek-eadc1dd8fc",
    "24": "ek-4d134bc072",
    "25": "ek-f6e1126ced",
    "26": "ek-887309d048",
@@ -2488,7 +2500,7 @@
     "kw": "%EC%9B%90%EC%9E%90%EB%A0%A5%EC%95%88%EC%A0%84%EC%9C%84%EC%9B%90.."
    },
    "15887": {
-    "at": "2026-11-11",
+    "at": "2026-11-12",
     "kw": "SK%EC%9D%B4%EB%85%B8%EB%B2%A0%EC%9D%B4%EC%85%98"
    },
    "1600": {
@@ -2632,7 +2644,7 @@
     "kw": "%EA%B5%AD%EB%A6%BD%EC%88%98%EC%82%B0%EB%AC%BC%ED%92%88%EC%A7%88.."
    },
    "21058": {
-    "at": "2026-11-11",
+    "at": "2026-11-12",
     "kw": "%EC%9D%B8%EC%82%AC%ED%98%81%EC%8B%A0%EC%B2%98"
    },
    "2108": {
@@ -2752,7 +2764,7 @@
     "kw": "%EB%8C%80%ED%95%9C%EC%82%B0%EC%95%85%EC%97%B0%EB%A7%B9"
    },
    "23518": {
-    "at": "2026-11-10",
+    "at": "2026-11-12",
     "kw": "%ED%96%89%EB%B3%B5%EC%96%BC%EB%9D%BC%EC%9D%B4%EC%96%B8%EC%8A%A4"
    },
    "23629": {
@@ -4144,7 +4156,7 @@
     "kw": "%EA%B5%AD%EA%B0%80%EC%9D%B8%EA%B6%8C%EC%9C%84%EC%9B%90%ED%9A%8C"
    },
    "4948": {
-    "at": "2026-11-10",
+    "at": "2026-11-12",
     "kw": "%EA%B4%80%EC%84%B8%EC%B2%AD"
    },
    "496": {
@@ -4348,7 +4360,7 @@
     "kw": "%EB%B6%80%EC%82%B0%ED%95%AD%EB%A7%8C%EA%B3%B5%EC%82%AC"
    },
    "7304": {
-    "at": "2026-11-10",
+    "at": "2026-11-12",
     "kw": "%EC%B9%B4%EC%9D%B4%EC%8A%A4%ED%8A%B8"
    },
    "7305": {
@@ -4436,7 +4448,7 @@
     "kw": "%EC%82%AC%EB%9E%8C%EC%9D%B8"
    },
    "7697": {
-    "at": "2026-11-10",
+    "at": "2026-11-12",
     "kw": "%ED%98%84%EB%8C%80%EB%AA%A8%EB%B9%84%EC%8A%A4"
    },
    "7731": {
@@ -4548,11 +4560,11 @@
     "kw": "%EB%B3%B4%EB%A0%B9%EC%8B%9C"
    },
    "9732": {
-    "at": "2026-11-10",
+    "at": "2026-11-12",
     "kw": "%EC%82%BC%EC%B2%9C%EB%A6%AC"
    },
    "981": {
-    "at": "2026-11-11",
+    "at": "2026-11-12",
     "kw": "%EA%B5%AD%ED%86%A0%EA%B5%90%ED%86%B5%EB%B6%80"
    },
    "9857": {
@@ -4566,15 +4578,15 @@
   }
  },
  "lastOk": {
-  "busan": "2026-11-12T08:40:35+09:00",
+  "busan": "2026-11-12T10:28:06+09:00",
   "contestkorea": "2026-11-12T09:33:58+09:00",
   "danawa": "2026-11-12T09:33:58+09:00",
-  "eventhouse": "2026-11-12T08:40:35+09:00",
+  "eventhouse": "2026-11-12T10:28:06+09:00",
   "eventhouse_search": "2026-11-12T09:33:58+09:00",
-  "events_kr": "2026-11-12T08:40:35+09:00",
-  "korissue": "2026-11-12T08:40:35+09:00",
-  "korissue_orgs": "2026-11-12T08:40:35+09:00",
-  "mohw": "2026-11-12T08:40:35+09:00",
+  "events_kr": "2026-11-12T10:28:06+09:00",
+  "korissue": "2026-11-12T10:28:06+09:00",
+  "korissue_orgs": "2026-11-12T10:28:06+09:00",
+  "mohw": "2026-11-12T10:28:06+09:00",
   "mrblog": "2026-11-12T09:33:58+09:00",
   "reviewnote": "2026-11-12T09:33:58+09:00",
   "sbs": "2026-11-12T09:33:58+09:00",
@@ -4582,15 +4594,15 @@
   "wevity": "2026-11-12T09:33:58+09:00"
  },
  "lastRun": {
-  "busan": "2026-11-12T08:40:35+09:00",
+  "busan": "2026-11-12T10:28:06+09:00",
   "contestkorea": "2026-11-12T09:33:58+09:00",
   "danawa": "2026-11-12T09:33:58+09:00",
-  "eventhouse": "2026-11-12T08:40:35+09:00",
+  "eventhouse": "2026-11-12T10:28:06+09:00",
   "eventhouse_search": "2026-11-12T09:33:58+09:00",
-  "events_kr": "2026-11-12T08:40:35+09:00",
-  "korissue": "2026-11-12T08:40:35+09:00",
-  "korissue_orgs": "2026-11-12T08:40:35+09:00",
-  "mohw": "2026-11-12T08:40:35+09:00",
+  "events_kr": "2026-11-12T10:28:06+09:00",
+  "korissue": "2026-11-12T10:28:06+09:00",
+  "korissue_orgs": "2026-11-12T10:28:06+09:00",
+  "mohw": "2026-11-12T10:28:06+09:00",
   "mrblog": "2026-11-12T09:33:58+09:00",
   "naver": "2026-11-12T09:33:58+09:00",
   "reviewnote": "2026-11-12T09:33:58+09:00",
@@ -4604,12 +4616,22 @@
   "busan": {},
   "contestkorea": {},
   "danawa": {},
-  "eventhouse": {},
+  "eventhouse": {
+   "315756": "유료 조건: 구매",
+   "318311": "유료 조건: 결제",
+   "318737": "유료 조건: 구매",
+   "318949": "유료 조건: 유료",
+   "319102": "유료 응모형태",
+   "319572": "유료 조건: 구매",
+   "319762": "유료 응모형태"
+  },
   "eventhouse_search": {
    "318949": "유료 조건: 유료",
    "319102": "유료 응모형태"
   },
-  "events_kr": {},
+  "events_kr": {
+   "229": "유료 조건: 결제"
+  },
   "korissue": {
    "89098": "유료 조건: 구매",
    "89758": "유료 조건: 구매"
@@ -5000,6 +5022,12 @@
    "status": "form",
    "to": "https://docs.google.com/forms/d/e/1FAIpQLSce7sXn84DglTpkpWRtAtPH7lcM3QpLKuVsYsTOuynLuEfazA/viewform?usp=send_form"
   },
+  "https://forms.gle/ySjEPa8omMpwAqRC6": {
+   "at": "2026-11-12",
+   "final": "https://docs.google.com/forms/d/e/1FAIpQLSdUKi24HV2C0jVWYwQv_kO1oJNzP6Ioy6k9QoGrvtwr4GOnAw/viewform",
+   "status": "form",
+   "to": "https://docs.google.com/forms/d/e/1FAIpQLSdUKi24HV2C0jVWYwQv_kO1oJNzP6Ioy6k9QoGrvtwr4GOnAw/viewform?usp=send_form"
+  },
   "https://forms.gle/ytww1ShszE9ZqV6N8": {
    "at": "2026-11-09",
    "final": "https://docs.google.com/forms/d/e/1FAIpQLSd9cl1QKOQTPucw_Jg4j1qqL5P1AHgSL5oE9f7ro8FF29Pd5A/viewform",
@@ -5371,6 +5399,12 @@
    "final": "https://form.naver.com/response/BvY3EMbU6sW",
    "status": "form",
    "to": "https://form.naver.com/response/BvY3EMbU6sW"
+  },
+  "https://naver.me/xqbF8CTA": {
+   "at": "2026-11-12",
+   "final": "https://form.naver.com/response/4j59UvnzPxq",
+   "status": "form",
+   "to": "https://form.naver.com/response/4j59UvnzPxq"
   },
   "https://naver.me/xsZdMwLt": {
    "at": "2026-11-09",
