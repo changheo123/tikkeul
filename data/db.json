@@ -383,7 +383,7 @@
    "cand": true,
    "candidate_url": null,
    "checked": null,
-   "count": null,
+   "count": 200,
    "destination_checked": true,
    "elec": [],
    "elec_models": [],
@@ -426,11 +426,15 @@
    "restriction_reason": null,
    "src": "bs",
    "srcUrls": [
-    "https://www.busan.go.kr/minwon/eventresult/EVTView?srchIdx=1828&prgcode=EVT_00000000002&event_gubun=SITE"
+    "https://www.busan.go.kr/minwon/eventresult/EVTView?srchIdx=1828&prgcode=EVT_00000000002&event_gubun=SITE",
+    "https://busan.go.kr/minwon/eventresult/EVTView/?event_gubun=SITE&prgcode=EVT_00000000002&srchIdx=1828"
    ],
    "start": "2026-11-01",
    "status": "active",
-   "steps": [],
+   "steps": [
+    "이야기 읽기",
+    "폼에 감상평 작성·제출"
+   ],
    "tags": [],
    "title": "당신의 마음을 적고 다이어리 받으세요!",
    "url": "https://www.busan.go.kr/minwon/eventresult/EVTView?srchIdx=1828&prgcode=EVT_00000000002&event_gubun=SITE",
@@ -8184,7 +8188,8 @@
    "restriction_reason": null,
    "src": "eh",
    "srcUrls": [
-    "https://www.eventhouse.kr/site/view.php?no=319890"
+    "https://www.eventhouse.kr/site/view.php?no=319890",
+    "https://www.instagram.com/p/DfOOCyjMh9J/"
    ],
    "start": "2026-11-02",
    "status": "active",
@@ -8194,11 +8199,10 @@
     "끝 네 글자 댓글"
    ],
    "tags": [
-    "팔로우 필요",
-    "원문 미확인"
+    "팔로우 필요"
    ],
    "title": "이모지 맞히고 닥터비타 신제품 받자 이벤트!!",
-   "url": "https://www.eventhouse.kr/site/view.php?no=319890",
+   "url": "https://www.instagram.com/p/DfOOCyjMh9J/",
    "verification_evidence_url": null,
    "verification_grade": "C",
    "verification_reason": "모음 사이트의 응모 링크가 로그인 전용이라 원문을 확인하지 못함",
@@ -8340,6 +8344,8 @@
    "entry_type": "unknown",
    "entry_url": null,
    "firstSeen": "2026-10-28",
+   "formChecked": "2026-11-12",
+   "formScanV": 2,
    "form_url": null,
    "grade": "C",
    "id": "eh-0071e110b9",
@@ -8372,7 +8378,8 @@
    "restriction_reason": null,
    "src": "eh",
    "srcUrls": [
-    "https://www.eventhouse.kr/site/view.php?no=318539"
+    "https://www.eventhouse.kr/site/view.php?no=318539",
+    "https://www.nculture.org/event/tgevent.html"
    ],
    "start": "2026-10-23",
    "status": "active",
@@ -8381,11 +8388,9 @@
     "이름·전화 응모",
     "5일 열람"
    ],
-   "tags": [
-    "원문 미확인"
-   ],
+   "tags": [],
    "title": "가을 쪽지 열고 도토리로 상품권 받자 이벤트!!",
-   "url": "https://www.eventhouse.kr/site/view.php?no=318539",
+   "url": "https://www.nculture.org/event/tgevent.html",
    "verification_evidence_url": null,
    "verification_grade": "C",
    "verification_reason": "모음 사이트의 응모 링크가 로그인 전용이라 원문을 확인하지 못함",
@@ -8407,8 +8412,10 @@
    "entry_type": "unknown",
    "entry_url": null,
    "firstSeen": "2026-11-11",
-   "formLinks": [],
-   "form_url": null,
+   "formLinks": [
+    "https://naver.me/GB3rqdht"
+   ],
+   "form_url": "https://form.naver.com/response/I8s1XijcebA",
    "grade": "C",
    "id": "eh-00db371ba2",
    "is_restricted": false,
@@ -8436,7 +8443,8 @@
    "restriction_reason": null,
    "src": "eh",
    "srcUrls": [
-    "https://www.eventhouse.kr/site/view.php?no=319867"
+    "https://www.eventhouse.kr/site/view.php?no=319867",
+    "https://www.instagram.com/p/DflDdpUkVe8/"
    ],
    "start": "2026-11-11",
    "status": "active",
@@ -8446,11 +8454,10 @@
     "설문 제출"
    ],
    "tags": [
-    "팔로우 필요",
-    "원문 미확인"
+    "팔로우 필요"
    ],
    "title": "광명소식 설문하고 아메리카노 받자 이벤트!!",
-   "url": "https://www.eventhouse.kr/site/view.php?no=319867",
+   "url": "https://www.instagram.com/p/DflDdpUkVe8/",
    "verification_evidence_url": null,
    "verification_grade": "C",
    "verification_reason": "모음 사이트의 응모 링크가 로그인 전용이라 원문을 확인하지 못함",
@@ -12599,7 +12606,8 @@
    "restriction_reason": null,
    "src": "eh",
    "srcUrls": [
-    "https://www.eventhouse.kr/site/view.php?no=319569"
+    "https://www.eventhouse.kr/site/view.php?no=319569",
+    "https://www.instagram.com/p/DfZIYROHzdE/"
    ],
    "start": "2026-11-06",
    "status": "active",
@@ -12609,11 +12617,10 @@
     "차종 정답 댓글"
    ],
    "tags": [
-    "팔로우 필요",
-    "원문 미확인"
+    "팔로우 필요"
    ],
    "title": "폭스바겐 신차 맞히고 R 키태그 받자 이벤트!!",
-   "url": "https://www.eventhouse.kr/site/view.php?no=319569",
+   "url": "https://www.instagram.com/p/DfZIYROHzdE/",
    "verification_evidence_url": null,
    "verification_grade": "C",
    "verification_reason": "모음 사이트의 응모 링크가 로그인 전용이라 원문을 확인하지 못함",
@@ -13497,7 +13504,9 @@
    "entry_type": "unknown",
    "entry_url": null,
    "firstSeen": "2026-11-10",
+   "formChecked": "2026-11-12",
    "formLinks": [],
+   "formScanV": 2,
    "form_url": null,
    "grade": "C",
    "id": "eh-0b94c26779",
@@ -13526,18 +13535,17 @@
    "restriction_reason": null,
    "src": "eh",
    "srcUrls": [
-    "https://www.eventhouse.kr/site/view.php?no=319737"
+    "https://www.eventhouse.kr/site/view.php?no=319737",
+    "https://www.busan.go.kr/minwon/survey/view?qestnarNo=538&srchSttus="
    ],
    "start": "2026-11-02",
    "status": "active",
    "steps": [
     "홈페이지 만족도 설문조사 참여"
    ],
-   "tags": [
-    "원문 미확인"
-   ],
+   "tags": [],
    "title": "홈페이지 만족도 설문조사 참여하고 상품권 받자 이벤트!!",
-   "url": "https://www.eventhouse.kr/site/view.php?no=319737",
+   "url": "https://www.busan.go.kr/minwon/survey/view?qestnarNo=538&srchSttus=",
    "verification_evidence_url": null,
    "verification_grade": "C",
    "verification_reason": "모음 사이트의 응모 링크가 로그인 전용이라 원문을 확인하지 못함",
@@ -14834,8 +14842,10 @@
    "entry_type": "unknown",
    "entry_url": null,
    "firstSeen": "2026-11-11",
-   "formLinks": [],
-   "form_url": null,
+   "formLinks": [
+    "https://naver.me/FEgqm7SK"
+   ],
+   "form_url": "https://form.naver.com/response/D9103U4fJx7",
    "grade": "C",
    "id": "eh-0de20319af",
    "is_restricted": false,
@@ -14863,7 +14873,8 @@
    "restriction_reason": null,
    "src": "eh",
    "srcUrls": [
-    "https://www.eventhouse.kr/site/view.php?no=319874"
+    "https://www.eventhouse.kr/site/view.php?no=319874",
+    "https://www.instagram.com/p/DflWU8ShQo4/"
    ],
    "start": "2026-11-11",
    "status": "active",
@@ -14874,11 +14885,10 @@
    ],
    "tags": [
     "팔로우 필요",
-    "캡처 인증",
-    "원문 미확인"
+    "캡처 인증"
    ],
    "title": "팔로워 목표숫자 포착해 네이버페이 받자 이벤트!!",
-   "url": "https://www.eventhouse.kr/site/view.php?no=319874",
+   "url": "https://www.instagram.com/p/DflWU8ShQo4/",
    "verification_evidence_url": null,
    "verification_grade": "C",
    "verification_reason": "모음 사이트의 응모 링크가 로그인 전용이라 원문을 확인하지 못함",
@@ -15217,7 +15227,9 @@
    "entry_type": "unknown",
    "entry_url": null,
    "firstSeen": "2026-11-11",
+   "formChecked": "2026-11-12",
    "formLinks": [],
+   "formScanV": 2,
    "form_url": null,
    "grade": "C",
    "id": "eh-0e1815a24a",
@@ -15246,18 +15258,17 @@
    "restriction_reason": null,
    "src": "eh",
    "srcUrls": [
-    "https://www.eventhouse.kr/site/view.php?no=319792"
+    "https://www.eventhouse.kr/site/view.php?no=319792",
+    "https://modu.go.kr/fron/jdgmn/jdgmnView.do?menu_id=393&qustnr_id=e71ebaf7f3bc4457adb034df8d37ebbd"
    ],
    "start": "2026-11-04",
    "status": "active",
    "steps": [
     "2026년도 혁신 우수사례 경진대회 국민심사"
    ],
-   "tags": [
-    "원문 미확인"
-   ],
+   "tags": [],
    "title": "혁신 우수사례 경진대회 심사하고 기프티콘 받자 이벤트!!",
-   "url": "https://www.eventhouse.kr/site/view.php?no=319792",
+   "url": "https://modu.go.kr/fron/jdgmn/jdgmnView.do?menu_id=393&qustnr_id=e71ebaf7f3bc4457adb034df8d37ebbd",
    "verification_evidence_url": null,
    "verification_grade": "C",
    "verification_reason": "모음 사이트의 응모 링크가 로그인 전용이라 원문을 확인하지 못함",
@@ -15528,7 +15539,8 @@
    "restriction_reason": null,
    "src": "eh",
    "srcUrls": [
-    "https://www.eventhouse.kr/site/view.php?no=319994"
+    "https://www.eventhouse.kr/site/view.php?no=319994",
+    "https://www.instagram.com/p/DflycnPBQ_-/"
    ],
    "start": "2026-11-11",
    "status": "active",
@@ -15537,11 +15549,10 @@
     "기대되는 홀리데이 메뉴 댓글"
    ],
    "tags": [
-    "팔로우 필요",
-    "원문 미확인"
+    "팔로우 필요"
    ],
    "title": "할리스 기대메뉴 댓글로 1만원권 받자 이벤트!!",
-   "url": "https://www.eventhouse.kr/site/view.php?no=319994",
+   "url": "https://www.instagram.com/p/DflycnPBQ_-/",
    "verification_evidence_url": null,
    "verification_grade": "C",
    "verification_reason": "모음 사이트의 응모 링크가 로그인 전용이라 원문을 확인하지 못함",
@@ -16881,7 +16892,9 @@
    "entry_type": "unknown",
    "entry_url": null,
    "firstSeen": "2026-11-12",
+   "formChecked": "2026-11-12",
    "formLinks": [],
+   "formScanV": 2,
    "form_url": null,
    "grade": "C",
    "id": "eh-112f35ee58",
@@ -16910,7 +16923,8 @@
    "restriction_reason": null,
    "src": "eh",
    "srcUrls": [
-    "https://www.eventhouse.kr/site/view.php?no=319901"
+    "https://www.eventhouse.kr/site/view.php?no=319901",
+    "https://samsungsdsax.blogspot.com/2026/10/fabrix-20-ai.html/?m=1"
    ],
    "start": "2026-10-29",
    "status": "active",
@@ -16919,11 +16933,10 @@
     "폼에 프로필명·기능 제출"
    ],
    "tags": [
-    "팔로우 필요",
-    "원문 미확인"
+    "팔로우 필요"
    ],
    "title": "FabriX 기능 고르고 모바일쿠폰 받자 이벤트!!",
-   "url": "https://www.eventhouse.kr/site/view.php?no=319901",
+   "url": "https://samsungsdsax.blogspot.com/2026/10/fabrix-20-ai.html/?m=1",
    "verification_evidence_url": null,
    "verification_grade": "C",
    "verification_reason": "모음 사이트의 응모 링크가 로그인 전용이라 원문을 확인하지 못함",
@@ -18768,7 +18781,9 @@
    "entry_type": "unknown",
    "entry_url": null,
    "firstSeen": "2026-11-12",
+   "formChecked": "2026-11-12",
    "formLinks": [],
+   "formScanV": 2,
    "form_url": null,
    "grade": "C",
    "id": "eh-160e2fc2cd",
@@ -18805,7 +18820,8 @@
    "restriction_reason": null,
    "src": "eh",
    "srcUrls": [
-    "https://www.eventhouse.kr/site/view.php?no=319896"
+    "https://www.eventhouse.kr/site/view.php?no=319896",
+    "https://bbki.co.kr/event/"
    ],
    "start": "2026-11-04",
    "status": "active",
@@ -18813,11 +18829,9 @@
     "만족도 조사 클릭",
     "브랜드별 평가·제출"
    ],
-   "tags": [
-    "원문 미확인"
-   ],
+   "tags": [],
    "title": "육아브랜드 평가하고 유모차 받자 이벤트!!",
-   "url": "https://www.eventhouse.kr/site/view.php?no=319896",
+   "url": "https://bbki.co.kr/event/",
    "verification_evidence_url": null,
    "verification_grade": "C",
    "verification_reason": "모음 사이트의 응모 링크가 로그인 전용이라 원문을 확인하지 못함",
@@ -19572,7 +19586,10 @@
    "entry_type": "unknown",
    "entry_url": null,
    "firstSeen": "2026-11-04",
-   "form_url": null,
+   "formLinks": [
+    "https://naver.me/Fribq2k5"
+   ],
+   "form_url": "https://form.naver.com/response/5M3C38duhAQ",
    "grade": "C",
    "id": "eh-1931bec6c6",
    "is_restricted": false,
@@ -19600,7 +19617,8 @@
    "restriction_reason": null,
    "src": "eh",
    "srcUrls": [
-    "https://www.eventhouse.kr/site/view.php?no=319237"
+    "https://www.eventhouse.kr/site/view.php?no=319237",
+    "https://www.instagram.com/p/DfOL3H_n-Xw/"
    ],
    "start": "2026-11-02",
    "status": "active",
@@ -19610,11 +19628,10 @@
     "폼 제출"
    ],
    "tags": [
-    "팔로우 필요",
-    "원문 미확인"
+    "팔로우 필요"
    ],
    "title": "바나나 자연방사선 퀴즈로 라떼 받자 이벤트!!",
-   "url": "https://www.eventhouse.kr/site/view.php?no=319237",
+   "url": "https://www.instagram.com/p/DfOL3H_n-Xw/",
    "verification_evidence_url": null,
    "verification_grade": "C",
    "verification_reason": "모음 사이트의 응모 링크가 로그인 전용이라 원문을 확인하지 못함",
@@ -22392,8 +22409,10 @@
    "entry_type": "unknown",
    "entry_url": null,
    "firstSeen": "2026-11-10",
-   "formLinks": [],
-   "form_url": null,
+   "formLinks": [
+    "https://naver.me/574dsaNi"
+   ],
+   "form_url": "https://form.naver.com/response/5vbJ92bZYgp",
    "grade": "C",
    "id": "eh-20563af124",
    "is_restricted": false,
@@ -22421,7 +22440,8 @@
    "restriction_reason": null,
    "src": "eh",
    "srcUrls": [
-    "https://www.eventhouse.kr/site/view.php?no=319735"
+    "https://www.eventhouse.kr/site/view.php?no=319735",
+    "https://www.instagram.com/p/DfgODZNj88a/"
    ],
    "start": "2026-11-09",
    "status": "active",
@@ -22433,11 +22453,10 @@
    "tags": [
     "팔로우 필요",
     "유튜브 참여",
-    "캡처 인증",
-    "원문 미확인"
+    "캡처 인증"
    ],
    "title": "신보 유튜브 구독하고 CGV상품권 받자 이벤트!!",
-   "url": "https://www.eventhouse.kr/site/view.php?no=319735",
+   "url": "https://www.instagram.com/p/DfgODZNj88a/",
    "verification_evidence_url": null,
    "verification_grade": "C",
    "verification_reason": "모음 사이트의 응모 링크가 로그인 전용이라 원문을 확인하지 못함",
@@ -23876,7 +23895,8 @@
    "restriction_reason": null,
    "src": "eh",
    "srcUrls": [
-    "https://www.eventhouse.kr/site/view.php?no=318688"
+    "https://www.eventhouse.kr/site/view.php?no=318688",
+    "https://www.instagram.com/p/De_KloBBbZU/"
    ],
    "start": "2026-10-28",
    "status": "active",
@@ -23884,11 +23904,9 @@
     "이미지·기대평 게시",
     "태그3개·계정태그"
    ],
-   "tags": [
-    "원문 미확인"
-   ],
+   "tags": [],
    "title": "병아리김밥 기대평으로 20만원권 받자 이벤트!!",
-   "url": "https://www.eventhouse.kr/site/view.php?no=318688",
+   "url": "https://www.instagram.com/p/De_KloBBbZU/",
    "verification_evidence_url": null,
    "verification_grade": "C",
    "verification_reason": "모음 사이트의 응모 링크가 로그인 전용이라 원문을 확인하지 못함",
@@ -24576,7 +24594,8 @@
    "restriction_reason": null,
    "src": "eh",
    "srcUrls": [
-    "https://www.eventhouse.kr/site/view.php?no=319895"
+    "https://www.eventhouse.kr/site/view.php?no=319895",
+    "https://www.instagram.com/p/De0Pwizko_u/"
    ],
    "start": "2026-10-23",
    "status": "active",
@@ -24586,11 +24605,10 @@
     "GTI 코드·이유 댓글"
    ],
    "tags": [
-    "팔로우 필요",
-    "원문 미확인"
+    "팔로우 필요"
    ],
    "title": "GTI 취향 댓글로 폭스바겐 캐리어 받자 이벤트!!",
-   "url": "https://www.eventhouse.kr/site/view.php?no=319895",
+   "url": "https://www.instagram.com/p/De0Pwizko_u/",
    "verification_evidence_url": null,
    "verification_grade": "C",
    "verification_reason": "모음 사이트의 응모 링크가 로그인 전용이라 원문을 확인하지 못함",
@@ -24677,8 +24695,10 @@
    "entry_type": "unknown",
    "entry_url": null,
    "firstSeen": "2026-11-11",
-   "formLinks": [],
-   "form_url": null,
+   "formLinks": [
+    "https://naver.me/FNt8QfiX"
+   ],
+   "form_url": "https://form.naver.com/response/Dcc4LNOb5S1",
    "grade": "C",
    "id": "eh-256ae78c94",
    "is_restricted": false,
@@ -24706,7 +24726,8 @@
    "restriction_reason": null,
    "src": "eh",
    "srcUrls": [
-    "https://www.eventhouse.kr/site/view.php?no=319794"
+    "https://www.eventhouse.kr/site/view.php?no=319794",
+    "https://www.instagram.com/p/DfiuxG7j0bf/"
    ],
    "start": "2026-11-10",
    "status": "active",
@@ -24716,11 +24737,10 @@
    ],
    "tags": [
     "팔로우 필요",
-    "인스타 참여",
-    "원문 미확인"
+    "인스타 참여"
    ],
    "title": "울산 중구 SNS 설문으로 다이소권 받자 이벤트!!",
-   "url": "https://www.eventhouse.kr/site/view.php?no=319794",
+   "url": "https://www.instagram.com/p/DfiuxG7j0bf/",
    "verification_evidence_url": null,
    "verification_grade": "C",
    "verification_reason": "모음 사이트의 응모 링크가 로그인 전용이라 원문을 확인하지 못함",
@@ -26593,8 +26613,10 @@
    "entry_type": "unknown",
    "entry_url": null,
    "firstSeen": "2026-11-12",
-   "formLinks": [],
-   "form_url": null,
+   "formLinks": [
+    "https://naver.me/GKIhsC6G"
+   ],
+   "form_url": "https://form.naver.com/response/1rsHEy08hQy",
    "grade": "C",
    "id": "eh-292346f2ac",
    "is_restricted": false,
@@ -26622,7 +26644,8 @@
    "restriction_reason": null,
    "src": "eh",
    "srcUrls": [
-    "https://www.eventhouse.kr/site/view.php?no=319885"
+    "https://www.eventhouse.kr/site/view.php?no=319885",
+    "https://blog.naver.com/forest_news/224469900001/"
    ],
    "start": "2026-11-09",
    "status": "active",
@@ -26631,11 +26654,9 @@
     "답변 제출",
     "3개 참여 확률UP"
    ],
-   "tags": [
-    "원문 미확인"
-   ],
+   "tags": [],
    "title": "산림청 협업 설문하고 커피쿠폰 받자 이벤트!!",
-   "url": "https://www.eventhouse.kr/site/view.php?no=319885",
+   "url": "https://blog.naver.com/forest_news/224469900001/",
    "verification_evidence_url": null,
    "verification_grade": "C",
    "verification_reason": "모음 사이트의 응모 링크가 로그인 전용이라 원문을 확인하지 못함",
@@ -27812,7 +27833,9 @@
    "entry_type": "unknown",
    "entry_url": null,
    "firstSeen": "2026-11-12",
+   "formChecked": "2026-11-12",
    "formLinks": [],
+   "formScanV": 2,
    "form_url": null,
    "grade": "C",
    "id": "eh-2b1da47f9c",
@@ -27847,7 +27870,8 @@
    "restriction_reason": null,
    "src": "eh",
    "srcUrls": [
-    "https://www.eventhouse.kr/site/view.php?no=319893"
+    "https://www.eventhouse.kr/site/view.php?no=319893",
+    "https://miraeneduplus.co.kr/events/event-english-cf-2610/"
    ],
    "start": "2026-10-06",
    "status": "active",
@@ -27856,11 +27880,9 @@
     "브랜드 표시",
     "영상 제출"
    ],
-   "tags": [
-    "원문 미확인"
-   ],
+   "tags": [],
    "title": "이수지 CF 따라하고 상품권 도전하자 이벤트!!",
-   "url": "https://www.eventhouse.kr/site/view.php?no=319893",
+   "url": "https://miraeneduplus.co.kr/events/event-english-cf-2610/",
    "verification_evidence_url": null,
    "verification_grade": "C",
    "verification_reason": "모음 사이트의 응모 링크가 로그인 전용이라 원문을 확인하지 못함",
@@ -30305,8 +30327,10 @@
    "entry_type": "unknown",
    "entry_url": null,
    "firstSeen": "2026-11-10",
-   "formLinks": [],
-   "form_url": null,
+   "formLinks": [
+    "https://forms.gle/TsXozj7rDcUJAyL39"
+   ],
+   "form_url": "https://docs.google.com/forms/d/e/1FAIpQLSelECJc5eIVLSSCORsov1kKogNeBOn2zIfmMBQKl3cr0Qqlsw/viewform",
    "grade": "C",
    "id": "eh-3163171305",
    "is_restricted": false,
@@ -30334,7 +30358,8 @@
    "restriction_reason": null,
    "src": "eh",
    "srcUrls": [
-    "https://www.eventhouse.kr/site/view.php?no=319659"
+    "https://www.eventhouse.kr/site/view.php?no=319659",
+    "https://www.instagram.com/p/DfgGfPxDaf_/"
    ],
    "start": "2026-11-09",
    "status": "active",
@@ -30345,11 +30370,10 @@
    ],
    "tags": [
     "팔로우 필요",
-    "캡처 인증",
-    "원문 미확인"
+    "캡처 인증"
    ],
    "title": "승강기 낱말퀴즈로 네이버페이 받자 이벤트!!",
-   "url": "https://www.eventhouse.kr/site/view.php?no=319659",
+   "url": "https://www.instagram.com/p/DfgGfPxDaf_/",
    "verification_evidence_url": null,
    "verification_grade": "C",
    "verification_reason": "모음 사이트의 응모 링크가 로그인 전용이라 원문을 확인하지 못함",
@@ -31346,7 +31370,10 @@
    "entry_type": "unknown",
    "entry_url": null,
    "firstSeen": "2026-11-06",
-   "form_url": null,
+   "formLinks": [
+    "https://docs.google.com/forms/d/e/1FAIpQLSc7gnfmZfGkCHBRlVYccb66I0w8fz6fzM93O-fFbeMbThcJdQ/viewform"
+   ],
+   "form_url": "https://docs.google.com/forms/d/e/1FAIpQLSc7gnfmZfGkCHBRlVYccb66I0w8fz6fzM93O-fFbeMbThcJdQ/viewform",
    "grade": "C",
    "id": "eh-34e2ffbf03",
    "is_restricted": false,
@@ -31374,7 +31401,8 @@
    "restriction_reason": null,
    "src": "eh",
    "srcUrls": [
-    "https://www.eventhouse.kr/site/view.php?no=319387"
+    "https://www.eventhouse.kr/site/view.php?no=319387",
+    "https://www.youtube.com/watch?v=MEu6As9PCXw"
    ],
    "start": "2026-10-29",
    "status": "active",
@@ -31385,11 +31413,10 @@
    ],
    "tags": [
     "팔로우 필요",
-    "유튜브 참여",
-    "원문 미확인"
+    "유튜브 참여"
    ],
    "title": "감상평 한마디 작성하고 선물 받자 이벤트!!",
-   "url": "https://www.eventhouse.kr/site/view.php?no=319387",
+   "url": "https://www.youtube.com/watch?v=MEu6As9PCXw",
    "verification_evidence_url": null,
    "verification_grade": "C",
    "verification_reason": "모음 사이트의 응모 링크가 로그인 전용이라 원문을 확인하지 못함",
@@ -31743,6 +31770,76 @@
    "tags": [],
    "title": "경북 미식축제 투표로 상품권 노리자 이벤트!!",
    "url": "https://www.instagram.com/p/Dep66o0jd58/",
+   "who": null
+  },
+  "eh-35ea8892f7": {
+   "announce": "2026-11-30",
+   "cand": true,
+   "candidate_url": null,
+   "checked": null,
+   "count": 120,
+   "destination_checked": false,
+   "elec": [],
+   "elec_models": [],
+   "end": "2026-11-19",
+   "endTime": null,
+   "entry_type": "unknown",
+   "entry_url": null,
+   "firstSeen": "2026-11-12",
+   "formLinks": [],
+   "form_url": null,
+   "grade": "C",
+   "id": "eh-35ea8892f7",
+   "is_restricted": false,
+   "kind": "설문",
+   "lastSeen": "2026-11-12",
+   "last_checked_at": "2026-11-12",
+   "linkChecked": "2026-11-12",
+   "linkStatus": "skip",
+   "link_evidence": null,
+   "listUrl": "https://www.eventhouse.kr/site/view.php?no=319996",
+   "max": null,
+   "min": null,
+   "mode": null,
+   "needs": [],
+   "needs_proof": true,
+   "org": "안양시",
+   "original_url": null,
+   "place": null,
+   "platHint": "insta",
+   "prize": "BBQ 황금올리브+황금알치즈.. 20명 100명",
+   "prizeAll": [
+    "BBQ 황금올리브+황금알치즈볼+콜라125L 20명",
+    "맥도날드 빅맥세트 30명",
+    "투썸플레이스 아메리카노 50명"
+   ],
+   "proof_reason": "인증 첨부",
+   "rawText": "응모형태: 설문/투표\n참여 방법\n1. SNS 팔로우\n2. 설문 응답\n3. 인증 첨부",
+   "reasons": [],
+   "restriction_note": null,
+   "restriction_reason": null,
+   "src": "eh",
+   "srcUrls": [
+    "https://www.eventhouse.kr/site/view.php?no=319996"
+   ],
+   "start": "2026-11-12",
+   "status": "active",
+   "steps": [
+    "SNS 팔로우",
+    "설문 응답",
+    "인증 첨부"
+   ],
+   "tags": [
+    "팔로우 필요",
+    "원문 미확인"
+   ],
+   "title": "안양시 설문 참여하고 치킨세트 받자 이벤트!!",
+   "url": "https://www.eventhouse.kr/site/view.php?no=319996",
+   "verification_evidence_url": null,
+   "verification_grade": "C",
+   "verification_reason": "모음 사이트의 응모 링크가 로그인 전용이라 원문을 확인하지 못함",
+   "verification_status": "unverified",
+   "verified_at": null,
    "who": null
   },
   "eh-35f454f0f8": {
@@ -32318,7 +32415,11 @@
    "entry_type": "unknown",
    "entry_url": null,
    "firstSeen": "2026-11-04",
-   "form_url": null,
+   "formLinks": [
+    "https://form.naver.com/response/E1hsfeQcb8s",
+    "https://naver.me/xTyFIADZ"
+   ],
+   "form_url": "https://form.naver.com/response/E1hsfeQcb8s",
    "grade": "C",
    "id": "eh-367e750fc2",
    "is_restricted": false,
@@ -32351,7 +32452,9 @@
    "src": "eh",
    "srcUrls": [
     "https://www.eventhouse.kr/site/view.php?no=319209",
-    "https://www.eventhouse.kr/site/view.php?no=319905"
+    "https://www.eventhouse.kr/site/view.php?no=319905",
+    "https://blog.naver.com/gmcityhall/224450318521/",
+    "https://www.instagram.com/p/DfOb9GVDwtH/"
    ],
    "start": "2026-11-02",
    "status": "active",
@@ -32359,11 +32462,9 @@
     "설문 응답",
     "연락처 입력·개인정보 동의"
    ],
-   "tags": [
-    "원문 미확인"
-   ],
+   "tags": [],
    "title": "광명시 SNS 만족도 설문하고 치킨 받자 이벤트!!",
-   "url": "https://www.eventhouse.kr/site/view.php?no=319209",
+   "url": "https://blog.naver.com/gmcityhall/224450318521/",
    "verification_evidence_url": null,
    "verification_grade": "C",
    "verification_reason": "모음 사이트의 응모 링크가 로그인 전용이라 원문을 확인하지 못함",
@@ -33786,7 +33887,8 @@
    "restriction_reason": null,
    "src": "eh",
    "srcUrls": [
-    "https://www.eventhouse.kr/site/view.php?no=319566"
+    "https://www.eventhouse.kr/site/view.php?no=319566",
+    "https://www.instagram.com/p/DfRgclmknii/"
    ],
    "start": "2026-11-03",
    "status": "active",
@@ -33796,11 +33898,10 @@
     "필수 해시태그 댓글"
    ],
    "tags": [
-    "팔로우 필요",
-    "원문 미확인"
+    "팔로우 필요"
    ],
    "title": "지혜학교 팔로우하고 투썸라떼 받자 이벤트!!",
-   "url": "https://www.eventhouse.kr/site/view.php?no=319566",
+   "url": "https://www.instagram.com/p/DfRgclmknii/",
    "verification_evidence_url": null,
    "verification_grade": "C",
    "verification_reason": "모음 사이트의 응모 링크가 로그인 전용이라 원문을 확인하지 못함",
@@ -34037,7 +34138,8 @@
    "restriction_reason": null,
    "src": "eh",
    "srcUrls": [
-    "https://www.eventhouse.kr/site/view.php?no=319897"
+    "https://www.eventhouse.kr/site/view.php?no=319897",
+    "https://www.instagram.com/reels/DfRbjt1KS4_/"
    ],
    "start": "2026-11-03",
    "status": "active",
@@ -34047,11 +34149,10 @@
     "친구 태그·홍보 댓글"
    ],
    "tags": [
-    "팔로우 필요",
-    "원문 미확인"
+    "팔로우 필요"
    ],
    "title": "친구 태그로 세라젬 마사지기 받자 이벤트!!",
-   "url": "https://www.eventhouse.kr/site/view.php?no=319897",
+   "url": "https://www.instagram.com/reels/DfRbjt1KS4_/",
    "verification_evidence_url": null,
    "verification_grade": "C",
    "verification_reason": "모음 사이트의 응모 링크가 로그인 전용이라 원문을 확인하지 못함",
@@ -34685,7 +34786,8 @@
    "restriction_reason": null,
    "src": "eh",
    "srcUrls": [
-    "https://www.eventhouse.kr/site/view.php?no=319554"
+    "https://www.eventhouse.kr/site/view.php?no=319554",
+    "https://www.instagram.com/p/DfbnbNJJtRF/"
    ],
    "start": "2026-11-07",
    "status": "active",
@@ -34695,11 +34797,10 @@
     "친구 태그"
    ],
    "tags": [
-    "팔로우 필요",
-    "원문 미확인"
+    "팔로우 필요"
    ],
    "title": "팔로우 완료 댓글 남기고 립시럽 받자 이벤트!!",
-   "url": "https://www.eventhouse.kr/site/view.php?no=319554",
+   "url": "https://www.instagram.com/p/DfbnbNJJtRF/",
    "verification_evidence_url": null,
    "verification_grade": "C",
    "verification_reason": "모음 사이트의 응모 링크가 로그인 전용이라 원문을 확인하지 못함",
@@ -35560,7 +35661,8 @@
    "restriction_reason": null,
    "src": "eh",
    "srcUrls": [
-    "https://www.eventhouse.kr/site/view.php?no=319408"
+    "https://www.eventhouse.kr/site/view.php?no=319408",
+    "https://www.instagram.com/p/DfV6OmJma3Z/"
    ],
    "start": "2026-11-03",
    "status": "active",
@@ -35568,11 +35670,9 @@
     "QR·링크트리 접속",
     "시민의견 설문 제출"
    ],
-   "tags": [
-    "원문 미확인"
-   ],
+   "tags": [],
    "title": "인천도시공사 의견 내고 커피 받자 이벤트!!",
-   "url": "https://www.eventhouse.kr/site/view.php?no=319408",
+   "url": "https://www.instagram.com/p/DfV6OmJma3Z/",
    "verification_evidence_url": null,
    "verification_grade": "C",
    "verification_reason": "모음 사이트의 응모 링크가 로그인 전용이라 원문을 확인하지 못함",
@@ -36091,7 +36191,10 @@
    "entry_type": "unknown",
    "entry_url": null,
    "firstSeen": "2026-10-30",
-   "form_url": null,
+   "formLinks": [
+    "https://forms.gle/ucJ2UMxtcqTCJdj76"
+   ],
+   "form_url": "https://docs.google.com/forms/d/e/1FAIpQLSfge-HTbz0f37maK63ES64eWRgCnvCL8Ru6i3Kf1xOJSRfD4w/viewform",
    "grade": "C",
    "id": "eh-3e0c45cfa7",
    "is_restricted": false,
@@ -36119,7 +36222,8 @@
    "restriction_reason": null,
    "src": "eh",
    "srcUrls": [
-    "https://www.eventhouse.kr/site/view.php?no=318788"
+    "https://www.eventhouse.kr/site/view.php?no=318788",
+    "https://www.instagram.com/p/DfDq6h_AY5V/"
    ],
    "start": "2026-10-26",
    "status": "active",
@@ -36128,11 +36232,9 @@
     "상황별 선택",
     "답변 제출"
    ],
-   "tags": [
-    "원문 미확인"
-   ],
+   "tags": [],
    "title": "온라인 안전 선택게임하고 경품 받자 이벤트!!",
-   "url": "https://www.eventhouse.kr/site/view.php?no=318788",
+   "url": "https://www.instagram.com/p/DfDq6h_AY5V/",
    "verification_evidence_url": null,
    "verification_grade": "C",
    "verification_reason": "모음 사이트의 응모 링크가 로그인 전용이라 원문을 확인하지 못함",
@@ -36352,7 +36454,10 @@
    "entry_type": "unknown",
    "entry_url": null,
    "firstSeen": "2026-10-29",
-   "form_url": null,
+   "formLinks": [
+    "https://docs.google.com/forms/d/e/1FAIpQLSfukYk326g_uO49r28n09rz3yUmujl3Nq-1wkBqySvCSE-vOA/viewform"
+   ],
+   "form_url": "https://docs.google.com/forms/d/e/1FAIpQLSfukYk326g_uO49r28n09rz3yUmujl3Nq-1wkBqySvCSE-vOA/viewform",
    "grade": "X",
    "id": "eh-3ec22e95bf",
    "is_restricted": false,
@@ -36387,7 +36492,8 @@
    "restriction_reason": null,
    "src": "eh",
    "srcUrls": [
-    "https://www.eventhouse.kr/site/view.php?no=318723"
+    "https://www.eventhouse.kr/site/view.php?no=318723",
+    "https://www.instagram.com/p/DfBM6lgGZE2/"
    ],
    "start": "2026-10-28",
    "status": "active",
@@ -36398,11 +36504,10 @@
     "완료댓"
    ],
    "tags": [
-    "팔로우 필요",
-    "원문 미확인"
+    "팔로우 필요"
    ],
    "title": "ENVEX 리포스트·설문 참여로 피자 받자 이벤트!!",
-   "url": "https://www.eventhouse.kr/site/view.php?no=318723",
+   "url": "https://www.instagram.com/p/DfBM6lgGZE2/",
    "verification_evidence_url": null,
    "verification_grade": "C",
    "verification_reason": "모음 사이트의 응모 링크가 로그인 전용이라 원문을 확인하지 못함",
@@ -36501,7 +36606,8 @@
    "restriction_reason": null,
    "src": "eh",
    "srcUrls": [
-    "https://www.eventhouse.kr/site/view.php?no=319276"
+    "https://www.eventhouse.kr/site/view.php?no=319276",
+    "https://www.instagram.com/p/DfO8pTLj7ux/"
    ],
    "start": "2026-11-03",
    "status": "active",
@@ -36509,11 +36615,9 @@
     "러닝영상 시청",
     "정답과 가고픈 섬 댓글"
    ],
-   "tags": [
-    "원문 미확인"
-   ],
+   "tags": [],
    "title": "고군산 섬 퀴즈 맞히고 상품권 챙기자 이벤트!!",
-   "url": "https://www.eventhouse.kr/site/view.php?no=319276",
+   "url": "https://www.instagram.com/p/DfO8pTLj7ux/",
    "verification_evidence_url": null,
    "verification_grade": "C",
    "verification_reason": "모음 사이트의 응모 링크가 로그인 전용이라 원문을 확인하지 못함",
@@ -38889,7 +38993,8 @@
    "restriction_reason": null,
    "src": "eh",
    "srcUrls": [
-    "https://www.eventhouse.kr/site/view.php?no=319328"
+    "https://www.eventhouse.kr/site/view.php?no=319328",
+    "https://www.instagram.com/p/DfG27VsvBZt/"
    ],
    "start": "2026-10-30",
    "status": "active",
@@ -38899,11 +39004,10 @@
     "다래 댓글"
    ],
    "tags": [
-    "팔로우 필요",
-    "원문 미확인"
+    "팔로우 필요"
    ],
    "title": "다래 초성퀴즈 맞히고 다래즙 받자 이벤트!!",
-   "url": "https://www.eventhouse.kr/site/view.php?no=319328",
+   "url": "https://www.instagram.com/p/DfG27VsvBZt/",
    "verification_evidence_url": null,
    "verification_grade": "C",
    "verification_reason": "모음 사이트의 응모 링크가 로그인 전용이라 원문을 확인하지 못함",
@@ -39304,7 +39408,10 @@
    "entry_type": "unknown",
    "entry_url": null,
    "firstSeen": "2026-11-03",
-   "form_url": null,
+   "formLinks": [
+    "https://docs.google.com/forms/d/e/1FAIpQLSdBBGMCMRpkYmAKgiw2p4BPczmeq2V6uiSPm-AmWk7QwQtBEQ/viewform"
+   ],
+   "form_url": "https://docs.google.com/forms/d/e/1FAIpQLSdBBGMCMRpkYmAKgiw2p4BPczmeq2V6uiSPm-AmWk7QwQtBEQ/viewform",
    "grade": "C",
    "id": "eh-44d6d2a668",
    "is_restricted": false,
@@ -39332,7 +39439,8 @@
    "restriction_reason": null,
    "src": "eh",
    "srcUrls": [
-    "https://www.eventhouse.kr/site/view.php?no=319114"
+    "https://www.eventhouse.kr/site/view.php?no=319114",
+    "https://www.instagram.com/p/DfOJ0F4EjVu/"
    ],
    "start": "2026-11-02",
    "status": "active",
@@ -39343,11 +39451,10 @@
    ],
    "tags": [
     "팔로우 필요",
-    "캡처 인증",
-    "원문 미확인"
+    "캡처 인증"
    ],
    "title": "공주시 2.5만 축하댓글로 배민권 받자 이벤트!!",
-   "url": "https://www.eventhouse.kr/site/view.php?no=319114",
+   "url": "https://www.instagram.com/p/DfOJ0F4EjVu/",
    "verification_evidence_url": null,
    "verification_grade": "C",
    "verification_reason": "모음 사이트의 응모 링크가 로그인 전용이라 원문을 확인하지 못함",
@@ -39571,7 +39678,10 @@
    "entry_type": "unknown",
    "entry_url": null,
    "firstSeen": "2026-11-06",
-   "form_url": null,
+   "formLinks": [
+    "https://naver.me/5c8vAlLY"
+   ],
+   "form_url": "https://form.naver.com/response/KJApli30Vz9",
    "grade": "C",
    "id": "eh-451afbfe50",
    "is_restricted": false,
@@ -39599,7 +39709,8 @@
    "restriction_reason": null,
    "src": "eh",
    "srcUrls": [
-    "https://www.eventhouse.kr/site/view.php?no=319399"
+    "https://www.eventhouse.kr/site/view.php?no=319399",
+    "https://www.instagram.com/p/DfVzTDeFMLs/"
    ],
    "start": "2026-11-02",
    "status": "active",
@@ -39608,11 +39719,9 @@
     "만족도 조사",
     "폼 제출"
    ],
-   "tags": [
-    "원문 미확인"
-   ],
+   "tags": [],
    "title": "홈페이지 설문 참여로 투썸커피 받자 이벤트!!",
-   "url": "https://www.eventhouse.kr/site/view.php?no=319399",
+   "url": "https://www.instagram.com/p/DfVzTDeFMLs/",
    "verification_evidence_url": null,
    "verification_grade": "C",
    "verification_reason": "모음 사이트의 응모 링크가 로그인 전용이라 원문을 확인하지 못함",
@@ -41064,7 +41173,8 @@
    "restriction_reason": null,
    "src": "eh",
    "srcUrls": [
-    "https://www.eventhouse.kr/site/view.php?no=319993"
+    "https://www.eventhouse.kr/site/view.php?no=319993",
+    "https://www.instagram.com/p/DfJlUbovZOr/"
    ],
    "start": "2026-10-31",
    "status": "active",
@@ -41074,11 +41184,10 @@
     "DM응모"
    ],
    "tags": [
-    "팔로우 필요",
-    "원문 미확인"
+    "팔로우 필요"
    ],
    "title": "친구 태그하고 현대건설 사인볼 받자 이벤트!!",
-   "url": "https://www.eventhouse.kr/site/view.php?no=319993",
+   "url": "https://www.instagram.com/p/DfJlUbovZOr/",
    "verification_evidence_url": null,
    "verification_grade": "C",
    "verification_reason": "모음 사이트의 응모 링크가 로그인 전용이라 원문을 확인하지 못함",
@@ -41430,8 +41539,10 @@
    "entry_type": "unknown",
    "entry_url": null,
    "firstSeen": "2026-11-12",
-   "formLinks": [],
-   "form_url": null,
+   "formLinks": [
+    "https://naver.me/FoXPXB3a"
+   ],
+   "form_url": "https://form.naver.com/response/6Hh5ENzXoGz",
    "grade": "C",
    "id": "eh-47d0ccd663",
    "is_restricted": false,
@@ -41459,7 +41570,8 @@
    "restriction_reason": null,
    "src": "eh",
    "srcUrls": [
-    "https://www.eventhouse.kr/site/view.php?no=319889"
+    "https://www.eventhouse.kr/site/view.php?no=319889",
+    "https://www.instagram.com/p/DfOgGLfCYt-/"
    ],
    "start": "2026-11-02",
    "status": "active",
@@ -41470,11 +41582,10 @@
    ],
    "tags": [
     "팔로우 필요",
-    "캡처 인증",
-    "원문 미확인"
+    "캡처 인증"
    ],
    "title": "시설 퀴즈 풀고 거제유자효차 받자 이벤트!!",
-   "url": "https://www.eventhouse.kr/site/view.php?no=319889",
+   "url": "https://www.instagram.com/p/DfOgGLfCYt-/",
    "verification_evidence_url": null,
    "verification_grade": "C",
    "verification_reason": "모음 사이트의 응모 링크가 로그인 전용이라 원문을 확인하지 못함",
@@ -42442,8 +42553,10 @@
    "entry_type": "unknown",
    "entry_url": null,
    "firstSeen": "2026-11-10",
-   "formLinks": [],
-   "form_url": null,
+   "formLinks": [
+    "https://form.naver.com/response/SrRV2Jy9tPFiMXXvX7WfQQ"
+   ],
+   "form_url": "https://form.naver.com/response/SrRV2Jy9tPFiMXXvX7WfQQ",
    "grade": "C",
    "id": "eh-49a39a31bf",
    "is_restricted": false,
@@ -42471,18 +42584,17 @@
    "restriction_reason": null,
    "src": "eh",
    "srcUrls": [
-    "https://www.eventhouse.kr/site/view.php?no=319664"
+    "https://www.eventhouse.kr/site/view.php?no=319664",
+    "https://blog.naver.com/hopekodit/224459083209"
    ],
    "start": "2026-10-30",
    "status": "active",
    "steps": [
     "<신용사회> 하반기호 발간 댓글 작성"
    ],
-   "tags": [
-    "원문 미확인"
-   ],
+   "tags": [],
    "title": "<신용사회> 하반기호 발간 댓글 달고 선물 받자 이벤트!!",
-   "url": "https://www.eventhouse.kr/site/view.php?no=319664",
+   "url": "https://blog.naver.com/hopekodit/224459083209",
    "verification_evidence_url": null,
    "verification_grade": "C",
    "verification_reason": "모음 사이트의 응모 링크가 로그인 전용이라 원문을 확인하지 못함",
@@ -44975,8 +45087,10 @@
    "entry_type": "unknown",
    "entry_url": null,
    "firstSeen": "2026-11-12",
-   "formLinks": [],
-   "form_url": null,
+   "formLinks": [
+    "https://forms.gle/9HApjE9JzPbCQ1sw7"
+   ],
+   "form_url": "https://docs.google.com/forms/d/e/1FAIpQLSc8jKg0JVhpPK3vSxXrfu4O-fGL0XV93Bzi10yt4pqTxr-3Ng/viewform",
    "grade": "C",
    "id": "eh-50119517cb",
    "is_restricted": false,
@@ -45004,7 +45118,8 @@
    "restriction_reason": null,
    "src": "eh",
    "srcUrls": [
-    "https://www.eventhouse.kr/site/view.php?no=319887"
+    "https://www.eventhouse.kr/site/view.php?no=319887",
+    "https://www.instagram.com/p/DfRMByDAeGK/"
    ],
    "start": "2026-11-02",
    "status": "active",
@@ -45012,11 +45127,9 @@
     "고정댓글 링크 접속",
     "만족도 설문 제출"
    ],
-   "tags": [
-    "원문 미확인"
-   ],
+   "tags": [],
    "title": "미술관 설문 참여하고 커피쿠폰 받자 이벤트!!",
-   "url": "https://www.eventhouse.kr/site/view.php?no=319887",
+   "url": "https://www.instagram.com/p/DfRMByDAeGK/",
    "verification_evidence_url": null,
    "verification_grade": "C",
    "verification_reason": "모음 사이트의 응모 링크가 로그인 전용이라 원문을 확인하지 못함",
@@ -45089,8 +45202,10 @@
    "entry_type": "unknown",
    "entry_url": null,
    "firstSeen": "2026-11-12",
-   "formLinks": [],
-   "form_url": null,
+   "formLinks": [
+    "https://smore.im/form/Gph7IzqzkE"
+   ],
+   "form_url": "https://smore.im/form/Gph7IzqzkE",
    "grade": "C",
    "id": "eh-503678482e",
    "is_restricted": false,
@@ -45118,7 +45233,8 @@
    "restriction_reason": null,
    "src": "eh",
    "srcUrls": [
-    "https://www.eventhouse.kr/site/view.php?no=319899"
+    "https://www.eventhouse.kr/site/view.php?no=319899",
+    "https://www.youtube.com/watch?v=su_XFenqJxI"
    ],
    "start": "2026-11-06",
    "status": "active",
@@ -45129,11 +45245,10 @@
    ],
    "tags": [
     "팔로우 필요",
-    "캡처 인증",
-    "원문 미확인"
+    "캡처 인증"
    ],
    "title": "강동구청 구독하고 커피상품권 받자 이벤트!!",
-   "url": "https://www.eventhouse.kr/site/view.php?no=319899",
+   "url": "https://www.youtube.com/watch?v=su_XFenqJxI",
    "verification_evidence_url": null,
    "verification_grade": "C",
    "verification_reason": "모음 사이트의 응모 링크가 로그인 전용이라 원문을 확인하지 못함",
@@ -48816,7 +48931,8 @@
    "restriction_reason": null,
    "src": "eh",
    "srcUrls": [
-    "https://www.eventhouse.kr/site/view.php?no=319561"
+    "https://www.eventhouse.kr/site/view.php?no=319561",
+    "https://www.instagram.com/p/DfZCcXRt1jA/"
    ],
    "start": "2026-11-06",
    "status": "active",
@@ -48826,11 +48942,10 @@
     "미로 출구번호 댓글"
    ],
    "tags": [
-    "팔로우 필요",
-    "원문 미확인"
+    "팔로우 필요"
    ],
    "title": "쿼츠 미로 맞히고 올리브영권 받자 이벤트!!",
-   "url": "https://www.eventhouse.kr/site/view.php?no=319561",
+   "url": "https://www.instagram.com/p/DfZCcXRt1jA/",
    "verification_evidence_url": null,
    "verification_grade": "C",
    "verification_reason": "모음 사이트의 응모 링크가 로그인 전용이라 원문을 확인하지 못함",
@@ -51688,7 +51803,8 @@
    "restriction_reason": null,
    "src": "eh",
    "srcUrls": [
-    "https://www.eventhouse.kr/site/view.php?no=319227"
+    "https://www.eventhouse.kr/site/view.php?no=319227",
+    "https://www.instagram.com/p/DfGkP3XlxKb/"
    ],
    "start": "2026-10-30",
    "status": "active",
@@ -51698,11 +51814,10 @@
     "친구 태그"
    ],
    "tags": [
-    "팔로우 필요",
-    "원문 미확인"
+    "팔로우 필요"
    ],
    "title": "음악 장르 댓글로 네이버페이 받자 이벤트!!",
-   "url": "https://www.eventhouse.kr/site/view.php?no=319227",
+   "url": "https://www.instagram.com/p/DfGkP3XlxKb/",
    "verification_evidence_url": null,
    "verification_grade": "C",
    "verification_reason": "모음 사이트의 응모 링크가 로그인 전용이라 원문을 확인하지 못함",
@@ -51920,7 +52035,8 @@
    "restriction_reason": null,
    "src": "eh",
    "srcUrls": [
-    "https://www.eventhouse.kr/site/view.php?no=319894"
+    "https://www.eventhouse.kr/site/view.php?no=319894",
+    "https://www.instagram.com/p/DfOE_d6gaQ7/"
    ],
    "start": "2026-11-01",
    "status": "active",
@@ -51928,11 +52044,9 @@
     "QR·프로필 링크",
     "퀴즈 10문제 풀고 제출"
    ],
-   "tags": [
-    "원문 미확인"
-   ],
+   "tags": [],
    "title": "플랫폼 퀴즈 풀고 네이버페이 받자 이벤트!!",
-   "url": "https://www.eventhouse.kr/site/view.php?no=319894",
+   "url": "https://www.instagram.com/p/DfOE_d6gaQ7/",
    "verification_evidence_url": null,
    "verification_grade": "C",
    "verification_reason": "모음 사이트의 응모 링크가 로그인 전용이라 원문을 확인하지 못함",
@@ -53303,7 +53417,10 @@
    "entry_type": "unknown",
    "entry_url": null,
    "firstSeen": "2026-11-09",
-   "form_url": null,
+   "formLinks": [
+    "https://form.naver.com/response/IIqzO9d1aoE"
+   ],
+   "form_url": "https://form.naver.com/response/IIqzO9d1aoE",
    "grade": "C",
    "id": "eh-6551c444d0",
    "is_restricted": false,
@@ -53335,7 +53452,8 @@
    "restriction_reason": null,
    "src": "eh",
    "srcUrls": [
-    "https://www.eventhouse.kr/site/view.php?no=319560"
+    "https://www.eventhouse.kr/site/view.php?no=319560",
+    "https://www.instagram.com/p/DfZLl8mj9i_/"
    ],
    "start": "2026-11-06",
    "status": "active",
@@ -53345,11 +53463,10 @@
     "네이버폼 제출"
    ],
    "tags": [
-    "캡처 인증",
-    "원문 미확인"
+    "캡처 인증"
    ],
    "title": "SNS 빙고 3칸 인증하고 뿌링클 받자 이벤트!!",
-   "url": "https://www.eventhouse.kr/site/view.php?no=319560",
+   "url": "https://www.instagram.com/p/DfZLl8mj9i_/",
    "verification_evidence_url": null,
    "verification_grade": "C",
    "verification_reason": "모음 사이트의 응모 링크가 로그인 전용이라 원문을 확인하지 못함",
@@ -54368,7 +54485,10 @@
    "entry_type": "unknown",
    "entry_url": null,
    "firstSeen": "2026-10-29",
-   "form_url": null,
+   "formLinks": [
+    "https://naver.me/xONWANKp"
+   ],
+   "form_url": "https://form.naver.com/response/7SvP3hgt2Vd",
    "grade": "C",
    "id": "eh-67e3729eae",
    "is_restricted": false,
@@ -54400,7 +54520,8 @@
    "restriction_reason": null,
    "src": "eh",
    "srcUrls": [
-    "https://www.eventhouse.kr/site/view.php?no=318736"
+    "https://www.eventhouse.kr/site/view.php?no=318736",
+    "https://www.instagram.com/p/DfDq3HZgUzY/"
    ],
    "start": "2026-10-29",
    "status": "active",
@@ -54410,11 +54531,10 @@
     "정답 폼제출"
    ],
    "tags": [
-    "팔로우 필요",
-    "원문 미확인"
+    "팔로우 필요"
    ],
    "title": "무안 축제 이름 맞히고 치킨세트 받자 이벤트!!",
-   "url": "https://www.eventhouse.kr/site/view.php?no=318736",
+   "url": "https://www.instagram.com/p/DfDq3HZgUzY/",
    "verification_evidence_url": null,
    "verification_grade": "C",
    "verification_reason": "모음 사이트의 응모 링크가 로그인 전용이라 원문을 확인하지 못함",
@@ -55155,7 +55275,8 @@
    "restriction_reason": null,
    "src": "eh",
    "srcUrls": [
-    "https://www.eventhouse.kr/site/view.php?no=319909"
+    "https://www.eventhouse.kr/site/view.php?no=319909",
+    "https://www.instagram.com/p/DflGkO1j6sH/"
    ],
    "start": "2026-11-11",
    "status": "active",
@@ -55164,11 +55285,10 @@
     "치킨 원하는 이유 댓글"
    ],
    "tags": [
-    "팔로우 필요",
-    "원문 미확인"
+    "팔로우 필요"
    ],
    "title": "치킨 이유 댓글 달고 치킨세트 챙기자 이벤트!!",
-   "url": "https://www.eventhouse.kr/site/view.php?no=319909",
+   "url": "https://www.instagram.com/p/DflGkO1j6sH/",
    "verification_evidence_url": null,
    "verification_grade": "C",
    "verification_reason": "모음 사이트의 응모 링크가 로그인 전용이라 원문을 확인하지 못함",
@@ -57080,7 +57200,10 @@
    "entry_type": "unknown",
    "entry_url": null,
    "firstSeen": "2026-10-27",
-   "form_url": null,
+   "formLinks": [
+    "https://forms.gle/eSxVVGTe6kD8Jryj7"
+   ],
+   "form_url": "https://docs.google.com/forms/d/e/1FAIpQLScvPOHdz1rCPCzewLEvPQfeQhGoWK1fDBx4dPikZb7oty223w/viewform",
    "grade": "C",
    "id": "eh-6e55312d8a",
    "is_restricted": false,
@@ -57115,7 +57238,8 @@
    "restriction_reason": null,
    "src": "eh",
    "srcUrls": [
-    "https://www.eventhouse.kr/site/view.php?no=317999"
+    "https://www.eventhouse.kr/site/view.php?no=317999",
+    "https://www.instagram.com/p/Dedy72yDgI_/"
    ],
    "start": "2026-10-14",
    "status": "active",
@@ -57125,11 +57249,10 @@
     "참여완료 댓글"
    ],
    "tags": [
-    "팔로우 필요",
-    "원문 미확인"
+    "팔로우 필요"
    ],
    "title": "개인정보 설문 참여해 에어팟 노리자 이벤트!!",
-   "url": "https://www.eventhouse.kr/site/view.php?no=317999",
+   "url": "https://www.instagram.com/p/Dedy72yDgI_/",
    "verification_evidence_url": null,
    "verification_grade": "C",
    "verification_reason": "모음 사이트의 응모 링크가 로그인 전용이라 원문을 확인하지 못함",
@@ -57414,7 +57537,8 @@
    "src": "eh",
    "srcUrls": [
     "https://www.eventhouse.kr/site/view.php?no=319113",
-    "https://talk.daegu.go.kr/index.do?menu_id=00000503&menu_link=/front/vote/voteDetailView.do&vote_id=VOTEMID_00004810#2"
+    "https://talk.daegu.go.kr/index.do?menu_id=00000503&menu_link=/front/vote/voteDetailView.do&vote_id=VOTEMID_00004810#2",
+    "https://talk.daegu.go.kr/index.do?menu_id=00000503&menu_link=/front/vote/voteDetailView.do&vote_id=VOTEMID_00004810"
    ],
    "start": "2026-10-29",
    "status": "active",
@@ -57955,7 +58079,8 @@
    "restriction_reason": null,
    "src": "eh",
    "srcUrls": [
-    "https://www.eventhouse.kr/site/view.php?no=319694"
+    "https://www.eventhouse.kr/site/view.php?no=319694",
+    "https://www.instagram.com/p/DfY9R6jgRNg/"
    ],
    "start": "2026-11-06",
    "status": "active",
@@ -57964,11 +58089,9 @@
     "이용자유형 선택",
     "설문제출"
    ],
-   "tags": [
-    "원문 미확인"
-   ],
+   "tags": [],
    "title": "체육시설 안전 설문으로 에어팟 받자 이벤트!!",
-   "url": "https://www.eventhouse.kr/site/view.php?no=319694",
+   "url": "https://www.instagram.com/p/DfY9R6jgRNg/",
    "verification_evidence_url": null,
    "verification_grade": "C",
    "verification_reason": "모음 사이트의 응모 링크가 로그인 전용이라 원문을 확인하지 못함",
@@ -60019,8 +60142,10 @@
    "entry_type": "unknown",
    "entry_url": null,
    "firstSeen": "2026-11-12",
-   "formLinks": [],
-   "form_url": null,
+   "formLinks": [
+    "https://forms.gle/1QSv5hCJjrdnEPWV8"
+   ],
+   "form_url": "https://docs.google.com/forms/d/e/1FAIpQLSd-8xa5fAlskuCEsAFlshqKOJxlxhRQeA1a6alKmihD5mIk_g/viewform",
    "grade": "C",
    "id": "eh-73eb5755c4",
    "is_restricted": false,
@@ -60048,7 +60173,8 @@
    "restriction_reason": null,
    "src": "eh",
    "srcUrls": [
-    "https://www.eventhouse.kr/site/view.php?no=319884"
+    "https://www.eventhouse.kr/site/view.php?no=319884",
+    "https://www.instagram.com/p/DfjBjOUhmzN/"
    ],
    "start": "2026-11-10",
    "status": "active",
@@ -60058,11 +60184,10 @@
     "구글폼 제출"
    ],
    "tags": [
-    "팔로우 필요",
-    "원문 미확인"
+    "팔로우 필요"
    ],
    "title": "릴레이툰 감상하고 치킨쿠폰 받자 이벤트!!",
-   "url": "https://www.eventhouse.kr/site/view.php?no=319884",
+   "url": "https://www.instagram.com/p/DfjBjOUhmzN/",
    "verification_evidence_url": null,
    "verification_grade": "C",
    "verification_reason": "모음 사이트의 응모 링크가 로그인 전용이라 원문을 확인하지 못함",
@@ -60115,7 +60240,8 @@
    "restriction_reason": null,
    "src": "eh",
    "srcUrls": [
-    "https://www.eventhouse.kr/site/view.php?no=319907"
+    "https://www.eventhouse.kr/site/view.php?no=319907",
+    "https://www.instagram.com/p/Dfg9jAKlPZe/"
    ],
    "start": "2026-11-09",
    "status": "active",
@@ -60125,11 +60251,10 @@
     "계정·태그 4개"
    ],
    "tags": [
-    "팔로우 필요",
-    "원문 미확인"
+    "팔로우 필요"
    ],
    "title": "NCT 영상 공유하고 신메뉴 쿠폰 받자 이벤트!!",
-   "url": "https://www.eventhouse.kr/site/view.php?no=319907",
+   "url": "https://www.instagram.com/p/Dfg9jAKlPZe/",
    "verification_evidence_url": null,
    "verification_grade": "C",
    "verification_reason": "모음 사이트의 응모 링크가 로그인 전용이라 원문을 확인하지 못함",
@@ -60443,7 +60568,8 @@
    "restriction_reason": null,
    "src": "eh",
    "srcUrls": [
-    "https://www.eventhouse.kr/site/view.php?no=318548"
+    "https://www.eventhouse.kr/site/view.php?no=318548",
+    "https://www.instagram.com/p/DevxbrzgWoa/"
    ],
    "start": "2026-10-21",
    "status": "active",
@@ -60452,11 +60578,10 @@
     "추모일 정답 댓글 작성"
    ],
    "tags": [
-    "팔로우 필요",
-    "원문 미확인"
+    "팔로우 필요"
    ],
    "title": "유엔 추모일 퀴즈 풀고 상품권 받자 이벤트!!",
-   "url": "https://www.eventhouse.kr/site/view.php?no=318548",
+   "url": "https://www.instagram.com/p/DevxbrzgWoa/",
    "verification_evidence_url": null,
    "verification_grade": "C",
    "verification_reason": "모음 사이트의 응모 링크가 로그인 전용이라 원문을 확인하지 못함",
@@ -63465,7 +63590,8 @@
    "restriction_reason": null,
    "src": "eh",
    "srcUrls": [
-    "https://www.eventhouse.kr/site/view.php?no=319430"
+    "https://www.eventhouse.kr/site/view.php?no=319430",
+    "https://www.instagram.com/p/DfWOg7cICXT/"
    ],
    "start": "2026-11-06",
    "status": "active",
@@ -63475,11 +63601,10 @@
    ],
    "tags": [
     "팔로우 필요",
-    "캡처 인증",
-    "원문 미확인"
+    "캡처 인증"
    ],
    "title": "겨울 감성문구 지어 배달이용권 받자 이벤트!!",
-   "url": "https://www.eventhouse.kr/site/view.php?no=319430",
+   "url": "https://www.instagram.com/p/DfWOg7cICXT/",
    "verification_evidence_url": null,
    "verification_grade": "C",
    "verification_reason": "모음 사이트의 응모 링크가 로그인 전용이라 원문을 확인하지 못함",
@@ -64447,7 +64572,8 @@
    "restriction_reason": null,
    "src": "eh",
    "srcUrls": [
-    "https://www.eventhouse.kr/site/view.php?no=319129"
+    "https://www.eventhouse.kr/site/view.php?no=319129",
+    "https://www.instagram.com/p/DfQr0J8GaAJ/"
    ],
    "start": "2026-11-03",
    "status": "active",
@@ -64455,11 +64581,9 @@
     "링크 접속",
     "인지도 설문과 연락처 제출"
    ],
-   "tags": [
-    "원문 미확인"
-   ],
+   "tags": [],
    "title": "해수연 설문 참여해 편의점권 챙기자 이벤트!!",
-   "url": "https://www.eventhouse.kr/site/view.php?no=319129",
+   "url": "https://www.instagram.com/p/DfQr0J8GaAJ/",
    "verification_evidence_url": null,
    "verification_grade": "C",
    "verification_reason": "모음 사이트의 응모 링크가 로그인 전용이라 원문을 확인하지 못함",
@@ -66560,7 +66684,8 @@
    "restriction_reason": null,
    "src": "eh",
    "srcUrls": [
-    "https://www.eventhouse.kr/site/view.php?no=319558"
+    "https://www.eventhouse.kr/site/view.php?no=319558",
+    "https://www.instagram.com/arcraiders_kr/p/DfJdsoGn1sM/"
    ],
    "start": "2026-10-31",
    "status": "active",
@@ -66570,11 +66695,10 @@
     "기록댓글·친구태그"
    ],
    "tags": [
-    "팔로우 필요",
-    "원문 미확인"
+    "팔로우 필요"
    ],
    "title": "아크레이더스 기록 자랑해 만원 받자 이벤트!!",
-   "url": "https://www.eventhouse.kr/site/view.php?no=319558",
+   "url": "https://www.instagram.com/arcraiders_kr/p/DfJdsoGn1sM/",
    "verification_evidence_url": null,
    "verification_grade": "C",
    "verification_reason": "모음 사이트의 응모 링크가 로그인 전용이라 원문을 확인하지 못함",
@@ -66624,7 +66748,8 @@
    "restriction_reason": null,
    "src": "eh",
    "srcUrls": [
-    "https://www.eventhouse.kr/site/view.php?no=319562"
+    "https://www.eventhouse.kr/site/view.php?no=319562",
+    "https://www.instagram.com/p/DfZROwGpVH-/"
    ],
    "start": "2026-11-06",
    "status": "active",
@@ -66634,11 +66759,10 @@
     "소감댓글"
    ],
    "tags": [
-    "팔로우 필요",
-    "원문 미확인"
+    "팔로우 필요"
    ],
    "title": "천안시의회 영상 소감으로 커피 받자 이벤트!!",
-   "url": "https://www.eventhouse.kr/site/view.php?no=319562",
+   "url": "https://www.instagram.com/p/DfZROwGpVH-/",
    "verification_evidence_url": null,
    "verification_grade": "C",
    "verification_reason": "모음 사이트의 응모 링크가 로그인 전용이라 원문을 확인하지 못함",
@@ -66843,7 +66967,10 @@
    "entry_type": "unknown",
    "entry_url": null,
    "firstSeen": "2026-11-05",
-   "form_url": null,
+   "formLinks": [
+    "https://naver.me/FriW1Frp"
+   ],
+   "form_url": "https://form.naver.com/response/6IIU0OVmhN9",
    "grade": "C",
    "id": "eh-82fbef9b5a",
    "is_restricted": false,
@@ -66875,7 +67002,8 @@
    "restriction_reason": null,
    "src": "eh",
    "srcUrls": [
-    "https://www.eventhouse.kr/site/view.php?no=319301"
+    "https://www.eventhouse.kr/site/view.php?no=319301",
+    "https://www.instagram.com/p/DfTOpNKH5IQ/"
    ],
    "start": "2026-11-04",
    "status": "active",
@@ -66886,11 +67014,10 @@
    ],
    "tags": [
     "팔로우 필요",
-    "캡처 인증",
-    "원문 미확인"
+    "캡처 인증"
    ],
    "title": "랑랑이 생일글자 찾아 상품권 받자 이벤트!!",
-   "url": "https://www.eventhouse.kr/site/view.php?no=319301",
+   "url": "https://www.instagram.com/p/DfTOpNKH5IQ/",
    "verification_evidence_url": null,
    "verification_grade": "C",
    "verification_reason": "모음 사이트의 응모 링크가 로그인 전용이라 원문을 확인하지 못함",
@@ -67145,7 +67272,10 @@
    "entry_type": "unknown",
    "entry_url": null,
    "firstSeen": "2026-11-09",
-   "form_url": null,
+   "formLinks": [
+    "https://naver.me/FEgcPlIF"
+   ],
+   "form_url": "https://form.naver.com/response/JQZjYGZJIOS",
    "grade": "C",
    "id": "eh-835179e561",
    "is_restricted": false,
@@ -67173,7 +67303,8 @@
    "restriction_reason": null,
    "src": "eh",
    "srcUrls": [
-    "https://www.eventhouse.kr/site/view.php?no=319564"
+    "https://www.eventhouse.kr/site/view.php?no=319564",
+    "https://www.youtube.com/watch?v=ypwrOti9tzA"
    ],
    "start": "2026-10-30",
    "status": "active",
@@ -67184,11 +67315,10 @@
    ],
    "tags": [
     "팔로우 필요",
-    "유튜브 참여",
-    "원문 미확인"
+    "유튜브 참여"
    ],
    "title": "서울시 조정위원에게 한마디 전하고 선물 받자 이벤트!!",
-   "url": "https://www.eventhouse.kr/site/view.php?no=319564",
+   "url": "https://www.youtube.com/watch?v=ypwrOti9tzA",
    "verification_evidence_url": null,
    "verification_grade": "C",
    "verification_reason": "모음 사이트의 응모 링크가 로그인 전용이라 원문을 확인하지 못함",
@@ -74596,7 +74726,8 @@
    "restriction_reason": null,
    "src": "eh",
    "srcUrls": [
-    "https://www.eventhouse.kr/site/view.php?no=319556"
+    "https://www.eventhouse.kr/site/view.php?no=319556",
+    "https://www.instagram.com/p/DfYTLhrza14/"
    ],
    "start": "2026-11-06",
    "status": "active",
@@ -74605,11 +74736,10 @@
     "잠수함 척수 정답댓글"
    ],
    "tags": [
-    "팔로우 필요",
-    "원문 미확인"
+    "팔로우 필요"
    ],
    "title": "서희함 퀴즈 풀고 배달상품권 받자 이벤트!!",
-   "url": "https://www.eventhouse.kr/site/view.php?no=319556",
+   "url": "https://www.instagram.com/p/DfYTLhrza14/",
    "verification_evidence_url": null,
    "verification_grade": "C",
    "verification_reason": "모음 사이트의 응모 링크가 로그인 전용이라 원문을 확인하지 못함",
@@ -76865,8 +76995,10 @@
    "entry_type": "unknown",
    "entry_url": null,
    "firstSeen": "2026-11-12",
-   "formLinks": [],
-   "form_url": null,
+   "formLinks": [
+    "https://forms.gle/sNZWZj6vcM6KmgK56"
+   ],
+   "form_url": "https://docs.google.com/forms/d/e/1FAIpQLScScLLX8zX_PXB4e0x1RQlDl1zgVeJVq2q-bI15mUTI9pqQsQ/viewform",
    "grade": "C",
    "id": "eh-989f901e68",
    "is_restricted": false,
@@ -76894,7 +77026,8 @@
    "restriction_reason": null,
    "src": "eh",
    "srcUrls": [
-    "https://www.eventhouse.kr/site/view.php?no=319942"
+    "https://www.eventhouse.kr/site/view.php?no=319942",
+    "https://www.instagram.com/p/DflQDdMnKeu/"
    ],
    "start": "2026-11-11",
    "status": "active",
@@ -76905,11 +77038,10 @@
    ],
    "tags": [
     "팔로우 필요",
-    "캡처 인증",
-    "원문 미확인"
+    "캡처 인증"
    ],
    "title": "승강기 OX퀴즈 맞혀 네이버페이 받자 이벤트!!",
-   "url": "https://www.eventhouse.kr/site/view.php?no=319942",
+   "url": "https://www.instagram.com/p/DflQDdMnKeu/",
    "verification_evidence_url": null,
    "verification_grade": "C",
    "verification_reason": "모음 사이트의 응모 링크가 로그인 전용이라 원문을 확인하지 못함",
@@ -77838,7 +77970,8 @@
    "restriction_reason": null,
    "src": "eh",
    "srcUrls": [
-    "https://www.eventhouse.kr/site/view.php?no=319931"
+    "https://www.eventhouse.kr/site/view.php?no=319931",
+    "https://www.instagram.com/p/DfYhGEkEriR/"
    ],
    "start": "2026-11-12",
    "status": "active",
@@ -77846,11 +77979,9 @@
     "시민열린마루 접속",
     "정책제안·공감·댓글 또는 개선의견"
    ],
-   "tags": [
-    "원문 미확인"
-   ],
+   "tags": [],
    "title": "부산 정책제안해 편의점상품권 받자 이벤트!!",
-   "url": "https://www.eventhouse.kr/site/view.php?no=319931",
+   "url": "https://www.instagram.com/p/DfYhGEkEriR/",
    "verification_evidence_url": null,
    "verification_grade": "C",
    "verification_reason": "모음 사이트의 응모 링크가 로그인 전용이라 원문을 확인하지 못함",
@@ -79071,6 +79202,8 @@
    "entry_type": "unknown",
    "entry_url": null,
    "firstSeen": "2026-11-03",
+   "formChecked": "2026-11-12",
+   "formScanV": 2,
    "form_url": null,
    "grade": "C",
    "id": "eh-9cc4cf3dc4",
@@ -79099,7 +79232,8 @@
    "restriction_reason": null,
    "src": "eh",
    "srcUrls": [
-    "https://www.eventhouse.kr/site/view.php?no=319068"
+    "https://www.eventhouse.kr/site/view.php?no=319068",
+    "https://hub.kaia.re.kr/index"
    ],
    "start": "2026-10-30",
    "status": "active",
@@ -79108,11 +79242,9 @@
     "서비스 확인",
     "설문 제출"
    ],
-   "tags": [
-    "원문 미확인"
-   ],
+   "tags": [],
    "title": "지원허브 설문하고 네이버페이 받자 이벤트!!",
-   "url": "https://www.eventhouse.kr/site/view.php?no=319068",
+   "url": "https://hub.kaia.re.kr/index",
    "verification_evidence_url": null,
    "verification_grade": "C",
    "verification_reason": "모음 사이트의 응모 링크가 로그인 전용이라 원문을 확인하지 못함",
@@ -79646,7 +79778,8 @@
    "restriction_reason": null,
    "src": "eh",
    "srcUrls": [
-    "https://www.eventhouse.kr/site/view.php?no=319908"
+    "https://www.eventhouse.kr/site/view.php?no=319908",
+    "https://www.youtube.com/post/UgkxINVIInY1VukLkYcVh3OBMSpgGGA793xc/"
    ],
    "start": "2026-11-06",
    "status": "active",
@@ -79655,11 +79788,10 @@
     "인터뷰 영상 1편 응원 댓글"
    ],
    "tags": [
-    "팔로우 필요",
-    "원문 미확인"
+    "팔로우 필요"
    ],
    "title": "발명경영인 댓글로 네이버페이 받자 이벤트!!",
-   "url": "https://www.eventhouse.kr/site/view.php?no=319908",
+   "url": "https://www.youtube.com/post/UgkxINVIInY1VukLkYcVh3OBMSpgGGA793xc/",
    "verification_evidence_url": null,
    "verification_grade": "C",
    "verification_reason": "모음 사이트의 응모 링크가 로그인 전용이라 원문을 확인하지 못함",
@@ -79782,7 +79914,10 @@
    "entry_type": "unknown",
    "entry_url": null,
    "firstSeen": "2026-10-30",
-   "form_url": null,
+   "formLinks": [
+    "https://forms.gle/xqX61BfHrwZFi6fq9"
+   ],
+   "form_url": "https://docs.google.com/forms/d/e/1FAIpQLScdW5zLLIT4-igWyOJ8vlGWFFZA9_Qlgz_9e1VLStripIqIAg/viewform",
    "grade": "C",
    "id": "eh-9e6ba7aad4",
    "is_restricted": false,
@@ -79810,7 +79945,8 @@
    "restriction_reason": null,
    "src": "eh",
    "srcUrls": [
-    "https://www.eventhouse.kr/site/view.php?no=318808"
+    "https://www.eventhouse.kr/site/view.php?no=318808",
+    "https://www.instagram.com/p/DfByHAbE_l6/"
    ],
    "start": "2026-10-28",
    "status": "active",
@@ -79820,11 +79956,10 @@
     "폼에 사진 제출"
    ],
    "tags": [
-    "팔로우 필요",
-    "원문 미확인"
+    "팔로우 필요"
    ],
    "title": "복 글자 찍고 1만원 상품권 받아가자 이벤트!!",
-   "url": "https://www.eventhouse.kr/site/view.php?no=318808",
+   "url": "https://www.instagram.com/p/DfByHAbE_l6/",
    "verification_evidence_url": null,
    "verification_grade": "C",
    "verification_reason": "모음 사이트의 응모 링크가 로그인 전용이라 원문을 확인하지 못함",
@@ -81495,7 +81630,8 @@
    "restriction_reason": null,
    "src": "eh",
    "srcUrls": [
-    "https://www.eventhouse.kr/site/view.php?no=318649"
+    "https://www.eventhouse.kr/site/view.php?no=318649",
+    "https://www.instagram.com/p/DfB6F-8k8XW/"
    ],
    "start": "2026-10-28",
    "status": "active",
@@ -81504,11 +81640,10 @@
     "초성정답·준비과목·지역 댓글"
    ],
    "tags": [
-    "팔로우 필요",
-    "원문 미확인"
+    "팔로우 필요"
    ],
    "title": "면접책 초성 맞히고 교보상품권 받자 이벤트!!",
-   "url": "https://www.eventhouse.kr/site/view.php?no=318649",
+   "url": "https://www.instagram.com/p/DfB6F-8k8XW/",
    "verification_evidence_url": null,
    "verification_grade": "C",
    "verification_reason": "모음 사이트의 응모 링크가 로그인 전용이라 원문을 확인하지 못함",
@@ -86093,7 +86228,8 @@
    "restriction_reason": null,
    "src": "eh",
    "srcUrls": [
-    "https://www.eventhouse.kr/site/view.php?no=319903"
+    "https://www.eventhouse.kr/site/view.php?no=319903",
+    "https://www.instagram.com/p/DfRMDIhgoPi/"
    ],
    "start": "2026-11-03",
    "status": "active",
@@ -86102,11 +86238,10 @@
     "희망 여행지 댓글 작성"
    ],
    "tags": [
-    "팔로우 필요",
-    "원문 미확인"
+    "팔로우 필요"
    ],
    "title": "씨라이언6 여행지 댓글로 케이크 받자 이벤트!!",
-   "url": "https://www.eventhouse.kr/site/view.php?no=319903",
+   "url": "https://www.instagram.com/p/DfRMDIhgoPi/",
    "verification_evidence_url": null,
    "verification_grade": "C",
    "verification_reason": "모음 사이트의 응모 링크가 로그인 전용이라 원문을 확인하지 못함",
@@ -86985,7 +87120,8 @@
    "srcUrls": [
     "https://www.eventhouse.kr/site/view.php?no=319662",
     "https://www.contestkorea.com/boad/bd_event/basicsociety-vote.kr",
-    "https://www.contestkorea.com/boad/bd_event/egoread.php?bd=11&seq=13200"
+    "https://www.contestkorea.com/boad/bd_event/egoread.php?bd=11&seq=13200",
+    "https://www.instagram.com/p/DfgJITFD3q3/"
    ],
    "start": "2026-11-09",
    "status": "active",
@@ -86994,11 +87130,9 @@
     "STEP2 클릭",
     "구글폼 제출"
    ],
-   "tags": [
-    "원문 미확인"
-   ],
+   "tags": [],
    "title": "정책공모전 3개 투표하고 커피 받자 이벤트!!",
-   "url": "https://www.eventhouse.kr/site/view.php?no=319662",
+   "url": "https://www.instagram.com/p/DfgJITFD3q3/",
    "verification_evidence_url": null,
    "verification_grade": "C",
    "verification_reason": "모음 사이트의 응모 링크가 로그인 전용이라 원문을 확인하지 못함",
@@ -87020,8 +87154,10 @@
    "entry_type": "unknown",
    "entry_url": null,
    "firstSeen": "2026-11-10",
-   "formLinks": [],
-   "form_url": null,
+   "formLinks": [
+    "https://naver.me/xzHsTQYx"
+   ],
+   "form_url": "https://form.naver.com/response/CIpphlZsFcN",
    "grade": "C",
    "id": "eh-af43353c51",
    "is_restricted": false,
@@ -87049,7 +87185,8 @@
    "restriction_reason": null,
    "src": "eh",
    "srcUrls": [
-    "https://www.eventhouse.kr/site/view.php?no=319736"
+    "https://www.eventhouse.kr/site/view.php?no=319736",
+    "https://www.instagram.com/p/Dfgsuv6lBao/"
    ],
    "start": "2026-11-09",
    "status": "active",
@@ -87058,11 +87195,9 @@
     "5개 선택",
     "동의·번호 입력"
    ],
-   "tags": [
-    "원문 미확인"
-   ],
+   "tags": [],
    "title": "중랑 뉴스투표로 서울상품권 받자 이벤트!!",
-   "url": "https://www.eventhouse.kr/site/view.php?no=319736",
+   "url": "https://www.instagram.com/p/Dfgsuv6lBao/",
    "verification_evidence_url": null,
    "verification_grade": "C",
    "verification_reason": "모음 사이트의 응모 링크가 로그인 전용이라 원문을 확인하지 못함",
@@ -88621,8 +88756,10 @@
    "entry_type": "unknown",
    "entry_url": null,
    "firstSeen": "2026-11-12",
-   "formLinks": [],
-   "form_url": null,
+   "formLinks": [
+    "https://naver.me/Ge7QYHzi"
+   ],
+   "form_url": "https://form.naver.com/response/jZSGaKJFJY",
    "grade": "C",
    "id": "eh-b40d4180c7",
    "is_restricted": false,
@@ -88650,7 +88787,8 @@
    "restriction_reason": null,
    "src": "eh",
    "srcUrls": [
-    "https://www.eventhouse.kr/site/view.php?no=319904"
+    "https://www.eventhouse.kr/site/view.php?no=319904",
+    "https://www.instagram.com/p/DflQDPjDzJv/"
    ],
    "start": "2026-11-11",
    "status": "active",
@@ -88661,11 +88799,10 @@
    ],
    "tags": [
     "팔로우 필요",
-    "캡처 인증",
-    "원문 미확인"
+    "캡처 인증"
    ],
    "title": "브리핑 영상 보고 CU상품권 노리자 이벤트!!",
-   "url": "https://www.eventhouse.kr/site/view.php?no=319904",
+   "url": "https://www.instagram.com/p/DflQDPjDzJv/",
    "verification_evidence_url": null,
    "verification_grade": "C",
    "verification_reason": "모음 사이트의 응모 링크가 로그인 전용이라 원문을 확인하지 못함",
@@ -89003,7 +89140,8 @@
    "restriction_reason": null,
    "src": "eh",
    "srcUrls": [
-    "https://www.eventhouse.kr/site/view.php?no=319285"
+    "https://www.eventhouse.kr/site/view.php?no=319285",
+    "https://www.instagram.com/p/DfTVjhukh8o/"
    ],
    "start": "2026-11-04",
    "status": "active",
@@ -89014,11 +89152,10 @@
     "폼 제출"
    ],
    "tags": [
-    "팔로우 필요",
-    "원문 미확인"
+    "팔로우 필요"
    ],
    "title": "경기문화예술 응원댓글로 커피 받자 이벤트!!",
-   "url": "https://www.eventhouse.kr/site/view.php?no=319285",
+   "url": "https://www.instagram.com/p/DfTVjhukh8o/",
    "verification_evidence_url": null,
    "verification_grade": "C",
    "verification_reason": "모음 사이트의 응모 링크가 로그인 전용이라 원문을 확인하지 못함",
@@ -90240,7 +90377,9 @@
    "entry_type": "unknown",
    "entry_url": null,
    "firstSeen": "2026-11-12",
+   "formChecked": "2026-11-12",
    "formLinks": [],
+   "formScanV": 2,
    "form_url": null,
    "grade": "C",
    "id": "eh-b688371916",
@@ -90269,18 +90408,17 @@
    "restriction_reason": null,
    "src": "eh",
    "srcUrls": [
-    "https://www.eventhouse.kr/site/view.php?no=319883"
+    "https://www.eventhouse.kr/site/view.php?no=319883",
+    "https://modu.go.kr/fron/jdgmn/jdgmnView.do/?menu_id=393&qustnr_id=cf089c6d64074fbb9034f11b437532ef"
    ],
    "start": "2026-11-11",
    "status": "active",
    "steps": [
     "국세청 적극행정 우수공무원 우수기관 국민심사"
    ],
-   "tags": [
-    "원문 미확인"
-   ],
+   "tags": [],
    "title": "적극행정 우수공무원 심사하고 선물 받자 이벤트!!",
-   "url": "https://www.eventhouse.kr/site/view.php?no=319883",
+   "url": "https://modu.go.kr/fron/jdgmn/jdgmnView.do/?menu_id=393&qustnr_id=cf089c6d64074fbb9034f11b437532ef",
    "verification_evidence_url": null,
    "verification_grade": "C",
    "verification_reason": "모음 사이트의 응모 링크가 로그인 전용이라 원문을 확인하지 못함",
@@ -91581,7 +91719,8 @@
    "restriction_reason": null,
    "src": "eh",
    "srcUrls": [
-    "https://www.eventhouse.kr/site/view.php?no=319107"
+    "https://www.eventhouse.kr/site/view.php?no=319107",
+    "https://www.instagram.com/p/DfG43g3CpPE/"
    ],
    "start": "2026-10-30",
    "status": "active",
@@ -91589,11 +91728,9 @@
     "자음모음 조합",
     "정답·안전응원 댓글"
    ],
-   "tags": [
-    "원문 미확인"
-   ],
+   "tags": [],
    "title": "글자조합 퀴즈로 커피 기프티콘 받자 이벤트!!",
-   "url": "https://www.eventhouse.kr/site/view.php?no=319107",
+   "url": "https://www.instagram.com/p/DfG43g3CpPE/",
    "verification_evidence_url": null,
    "verification_grade": "C",
    "verification_reason": "모음 사이트의 응모 링크가 로그인 전용이라 원문을 확인하지 못함",
@@ -91880,7 +92017,8 @@
    "restriction_reason": null,
    "src": "eh",
    "srcUrls": [
-    "https://www.eventhouse.kr/site/view.php?no=319985"
+    "https://www.eventhouse.kr/site/view.php?no=319985",
+    "https://www.instagram.com/p/DfmH8ElE-tr/"
    ],
    "start": "2026-11-11",
    "status": "active",
@@ -91890,11 +92028,10 @@
     "폼제출"
    ],
    "tags": [
-    "팔로우 필요",
-    "원문 미확인"
+    "팔로우 필요"
    ],
    "title": "초성퀴즈 풀고 스타벅스 커피 받자 이벤트!!",
-   "url": "https://www.eventhouse.kr/site/view.php?no=319985",
+   "url": "https://www.instagram.com/p/DfmH8ElE-tr/",
    "verification_evidence_url": null,
    "verification_grade": "C",
    "verification_reason": "모음 사이트의 응모 링크가 로그인 전용이라 원문을 확인하지 못함",
@@ -92255,8 +92392,10 @@
    "entry_type": "unknown",
    "entry_url": null,
    "firstSeen": "2026-11-10",
-   "formLinks": [],
-   "form_url": null,
+   "formLinks": [
+    "https://naver.me/xB7Kimg8"
+   ],
+   "form_url": "https://form.naver.com/response/FZxoyapkEEP",
    "grade": "X",
    "id": "eh-baa4749e90",
    "is_restricted": false,
@@ -92286,7 +92425,8 @@
    "restriction_reason": null,
    "src": "eh",
    "srcUrls": [
-    "https://www.eventhouse.kr/site/view.php?no=319657"
+    "https://www.eventhouse.kr/site/view.php?no=319657",
+    "https://www.instagram.com/p/DfgGd8rlII3/"
    ],
    "start": "2026-11-09",
    "status": "active",
@@ -92295,11 +92435,9 @@
     "폼 투표",
     "정보입력"
    ],
-   "tags": [
-    "원문 미확인"
-   ],
+   "tags": [],
    "title": "한농대 사진공모 투표로 커피 받자 이벤트!!",
-   "url": "https://www.eventhouse.kr/site/view.php?no=319657",
+   "url": "https://www.instagram.com/p/DfgGd8rlII3/",
    "verification_evidence_url": null,
    "verification_grade": "C",
    "verification_reason": "모음 사이트의 응모 링크가 로그인 전용이라 원문을 확인하지 못함",
@@ -92742,8 +92880,12 @@
    "entry_type": "unknown",
    "entry_url": null,
    "firstSeen": "2026-11-12",
-   "formLinks": [],
-   "form_url": null,
+   "formChecked": "2026-11-12",
+   "formLinks": [
+    "https://forms.gle/g3trp9gFJ3SHeV389"
+   ],
+   "formScanV": 2,
+   "form_url": "https://docs.google.com/forms/d/e/1FAIpQLSfHOUMMBWO1C-Q5I5VinKJYP8xGc4Z8Dstg0ngHfOqvrKkxjQ/viewform",
    "grade": "C",
    "id": "eh-bb7acee07c",
    "is_restricted": false,
@@ -92771,7 +92913,8 @@
    "restriction_reason": null,
    "src": "eh",
    "srcUrls": [
-    "https://www.eventhouse.kr/site/view.php?no=319892"
+    "https://www.eventhouse.kr/site/view.php?no=319892",
+    "https://d4u365.com/50/"
    ],
    "start": "2026-11-09",
    "status": "active",
@@ -92780,11 +92923,9 @@
     "퀴즈 풀기",
     "정보 제출"
    ],
-   "tags": [
-    "원문 미확인"
-   ],
+   "tags": [],
    "title": "디지털 안전퀴즈 풀고 커피쿠폰 받자 이벤트!!",
-   "url": "https://www.eventhouse.kr/site/view.php?no=319892",
+   "url": "https://d4u365.com/50/",
    "verification_evidence_url": null,
    "verification_grade": "C",
    "verification_reason": "모음 사이트의 응모 링크가 로그인 전용이라 원문을 확인하지 못함",
@@ -92889,7 +93030,8 @@
    "restriction_reason": null,
    "src": "eh",
    "srcUrls": [
-    "https://www.eventhouse.kr/site/view.php?no=319075"
+    "https://www.eventhouse.kr/site/view.php?no=319075",
+    "https://www.instagram.com/p/DfHUewMkpyT/"
    ],
    "start": "2026-10-30",
    "status": "active",
@@ -92899,11 +93041,10 @@
     "완료 댓글"
    ],
    "tags": [
-    "팔로우 필요",
-    "원문 미확인"
+    "팔로우 필요"
    ],
    "title": "여행공모전 공유해 투썸 케이크 받자 이벤트!!",
-   "url": "https://www.eventhouse.kr/site/view.php?no=319075",
+   "url": "https://www.instagram.com/p/DfHUewMkpyT/",
    "verification_evidence_url": null,
    "verification_grade": "C",
    "verification_reason": "모음 사이트의 응모 링크가 로그인 전용이라 원문을 확인하지 못함",
@@ -95082,8 +95223,10 @@
    "entry_type": "unknown",
    "entry_url": null,
    "firstSeen": "2026-11-12",
-   "formLinks": [],
-   "form_url": null,
+   "formLinks": [
+    "https://naver.me/x9VXnjm8"
+   ],
+   "form_url": "https://form.naver.com/response/xpThZh82dQ",
    "grade": "C",
    "id": "eh-c16383ef68",
    "is_restricted": false,
@@ -95111,7 +95254,8 @@
    "restriction_reason": null,
    "src": "eh",
    "srcUrls": [
-    "https://www.eventhouse.kr/site/view.php?no=319991"
+    "https://www.eventhouse.kr/site/view.php?no=319991",
+    "https://www.instagram.com/p/Dfn2W82j9pq/"
    ],
    "start": "2026-11-12",
    "status": "active",
@@ -95122,11 +95266,10 @@
    ],
    "tags": [
     "팔로우 필요",
-    "캡처 인증",
-    "원문 미확인"
+    "캡처 인증"
    ],
    "title": "수능 응원댓글로 올리브영쿠폰 받자 이벤트!!",
-   "url": "https://www.eventhouse.kr/site/view.php?no=319991",
+   "url": "https://www.instagram.com/p/Dfn2W82j9pq/",
    "verification_evidence_url": null,
    "verification_grade": "C",
    "verification_reason": "모음 사이트의 응모 링크가 로그인 전용이라 원문을 확인하지 못함",
@@ -97522,7 +97665,10 @@
    "entry_type": "unknown",
    "entry_url": null,
    "firstSeen": "2026-11-03",
-   "form_url": null,
+   "formLinks": [
+    "https://naver.me/5mv5LwG3"
+   ],
+   "form_url": "https://form.naver.com/response/JiZXQXSVMuL",
    "grade": "C",
    "id": "eh-c6f9d2cae8",
    "is_restricted": false,
@@ -97550,7 +97696,8 @@
    "restriction_reason": null,
    "src": "eh",
    "srcUrls": [
-    "https://www.eventhouse.kr/site/view.php?no=319072"
+    "https://www.eventhouse.kr/site/view.php?no=319072",
+    "https://www.instagram.com/p/DfOJAYDz-21/"
    ],
    "start": "2026-11-02",
    "status": "active",
@@ -97559,11 +97706,10 @@
     "네이버폼 설문 제출"
    ],
    "tags": [
-    "팔로우 필요",
-    "원문 미확인"
+    "팔로우 필요"
    ],
    "title": "화성 인재육성 SNS 설문하고 커피 받자 이벤트!!",
-   "url": "https://www.eventhouse.kr/site/view.php?no=319072",
+   "url": "https://www.instagram.com/p/DfOJAYDz-21/",
    "verification_evidence_url": null,
    "verification_grade": "C",
    "verification_reason": "모음 사이트의 응모 링크가 로그인 전용이라 원문을 확인하지 못함",
@@ -98808,7 +98954,8 @@
    "restriction_reason": null,
    "src": "eh",
    "srcUrls": [
-    "https://www.eventhouse.kr/site/view.php?no=319291"
+    "https://www.eventhouse.kr/site/view.php?no=319291",
+    "https://www.instagram.com/p/DfOd_NEvbab/"
    ],
    "start": "2026-11-02",
    "status": "active",
@@ -98817,11 +98964,10 @@
     "전용수거함·친구태그 댓글"
    ],
    "tags": [
-    "팔로우 필요",
-    "원문 미확인"
+    "팔로우 필요"
    ],
    "title": "종이팩 수거함 퀴즈로 초코라떼 받자 이벤트!!",
-   "url": "https://www.eventhouse.kr/site/view.php?no=319291",
+   "url": "https://www.instagram.com/p/DfOd_NEvbab/",
    "verification_evidence_url": null,
    "verification_grade": "C",
    "verification_reason": "모음 사이트의 응모 링크가 로그인 전용이라 원문을 확인하지 못함",
@@ -100234,8 +100380,10 @@
    "entry_type": "unknown",
    "entry_url": null,
    "firstSeen": "2026-11-10",
-   "formLinks": [],
-   "form_url": null,
+   "formLinks": [
+    "https://form.naver.com/response/1qB1zKbHb7B"
+   ],
+   "form_url": "https://form.naver.com/response/1qB1zKbHb7B",
    "grade": "C",
    "id": "eh-cda91c961d",
    "is_restricted": false,
@@ -100263,7 +100411,8 @@
    "restriction_reason": null,
    "src": "eh",
    "srcUrls": [
-    "https://www.eventhouse.kr/site/view.php?no=319661"
+    "https://www.eventhouse.kr/site/view.php?no=319661",
+    "https://www.instagram.com/p/DfgNV7xCaiQ/"
    ],
    "start": "2026-11-09",
    "status": "active",
@@ -100271,11 +100420,9 @@
     "프로필 링크 접속",
     "네이버폼 설문 제출"
    ],
-   "tags": [
-    "원문 미확인"
-   ],
+   "tags": [],
    "title": "과천과학관 설문하고 커피쿠폰 받자 이벤트!!",
-   "url": "https://www.eventhouse.kr/site/view.php?no=319661",
+   "url": "https://www.instagram.com/p/DfgNV7xCaiQ/",
    "verification_evidence_url": null,
    "verification_grade": "C",
    "verification_reason": "모음 사이트의 응모 링크가 로그인 전용이라 원문을 확인하지 못함",
@@ -102823,7 +102970,8 @@
    "restriction_reason": null,
    "src": "eh",
    "srcUrls": [
-    "https://www.eventhouse.kr/site/view.php?no=319660"
+    "https://www.eventhouse.kr/site/view.php?no=319660",
+    "https://www.instagram.com/p/DfgxDDnBSgA/"
    ],
    "start": "2026-11-09",
    "status": "active",
@@ -102833,11 +102981,10 @@
     "퀴즈답·추모댓글"
    ],
    "tags": [
-    "팔로우 필요",
-    "원문 미확인"
+    "팔로우 필요"
    ],
    "title": "유엔참전용사 퀴즈로 GS상품권 챙기자 이벤트!!",
-   "url": "https://www.eventhouse.kr/site/view.php?no=319660",
+   "url": "https://www.instagram.com/p/DfgxDDnBSgA/",
    "verification_evidence_url": null,
    "verification_grade": "C",
    "verification_reason": "모음 사이트의 응모 링크가 로그인 전용이라 원문을 확인하지 못함",
@@ -103421,7 +103568,10 @@
    "entry_type": "unknown",
    "entry_url": null,
    "firstSeen": "2026-10-27",
-   "form_url": null,
+   "formLinks": [
+    "https://form.naver.com/response/JiVABxMlkFM"
+   ],
+   "form_url": "https://form.naver.com/response/JiVABxMlkFM",
    "grade": "C",
    "id": "eh-d33c5dac63",
    "is_restricted": false,
@@ -103449,7 +103599,8 @@
    "restriction_reason": null,
    "src": "eh",
    "srcUrls": [
-    "https://www.eventhouse.kr/site/view.php?no=318325"
+    "https://www.eventhouse.kr/site/view.php?no=318325",
+    "https://www.instagram.com/p/De0X7c3jydD/"
    ],
    "start": "2026-10-23",
    "status": "active",
@@ -103457,11 +103608,9 @@
     "네이버폼",
     "속초홀릭 만족도 조사 제출"
    ],
-   "tags": [
-    "원문 미확인"
-   ],
+   "tags": [],
    "title": "속초홀릭 설문하고 커피쿠폰 받자 이벤트!!",
-   "url": "https://www.eventhouse.kr/site/view.php?no=318325",
+   "url": "https://www.instagram.com/p/De0X7c3jydD/",
    "verification_evidence_url": null,
    "verification_grade": "C",
    "verification_reason": "모음 사이트의 응모 링크가 로그인 전용이라 원문을 확인하지 못함",
@@ -103997,6 +104146,8 @@
    "entry_type": "unknown",
    "entry_url": null,
    "firstSeen": "2026-11-05",
+   "formChecked": "2026-11-12",
+   "formScanV": 2,
    "form_url": null,
    "grade": "C",
    "id": "eh-d4acbc343a",
@@ -104025,7 +104176,8 @@
    "restriction_reason": null,
    "src": "eh",
    "srcUrls": [
-    "https://www.eventhouse.kr/site/view.php?no=319352"
+    "https://www.eventhouse.kr/site/view.php?no=319352",
+    "https://xn--wk0bx2gp2g1p7a.kr/user/eventRegist.nm?evntRegNo=EVNT00088"
    ],
    "start": "2026-11-04",
    "status": "active",
@@ -104033,11 +104185,9 @@
     "2번 퍼즐 확인",
     "홈페이지에 정답 제출"
    ],
-   "tags": [
-    "원문 미확인"
-   ],
+   "tags": [],
    "title": "경주 가을 퍼즐 풀고 네이버페이 받자 이벤트!!",
-   "url": "https://www.eventhouse.kr/site/view.php?no=319352",
+   "url": "https://xn--wk0bx2gp2g1p7a.kr/user/eventRegist.nm?evntRegNo=EVNT00088",
    "verification_evidence_url": null,
    "verification_grade": "C",
    "verification_reason": "모음 사이트의 응모 링크가 로그인 전용이라 원문을 확인하지 못함",
@@ -104209,8 +104359,10 @@
    "entry_type": "unknown",
    "entry_url": null,
    "firstSeen": "2026-11-11",
-   "formLinks": [],
-   "form_url": null,
+   "formLinks": [
+    "https://naver.me/5B0qwdGM"
+   ],
+   "form_url": "https://form.naver.com/response/1c8sfCsueSF",
    "grade": "X",
    "id": "eh-d4f2b3d544",
    "is_restricted": false,
@@ -104240,7 +104392,8 @@
    "restriction_reason": null,
    "src": "eh",
    "srcUrls": [
-    "https://www.eventhouse.kr/site/view.php?no=319793"
+    "https://www.eventhouse.kr/site/view.php?no=319793",
+    "https://www.instagram.com/p/DfjamhiOwT2/"
    ],
    "start": "2026-11-03",
    "status": "active",
@@ -104250,11 +104403,10 @@
     "URL·캡처 제출"
    ],
    "tags": [
-    "캡처 인증",
-    "원문 미확인"
+    "캡처 인증"
    ],
    "title": "우물현답 영상 링크 올려 GS25권 받자 이벤트!!",
-   "url": "https://www.eventhouse.kr/site/view.php?no=319793",
+   "url": "https://www.instagram.com/p/DfjamhiOwT2/",
    "verification_evidence_url": null,
    "verification_grade": "C",
    "verification_reason": "모음 사이트의 응모 링크가 로그인 전용이라 원문을 확인하지 못함",
@@ -105504,7 +105656,8 @@
    "restriction_reason": null,
    "src": "eh",
    "srcUrls": [
-    "https://www.eventhouse.kr/site/view.php?no=319557"
+    "https://www.eventhouse.kr/site/view.php?no=319557",
+    "https://www.instagram.com/p/DfYbLcJndSF/"
    ],
    "start": "2026-11-06",
    "status": "active",
@@ -105513,11 +105666,10 @@
     "전기차 첫 여행지 댓글"
    ],
    "tags": [
-    "팔로우 필요",
-    "원문 미확인"
+    "팔로우 필요"
    ],
    "title": "전기차 여행지 댓글로 커피쿠폰 받자 이벤트!!",
-   "url": "https://www.eventhouse.kr/site/view.php?no=319557",
+   "url": "https://www.instagram.com/p/DfYbLcJndSF/",
    "verification_evidence_url": null,
    "verification_grade": "C",
    "verification_reason": "모음 사이트의 응모 링크가 로그인 전용이라 원문을 확인하지 못함",
@@ -106612,7 +106764,8 @@
    "restriction_reason": null,
    "src": "eh",
    "srcUrls": [
-    "https://www.eventhouse.kr/site/view.php?no=319658"
+    "https://www.eventhouse.kr/site/view.php?no=319658",
+    "https://www.instagram.com/p/DfgsWMBqrEu/"
    ],
    "start": "2026-11-09",
    "status": "active",
@@ -106624,11 +106777,10 @@
    ],
    "tags": [
     "팔로우 필요",
-    "캡처 인증",
-    "원문 미확인"
+    "캡처 인증"
    ],
    "title": "AI 꿀팁영상 투표하고 GS25상품권 받자 이벤트!!",
-   "url": "https://www.eventhouse.kr/site/view.php?no=319658",
+   "url": "https://www.instagram.com/p/DfgsWMBqrEu/",
    "verification_evidence_url": null,
    "verification_grade": "C",
    "verification_reason": "모음 사이트의 응모 링크가 로그인 전용이라 원문을 확인하지 못함",
@@ -106900,7 +107052,8 @@
    "restriction_reason": null,
    "src": "eh",
    "srcUrls": [
-    "https://www.eventhouse.kr/site/view.php?no=318689"
+    "https://www.eventhouse.kr/site/view.php?no=318689",
+    "https://www.instagram.com/p/DfCGUigE4K6/"
    ],
    "start": "2026-10-28",
    "status": "active",
@@ -106909,11 +107062,10 @@
     "바이오플락 소감 댓글"
    ],
    "tags": [
-    "유튜브 참여",
-    "원문 미확인"
+    "유튜브 참여"
    ],
    "title": "바이오플락 영상 댓글로 커피 받자 이벤트!!",
-   "url": "https://www.eventhouse.kr/site/view.php?no=318689",
+   "url": "https://www.instagram.com/p/DfCGUigE4K6/",
    "verification_evidence_url": null,
    "verification_grade": "C",
    "verification_reason": "모음 사이트의 응모 링크가 로그인 전용이라 원문을 확인하지 못함",
@@ -109491,7 +109643,8 @@
    "restriction_reason": null,
    "src": "eh",
    "srcUrls": [
-    "https://www.eventhouse.kr/site/view.php?no=317298"
+    "https://www.eventhouse.kr/site/view.php?no=317298",
+    "https://www.instagram.com/p/DeYi1s6FElb/"
    ],
    "start": "2026-10-13",
    "status": "active",
@@ -109500,11 +109653,9 @@
     "꾸미기",
     "사진 QR 제출"
    ],
-   "tags": [
-    "원문 미확인"
-   ],
+   "tags": [],
    "title": "단디체로 꾸민 사진 내고 상품권 받자 이벤트!!",
-   "url": "https://www.eventhouse.kr/site/view.php?no=317298",
+   "url": "https://www.instagram.com/p/DeYi1s6FElb/",
    "verification_evidence_url": null,
    "verification_grade": "C",
    "verification_reason": "모음 사이트의 응모 링크가 로그인 전용이라 원문을 확인하지 못함",
@@ -110100,7 +110251,8 @@
    "restriction_reason": null,
    "src": "eh",
    "srcUrls": [
-    "https://www.eventhouse.kr/site/view.php?no=319120"
+    "https://www.eventhouse.kr/site/view.php?no=319120",
+    "https://www.instagram.com/p/DfOjy9uj1JC/"
    ],
    "start": "2026-11-02",
    "status": "active",
@@ -110109,11 +110261,9 @@
     "설문",
     "동의·연락처 제출"
    ],
-   "tags": [
-    "원문 미확인"
-   ],
+   "tags": [],
    "title": "전력거래소 인지도 조사로 커피 받자 이벤트!!",
-   "url": "https://www.eventhouse.kr/site/view.php?no=319120",
+   "url": "https://www.instagram.com/p/DfOjy9uj1JC/",
    "verification_evidence_url": null,
    "verification_grade": "C",
    "verification_reason": "모음 사이트의 응모 링크가 로그인 전용이라 원문을 확인하지 못함",
@@ -114097,7 +114247,8 @@
    "restriction_reason": null,
    "src": "eh",
    "srcUrls": [
-    "https://www.eventhouse.kr/site/view.php?no=319563"
+    "https://www.eventhouse.kr/site/view.php?no=319563",
+    "https://www.instagram.com/p/DfUEcBkj8Pp/"
    ],
    "start": "2026-11-04",
    "status": "active",
@@ -114105,11 +114256,9 @@
     "보습제 OX퀴즈 확인",
     "정답 댓글 작성"
    ],
-   "tags": [
-    "원문 미확인"
-   ],
+   "tags": [],
    "title": "아기 보습제 OX퀴즈 풀고 커피쿠폰 받자 이벤트!!",
-   "url": "https://www.eventhouse.kr/site/view.php?no=319563",
+   "url": "https://www.instagram.com/p/DfUEcBkj8Pp/",
    "verification_evidence_url": null,
    "verification_grade": "C",
    "verification_reason": "모음 사이트의 응모 링크가 로그인 전용이라 원문을 확인하지 못함",
@@ -114164,7 +114313,8 @@
    "restriction_reason": null,
    "src": "eh",
    "srcUrls": [
-    "https://www.eventhouse.kr/site/view.php?no=319906"
+    "https://www.eventhouse.kr/site/view.php?no=319906",
+    "https://www.instagram.com/reels/DfgwcSMgfZx/"
    ],
    "start": "2026-11-09",
    "status": "active",
@@ -114173,11 +114323,10 @@
     "2만원 이하 위시상품 댓글 작성"
    ],
    "tags": [
-    "팔로우 필요",
-    "원문 미확인"
+    "팔로우 필요"
    ],
    "title": "2만원 위시템 적고 여행상품권 노리자 이벤트!!",
-   "url": "https://www.eventhouse.kr/site/view.php?no=319906",
+   "url": "https://www.instagram.com/reels/DfgwcSMgfZx/",
    "verification_evidence_url": null,
    "verification_grade": "C",
    "verification_reason": "모음 사이트의 응모 링크가 로그인 전용이라 원문을 확인하지 못함",
@@ -117582,7 +117731,10 @@
    "entry_type": "unknown",
    "entry_url": null,
    "firstSeen": "2026-11-03",
-   "form_url": null,
+   "formLinks": [
+    "https://naver.me/5xgcnlTQ"
+   ],
+   "form_url": "https://form.naver.com/response/8HItTvuh73J",
    "grade": "C",
    "id": "eh-f2841ba398",
    "is_restricted": false,
@@ -117610,7 +117762,8 @@
    "restriction_reason": null,
    "src": "eh",
    "srcUrls": [
-    "https://www.eventhouse.kr/site/view.php?no=319100"
+    "https://www.eventhouse.kr/site/view.php?no=319100",
+    "https://www.instagram.com/p/De_AKwaHXRM/"
    ],
    "start": "2026-11-02",
    "status": "active",
@@ -117618,11 +117771,9 @@
     "네이버폼",
     "만족도 설문·연락처 제출"
    ],
-   "tags": [
-    "원문 미확인"
-   ],
+   "tags": [],
    "title": "마음온오프 설문하고 2만원 선물 받자 이벤트!!",
-   "url": "https://www.eventhouse.kr/site/view.php?no=319100",
+   "url": "https://www.instagram.com/p/De_AKwaHXRM/",
    "verification_evidence_url": null,
    "verification_grade": "C",
    "verification_reason": "모음 사이트의 응모 링크가 로그인 전용이라 원문을 확인하지 못함",
@@ -119042,7 +119193,8 @@
    "restriction_reason": null,
    "src": "eh",
    "srcUrls": [
-    "https://www.eventhouse.kr/site/view.php?no=317187"
+    "https://www.eventhouse.kr/site/view.php?no=317187",
+    "https://www.instagram.com/p/Deapc5-Cbie/"
    ],
    "start": "2026-10-13",
    "status": "active",
@@ -119051,11 +119203,10 @@
     "재난대비 환경실천 댓글 작성"
    ],
    "tags": [
-    "팔로우 필요",
-    "원문 미확인"
+    "팔로우 필요"
    ],
    "title": "재난대비 댓글로 네이버페이권 받자 이벤트!!",
-   "url": "https://www.eventhouse.kr/site/view.php?no=317187",
+   "url": "https://www.instagram.com/p/Deapc5-Cbie/",
    "verification_evidence_url": null,
    "verification_grade": "C",
    "verification_reason": "모음 사이트의 응모 링크가 로그인 전용이라 원문을 확인하지 못함",
@@ -119907,7 +120058,8 @@
    "src": "eh",
    "srcUrls": [
     "https://www.eventhouse.kr/site/view.php?no=319201",
-    "https://talk.daegu.go.kr/index.do?menu_id=00000503&menu_link=/front/vote/voteDetailView.do&vote_id=VOTEMID_00004820#2"
+    "https://talk.daegu.go.kr/index.do?menu_id=00000503&menu_link=/front/vote/voteDetailView.do&vote_id=VOTEMID_00004820#2",
+    "https://talk.daegu.go.kr/index.do?menu_id=00000503&menu_link=/front/vote/voteDetailView.do&vote_id=VOTEMID_00004820"
    ],
    "start": "2026-10-29",
    "status": "active",
@@ -121140,7 +121292,10 @@
    "entry_type": "unknown",
    "entry_url": null,
    "firstSeen": "2026-10-30",
-   "form_url": null,
+   "formLinks": [
+    "https://forms.gle/Xq7epMQoPqAVGdnp6"
+   ],
+   "form_url": "https://docs.google.com/forms/d/e/1FAIpQLSdUWXhWRI9ZSwI0MRP0r--moqNwrK6I-D8d_y8o-i8dwxQTsQ/viewform",
    "grade": "C",
    "id": "eh-fa1e8c5bd8",
    "is_restricted": false,
@@ -121168,7 +121323,8 @@
    "restriction_reason": null,
    "src": "eh",
    "srcUrls": [
-    "https://www.eventhouse.kr/site/view.php?no=318776"
+    "https://www.eventhouse.kr/site/view.php?no=318776",
+    "https://www.instagram.com/p/DfESAtZK4BQ/"
    ],
    "start": "2026-10-29",
    "status": "active",
@@ -121178,11 +121334,10 @@
     "구글폼 제출"
    ],
    "tags": [
-    "캡처 인증",
-    "원문 미확인"
+    "캡처 인증"
    ],
    "title": "AI 가족영상 투표하고 GS25 쿠폰 받자 이벤트!!",
-   "url": "https://www.eventhouse.kr/site/view.php?no=318776",
+   "url": "https://www.instagram.com/p/DfESAtZK4BQ/",
    "verification_evidence_url": null,
    "verification_grade": "C",
    "verification_reason": "모음 사이트의 응모 링크가 로그인 전용이라 원문을 확인하지 못함",
@@ -123146,7 +123301,8 @@
    "restriction_reason": null,
    "src": "eh",
    "srcUrls": [
-    "https://www.eventhouse.kr/site/view.php?no=319888"
+    "https://www.eventhouse.kr/site/view.php?no=319888",
+    "https://www.instagram.com/p/DfgIMg4k3TB/"
    ],
    "start": "2026-11-09",
    "status": "active",
@@ -123155,11 +123311,10 @@
     "수험생 응원 댓글 작성"
    ],
    "tags": [
-    "팔로우 필요",
-    "원문 미확인"
+    "팔로우 필요"
    ],
    "title": "수능 응원 댓글로 락토프리우유 받자 이벤트!!",
-   "url": "https://www.eventhouse.kr/site/view.php?no=319888",
+   "url": "https://www.instagram.com/p/DfgIMg4k3TB/",
    "verification_evidence_url": null,
    "verification_grade": "C",
    "verification_reason": "모음 사이트의 응모 링크가 로그인 전용이라 원문을 확인하지 못함",
@@ -124668,6 +124823,71 @@
    "verified_at": null,
    "who": null
   },
+  "ek-3c331613a2": {
+   "announce": "2026-11-23",
+   "cand": true,
+   "candidate_url": null,
+   "checked": null,
+   "count": 23,
+   "destination_checked": false,
+   "elec": [],
+   "elec_models": [],
+   "end": "2026-11-19",
+   "endTime": null,
+   "entry_type": "unknown",
+   "entry_url": null,
+   "firstSeen": "2026-11-12",
+   "formChecked": "2026-11-12",
+   "formLinks": [],
+   "formScanV": 2,
+   "form_url": null,
+   "grade": "C",
+   "id": "ek-3c331613a2",
+   "is_restricted": false,
+   "kind": "댓글",
+   "lastSeen": "2026-11-12",
+   "last_checked_at": "2026-11-12",
+   "linkChecked": "2026-11-12",
+   "linkStatus": "skip",
+   "link_evidence": null,
+   "listUrl": "https://events.kr/event.php?id=237",
+   "max": null,
+   "min": null,
+   "mode": "추첨",
+   "needs": [],
+   "needs_proof": false,
+   "org": "플러스메이커스",
+   "original_url": null,
+   "place": null,
+   "platHint": "insta",
+   "prize": "경품: 추첨 20명 네이버 페이 5천 원 / 베스트 3명 배민 1만 원",
+   "proof_reason": null,
+   "rawText": "[EVENT] \"맞히면 나도 보건복지 고수\" OX 퀴즈 정답 공개 ✅\n어제 스토리 OX 퀴즈, 몇 개 맞히셨나요? 🤔\n인재원 교육에서 배우는 보건복지 상식,\n정답과 해설로 확인해 보세요 📖\nQ1. 사회복지사·의료인은 아동학대 신고의무자? ⭕\nQ2. 위기가구 발견 시 알릴 의무가 있다? ⭕\nQ3. 학대는 '확실할 때만' 신고? ❌\nQ4. 사회복무요원은 교육 없이 바로 근무? ❌\n📌 참여 방법\n➀ 인재원 계정 팔로우!\n➁ 댓글에 '새롭게 알게 된 점' 작성!\n🎁 경품: 추첨 20명 네이버 페이 5천 원 / 베스트 3명 배민 1만 원 🛵\n※ 베스트 당첨자는 추첨에서 제외(중복 당첨 불가)\n📅 일정\n• 참여 기간: 11. 12(목) ~ 11. 19(목)\n• 당첨 발표: 11. 23(월) 고정 댓글 및 개별 DM 안내\n※ 비방·욕설 등 부적절한 댓글은 선정에서 제외됩니다.\n#한국보건복지인재원 #코이하이 #OX퀴즈 #보건복지상식\n#아동학대예방 #신고의무자 #긴급복지 #사회복무요원\n#사회복지사 #보건의료인 #공무원\n#댓글이벤트 #이벤트 #event",
+   "reasons": [],
+   "restriction_note": null,
+   "restriction_reason": null,
+   "src": "ek",
+   "srcUrls": [
+    "https://events.kr/event.php?id=237"
+   ],
+   "start": "2026-11-12",
+   "status": "active",
+   "steps": [
+    "당첨 발표: 11. 23(월) 고정 댓글 및 개별 DM 안내"
+   ],
+   "tags": [
+    "팔로우 필요",
+    "원문 미확인"
+   ],
+   "title": "\"맞히면 나도 보건복지 고수\" OX 퀴즈 정답 공개",
+   "url": "https://events.kr/event.php?id=237",
+   "verification_evidence_url": null,
+   "verification_grade": "C",
+   "verification_reason": "모음 글에서 주최 원문을 하나로 특정하지 못함",
+   "verification_status": "unverified",
+   "verified_at": null,
+   "who": null
+  },
   "ek-3d5bdf107d": {
    "announce": "2026-11-18",
    "cand": true,
@@ -125381,6 +125601,133 @@
    "tags": [],
    "title": "2027년 밀양시 대국민 공공데이터 설문조사 및 이벤트",
    "url": "https://www.miryang.go.kr/livingLab/_Web/",
+   "who": null
+  },
+  "ek-5b7d26c4d9": {
+   "announce": null,
+   "cand": true,
+   "candidate_url": null,
+   "checked": null,
+   "count": null,
+   "destination_checked": false,
+   "elec": [],
+   "elec_models": [],
+   "end": "2026-11-26",
+   "endTime": null,
+   "entry_type": "unknown",
+   "entry_url": null,
+   "firstSeen": "2026-11-12",
+   "formChecked": "2026-11-12",
+   "formLinks": [],
+   "formScanV": 2,
+   "form_url": null,
+   "grade": "C",
+   "id": "ek-5b7d26c4d9",
+   "is_restricted": false,
+   "kind": "기타",
+   "lastSeen": "2026-11-12",
+   "last_checked_at": "2026-11-12",
+   "linkChecked": "2026-11-12",
+   "linkStatus": "skip",
+   "link_evidence": null,
+   "listUrl": "https://events.kr/event.php?id=238",
+   "max": null,
+   "min": null,
+   "mode": "추첨",
+   "needs": [],
+   "needs_proof": false,
+   "org": "스튜디오플레이",
+   "original_url": null,
+   "place": null,
+   "platHint": "yt",
+   "prize": null,
+   "prizeChecked": "2026-11-12",
+   "proof_reason": null,
+   "rawText": "지구와 이웃을 위해 함께 쓰는 우산 ☔\n매년 버려지는 우산, 무려 4,000만 개.\n여러 소재가 섞여 있어 재활용도 어려운 우산들이\n지구에 많은 폐기물을 남기고 있어요.\n그래서 한화솔루션이 사랑의열매, 서울특별시사회적경제지원센터와 함께\n버려진 플라스틱으로 다시 쓰이는 우산을 만들었어요.\n🌱 재생 플라스틱 40% 이상 사용\n🔧 망가진 부분만 바꿔 오래 쓰는 구조\n친환경 우산 기업 에이트린의 메이커들이 하나하나 손으로 조립한 우산은\n서울 곳곳의 종합사회복지관에 공유우산으로 놓였어요.\n갑작스러운 소나기에도 아이부터 어르신까지 누구나 자유롭게 쓰고, 다시 꽂아두면 돼요.\n━━━━━━━━━━━━━━━\n☔ 댓글 이벤트 ☔\n\"비 오는 날, 함께 쓰는 마음\"을 나눠주세요!\n📌 참여 방법\n영상 시청 후, 아래 질문에 댓글을 남겨주세요.\nQ. 갑자기 비가 와서 곤란했던 순간, 또는 누군가 우산을 함께 써줬던 기억이 있나요?\n🎁 경품: 재생 플라스틱으로 만든 공유우산 (40명)\n📅 기간: 11월 12일(목) ~ 11월 26일(목)\n📢 발표: 12월 3일(목)\n※ 당첨자는 추첨으로 선정되며, 개인정보 수집을 위해 별도 안내가 진행됩니다.\n※ 경품은 이벤트 종료 후 순차 발송됩니다\n━━━━━━━━━━━━━━━",
+   "reasons": [],
+   "restriction_note": null,
+   "restriction_reason": null,
+   "src": "ek",
+   "srcUrls": [
+    "https://events.kr/event.php?id=238"
+   ],
+   "start": "2026-11-12",
+   "status": "active",
+   "steps": [],
+   "tags": [
+    "원문 미확인"
+   ],
+   "title": "한화솔루션 × 사랑의열매 #댓글이벤트#공유우",
+   "url": "https://events.kr/event.php?id=238",
+   "verification_evidence_url": null,
+   "verification_grade": "C",
+   "verification_reason": "모음 글에서 주최 원문을 하나로 특정하지 못함",
+   "verification_status": "unverified",
+   "verified_at": null,
+   "who": null
+  },
+  "ek-5d23e96560": {
+   "announce": "2026-11-27",
+   "cand": true,
+   "candidate_url": null,
+   "checked": null,
+   "count": null,
+   "destination_checked": false,
+   "elec": [],
+   "elec_models": [],
+   "end": "2026-11-22",
+   "endTime": null,
+   "entry_type": "unknown",
+   "entry_url": null,
+   "firstSeen": "2026-11-12",
+   "formChecked": "2026-11-12",
+   "formLinks": [],
+   "formScanV": 2,
+   "form_url": null,
+   "grade": "C",
+   "id": "ek-5d23e96560",
+   "is_restricted": false,
+   "kind": "퀴즈",
+   "lastSeen": "2026-11-12",
+   "last_checked_at": "2026-11-12",
+   "linkChecked": "2026-11-12",
+   "linkStatus": "skip",
+   "link_evidence": null,
+   "listUrl": "https://events.kr/event.php?id=236",
+   "max": null,
+   "min": null,
+   "mode": "추첨",
+   "needs": [],
+   "needs_proof": false,
+   "org": "종이나라",
+   "original_url": null,
+   "place": null,
+   "platHint": "insta",
+   "prize": "승리팀에서 추첨을 통해 편의점 쿠폰을 드립니다!",
+   "proof_reason": null,
+   "rawText": "2026년 11월 06일 ~ 11월 22일\n인스타그램\n퀴즈응모\n종이나라\n더보기\n더보기\n더보기\n경품 정보\n편의점기프티콘 1만원권\n총 당첨자: 3명\n발표일: 2026년 11월 27일\n발표방법: 홈페이지 공지\n이벤트 소개\n❄️ [EVENT] 입동맞이 최애 겨울간식 대결! ❄️\n찬 바람이 불면 생각나는 겨울 간식! ☃️\n🐟 바삭바삭 달콤한 붕어빵 VS ♨️ 호호 불어 먹는 따끈한 호빵\n여러분의 최애 겨울 간식은 무엇인가요? 🤔\n조이쌤이 준비한 붕어빵 접기 퀴즈의 정답을 맞히고,\n최애 간식에 투표해 주세요!\n🎁 승리팀에서 추첨을 통해 편의점 쿠폰을 드립니다!\n📢 이벤트 참여 방법\n1️⃣ 조이쌤 공식 인스타그램 계정 팔로우\n2️⃣ 붕어빵 접기 퀴즈 정답 확인하기\n3️⃣ 정답 번호 + 최애 간식 댓글 남기기\n💬 댓글 예시: ① / 호빵\n💚 당첨 확률 UP!\n같은 간식을 좋아하는 친구를 태그해 함께 투표해 보세요!\n과연 겨울 간식 최강자는 누가 될까요? 🏆\n인증된 기업 이벤트\n이벤트 정보\n주최\n종이나라\n당첨자\n3명\n발표일\n2026.11.27\n등록자\n종이나라조이쌤\n등록일",
+   "reasons": [],
+   "restriction_note": null,
+   "restriction_reason": null,
+   "src": "ek",
+   "srcUrls": [
+    "https://events.kr/event.php?id=236"
+   ],
+   "start": "2026-11-06",
+   "status": "active",
+   "steps": [],
+   "tags": [
+    "팔로우 필요",
+    "인스타 참여",
+    "원문 미확인"
+   ],
+   "title": "조이쌤 11월 이벤트 [입동맞이 최애 겨울 간식]",
+   "url": "https://events.kr/event.php?id=236",
+   "verification_evidence_url": null,
+   "verification_grade": "C",
+   "verification_reason": "모음 글에서 주최 원문을 하나로 특정하지 못함",
+   "verification_status": "unverified",
+   "verified_at": null,
    "who": null
   },
   "ek-5f1cd7c3fb": {
@@ -134029,6 +134376,75 @@
    ],
    "title": "가을 빈칸 댓글로 미니 가습기 노리자 이벤트!!",
    "url": "https://www.instagram.com/p/Dev3_0_iRVI/",
+   "who": null
+  },
+  "ki-32e017ac3b": {
+   "announce": "2026-12-04",
+   "cand": true,
+   "candidate_url": null,
+   "checked": null,
+   "count": 75,
+   "destination_checked": false,
+   "elec": [],
+   "elec_models": [],
+   "end": "2026-11-28",
+   "endTime": null,
+   "entry_type": "form",
+   "entry_url": null,
+   "firstSeen": "2026-11-12",
+   "formLinks": [
+    "https://docs.google.com/forms/d/e/1FAIpQLSdKHb_l29kxaeSp7pBRchQRhkqpif7rlzmd--rQcOtF523mbA/viewform"
+   ],
+   "form_url": "https://docs.google.com/forms/d/e/1FAIpQLSdKHb_l29kxaeSp7pBRchQRhkqpif7rlzmd--rQcOtF523mbA/viewform",
+   "grade": "C",
+   "id": "ki-32e017ac3b",
+   "is_restricted": false,
+   "issues": [
+    "원문 링크 접속"
+   ],
+   "kind": "설문",
+   "lastSeen": "2026-11-12",
+   "last_checked_at": "2026-11-12",
+   "linkChecked": "2026-11-12",
+   "linkStatus": "robots",
+   "link_evidence": null,
+   "listUrl": null,
+   "max": null,
+   "min": null,
+   "mode": null,
+   "needs": [
+    "응모 양식: https://docs.google.com/forms/d/e/1FAIpQLSdKHb_l29kxaeSp7pBRchQRhkqpif7rlzmd--rQcOtF523mbA/viewform"
+   ],
+   "needs_proof": false,
+   "org": "한국고용정보원",
+   "original_url": null,
+   "place": null,
+   "platHint": "web",
+   "prize": "스타벅스 땡스어라떼.. 75명",
+   "proof_reason": null,
+   "rawText": "응모형태: 설문/투표\n참여 방법",
+   "reasons": [],
+   "restriction_note": null,
+   "restriction_reason": null,
+   "src": "ki",
+   "srcUrls": [
+    "https://www.facebook.com/workgokr/posts/pfbid0Lje1j4mnu6bXSeQsaL2MGeBHqVM1LPnrPx11AhKmxJT16Qhb92uyfgjnZW7T6diel",
+    "https://blog.naver.com/work_net/224070680291",
+    "https://www.instagram.com/p/DQ21HWEjcaG/",
+    "https://www.youtube.com/post/UgkxIPdGqtMPQ_VbU8R0IxhCmaYOVEyvToJi"
+   ],
+   "start": "2026-11-10",
+   "status": "active",
+   "steps": [],
+   "tags": [],
+   "title": "SNS 만족도 조사 경품이벤트!!",
+   "truncChecked": "2026-11-12",
+   "url": "https://www.facebook.com/workgokr/posts/pfbid0Lje1j4mnu6bXSeQsaL2MGeBHqVM1LPnrPx11AhKmxJT16Qhb92uyfgjnZW7T6diel",
+   "verification_evidence_url": null,
+   "verification_grade": "C",
+   "verification_reason": "폼 페이지를 찾을 수 없음",
+   "verification_status": "unverified",
+   "verified_at": null,
    "who": null
   },
   "ki-34ddbe8d12": {
@@ -144105,6 +144521,68 @@
    "url": "https://www.instagram.com/p/DXtVKlaE-K_/",
    "who": null
   },
+  "ki-989355eed1": {
+   "announce": "2026-12-18",
+   "cand": true,
+   "candidate_url": null,
+   "checked": null,
+   "count": 150,
+   "destination_checked": false,
+   "elec": [],
+   "elec_models": [],
+   "end": "2026-12-12",
+   "endTime": null,
+   "entry_type": "form",
+   "entry_url": null,
+   "firstSeen": "2026-11-12",
+   "formLinks": [
+    "https://docs.google.com/forms/d/e/1FAIpQLSd49Pkt5h86G2dWTRdQByBY72MrOwe9hLZemvrEJoIkqFU98Q/viewform"
+   ],
+   "form_url": "https://docs.google.com/forms/d/e/1FAIpQLSd49Pkt5h86G2dWTRdQByBY72MrOwe9hLZemvrEJoIkqFU98Q/viewform",
+   "grade": "C",
+   "id": "ki-989355eed1",
+   "is_restricted": false,
+   "kind": "기타",
+   "lastSeen": "2026-11-12",
+   "last_checked_at": "2026-11-12",
+   "linkChecked": "2026-11-12",
+   "linkStatus": "skip",
+   "link_evidence": null,
+   "listUrl": null,
+   "max": null,
+   "min": null,
+   "mode": null,
+   "needs": [
+    "응모 양식: https://docs.google.com/forms/d/e/1FAIpQLSd49Pkt5h86G2dWTRdQByBY72MrOwe9hLZemvrEJoIkqFU98Q/viewform"
+   ],
+   "needs_proof": false,
+   "org": "한국고용정보원",
+   "original_url": null,
+   "place": null,
+   "platHint": "insta",
+   "prize": "스타벅스 1만원권 150명",
+   "proof_reason": null,
+   "rawText": "응모형태: 단순/간단\n참여 방법",
+   "reasons": [],
+   "restriction_note": null,
+   "restriction_reason": null,
+   "src": "ki",
+   "srcUrls": [
+    "https://www.instagram.com/p/DR0oN4tgZm3/"
+   ],
+   "start": "2026-12-04",
+   "status": "active",
+   "steps": [],
+   "tags": [],
+   "title": "홈페이지 방문 경품이벤트!!",
+   "url": "https://www.instagram.com/p/DR0oN4tgZm3/",
+   "verification_evidence_url": null,
+   "verification_grade": "C",
+   "verification_reason": "폼 페이지를 찾을 수 없음",
+   "verification_status": "unverified",
+   "verified_at": null,
+   "who": null
+  },
   "ki-99e2a82d15": {
    "announce": "2026-12-13",
    "cand": true,
@@ -144501,6 +144979,79 @@
    ],
    "title": "재테크 박람회 스토리 공유하고 커피쿠폰 챙기자 이벤트!!",
    "url": "https://www.instagram.com/p/DeiZA__jy8C/",
+   "who": null
+  },
+  "ki-9cfde9f0c0": {
+   "announce": "2026-11-20",
+   "cand": true,
+   "candidate_url": null,
+   "checked": null,
+   "count": 25,
+   "destination_checked": true,
+   "elec": [],
+   "elec_models": [],
+   "end": "2026-11-13",
+   "endTime": null,
+   "entry_type": "form",
+   "entry_url": "https://docs.google.com/forms/d/e/1FAIpQLSd-EjIBiC5dCaSn17bWEe0zI--7673TdxxOrlc_31rMHKLJ_g/viewform",
+   "firstSeen": "2026-11-12",
+   "formLinks": [
+    "https://forms.gle/vdd2CMmJwPfwgAwY8"
+   ],
+   "form_url": "https://docs.google.com/forms/d/e/1FAIpQLSd-EjIBiC5dCaSn17bWEe0zI--7673TdxxOrlc_31rMHKLJ_g/viewform",
+   "grade": "C",
+   "id": "ki-9cfde9f0c0",
+   "is_restricted": false,
+   "kind": "퀴즈",
+   "lastSeen": "2026-11-12",
+   "last_checked_at": "2026-11-12",
+   "linkChecked": "2026-11-12",
+   "linkFail": 0,
+   "linkStatus": "ok",
+   "link_evidence": "official_notice",
+   "listUrl": null,
+   "max": null,
+   "min": null,
+   "mode": null,
+   "needs": [
+    "응모 양식: https://forms.gle/vdd2CMmJwPfwgAwY8"
+   ],
+   "needs_proof": false,
+   "org": "충청남도",
+   "original_url": "https://story.kakao.com/ch/chungnam/HD3gZGiJkra/",
+   "place": null,
+   "platHint": null,
+   "prize": "네이버페이 포인트 1.. 25명",
+   "prizeAll": [
+    "네이버페이 포인트 1만원 모바일쿠폰 5명",
+    "메가MGC커피 아이스 아메리카노 모바일쿠폰 20명"
+   ],
+   "proof_reason": null,
+   "rawText": "응모형태: 퀴즈/퍼즐 북마크\n참여 방법\n1. 팔로우\n2. 청이·나미 번호 입력\n3. 폼 제출",
+   "reasons": [],
+   "restriction_note": null,
+   "restriction_reason": null,
+   "src": "ki",
+   "srcUrls": [
+    "https://story.kakao.com/ch/chungnam/HD3gZGiJkra/"
+   ],
+   "start": "2026-11-06",
+   "status": "active",
+   "steps": [
+    "팔로우",
+    "청이·나미 번호 입력",
+    "폼 제출"
+   ],
+   "tags": [
+    "팔로우 필요"
+   ],
+   "title": "청이 나미 찾고 네이버페이 도전하자 이벤트!!",
+   "url": "https://story.kakao.com/ch/chungnam/HD3gZGiJkra/",
+   "verification_evidence_url": "https://story.kakao.com/ch/chungnam/HD3gZGiJkra/",
+   "verification_grade": "A",
+   "verification_reason": "공식 공지에서 폼으로 직접 연결",
+   "verification_status": "verified",
+   "verified_at": "2026-11-12",
    "who": null
   },
   "ki-9d6279410d": {
@@ -255648,7 +256199,7 @@
    "kind": "체험단",
    "lastSeen": "2026-11-09",
    "last_checked_at": "2026-11-10",
-   "linkChecked": "2026-11-11",
+   "linkChecked": "2026-11-12",
    "linkFail": 0,
    "linkStatus": "ok",
    "link_evidence": null,
@@ -255760,7 +256311,7 @@
    "kind": "체험단",
    "lastSeen": "2026-11-10",
    "last_checked_at": "2026-11-10",
-   "linkChecked": "2026-11-11",
+   "linkChecked": "2026-11-12",
    "linkFail": 0,
    "linkStatus": "ok",
    "link_evidence": null,
@@ -255874,7 +256425,7 @@
    "kind": "체험단",
    "lastSeen": "2026-11-11",
    "last_checked_at": "2026-11-11",
-   "linkChecked": "2026-11-11",
+   "linkChecked": "2026-11-12",
    "linkFail": 0,
    "linkStatus": "ok",
    "link_evidence": null,
@@ -255988,7 +256539,7 @@
    "kind": "체험단",
    "lastSeen": "2026-11-11",
    "last_checked_at": "2026-11-11",
-   "linkChecked": "2026-11-11",
+   "linkChecked": "2026-11-12",
    "linkFail": 0,
    "linkStatus": "ok",
    "link_evidence": null,
@@ -256112,7 +256663,7 @@
    "kind": "체험단",
    "lastSeen": "2026-11-10",
    "last_checked_at": "2026-11-10",
-   "linkChecked": "2026-11-11",
+   "linkChecked": "2026-11-12",
    "linkFail": 0,
    "linkStatus": "ok",
    "link_evidence": null,
@@ -256175,7 +256726,7 @@
    "kind": "체험단",
    "lastSeen": "2026-11-06",
    "last_checked_at": "2026-11-10",
-   "linkChecked": "2026-11-11",
+   "linkChecked": "2026-11-12",
    "linkFail": 0,
    "linkStatus": "ok",
    "link_evidence": null,
@@ -256288,7 +256839,7 @@
    "kind": "체험단",
    "lastSeen": "2026-11-10",
    "last_checked_at": "2026-11-10",
-   "linkChecked": "2026-11-11",
+   "linkChecked": "2026-11-12",
    "linkFail": 0,
    "linkStatus": "ok",
    "link_evidence": null,
@@ -256351,7 +256902,7 @@
    "kind": "체험단",
    "lastSeen": "2026-11-04",
    "last_checked_at": "2026-11-10",
-   "linkChecked": "2026-11-11",
+   "linkChecked": "2026-11-12",
    "linkFail": 0,
    "linkStatus": "ok",
    "link_evidence": null,
@@ -256414,7 +256965,7 @@
    "kind": "체험단",
    "lastSeen": "2026-11-11",
    "last_checked_at": "2026-11-10",
-   "linkChecked": "2026-11-11",
+   "linkChecked": "2026-11-12",
    "linkFail": 0,
    "linkStatus": "ok",
    "link_evidence": "source_row",
@@ -256477,7 +257028,7 @@
    "kind": "체험단",
    "lastSeen": "2026-11-10",
    "last_checked_at": "2026-11-10",
-   "linkChecked": "2026-11-11",
+   "linkChecked": "2026-11-12",
    "linkFail": 0,
    "linkStatus": "ok",
    "link_evidence": null,
@@ -256540,7 +257091,7 @@
    "kind": "체험단",
    "lastSeen": "2026-11-05",
    "last_checked_at": "2026-11-10",
-   "linkChecked": "2026-11-11",
+   "linkChecked": "2026-11-12",
    "linkFail": 0,
    "linkStatus": "ok",
    "link_evidence": null,
@@ -256602,7 +257153,7 @@
    "kind": "체험단",
    "lastSeen": "2026-11-05",
    "last_checked_at": "2026-11-10",
-   "linkChecked": "2026-11-11",
+   "linkChecked": "2026-11-12",
    "linkFail": 0,
    "linkStatus": "ok",
    "link_evidence": null,
@@ -256665,7 +257216,7 @@
    "kind": "체험단",
    "lastSeen": "2026-11-11",
    "last_checked_at": "2026-11-11",
-   "linkChecked": "2026-11-11",
+   "linkChecked": "2026-11-12",
    "linkFail": 0,
    "linkStatus": "ok",
    "link_evidence": null,
@@ -256852,7 +257403,7 @@
    "kind": "체험단",
    "lastSeen": "2026-11-05",
    "last_checked_at": "2026-11-10",
-   "linkChecked": "2026-11-11",
+   "linkChecked": "2026-11-12",
    "linkFail": 0,
    "linkStatus": "ok",
    "link_evidence": null,
@@ -257026,7 +257577,7 @@
    "kind": "체험단",
    "lastSeen": "2026-11-06",
    "last_checked_at": "2026-11-10",
-   "linkChecked": "2026-11-11",
+   "linkChecked": "2026-11-12",
    "linkFail": 0,
    "linkStatus": "ok",
    "link_evidence": null,
@@ -257088,7 +257639,7 @@
    "kind": "체험단",
    "lastSeen": "2026-11-03",
    "last_checked_at": "2026-11-10",
-   "linkChecked": "2026-11-11",
+   "linkChecked": "2026-11-12",
    "linkFail": 0,
    "linkStatus": "ok",
    "link_evidence": null,
@@ -257150,7 +257701,7 @@
    "kind": "체험단",
    "lastSeen": "2026-11-03",
    "last_checked_at": "2026-11-10",
-   "linkChecked": "2026-11-11",
+   "linkChecked": "2026-11-12",
    "linkFail": 0,
    "linkStatus": "ok",
    "link_evidence": null,
@@ -257398,7 +257949,7 @@
    "kind": "체험단",
    "lastSeen": "2026-11-02",
    "last_checked_at": "2026-11-10",
-   "linkChecked": "2026-11-11",
+   "linkChecked": "2026-11-12",
    "linkFail": 0,
    "linkStatus": "ok",
    "link_evidence": null,
@@ -257461,7 +258012,7 @@
    "kind": "체험단",
    "lastSeen": "2026-11-09",
    "last_checked_at": "2026-11-10",
-   "linkChecked": "2026-11-11",
+   "linkChecked": "2026-11-12",
    "linkFail": 0,
    "linkStatus": "ok",
    "link_evidence": null,
@@ -257575,7 +258126,7 @@
    "kind": "체험단",
    "lastSeen": "2026-11-11",
    "last_checked_at": "2026-11-11",
-   "linkChecked": "2026-11-11",
+   "linkChecked": "2026-11-12",
    "linkFail": 0,
    "linkStatus": "ok",
    "link_evidence": "source_row",
@@ -257698,7 +258249,7 @@
    "kind": "체험단",
    "lastSeen": "2026-11-06",
    "last_checked_at": "2026-11-10",
-   "linkChecked": "2026-11-11",
+   "linkChecked": "2026-11-12",
    "linkFail": 0,
    "linkStatus": "ok",
    "link_evidence": null,
@@ -257822,7 +258373,7 @@
    "kind": "체험단",
    "lastSeen": "2026-11-08",
    "last_checked_at": "2026-11-10",
-   "linkChecked": "2026-11-11",
+   "linkChecked": "2026-11-12",
    "linkFail": 0,
    "linkStatus": "ok",
    "link_evidence": null,
@@ -257884,7 +258435,7 @@
    "kind": "체험단",
    "lastSeen": "2026-11-06",
    "last_checked_at": "2026-11-10",
-   "linkChecked": "2026-11-11",
+   "linkChecked": "2026-11-12",
    "linkFail": 0,
    "linkStatus": "ok",
    "link_evidence": null,
@@ -257947,7 +258498,7 @@
    "kind": "체험단",
    "lastSeen": "2026-11-11",
    "last_checked_at": "2026-11-10",
-   "linkChecked": "2026-11-11",
+   "linkChecked": "2026-11-12",
    "linkFail": 0,
    "linkStatus": "ok",
    "link_evidence": null,
@@ -258136,7 +258687,7 @@
    "kind": "체험단",
    "lastSeen": "2026-11-05",
    "last_checked_at": "2026-11-10",
-   "linkChecked": "2026-11-11",
+   "linkChecked": "2026-11-12",
    "linkFail": 0,
    "linkStatus": "ok",
    "link_evidence": null,
@@ -258263,7 +258814,7 @@
    "kind": "체험단",
    "lastSeen": "2026-11-09",
    "last_checked_at": "2026-11-10",
-   "linkChecked": "2026-11-11",
+   "linkChecked": "2026-11-12",
    "linkFail": 0,
    "linkStatus": "ok",
    "link_evidence": null,
@@ -258325,7 +258876,7 @@
    "kind": "체험단",
    "lastSeen": "2026-11-06",
    "last_checked_at": "2026-11-10",
-   "linkChecked": "2026-11-11",
+   "linkChecked": "2026-11-12",
    "linkFail": 0,
    "linkStatus": "ok",
    "link_evidence": null,
@@ -258450,7 +259001,7 @@
    "kind": "체험단",
    "lastSeen": "2026-11-11",
    "last_checked_at": "2026-11-11",
-   "linkChecked": "2026-11-11",
+   "linkChecked": "2026-11-12",
    "linkFail": 0,
    "linkStatus": "ok",
    "link_evidence": "source_row",
@@ -258575,7 +259126,7 @@
    "kind": "체험단",
    "lastSeen": "2026-11-02",
    "last_checked_at": "2026-11-10",
-   "linkChecked": "2026-11-11",
+   "linkChecked": "2026-11-12",
    "linkFail": 0,
    "linkStatus": "ok",
    "link_evidence": null,
@@ -258685,7 +259236,7 @@
    "kind": "체험단",
    "lastSeen": "2026-11-09",
    "last_checked_at": "2026-11-10",
-   "linkChecked": "2026-11-11",
+   "linkChecked": "2026-11-12",
    "linkFail": 0,
    "linkStatus": "ok",
    "link_evidence": null,
@@ -258796,7 +259347,7 @@
    "kind": "체험단",
    "lastSeen": "2026-11-09",
    "last_checked_at": "2026-11-10",
-   "linkChecked": "2026-11-11",
+   "linkChecked": "2026-11-12",
    "linkFail": 0,
    "linkStatus": "ok",
    "link_evidence": null,
@@ -258859,7 +259410,7 @@
    "kind": "체험단",
    "lastSeen": "2026-11-08",
    "last_checked_at": "2026-11-10",
-   "linkChecked": "2026-11-11",
+   "linkChecked": "2026-11-12",
    "linkFail": 0,
    "linkStatus": "ok",
    "link_evidence": null,
@@ -258922,7 +259473,7 @@
    "kind": "체험단",
    "lastSeen": "2026-11-12",
    "last_checked_at": "2026-11-11",
-   "linkChecked": "2026-11-11",
+   "linkChecked": "2026-11-12",
    "linkFail": 0,
    "linkStatus": "ok",
    "link_evidence": "source_row",
@@ -258986,7 +259537,7 @@
    "kind": "체험단",
    "lastSeen": "2026-11-11",
    "last_checked_at": "2026-11-11",
-   "linkChecked": "2026-11-11",
+   "linkChecked": "2026-11-12",
    "linkFail": 0,
    "linkStatus": "ok",
    "link_evidence": "source_row",
@@ -259049,7 +259600,7 @@
    "kind": "체험단",
    "lastSeen": "2026-11-04",
    "last_checked_at": "2026-11-10",
-   "linkChecked": "2026-11-11",
+   "linkChecked": "2026-11-12",
    "linkFail": 0,
    "linkStatus": "ok",
    "link_evidence": null,
@@ -259111,7 +259662,7 @@
    "kind": "체험단",
    "lastSeen": "2026-11-05",
    "last_checked_at": "2026-11-10",
-   "linkChecked": "2026-11-11",
+   "linkChecked": "2026-11-12",
    "linkFail": 0,
    "linkStatus": "ok",
    "link_evidence": null,
@@ -259285,7 +259836,7 @@
    "kind": "체험단",
    "lastSeen": "2026-11-04",
    "last_checked_at": "2026-11-10",
-   "linkChecked": "2026-11-11",
+   "linkChecked": "2026-11-12",
    "linkFail": 0,
    "linkStatus": "ok",
    "link_evidence": null,
@@ -259347,7 +259898,7 @@
    "kind": "체험단",
    "lastSeen": "2026-11-02",
    "last_checked_at": "2026-11-10",
-   "linkChecked": "2026-11-11",
+   "linkChecked": "2026-11-12",
    "linkFail": 0,
    "linkStatus": "ok",
    "link_evidence": null,
@@ -259409,7 +259960,7 @@
    "kind": "체험단",
    "lastSeen": "2026-11-04",
    "last_checked_at": "2026-11-10",
-   "linkChecked": "2026-11-11",
+   "linkChecked": "2026-11-12",
    "linkFail": 0,
    "linkStatus": "ok",
    "link_evidence": null,
@@ -259471,7 +260022,7 @@
    "kind": "체험단",
    "lastSeen": "2026-11-03",
    "last_checked_at": "2026-11-10",
-   "linkChecked": "2026-11-11",
+   "linkChecked": "2026-11-12",
    "linkFail": 0,
    "linkStatus": "ok",
    "link_evidence": null,
@@ -259581,7 +260132,7 @@
    "kind": "체험단",
    "lastSeen": "2026-11-03",
    "last_checked_at": "2026-11-10",
-   "linkChecked": "2026-11-11",
+   "linkChecked": "2026-11-12",
    "linkFail": 0,
    "linkStatus": "ok",
    "link_evidence": "source_row",
@@ -259641,7 +260192,7 @@
    "kind": "체험단",
    "lastSeen": "2026-11-02",
    "last_checked_at": "2026-11-10",
-   "linkChecked": "2026-11-11",
+   "linkChecked": "2026-11-12",
    "linkFail": 0,
    "linkStatus": "ok",
    "link_evidence": null,
@@ -259703,7 +260254,7 @@
    "kind": "체험단",
    "lastSeen": "2026-11-09",
    "last_checked_at": "2026-11-10",
-   "linkChecked": "2026-11-11",
+   "linkChecked": "2026-11-12",
    "linkFail": 0,
    "linkStatus": "ok",
    "link_evidence": "source_row",
@@ -259765,7 +260316,7 @@
    "kind": "체험단",
    "lastSeen": "2026-11-03",
    "last_checked_at": "2026-11-10",
-   "linkChecked": "2026-11-11",
+   "linkChecked": "2026-11-12",
    "linkFail": 0,
    "linkStatus": "ok",
    "link_evidence": null,
@@ -259828,7 +260379,7 @@
    "kind": "체험단",
    "lastSeen": "2026-11-10",
    "last_checked_at": "2026-11-10",
-   "linkChecked": "2026-11-11",
+   "linkChecked": "2026-11-12",
    "linkFail": 0,
    "linkStatus": "ok",
    "link_evidence": "source_row",
@@ -260004,7 +260555,7 @@
    "kind": "체험단",
    "lastSeen": "2026-11-11",
    "last_checked_at": "2026-11-10",
-   "linkChecked": "2026-11-11",
+   "linkChecked": "2026-11-12",
    "linkFail": 0,
    "linkStatus": "ok",
    "link_evidence": "source_row",
@@ -260115,7 +260666,7 @@
    "kind": "체험단",
    "lastSeen": "2026-11-04",
    "last_checked_at": "2026-11-10",
-   "linkChecked": "2026-11-11",
+   "linkChecked": "2026-11-12",
    "linkFail": 0,
    "linkStatus": "ok",
    "link_evidence": null,
@@ -260177,7 +260728,7 @@
    "kind": "체험단",
    "lastSeen": "2026-11-04",
    "last_checked_at": "2026-11-10",
-   "linkChecked": "2026-11-11",
+   "linkChecked": "2026-11-12",
    "linkFail": 0,
    "linkStatus": "ok",
    "link_evidence": null,
@@ -260240,7 +260791,7 @@
    "kind": "체험단",
    "lastSeen": "2026-11-10",
    "last_checked_at": "2026-11-10",
-   "linkChecked": "2026-11-11",
+   "linkChecked": "2026-11-12",
    "linkFail": 0,
    "linkStatus": "ok",
    "link_evidence": null,
@@ -260303,7 +260854,7 @@
    "kind": "체험단",
    "lastSeen": "2026-11-06",
    "last_checked_at": "2026-11-10",
-   "linkChecked": "2026-11-11",
+   "linkChecked": "2026-11-12",
    "linkFail": 0,
    "linkStatus": "ok",
    "link_evidence": null,
@@ -260365,7 +260916,7 @@
    "kind": "체험단",
    "lastSeen": "2026-11-09",
    "last_checked_at": "2026-11-10",
-   "linkChecked": "2026-11-11",
+   "linkChecked": "2026-11-12",
    "linkFail": 0,
    "linkStatus": "ok",
    "link_evidence": null,
@@ -260477,7 +261028,7 @@
    "kind": "체험단",
    "lastSeen": "2026-11-09",
    "last_checked_at": "2026-11-10",
-   "linkChecked": "2026-11-11",
+   "linkChecked": "2026-11-12",
    "linkFail": 0,
    "linkStatus": "ok",
    "link_evidence": "source_row",
@@ -260538,7 +261089,7 @@
    "kind": "체험단",
    "lastSeen": "2026-11-10",
    "last_checked_at": "2026-11-10",
-   "linkChecked": "2026-11-11",
+   "linkChecked": "2026-11-12",
    "linkFail": 0,
    "linkStatus": "ok",
    "link_evidence": null,
@@ -260666,7 +261217,7 @@
    "kind": "체험단",
    "lastSeen": "2026-11-11",
    "last_checked_at": "2026-11-10",
-   "linkChecked": "2026-11-11",
+   "linkChecked": "2026-11-12",
    "linkFail": 0,
    "linkStatus": "ok",
    "link_evidence": "source_row",
@@ -260729,7 +261280,7 @@
    "kind": "체험단",
    "lastSeen": "2026-11-06",
    "last_checked_at": "2026-11-10",
-   "linkChecked": "2026-11-11",
+   "linkChecked": "2026-11-12",
    "linkFail": 0,
    "linkStatus": "ok",
    "link_evidence": null,
@@ -260841,7 +261392,7 @@
    "kind": "체험단",
    "lastSeen": "2026-11-09",
    "last_checked_at": "2026-11-10",
-   "linkChecked": "2026-11-11",
+   "linkChecked": "2026-11-12",
    "linkFail": 0,
    "linkStatus": "ok",
    "link_evidence": null,
@@ -260903,7 +261454,7 @@
    "kind": "체험단",
    "lastSeen": "2026-11-09",
    "last_checked_at": "2026-11-10",
-   "linkChecked": "2026-11-11",
+   "linkChecked": "2026-11-12",
    "linkFail": 0,
    "linkStatus": "ok",
    "link_evidence": null,
@@ -261115,7 +261666,7 @@
    "kind": "체험단",
    "lastSeen": "2026-11-09",
    "last_checked_at": "2026-11-10",
-   "linkChecked": "2026-11-11",
+   "linkChecked": "2026-11-12",
    "linkFail": 0,
    "linkStatus": "ok",
    "link_evidence": "source_row",
@@ -338764,6 +339315,6 @@
   }
  },
  "meta": {
-  "updated": "2026-11-12T18:15:09+09:00"
+  "updated": "2026-11-12T19:08:08+09:00"
  }
 }
