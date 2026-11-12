@@ -2180,6 +2180,8 @@
    "230": "ek-2815f6b98b",
    "231": "ek-eadc1dd8fc",
    "232": "ek-4f0f5c96ca",
+   "233": "ek-52fdb9f68c",
+   "234": "ek-0ec09ef983",
    "24": "ek-4d134bc072",
    "25": "ek-f6e1126ced",
    "26": "ek-887309d048",
@@ -4588,38 +4590,38 @@
   }
  },
  "lastOk": {
-  "busan": "2026-11-12T13:49:17+09:00",
+  "busan": "2026-11-12T15:34:43+09:00",
   "contestkorea": "2026-11-12T14:42:12+09:00",
   "danawa": "2026-11-12T14:42:12+09:00",
-  "eventhouse": "2026-11-12T13:49:17+09:00",
+  "eventhouse": "2026-11-12T15:34:43+09:00",
   "eventhouse_search": "2026-11-12T12:54:12+09:00",
-  "events_kr": "2026-11-12T13:49:17+09:00",
-  "korissue": "2026-11-12T13:49:17+09:00",
-  "korissue_orgs": "2026-11-12T13:49:17+09:00",
-  "mohw": "2026-11-12T13:49:17+09:00",
+  "events_kr": "2026-11-12T15:34:43+09:00",
+  "korissue": "2026-11-12T15:34:43+09:00",
+  "korissue_orgs": "2026-11-12T15:34:43+09:00",
+  "mohw": "2026-11-12T15:34:43+09:00",
   "mrblog": "2026-11-12T12:54:12+09:00",
   "reviewnote": "2026-11-12T12:54:12+09:00",
   "sbs": "2026-11-12T12:54:12+09:00",
   "touredu": "2026-11-12T12:54:12+09:00",
-  "wevity": "2026-11-12T09:33:58+09:00"
+  "wevity": "2026-11-12T15:34:43+09:00"
  },
  "lastRun": {
-  "busan": "2026-11-12T13:49:17+09:00",
+  "busan": "2026-11-12T15:34:43+09:00",
   "contestkorea": "2026-11-12T14:42:12+09:00",
   "danawa": "2026-11-12T14:42:12+09:00",
-  "eventhouse": "2026-11-12T13:49:17+09:00",
+  "eventhouse": "2026-11-12T15:34:43+09:00",
   "eventhouse_search": "2026-11-12T12:54:12+09:00",
-  "events_kr": "2026-11-12T13:49:17+09:00",
-  "korissue": "2026-11-12T13:49:17+09:00",
-  "korissue_orgs": "2026-11-12T13:49:17+09:00",
-  "mohw": "2026-11-12T13:49:17+09:00",
+  "events_kr": "2026-11-12T15:34:43+09:00",
+  "korissue": "2026-11-12T15:34:43+09:00",
+  "korissue_orgs": "2026-11-12T15:34:43+09:00",
+  "mohw": "2026-11-12T15:34:43+09:00",
   "mrblog": "2026-11-12T12:54:12+09:00",
   "naver": "2026-11-12T14:42:12+09:00",
   "reviewnote": "2026-11-12T12:54:12+09:00",
   "sbs": "2026-11-12T12:54:12+09:00",
   "telegram": "2026-11-12T14:42:12+09:00",
   "touredu": "2026-11-12T12:54:12+09:00",
-  "wevity": "2026-11-12T09:33:58+09:00",
+  "wevity": "2026-11-12T15:34:43+09:00",
   "youtube": "2026-11-12T12:54:12+09:00"
  },
  "lastSkipped": {
@@ -4730,6 +4732,12 @@
    "final": "https://docs.google.com/forms/d/e/1FAIpQLSePEW-Z72hjqUCwbsUt8GDZygw5q5XE4c5yL-h4tzoN7QXmbg/viewform",
    "status": "form",
    "to": "https://docs.google.com/forms/d/e/1FAIpQLSePEW-Z72hjqUCwbsUt8GDZygw5q5XE4c5yL-h4tzoN7QXmbg/viewform?usp=send_form"
+  },
+  "https://forms.gle/B1sv8LKwGxuyVqFb6": {
+   "at": "2026-11-12",
+   "final": "https://docs.google.com/forms/d/e/1FAIpQLSe_SnmWlK22o5PvI2e2E1fbI8UJxQ1ezpWA5jDRLVz9QdzVcg/viewform",
+   "status": "form",
+   "to": "https://docs.google.com/forms/d/e/1FAIpQLSe_SnmWlK22o5PvI2e2E1fbI8UJxQ1ezpWA5jDRLVz9QdzVcg/viewform?usp=send_form"
   },
   "https://forms.gle/BHZuHhYC8asqVjMf9": {
    "at": "2026-11-09",
@@ -4880,6 +4888,12 @@
    "final": "https://docs.google.com/forms/d/e/1FAIpQLSeyms0_bgdOta0zjKem35ry4bNnAZjxpGfv1dDjdWiJRSoSKw/viewform",
    "status": "form",
    "to": "https://docs.google.com/forms/d/e/1FAIpQLSeyms0_bgdOta0zjKem35ry4bNnAZjxpGfv1dDjdWiJRSoSKw/viewform?usp=send_form"
+  },
+  "https://forms.gle/XuMQmssEHydDzhDKA": {
+   "at": "2026-11-12",
+   "final": "https://docs.google.com/forms/d/e/1FAIpQLSe0ncm4wfM5f2_u6WCtF9xtmptcb1rRo2XB1HrDR3wy4nYvLw/viewform",
+   "status": "form",
+   "to": "https://docs.google.com/forms/d/e/1FAIpQLSe0ncm4wfM5f2_u6WCtF9xtmptcb1rRo2XB1HrDR3wy4nYvLw/viewform?usp=send_form"
   },
   "https://forms.gle/YQogBqeZWm7xuKPW7": {
    "at": "2026-11-09",
