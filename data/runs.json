@@ -1,94 +1,6 @@
 [
  {
   "active": 1519,
-  "added": 5,
-  "at": "2026-11-02T09:48:26+09:00",
-  "links": {
-   "checked": 60,
-   "dead": 0,
-   "error": 0,
-   "ok": 60,
-   "skip": 0
-  },
-  "merged": 9,
-  "pruned": 0,
-  "quality": {
-   "excluded": 0,
-   "flagged": 8,
-   "merged": 0
-  },
-  "rejected": 0,
-  "requests": 64,
-  "sec": 66.7,
-  "seeded": 0,
-  "sources": {
-   "busan": {
-    "listed": 2,
-    "merged": 2,
-    "new": 0,
-    "requests": 1,
-    "sec": 2.3,
-    "skipped": 0,
-    "status": "ok"
-   },
-   "danawa": {
-    "listed": 12,
-    "merged": 7,
-    "new": 5,
-    "requests": 2,
-    "sec": 2.7,
-    "skipped": 0,
-    "status": "ok"
-   },
-   "eventhouse": {
-    "status": "wait"
-   },
-   "events_kr": {
-    "status": "wait"
-   },
-   "gangnam": {
-    "status": "off"
-   },
-   "korissue": {
-    "status": "wait"
-   },
-   "mohw": {
-    "listed": 12,
-    "merged": 0,
-    "new": 0,
-    "requests": 1,
-    "sec": 2.8,
-    "skipped": 0,
-    "status": "ok"
-   },
-   "mrblog": {
-    "status": "wait"
-   },
-   "naver": {
-    "reason": "NAVER_CLIENT_ID/SECRET 없음",
-    "status": "unconfigured"
-   },
-   "reviewnote": {
-    "status": "wait"
-   },
-   "sbs": {
-    "status": "wait"
-   },
-   "telegram": {
-    "reason": "수집할 공개 채널 목록이 비어 있음",
-    "status": "unconfigured"
-   },
-   "touredu": {
-    "status": "wait"
-   },
-   "youtube": {
-    "status": "wait"
-   }
-  },
-  "total": 2474
- },
- {
-  "active": 1519,
   "added": 0,
   "at": "2026-11-02T09:52:17+09:00",
   "links": {
@@ -33117,6 +33029,156 @@
    "no_request": 0,
    "rendered": 0,
    "requests": 0
+  },
+  "viaLeft": 496
+ },
+ {
+  "active": 2836,
+  "added": 8,
+  "at": "2026-11-12T23:43:13+09:00",
+  "broken": 0,
+  "dates": 0,
+  "elec": 60,
+  "form": {
+   "direct": 0,
+   "page_err": 0,
+   "page_found": 0,
+   "pages": 0,
+   "short_ok": 0
+  },
+  "links": {
+   "checked": 60,
+   "dead": 0,
+   "error": 0,
+   "ok": 60,
+   "skip": 0
+  },
+  "merged": 130,
+  "originals": 0,
+  "prizeFill": {
+   "left": 51,
+   "page": 0,
+   "page_err": 0,
+   "pages": 0,
+   "text": 0,
+   "title": 0,
+   "truncated": {
+    "checked": 0,
+    "err": 0,
+    "restored": 0
+   }
+  },
+  "proof": 481,
+  "pruned": 0,
+  "quality": {
+   "excluded": 0,
+   "flagged": 25,
+   "merged": 0
+  },
+  "rejected": 0,
+  "requests": 82,
+  "restricted": {
+   "restricted": 2965,
+   "review": 16
+  },
+  "sec": 102.1,
+  "seeded": 0,
+  "sources": {
+   "busan": {
+    "status": "wait"
+   },
+   "contestkorea": {
+    "status": "wait"
+   },
+   "danawa": {
+    "status": "wait"
+   },
+   "eventhouse": {
+    "status": "wait"
+   },
+   "eventhouse_search": {
+    "listed": 29,
+    "merged": 27,
+    "new": 0,
+    "requests": 18,
+    "sec": 19.4,
+    "skipped": 2,
+    "status": "ok"
+   },
+   "events_kr": {
+    "status": "wait"
+   },
+   "gangnam": {
+    "status": "off"
+   },
+   "korissue": {
+    "status": "wait"
+   },
+   "korissue_orgs": {
+    "status": "wait"
+   },
+   "mohw": {
+    "status": "wait"
+   },
+   "mrblog": {
+    "listed": 28,
+    "merged": 20,
+    "new": 4,
+    "requests": 1,
+    "sec": 3.9,
+    "skipped": 4,
+    "status": "ok"
+   },
+   "naver": {
+    "status": "wait"
+   },
+   "reviewnote": {
+    "listed": 92,
+    "merged": 76,
+    "new": 4,
+    "requests": 1,
+    "sec": 0.7,
+    "skipped": 12,
+    "status": "ok"
+   },
+   "sbs": {
+    "listed": 15,
+    "merged": 7,
+    "new": 0,
+    "requests": 1,
+    "sec": 1.1,
+    "skipped": 8,
+    "status": "ok"
+   },
+   "telegram": {
+    "status": "wait"
+   },
+   "touredu": {
+    "listed": 2,
+    "merged": 0,
+    "new": 0,
+    "requests": 1,
+    "sec": 1.3,
+    "skipped": 0,
+    "status": "ok"
+   },
+   "wevity": {
+    "status": "wait"
+   },
+   "youtube": {
+    "reason": "YT_API_KEY 없음",
+    "status": "unconfigured"
+   }
+  },
+  "total": 5899,
+  "verify": {
+   "checked": 8,
+   "due": 8,
+   "failed": 0,
+   "no_request": 0,
+   "rendered": 4,
+   "requests": 8,
+   "stale_ended": 0
   },
   "viaLeft": 496
  }
