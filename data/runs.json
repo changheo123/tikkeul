@@ -1,103 +1,5 @@
 [
  {
-  "active": 1930,
-  "added": 2,
-  "at": "2026-11-03T15:57:56+09:00",
-  "links": {
-   "checked": 60,
-   "dead": 0,
-   "error": 0,
-   "ok": 60,
-   "skip": 2
-  },
-  "merged": 397,
-  "pruned": 0,
-  "quality": {
-   "excluded": 0,
-   "flagged": 10,
-   "merged": 0
-  },
-  "rejected": 0,
-  "requests": 84,
-  "sec": 90.2,
-  "seeded": 0,
-  "sources": {
-   "busan": {
-    "listed": 4,
-    "merged": 4,
-    "new": 0,
-    "requests": 1,
-    "sec": 2.4,
-    "skipped": 0,
-    "status": "ok"
-   },
-   "danawa": {
-    "status": "wait"
-   },
-   "eventhouse": {
-    "listed": 400,
-    "merged": 237,
-    "new": 2,
-    "requests": 10,
-    "sec": 11.6,
-    "skipped": 2,
-    "status": "ok"
-   },
-   "events_kr": {
-    "listed": 178,
-    "merged": 0,
-    "new": 0,
-    "requests": 10,
-    "sec": 10.4,
-    "skipped": 0,
-    "status": "ok"
-   },
-   "gangnam": {
-    "status": "off"
-   },
-   "korissue": {
-    "listed": 156,
-    "merged": 156,
-    "new": 0,
-    "requests": 2,
-    "sec": 3.2,
-    "skipped": 0,
-    "status": "ok"
-   },
-   "mohw": {
-    "listed": 12,
-    "merged": 0,
-    "new": 0,
-    "requests": 1,
-    "sec": 3.3,
-    "skipped": 0,
-    "status": "ok"
-   },
-   "mrblog": {
-    "status": "wait"
-   },
-   "naver": {
-    "status": "wait"
-   },
-   "reviewnote": {
-    "status": "wait"
-   },
-   "sbs": {
-    "status": "wait"
-   },
-   "telegram": {
-    "status": "wait"
-   },
-   "touredu": {
-    "status": "wait"
-   },
-   "youtube": {
-    "status": "wait"
-   }
-  },
-  "total": 2985
- },
- {
   "active": 1967,
   "added": 37,
   "at": "2026-11-03T16:51:00+09:00",
@@ -35268,6 +35170,160 @@
     "new": 0,
     "requests": 0,
     "sec": 0.1,
+    "skipped": 0,
+    "status": "ok"
+   },
+   "mohw": {
+    "listed": 12,
+    "merged": 0,
+    "new": 0,
+    "requests": 1,
+    "sec": 3.0,
+    "skipped": 0,
+    "status": "ok"
+   },
+   "mrblog": {
+    "status": "wait"
+   },
+   "naver": {
+    "status": "wait"
+   },
+   "reviewnote": {
+    "status": "wait"
+   },
+   "sbs": {
+    "status": "wait"
+   },
+   "telegram": {
+    "status": "wait"
+   },
+   "touredu": {
+    "status": "wait"
+   },
+   "wevity": {
+    "status": "wait"
+   },
+   "youtube": {
+    "status": "wait"
+   }
+  },
+  "total": 6317,
+  "verify": {
+   "checked": 0,
+   "due": 0,
+   "failed": 0,
+   "no_request": 0,
+   "rendered": 0,
+   "requests": 0
+  },
+  "viaLeft": 385
+ },
+ {
+  "active": 2650,
+  "added": 0,
+  "at": "2026-11-14T08:24:44+09:00",
+  "broken": 0,
+  "dates": 0,
+  "elec": 60,
+  "form": {
+   "direct": 0,
+   "page_err": 0,
+   "page_found": 0,
+   "pages": 0,
+   "short_ok": 0
+  },
+  "links": {
+   "checked": 60,
+   "dead": 0,
+   "error": 0,
+   "ok": 60,
+   "skip": 0
+  },
+  "merged": 482,
+  "originals": 0,
+  "prizeFill": {
+   "left": 48,
+   "page": 0,
+   "page_err": 0,
+   "pages": 0,
+   "text": 0,
+   "title": 0,
+   "truncated": {
+    "checked": 0,
+    "err": 0,
+    "restored": 0
+   }
+  },
+  "proof": 521,
+  "pruned": 0,
+  "quality": {
+   "excluded": 0,
+   "flagged": 30,
+   "merged": 0
+  },
+  "rejected": 0,
+  "requests": 87,
+  "restricted": {
+   "restricted": 3222,
+   "review": 17
+  },
+  "sec": 97.9,
+  "seeded": 0,
+  "sources": {
+   "busan": {
+    "listed": 3,
+    "merged": 3,
+    "new": 0,
+    "requests": 1,
+    "sec": 2.0,
+    "skipped": 0,
+    "status": "ok"
+   },
+   "contestkorea": {
+    "status": "wait"
+   },
+   "danawa": {
+    "status": "wait"
+   },
+   "eventhouse": {
+    "listed": 400,
+    "merged": 274,
+    "new": 0,
+    "requests": 10,
+    "sec": 12.0,
+    "skipped": 0,
+    "status": "ok"
+   },
+   "eventhouse_search": {
+    "status": "wait"
+   },
+   "events_kr": {
+    "listed": 200,
+    "merged": 0,
+    "new": 0,
+    "requests": 10,
+    "sec": 10.5,
+    "skipped": 0,
+    "status": "ok"
+   },
+   "gangnam": {
+    "status": "off"
+   },
+   "korissue": {
+    "listed": 481,
+    "merged": 205,
+    "new": 0,
+    "requests": 5,
+    "sec": 5.9,
+    "skipped": 4,
+    "status": "ok"
+   },
+   "korissue_orgs": {
+    "listed": 0,
+    "merged": 0,
+    "new": 0,
+    "requests": 0,
+    "sec": 0.0,
     "skipped": 0,
     "status": "ok"
    },
