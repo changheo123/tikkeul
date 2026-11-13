@@ -1,6 +1,7 @@
 {
  "alias": {
   "bs-91540dc991": "hub-bs-288",
+  "ck-1580bd2a10": "eh-0899d08bcd",
   "ck-35d21fd29a": "eh-7ac40bd97e",
   "ck-3618382248": "eh-1f7c7c7a62",
   "ck-5367b455bd": "eh-8c19323a9a",
@@ -10,6 +11,7 @@
   "ck-8a2eb146cc": "ek-61188f2439",
   "ck-94e13fd7ef": "eh-4031730980",
   "ck-9c3674b0ec": "e182",
+  "ck-a9e8367d8a": "eh-83f9fd54c6",
   "ck-aed02ae896": "eh-8c65285dfb",
   "ck-b4b6444f54": "eh-7b4da11e64",
   "ck-bd6b940661": "ck-6518eacc22",
@@ -2208,7 +2210,13 @@
    "13210": "ck-e03967f314",
    "13211": "ck-6df513872f",
    "13218": "ck-cc5e71202e",
-   "13220": "ck-35d21fd29a"
+   "13220": "ck-35d21fd29a",
+   "13221": "ck-5dcedddec7",
+   "13222": "ck-a9e8367d8a",
+   "13224": "ck-1580bd2a10",
+   "13225": "ck-424e8fdc5e",
+   "13228": "ck-2ffe176e0a",
+   "13229": "ck-74fce248b1"
   }
  },
  "eventhouse": {
@@ -2439,6 +2447,7 @@
  },
  "expand": {
   "https://is.gd/maesilcontest": "https://script.google.com/macros/s/AKfycbylu_9QPFSTdMdD6AAEartmvcmmCvthS8ztnOkWAitRhgi75rCOqK4M-E7YTjjYP_yV/exec?from=contest",
+  "https://tinyurl.com/3rhtvazp": "https://www.cardif.co.kr/product/financial-safety-check.do?utm_source=viral&utm_medium=social&utm_campaign=fin_safety_2026&utm_content=blog_conkr",
   "https://vo.la/O5a6KCv": "https://m.blog.naver.com/ok_hira/224442524892"
  },
  "fails": {
@@ -5236,8 +5245,8 @@
  },
  "lastOk": {
   "busan": "2026-11-13T16:15:15+09:00",
-  "contestkorea": "2026-11-13T14:29:56+09:00",
-  "danawa": "2026-11-13T14:29:56+09:00",
+  "contestkorea": "2026-11-13T17:09:20+09:00",
+  "danawa": "2026-11-13T17:09:20+09:00",
   "eventhouse": "2026-11-13T16:15:15+09:00",
   "eventhouse_search": "2026-11-13T16:15:15+09:00",
   "events_kr": "2026-11-13T16:15:15+09:00",
@@ -5248,12 +5257,12 @@
   "reviewnote": "2026-11-13T16:15:15+09:00",
   "sbs": "2026-11-13T16:15:15+09:00",
   "touredu": "2026-11-13T16:15:15+09:00",
-  "wevity": "2026-11-13T10:56:15+09:00"
+  "wevity": "2026-11-13T17:09:20+09:00"
  },
  "lastRun": {
   "busan": "2026-11-13T16:15:15+09:00",
-  "contestkorea": "2026-11-13T14:29:56+09:00",
-  "danawa": "2026-11-13T14:29:56+09:00",
+  "contestkorea": "2026-11-13T17:09:20+09:00",
+  "danawa": "2026-11-13T17:09:20+09:00",
   "eventhouse": "2026-11-13T16:15:15+09:00",
   "eventhouse_search": "2026-11-13T16:15:15+09:00",
   "events_kr": "2026-11-13T16:15:15+09:00",
@@ -5261,12 +5270,12 @@
   "korissue_orgs": "2026-11-13T16:15:15+09:00",
   "mohw": "2026-11-13T16:15:15+09:00",
   "mrblog": "2026-11-13T16:15:15+09:00",
-  "naver": "2026-11-13T14:29:56+09:00",
+  "naver": "2026-11-13T17:09:20+09:00",
   "reviewnote": "2026-11-13T16:15:15+09:00",
   "sbs": "2026-11-13T16:15:15+09:00",
-  "telegram": "2026-11-13T14:29:56+09:00",
+  "telegram": "2026-11-13T17:09:20+09:00",
   "touredu": "2026-11-13T16:15:15+09:00",
-  "wevity": "2026-11-13T10:56:15+09:00",
+  "wevity": "2026-11-13T17:09:20+09:00",
   "youtube": "2026-11-13T16:15:15+09:00"
  },
  "lastSkipped": {

@@ -154,6 +154,20 @@
    "verification_reason": "공식 공지에서 폼으로 직접 연결",
    "verification_status": "verified"
   },
+  "ck-2ffe176e0a": {
+   "candidate_url": "https://www.instagram.com/p/Dfq5umZJIo2/",
+   "destination_checked": false,
+   "entry_type": "instagram",
+   "entry_url": null,
+   "last_checked_at": "2026-11-13",
+   "link_evidence": "source_row",
+   "original_url": null,
+   "verification_code": "sns_no_fetch",
+   "verification_evidence_url": null,
+   "verification_grade": "B",
+   "verification_reason": "이벤트 글에 적힌 게시물이지만 약관·robots상 내용을 읽을 수 없음",
+   "verification_status": "needs_review"
+  },
   "ck-3467abfe03": {
    "candidate_url": null,
    "destination_checked": true,
@@ -195,6 +209,20 @@
    "verification_grade": "C",
    "verification_reason": "페이지와 이벤트의 일치를 확인하지 못함",
    "verification_status": "unverified"
+  },
+  "ck-424e8fdc5e": {
+   "candidate_url": "https://www.instagram.com/p/Dfl6z05j59Q/?utm_source=ig_web_copy_link&mdxt=MzRlODBiNWFlZA==&srtk=MzRlODBiNWFlZA==",
+   "destination_checked": false,
+   "entry_type": "instagram",
+   "entry_url": null,
+   "last_checked_at": "2026-11-13",
+   "link_evidence": "source_row",
+   "original_url": null,
+   "verification_code": "sns_no_fetch",
+   "verification_evidence_url": null,
+   "verification_grade": "B",
+   "verification_reason": "이벤트 글에 적힌 게시물이지만 약관·robots상 내용을 읽을 수 없음",
+   "verification_status": "needs_review"
   },
   "ck-4313a87c8e": {
    "candidate_url": "https://docs.google.com/forms/d/e/1FAIpQLSeLkUlp1DPG9cgkRPJfDWBvFvvJqS-OUZJ9avlQuh-KUbh7JA/viewform",
@@ -252,6 +280,20 @@
    "verification_reason": "접근이 제한된 폼이라 내용을 확인하지 못함 (이벤트 글에 적힌 폼)",
    "verification_status": "needs_review"
   },
+  "ck-5dcedddec7": {
+   "candidate_url": null,
+   "destination_checked": true,
+   "entry_type": "website",
+   "entry_url": "https://www.cardif.co.kr/product/financial-safety-check.do?utm_source=viral&utm_medium=social&utm_campaign=fin_safety_2026&utm_content=blog_conkr",
+   "last_checked_at": "2026-11-13",
+   "link_evidence": "official_notice",
+   "original_url": "https://www.cardif.co.kr/product/financial-safety-check.do?utm_source=viral&utm_medium=social&utm_campaign=fin_safety_2026&utm_content=blog_conkr",
+   "verification_code": "official_page",
+   "verification_evidence_url": "https://www.cardif.co.kr/product/financial-safety-check.do?utm_source=viral&utm_medium=social&utm_campaign=fin_safety_2026&utm_content=blog_conkr",
+   "verification_grade": "A",
+   "verification_reason": "공식 공지에서 이벤트 일치와 참여 안내를 확인",
+   "verification_status": "verified"
+  },
   "ck-6518eacc22": {
    "candidate_url": "https://www.instagram.com/p/DfYl08ygXgY/?utm_source=ig_web_copy_link&cplk=MzRlODBiNWFlZA==&srtk=MzRlODBiNWFlZA==",
    "destination_checked": false,
@@ -264,6 +306,20 @@
    "verification_evidence_url": null,
    "verification_grade": "B",
    "verification_reason": "이벤트 글에 적힌 게시물이지만 약관·robots상 내용을 읽을 수 없음",
+   "verification_status": "needs_review"
+  },
+  "ck-74fce248b1": {
+   "candidate_url": "https://docs.google.com/forms/d/e/1FAIpQLSdUuaWTzMNJw1VvW31iPrDtVDfQMLZ86KqYHzLsTShLLww0Zg/viewform",
+   "destination_checked": false,
+   "entry_type": "form",
+   "entry_url": null,
+   "last_checked_at": "2026-11-13",
+   "link_evidence": "form_content",
+   "original_url": null,
+   "verification_code": "form_self",
+   "verification_evidence_url": "https://docs.google.com/forms/d/e/1FAIpQLSdUuaWTzMNJw1VvW31iPrDtVDfQMLZ86KqYHzLsTShLLww0Zg/viewform",
+   "verification_grade": "B",
+   "verification_reason": "폼 내용은 이벤트와 일치하지만 공식 공지의 직접 연결은 확인하지 못함",
    "verification_status": "needs_review"
   },
   "ck-7d8344daea": {
