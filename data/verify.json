@@ -20454,6 +20454,20 @@
    "verification_reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)",
    "verification_status": "needs_review"
   },
+  "mb-19bf7a3c6a": {
+   "candidate_url": "https://www.mrblog.net/campaigns/1151317",
+   "destination_checked": false,
+   "entry_type": "website",
+   "entry_url": null,
+   "last_checked_at": "2026-11-14",
+   "link_evidence": "source_row",
+   "original_url": null,
+   "verification_code": "login",
+   "verification_evidence_url": null,
+   "verification_grade": "B",
+   "verification_reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)",
+   "verification_status": "needs_review"
+  },
   "mb-1a7d970b53": {
    "candidate_url": "https://www.mrblog.net/campaigns/1150202",
    "destination_checked": false,
@@ -60400,6 +60414,10 @@
   },
   "https://www.mrblog.net/campaigns/1151280": {
    "at": "2026-11-10",
+   "status": "login"
+  },
+  "https://www.mrblog.net/campaigns/1151317": {
+   "at": "2026-11-14",
    "status": "login"
   },
   "https://www.mrblog.net/campaigns/1151383": {
