@@ -1,104 +1,6 @@
 [
  {
   "active": 1969,
-  "added": 2,
-  "at": "2026-11-03T17:43:42+09:00",
-  "links": {
-   "checked": 60,
-   "dead": 0,
-   "error": 0,
-   "ok": 60,
-   "skip": 2
-  },
-  "merged": 407,
-  "pruned": 0,
-  "quality": {
-   "excluded": 0,
-   "flagged": 10,
-   "merged": 0
-  },
-  "rejected": 0,
-  "requests": 91,
-  "sec": 273.8,
-  "seeded": 0,
-  "sources": {
-   "busan": {
-    "error": "ConnectTimeout: HTTPSConnectionPool(host='www.busan.go.kr', port=443): Max retries exceeded with url: /minwon/eventresult (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.busan.go.kr', port=443) at 0x791a588ddf40>, 'Connection to www.busan.go.kr timed out. (connect timeout=20)'))",
-    "status": "error",
-    "trace": "kages/requests/sessions.py\", line 784, in send\n    r = adapter.send(request, **kwargs)\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/requests/adapters.py\", line 717, in send\n    raise ConnectTimeout(e, request=request)\nrequests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='www.busan.go.kr', port=443): Max retries exceeded with url: /minwon/eventresult (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.busan.go.kr', port=443) at 0x791a588ddf40>, 'Connection to www.busan.go.kr timed out. (connect timeout=20)'))\n"
-   },
-   "danawa": {
-    "listed": 12,
-    "merged": 12,
-    "new": 0,
-    "requests": 2,
-    "sec": 2.0,
-    "skipped": 0,
-    "status": "ok"
-   },
-   "eventhouse": {
-    "listed": 400,
-    "merged": 239,
-    "new": 2,
-    "requests": 10,
-    "sec": 11.1,
-    "skipped": 2,
-    "status": "ok"
-   },
-   "events_kr": {
-    "listed": 179,
-    "merged": 0,
-    "new": 0,
-    "requests": 11,
-    "sec": 11.3,
-    "skipped": 1,
-    "status": "ok"
-   },
-   "gangnam": {
-    "status": "off"
-   },
-   "korissue": {
-    "listed": 156,
-    "merged": 156,
-    "new": 0,
-    "requests": 2,
-    "sec": 4.4,
-    "skipped": 0,
-    "status": "ok"
-   },
-   "mohw": {
-    "error": "ConnectTimeout: HTTPSConnectionPool(host='www.mohw.go.kr', port=443): Max retries exceeded with url: /gallery.es?mid=a10314000000&bid=0015 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.mohw.go.kr', port=443) at 0x791a588df710>, 'Connection to www.mohw.go.kr timed out. (connect timeout=20",
-    "status": "error",
-    "trace": "sessions.py\", line 784, in send\n    r = adapter.send(request, **kwargs)\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/requests/adapters.py\", line 717, in send\n    raise ConnectTimeout(e, request=request)\nrequests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='www.mohw.go.kr', port=443): Max retries exceeded with url: /gallery.es?mid=a10314000000&bid=0015 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.mohw.go.kr', port=443) at 0x791a588df710>, 'Connection to www.mohw.go.kr timed out. (connect timeout=20)'))\n"
-   },
-   "mrblog": {
-    "status": "wait"
-   },
-   "naver": {
-    "reason": "NAVER_CLIENT_ID/SECRET 없음",
-    "status": "unconfigured"
-   },
-   "reviewnote": {
-    "status": "wait"
-   },
-   "sbs": {
-    "status": "wait"
-   },
-   "telegram": {
-    "reason": "수집할 공개 채널 목록이 비어 있음",
-    "status": "unconfigured"
-   },
-   "touredu": {
-    "status": "wait"
-   },
-   "youtube": {
-    "status": "wait"
-   }
-  },
-  "total": 3024
- },
- {
-  "active": 1969,
   "added": 0,
   "at": "2026-11-03T18:39:35+09:00",
   "links": {
@@ -35408,6 +35310,192 @@
    "no_request": 0,
    "rendered": 0,
    "requests": 0
+  },
+  "viaLeft": 385
+ },
+ {
+  "active": 2651,
+  "added": 1,
+  "at": "2026-11-14T09:33:47+09:00",
+  "broken": 0,
+  "dates": 0,
+  "elec": 60,
+  "form": {
+   "direct": 0,
+   "page_err": 0,
+   "page_found": 0,
+   "pages": 0,
+   "short_ok": 0
+  },
+  "links": {
+   "checked": 60,
+   "dead": 0,
+   "error": 0,
+   "ok": 60,
+   "skip": 0
+  },
+  "merged": 613,
+  "originals": 0,
+  "prizeFill": {
+   "left": 48,
+   "page": 0,
+   "page_err": 0,
+   "pages": 0,
+   "text": 0,
+   "title": 0,
+   "truncated": {
+    "checked": 0,
+    "err": 0,
+    "restored": 0
+   }
+  },
+  "proof": 521,
+  "pruned": 0,
+  "quality": {
+   "excluded": 0,
+   "flagged": 30,
+   "merged": 0
+  },
+  "rejected": 0,
+  "requests": 109,
+  "restricted": {
+   "restricted": 3223,
+   "review": 17
+  },
+  "sec": 124.4,
+  "seeded": 0,
+  "sources": {
+   "busan": {
+    "listed": 3,
+    "merged": 3,
+    "new": 0,
+    "requests": 1,
+    "sec": 2.3,
+    "skipped": 0,
+    "status": "ok"
+   },
+   "contestkorea": {
+    "status": "wait"
+   },
+   "danawa": {
+    "status": "wait"
+   },
+   "eventhouse": {
+    "listed": 400,
+    "merged": 274,
+    "new": 0,
+    "requests": 10,
+    "sec": 11.9,
+    "skipped": 0,
+    "status": "ok"
+   },
+   "eventhouse_search": {
+    "listed": 23,
+    "merged": 22,
+    "new": 0,
+    "requests": 18,
+    "sec": 18.0,
+    "skipped": 1,
+    "status": "ok"
+   },
+   "events_kr": {
+    "listed": 200,
+    "merged": 0,
+    "new": 0,
+    "requests": 10,
+    "sec": 11.2,
+    "skipped": 0,
+    "status": "ok"
+   },
+   "gangnam": {
+    "status": "off"
+   },
+   "korissue": {
+    "listed": 481,
+    "merged": 205,
+    "new": 0,
+    "requests": 5,
+    "sec": 6.1,
+    "skipped": 4,
+    "status": "ok"
+   },
+   "korissue_orgs": {
+    "listed": 0,
+    "merged": 0,
+    "new": 0,
+    "requests": 0,
+    "sec": 0.0,
+    "skipped": 0,
+    "status": "ok"
+   },
+   "mohw": {
+    "listed": 12,
+    "merged": 0,
+    "new": 0,
+    "requests": 1,
+    "sec": 3.1,
+    "skipped": 0,
+    "status": "ok"
+   },
+   "mrblog": {
+    "listed": 29,
+    "merged": 23,
+    "new": 0,
+    "requests": 1,
+    "sec": 2.1,
+    "skipped": 6,
+    "status": "ok"
+   },
+   "naver": {
+    "status": "wait"
+   },
+   "reviewnote": {
+    "listed": 84,
+    "merged": 79,
+    "new": 1,
+    "requests": 1,
+    "sec": 0.6,
+    "skipped": 4,
+    "status": "ok"
+   },
+   "sbs": {
+    "listed": 15,
+    "merged": 7,
+    "new": 0,
+    "requests": 1,
+    "sec": 2.4,
+    "skipped": 8,
+    "status": "ok"
+   },
+   "telegram": {
+    "status": "wait"
+   },
+   "touredu": {
+    "listed": 2,
+    "merged": 0,
+    "new": 0,
+    "requests": 1,
+    "sec": 1.5,
+    "skipped": 0,
+    "status": "ok"
+   },
+   "wevity": {
+    "status": "wait"
+   },
+   "youtube": {
+    "reason": "YT_API_KEY 없음",
+    "status": "unconfigured"
+   }
+  },
+  "total": 6318,
+  "verify": {
+   "checked": 1,
+   "due": 1,
+   "failed": 0,
+   "no_request": 0,
+   "rendered": 1,
+   "requests": 1,
+   "stale_ended": 0
   },
   "viaLeft": 385
  }
