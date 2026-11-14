@@ -18620,6 +18620,20 @@
    "verification_reason": "폼 내용이 이벤트와 일치하지 않음",
    "verification_status": "unverified"
   },
+  "ki-3fb542f654": {
+   "candidate_url": "https://www.instagram.com/p/DS4XO4HkUCs/",
+   "destination_checked": false,
+   "entry_type": "instagram",
+   "entry_url": null,
+   "last_checked_at": "2026-11-15",
+   "link_evidence": "source_row",
+   "original_url": null,
+   "verification_code": "sns_no_fetch",
+   "verification_evidence_url": null,
+   "verification_grade": "B",
+   "verification_reason": "이벤트 글에 적힌 게시물이지만 약관·robots상 내용을 읽을 수 없음",
+   "verification_status": "needs_review"
+  },
   "ki-41d1f58896": {
    "candidate_url": null,
    "destination_checked": false,
