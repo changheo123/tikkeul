@@ -1,107 +1,6 @@
 [
  {
   "active": 2062,
-  "added": 35,
-  "at": "2026-11-05T01:25:38+09:00",
-  "links": {
-   "checked": 60,
-   "dead": 0,
-   "error": 1,
-   "ok": 57,
-   "skip": 1
-  },
-  "merged": 87,
-  "pruned": 0,
-  "quality": {
-   "excluded": 0,
-   "flagged": 9,
-   "merged": 0
-  },
-  "rejected": 0,
-  "requests": 66,
-  "sec": 106.1,
-  "seeded": 0,
-  "sources": {
-   "busan": {
-    "status": "wait"
-   },
-   "danawa": {
-    "listed": 12,
-    "merged": 12,
-    "new": 0,
-    "requests": 2,
-    "sec": 2.2,
-    "skipped": 0,
-    "status": "ok"
-   },
-   "eventhouse": {
-    "status": "wait"
-   },
-   "events_kr": {
-    "status": "wait"
-   },
-   "gangnam": {
-    "status": "off"
-   },
-   "korissue": {
-    "status": "wait"
-   },
-   "mohw": {
-    "status": "wait"
-   },
-   "mrblog": {
-    "listed": 30,
-    "merged": 2,
-    "new": 21,
-    "requests": 1,
-    "sec": 1.4,
-    "skipped": 7,
-    "status": "ok"
-   },
-   "naver": {
-    "reason": "NAVER_CLIENT_ID/SECRET 없음",
-    "status": "unconfigured"
-   },
-   "reviewnote": {
-    "listed": 86,
-    "merged": 66,
-    "new": 14,
-    "requests": 1,
-    "sec": 0.7,
-    "skipped": 6,
-    "status": "ok"
-   },
-   "sbs": {
-    "listed": 16,
-    "merged": 7,
-    "new": 0,
-    "requests": 1,
-    "sec": 1.4,
-    "skipped": 9,
-    "status": "ok"
-   },
-   "telegram": {
-    "reason": "수집할 공개 채널 목록이 비어 있음",
-    "status": "unconfigured"
-   },
-   "touredu": {
-    "listed": 2,
-    "merged": 0,
-    "new": 0,
-    "requests": 1,
-    "sec": 1.4,
-    "skipped": 0,
-    "status": "ok"
-   },
-   "youtube": {
-    "reason": "YT_API_KEY 없음",
-    "status": "unconfigured"
-   }
-  },
-  "total": 3375
- },
- {
-  "active": 2062,
   "added": 0,
   "at": "2026-11-05T02:19:26+09:00",
   "links": {
@@ -37729,5 +37628,160 @@
    "stale_ended": 0
   },
   "viaLeft": 386
+ },
+ {
+  "active": 2716,
+  "added": 27,
+  "at": "2026-11-15T18:00:31+09:00",
+  "broken": 0,
+  "dates": 0,
+  "elec": 60,
+  "form": {
+   "direct": 16,
+   "page_err": 1,
+   "page_found": 1,
+   "pages": 3,
+   "short_ok": 7
+  },
+  "links": {
+   "checked": 60,
+   "dead": 0,
+   "error": 0,
+   "ok": 59,
+   "skip": 24
+  },
+  "merged": 1077,
+  "originals": 0,
+  "prizeFill": {
+   "left": 48,
+   "page": 0,
+   "page_err": 0,
+   "pages": 0,
+   "text": 0,
+   "title": 0,
+   "truncated": {
+    "checked": 4,
+    "err": 0,
+    "restored": 0
+   }
+  },
+  "proof": 523,
+  "pruned": 0,
+  "quality": {
+   "excluded": 0,
+   "flagged": 31,
+   "merged": 1
+  },
+  "rejected": 0,
+  "requests": 141,
+  "restricted": {
+   "restricted": 3394,
+   "review": 17
+  },
+  "sec": 195.9,
+  "seeded": 0,
+  "sources": {
+   "busan": {
+    "listed": 3,
+    "merged": 3,
+    "new": 0,
+    "requests": 1,
+    "sec": 1.8,
+    "skipped": 0,
+    "status": "ok"
+   },
+   "contestkorea": {
+    "status": "wait"
+   },
+   "danawa": {
+    "status": "wait"
+   },
+   "eventhouse": {
+    "listed": 1080,
+    "merged": 786,
+    "new": 0,
+    "requests": 27,
+    "sec": 28.2,
+    "skipped": 5,
+    "status": "ok"
+   },
+   "eventhouse_search": {
+    "status": "wait"
+   },
+   "events_kr": {
+    "listed": 200,
+    "merged": 0,
+    "new": 0,
+    "requests": 10,
+    "sec": 10.0,
+    "skipped": 0,
+    "status": "ok"
+   },
+   "gangnam": {
+    "status": "off"
+   },
+   "korissue": {
+    "listed": 284,
+    "merged": 241,
+    "new": 20,
+    "requests": 5,
+    "sec": 5.9,
+    "skipped": 4,
+    "status": "ok"
+   },
+   "korissue_orgs": {
+    "listed": 207,
+    "merged": 47,
+    "new": 7,
+    "requests": 38,
+    "sec": 56.7,
+    "skipped": 14,
+    "status": "ok"
+   },
+   "mohw": {
+    "listed": 12,
+    "merged": 0,
+    "new": 0,
+    "requests": 1,
+    "sec": 2.5,
+    "skipped": 0,
+    "status": "ok"
+   },
+   "mrblog": {
+    "status": "wait"
+   },
+   "naver": {
+    "status": "wait"
+   },
+   "reviewnote": {
+    "status": "wait"
+   },
+   "sbs": {
+    "status": "wait"
+   },
+   "telegram": {
+    "status": "wait"
+   },
+   "touredu": {
+    "status": "wait"
+   },
+   "wevity": {
+    "status": "wait"
+   },
+   "youtube": {
+    "status": "wait"
+   }
+  },
+  "total": 6529,
+  "verify": {
+   "checked": 27,
+   "due": 27,
+   "failed": 0,
+   "no_request": 20,
+   "rendered": 1,
+   "requests": 7,
+   "stale_ended": 2
+  },
+  "viaLeft": 352
  }
 ]
