@@ -2,104 +2,6 @@
  {
   "active": 2258,
   "added": 0,
-  "at": "2026-11-05T13:20:36+09:00",
-  "links": {
-   "checked": 60,
-   "dead": 0,
-   "error": 0,
-   "ok": 60,
-   "skip": 0
-  },
-  "merged": 402,
-  "pruned": 0,
-  "quality": {
-   "excluded": 0,
-   "flagged": 9,
-   "merged": 0
-  },
-  "rejected": 0,
-  "requests": 84,
-  "sec": 88.2,
-  "seeded": 0,
-  "sources": {
-   "busan": {
-    "listed": 4,
-    "merged": 4,
-    "new": 0,
-    "requests": 1,
-    "sec": 2.0,
-    "skipped": 0,
-    "status": "ok"
-   },
-   "danawa": {
-    "status": "wait"
-   },
-   "eventhouse": {
-    "listed": 400,
-    "merged": 248,
-    "new": 0,
-    "requests": 10,
-    "sec": 11.2,
-    "skipped": 1,
-    "status": "ok"
-   },
-   "events_kr": {
-    "listed": 184,
-    "merged": 0,
-    "new": 0,
-    "requests": 10,
-    "sec": 10.1,
-    "skipped": 0,
-    "status": "ok"
-   },
-   "gangnam": {
-    "status": "off"
-   },
-   "korissue": {
-    "listed": 150,
-    "merged": 150,
-    "new": 0,
-    "requests": 2,
-    "sec": 3.1,
-    "skipped": 0,
-    "status": "ok"
-   },
-   "mohw": {
-    "listed": 12,
-    "merged": 0,
-    "new": 0,
-    "requests": 1,
-    "sec": 2.5,
-    "skipped": 0,
-    "status": "ok"
-   },
-   "mrblog": {
-    "status": "wait"
-   },
-   "naver": {
-    "status": "wait"
-   },
-   "reviewnote": {
-    "status": "wait"
-   },
-   "sbs": {
-    "status": "wait"
-   },
-   "telegram": {
-    "status": "wait"
-   },
-   "touredu": {
-    "status": "wait"
-   },
-   "youtube": {
-    "status": "wait"
-   }
-  },
-  "total": 3571
- },
- {
-  "active": 2258,
-  "added": 0,
   "at": "2026-11-05T14:13:31+09:00",
   "links": {
    "checked": 60,
@@ -38295,6 +38197,166 @@
    "rendered": 21,
    "requests": 35,
    "stale_ended": 0
+  },
+  "viaLeft": 341
+ },
+ {
+  "active": 2371,
+  "added": 0,
+  "at": "2026-11-16T03:44:24+09:00",
+  "broken": 0,
+  "dates": 0,
+  "elec": 60,
+  "form": {
+   "direct": 0,
+   "page_err": 0,
+   "page_found": 0,
+   "pages": 0,
+   "short_ok": 0
+  },
+  "links": {
+   "checked": 60,
+   "dead": 0,
+   "error": 3,
+   "ok": 49,
+   "skip": 255
+  },
+  "merged": 407,
+  "originals": 0,
+  "prizeFill": {
+   "left": 36,
+   "page": 0,
+   "page_err": 0,
+   "pages": 0,
+   "text": 0,
+   "title": 0,
+   "truncated": {
+    "checked": 0,
+    "err": 0,
+    "restored": 0
+   }
+  },
+  "proof": 525,
+  "pruned": 0,
+  "quality": {
+   "excluded": 0,
+   "flagged": 26,
+   "merged": 0
+  },
+  "rejected": 0,
+  "requests": 114,
+  "restricted": {
+   "restricted": 3451,
+   "review": 17
+  },
+  "sec": 401.6,
+  "seeded": 0,
+  "sources": {
+   "busan": {
+    "listed": 3,
+    "merged": 3,
+    "new": 0,
+    "requests": 1,
+    "sec": 2.5,
+    "skipped": 0,
+    "status": "ok"
+   },
+   "contestkorea": {
+    "status": "wait"
+   },
+   "danawa": {
+    "status": "wait"
+   },
+   "eventhouse": {
+    "listed": 400,
+    "merged": 245,
+    "new": 0,
+    "requests": 10,
+    "sec": 11.4,
+    "skipped": 0,
+    "status": "ok"
+   },
+   "eventhouse_search": {
+    "status": "wait"
+   },
+   "events_kr": {
+    "listed": 200,
+    "merged": 0,
+    "new": 0,
+    "requests": 10,
+    "sec": 10.4,
+    "skipped": 0,
+    "status": "ok"
+   },
+   "gangnam": {
+    "status": "off"
+   },
+   "korissue": {
+    "listed": 461,
+    "merged": 140,
+    "new": 0,
+    "requests": 5,
+    "sec": 6.3,
+    "skipped": 0,
+    "status": "ok"
+   },
+   "korissue_orgs": {
+    "listed": 233,
+    "merged": 19,
+    "new": 0,
+    "requests": 25,
+    "sec": 37.3,
+    "skipped": 14,
+    "status": "ok"
+   },
+   "mohw": {
+    "listed": 12,
+    "merged": 0,
+    "new": 0,
+    "requests": 1,
+    "sec": 3.2,
+    "skipped": 0,
+    "status": "ok"
+   },
+   "mrblog": {
+    "status": "wait"
+   },
+   "naver": {
+    "status": "wait"
+   },
+   "reviewnote": {
+    "status": "wait"
+   },
+   "sbs": {
+    "status": "wait"
+   },
+   "telegram": {
+    "status": "wait"
+   },
+   "touredu": {
+    "status": "wait"
+   },
+   "wevity": {
+    "listed": 1,
+    "merged": 0,
+    "new": 0,
+    "requests": 2,
+    "sec": 3.9,
+    "skipped": 0,
+    "status": "ok"
+   },
+   "youtube": {
+    "status": "wait"
+   }
+  },
+  "total": 6587,
+  "verify": {
+   "checked": 0,
+   "due": 0,
+   "failed": 0,
+   "no_request": 0,
+   "rendered": 0,
+   "requests": 0
   },
   "viaLeft": 341
  }
