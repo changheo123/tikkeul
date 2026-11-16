@@ -364,7 +364,9 @@ function addEvents(list) {
 }
 function loadPart(name) {
   if (!loading[name]) {
-    loading[name] = fetch(`data/${name}.json?v=${encodeURIComponent(m.built)}`)
+    // 종료 목록은 메인 피드와 분리된 archive.json에 있다
+    const file = name === "ended" ? "archive" : name;
+    loading[name] = fetch(`data/${file}.json?v=${encodeURIComponent(m.built)}`)
       .then(r => { if (!r.ok) throw new Error(`HTTP ${r.status}`); return r.json(); })
       .then(d => { addEvents(d.events); loaded[name] = true; })
       .catch(err => { failed[name] = true; throw err; })

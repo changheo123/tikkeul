@@ -170,8 +170,23 @@
       "enabled": true,
       "interval_min": 120,
       "channels": []
+    },
+    "yuvent": {
+      "enabled": true,
+      "interval_min": 180,
+      "min_interval_sec": 1.5,
+      "max_pages": 3,
+      "page_size": 20
+    },
+    "gonggongevent": {
+      "enabled": true,
+      "interval_min": 180,
+      "min_interval_sec": 1.5,
+      "max_pages": 3,
+      "page_size": 20
     }
   },
+  "eh_form_per_run": 80,
   "prize_pages_per_run": 80,
   "verify_pages_per_run": 120,
   "verify_sec": 240,

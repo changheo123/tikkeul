@@ -10,8 +10,8 @@ _B = r"(?<![\w.\-])(?<!\w/)(?:https?:)?(?://)?(?:www\.)?"
 DIRECT = [
     ("naver", re.compile(_B + r"((?:m\.)?form\.naver\.com/response/[\w\-]+)", re.I | re.A)),
     ("google", re.compile(_B + r"(docs\.google\.com/forms(?:/u/\d+)?/d/(?:e/)?[\w\-]+)(/[A-Za-z]+)?", re.I | re.A)),
-    ("moaform", re.compile(_B + r"((?:[a-z0-9\-]+\.)?moaform\.com/q/[\w\-]+)", re.I | re.A)),
-    ("smore", re.compile(_B + r"((?:[a-z0-9\-]+\.)?smore\.im/form/[\w\-]+)", re.I | re.A)),
+    ("moaform", re.compile(_B + r"((?:[a-z0-9\-]+\.)?moaform\.com/(?:q|answers)/[\w\-]+)", re.I | re.A)),
+    ("smore", re.compile(_B + r"((?:[a-z0-9\-]+\.)?smore\.im/(?:form|quiz)/[\w\-]+)", re.I | re.A)),
 ]
 SHORT = [
     ("gle", re.compile(_B + r"(forms\.gle/[\w\-]+)", re.I | re.A)),
@@ -23,7 +23,9 @@ SHORT = [
 ]
 MAX_REDIRECTS = 5  # 단축 링크 추적 횟수 제한
 SHORT_TIMEOUT = 8  # 한 번의 요청 제한 시간(초)
-SHORT_HOST = re.compile(r"^https?://(?:www\.)?(?:forms\.gle|naver\.me|url\.kr|bit\.ly|me2\.do|han\.gl)/", re.I)
+# 단축 주소. 이벤트하우스 go=4가 여기로 보낸 뒤 실제 폼으로 이어지는 경우가 있다
+_SHORT_HOSTS = "forms\\.gle|naver\\.me|m\\.site\\.naver\\.com|url\\.kr|bit\\.ly|me2\\.do|han\\.gl|vo\\.la|buly\\.kr|zrr\\.kr|kko\\.to|surveyl\\.ink"
+SHORT_HOST = re.compile(rf"^https?://(?:www\.)?(?:{_SHORT_HOSTS})/", re.I)
 # 구글 폼에서 응답 화면으로 인정하는 경로(/edit 같은 편집 화면은 참여자가 열 수 없다)
 GOOGLE_OK = {None, "/viewform", "/formResponse", "/closedform"}
 
