@@ -322,6 +322,20 @@
    "verification_reason": "이벤트 글에 적힌 게시물이지만 약관·robots상 내용을 읽을 수 없음",
    "verification_status": "needs_review"
   },
+  "ck-6c44ae301c": {
+   "candidate_url": "https://form.naver.com/response/57bRUiaAX9S",
+   "destination_checked": false,
+   "entry_type": "form",
+   "entry_url": null,
+   "last_checked_at": "2026-11-16",
+   "link_evidence": "form_content",
+   "original_url": null,
+   "verification_code": "form_date_differs",
+   "verification_evidence_url": "https://form.naver.com/response/57bRUiaAX9S",
+   "verification_grade": "B",
+   "verification_reason": "폼 제목은 이벤트와 일치하지만 기간 표기가 수집 정보와 다름",
+   "verification_status": "needs_review"
+  },
   "ck-74fce248b1": {
    "candidate_url": "https://docs.google.com/forms/d/e/1FAIpQLSdUuaWTzMNJw1VvW31iPrDtVDfQMLZ86KqYHzLsTShLLww0Zg/viewform",
    "destination_checked": false,
@@ -490,6 +504,20 @@
    "verification_reason": "robots.txt로 페이지를 읽지 않음 (이벤트 글에 적힌 주소)",
    "verification_status": "needs_review"
   },
+  "ck-cb654b3a5b": {
+   "candidate_url": "https://www.seoulfilmcenter.com/evnt/view.do?evntSn=2611090001&key=2508270012&pageIndex=1&sw=&sc_sttsCd=&sc_wDateS=&sc_wDateE=",
+   "destination_checked": false,
+   "entry_type": "website",
+   "entry_url": null,
+   "last_checked_at": "2026-11-16",
+   "link_evidence": "partial_match",
+   "original_url": "https://www.seoulfilmcenter.com/evnt/view.do?evntSn=2611090001&key=2508270012&pageIndex=1&sw=&sc_sttsCd=&sc_wDateS=&sc_wDateE=",
+   "verification_code": "no_entry_cue",
+   "verification_evidence_url": "https://www.seoulfilmcenter.com/evnt/view.do?evntSn=2611090001&key=2508270012&pageIndex=1&sw=&sc_sttsCd=&sc_wDateS=&sc_wDateE=",
+   "verification_grade": "B",
+   "verification_reason": "공지는 확인했지만 참여 방법을 찾지 못함",
+   "verification_status": "needs_review"
+  },
   "ck-cc5e71202e": {
    "candidate_url": null,
    "destination_checked": true,
@@ -503,6 +531,20 @@
    "verification_grade": "A",
    "verification_reason": "공식 공지에서 이벤트 일치와 참여 안내를 확인",
    "verification_status": "verified"
+  },
+  "ck-d247e02e83": {
+   "candidate_url": "https://www.instagram.com/p/DfyKTa2k8bN/?img_index=1",
+   "destination_checked": false,
+   "entry_type": "instagram",
+   "entry_url": null,
+   "last_checked_at": "2026-11-16",
+   "link_evidence": "source_row",
+   "original_url": null,
+   "verification_code": "sns_no_fetch",
+   "verification_evidence_url": null,
+   "verification_grade": "B",
+   "verification_reason": "이벤트 글에 적힌 게시물이지만 약관·robots상 내용을 읽을 수 없음",
+   "verification_status": "needs_review"
   },
   "ck-df09c073e7": {
    "candidate_url": "https://form.naver.com/response/BvY3EMbU6sW",
