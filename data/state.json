@@ -73,6 +73,7 @@
   "eh-2fefd1ca6f": "ki-fe0f46e7f0",
   "eh-3006149400": "ki-b7185d8af1",
   "eh-30215e70a6": "ki-7209227468",
+  "eh-315a1ba21d": "ck-4313a87c8e",
   "eh-316177ee89": "ki-111b9e0964",
   "eh-31eae3d6b3": "ki-91824a4db1",
   "eh-3367ca30ee": "ki-042e944ce9",
@@ -230,6 +231,7 @@
   "eh-bfcc0deaca": "ki-740f2eeccb",
   "eh-bff78615c5": "ki-4857709361",
   "eh-c1ae2d02fb": "ki-c32ad174fd",
+  "eh-c2ba302fe7": "eh-aa7da2334d",
   "eh-c654514aa3": "ki-4f1dd09e48",
   "eh-c8156afc8d": "ki-bdbdfd0abc",
   "eh-c8aabd3d8b": "ki-a712ddea97",
@@ -288,6 +290,7 @@
   "eh-f9d5dfc5ce": "ki-1222544057",
   "eh-fac2d9bd78": "hi10043",
   "eh-fb205f3069": "ki-f5ece72e56",
+  "eh-fdde146b89": "eh-912b88c071",
   "eh-ff63d1fdef": "ki-2478c555ec",
   "eh-ffda493e65": "ki-1beab824ba",
   "ek-2659fc5198": "e169",
@@ -2537,7 +2540,7 @@
   }
  },
  "eventhouse": {
-  "lastFull": 1794789832.929357,
+  "lastFull": 1794812106.016676,
   "prizeAllDone": true,
   "prizeFixDone": true
  },
@@ -2699,7 +2702,10 @@
    "245": "ek-3aed9b0313",
    "246": "ek-3464dc1150",
    "247": "ek-b4ef7df17d",
+   "248": "skip:이벤트 신호 없음",
+   "249": "skip:공연초대",
    "25": "ek-f6e1126ced",
+   "250": "ek-ba30fd97b4",
    "26": "ek-887309d048",
    "27": "ek-bc33ea4e26",
    "28": "ek-0a57cb53ba",
@@ -6257,16 +6263,16 @@
   }
  },
  "lastOk": {
-  "busan": "2026-11-16T14:06:09+09:00",
+  "busan": "2026-11-16T15:54:45+09:00",
   "contestkorea": "2026-11-16T14:06:09+09:00",
   "danawa": "2026-11-16T14:06:09+09:00",
-  "eventhouse": "2026-11-16T14:06:09+09:00",
+  "eventhouse": "2026-11-16T15:54:45+09:00",
   "eventhouse_search": "2026-11-16T14:06:09+09:00",
-  "events_kr": "2026-11-16T14:06:09+09:00",
+  "events_kr": "2026-11-16T15:54:45+09:00",
   "gonggongevent": "2026-11-16T14:06:09+09:00",
-  "korissue": "2026-11-16T14:06:09+09:00",
-  "korissue_orgs": "2026-11-16T14:06:09+09:00",
-  "mohw": "2026-11-16T14:06:09+09:00",
+  "korissue": "2026-11-16T15:54:45+09:00",
+  "korissue_orgs": "2026-11-16T15:54:45+09:00",
+  "mohw": "2026-11-16T15:54:45+09:00",
   "mrblog": "2026-11-16T14:06:09+09:00",
   "reviewnote": "2026-11-16T14:06:09+09:00",
   "sbs": "2026-11-16T14:06:09+09:00",
@@ -6275,16 +6281,16 @@
   "yuvent": "2026-11-16T14:06:09+09:00"
  },
  "lastRun": {
-  "busan": "2026-11-16T14:06:09+09:00",
+  "busan": "2026-11-16T15:54:45+09:00",
   "contestkorea": "2026-11-16T14:06:09+09:00",
   "danawa": "2026-11-16T14:06:09+09:00",
-  "eventhouse": "2026-11-16T14:06:09+09:00",
+  "eventhouse": "2026-11-16T15:54:45+09:00",
   "eventhouse_search": "2026-11-16T14:06:09+09:00",
-  "events_kr": "2026-11-16T14:06:09+09:00",
+  "events_kr": "2026-11-16T15:54:45+09:00",
   "gonggongevent": "2026-11-16T14:06:09+09:00",
-  "korissue": "2026-11-16T14:06:09+09:00",
-  "korissue_orgs": "2026-11-16T14:06:09+09:00",
-  "mohw": "2026-11-16T14:06:09+09:00",
+  "korissue": "2026-11-16T15:54:45+09:00",
+  "korissue_orgs": "2026-11-16T15:54:45+09:00",
+  "mohw": "2026-11-16T15:54:45+09:00",
   "mrblog": "2026-11-16T14:06:09+09:00",
   "naver": "2026-11-16T14:06:09+09:00",
   "reviewnote": "2026-11-16T14:06:09+09:00",
@@ -6299,11 +6305,16 @@
   "busan": {},
   "contestkorea": {},
   "danawa": {},
-  "eventhouse": {},
+  "eventhouse": {
+   "318949": "유료 조건: 유료"
+  },
   "eventhouse_search": {
    "318949": "유료 조건: 유료"
   },
-  "events_kr": {},
+  "events_kr": {
+   "248": "이벤트 신호 없음",
+   "249": "공연초대"
+  },
   "gonggongevent": {
    "11월 10일 마감｜이천시 청년 신혼부부 전월세 대출이자 최대 200만 ": "종료·안내 글",
    "11월 10일 마감｜한국언론진흥재단 미디어 AI 플랫폼 퀴즈｜커피 쿠폰 ": "종료·안내 글",
@@ -6565,6 +6576,12 @@
    "final": "https://docs.google.com/forms/d/e/1FAIpQLSfO5Mkv1XZH3umVVrzfSwmsdPUKBS3EPxp3Qm-4X5IZ_gtxSA/viewform",
    "status": "form",
    "to": "https://docs.google.com/forms/d/e/1FAIpQLSfO5Mkv1XZH3umVVrzfSwmsdPUKBS3EPxp3Qm-4X5IZ_gtxSA/viewform?usp=send_form"
+  },
+  "https://forms.gle/CgFKFoZzv1U3XxD36": {
+   "at": "2026-11-16",
+   "final": "https://docs.google.com/forms/d/e/1FAIpQLSeMqHsbNmR059NdjdIndrHZ9Ksm_qOuxn5C1wcNtIvTCurFYw/viewform",
+   "status": "form",
+   "to": "https://docs.google.com/forms/d/e/1FAIpQLSeMqHsbNmR059NdjdIndrHZ9Ksm_qOuxn5C1wcNtIvTCurFYw/viewform?usp=send_form"
   },
   "https://forms.gle/Cw1CfTz8SBQ2HuKv5": {
    "at": "2026-11-16",

@@ -19894,6 +19894,20 @@
    "verification_reason": "모음 글에서 주최 원문을 하나로 특정하지 못함",
    "verification_status": "unverified"
   },
+  "ek-ba30fd97b4": {
+   "candidate_url": "https://docs.google.com/forms/d/e/1FAIpQLSeMqHsbNmR059NdjdIndrHZ9Ksm_qOuxn5C1wcNtIvTCurFYw/viewform",
+   "destination_checked": false,
+   "entry_type": "form",
+   "entry_url": null,
+   "last_checked_at": "2026-11-16",
+   "link_evidence": "form_content",
+   "original_url": null,
+   "verification_code": "form_self",
+   "verification_evidence_url": "https://docs.google.com/forms/d/e/1FAIpQLSeMqHsbNmR059NdjdIndrHZ9Ksm_qOuxn5C1wcNtIvTCurFYw/viewform",
+   "verification_grade": "B",
+   "verification_reason": "폼 내용은 이벤트와 일치하지만 공식 공지의 직접 연결은 확인하지 못함",
+   "verification_status": "needs_review"
+  },
   "ek-bc15c774dc": {
    "candidate_url": "https://docs.google.com/forms/d/e/1FAIpQLSdqj5P_5pXMSrPvIt-v6xszVsX205uuqnR65mmLDzEVFq_iYw/viewform",
    "destination_checked": false,
