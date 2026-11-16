@@ -1,5 +1,6 @@
 # 경품 이벤트 모음 사이트·기업·방송사 이벤트 목록
-#  - 이벤트하우스(eventhouse.kr): 플랫폼별 진행 이벤트 목록(robots.txt 없음). 응모 링크는 로그인 필요라 쓰지 않고 목록 정보만 사용
+#  - 이벤트하우스(eventhouse.kr): 플랫폼별 진행 이벤트 목록(robots.txt 없음). 원문(go=1)은 로그인이 필요해 쓰지 않고,
+#    폼 이동(fgo.php?fnum=…&go=4)은 로그인 없이 네이버폼·구글폼으로 이어져 그 주소만 저장한다
 #  - korissue(korissue.mycafe24.com): 오늘·내일 마감 이벤트와 주최 원문 응모 링크(robots.txt 없음)
 #  - 다나와 이벤트(event.danawa.com): 다나와 자체 무료 이벤트 목록(robots.txt 허용)
 #  - SBS 이벤트(www.sbs.co.kr/event): 방송사 공식 이벤트 목록(robots.txt 없음)
@@ -8,22 +9,66 @@ import datetime as dt
 from urllib.parse import urlencode
 
 from .. import backfill
-from ..common import text_of, find_dates, clean, today_kst
+from ..common import text_of, find_dates, clean, today_kst, instagram_posted, rewind_passed
 from ..extract import build_event
+from .. import forms
 
 
-def guess_year_dates(text):
-    """'10/07~ 10/28 (10/30)'처럼 연도가 없는 날짜: 오늘 기준 앞뒤 6개월 안으로 연도를 맞춘다."""
-    t = today_kst()
-    m0 = re.search(r"(\d{1,2})\s*/\s*\d{1,2}", text or "")
+def guess_year_dates(text, pub=None):
+    """'10/07~ 10/28 (10/30)'처럼 연도가 없는 날짜.
+    게시일(pub)이 있으면 그 해를 쓴다. 없으면 오늘 기준 앞뒤 6개월.
+    게시일이 있으면 이미 지난 행사를 올해·내년으로 밀지 않는다."""
+    if re.search(r"20\d{2}", text or ""):
+        return find_dates(text)
+    t = pub or today_kst()
     ref = t.year
-    if m0:
-        mo = int(m0.group(1))
-        if mo - t.month > 6:
-            ref -= 1
-        elif t.month - mo > 6:
-            ref += 1
+    if pub is None:
+        m0 = re.search(r"(\d{1,2})\s*/\s*\d{1,2}", text or "")
+        if m0:
+            mo = int(m0.group(1))
+            if mo - t.month > 6:
+                ref -= 1
+            elif t.month - mo > 6:
+                ref += 1
     return find_dates(text, ref)
+
+
+EH_FORM = "https://www.eventhouse.kr/site/fgo.php?fnum={}&go=4"  # go=4만 폼으로 리다이렉트된다. go=1은 로그인
+
+
+def eventhouse_no(e):
+    for u in [e.get("listUrl"), e.get("url"), *(e.get("srcUrls") or [])]:
+        m = re.search(r"(?:[?&](?:no|fnum)=)(\d+)", u or "")
+        if m:
+            return m.group(1)
+    return None
+
+
+def fill_eh_forms(db, f, cache, today, limit):
+    """이벤트하우스 글의 fgo.php?go=4 리다이렉트를 따라 실제 폼 주소를 form_url에 넣는다."""
+    todo = []
+    for e in db["events"].values():
+        if e.get("src") != "eh" or e.get("form_url") or e.get("status") not in ("active", "ended"):
+            continue
+        no = eventhouse_no(e)
+        if no:
+            todo.append((e.get("status") != "active", e.get("end") or "9999", no, e))
+    todo.sort()
+    res = {"checked": 0, "found": 0}
+    for _active, _end, no, e in todo:
+        url = EH_FORM.format(no)
+        if url not in cache:
+            if res["checked"] >= limit:
+                break
+            res["checked"] += 1
+        final, _st = forms.resolve_short(f, url, cache, today)
+        if not final:
+            continue
+        e["form_url"] = final
+        if final not in e.setdefault("formLinks", []):
+            e["formLinks"].append(final)
+        res["found"] += 1
+    return res
 
 
 def numbered(method):
@@ -202,23 +247,35 @@ def _kor_page(d, state, events, skipped, seen):
             pm = re.search(r"\?parent=(\d+)&keyword=([^'\"]+)", oc)
             if pm:
                 parents.setdefault(pm.group(1), {"kw": pm.group(2), "at": None})
-        fields, links = {}, {}
+        fields, links, struck = {}, {}, False
         for p in sub.xpath("./p"):
             t = clean(p.text_content())
             mm = re.match(r"ㆍ\s*([^ㆍ]+?)\s*ㆍ\s*(.*)", t)
             if mm:
                 fields[mm.group(1)] = mm.group(2)
+                if mm.group(1) == "응모기간" and p.xpath(".//strike|.//s|.//del"):
+                    struck = True  # 취소선은 이 사이트에서 이미 끝난 행사 표시다
             for a in p.xpath(".//a[@href]"):
                 links[clean(a.text_content())] = a.get("href")
         num = fields.get("응모번호", "")
         plat = next((v for k, v in KOR_PLAT.items() if k in num), None)
         sid = (re.search(r"(\d{4,})-\d+", num) or re.search(r"(\d+)", g.get("id") or "0")).group(1)
-        ds = guess_year_dates(fields.get("응모기간", ""))
+        orig_link = links.get("응모주소") or links.get("폼양식")
+        pub = instagram_posted(orig_link) or instagram_posted(links.get("폼양식") or "")
+        ds = guess_year_dates(fields.get("응모기간", ""), pub)
         start, end = (ds[0], ds[1]) if len(ds) >= 2 else (None, None)
         ann = ds[2] if len(ds) >= 3 else None
-        if end and end < today_kst():
+        today = today_kst()
+        force = False
+        if struck and end and end >= today:
+            # 취소선인데 연도 추정 때문에 마감이 미래로 남아 있으면, 지난 해로 되돌리고 종료로 둔다
+            start, end, ann = rewind_passed(start, end, ann, today)
+            force = True
+        if end and end < today and not force:
             continue  # 주최사 검색은 이미 끝난 이벤트도 돌려준다
-        if start and (start - today_kst()).days > 45:
+        if force and end and (today - end).days > 400:
+            continue
+        if not force and start and (start - today).days > 45:
             skipped[sid] = "연도 없는 일정이 먼 미래로 해석됨(지난 행사로 판단)"
             continue
         kind, reason = map_form(fields.get("응모형태"))
@@ -235,6 +292,8 @@ def _kor_page(d, state, events, skipped, seen):
                               announce=ann, prize=prize, kind_hint=kind, extra_reasons=[reason] if reason else [],
                               plat_hint=plat, links=[v for k, v in links.items() if k != "홈"])
         if ev:
+            if force:
+                ev["forceEnded"] = True
             if links.get("폼양식") and links.get("폼양식") != orig:
                 ev["needs"] = [f"응모 양식: {links['폼양식']}"]
             full = [x.strip(" ㆍ") for x in text_of((sub.xpath(".//div[@class='gsort']") or [None])[0]).splitlines() if x.strip(" ㆍ")]

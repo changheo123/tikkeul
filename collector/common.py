@@ -181,3 +181,47 @@ def norm_date(v):
 
 def absurl(base, href):
     return urljoin(base, href) if href else None
+
+
+_IG_ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_"
+
+
+def instagram_posted(url):
+    """인스타그램 게시물 주소에 들어 있는 게시일. 요청 없이 계산하고, 한국 날짜로 돌려준다."""
+    m = re.search(r"instagram\.com/(?:p|reel|tv)/([\w-]{10,12})", url or "", re.I)
+    if not m:
+        return None
+    n = 0
+    for c in m.group(1):
+        i = _IG_ALPHABET.find(c)
+        if i < 0:
+            return None
+        n = n * 64 + i
+    ms = (n >> 23) + 1314220021721
+    if not 1_400_000_000_000 <= ms <= 2_000_000_000_000:  # 2014~2033 밖이면 게시물 번호가 아니다
+        return None
+    return dt.datetime.fromtimestamp(ms / 1000, KST).date()
+
+
+def instagram_posted_in(*urls):
+    found = [d for d in (instagram_posted(u) for u in urls if u) if d]
+    return min(found) if found else None
+
+
+def sub_years(d, years):
+    """날짜에서 해를 뺀다. 2월 29일이 없으면 28일로 둔다."""
+    if not d or not years:
+        return d
+    try:
+        return d.replace(year=d.year - years)
+    except ValueError:
+        return d.replace(year=d.year - years, day=28)
+
+
+def rewind_passed(start, end, announce, today, max_years=2):
+    """출처가 이미 마감이라고 했는데 연도 추정 때문에 마감이 오늘 이후이면, 오늘 이전이 될 때까지 해를 되돌린다."""
+    guard = 0
+    while end and end >= today and guard < max_years:
+        start, end, announce = sub_years(start, 1), sub_years(end, 1), sub_years(announce, 1)
+        guard += 1
+    return start, end, announce

@@ -226,7 +226,7 @@ try {
   check("필터: 참여한 것 숨기기", !(await ev(`cur.some(e => e.id === ${JSON.stringify(fid)})`)));
   await ev(`document.getElementById('fReset').click()`); await sleep(200);
   // 이전 버전에서 저장한 기록(제한·종료 이벤트 포함)도 보여야 한다
-  const legacy = await ev(`fetch('data/ended.json').then(r => r.json()).then(d => d.events[0].id)`);
+  const legacy = await ev(`fetch('data/archive.json').then(r => r.json()).then(d => d.events[0].id)`);
   await ev(`localStorage.setItem('tt-fav', JSON.stringify([${JSON.stringify(fid)}, ${JSON.stringify(legacy)}]))`);
   await send("Page.reload"); await ready();
   await ev(`location.hash = '#saved'`);

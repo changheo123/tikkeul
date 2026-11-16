@@ -13,10 +13,10 @@ from pathlib import Path
 
 from lxml import html as LH
 
-from . import backfill, electronics, forms, proof, restrict, verify
+from . import backfill, cleanup, electronics, forms, proof, restrict, verify
 from .common import Fetcher, norm_date, now_kst, today_kst
 from .extract import norm_url, norm_title, is_show_invite, pay_required
-from .sources import events_kr, public_boards, api_sources, aggregators, experience, contest_boards
+from .sources import events_kr, public_boards, api_sources, aggregators, experience, contest_boards, open_sources
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
@@ -39,6 +39,8 @@ SOURCES = {
     "busan": public_boards.busan,
     "mohw": public_boards.mohw,
     "touredu": public_boards.touredu,
+    "yuvent": open_sources.yuvent,
+    "gonggongevent": open_sources.gonggongevent,
     "youtube": api_sources.youtube,
     "naver": api_sources.naver,
     "telegram": api_sources.telegram,
@@ -145,8 +147,14 @@ AGG_URL = backfill.AGG_URL
 def merge(db, ev, today, stats):
     ix = _index(db)
     oid = find_dup(db, ev, ix["url"])
+    force = ev.pop("forceEnded", None)
     if oid is None:
-        ev.update({"srcUrls": [u for u in {ev["url"], ev.get("listUrl")} if u], "firstSeen": today, "lastSeen": today, "status": "active"})
+        if force and ev.get("end") and (dt.date.fromisoformat(today) - dt.date.fromisoformat(ev["end"])).days > 45:
+            return None  # 오래 지난 종료 행사는 새로 넣지 않는다
+        ev.update({"srcUrls": [u for u in {ev["url"], ev.get("listUrl")} if u], "firstSeen": today, "lastSeen": today,
+                   "status": "ended" if force else "active"})
+        if force:
+            ev["ended_reason"] = "출처에서 이미 마감된 행사"
         db["events"][ev["id"]] = ev
         _index_add(ix, ev["id"], ev)
         stats["added"] += 1
@@ -155,6 +163,13 @@ def merge(db, ev, today, stats):
     for k in keys_of(ev):
         ix["url"].setdefault(k, oid)
     stats["merged"] += 1
+    if force and o.get("status") == "active":
+        o["status"] = "ended"
+        o["ended_reason"] = "출처에서 이미 마감된 행사"
+        if ev.get("end") and (not o.get("end") or ev["end"] < o["end"]):
+            for k in ("start", "end", "announce"):
+                if ev.get(k):
+                    o[k] = ev[k]
     o["lastSeen"] = today
     o.setdefault("srcUrls", [])
     if len(ev.get("prizeAll") or []) > len(o.get("prizeAll") or []):
@@ -406,6 +421,9 @@ def process_forms(db, state, today, cfg):
             res["page_found"] += bool(e["form_url"])
             if pending:
                 e["formPending"] = pending
+    # 이벤트하우스 원문은 로그인 뒤라, 폼 이동 주소(fgo.php?go=4)만 따라간다
+    eh = aggregators.fill_eh_forms(db, f, cache, today, cfg.get("eh_form_per_run", 0))
+    res["eh_checked"], res["eh_found"] = eh["checked"], eh["found"]
     return res
 
 
@@ -510,7 +528,7 @@ def main(argv=None):
                     stats["rejected"] += 1
                     continue
                 oid = merge(db, ev, today, stats)
-                if oid != ev["id"]:
+                if oid and oid != ev["id"]:
                     state.setdefault("alias", {})[ev["id"]] = oid  # 병합된 글은 대표 이벤트 ID로 기억
             for sid in r.get("seen", []):
                 sid = state.get("alias", {}).get(sid, sid)
@@ -536,12 +554,14 @@ def main(argv=None):
     db.pop("_ix", None)  # 색인은 수집 중에만 쓴다(아래에서 항목을 지울 수 있음)
     broken = drop_broken(db)
     dates = normalize_dates(db)
+    shifted = cleanup.close_shifted(db, today)  # 게시일·본문 연도로 이미 끝난 행사를 바로 종료
     pruned = update_status(db, today, cfg)  # 폼 재조회 예산을 끝난 이벤트에 쓰지 않도록 먼저 종료 처리
-    fcfg = {**cfg, "form_pages_per_run": 0, "short_checks_per_run": 0} if a.no_links else cfg  # --no-links면 네트워크 조회 없음
+    fcfg = {**cfg, "form_pages_per_run": 0, "short_checks_per_run": 0, "eh_form_per_run": 0} if a.no_links else cfg  # --no-links면 네트워크 조회 없음
     originals = backfill.adopt_known_originals(db)
     prize_fill = backfill.fill_prizes(db, today, {**cfg, "prize_pages_per_run": 0} if a.no_links else cfg)
     prize_fill["truncated"] = backfill.restore_truncated(db, today, {**cfg, "truncated_checks_per_run": 0} if a.no_links else cfg)
     form = process_forms(db, state, today, fcfg)
+    deduped = cleanup.dedupe_forms(db)
     restricted = classify_restrictions(db)
     elec = classify_electronics(db)
     proofs = classify_proof(db)
@@ -557,6 +577,7 @@ def main(argv=None):
     quality = audit(db, today)
     active = sum(1 for e in db["events"].values() if e.get("status") == "active")
     run.update({"added": stats["added"], "merged": stats["merged"], "rejected": stats["rejected"], "pruned": pruned,
+                "shifted": shifted, "formDedupe": deduped,
                 "links": links, "quality": quality, "form": form, "restricted": restricted, "dates": dates, "broken": broken, "elec": elec, "proof": proofs, "originals": originals, "prizeFill": prize_fill, "verify": verified, "viaLeft": sum(1 for e in db["events"].values() if e.get("status") == "active" and AGG_URL.search(e.get("url") or "")), "active": active, "total": len(db["events"]), "requests": f.count,
                 "sec": round(time.time() - t0, 1)})
 

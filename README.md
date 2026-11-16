@@ -9,7 +9,7 @@ GitHub Actions(수집·빌드)와 GitHub Pages(호스팅)만 써서 월 운영�
 
 | 경로 | 역할 |
 |---|---|
-| `collector/sources/` | 출처별 수집 모듈. 키 없이 동작: korissue(원문 링크), 이벤트하우스, events.kr, 다나와, SBS, 부산, 복지부, 관광e배움터. 키·설정 필요: 유튜브, 네이버(블로그·카페·웹문서), 텔레그램 |
+| `collector/sources/` | 출처별 수집 모듈. 키 없이 동작: korissue(원문 링크), 이벤트하우스, events.kr, 다나와, SBS, 부산, 복지부, 관광e배움터, 유벤트, 공공이벤트 블로그. 키·설정 필요: 유튜브, 네이버(블로그·카페·웹문서), 텔레그램 |
 | `collector/extract.py` | 규칙 기반 추출: 기간·발표일·경품·참여 방법, 유료 조건·공연초대 제외(AI 미사용) |
 | `collector/pipeline.py` | 수집 → 중복 병합 → 종료·링크 처리 → 급감 안전장치 → `data/` 저장 |
 | `build.py` | `data/db.json` → `_site/`(건수·링크·스크립트 검증) |
@@ -26,7 +26,7 @@ GitHub Actions(수집·빌드)와 GitHub Pages(호스팅)만 써서 월 운영�
 - **내용 수정**: `"edit": {"id": {"end": "2026-11-30", "prize": "…"}}`
 - **출처 끄기·주기 변경**: `config/sources.json`의 `enabled`, `interval_min`
 - **텔레그램 채널 추가**: `config/sources.json` → `telegram.channels`에 공개 채널 이름(예: `"channelname"`)
-- 이벤트 id는 사이트 `data/events.json`이나 `data/db.json`에서 확인
+- 이벤트 id는 사이트 `data/events.json`(진행 중), `data/archive.json`(종료), `data/db.json`에서 확인
 
 저장하면 다음 정시 실행(매시 17분)에 반영됩니다. 바로 반영하려면 Actions → collect-and-deploy → Run workflow.
 
@@ -44,8 +44,11 @@ GitHub Actions(수집·빌드)와 GitHub Pages(호스팅)만 써서 월 운영�
 ## 응모 폼·종료·참여 제한
 
 - **`form_url`**: 네이버폼, 구글폼, 모아폼, 스모어를 글·HTML 링크에서 추출(`collector/forms.py`). `naver.me`·`forms.gle` 단축 링크는
-  이동 주소를 확인해 폼일 때만 저장하고, 확인되지 않으면 `null`로 둔다. `url`(원문 공지)은 그대로 유지
-- **`status`**: 한국 날짜 기준 `end < 오늘`이면 `ended`. `end: null`은 유지하고, 한 번 종료된 이벤트는 다시 수집돼도 되살리지 않는다
+  이동 주소를 확인해 폼일 때만 저장하고, 확인되지 않으면 `null`로 둔다. 이벤트하우스는 로그인 없이 `fgo.php?fnum=…&go=4`가
+  가리키는 폼만 저장한다. 같은 폼 아이디는 한 행으로 합친다. `url`(원문 공지)은 그대로 유지
+- **`status`**: 한국 날짜 기준 `end < 오늘`이면 `ended`. 연도 없는 일정이 올해·내년으로 밀렸어도, 게시일(인스타그램 게시물)이나
+  본문에 적힌 지난 연도로 이미 끝난 행사는 바로 `ended`다. `end: null`은 유지하고, 한 번 종료된 이벤트는 다시 수집돼도 되살리지 않는다.
+  종료 목록은 사이트 `data/archive.json`에만 있고, 메인 피드 `data/events.json`에는 진행 중만 담긴다
 - **`is_restricted`**: 지역 거주·현장 방문 제한이면 `true`, 표현은 있지만 불확실하면 `null`(검토 대상), 아니면 `false`
   (`collector/restrict.py`, 사유는 `restriction_reason`). 잘못 판별된 건은 `data/overrides.json`의 `edit`로 고친다
 

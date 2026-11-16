@@ -567,6 +567,8 @@ def test_form_extraction():
     assert d == ["https://form.naver.com/response/AbC-1", "https://docs.google.com/forms/d/e/1FAIpQ/viewform"]
     d, s = F.candidates("설문 moaform.com/q/Xy12). 또는 https://abc.smore.im/form/QwEr1!")
     assert d == ["https://moaform.com/q/Xy12", "https://abc.smore.im/form/QwEr1"]
+    d, s = F.candidates("https://answer.moaform.com/answers/EB4mmn https://smore.im/quiz/dRRyJFyC2Y")
+    assert d == ["https://answer.moaform.com/answers/EB4mmn", "https://smore.im/quiz/dRRyJFyC2Y"]
     d, s = F.candidates("https://forms.gle/AAA https://forms.gle/AAA naver.me/5AuSucrk.")
     assert d == [] and s == ["https://forms.gle/AAA", "https://naver.me/5AuSucrk"]
     # 편집 화면 주소, 다른 사이트에 끼어든 글자는 폼이 아니다
@@ -640,6 +642,111 @@ def test_restriction():
     assert _rs(src="rn", title="[재택] 에어팟 프로 3 체험단")[0] is False
     # 수집기 표시
     assert _rs(tags=["방문 필요"])[0] is True and _rs(tags=["지역 한정"])[0] is True
+
+
+def test_post_date_pulls_shifted_year_back_to_ended():
+    from collector.cleanup import close_shifted
+    from collector.common import instagram_posted
+    assert instagram_posted("https://www.instagram.com/p/DQ-tORpkmXU/") == dt.date(2025, 11, 13)
+    old = {"id": "old", "status": "active", "title": "댓글 경품이벤트!!", "url": "https://www.instagram.com/p/DQ-tORpkmXU/",
+           "srcUrls": [], "start": "2026-11-13", "end": "2026-11-20", "announce": "2026-11-25", "rawText": ""}
+    live = {"id": "live", "status": "active", "title": "댓글 경품이벤트!!", "url": "https://www.instagram.com/p/DfgGB3tRfCq/",
+            "srcUrls": [], "start": "2026-11-09", "end": "2026-11-30", "rawText": ""}
+    body = {"id": "body", "status": "active", "title": "퀴즈 이벤트", "url": "https://city.example/1", "srcUrls": [],
+            "start": "2026-11-01", "end": "2026-11-16", "rawText": "참여 기간 2025.11.16 까지"}
+    early = {"id": "early", "status": "active", "title": "2025년 결산 이벤트", "url": "https://city.example/2", "srcUrls": [],
+             "end": "2026-02-10", "rawText": ""}
+    db = {"events": {x["id"]: x for x in (old, live, body, early)}}
+    r = close_shifted(db, "2026-11-16")
+    assert old["status"] == "ended" and old["end"] == "2025-11-20" and old["start"] == "2025-11-13"
+    assert live["status"] == "active" and live["end"] == "2026-11-30"  # 올해 게시물은 그대로
+    assert body["status"] == "ended" and body["end"] == "2025-11-16"
+    assert early["status"] == "active"  # 연초의 전년도 결산은 지난 행사가 아니다
+    assert r["ended"] == 2
+
+
+def test_same_form_id_is_one_event():
+    from collector.cleanup import dedupe_forms, form_key
+    assert form_key("https://form.naver.com/response/AbC?from=x") == "naver:AbC"
+    assert form_key("https://docs.google.com/forms/d/e/FORMID/viewform?usp=sf") == "google:FORMID"
+    assert form_key("https://naver.me/abcd") is None
+    a = {"id": "a", "status": "active", "form_url": "https://form.naver.com/response/AbC", "cand": True, "url": "https://a.example/1", "srcUrls": [], "firstSeen": "2026-11-01"}
+    b = {"id": "b", "status": "ended", "form_url": "https://form.naver.com/response/AbC", "cand": False, "url": "https://b.example/2", "srcUrls": ["https://b.example/2"], "firstSeen": "2026-10-01"}
+    assert dedupe_forms({"events": {"a": a, "b": b}}) == 1
+    assert a["status"] == "active" and "https://b.example/2" in a["srcUrls"]
+    assert b["status"] == "merged" and b["excluded"] == "a"
+
+
+def test_eventhouse_go4_redirect_is_the_form():
+    from collector import forms as F
+
+    class R:
+        def __init__(self, code, loc=None):
+            self.status_code, self.headers = code, {"Location": loc} if loc else {}
+
+    class Fake:
+        def get(self, url, **kw):
+            if "fgo.php" in url and "go=4" in url:
+                return R(302, "https://naver.me/AbCdEfGh")
+            if url == "https://naver.me/AbCdEfGh":
+                return R(302, "https://docs.google.com/forms/d/e/REALID/viewform")
+            raise AssertionError(url)
+
+    final, st = F.resolve_short(Fake(), "https://www.eventhouse.kr/site/fgo.php?fnum=320272&go=4", {}, "2026-11-16")
+    assert st == "form" and final == "https://docs.google.com/forms/d/e/REALID/viewform"
+
+    class Chain:
+        def get(self, url, **kw):
+            return {
+                "https://www.eventhouse.kr/site/fgo.php?fnum=9&go=4": R(302, "https://m.site.naver.com/2hf30"),
+                "https://m.site.naver.com/2hf30": R(308, "https://forms.gle/abcDEF"),
+                "https://forms.gle/abcDEF": R(302, "https://docs.google.com/forms/d/e/FROMNAVER/viewform"),
+            }[url]
+
+    final, st = F.resolve_short(Chain(), "https://www.eventhouse.kr/site/fgo.php?fnum=9&go=4", {}, "2026-11-16")
+    assert st == "form" and final.endswith("/FROMNAVER/viewform")
+
+
+def test_struck_period_is_not_next_year():
+    from lxml import html as H
+    from collector.sources import aggregators as A
+    page = """<div class='g' id='1'><b> ● [기관] 지난 퀴즈 이벤트!!</b></div><div class='gsub'>
+    <p>ㆍ응모번호ㆍ 홈페이지 12345-001</p><p>ㆍ경품내역ㆍ커피-10명</p>
+    <p>ㆍ응모기간ㆍ<strike>12/01~ 12/20 (12/25)</strike></p>
+    <p>ㆍ응모주소ㆍ<a href='https://city.example/old'>응모주소</a></p></div>"""
+    events, skipped, seen = [], {}, []
+    assert A._kor_page(H.fromstring("<div>" + page + "</div>"), {}, events, skipped, seen) == 1
+    assert events[0]["forceEnded"] is True and events[0]["end"].startswith("2025-12-")
+    # 게시일이 있으면 그 해로 맞춰 이미 지난 행사는 진행 중으로 돌아오지 않는다
+    pub = "https://www.instagram.com/p/DQ-tORpkmXU/"
+    page2 = page.replace("https://city.example/old", pub).replace("12/01~ 12/20 (12/25)", "11/13~ 11/20 (11/25)")
+    events = []
+    assert A._kor_page(H.fromstring("<div>" + page2 + "</div>"), {}, events, skipped, seen) == 1
+    assert events == []
+
+
+def test_yuvent_and_public_blog_keep_direct_links():
+    from collector.sources import open_sources as S
+    ev, why = S._yuvent_item({
+        "id": "y1", "title": "구독자 경품 이벤트", "youtubeVideoId": "abc",
+        "videoUrl": "https://www.youtube.com/watch?v=abc",
+        "description": "11월 27일까지 댓글 추첨. 응모 https://form.naver.com/response/AbC12",
+        "publishedAt": "2026-11-15T22:00:00.000Z", "endDate": None,
+        "channel": {"name": "채널"},
+    })
+    assert ev and ev["url"].endswith("v=abc") and ev["form_url"].endswith("/AbC12") and ev["end"] == "2026-11-27", why
+    entry = {"title": {"$t": "11월 30일 18시 마감｜국립중앙도서관 설문 이벤트｜커피 100명"},
+             "published": {"$t": "2026-11-15T11:01:33+09:00"},
+             "category": [{"term": "국립중앙도서관"}, {"term": "설문조사 이벤트"}],
+             "link": [{"rel": "alternate", "href": "https://gonggongevent.blogspot.com/2026/11/x.html"}],
+             "content": {"$t": '<a href="https://form.naver.com/response/Zz9">참여</a> <a href="https://www.youtube.com/watch?v=vid1">영상</a>'}}
+    ev, why = S._gg_item(entry)
+    assert ev and ev["form_url"].endswith("/Zz9") and "youtube.com" in ev["url"] and ev["end"] == "2026-11-30" and ev["endTime"] == "18:00", why
+    ig = dict(entry, content={"$t": '<a href="https://www.instagram.com/nationallibraryofkorea/p/DfgGB3tRfCq/">원문</a>'})
+    ev, why = S._gg_item(ig)
+    assert ev and "/p/DfgGB3tRfCq" in ev["url"], why
+    old = dict(entry, title={"$t": "4월 2일 마감｜작년 퀴즈 이벤트｜커피 10명"}, published={"$t": "2025-04-01T09:00:00+09:00"})
+    assert S._gg_item(old)[0] is None  # 게시일 해로 보면 이미 끝났다
 
 
 def test_safety_abort(tmp_path, monkeypatch):

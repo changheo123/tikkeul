@@ -17,9 +17,11 @@ OUT = ROOT / "_site"
 SOURCE_ROWS = [
     ("ledger", "사람 확인 장부", ["ledger"], "1단계에서 사람이 공식 원문과 대조해 승인한 이벤트"),
     ("korissue", "경품 이벤트 모음(korissue)", ["ki"], "오늘·내일 마감 이벤트와 주최 원문 응모 링크(인스타그램·블로그·구글폼 등)"),
-    ("eventhouse", "경품 이벤트 모음(이벤트하우스)", ["eh"], "플랫폼별 진행 이벤트 목록. 응모 링크는 로그인 전용이라 쓰지 않고, 원문은 다른 출처와 합쳐 찾음"),
+    ("eventhouse", "경품 이벤트 모음(이벤트하우스)", ["eh"], "플랫폼별 진행 이벤트 목록. 원문은 로그인 전용이라 쓰지 않고, 폼 이동 주소의 네이버폼·구글폼만 저장"),
     ("korissue_orgs", "korissue 주최사별 진행 이벤트", ["ki"], "목록에 나온 주최사의 진행 이벤트와 원본 응모 링크(인스타그램·폼 등)를 일찍 확보"),
     ("eventhouse_search", "이벤트하우스 상세 검색(전자기기·X·카페)", ["eh"], "경품 분류·키워드 검색으로 진행 중 이벤트 탐색. 위 이벤트하우스와 같은 글은 하나로 합침"),
+    ("yuvent", "크리에이터 이벤트(유벤트)", ["yv"], "유튜브 영상 주소가 바로 열리는 진행 중 이벤트. 설명의 폼 링크도 저장"),
+    ("gonggongevent", "공공이벤트 블로그", ["gg"], "공공기관 이벤트 글. 네이버폼·유튜브·공식 글 주소가 바로 열림"),
     ("events_kr", "경품 이벤트 모음(events.kr)", ["ek"], "목록·상세 공개 페이지(robots.txt 허용)"),
     ("contestkorea", "콘테스트코리아 기업주최 이벤트", ["ck"], "진행 중 이벤트 게시판. 주최사 공고와 참여 링크를 구분해 읽음"),
     ("wevity", "위비티 이벤트", ["wv"], "이벤트 게시판(글 수가 적음)"),
@@ -112,10 +114,9 @@ def main():
     # 출처별 진행 중 건수(화면에 일부만 싣더라도 정확하도록 여기서 계산)
     for s in meta["sources"]:
         s["count"] = sum(1 for x in live if x["src"] in s["match"] or set(x["via"]) & set(s["match"]))
-    payload = {"meta": meta, "events": events}
     # 첫 화면에는 기본 노출 이벤트만 싣고, 나머지는 필요할 때 불러온다
     live_ids = {x["id"] for x in live}
-    # 첫 화면에는 버튼과 상세 창에 쓰는 검증 값만 싣고, 근거 주소 등은 전체본(events.json)에만 둔다
+    # 메인 피드(events.json)는 진행 중만. 종료는 archive.json. 첫 화면에는 검증에 쓰는 값만 싣는다
     slim = lambda x: {k: v for k, v in x.items() if k not in ("listUrl", "isAuto", "excluded", "verification_evidence_url", "verification_status", "verified_at", "last_checked_at", "link_evidence", "destination_checked")}
     main = [slim(x) for x in live if x.get("is_restricted") is not True and x.get("grade") != "X"]
     main_ids = {x["id"] for x in main}
@@ -151,9 +152,13 @@ def main():
             '<link rel="manifest" href="assets/site.webmanifest">\n'
             f'{page.split("<header", 1)[0]}</head>\n<body>\n<header{page.split("<header", 1)[1]}\n</body></html>\n')
     (tmp / "index.html").write_text(html, encoding="utf-8")
-    (tmp / "data" / "events.json").write_text(json.dumps(payload, ensure_ascii=False, indent=1), encoding="utf-8")
-    for name, part in (("extra", extra), ("ended", ended)):
-        (tmp / "data" / f"{name}.json").write_text(json.dumps({"events": part}, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
+    current = [x for x in events if x["id"] in live_ids]
+    (tmp / "data" / "events.json").write_text(json.dumps({"meta": meta, "events": current}, ensure_ascii=False, indent=1), encoding="utf-8")
+    (tmp / "data" / "extra.json").write_text(json.dumps({"events": extra}, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
+    archive = json.dumps({"events": ended}, ensure_ascii=False, separators=(",", ":"))
+    # 같은 사이트(_site/data)에 둔다. 새 화면은 archive.json, 기존 주소 data/ended.json 도 그대로 연다
+    (tmp / "data" / "archive.json").write_text(archive, encoding="utf-8")
+    (tmp / "data" / "ended.json").write_text(archive, encoding="utf-8")
     status = [{k: v for k, v in r.items() if k != "sources"} | {"sources": {s: {a: b for a, b in v.items() if a != "trace"} for s, v in r["sources"].items()}} for r in runs[-100:]]
     (tmp / "data" / "status.json").write_text(json.dumps(status, ensure_ascii=False, indent=1), encoding="utf-8")
     (tmp / ".nojekyll").write_text("")
