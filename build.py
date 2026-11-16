@@ -155,7 +155,10 @@ def main():
     current = [x for x in events if x["id"] in live_ids]
     (tmp / "data" / "events.json").write_text(json.dumps({"meta": meta, "events": current}, ensure_ascii=False, indent=1), encoding="utf-8")
     (tmp / "data" / "extra.json").write_text(json.dumps({"events": extra}, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
-    (tmp / "data" / "archive.json").write_text(json.dumps({"events": ended}, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
+    archive = json.dumps({"events": ended}, ensure_ascii=False, separators=(",", ":"))
+    # 같은 사이트(_site/data)에 둔다. 새 화면은 archive.json, 기존 주소 data/ended.json 도 그대로 연다
+    (tmp / "data" / "archive.json").write_text(archive, encoding="utf-8")
+    (tmp / "data" / "ended.json").write_text(archive, encoding="utf-8")
     status = [{k: v for k, v in r.items() if k != "sources"} | {"sources": {s: {a: b for a, b in v.items() if a != "trace"} for s, v in r["sources"].items()}} for r in runs[-100:]]
     (tmp / "data" / "status.json").write_text(json.dumps(status, ensure_ascii=False, indent=1), encoding="utf-8")
     (tmp / ".nojekyll").write_text("")
