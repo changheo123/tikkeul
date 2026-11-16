@@ -2177,6 +2177,7 @@
   "mb-1ee8580ff2": "mb-8cbc2f2a4d",
   "mb-1eee0424ab": "mb-02ec8385cf",
   "mb-26c5967a75": "mb-8c80275109",
+  "mb-2928a380b3": "mb-ca1742af7b",
   "mb-2949b051dc": "mb-3304e6989b",
   "mb-29ea44f0f6": "mb-b7d68164bb",
   "mb-2c9a598700": "mb-e358e2ab78",
@@ -2246,6 +2247,7 @@
   "rn-1ff92f14a8": "rn-28d32399d4",
   "rn-20bfa62c24": "rn-deb4ce727a",
   "rn-2194d98c44": "rn-7129f479d7",
+  "rn-223d725b6f": "rn-6379ffdb4e",
   "rn-23070cca81": "rn-7f7c60709b",
   "rn-24b13ecf15": "rn-207f0e463b",
   "rn-24d3599086": "rn-55844f1b73",
@@ -2259,6 +2261,7 @@
   "rn-3481276381": "rn-da3a764b2d",
   "rn-35d3190e68": "rn-7e409ae96b",
   "rn-37d06257aa": "rn-b4fbb75c01",
+  "rn-37da409f1e": "rn-ed4dbf887c",
   "rn-37f501954e": "rn-7f7c60709b",
   "rn-386310bbcd": "rn-e7088bd49b",
   "rn-3930630a1f": "rn-1976dee950",
@@ -2285,6 +2288,7 @@
   "rn-4e9e7b968d": "rn-61e24d3fb1",
   "rn-5166fbdd43": "rn-99560c2477",
   "rn-520f673cd7": "rn-8a70f31363",
+  "rn-5239a3c19b": "rn-c2539716c3",
   "rn-5259f8ab7b": "rn-4aa214f2a6",
   "rn-5317cb8270": "rn-3aa063714b",
   "rn-53e673dc37": "rn-83c3269182",
@@ -2446,6 +2450,7 @@
   "rn-e6f3f70481": "rn-ca92488076",
   "rn-e9c80332d7": "rn-19e337ae85",
   "rn-eaf5a9a9df": "rn-599df0b637",
+  "rn-eba886fcbd": "rn-c2539716c3",
   "rn-ebedebac59": "rn-410669417c",
   "rn-ec44bbd36b": "rn-1976dee950",
   "rn-ef5aab583e": "rn-3c075fa5f9",
@@ -6268,58 +6273,53 @@
   }
  },
  "lastOk": {
-  "busan": "2026-11-16T15:54:45+09:00",
+  "busan": "2026-11-16T17:41:43+09:00",
   "contestkorea": "2026-11-16T16:48:30+09:00",
   "danawa": "2026-11-16T16:48:30+09:00",
-  "eventhouse": "2026-11-16T15:54:45+09:00",
-  "eventhouse_search": "2026-11-16T14:06:09+09:00",
-  "events_kr": "2026-11-16T15:54:45+09:00",
-  "gonggongevent": "2026-11-16T14:06:09+09:00",
-  "korissue": "2026-11-16T15:54:45+09:00",
-  "korissue_orgs": "2026-11-16T15:54:45+09:00",
-  "mohw": "2026-11-16T15:54:45+09:00",
-  "mrblog": "2026-11-16T14:06:09+09:00",
-  "reviewnote": "2026-11-16T14:06:09+09:00",
-  "sbs": "2026-11-16T14:06:09+09:00",
-  "touredu": "2026-11-16T14:06:09+09:00",
+  "eventhouse": "2026-11-16T17:41:43+09:00",
+  "eventhouse_search": "2026-11-16T17:41:43+09:00",
+  "events_kr": "2026-11-16T17:41:43+09:00",
+  "gonggongevent": "2026-11-16T17:41:43+09:00",
+  "korissue": "2026-11-16T17:41:43+09:00",
+  "korissue_orgs": "2026-11-16T17:41:43+09:00",
+  "mohw": "2026-11-16T17:41:43+09:00",
+  "mrblog": "2026-11-16T17:41:43+09:00",
+  "reviewnote": "2026-11-16T17:41:43+09:00",
+  "sbs": "2026-11-16T17:41:43+09:00",
+  "touredu": "2026-11-16T17:41:43+09:00",
   "wevity": "2026-11-16T14:06:09+09:00",
-  "yuvent": "2026-11-16T14:06:09+09:00"
+  "yuvent": "2026-11-16T17:41:43+09:00"
  },
  "lastRun": {
-  "busan": "2026-11-16T15:54:45+09:00",
+  "busan": "2026-11-16T17:41:43+09:00",
   "contestkorea": "2026-11-16T16:48:30+09:00",
   "danawa": "2026-11-16T16:48:30+09:00",
-  "eventhouse": "2026-11-16T15:54:45+09:00",
-  "eventhouse_search": "2026-11-16T14:06:09+09:00",
-  "events_kr": "2026-11-16T15:54:45+09:00",
-  "gonggongevent": "2026-11-16T14:06:09+09:00",
-  "korissue": "2026-11-16T15:54:45+09:00",
-  "korissue_orgs": "2026-11-16T15:54:45+09:00",
-  "mohw": "2026-11-16T15:54:45+09:00",
-  "mrblog": "2026-11-16T14:06:09+09:00",
+  "eventhouse": "2026-11-16T17:41:43+09:00",
+  "eventhouse_search": "2026-11-16T17:41:43+09:00",
+  "events_kr": "2026-11-16T17:41:43+09:00",
+  "gonggongevent": "2026-11-16T17:41:43+09:00",
+  "korissue": "2026-11-16T17:41:43+09:00",
+  "korissue_orgs": "2026-11-16T17:41:43+09:00",
+  "mohw": "2026-11-16T17:41:43+09:00",
+  "mrblog": "2026-11-16T17:41:43+09:00",
   "naver": "2026-11-16T16:48:30+09:00",
-  "reviewnote": "2026-11-16T14:06:09+09:00",
-  "sbs": "2026-11-16T14:06:09+09:00",
+  "reviewnote": "2026-11-16T17:41:43+09:00",
+  "sbs": "2026-11-16T17:41:43+09:00",
   "telegram": "2026-11-16T16:48:30+09:00",
-  "touredu": "2026-11-16T14:06:09+09:00",
+  "touredu": "2026-11-16T17:41:43+09:00",
   "wevity": "2026-11-16T14:06:09+09:00",
-  "youtube": "2026-11-16T14:06:09+09:00",
-  "yuvent": "2026-11-16T14:06:09+09:00"
+  "youtube": "2026-11-16T17:41:43+09:00",
+  "yuvent": "2026-11-16T17:41:43+09:00"
  },
  "lastSkipped": {
   "busan": {},
   "contestkorea": {},
   "danawa": {},
-  "eventhouse": {
-   "318949": "유료 조건: 유료"
-  },
+  "eventhouse": {},
   "eventhouse_search": {
    "318949": "유료 조건: 유료"
   },
-  "events_kr": {
-   "248": "이벤트 신호 없음",
-   "249": "공연초대"
-  },
+  "events_kr": {},
   "gonggongevent": {
    "11월 10일 마감｜이천시 청년 신혼부부 전월세 대출이자 최대 200만 ": "종료·안내 글",
    "11월 10일 마감｜한국언론진흥재단 미디어 AI 플랫폼 퀴즈｜커피 쿠폰 ": "종료·안내 글",
@@ -6357,17 +6357,23 @@
   "mohw": {},
   "mrblog": {
    "1151296": "유료 조건: 결제,페이백",
-   "1151298": "유료 조건: 결제,페이백",
-   "1151835": "유료 조건: 결제,페이백",
-   "1151837": "유료 조건: 결제,페이백",
-   "1152300": "유료 조건: 결제,페이백"
+   "1151297": "유료 조건: 결제,페이백",
+   "1151836": "유료 조건: 결제,페이백",
+   "1152295": "유료 조건: 결제,페이백",
+   "1152300": "유료 조건: 결제,페이백",
+   "1152657": "유료 조건: 결제,페이백"
   },
   "reviewnote": {
-   "1536101": "유료 조건: 페이백",
    "1540021": "유료 조건: 구매",
    "1540024": "유료 조건: 구매",
    "1540026": "유료 조건: 구매",
-   "1541321": "유료 조건: 결제"
+   "1541321": "유료 조건: 결제",
+   "1542231": "유료 조건: 구매",
+   "1542254": "유료 조건: 구매",
+   "1542419": "유료 조건: 페이백",
+   "1542736": "유료 조건: 구매",
+   "1542748": "유료 조건: 구매",
+   "1549703": "유료 조건: 구매"
   },
   "sbs": {
    "[SBS play] 신규회원 웰컴 이벤트": "기간 없음(상시 이벤트)",
@@ -6384,8 +6390,6 @@
   "yuvent": {
    "cmwhpqu7oa8ah01zbo86q5sx0": "유료 조건: 유료",
    "cmwhq9anaaab101zb895f96ps": "유료 조건: 유료",
-   "cmwhqo5f5abz301zb82b7e0re": "유료 조건: 구매",
-   "cmwhqp8glac2501zb2in5m014": "공연초대",
    "cmwhqsyahac4601zb42rn84b8": "유료 조건: 구매,유료",
    "cmwhqykqbac4t01zbhkw9no7w": "유료 조건: 구매,멤버십 가입",
    "cmwhy4gkmacdn01zbn93zbe10": "기간·경품·참여 방법 모두 확인 안 됨",
@@ -6400,7 +6404,6 @@
    "cmwhykdwbaecf01zb5wu4y0pz": "경품·마감·폼 없음",
    "cmwhz04ftagbe01zblfctquq5": "기간·경품·참여 방법 모두 확인 안 됨",
    "cmwhz1m6gagj901zbxr5cwmwm": "유료 조건: 구매",
-   "cmwhz4gf0agsg01zbp5ua7u16": "유료 조건: 구매",
    "cmwhz5qgxagsj01zbbv0h2few": "유료 조건: 구매,참가비",
    "cmwi6o5hragyu01zb3dieavi1": "기간·경품·참여 방법 모두 확인 안 됨",
    "cmwi6xioeaig901zb0rgssde5": "경품·마감·폼 없음",
@@ -6411,7 +6414,10 @@
    "cmwinuwp7aql401zb02k545bq": "경품·마감·폼 없음",
    "cmwinz7l1arfl01zbk1ttd8r1": "기간·경품·참여 방법 모두 확인 안 됨",
    "cmwio3sf6asci01zbmjs5c7mz": "이벤트 신호 없음",
-   "cmwionx1oauoa01zb559z380r": "이벤트 신호 없음"
+   "cmwiwyqlkaz9z01zbgr9if7my": "유료 조건: 구매",
+   "cmwiwyzhaaza101zbi6t4ax10": "기간·경품·참여 방법 모두 확인 안 됨",
+   "cmwix4d5pazaf01zbgyvpl3tl": "경품·마감·폼 없음",
+   "cmwix7f8vazaq01zb19os8wza": "기간·경품·참여 방법 모두 확인 안 됨"
   }
  },
  "mohw": {
@@ -6665,6 +6671,12 @@
    "final": "https://docs.google.com/forms/d/e/1FAIpQLSfbnDrdiebTNrtB_5ofDyQTtP-Liaoy6EuejDSga0qWblVPWw/viewform",
    "status": "form",
    "to": "https://docs.google.com/forms/d/e/1FAIpQLSfbnDrdiebTNrtB_5ofDyQTtP-Liaoy6EuejDSga0qWblVPWw/viewform?usp=send_form"
+  },
+  "https://forms.gle/JoogXJmo78GVTpN4A": {
+   "at": "2026-11-16",
+   "final": "https://docs.google.com/forms/d/e/1FAIpQLSfzylzJfA__rCS5ib5xq2VonTLbA-zQw9gZXHgDWn_WzYHh7w/viewform",
+   "status": "form",
+   "to": "https://docs.google.com/forms/d/e/1FAIpQLSfzylzJfA__rCS5ib5xq2VonTLbA-zQw9gZXHgDWn_WzYHh7w/viewform?usp=send_form"
   },
   "https://forms.gle/KKDsvRNbRCL5ae128": {
    "at": "2026-11-14",
@@ -7631,6 +7643,12 @@
    "final": "https://form.naver.com/response/20u01b2gf7v",
    "status": "form",
    "to": "https://form.naver.com/response/20u01b2gf7v"
+  },
+  "https://naver.me/GkIWKvLB": {
+   "at": "2026-11-16",
+   "final": null,
+   "status": "not_form",
+   "to": "https://mybox.naver.com/share/list?shareKey=tLyeZ_chNhhi4dsjaEtKsZJ8PM0yG6Rc5dOXJ6dwjADE7doMabIL4pkrV5G00mFHA1kMRSspzqbovBz6nO-6RAQ%3D"
   },
   "https://naver.me/Gmpl4s1S": {
    "at": "2026-11-16",
@@ -19523,6 +19541,18 @@
    "final": null,
    "status": "not_form",
    "to": "https://www.eventhouse.kr/site/fgo.php?fnum=320273&go=4"
+  },
+  "https://www.eventhouse.kr/site/fgo.php?fnum=320274&go=4": {
+   "at": "2026-11-16",
+   "final": null,
+   "status": "not_form",
+   "to": "https://www.eventhouse.kr/site/fgo.php?fnum=320274&go=4"
+  },
+  "https://www.eventhouse.kr/site/fgo.php?fnum=320275&go=4": {
+   "at": "2026-11-16",
+   "final": null,
+   "status": "not_form",
+   "to": "https://www.eventhouse.kr/site/fgo.php?fnum=320275&go=4"
   }
  },
  "touredu": {
