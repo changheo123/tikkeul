@@ -1,77 +1,5 @@
 [
  {
-  "active": 2223,
-  "added": 0,
-  "at": "2026-11-06T00:35:58+09:00",
-  "links": {
-   "checked": 60,
-   "dead": 0,
-   "error": 0,
-   "ok": 60,
-   "skip": 0
-  },
-  "merged": 0,
-  "pruned": 4,
-  "quality": {
-   "excluded": 0,
-   "flagged": 8,
-   "merged": 0
-  },
-  "rejected": 0,
-  "requests": 63,
-  "sec": 109.5,
-  "seeded": 0,
-  "sources": {
-   "busan": {
-    "status": "wait"
-   },
-   "danawa": {
-    "error": "ConnectionError: HTTPSConnectionPool(host='event.danawa.com', port=443): Max retries exceeded with url: /event/lists?page=1 (Caused by NameResolutionError(\"HTTPSConnection(host='event.danawa.com', port=443): Failed to resolve 'event.danawa.com' ([Errno -3] Temporary failure in name resolution)\"))",
-    "status": "error",
-    "trace": "uests/sessions.py\", line 784, in send\n    r = adapter.send(request, **kwargs)\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/requests/adapters.py\", line 729, in send\n    raise ConnectionError(e, request=request)\nrequests.exceptions.ConnectionError: HTTPSConnectionPool(host='event.danawa.com', port=443): Max retries exceeded with url: /event/lists?page=1 (Caused by NameResolutionError(\"HTTPSConnection(host='event.danawa.com', port=443): Failed to resolve 'event.danawa.com' ([Errno -3] Temporary failure in name resolution)\"))\n"
-   },
-   "eventhouse": {
-    "status": "wait"
-   },
-   "events_kr": {
-    "status": "wait"
-   },
-   "gangnam": {
-    "status": "off"
-   },
-   "korissue": {
-    "status": "wait"
-   },
-   "mohw": {
-    "status": "wait"
-   },
-   "mrblog": {
-    "status": "wait"
-   },
-   "naver": {
-    "reason": "NAVER_CLIENT_ID/SECRET 없음",
-    "status": "unconfigured"
-   },
-   "reviewnote": {
-    "status": "wait"
-   },
-   "sbs": {
-    "status": "wait"
-   },
-   "telegram": {
-    "reason": "수집할 공개 채널 목록이 비어 있음",
-    "status": "unconfigured"
-   },
-   "touredu": {
-    "status": "wait"
-   },
-   "youtube": {
-    "status": "wait"
-   }
-  },
-  "total": 3654
- },
- {
   "active": 2252,
   "added": 29,
   "at": "2026-11-06T01:29:38+09:00",
@@ -39048,5 +38976,236 @@
    "requests": 0
   },
   "viaLeft": 439
+ },
+ {
+  "active": 2704,
+  "added": 31,
+  "at": "2026-11-16T14:06:09+09:00",
+  "broken": 0,
+  "dates": 0,
+  "elec": 62,
+  "form": {
+   "direct": 1,
+   "eh_checked": 0,
+   "eh_found": 0,
+   "page_err": 0,
+   "page_found": 0,
+   "pages": 2,
+   "short_ok": 16
+  },
+  "formDedupe": 0,
+  "links": {
+   "checked": 60,
+   "dead": 0,
+   "error": 0,
+   "ok": 60,
+   "skip": 137
+  },
+  "merged": 548,
+  "originals": 0,
+  "prizeFill": {
+   "left": 147,
+   "page": 0,
+   "page_err": 0,
+   "pages": 0,
+   "text": 0,
+   "title": 1,
+   "truncated": {
+    "checked": 0,
+    "err": 0,
+    "restored": 0
+   }
+  },
+  "proof": 554,
+  "pruned": 0,
+  "quality": {
+   "excluded": 0,
+   "flagged": 26,
+   "merged": 0
+  },
+  "rejected": 0,
+  "requests": 126,
+  "restricted": {
+   "restricted": 3578,
+   "review": 19
+  },
+  "sec": 256.4,
+  "seeded": 0,
+  "shifted": {
+   "ended": 0,
+   "realigned": 0
+  },
+  "sources": {
+   "busan": {
+    "listed": 3,
+    "merged": 3,
+    "new": 0,
+    "requests": 1,
+    "sec": 2.0,
+    "skipped": 0,
+    "status": "ok"
+   },
+   "contestkorea": {
+    "listed": 41,
+    "merged": 0,
+    "new": 0,
+    "requests": 5,
+    "sec": 9.4,
+    "skipped": 0,
+    "status": "ok"
+   },
+   "danawa": {
+    "listed": 12,
+    "merged": 12,
+    "new": 0,
+    "requests": 2,
+    "sec": 2.1,
+    "skipped": 0,
+    "status": "ok"
+   },
+   "eventhouse": {
+    "listed": 400,
+    "merged": 259,
+    "new": 0,
+    "requests": 10,
+    "sec": 11.1,
+    "skipped": 0,
+    "status": "ok"
+   },
+   "eventhouse_search": {
+    "listed": 23,
+    "merged": 22,
+    "new": 0,
+    "requests": 18,
+    "sec": 19.7,
+    "skipped": 1,
+    "status": "ok"
+   },
+   "events_kr": {
+    "listed": 200,
+    "merged": 0,
+    "new": 1,
+    "requests": 11,
+    "sec": 11.0,
+    "skipped": 0,
+    "status": "ok"
+   },
+   "gangnam": {
+    "status": "off"
+   },
+   "gonggongevent": {
+    "listed": 60,
+    "merged": 7,
+    "new": 1,
+    "requests": 3,
+    "sec": 4.1,
+    "skipped": 52,
+    "status": "ok"
+   },
+   "korissue": {
+    "listed": 461,
+    "merged": 140,
+    "new": 0,
+    "requests": 5,
+    "sec": 5.9,
+    "skipped": 0,
+    "status": "ok"
+   },
+   "korissue_orgs": {
+    "listed": 0,
+    "merged": 0,
+    "new": 0,
+    "requests": 0,
+    "sec": 0.1,
+    "skipped": 0,
+    "status": "ok"
+   },
+   "mohw": {
+    "listed": 12,
+    "merged": 0,
+    "new": 1,
+    "requests": 2,
+    "sec": 3.6,
+    "skipped": 0,
+    "status": "ok"
+   },
+   "mrblog": {
+    "listed": 29,
+    "merged": 20,
+    "new": 4,
+    "requests": 1,
+    "sec": 1.1,
+    "skipped": 5,
+    "status": "ok"
+   },
+   "naver": {
+    "reason": "NAVER_CLIENT_ID/SECRET 없음",
+    "status": "unconfigured"
+   },
+   "reviewnote": {
+    "listed": 85,
+    "merged": 59,
+    "new": 21,
+    "requests": 1,
+    "sec": 0.6,
+    "skipped": 5,
+    "status": "ok"
+   },
+   "sbs": {
+    "listed": 15,
+    "merged": 7,
+    "new": 0,
+    "requests": 1,
+    "sec": 1.1,
+    "skipped": 8,
+    "status": "ok"
+   },
+   "telegram": {
+    "reason": "수집할 공개 채널 목록이 비어 있음",
+    "status": "unconfigured"
+   },
+   "touredu": {
+    "listed": 2,
+    "merged": 0,
+    "new": 0,
+    "requests": 1,
+    "sec": 1.4,
+    "skipped": 0,
+    "status": "ok"
+   },
+   "wevity": {
+    "listed": 1,
+    "merged": 0,
+    "new": 0,
+    "requests": 2,
+    "sec": 4.5,
+    "skipped": 0,
+    "status": "ok"
+   },
+   "youtube": {
+    "reason": "YT_API_KEY 없음",
+    "status": "unconfigured"
+   },
+   "yuvent": {
+    "listed": 60,
+    "merged": 19,
+    "new": 3,
+    "requests": 3,
+    "sec": 4.7,
+    "skipped": 38,
+    "status": "ok"
+   }
+  },
+  "total": 6858,
+  "verify": {
+   "checked": 167,
+   "due": 167,
+   "failed": 0,
+   "no_request": 121,
+   "rendered": 25,
+   "requests": 47,
+   "stale_ended": 3
+  },
+  "viaLeft": 436
  }
 ]

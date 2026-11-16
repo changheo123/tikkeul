@@ -264,6 +264,7 @@
   "eh-e4e8886eb2": "ki-ccc6c3ffb7",
   "eh-e67eba8cbd": "ki-b852f5956c",
   "eh-e6f34c188d": "ki-b19173aeb4",
+  "eh-e76cd77b41": "eh-7b4da11e64",
   "eh-e77a848e0d": "ki-6dc63e6e69",
   "eh-e8c33a4f76": "hi10045",
   "eh-e8ebee2fc9": "eh-34c43b25cc",
@@ -274,6 +275,7 @@
   "eh-f18f2aedea": "ki-971e2cf69d",
   "eh-f4a94813a5": "ki-65e067ff2d",
   "eh-f5775f0572": "ki-f24aa036b6",
+  "eh-f580062b61": "eh-f5206df5fb",
   "eh-f74ca146ef": "ki-c90c3cd347",
   "eh-f7a3aa6bdf": "ki-dbe99b6af3",
   "eh-f7ddde5cc1": "ki-c6f4ad2040",
@@ -2240,6 +2242,7 @@
   "rn-1ff92f14a8": "rn-28d32399d4",
   "rn-20bfa62c24": "rn-deb4ce727a",
   "rn-2194d98c44": "rn-7129f479d7",
+  "rn-23070cca81": "rn-7f7c60709b",
   "rn-24b13ecf15": "rn-207f0e463b",
   "rn-24d3599086": "rn-55844f1b73",
   "rn-2590a39927": "rn-934f60f74b",
@@ -2252,6 +2255,7 @@
   "rn-3481276381": "rn-da3a764b2d",
   "rn-35d3190e68": "rn-7e409ae96b",
   "rn-37d06257aa": "rn-b4fbb75c01",
+  "rn-37f501954e": "rn-7f7c60709b",
   "rn-386310bbcd": "rn-e7088bd49b",
   "rn-3930630a1f": "rn-1976dee950",
   "rn-39ed85c855": "rn-42ff6e6a5a",
@@ -2308,6 +2312,8 @@
   "rn-6ea7b37301": "rn-dd220e9110",
   "rn-711d8faf1e": "rn-9933a4c527",
   "rn-7295e58018": "rn-deace26a01",
+  "rn-74269d5b76": "rn-d0a1c0b9db",
+  "rn-744eef00aa": "rn-7f7c60709b",
   "rn-747fd84e51": "rn-a3f9bcbf91",
   "rn-749d14620a": "rn-b03bc83f1f",
   "rn-77fac3ba01": "rn-deb4ce727a",
@@ -2363,6 +2369,7 @@
   "rn-a03137af0a": "rn-2daff05e03",
   "rn-a0989f5018": "rn-ada89c3002",
   "rn-a26652c11a": "rn-19e337ae85",
+  "rn-a34c93a892": "rn-7f7c60709b",
   "rn-a47238fe9b": "rn-df64abb363",
   "rn-a4a38719d8": "rn-8967cdd82f",
   "rn-a4cbd59970": "rn-b4fbb75c01",
@@ -2400,6 +2407,7 @@
   "rn-bbec52b434": "rn-7e409ae96b",
   "rn-bbed3c05ac": "rn-71add4fc07",
   "rn-bd357b7e10": "rn-7448b3b92b",
+  "rn-be2bcd94c3": "rn-7f7c60709b",
   "rn-bf36effab1": "rn-47dcf3e0d5",
   "rn-bf4ab39584": "rn-f934af3cf4",
   "rn-c1972d5556": "rn-6aec8fda9f",
@@ -2690,6 +2698,7 @@
    "244": "ek-01592d51db",
    "245": "ek-3aed9b0313",
    "246": "ek-3464dc1150",
+   "247": "ek-b4ef7df17d",
    "25": "ek-f6e1126ced",
    "26": "ek-887309d048",
    "27": "ek-bc33ea4e26",
@@ -6248,43 +6257,43 @@
   }
  },
  "lastOk": {
-  "busan": "2026-11-16T12:44:10+09:00",
-  "contestkorea": "2026-11-16T11:51:03+09:00",
-  "danawa": "2026-11-16T11:51:03+09:00",
-  "eventhouse": "2026-11-16T12:44:10+09:00",
-  "eventhouse_search": "2026-11-16T12:44:10+09:00",
-  "events_kr": "2026-11-16T12:44:10+09:00",
-  "gonggongevent": "2026-11-16T14:03:32+09:00",
-  "korissue": "2026-11-16T12:44:10+09:00",
-  "korissue_orgs": "2026-11-16T12:44:10+09:00",
-  "mohw": "2026-11-16T12:44:10+09:00",
-  "mrblog": "2026-11-16T12:44:10+09:00",
-  "reviewnote": "2026-11-16T12:44:10+09:00",
-  "sbs": "2026-11-16T12:44:10+09:00",
-  "touredu": "2026-11-16T12:44:10+09:00",
-  "wevity": "2026-11-16T09:43:36+09:00",
-  "yuvent": "2026-11-16T14:03:32+09:00"
+  "busan": "2026-11-16T14:06:09+09:00",
+  "contestkorea": "2026-11-16T14:06:09+09:00",
+  "danawa": "2026-11-16T14:06:09+09:00",
+  "eventhouse": "2026-11-16T14:06:09+09:00",
+  "eventhouse_search": "2026-11-16T14:06:09+09:00",
+  "events_kr": "2026-11-16T14:06:09+09:00",
+  "gonggongevent": "2026-11-16T14:06:09+09:00",
+  "korissue": "2026-11-16T14:06:09+09:00",
+  "korissue_orgs": "2026-11-16T14:06:09+09:00",
+  "mohw": "2026-11-16T14:06:09+09:00",
+  "mrblog": "2026-11-16T14:06:09+09:00",
+  "reviewnote": "2026-11-16T14:06:09+09:00",
+  "sbs": "2026-11-16T14:06:09+09:00",
+  "touredu": "2026-11-16T14:06:09+09:00",
+  "wevity": "2026-11-16T14:06:09+09:00",
+  "yuvent": "2026-11-16T14:06:09+09:00"
  },
  "lastRun": {
-  "busan": "2026-11-16T12:44:10+09:00",
-  "contestkorea": "2026-11-16T11:51:03+09:00",
-  "danawa": "2026-11-16T11:51:03+09:00",
-  "eventhouse": "2026-11-16T12:44:10+09:00",
-  "eventhouse_search": "2026-11-16T12:44:10+09:00",
-  "events_kr": "2026-11-16T12:44:10+09:00",
-  "gonggongevent": "2026-11-16T14:03:32+09:00",
-  "korissue": "2026-11-16T12:44:10+09:00",
-  "korissue_orgs": "2026-11-16T12:44:10+09:00",
-  "mohw": "2026-11-16T12:44:10+09:00",
-  "mrblog": "2026-11-16T12:44:10+09:00",
-  "naver": "2026-11-16T11:51:03+09:00",
-  "reviewnote": "2026-11-16T12:44:10+09:00",
-  "sbs": "2026-11-16T12:44:10+09:00",
-  "telegram": "2026-11-16T11:51:03+09:00",
-  "touredu": "2026-11-16T12:44:10+09:00",
-  "wevity": "2026-11-16T09:43:36+09:00",
-  "youtube": "2026-11-16T12:44:10+09:00",
-  "yuvent": "2026-11-16T14:03:32+09:00"
+  "busan": "2026-11-16T14:06:09+09:00",
+  "contestkorea": "2026-11-16T14:06:09+09:00",
+  "danawa": "2026-11-16T14:06:09+09:00",
+  "eventhouse": "2026-11-16T14:06:09+09:00",
+  "eventhouse_search": "2026-11-16T14:06:09+09:00",
+  "events_kr": "2026-11-16T14:06:09+09:00",
+  "gonggongevent": "2026-11-16T14:06:09+09:00",
+  "korissue": "2026-11-16T14:06:09+09:00",
+  "korissue_orgs": "2026-11-16T14:06:09+09:00",
+  "mohw": "2026-11-16T14:06:09+09:00",
+  "mrblog": "2026-11-16T14:06:09+09:00",
+  "naver": "2026-11-16T14:06:09+09:00",
+  "reviewnote": "2026-11-16T14:06:09+09:00",
+  "sbs": "2026-11-16T14:06:09+09:00",
+  "telegram": "2026-11-16T14:06:09+09:00",
+  "touredu": "2026-11-16T14:06:09+09:00",
+  "wevity": "2026-11-16T14:06:09+09:00",
+  "youtube": "2026-11-16T14:06:09+09:00",
+  "yuvent": "2026-11-16T14:06:09+09:00"
  },
  "lastSkipped": {
   "busan": {},
@@ -6295,6 +6304,38 @@
    "318949": "유료 조건: 유료"
   },
   "events_kr": {},
+  "gonggongevent": {
+   "11월 10일 마감｜이천시 청년 신혼부부 전월세 대출이자 최대 200만 ": "종료·안내 글",
+   "11월 10일 마감｜한국언론진흥재단 미디어 AI 플랫폼 퀴즈｜커피 쿠폰 ": "종료·안내 글",
+   "11월 10일 신청 시작｜전세사기 피해자 최소보장제｜보증금 3분의 1 최": "마감이 없는 안내 글",
+   "11월 13일 마감｜국립수산물품질관리원 수산물 인증 퀴즈｜투썸 아메리카노": "종료·안내 글",
+   "11월 15일 마감｜구로구 SNS 설문 연말 이벤트｜치킨·올리브영·커피 ": "마감",
+   "11월 15일 마감｜국민권익위 국민콜110 일·일·공 삼행시｜대상 로봇청": "마감",
+   "11월 15일 마감｜창녕군 ‘가을 창녕 찍고, 인친하기’ 인스타그램 인증": "마감",
+   "11월 17일 18시 마감｜2학기 학자금대출 신청｜승인 후 18일 17시": "이벤트 신호 없음",
+   "11월 27일 마감｜2027 스포츠강좌이용권 11월 9일부터 신청｜월 1": "유료 조건: 결제",
+   "11월 27일 마감｜청년미래적금 2차 계좌 개설 11월 16일부터｜심사 ": "이벤트 신호 없음",
+   "11월 30일 마감｜대전 청년·청년부부 주택임차보증금 이자 지원｜최대 2": "이벤트 신호 없음",
+   "11월 30일 마감｜서울 노후차 조기폐차 지원 연장｜3.5톤 미만 4등급": "유료 조건: 구매",
+   "11월 30일 마감｜서초청년 자격증 응시료 지원 4분기｜연간 최대 20만": "유료 조건: 입금",
+   "11월 4일 마감｜방위사업청 인스타 3만·유튜브 10만 달성 축하 댓글 ": "종료·안내 글",
+   "11월 6일 마감｜하이커 그라운드 ‘K-DRAMA 주인공’ 유형 투표 이": "종료·안내 글",
+   "11월 6일 마감｜한국가스기술공사 핼러윈 초성퀴즈 이벤트｜공차 5천원권 ": "종료·안내 글",
+   "11월 8일 마감｜구미라면축제 응원 댓글 이벤트｜네이버페이 5천원 30명": "종료·안내 글",
+   "11월 8일 마감｜부산 사하구 ‘나의 가을은?’ 가을 사연 이벤트｜배달상": "종료·안내 글",
+   "11월 8일 마감｜서울에너지공사 가을맞이 팔로우｜네이버페이 1천원 1,0": "종료·안내 글",
+   "11월 8일 마감｜평택시 SNS 만족도 조사｜네이버페이 1만원 50명": "종료·안내 글",
+   "11월 9일 마감｜G20 제주 유치 응원 댓글 이벤트｜배달의민족 상품권 ": "종료·안내 글",
+   "11월 9일 마감｜한국보건산업진흥원 투니 칭찬 댓글｜올리브영 5천원권 1": "종료·안내 글",
+   "12월 11일｜충북 결혼지원금 100만 원, 제천·보은 신청 가능｜202": "마감이 없는 안내 글",
+   "12월 13일 마감｜숙박세일페스타 거제·통영 특별지원재난편｜최대 9만 원": "유료 조건: 결제,구매",
+   "12월 15일 18시 마감｜부산 소상공인 에너지바우처 20만 원｜수도·충": "유료 조건: 결제",
+   "12월 18일 마감｜소상공인 경영안정 바우처 25만원｜신청 대상과 12월": "유료 조건: 결제",
+   "12월 1일 마감｜경기도 청년기본소득 4분기 25만 원 신청｜24세·거주": "유료 조건: 결제",
+   "12월 24일 마감｜여성청소년 생리용품 바우처 연 168,000원｜신청 ": "유료 조건: 결제,구매,유료",
+   "12월 31일 마감｜2026 에너지바우처 신청｜1인 29만5200원~4인": "유료 조건: 구입",
+   "12월 31일 신청 마감｜고교 취업연계 장려금｜자격·재직 요건과 2025": "이벤트 신호 없음"
+  },
   "korissue": {},
   "korissue_orgs": {},
   "mohw": {},
@@ -6302,17 +6343,14 @@
    "1151296": "유료 조건: 결제,페이백",
    "1151298": "유료 조건: 결제,페이백",
    "1151835": "유료 조건: 결제,페이백",
-   "1151836": "유료 조건: 결제,페이백",
-   "1152203": "유료 조건: 결제,페이백",
-   "1152656": "유료 조건: 결제,페이백"
+   "1151837": "유료 조건: 결제,페이백",
+   "1152300": "유료 조건: 결제,페이백"
   },
   "reviewnote": {
    "1536101": "유료 조건: 페이백",
    "1540021": "유료 조건: 구매",
    "1540024": "유료 조건: 구매",
    "1540026": "유료 조건: 구매",
-   "1540093": "유료 조건: 결제",
-   "1541300": "유료 조건: 결제",
    "1541321": "유료 조건: 결제"
   },
   "sbs": {
@@ -6326,7 +6364,39 @@
    "[틈만나면,] 당신의 '틈'에 초대해 주세요!": "기간 없음(상시 이벤트)"
   },
   "touredu": {},
-  "wevity": {}
+  "wevity": {},
+  "yuvent": {
+   "cmwhpqu7oa8ah01zbo86q5sx0": "유료 조건: 유료",
+   "cmwhq9anaaab101zb895f96ps": "유료 조건: 유료",
+   "cmwhqo5f5abz301zb82b7e0re": "유료 조건: 구매",
+   "cmwhqp8glac2501zb2in5m014": "공연초대",
+   "cmwhqsyahac4601zb42rn84b8": "유료 조건: 구매,유료",
+   "cmwhqykqbac4t01zbhkw9no7w": "유료 조건: 구매,멤버십 가입",
+   "cmwhy4gkmacdn01zbn93zbe10": "기간·경품·참여 방법 모두 확인 안 됨",
+   "cmwhy7jwvacrk01zb9wvc2dci": "유료 조건: 입금,참가비",
+   "cmwhy9hbead0801zbrpotw5s7": "이벤트 신호 없음",
+   "cmwhy9ji7ad0901zbyjtxddp7": "이벤트 신호 없음",
+   "cmwhyabtoad3m01zbk51xsvww": "경품·마감·폼 없음",
+   "cmwhyb7g8ad7d01zbnqd8h2s6": "경품·마감·폼 없음",
+   "cmwhyerw3admt01zbixrtqnkt": "경품·마감·폼 없음",
+   "cmwhyg3l3adso01zbjw6gnks1": "이벤트 신호 없음",
+   "cmwhyih1kae3g01zb9cz2zpnj": "유료 조건: 유료",
+   "cmwhykdwbaecf01zb5wu4y0pz": "경품·마감·폼 없음",
+   "cmwhz04ftagbe01zblfctquq5": "기간·경품·참여 방법 모두 확인 안 됨",
+   "cmwhz1m6gagj901zbxr5cwmwm": "유료 조건: 구매",
+   "cmwhz4gf0agsg01zbp5ua7u16": "유료 조건: 구매",
+   "cmwhz5qgxagsj01zbbv0h2few": "유료 조건: 구매,참가비",
+   "cmwi6o5hragyu01zb3dieavi1": "기간·경품·참여 방법 모두 확인 안 됨",
+   "cmwi6xioeaig901zb0rgssde5": "경품·마감·폼 없음",
+   "cmwi79yp4akf301zbnok2gdnx": "유료 조건: 구매",
+   "cmwifno89anxz01zblkpib1kg": "기간·경품·참여 방법 모두 확인 안 됨",
+   "cmwifnq46any001zb0g8mru9g": "기간·경품·참여 방법 모두 확인 안 됨",
+   "cmwifsfegaop901zbjncdao40": "기간·경품·참여 방법 모두 확인 안 됨",
+   "cmwinuwp7aql401zb02k545bq": "경품·마감·폼 없음",
+   "cmwinz7l1arfl01zbk1ttd8r1": "기간·경품·참여 방법 모두 확인 안 됨",
+   "cmwio3sf6asci01zbmjs5c7mz": "이벤트 신호 없음",
+   "cmwionx1oauoa01zb559z380r": "이벤트 신호 없음"
+  }
  },
  "mohw": {
   "parsed": {
@@ -6353,10 +6423,53 @@
    "380631": "mo-a15753c633",
    "380632": "mo-063c74fec6",
    "380633": "mo-4153181fc1",
-   "380634": "mo-bf6aff3f2b"
+   "380634": "mo-bf6aff3f2b",
+   "380636": "mo-2c49cb765e"
   }
  },
  "shortlinks": {
+  "https://bit.ly/3e3VPmm": {
+   "at": "2026-11-16",
+   "final": null,
+   "status": "not_form",
+   "to": "https://ceo.baemin.com/?utm_source=youtube&utm_medium=link"
+  },
+  "https://bit.ly/3uWUtxw": {
+   "at": "2026-11-16",
+   "final": null,
+   "status": "not_form",
+   "to": "https://www.youtube.com/channel/UCFQF9rawjY5P1CSyMGl_SSQ/playlists"
+  },
+  "https://bit.ly/48scAkx": {
+   "at": "2026-11-16",
+   "final": null,
+   "status": "not_form",
+   "to": "https://link.coupang.com/a/efemHL"
+  },
+  "https://bit.ly/4iCAKi4": {
+   "at": "2026-11-16",
+   "final": null,
+   "status": "not_form",
+   "to": "https://ririnco.com/category/lookbook/1307?cafe_mkt=ue_utube_big&utm_source=youtube_ririnco&utm_medium=video&utm_campaign=youtube_ririnco_lookbook&utm_content=ririnco_bigsize_261112"
+  },
+  "https://bit.ly/4iOJOPw": {
+   "at": "2026-11-16",
+   "final": null,
+   "status": "not_form",
+   "to": "https://ririnco.com/exec/front/newcoupon/IssueDownload?coupon_no=6086755861600000665&cafe_mkt=ue_utube_big&utm_source=youtube_ririnco&utm_medium=video&utm_campaign=youtube_ririnco_lookbook&utm_content"
+  },
+  "https://bit.ly/4jQp0Hh": {
+   "at": "2026-11-16",
+   "final": null,
+   "status": "not_form",
+   "to": "https://youtube.com/playlist?list=PLkXlkkFenJ_aPD4u_xU7aBT6P0HAIN_rm&si=CJZ3K4hloa3tF5v0"
+  },
+  "https://bit.ly/eganiksrpbr": {
+   "at": "2026-11-16",
+   "final": null,
+   "status": "not_form",
+   "to": "https://eganiks.com/product/%EC%8B%A0%EC%84%B8%EA%B2%BD-%EB%94%94%EB%B0%94%EC%9D%B4%EC%8A%A4-%EC%9D%B4%EA%B0%80%EB%8B%89%EC%8A%A4-%ED%83%80%EC%9E%87%ED%97%A4%EB%9D%BC-%EB%B6%80%EC%8A%A4%ED%84%B0-%EC%A"
+  },
   "https://forms.gle/1QSv5hCJjrdnEPWV8": {
    "at": "2026-11-12",
    "final": "https://docs.google.com/forms/d/e/1FAIpQLSd-8xa5fAlskuCEsAFlshqKOJxlxhRQeA1a6alKmihD5mIk_g/viewform",
@@ -6386,6 +6499,12 @@
    "final": "https://docs.google.com/forms/d/e/1FAIpQLSe7LboWtuGsUHhhYXjhox62pq5qxx2RkbMVwB5UGhNtf7-3Dg/viewform",
    "status": "form",
    "to": "https://docs.google.com/forms/d/e/1FAIpQLSe7LboWtuGsUHhhYXjhox62pq5qxx2RkbMVwB5UGhNtf7-3Dg/viewform?usp=send_form"
+  },
+  "https://forms.gle/5pqeyYufDMkQagNR6": {
+   "at": "2026-11-16",
+   "final": "https://docs.google.com/forms/d/e/1FAIpQLSfE4L1V1ShbKaLXqYLuMekgwwJzKq1CeNXLmZtT5v4VqyKlaQ/viewform",
+   "status": "form",
+   "to": "https://docs.google.com/forms/d/e/1FAIpQLSfE4L1V1ShbKaLXqYLuMekgwwJzKq1CeNXLmZtT5v4VqyKlaQ/viewform?usp=send_form"
   },
   "https://forms.gle/5wNDR742yKLacNzF9": {
    "at": "2026-11-14",
@@ -6446,6 +6565,12 @@
    "final": "https://docs.google.com/forms/d/e/1FAIpQLSfO5Mkv1XZH3umVVrzfSwmsdPUKBS3EPxp3Qm-4X5IZ_gtxSA/viewform",
    "status": "form",
    "to": "https://docs.google.com/forms/d/e/1FAIpQLSfO5Mkv1XZH3umVVrzfSwmsdPUKBS3EPxp3Qm-4X5IZ_gtxSA/viewform?usp=send_form"
+  },
+  "https://forms.gle/Cw1CfTz8SBQ2HuKv5": {
+   "at": "2026-11-16",
+   "final": "https://docs.google.com/forms/d/e/1FAIpQLSeyQZRHuAkGdrgsiMTHy8TmMLz8Bi8u5qRKmStR9e29Kd_WKw/viewform",
+   "status": "form",
+   "to": "https://docs.google.com/forms/d/e/1FAIpQLSeyQZRHuAkGdrgsiMTHy8TmMLz8Bi8u5qRKmStR9e29Kd_WKw/viewform?usp=send_form"
   },
   "https://forms.gle/D6JUQWSg81jseFiR6": {
    "at": "2026-11-09",
@@ -6512,6 +6637,12 @@
    "final": "https://docs.google.com/forms/d/e/1FAIpQLScz3XabHAseY19qaBPvv_2uRI8IGd6unvTGAP-aMlh-r8L3gg/viewform",
    "status": "form",
    "to": "https://docs.google.com/forms/d/e/1FAIpQLScz3XabHAseY19qaBPvv_2uRI8IGd6unvTGAP-aMlh-r8L3gg/viewform?usp=send_form"
+  },
+  "https://forms.gle/HypEdDodXp5ZFmfVA": {
+   "at": "2026-11-16",
+   "final": "https://docs.google.com/forms/d/e/1FAIpQLSfbnDrdiebTNrtB_5ofDyQTtP-Liaoy6EuejDSga0qWblVPWw/viewform",
+   "status": "form",
+   "to": "https://docs.google.com/forms/d/e/1FAIpQLSfbnDrdiebTNrtB_5ofDyQTtP-Liaoy6EuejDSga0qWblVPWw/viewform?usp=send_form"
   },
   "https://forms.gle/KKDsvRNbRCL5ae128": {
    "at": "2026-11-14",
@@ -6669,6 +6800,12 @@
    "status": "form",
    "to": "https://docs.google.com/forms/d/e/1FAIpQLScyOHNQ0m1kKy8APfYPyIVc2OitKc6qsxtm3HC9lAK3LqCV1Q/viewform?usp=send_form"
   },
+  "https://forms.gle/c5o4G7LqemmNgATT8": {
+   "at": "2026-11-16",
+   "final": "https://docs.google.com/forms/d/e/1FAIpQLSdZvYMHQIJOKdUod7NN2y1XgrBgDIYOwBHEIKAcTNwUa41s_g/viewform",
+   "status": "form",
+   "to": "https://docs.google.com/forms/d/e/1FAIpQLSdZvYMHQIJOKdUod7NN2y1XgrBgDIYOwBHEIKAcTNwUa41s_g/viewform?usp=send_form"
+  },
   "https://forms.gle/cgXFehVZ8aJfkbmU8": {
    "at": "2026-11-10",
    "final": "https://docs.google.com/forms/d/e/1FAIpQLSdsqdKnYy9p9YP3-Y2bFNVvnAdL7DMHP1ZmHnHFvoznTIwD3Q/viewform",
@@ -6680,6 +6817,12 @@
    "final": "https://docs.google.com/forms/d/e/1FAIpQLScsoUjoZBYR_IgoL2yQBPkAWu228ABXBNjLm5LjsqRAM9NEVw/viewform",
    "status": "form",
    "to": "https://docs.google.com/forms/d/e/1FAIpQLScsoUjoZBYR_IgoL2yQBPkAWu228ABXBNjLm5LjsqRAM9NEVw/viewform?usp=send_form"
+  },
+  "https://forms.gle/czydwRg8sPRoWAHd7": {
+   "at": "2026-11-16",
+   "final": "https://docs.google.com/forms/d/e/1FAIpQLSf-G0woJsXdqOwxMWSsMX6gZHVyigxl7Wm7OEz2Dghx2Grcmg/viewform",
+   "status": "form",
+   "to": "https://docs.google.com/forms/d/e/1FAIpQLSf-G0woJsXdqOwxMWSsMX6gZHVyigxl7Wm7OEz2Dghx2Grcmg/viewform?usp=send_form"
   },
   "https://forms.gle/dYcjGNob6mwJ6fFv6": {
    "at": "2026-11-15",
@@ -6710,6 +6853,18 @@
    "final": "https://docs.google.com/forms/d/e/1FAIpQLSdxdc7W8UgC8r-wtmb1liYzY0PqddR4IsN94luENqKKbDy_Ww/viewform",
    "status": "form",
    "to": "https://docs.google.com/forms/d/e/1FAIpQLSdxdc7W8UgC8r-wtmb1liYzY0PqddR4IsN94luENqKKbDy_Ww/viewform?usp=send_form"
+  },
+  "https://forms.gle/fa5579cCKPhsmTvr8": {
+   "at": "2026-11-16",
+   "final": "https://docs.google.com/forms/d/e/1FAIpQLSeik5c7z-SAEfz_HdmZAKLAuoCWRVXSjD089Kq4yHpfN_EJ5g/viewform",
+   "status": "form",
+   "to": "https://docs.google.com/forms/d/e/1FAIpQLSeik5c7z-SAEfz_HdmZAKLAuoCWRVXSjD089Kq4yHpfN_EJ5g/viewform"
+  },
+  "https://forms.gle/g1on7pKpU4PMqjpN9": {
+   "at": "2026-11-16",
+   "final": "https://docs.google.com/forms/d/e/1FAIpQLScRaYtXtF8sA1ItrX0WXCcrUgxl2RcgcvHTT-4FH-_Rt93AsQ/viewform",
+   "status": "form",
+   "to": "https://docs.google.com/forms/d/e/1FAIpQLScRaYtXtF8sA1ItrX0WXCcrUgxl2RcgcvHTT-4FH-_Rt93AsQ/viewform?usp=send_form"
   },
   "https://forms.gle/g3BRHbQkmXdHBngr9": {
    "at": "2026-11-14",
@@ -6758,6 +6913,12 @@
    "final": "https://docs.google.com/forms/d/e/1FAIpQLScCLIxYemYZ5RdJC67iyaJ819Mili6Y3ER0GoHSpHLqQJsw6w/viewform",
    "status": "form",
    "to": "https://docs.google.com/forms/d/e/1FAIpQLScCLIxYemYZ5RdJC67iyaJ819Mili6Y3ER0GoHSpHLqQJsw6w/viewform?usp=send_form"
+  },
+  "https://forms.gle/mZTozCYDfCeXU9XZ6": {
+   "at": "2026-11-16",
+   "final": "https://docs.google.com/forms/d/e/1FAIpQLSf-EJ4dy2OQhkGBNYvyxjOl7lk8GiOzIF_Cux-k_aYHWRiiVQ/viewform",
+   "status": "form",
+   "to": "https://docs.google.com/forms/d/e/1FAIpQLSf-EJ4dy2OQhkGBNYvyxjOl7lk8GiOzIF_Cux-k_aYHWRiiVQ/viewform?usp=send_form"
   },
   "https://forms.gle/mfMWuEVg3iGxGL999": {
    "at": "2026-11-09",
@@ -6825,6 +6986,12 @@
    "status": "form",
    "to": "https://docs.google.com/forms/d/e/1FAIpQLScScLLX8zX_PXB4e0x1RQlDl1zgVeJVq2q-bI15mUTI9pqQsQ/viewform?usp=send_form"
   },
+  "https://forms.gle/sWmdqX1ruYQv766i6": {
+   "at": "2026-11-16",
+   "final": "https://docs.google.com/forms/d/e/1FAIpQLScrJt-ivdnZfZNoGKriyH9vR98IQM733Rg3gxbpwbNTmMjfmw/viewform",
+   "status": "form",
+   "to": "https://docs.google.com/forms/d/e/1FAIpQLScrJt-ivdnZfZNoGKriyH9vR98IQM733Rg3gxbpwbNTmMjfmw/viewform?usp=send_form"
+  },
   "https://forms.gle/styRrrqeXNhDYY8D9": {
    "at": "2026-11-11",
    "final": "https://docs.google.com/forms/d/e/1FAIpQLScaHf_nXrDx8PqxwPOiMhlhuaSNGjnINPb0I9PB8eno4uF2vA/viewform",
@@ -6878,6 +7045,12 @@
    "final": "https://docs.google.com/forms/d/e/1FAIpQLScdW5zLLIT4-igWyOJ8vlGWFFZA9_Qlgz_9e1VLStripIqIAg/viewform",
    "status": "form",
    "to": "https://docs.google.com/forms/d/e/1FAIpQLScdW5zLLIT4-igWyOJ8vlGWFFZA9_Qlgz_9e1VLStripIqIAg/viewform?usp=send_form"
+  },
+  "https://forms.gle/y3HUJ4GPnAe6gmqt7": {
+   "at": "2026-11-16",
+   "final": "https://docs.google.com/forms/d/e/1FAIpQLSfgEHLClQvOW8wiDEqbvm7-Wkn8iO1imhieV4NDnAI8Gb0sKQ/viewform",
+   "status": "form",
+   "to": "https://docs.google.com/forms/d/e/1FAIpQLSfgEHLClQvOW8wiDEqbvm7-Wkn8iO1imhieV4NDnAI8Gb0sKQ/viewform?usp=send_form"
   },
   "https://forms.gle/yNEK5ADibR6AWay97": {
    "at": "2026-11-09",
@@ -7179,6 +7352,12 @@
    "status": "form",
    "to": "https://form.naver.com/response/4KSDZ7bEWa7"
   },
+  "https://naver.me/FWTocbJ4": {
+   "at": "2026-11-16",
+   "final": "https://form.naver.com/response/5LlhCc1UNHh",
+   "status": "form",
+   "to": "https://form.naver.com/response/5LlhCc1UNHh"
+  },
   "https://naver.me/FXn7S87A": {
    "at": "2026-11-14",
    "final": "https://form.naver.com/response/L296vtzARf3",
@@ -7226,6 +7405,12 @@
    "final": "https://form.naver.com/response/E9xRqiEpOeA",
    "status": "form",
    "to": "https://form.naver.com/response/E9xRqiEpOeA"
+  },
+  "https://naver.me/FlcNmYeP": {
+   "at": "2026-11-16",
+   "final": null,
+   "status": "not_form",
+   "to": "https://map.naver.com/p/entry/place/2005642539?placePath=%2Fhome"
   },
   "https://naver.me/FnsEkxXk": {
    "at": "2026-11-09",
@@ -7365,11 +7550,23 @@
    "status": "form",
    "to": "https://form.naver.com/response/HemoH4FpWeF"
   },
+  "https://naver.me/GKI0R4BZ": {
+   "at": "2026-11-16",
+   "final": "https://form.naver.com/response/80VONooJJdY",
+   "status": "form",
+   "to": "https://form.naver.com/response/80VONooJJdY"
+  },
   "https://naver.me/GKIhsC6G": {
    "at": "2026-11-12",
    "final": "https://form.naver.com/response/1rsHEy08hQy",
    "status": "form",
    "to": "https://form.naver.com/response/1rsHEy08hQy"
+  },
+  "https://naver.me/GLhWqDP4": {
+   "at": "2026-11-16",
+   "final": "https://form.naver.com/response/9Gz6ei6pPdO",
+   "status": "form",
+   "to": "https://form.naver.com/response/9Gz6ei6pPdO"
   },
   "https://naver.me/GQGdgjhs": {
    "at": "2026-11-10",
@@ -7406,6 +7603,12 @@
    "final": "https://form.naver.com/response/20u01b2gf7v",
    "status": "form",
    "to": "https://form.naver.com/response/20u01b2gf7v"
+  },
+  "https://naver.me/Gmpl4s1S": {
+   "at": "2026-11-16",
+   "final": "https://form.naver.com/response/E5Nr2I5dMYv",
+   "status": "form",
+   "to": "https://form.naver.com/response/E5Nr2I5dMYv"
   },
   "https://naver.me/GqfjHxgV": {
    "at": "2026-11-09",
@@ -7497,6 +7700,12 @@
    "status": "form",
    "to": "https://form.naver.com/response/7yeOV2psvgP"
   },
+  "https://naver.me/xEXeWmjV": {
+   "at": "2026-11-16",
+   "final": "https://form.naver.com/response/DDIF6aoSPAZ",
+   "status": "form",
+   "to": "https://form.naver.com/response/DDIF6aoSPAZ"
+  },
   "https://naver.me/xLNApGfU": {
    "at": "2026-11-10",
    "final": "https://form.naver.com/response/5MgZO4agUbx",
@@ -7520,6 +7729,12 @@
    "final": "https://form.naver.com/response/9qwCF2Tbi2v",
    "status": "form",
    "to": "https://form.naver.com/response/9qwCF2Tbi2v"
+  },
+  "https://naver.me/xQJWnyXn": {
+   "at": "2026-11-16",
+   "final": "https://form.naver.com/response/6lMoq8iQT4L",
+   "status": "form",
+   "to": "https://form.naver.com/response/6lMoq8iQT4L"
   },
   "https://naver.me/xTy27h12": {
    "at": "2026-11-09",
@@ -7610,6 +7825,12 @@
    "final": "https://form.naver.com/response/IoTI3HXcluZ",
    "status": "form",
    "to": "https://form.naver.com/response/IoTI3HXcluZ"
+  },
+  "https://naver.me/xui8wTT7": {
+   "at": "2026-11-16",
+   "final": null,
+   "status": "not_form",
+   "to": "https://m.place.naver.com/share?id=1451740893&tabsPath=%2Fhome&appMode=detail"
   },
   "https://naver.me/xwohEA6j": {
    "at": "2026-11-09",
