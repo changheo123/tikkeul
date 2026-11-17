@@ -2,98 +2,6 @@
  {
   "active": 2437,
   "added": 0,
-  "at": "2026-11-07T10:14:05+09:00",
-  "links": {
-   "checked": 60,
-   "dead": 0,
-   "error": 0,
-   "ok": 60,
-   "skip": 0
-  },
-  "merged": 854,
-  "pruned": 0,
-  "quality": {
-   "excluded": 0,
-   "flagged": 12,
-   "merged": 0
-  },
-  "rejected": 0,
-  "requests": 100,
-  "sec": 102.9,
-  "seeded": 0,
-  "sources": {
-   "busan": {
-    "status": "wait"
-   },
-   "danawa": {
-    "listed": 12,
-    "merged": 12,
-    "new": 0,
-    "requests": 2,
-    "sec": 2.2,
-    "skipped": 0,
-    "status": "ok"
-   },
-   "eventhouse": {
-    "listed": 1040,
-    "merged": 694,
-    "new": 0,
-    "requests": 26,
-    "sec": 27.4,
-    "skipped": 8,
-    "status": "ok"
-   },
-   "events_kr": {
-    "listed": 187,
-    "merged": 0,
-    "new": 0,
-    "requests": 10,
-    "sec": 10.4,
-    "skipped": 0,
-    "status": "ok"
-   },
-   "gangnam": {
-    "status": "off"
-   },
-   "korissue": {
-    "listed": 150,
-    "merged": 148,
-    "new": 0,
-    "requests": 2,
-    "sec": 3.7,
-    "skipped": 2,
-    "status": "ok"
-   },
-   "mohw": {
-    "status": "wait"
-   },
-   "mrblog": {
-    "status": "wait"
-   },
-   "naver": {
-    "status": "wait"
-   },
-   "reviewnote": {
-    "status": "wait"
-   },
-   "sbs": {
-    "status": "wait"
-   },
-   "telegram": {
-    "status": "wait"
-   },
-   "touredu": {
-    "status": "wait"
-   },
-   "youtube": {
-    "status": "wait"
-   }
-  },
-  "total": 4016
- },
- {
-  "active": 2437,
-  "added": 0,
   "at": "2026-11-07T11:00:25+09:00",
   "links": {
    "checked": 60,
@@ -42048,5 +41956,173 @@
    "requests": 0
   },
   "viaLeft": 411
+ },
+ {
+  "active": 2692,
+  "added": 0,
+  "at": "2026-11-18T00:31:44+09:00",
+  "broken": 0,
+  "dates": 0,
+  "elec": 64,
+  "form": {
+   "direct": 0,
+   "eh_checked": 0,
+   "eh_found": 0,
+   "page_err": 0,
+   "page_found": 1,
+   "pages": 12,
+   "short_ok": 1
+  },
+  "formDedupe": 0,
+  "links": {
+   "checked": 60,
+   "dead": 0,
+   "error": 0,
+   "ok": 60,
+   "skip": 0
+  },
+  "merged": 540,
+  "originals": 0,
+  "prizeFill": {
+   "left": 173,
+   "page": 0,
+   "page_err": 1,
+   "pages": 1,
+   "text": 0,
+   "title": 0,
+   "truncated": {
+    "checked": 0,
+    "err": 0,
+    "restored": 0
+   }
+  },
+  "proof": 594,
+  "pruned": 4,
+  "quality": {
+   "excluded": 0,
+   "flagged": 24,
+   "merged": 0
+  },
+  "rejected": 0,
+  "requests": 287,
+  "restricted": {
+   "restricted": 3870,
+   "review": 20
+  },
+  "sec": 598.5,
+  "seeded": 0,
+  "shifted": {
+   "ended": 0,
+   "realigned": 0
+  },
+  "sources": {
+   "busan": {
+    "listed": 3,
+    "merged": 3,
+    "new": 0,
+    "requests": 1,
+    "sec": 1.9,
+    "skipped": 0,
+    "status": "ok"
+   },
+   "contestkorea": {
+    "status": "wait"
+   },
+   "danawa": {
+    "status": "wait"
+   },
+   "eventhouse": {
+    "listed": 400,
+    "merged": 256,
+    "new": 0,
+    "requests": 10,
+    "sec": 11.1,
+    "skipped": 0,
+    "status": "ok"
+   },
+   "eventhouse_search": {
+    "status": "wait"
+   },
+   "events_kr": {
+    "listed": 200,
+    "merged": 0,
+    "new": 0,
+    "requests": 10,
+    "sec": 10.6,
+    "skipped": 0,
+    "status": "ok"
+   },
+   "gangnam": {
+    "status": "off"
+   },
+   "gonggongevent": {
+    "status": "wait"
+   },
+   "korissue": {
+    "listed": 483,
+    "merged": 170,
+    "new": 0,
+    "requests": 5,
+    "sec": 5.8,
+    "skipped": 0,
+    "status": "ok"
+   },
+   "korissue_orgs": {
+    "listed": 1573,
+    "merged": 111,
+    "new": 0,
+    "requests": 200,
+    "sec": 300.6,
+    "skipped": 0,
+    "status": "ok"
+   },
+   "mohw": {
+    "listed": 12,
+    "merged": 0,
+    "new": 0,
+    "requests": 1,
+    "sec": 3.5,
+    "skipped": 0,
+    "status": "ok"
+   },
+   "mrblog": {
+    "status": "wait"
+   },
+   "naver": {
+    "status": "wait"
+   },
+   "reviewnote": {
+    "status": "wait"
+   },
+   "sbs": {
+    "status": "wait"
+   },
+   "telegram": {
+    "status": "wait"
+   },
+   "touredu": {
+    "status": "wait"
+   },
+   "wevity": {
+    "status": "wait"
+   },
+   "youtube": {
+    "status": "wait"
+   },
+   "yuvent": {
+    "status": "wait"
+   }
+  },
+  "total": 7354,
+  "verify": {
+   "checked": 351,
+   "due": 351,
+   "failed": 0,
+   "no_request": 263,
+   "rendered": 25,
+   "requests": 90,
+   "stale_ended": 0
+  },
+  "viaLeft": 397
  }
 ]
