@@ -1,6 +1,7 @@
 {
  "alias": {
   "bs-91540dc991": "hub-bs-288",
+  "ck-14a6dde0b9": "ek-b4ef7df17d",
   "ck-1580bd2a10": "eh-0899d08bcd",
   "ck-35d21fd29a": "eh-7ac40bd97e",
   "ck-3618382248": "eh-1f7c7c7a62",
@@ -26,6 +27,7 @@
   "dn-0ef96bf327": "dn-e2477254db",
   "dn-41352ec7f0": "dn-e29be5e641",
   "dn-7c06e3b5f1": "dn-a7ab923caf",
+  "dn-997eed5064": "dn-0754fdaf14",
   "eh-014ee67409": "eh-5dd74482d2",
   "eh-024bc256eb": "ki-76d83d33a0",
   "eh-0256695884": "eh-82bf21aaff",
@@ -2635,7 +2637,9 @@
    "13238": "ck-d247e02e83",
    "13239": "ck-8294125def",
    "13241": "ck-6c44ae301c",
-   "13243": "ck-cb654b3a5b"
+   "13243": "ck-cb654b3a5b",
+   "13245": "ck-d53d1be1cd",
+   "13246": "ck-14a6dde0b9"
   }
  },
  "eventhouse": {
@@ -2875,6 +2879,7 @@
   }
  },
  "expand": {
+  "https://bit.ly/4t1xzDX": "https://blog.naver.com/PostView.naver?blogId=digital_zone&logNo=224474016040&categoryNo=6&parentCategoryNo=&from=thumbnailList",
   "https://is.gd/maesilcontest": "https://script.google.com/macros/s/AKfycbylu_9QPFSTdMdD6AAEartmvcmmCvthS8ztnOkWAitRhgi75rCOqK4M-E7YTjjYP_yV/exec?from=contest",
   "https://tinyurl.com/3rhtvazp": "https://www.cardif.co.kr/product/financial-safety-check.do?utm_source=viral&utm_medium=social&utm_campaign=fin_safety_2026&utm_content=blog_conkr",
   "https://vo.la/O5a6KCv": "https://m.blog.naver.com/ok_hira/224442524892"
@@ -6588,8 +6593,8 @@
  },
  "lastOk": {
   "busan": "2026-11-17T09:04:44+09:00",
-  "contestkorea": "2026-11-17T07:18:12+09:00",
-  "danawa": "2026-11-17T07:18:12+09:00",
+  "contestkorea": "2026-11-17T10:00:39+09:00",
+  "danawa": "2026-11-17T10:00:39+09:00",
   "eventhouse": "2026-11-17T09:04:44+09:00",
   "eventhouse_search": "2026-11-17T07:18:12+09:00",
   "events_kr": "2026-11-17T09:04:44+09:00",
@@ -6601,13 +6606,13 @@
   "reviewnote": "2026-11-17T07:18:12+09:00",
   "sbs": "2026-11-17T07:18:12+09:00",
   "touredu": "2026-11-17T07:18:12+09:00",
-  "wevity": "2026-11-17T03:17:58+09:00",
+  "wevity": "2026-11-17T10:00:39+09:00",
   "yuvent": "2026-11-17T07:18:12+09:00"
  },
  "lastRun": {
   "busan": "2026-11-17T09:04:44+09:00",
-  "contestkorea": "2026-11-17T07:18:12+09:00",
-  "danawa": "2026-11-17T07:18:12+09:00",
+  "contestkorea": "2026-11-17T10:00:39+09:00",
+  "danawa": "2026-11-17T10:00:39+09:00",
   "eventhouse": "2026-11-17T09:04:44+09:00",
   "eventhouse_search": "2026-11-17T07:18:12+09:00",
   "events_kr": "2026-11-17T09:04:44+09:00",
@@ -6616,12 +6621,12 @@
   "korissue_orgs": "2026-11-17T09:04:44+09:00",
   "mohw": "2026-11-17T09:04:44+09:00",
   "mrblog": "2026-11-17T07:18:12+09:00",
-  "naver": "2026-11-17T07:18:12+09:00",
+  "naver": "2026-11-17T10:00:39+09:00",
   "reviewnote": "2026-11-17T07:18:12+09:00",
   "sbs": "2026-11-17T07:18:12+09:00",
-  "telegram": "2026-11-17T07:18:12+09:00",
+  "telegram": "2026-11-17T10:00:39+09:00",
   "touredu": "2026-11-17T07:18:12+09:00",
-  "wevity": "2026-11-17T03:17:58+09:00",
+  "wevity": "2026-11-17T10:00:39+09:00",
   "youtube": "2026-11-17T07:18:12+09:00",
   "yuvent": "2026-11-17T07:18:12+09:00"
  },
@@ -20077,6 +20082,12 @@
    "status": "form",
    "to": "https://docs.google.com/forms/d/e/1FAIpQLSeFx4tqd2k8WsXt9OFpyo0DC7gIKYpIAD42fosXGqv1U7QqMw/viewform"
   },
+  "https://www.eventhouse.kr/site/fgo.php?fnum=320323&go=4": {
+   "at": "2026-11-17",
+   "final": "https://docs.google.com/forms/d/e/1FAIpQLSd0HvHgwRu3baZ2mjM_emIQsKfBFpQwhcIdKWqokzTOAxkkAg/viewform",
+   "status": "form",
+   "to": "https://docs.google.com/forms/d/e/1FAIpQLSd0HvHgwRu3baZ2mjM_emIQsKfBFpQwhcIdKWqokzTOAxkkAg/viewform?usp=send_form"
+  },
   "https://www.eventhouse.kr/site/fgo.php?fnum=320324&go=4": {
    "at": "2026-11-17",
    "final": null,
@@ -20106,6 +20117,12 @@
    "final": null,
    "status": "not_form",
    "to": "https://www.eventhouse.kr/site/fgo.php?fnum=320328&go=4"
+  },
+  "https://www.eventhouse.kr/site/fgo.php?fnum=320329&go=4": {
+   "at": "2026-11-17",
+   "final": null,
+   "status": "not_form",
+   "to": "https://www.eventhouse.kr/site/fgo.php?fnum=320329&go=4"
   },
   "https://www.eventhouse.kr/site/fgo.php?fnum=320330&go=4": {
    "at": "2026-11-17",
@@ -20179,6 +20196,30 @@
    "status": "not_form",
    "to": "https://www.eventhouse.kr/site/fgo.php?fnum=320341&go=4"
   },
+  "https://www.eventhouse.kr/site/fgo.php?fnum=320342&go=4": {
+   "at": "2026-11-17",
+   "final": null,
+   "status": "not_form",
+   "to": "https://www.eventhouse.kr/site/fgo.php?fnum=320342&go=4"
+  },
+  "https://www.eventhouse.kr/site/fgo.php?fnum=320343&go=4": {
+   "at": "2026-11-17",
+   "final": null,
+   "status": "not_form",
+   "to": "https://www.eventhouse.kr/site/fgo.php?fnum=320343&go=4"
+  },
+  "https://www.eventhouse.kr/site/fgo.php?fnum=320344&go=4": {
+   "at": "2026-11-17",
+   "final": "https://docs.google.com/forms/d/e/1FAIpQLSeibTSdBJHCCpqC6jwRMJ2M4yqIcRQ095Lkn6k2eoLXDHsUPQ/viewform",
+   "status": "form",
+   "to": "https://docs.google.com/forms/d/e/1FAIpQLSeibTSdBJHCCpqC6jwRMJ2M4yqIcRQ095Lkn6k2eoLXDHsUPQ/viewform?usp=send_form"
+  },
+  "https://www.eventhouse.kr/site/fgo.php?fnum=320345&go=4": {
+   "at": "2026-11-17",
+   "final": null,
+   "status": "not_form",
+   "to": "https://www.eventhouse.kr/site/fgo.php?fnum=320345&go=4"
+  },
   "https://www.eventhouse.kr/site/fgo.php?fnum=320346&go=4": {
    "at": "2026-11-17",
    "final": null,
@@ -20190,6 +20231,30 @@
    "final": "https://form.naver.com/response/7JUj0DoJU4O",
    "status": "form",
    "to": "https://form.naver.com/response/7JUj0DoJU4O"
+  },
+  "https://www.eventhouse.kr/site/fgo.php?fnum=320348&go=4": {
+   "at": "2026-11-17",
+   "final": null,
+   "status": "not_form",
+   "to": "https://www.eventhouse.kr/site/fgo.php?fnum=320348&go=4"
+  },
+  "https://www.eventhouse.kr/site/fgo.php?fnum=320349&go=4": {
+   "at": "2026-11-17",
+   "final": "https://docs.google.com/forms/d/e/1FAIpQLSc4RueYjNplEiLYVOoJdToTeGhdzqP_WOXo1BcoddX7uZYuPQ/viewform",
+   "status": "form",
+   "to": "https://docs.google.com/forms/d/e/1FAIpQLSc4RueYjNplEiLYVOoJdToTeGhdzqP_WOXo1BcoddX7uZYuPQ/viewform"
+  },
+  "https://www.eventhouse.kr/site/fgo.php?fnum=320350&go=4": {
+   "at": "2026-11-17",
+   "final": null,
+   "status": "not_form",
+   "to": "https://www.eventhouse.kr/site/fgo.php?fnum=320350&go=4"
+  },
+  "https://www.eventhouse.kr/site/fgo.php?fnum=320351&go=4": {
+   "at": "2026-11-17",
+   "final": "https://form.naver.com/response/DhDSloSZadL",
+   "status": "form",
+   "to": "https://form.naver.com/response/DhDSloSZadL"
   },
   "https://www.eventhouse.kr/site/fgo.php?fnum=320352&go=4": {
    "at": "2026-11-17",
@@ -20215,6 +20280,12 @@
    "status": "not_form",
    "to": "https://www.eventhouse.kr/site/fgo.php?fnum=320355&go=4"
   },
+  "https://www.eventhouse.kr/site/fgo.php?fnum=320356&go=4": {
+   "at": "2026-11-17",
+   "final": "https://form.naver.com/response/ExTdTRaghC6",
+   "status": "form",
+   "to": "https://form.naver.com/response/ExTdTRaghC6"
+  },
   "https://www.eventhouse.kr/site/fgo.php?fnum=320357&go=4": {
    "at": "2026-11-17",
    "final": null,
@@ -20227,6 +20298,12 @@
    "status": "form",
    "to": "https://form.naver.com/response/Kn1dfm2U7fE"
   },
+  "https://www.eventhouse.kr/site/fgo.php?fnum=320359&go=4": {
+   "at": "2026-11-17",
+   "final": null,
+   "status": "not_form",
+   "to": "https://www.eventhouse.kr/site/fgo.php?fnum=320359&go=4"
+  },
   "https://www.eventhouse.kr/site/fgo.php?fnum=320360&go=4": {
    "at": "2026-11-17",
    "final": null,
@@ -20238,6 +20315,24 @@
    "final": null,
    "status": "not_form",
    "to": "https://www.eventhouse.kr/site/fgo.php?fnum=320361&go=4"
+  },
+  "https://www.eventhouse.kr/site/fgo.php?fnum=320362&go=4": {
+   "at": "2026-11-17",
+   "final": "https://docs.google.com/forms/d/e/1FAIpQLSfgEHLClQvOW8wiDEqbvm7-Wkn8iO1imhieV4NDnAI8Gb0sKQ/viewform",
+   "status": "form",
+   "to": "https://docs.google.com/forms/d/e/1FAIpQLSfgEHLClQvOW8wiDEqbvm7-Wkn8iO1imhieV4NDnAI8Gb0sKQ/viewform?usp=send_form"
+  },
+  "https://www.eventhouse.kr/site/fgo.php?fnum=320363&go=4": {
+   "at": "2026-11-17",
+   "final": null,
+   "status": "not_form",
+   "to": "https://www.eventhouse.kr/site/fgo.php?fnum=320363&go=4"
+  },
+  "https://www.eventhouse.kr/site/fgo.php?fnum=320364&go=4": {
+   "at": "2026-11-17",
+   "final": "https://docs.google.com/forms/d/e/1FAIpQLSdPhTf3yi0GnTata775mp6Yhuifa7R7ad08hipZlvl6WAxpJw/viewform",
+   "status": "form",
+   "to": "https://docs.google.com/forms/d/e/1FAIpQLSdPhTf3yi0GnTata775mp6Yhuifa7R7ad08hipZlvl6WAxpJw/viewform?usp=send_form"
   },
   "https://www.eventhouse.kr/site/fgo.php?fnum=320365&go=4": {
    "at": "2026-11-17",
@@ -20256,6 +20351,18 @@
    "final": "https://docs.google.com/forms/d/e/1FAIpQLScj6X4chbWzMQZiB-7eUS5D0XocvTYgMZ7VgSZN9IkGKfLNSA/viewform",
    "status": "form",
    "to": "https://docs.google.com/forms/d/e/1FAIpQLScj6X4chbWzMQZiB-7eUS5D0XocvTYgMZ7VgSZN9IkGKfLNSA/viewform"
+  },
+  "https://www.eventhouse.kr/site/fgo.php?fnum=320368&go=4": {
+   "at": "2026-11-17",
+   "final": null,
+   "status": "not_form",
+   "to": "https://www.eventhouse.kr/site/fgo.php?fnum=320368&go=4"
+  },
+  "https://www.eventhouse.kr/site/fgo.php?fnum=320369&go=4": {
+   "at": "2026-11-17",
+   "final": "https://form.naver.com/response/HP9H1emFCuo",
+   "status": "form",
+   "to": "https://form.naver.com/response/HP9H1emFCuo"
   },
   "https://www.eventhouse.kr/site/fgo.php?fnum=320370&go=4": {
    "at": "2026-11-17",
@@ -20287,11 +20394,23 @@
    "status": "form",
    "to": "https://form.naver.com/response/EJlAnPEImHe"
   },
+  "https://www.eventhouse.kr/site/fgo.php?fnum=320375&go=4": {
+   "at": "2026-11-17",
+   "final": "https://docs.google.com/forms/d/e/1FAIpQLSd9h58gGW6tsbEk8Yhr7OflbBEczLmlJHtRKca33DyVjz8ttg/viewform",
+   "status": "form",
+   "to": "https://docs.google.com/forms/d/e/1FAIpQLSd9h58gGW6tsbEk8Yhr7OflbBEczLmlJHtRKca33DyVjz8ttg/viewform?usp=send_form"
+  },
   "https://www.eventhouse.kr/site/fgo.php?fnum=320376&go=4": {
    "at": "2026-11-17",
    "final": null,
    "status": "not_form",
    "to": "https://www.eventhouse.kr/site/fgo.php?fnum=320376&go=4"
+  },
+  "https://www.eventhouse.kr/site/fgo.php?fnum=320377&go=4": {
+   "at": "2026-11-17",
+   "final": null,
+   "status": "not_form",
+   "to": "https://survey.gg.go.kr/app/onvy/qestnnm.do?onvySn=548"
   },
   "https://www.eventhouse.kr/site/fgo.php?fnum=320378&go=4": {
    "at": "2026-11-17",
@@ -20305,11 +20424,29 @@
    "status": "not_form",
    "to": "https://www.eventhouse.kr/site/fgo.php?fnum=320379&go=4"
   },
+  "https://www.eventhouse.kr/site/fgo.php?fnum=320380&go=4": {
+   "at": "2026-11-17",
+   "final": null,
+   "status": "not_form",
+   "to": "https://www.eventhouse.kr/site/fgo.php?fnum=320380&go=4"
+  },
+  "https://www.eventhouse.kr/site/fgo.php?fnum=320381&go=4": {
+   "at": "2026-11-17",
+   "final": null,
+   "status": "not_form",
+   "to": "https://www.eventhouse.kr/site/fgo.php?fnum=320381&go=4"
+  },
   "https://www.eventhouse.kr/site/fgo.php?fnum=320382&go=4": {
    "at": "2026-11-17",
    "final": null,
    "status": "not_form",
    "to": "https://gov.catchsecu.com/projects/1de4452db213f93/form"
+  },
+  "https://www.eventhouse.kr/site/fgo.php?fnum=320383&go=4": {
+   "at": "2026-11-17",
+   "final": "https://form.naver.com/response/J2yaLxtXUb6",
+   "status": "form",
+   "to": "https://form.naver.com/response/J2yaLxtXUb6"
   },
   "https://www.eventhouse.kr/site/fgo.php?fnum=320384&go=4": {
    "at": "2026-11-17",
@@ -20323,11 +20460,59 @@
    "status": "form",
    "to": "https://docs.google.com/forms/d/e/1FAIpQLSdm4qz5zG2JW05eDnue-WvkLlr99ghTq17Zl3WtfHXSEoCy3w/viewform?usp=send_form"
   },
+  "https://www.eventhouse.kr/site/fgo.php?fnum=320386&go=4": {
+   "at": "2026-11-17",
+   "final": "https://form.naver.com/response/JpSZG0BqFI9",
+   "status": "form",
+   "to": "https://form.naver.com/response/JpSZG0BqFI9"
+  },
+  "https://www.eventhouse.kr/site/fgo.php?fnum=320387&go=4": {
+   "at": "2026-11-17",
+   "final": null,
+   "status": "not_form",
+   "to": "https://www.eventhouse.kr/site/fgo.php?fnum=320387&go=4"
+  },
+  "https://www.eventhouse.kr/site/fgo.php?fnum=320388&go=4": {
+   "at": "2026-11-17",
+   "final": "https://form.naver.com/response/9V12TYkBCm7",
+   "status": "form",
+   "to": "https://form.naver.com/response/9V12TYkBCm7"
+  },
+  "https://www.eventhouse.kr/site/fgo.php?fnum=320389&go=4": {
+   "at": "2026-11-17",
+   "final": "https://docs.google.com/forms/d/e/1FAIpQLSeDl_hIC9DCHxzFqlGv19vJM89mvcWLiQ96UTYsRHRW3eQw6g/viewform",
+   "status": "form",
+   "to": "https://docs.google.com/forms/d/e/1FAIpQLSeDl_hIC9DCHxzFqlGv19vJM89mvcWLiQ96UTYsRHRW3eQw6g/viewform?usp=send_form"
+  },
+  "https://www.eventhouse.kr/site/fgo.php?fnum=320390&go=4": {
+   "at": "2026-11-17",
+   "final": "https://docs.google.com/forms/d/e/1FAIpQLScLztr4URwK2rsCo-l7n1FreX-KGXjp5kkZ9JuEHxq1Vy3gUg/viewform",
+   "status": "form",
+   "to": "https://docs.google.com/forms/d/e/1FAIpQLScLztr4URwK2rsCo-l7n1FreX-KGXjp5kkZ9JuEHxq1Vy3gUg/viewform?usp=send_form"
+  },
+  "https://www.eventhouse.kr/site/fgo.php?fnum=320391&go=4": {
+   "at": "2026-11-17",
+   "final": null,
+   "status": "not_form",
+   "to": "https://www.eventhouse.kr/site/fgo.php?fnum=320391&go=4"
+  },
+  "https://www.eventhouse.kr/site/fgo.php?fnum=320392&go=4": {
+   "at": "2026-11-17",
+   "final": null,
+   "status": "not_form",
+   "to": "https://seolmoon.com/Join/index.html"
+  },
   "https://www.eventhouse.kr/site/fgo.php?fnum=320393&go=4": {
    "at": "2026-11-17",
    "final": null,
    "status": "not_form",
    "to": "https://www.eventhouse.kr/site/fgo.php?fnum=320393&go=4"
+  },
+  "https://www.eventhouse.kr/site/fgo.php?fnum=320394&go=4": {
+   "at": "2026-11-17",
+   "final": null,
+   "status": "not_form",
+   "to": "https://www.eventhouse.kr/site/fgo.php?fnum=320394&go=4"
   },
   "https://www.eventhouse.kr/site/fgo.php?fnum=320395&go=4": {
    "at": "2026-11-17",
@@ -20335,17 +20520,47 @@
    "status": "not_form",
    "to": "https://www.eventhouse.kr/site/fgo.php?fnum=320395&go=4"
   },
+  "https://www.eventhouse.kr/site/fgo.php?fnum=320396&go=4": {
+   "at": "2026-11-17",
+   "final": null,
+   "status": "not_form",
+   "to": "https://www.eventhouse.kr/site/fgo.php?fnum=320396&go=4"
+  },
+  "https://www.eventhouse.kr/site/fgo.php?fnum=320397&go=4": {
+   "at": "2026-11-17",
+   "final": null,
+   "status": "not_form",
+   "to": "https://www.eventhouse.kr/site/fgo.php?fnum=320397&go=4"
+  },
   "https://www.eventhouse.kr/site/fgo.php?fnum=320398&go=4": {
    "at": "2026-11-17",
    "final": null,
    "status": "not_form",
    "to": "https://www.eventhouse.kr/site/fgo.php?fnum=320398&go=4"
   },
+  "https://www.eventhouse.kr/site/fgo.php?fnum=320399&go=4": {
+   "at": "2026-11-17",
+   "final": null,
+   "status": "not_form",
+   "to": "https://www.eventhouse.kr/site/fgo.php?fnum=320399&go=4"
+  },
+  "https://www.eventhouse.kr/site/fgo.php?fnum=320400&go=4": {
+   "at": "2026-11-17",
+   "final": null,
+   "status": "not_form",
+   "to": "https://www.eventhouse.kr/site/fgo.php?fnum=320400&go=4"
+  },
   "https://www.eventhouse.kr/site/fgo.php?fnum=320401&go=4": {
    "at": "2026-11-17",
    "final": null,
    "status": "not_form",
    "to": "https://www.eventhouse.kr/site/fgo.php?fnum=320401&go=4"
+  },
+  "https://www.eventhouse.kr/site/fgo.php?fnum=320402&go=4": {
+   "at": "2026-11-17",
+   "final": "https://form.naver.com/response/ALYpAIviibW",
+   "status": "form",
+   "to": "https://form.naver.com/response/ALYpAIviibW"
   },
   "https://www.eventhouse.kr/site/fgo.php?fnum=320403&go=4": {
    "at": "2026-11-17",
@@ -20359,11 +20574,23 @@
    "status": "form",
    "to": "https://docs.google.com/forms/d/e/1FAIpQLScbULxGiqtyLKZudfC277jBbyqD3F9ARdtvrijmKfpslPKqsw/viewform?usp=send_form"
   },
+  "https://www.eventhouse.kr/site/fgo.php?fnum=320405&go=4": {
+   "at": "2026-11-17",
+   "final": null,
+   "status": "not_form",
+   "to": "https://www.eventhouse.kr/site/fgo.php?fnum=320405&go=4"
+  },
   "https://www.eventhouse.kr/site/fgo.php?fnum=320406&go=4": {
    "at": "2026-11-17",
    "final": null,
    "status": "not_form",
    "to": "https://www.eventhouse.kr/site/fgo.php?fnum=320406&go=4"
+  },
+  "https://www.eventhouse.kr/site/fgo.php?fnum=320407&go=4": {
+   "at": "2026-11-17",
+   "final": null,
+   "status": "not_form",
+   "to": "https://www.eventhouse.kr/site/fgo.php?fnum=320407&go=4"
   }
  },
  "touredu": {
