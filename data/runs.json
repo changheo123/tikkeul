@@ -2,88 +2,6 @@
  {
   "active": 2458,
   "added": 0,
-  "at": "2026-11-07T14:32:07+09:00",
-  "links": {
-   "checked": 60,
-   "dead": 0,
-   "error": 0,
-   "ok": 60,
-   "skip": 0
-  },
-  "merged": 5,
-  "pruned": 0,
-  "quality": {
-   "excluded": 0,
-   "flagged": 12,
-   "merged": 0
-  },
-  "rejected": 0,
-  "requests": 62,
-  "sec": 64.6,
-  "seeded": 0,
-  "sources": {
-   "busan": {
-    "listed": 5,
-    "merged": 5,
-    "new": 0,
-    "requests": 1,
-    "sec": 2.3,
-    "skipped": 0,
-    "status": "ok"
-   },
-   "danawa": {
-    "status": "wait"
-   },
-   "eventhouse": {
-    "status": "wait"
-   },
-   "events_kr": {
-    "status": "wait"
-   },
-   "gangnam": {
-    "status": "off"
-   },
-   "korissue": {
-    "status": "wait"
-   },
-   "mohw": {
-    "listed": 12,
-    "merged": 0,
-    "new": 0,
-    "requests": 1,
-    "sec": 2.9,
-    "skipped": 0,
-    "status": "ok"
-   },
-   "mrblog": {
-    "status": "wait"
-   },
-   "naver": {
-    "reason": "NAVER_CLIENT_ID/SECRET 없음",
-    "status": "unconfigured"
-   },
-   "reviewnote": {
-    "status": "wait"
-   },
-   "sbs": {
-    "status": "wait"
-   },
-   "telegram": {
-    "reason": "수집할 공개 채널 목록이 비어 있음",
-    "status": "unconfigured"
-   },
-   "touredu": {
-    "status": "wait"
-   },
-   "youtube": {
-    "status": "wait"
-   }
-  },
-  "total": 4037
- },
- {
-  "active": 2458,
-  "added": 0,
   "at": "2026-11-07T15:24:34+09:00",
   "links": {
    "checked": 60,
@@ -42461,6 +42379,187 @@
    "no_request": 0,
    "rendered": 0,
    "requests": 0
+  },
+  "viaLeft": 395
+ },
+ {
+  "active": 2805,
+  "added": 12,
+  "at": "2026-11-18T05:14:11+09:00",
+  "broken": 0,
+  "dates": 0,
+  "elec": 64,
+  "form": {
+   "direct": 0,
+   "eh_checked": 0,
+   "eh_found": 0,
+   "page_err": 0,
+   "page_found": 0,
+   "pages": 0,
+   "short_ok": 0
+  },
+  "formDedupe": 0,
+  "links": {
+   "checked": 60,
+   "dead": 0,
+   "error": 0,
+   "ok": 60,
+   "skip": 1
+  },
+  "merged": 161,
+  "originals": 0,
+  "prizeFill": {
+   "left": 188,
+   "page": 0,
+   "page_err": 0,
+   "pages": 0,
+   "text": 0,
+   "title": 0,
+   "truncated": {
+    "checked": 0,
+    "err": 0,
+    "restored": 0
+   }
+  },
+  "proof": 596,
+  "pruned": 0,
+  "quality": {
+   "excluded": 0,
+   "flagged": 24,
+   "merged": 0
+  },
+  "rejected": 0,
+  "requests": 91,
+  "restricted": {
+   "restricted": 3965,
+   "review": 20
+  },
+  "sec": 125.5,
+  "seeded": 0,
+  "shifted": {
+   "ended": 0,
+   "realigned": 0
+  },
+  "sources": {
+   "busan": {
+    "status": "wait"
+   },
+   "contestkorea": {
+    "status": "wait"
+   },
+   "danawa": {
+    "status": "wait"
+   },
+   "eventhouse": {
+    "status": "wait"
+   },
+   "eventhouse_search": {
+    "listed": 21,
+    "merged": 20,
+    "new": 0,
+    "requests": 19,
+    "sec": 21.3,
+    "skipped": 1,
+    "status": "ok"
+   },
+   "events_kr": {
+    "status": "wait"
+   },
+   "gangnam": {
+    "status": "off"
+   },
+   "gonggongevent": {
+    "listed": 60,
+    "merged": 9,
+    "new": 0,
+    "requests": 3,
+    "sec": 3.5,
+    "skipped": 51,
+    "status": "ok"
+   },
+   "korissue": {
+    "status": "wait"
+   },
+   "korissue_orgs": {
+    "status": "wait"
+   },
+   "mohw": {
+    "status": "wait"
+   },
+   "mrblog": {
+    "listed": 30,
+    "merged": 20,
+    "new": 8,
+    "requests": 1,
+    "sec": 4.0,
+    "skipped": 2,
+    "status": "ok"
+   },
+   "naver": {
+    "status": "wait"
+   },
+   "reviewnote": {
+    "listed": 82,
+    "merged": 77,
+    "new": 3,
+    "requests": 1,
+    "sec": 0.7,
+    "skipped": 2,
+    "status": "ok"
+   },
+   "sbs": {
+    "listed": 15,
+    "merged": 7,
+    "new": 0,
+    "requests": 1,
+    "sec": 2.2,
+    "skipped": 8,
+    "status": "ok"
+   },
+   "telegram": {
+    "status": "wait"
+   },
+   "touredu": {
+    "listed": 3,
+    "merged": 0,
+    "new": 0,
+    "requests": 1,
+    "sec": 1.9,
+    "skipped": 0,
+    "status": "ok"
+   },
+   "wevity": {
+    "listed": 1,
+    "merged": 0,
+    "new": 0,
+    "requests": 2,
+    "sec": 4.2,
+    "skipped": 0,
+    "status": "ok"
+   },
+   "youtube": {
+    "reason": "YT_API_KEY 없음",
+    "status": "unconfigured"
+   },
+   "yuvent": {
+    "listed": 60,
+    "merged": 28,
+    "new": 1,
+    "requests": 3,
+    "sec": 4.4,
+    "skipped": 31,
+    "status": "ok"
+   }
+  },
+  "total": 7467,
+  "verify": {
+   "checked": 12,
+   "due": 12,
+   "failed": 0,
+   "no_request": 1,
+   "rendered": 3,
+   "requests": 11,
+   "stale_ended": 0
   },
   "viaLeft": 395
  }
