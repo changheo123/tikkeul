@@ -29568,6 +29568,20 @@
    "verification_reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)",
    "verification_status": "needs_review"
   },
+  "mb-2e94667ea7": {
+   "candidate_url": "https://www.mrblog.net/campaigns/1152809",
+   "destination_checked": false,
+   "entry_type": "website",
+   "entry_url": null,
+   "last_checked_at": "2026-11-20",
+   "link_evidence": "source_row",
+   "original_url": null,
+   "verification_code": "login",
+   "verification_evidence_url": null,
+   "verification_grade": "B",
+   "verification_reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)",
+   "verification_status": "needs_review"
+  },
   "mb-2f026ea6bb": {
    "candidate_url": "https://www.mrblog.net/campaigns/1149851",
    "destination_checked": false,
@@ -29700,6 +29714,20 @@
    "entry_type": "website",
    "entry_url": null,
    "last_checked_at": "2026-11-10",
+   "link_evidence": "source_row",
+   "original_url": null,
+   "verification_code": "login",
+   "verification_evidence_url": null,
+   "verification_grade": "B",
+   "verification_reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)",
+   "verification_status": "needs_review"
+  },
+  "mb-34f72854bc": {
+   "candidate_url": "https://www.mrblog.net/campaigns/1152765",
+   "destination_checked": false,
+   "entry_type": "website",
+   "entry_url": null,
+   "last_checked_at": "2026-11-20",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -30072,6 +30100,20 @@
    "verification_reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)",
    "verification_status": "needs_review"
   },
+  "mb-438d07771b": {
+   "candidate_url": "https://www.mrblog.net/campaigns/1153654",
+   "destination_checked": false,
+   "entry_type": "website",
+   "entry_url": null,
+   "last_checked_at": "2026-11-20",
+   "link_evidence": "source_row",
+   "original_url": null,
+   "verification_code": "login",
+   "verification_evidence_url": null,
+   "verification_grade": "B",
+   "verification_reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)",
+   "verification_status": "needs_review"
+  },
   "mb-43f1b8fa1c": {
    "candidate_url": "https://www.mrblog.net/campaigns/1150603",
    "destination_checked": false,
@@ -30302,6 +30344,20 @@
    "entry_type": "website",
    "entry_url": null,
    "last_checked_at": "2026-11-14",
+   "link_evidence": "source_row",
+   "original_url": null,
+   "verification_code": "login",
+   "verification_evidence_url": null,
+   "verification_grade": "B",
+   "verification_reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)",
+   "verification_status": "needs_review"
+  },
+  "mb-4be019ab7d": {
+   "candidate_url": "https://www.mrblog.net/campaigns/1152756",
+   "destination_checked": false,
+   "entry_type": "website",
+   "entry_url": null,
+   "last_checked_at": "2026-11-20",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -32682,6 +32738,20 @@
    "entry_type": "website",
    "entry_url": null,
    "last_checked_at": "2026-11-10",
+   "link_evidence": "source_row",
+   "original_url": null,
+   "verification_code": "login",
+   "verification_evidence_url": null,
+   "verification_grade": "B",
+   "verification_reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)",
+   "verification_status": "needs_review"
+  },
+  "mb-b13f842305": {
+   "candidate_url": "https://www.mrblog.net/campaigns/1152747",
+   "destination_checked": false,
+   "entry_type": "website",
+   "entry_url": null,
+   "last_checked_at": "2026-11-20",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -83692,6 +83762,20 @@
    "verification_reason": "폼 내용은 이벤트와 일치하지만 공식 공지의 직접 연결은 확인하지 못함",
    "verification_status": "needs_review"
   },
+  "yv-4ba05968d1": {
+   "candidate_url": "https://www.youtube.com/watch?v=eYRtGFhVRvk",
+   "destination_checked": false,
+   "entry_type": "youtube",
+   "entry_url": null,
+   "last_checked_at": "2026-11-20",
+   "link_evidence": "source_row",
+   "original_url": null,
+   "verification_code": "sns_no_fetch",
+   "verification_evidence_url": null,
+   "verification_grade": "B",
+   "verification_reason": "이벤트 글에 적힌 게시물이지만 약관·robots상 내용을 읽을 수 없음",
+   "verification_status": "needs_review"
+  },
   "yv-4cb77f73f5": {
    "candidate_url": "https://www.youtube.com/watch?v=Wm-0qoA92To",
    "destination_checked": false,
@@ -85434,6 +85518,20 @@
    "entry_type": "youtube",
    "entry_url": null,
    "last_checked_at": "2026-11-19",
+   "link_evidence": "source_row",
+   "original_url": null,
+   "verification_code": "sns_no_fetch",
+   "verification_evidence_url": null,
+   "verification_grade": "B",
+   "verification_reason": "이벤트 글에 적힌 게시물이지만 약관·robots상 내용을 읽을 수 없음",
+   "verification_status": "needs_review"
+  },
+  "yv-be63116422": {
+   "candidate_url": "https://www.youtube.com/watch?v=61rIzlhXohc",
+   "destination_checked": false,
+   "entry_type": "youtube",
+   "entry_url": null,
+   "last_checked_at": "2026-11-20",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "sns_no_fetch",
@@ -99539,6 +99637,10 @@
    "at": "2026-11-19",
    "status": "login"
   },
+  "https://www.mrblog.net/campaigns/1152747": {
+   "at": "2026-11-20",
+   "status": "login"
+  },
   "https://www.mrblog.net/campaigns/1152748": {
    "at": "2026-11-20",
    "status": "login"
@@ -99548,6 +99650,10 @@
    "status": "login"
   },
   "https://www.mrblog.net/campaigns/1152754": {
+   "at": "2026-11-20",
+   "status": "login"
+  },
+  "https://www.mrblog.net/campaigns/1152756": {
    "at": "2026-11-20",
    "status": "login"
   },
@@ -99567,6 +99673,10 @@
    "at": "2026-11-20",
    "status": "login"
   },
+  "https://www.mrblog.net/campaigns/1152765": {
+   "at": "2026-11-20",
+   "status": "login"
+  },
   "https://www.mrblog.net/campaigns/1152766": {
    "at": "2026-11-20",
    "status": "login"
@@ -99576,6 +99686,10 @@
    "status": "login"
   },
   "https://www.mrblog.net/campaigns/1152780": {
+   "at": "2026-11-20",
+   "status": "login"
+  },
+  "https://www.mrblog.net/campaigns/1152809": {
    "at": "2026-11-20",
    "status": "login"
   },
@@ -99696,6 +99810,10 @@
    "status": "login"
   },
   "https://www.mrblog.net/campaigns/1153527": {
+   "at": "2026-11-20",
+   "status": "login"
+  },
+  "https://www.mrblog.net/campaigns/1153654": {
    "at": "2026-11-20",
    "status": "login"
   },
