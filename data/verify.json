@@ -630,6 +630,20 @@
    "verification_reason": "공지는 확인했지만 참여 방법을 찾지 못함",
    "verification_status": "needs_review"
   },
+  "ck-cb8150a872": {
+   "candidate_url": "https://www.instagram.com/p/Df51Xh1zVh5/?hl=ko",
+   "destination_checked": false,
+   "entry_type": "instagram",
+   "entry_url": null,
+   "last_checked_at": "2026-11-19",
+   "link_evidence": "source_row",
+   "original_url": null,
+   "verification_code": "sns_no_fetch",
+   "verification_evidence_url": null,
+   "verification_grade": "B",
+   "verification_reason": "이벤트 글에 적힌 게시물이지만 약관·robots상 내용을 읽을 수 없음",
+   "verification_status": "needs_review"
+  },
   "ck-cc5e71202e": {
    "candidate_url": null,
    "destination_checked": true,
