@@ -26908,6 +26908,20 @@
    "verification_reason": "이벤트 글에 적힌 게시물이지만 약관·robots상 내용을 읽을 수 없음",
    "verification_status": "needs_review"
   },
+  "ki-7c240cc40a": {
+   "candidate_url": "https://lovecard.jb.go.kr/planweb/board/view.9is?dataUid=52df5b20a0adb71e01a15ce1a0825786&page=1&boardUid=ff80808180d9ba9e018140fcd16c0295&contentUid=ff80808180d9ba9e01813c0332160094&searchType=&keyword=&categoryUid1=&categoryUid2=&cateogryUid3#2",
+   "destination_checked": false,
+   "entry_type": "website",
+   "entry_url": null,
+   "last_checked_at": "2026-11-19",
+   "link_evidence": "source_row",
+   "original_url": null,
+   "verification_code": "error",
+   "verification_evidence_url": null,
+   "verification_grade": "B",
+   "verification_reason": "페이지 접속 오류 (이벤트 글에 적힌 주소)",
+   "verification_status": "needs_review"
+  },
   "ki-7c7c260089": {
    "candidate_url": null,
    "destination_checked": false,
@@ -27060,6 +27074,20 @@
    "verification_evidence_url": null,
    "verification_grade": "B",
    "verification_reason": "로그인이 필요한 폼이라 내용을 확인하지 못함 (이벤트 글에 적힌 폼)",
+   "verification_status": "needs_review"
+  },
+  "ki-8871e10361": {
+   "candidate_url": "https://form.naver.com/response/DW0EhNrQAIE",
+   "destination_checked": false,
+   "entry_type": "form",
+   "entry_url": null,
+   "last_checked_at": "2026-11-19",
+   "link_evidence": "form_content",
+   "original_url": null,
+   "verification_code": "form_self",
+   "verification_evidence_url": "https://form.naver.com/response/DW0EhNrQAIE",
+   "verification_grade": "B",
+   "verification_reason": "폼 내용은 이벤트와 일치하지만 공식 공지의 직접 연결은 확인하지 못함",
    "verification_status": "needs_review"
   },
   "ki-8b95c57344": {
@@ -93295,6 +93323,10 @@
   "https://kspo.or.kr/contest": {
    "at": "2026-11-10",
    "status": "robots"
+  },
+  "https://lovecard.jb.go.kr/planweb/board/view.9is?dataUid=52df5b20a0adb71e01a15ce1a0825786&page=1&boardUid=ff80808180d9ba9e018140fcd16c0295&contentUid=ff80808180d9ba9e01813c0332160094&searchType=&keyword=&categoryUid1=&categoryUid2=&cateogryUid3#2": {
+   "at": "2026-11-19",
+   "status": "error"
   },
   "https://rang.edunet.net/main.do": {
    "at": "2026-11-09",
