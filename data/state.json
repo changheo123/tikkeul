@@ -3172,6 +3172,7 @@
    "260": "ek-09d66f6e54",
    "261": "ek-5d00f2c628",
    "262": "ek-1106a1dda2",
+   "263": "ek-065f8e41a2",
    "27": "ek-bc33ea4e26",
    "28": "ek-0a57cb53ba",
    "29": "ek-7719a1c782",
@@ -7577,16 +7578,16 @@
   }
  },
  "lastOk": {
-  "busan": "2026-11-19T20:52:39+09:00",
-  "contestkorea": "2026-11-19T19:59:34+09:00",
-  "danawa": "2026-11-19T19:59:34+09:00",
-  "eventhouse": "2026-11-19T20:52:39+09:00",
+  "busan": "2026-11-19T22:28:23+09:00",
+  "contestkorea": "2026-11-19T22:28:23+09:00",
+  "danawa": "2026-11-19T22:28:23+09:00",
+  "eventhouse": "2026-11-19T22:28:23+09:00",
   "eventhouse_search": "2026-11-19T20:52:39+09:00",
-  "events_kr": "2026-11-19T20:52:39+09:00",
+  "events_kr": "2026-11-19T22:28:23+09:00",
   "gonggongevent": "2026-11-19T20:52:39+09:00",
-  "korissue": "2026-11-19T20:52:39+09:00",
-  "korissue_orgs": "2026-11-19T20:52:39+09:00",
-  "mohw": "2026-11-19T20:52:39+09:00",
+  "korissue": "2026-11-19T22:28:23+09:00",
+  "korissue_orgs": "2026-11-19T22:28:23+09:00",
+  "mohw": "2026-11-19T22:28:23+09:00",
   "mrblog": "2026-11-19T20:52:39+09:00",
   "reviewnote": "2026-11-19T20:52:39+09:00",
   "sbs": "2026-11-19T20:52:39+09:00",
@@ -7595,21 +7596,21 @@
   "yuvent": "2026-11-19T20:52:39+09:00"
  },
  "lastRun": {
-  "busan": "2026-11-19T20:52:39+09:00",
-  "contestkorea": "2026-11-19T19:59:34+09:00",
-  "danawa": "2026-11-19T19:59:34+09:00",
-  "eventhouse": "2026-11-19T20:52:39+09:00",
+  "busan": "2026-11-19T22:28:23+09:00",
+  "contestkorea": "2026-11-19T22:28:23+09:00",
+  "danawa": "2026-11-19T22:28:23+09:00",
+  "eventhouse": "2026-11-19T22:28:23+09:00",
   "eventhouse_search": "2026-11-19T20:52:39+09:00",
-  "events_kr": "2026-11-19T20:52:39+09:00",
+  "events_kr": "2026-11-19T22:28:23+09:00",
   "gonggongevent": "2026-11-19T20:52:39+09:00",
-  "korissue": "2026-11-19T20:52:39+09:00",
-  "korissue_orgs": "2026-11-19T20:52:39+09:00",
-  "mohw": "2026-11-19T20:52:39+09:00",
+  "korissue": "2026-11-19T22:28:23+09:00",
+  "korissue_orgs": "2026-11-19T22:28:23+09:00",
+  "mohw": "2026-11-19T22:28:23+09:00",
   "mrblog": "2026-11-19T20:52:39+09:00",
-  "naver": "2026-11-19T19:59:34+09:00",
+  "naver": "2026-11-19T22:28:23+09:00",
   "reviewnote": "2026-11-19T20:52:39+09:00",
   "sbs": "2026-11-19T20:52:39+09:00",
-  "telegram": "2026-11-19T19:59:34+09:00",
+  "telegram": "2026-11-19T22:28:23+09:00",
   "touredu": "2026-11-19T20:52:39+09:00",
   "wevity": "2026-11-19T20:52:39+09:00",
   "youtube": "2026-11-19T20:52:39+09:00",
@@ -9454,11 +9455,47 @@
    "status": "not_form",
    "to": "https://play.google.com/store/apps/details?id=com.kr.goale.app&pcampaignid=web_share&pli=1"
   },
+  "https://url.kr/h7497m": {
+   "at": "2026-11-19",
+   "final": null,
+   "status": "not_form",
+   "to": "https://youtu.be/SBPzcdtYSfo"
+  },
   "https://url.kr/hj36p8": {
    "at": "2026-11-19",
    "final": null,
    "status": "not_form",
    "to": "https://modu.go.kr/fron/jdgmn/jdgmnView.do?menu_id=393&qustnr_id=ece652fe5b7248f981439e48bbb2950e&searchQustnrSttusCode=&search_sj_cn=&search_orgNm=&search_code=sj_cn&search_txt=&qustnr_bgnde=&qustnr_"
+  },
+  "https://url.kr/manifest": {
+   "at": "2026-11-19",
+   "final": null,
+   "status": "error",
+   "to": "https://url.kr/pages/404page.php"
+  },
+  "https://url.kr/new": {
+   "at": "2026-11-19",
+   "final": null,
+   "status": "not_form",
+   "to": "https://url.kr/pages/premium_keyword_info.php"
+  },
+  "https://url.kr/s": {
+   "at": "2026-11-19",
+   "final": null,
+   "status": "error",
+   "to": "https://url.kr/pages/404page.php"
+  },
+  "https://url.kr/t": {
+   "at": "2026-11-19",
+   "final": null,
+   "status": "error",
+   "to": "https://url.kr/pages/404page.php"
+  },
+  "https://url.kr/undefined": {
+   "at": "2026-11-19",
+   "final": null,
+   "status": "error",
+   "to": "https://url.kr/pages/404page.php"
   },
   "https://url.kr/wg1sxr": {
    "at": "2026-11-19",
