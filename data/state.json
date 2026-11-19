@@ -330,6 +330,7 @@
   "ek-d435a6cdd7": "ek-4d134bc072",
   "ek-dc685e2c3f": "e183",
   "gg-4c06fd8af3": "ck-6518eacc22",
+  "gg-de34cf91eb": "eh-a06658a5dc",
   "ki-00050f3230": "eh-a0ffdd7864",
   "ki-0011eaa43b": "eh-d14ba6c7ab",
   "ki-002ff6b62f": "eh-9eeb7ed98a",
@@ -2494,6 +2495,7 @@
   "mb-d663269591": "mb-d678479dab",
   "mb-d8f7babb58": "mb-616ae5e6d6",
   "mb-d9c3fc7a97": "mb-7b38cedb8d",
+  "mb-ea9b92b9e8": "mb-3947d770e7",
   "mb-ed21ea85a3": "mb-9956955d30",
   "mb-ef08f2a261": "mb-3947d770e7",
   "mb-effb21f939": "mb-f52c4ab77d",
@@ -2549,6 +2551,7 @@
   "rn-2590a39927": "rn-934f60f74b",
   "rn-25ff48a083": "rn-1fb223585e",
   "rn-2716cec93f": "rn-137f53a66d",
+  "rn-27cce14203": "rn-5c961acc11",
   "rn-2b82c1da98": "rn-d66157ce74",
   "rn-2be634bf8d": "rn-7e409ae96b",
   "rn-2c4fe82426": "rn-fdb8e1cbc6",
@@ -2557,6 +2560,7 @@
   "rn-346c582ba5": "rn-04f0f730f0",
   "rn-3481276381": "rn-da3a764b2d",
   "rn-35d3190e68": "rn-7e409ae96b",
+  "rn-36e2c534e4": "rn-ee6d03ba8d",
   "rn-37d06257aa": "rn-b4fbb75c01",
   "rn-37da409f1e": "rn-ed4dbf887c",
   "rn-37f501954e": "rn-7f7c60709b",
@@ -2607,6 +2611,7 @@
   "rn-5cf9fe3e30": "rn-1d76b1240f",
   "rn-5d750af5fc": "rn-e8e50c2579",
   "rn-5e0f6150dd": "rn-7129f479d7",
+  "rn-5ed4484dfd": "rn-d7c70e6ad0",
   "rn-5f638fedf5": "rn-0b70d95e81",
   "rn-5fe8964232": "rn-61e24d3fb1",
   "rn-603459b5a3": "rn-c02b73c5da",
@@ -2682,6 +2687,7 @@
   "rn-9fdddb621d": "rn-38b0bf990d",
   "rn-a03137af0a": "rn-2daff05e03",
   "rn-a0989f5018": "rn-ada89c3002",
+  "rn-a0a262b696": "rn-5c961acc11",
   "rn-a1d3ce51be": "rn-53cc35ce82",
   "rn-a26652c11a": "rn-19e337ae85",
   "rn-a34c93a892": "rn-7f7c60709b",
@@ -3137,7 +3143,7 @@
   "https://vo.la/O5a6KCv": "https://m.blog.naver.com/ok_hira/224442524892"
  },
  "fails": {
-  "busan": 11,
+  "busan": 12,
   "contestkorea": 0,
   "danawa": 0,
   "eventhouse": 0,
@@ -7260,39 +7266,39 @@
   "contestkorea": "2026-11-19T08:55:39+09:00",
   "danawa": "2026-11-19T08:55:39+09:00",
   "eventhouse": "2026-11-19T08:55:39+09:00",
-  "eventhouse_search": "2026-11-19T06:16:40+09:00",
+  "eventhouse_search": "2026-11-19T09:52:06+09:00",
   "events_kr": "2026-11-19T08:55:39+09:00",
-  "gonggongevent": "2026-11-19T06:16:40+09:00",
+  "gonggongevent": "2026-11-19T09:52:06+09:00",
   "korissue": "2026-11-19T08:55:39+09:00",
   "korissue_orgs": "2026-11-19T08:55:39+09:00",
   "mohw": "2026-11-19T08:55:39+09:00",
-  "mrblog": "2026-11-19T06:16:40+09:00",
-  "reviewnote": "2026-11-19T06:16:40+09:00",
-  "sbs": "2026-11-19T06:16:40+09:00",
-  "touredu": "2026-11-19T06:16:40+09:00",
+  "mrblog": "2026-11-19T09:52:06+09:00",
+  "reviewnote": "2026-11-19T09:52:06+09:00",
+  "sbs": "2026-11-19T09:52:06+09:00",
+  "touredu": "2026-11-19T09:52:06+09:00",
   "wevity": "2026-11-19T08:01:37+09:00",
-  "yuvent": "2026-11-19T06:16:40+09:00"
+  "yuvent": "2026-11-19T09:52:06+09:00"
  },
  "lastRun": {
   "busan": "2026-11-18T21:06:34+09:00",
   "contestkorea": "2026-11-19T08:55:39+09:00",
   "danawa": "2026-11-19T08:55:39+09:00",
   "eventhouse": "2026-11-19T08:55:39+09:00",
-  "eventhouse_search": "2026-11-19T06:16:40+09:00",
+  "eventhouse_search": "2026-11-19T09:52:06+09:00",
   "events_kr": "2026-11-19T08:55:39+09:00",
-  "gonggongevent": "2026-11-19T06:16:40+09:00",
+  "gonggongevent": "2026-11-19T09:52:06+09:00",
   "korissue": "2026-11-19T08:55:39+09:00",
   "korissue_orgs": "2026-11-19T08:55:39+09:00",
   "mohw": "2026-11-19T08:55:39+09:00",
-  "mrblog": "2026-11-19T06:16:40+09:00",
+  "mrblog": "2026-11-19T09:52:06+09:00",
   "naver": "2026-11-19T08:55:39+09:00",
-  "reviewnote": "2026-11-19T06:16:40+09:00",
-  "sbs": "2026-11-19T06:16:40+09:00",
+  "reviewnote": "2026-11-19T09:52:06+09:00",
+  "sbs": "2026-11-19T09:52:06+09:00",
   "telegram": "2026-11-19T08:55:39+09:00",
-  "touredu": "2026-11-19T06:16:40+09:00",
+  "touredu": "2026-11-19T09:52:06+09:00",
   "wevity": "2026-11-19T08:01:37+09:00",
-  "youtube": "2026-11-19T06:16:40+09:00",
-  "yuvent": "2026-11-19T06:16:40+09:00"
+  "youtube": "2026-11-19T09:52:06+09:00",
+  "yuvent": "2026-11-19T09:52:06+09:00"
  },
  "lastSkipped": {
   "busan": {},
@@ -7339,16 +7345,16 @@
   "korissue_orgs": {},
   "mohw": {},
   "mrblog": {
-   "1152309": "유료 조건: 주문시",
-   "1152657": "유료 조건: 결제,페이백",
+   "1152656": "유료 조건: 결제,페이백",
    "1153073": "유료 조건: 결제,페이백",
-   "1153418": "유료 조건: 결제,페이백"
+   "1153421": "유료 조건: 결제,페이백",
+   "1153422": "유료 조건: 결제,페이백",
+   "1153490": "유료 조건: 결제,페이백"
   },
   "reviewnote": {
-   "1547723": "유료 조건: 결제",
    "1547897": "유료 조건: 구매",
    "1547928": "유료 조건: 구매",
-   "1548224": "유료 조건: 페이백"
+   "1555070": "유료 조건: 결제"
   },
   "sbs": {
    "[SBS play] 신규회원 웰컴 이벤트": "기간 없음(상시 이벤트)",
@@ -7368,9 +7374,10 @@
    "cmwlrtpylchug01zbl12pkhdp": "기간·경품·참여 방법 모두 확인 안 됨",
    "cmwlrv3roci1f01zboib57idm": "이벤트 신호 없음",
    "cmwls2hcycj2o01zbc5baxlxd": "경품·마감·폼 없음",
+   "cmwls2rdzcj3701zbooi3o3em": "유료 조건: 유료",
    "cmwls4ocqcjcm01zb5mhees95": "유료 조건: 구매",
    "cmwls677fcjk901zbiajehxiy": "기간·경품·참여 방법 모두 확인 안 됨",
-   "cmwlztgm9cjo101zbaf836xtk": "기간·경품·참여 방법 모두 확인 안 됨",
+   "cmwls9nwocjll01zbq48byvch": "유료 조건: 입금",
    "cmwlzu075cjq701zb14711qpi": "유료 조건: 구매,유료",
    "cmwlzx18kck0t01zbm7t5exry": "유료 조건: 구매",
    "cmwlzytd0ck8701zbtzutb59k": "유료 조건: 유료",
@@ -7391,7 +7398,6 @@
    "cmwm9k74icpmi01zbssemxto4": "경품·마감·폼 없음",
    "cmwm9m2xlcpqe01zbz80ub180": "유료 조건: 구매",
    "cmwm9v75icpr101zblo09f6l2": "기간·경품·참여 방법 모두 확인 안 됨",
-   "cmwmh2maxcqcv01zbz2596bq3": "경품·마감·폼 없음",
    "cmwmi2civcufx01zbtqcz7rm8": "기간·경품·참여 방법 모두 확인 안 됨"
   }
  },
@@ -22304,6 +22310,12 @@
    "final": null,
    "status": "not_form",
    "to": "https://www.eventhouse.kr/login/index.php?gourl=https%3A%2F%2Fwww.eventhouse.kr%2Fsite%2Ffgo.php%3Ffnum%3D320564%26go%3D4&fnum=320564"
+  },
+  "https://www.eventhouse.kr/site/fgo.php?fnum=320582&go=4": {
+   "at": "2026-11-19",
+   "final": null,
+   "status": "not_form",
+   "to": "https://www.eventhouse.kr/login/index.php?gourl=https%3A%2F%2Fwww.eventhouse.kr%2Fsite%2Ffgo.php%3Ffnum%3D320582%26go%3D4&fnum=320582"
   }
  },
  "touredu": {
