@@ -1,85 +1,5 @@
 [
  {
-  "active": 2459,
-  "added": 0,
-  "at": "2026-11-09T16:07:33+09:00",
-  "links": {
-   "checked": 60,
-   "dead": 0,
-   "error": 0,
-   "ok": 60,
-   "skip": 0
-  },
-  "merged": 4,
-  "pruned": 0,
-  "quality": {
-   "excluded": 0,
-   "flagged": 8,
-   "merged": 0
-  },
-  "rejected": 0,
-  "requests": 62,
-  "sec": 65.6,
-  "seeded": 0,
-  "sources": {
-   "busan": {
-    "listed": 4,
-    "merged": 4,
-    "new": 0,
-    "requests": 1,
-    "sec": 3.1,
-    "skipped": 0,
-    "status": "ok"
-   },
-   "danawa": {
-    "status": "wait"
-   },
-   "eventhouse": {
-    "status": "wait"
-   },
-   "events_kr": {
-    "status": "wait"
-   },
-   "gangnam": {
-    "status": "off"
-   },
-   "korissue": {
-    "status": "wait"
-   },
-   "mohw": {
-    "listed": 12,
-    "merged": 0,
-    "new": 0,
-    "requests": 1,
-    "sec": 3.1,
-    "skipped": 0,
-    "status": "ok"
-   },
-   "mrblog": {
-    "status": "wait"
-   },
-   "naver": {
-    "status": "wait"
-   },
-   "reviewnote": {
-    "status": "wait"
-   },
-   "sbs": {
-    "status": "wait"
-   },
-   "telegram": {
-    "status": "wait"
-   },
-   "touredu": {
-    "status": "wait"
-   },
-   "youtube": {
-    "status": "wait"
-   }
-  },
-  "total": 4524
- },
- {
   "active": 2499,
   "added": 40,
   "at": "2026-11-09T16:59:52+09:00",
@@ -47012,5 +46932,173 @@
    "stale_ended": 0
   },
   "viaLeft": 492
+ },
+ {
+  "active": 3096,
+  "added": 2,
+  "at": "2026-11-20T12:29:49+09:00",
+  "broken": 0,
+  "dates": 0,
+  "elec": 73,
+  "form": {
+   "direct": 0,
+   "eh_checked": 1,
+   "eh_found": 0,
+   "page_err": 0,
+   "page_found": 0,
+   "pages": 0,
+   "short_ok": 1
+  },
+  "formDedupe": 0,
+  "links": {
+   "checked": 60,
+   "dead": 0,
+   "error": 1,
+   "ok": 58,
+   "skip": 1
+  },
+  "merged": 379,
+  "originals": 0,
+  "prizeFill": {
+   "left": 227,
+   "page": 0,
+   "page_err": 1,
+   "pages": 1,
+   "text": 0,
+   "title": 0,
+   "truncated": {
+    "checked": 0,
+    "err": 0,
+    "restored": 0
+   }
+  },
+  "proof": 672,
+  "pruned": 0,
+  "quality": {
+   "excluded": 0,
+   "flagged": 36,
+   "merged": 0
+  },
+  "rejected": 0,
+  "requests": 89,
+  "restricted": {
+   "restricted": 4460,
+   "review": 23
+  },
+  "sec": 124.1,
+  "seeded": 0,
+  "shifted": {
+   "ended": 0,
+   "realigned": 0
+  },
+  "sources": {
+   "busan": {
+    "listed": 2,
+    "merged": 2,
+    "new": 0,
+    "requests": 1,
+    "sec": 2.1,
+    "skipped": 0,
+    "status": "ok"
+   },
+   "contestkorea": {
+    "status": "wait"
+   },
+   "danawa": {
+    "status": "wait"
+   },
+   "eventhouse": {
+    "listed": 400,
+    "merged": 281,
+    "new": 1,
+    "requests": 10,
+    "sec": 11.5,
+    "skipped": 0,
+    "status": "ok"
+   },
+   "eventhouse_search": {
+    "status": "wait"
+   },
+   "events_kr": {
+    "listed": 200,
+    "merged": 0,
+    "new": 1,
+    "requests": 11,
+    "sec": 11.6,
+    "skipped": 0,
+    "status": "ok"
+   },
+   "gangnam": {
+    "status": "off"
+   },
+   "gonggongevent": {
+    "status": "wait"
+   },
+   "korissue": {
+    "listed": 449,
+    "merged": 96,
+    "new": 0,
+    "requests": 5,
+    "sec": 6.1,
+    "skipped": 1,
+    "status": "ok"
+   },
+   "korissue_orgs": {
+    "listed": 0,
+    "merged": 0,
+    "new": 0,
+    "requests": 0,
+    "sec": 0.1,
+    "skipped": 0,
+    "status": "ok"
+   },
+   "mohw": {
+    "listed": 12,
+    "merged": 0,
+    "new": 0,
+    "requests": 1,
+    "sec": 2.2,
+    "skipped": 0,
+    "status": "ok"
+   },
+   "mrblog": {
+    "status": "wait"
+   },
+   "naver": {
+    "status": "wait"
+   },
+   "reviewnote": {
+    "status": "wait"
+   },
+   "sbs": {
+    "status": "wait"
+   },
+   "telegram": {
+    "status": "wait"
+   },
+   "touredu": {
+    "status": "wait"
+   },
+   "wevity": {
+    "status": "wait"
+   },
+   "youtube": {
+    "status": "wait"
+   },
+   "yuvent": {
+    "status": "wait"
+   }
+  },
+  "total": 8392,
+  "verify": {
+   "checked": 2,
+   "due": 2,
+   "failed": 0,
+   "no_request": 1,
+   "rendered": 0,
+   "requests": 2,
+   "stale_ended": 0
+  },
+  "viaLeft": 493
  }
 ]

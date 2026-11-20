@@ -3239,6 +3239,7 @@
    "264": "ek-682a03f4cd",
    "265": "ek-25250e4674",
    "266": "ek-45cbe19f37",
+   "267": "ek-81ecfd4383",
    "27": "ek-bc33ea4e26",
    "28": "ek-0a57cb53ba",
    "29": "ek-7719a1c782",
@@ -7688,16 +7689,16 @@
   }
  },
  "lastOk": {
-  "busan": "2026-11-20T10:53:08+09:00",
+  "busan": "2026-11-20T12:29:49+09:00",
   "contestkorea": "2026-11-20T11:49:38+09:00",
   "danawa": "2026-11-20T11:49:38+09:00",
-  "eventhouse": "2026-11-20T10:53:08+09:00",
+  "eventhouse": "2026-11-20T12:29:49+09:00",
   "eventhouse_search": "2026-11-20T09:59:30+09:00",
-  "events_kr": "2026-11-20T10:53:08+09:00",
+  "events_kr": "2026-11-20T12:29:49+09:00",
   "gonggongevent": "2026-11-20T09:59:30+09:00",
-  "korissue": "2026-11-20T10:53:08+09:00",
-  "korissue_orgs": "2026-11-20T10:53:08+09:00",
-  "mohw": "2026-11-20T10:53:08+09:00",
+  "korissue": "2026-11-20T12:29:49+09:00",
+  "korissue_orgs": "2026-11-20T12:29:49+09:00",
+  "mohw": "2026-11-20T12:29:49+09:00",
   "mrblog": "2026-11-20T09:59:30+09:00",
   "reviewnote": "2026-11-20T09:59:30+09:00",
   "sbs": "2026-11-20T09:59:30+09:00",
@@ -7706,16 +7707,16 @@
   "yuvent": "2026-11-20T09:59:30+09:00"
  },
  "lastRun": {
-  "busan": "2026-11-20T10:53:08+09:00",
+  "busan": "2026-11-20T12:29:49+09:00",
   "contestkorea": "2026-11-20T11:49:38+09:00",
   "danawa": "2026-11-20T11:49:38+09:00",
-  "eventhouse": "2026-11-20T10:53:08+09:00",
+  "eventhouse": "2026-11-20T12:29:49+09:00",
   "eventhouse_search": "2026-11-20T09:59:30+09:00",
-  "events_kr": "2026-11-20T10:53:08+09:00",
+  "events_kr": "2026-11-20T12:29:49+09:00",
   "gonggongevent": "2026-11-20T09:59:30+09:00",
-  "korissue": "2026-11-20T10:53:08+09:00",
-  "korissue_orgs": "2026-11-20T10:53:08+09:00",
-  "mohw": "2026-11-20T10:53:08+09:00",
+  "korissue": "2026-11-20T12:29:49+09:00",
+  "korissue_orgs": "2026-11-20T12:29:49+09:00",
+  "mohw": "2026-11-20T12:29:49+09:00",
   "mrblog": "2026-11-20T09:59:30+09:00",
   "naver": "2026-11-20T11:49:38+09:00",
   "reviewnote": "2026-11-20T09:59:30+09:00",
@@ -8279,6 +8280,12 @@
    "final": "https://docs.google.com/forms/d/e/1FAIpQLSeyms0_bgdOta0zjKem35ry4bNnAZjxpGfv1dDjdWiJRSoSKw/viewform",
    "status": "form",
    "to": "https://docs.google.com/forms/d/e/1FAIpQLSeyms0_bgdOta0zjKem35ry4bNnAZjxpGfv1dDjdWiJRSoSKw/viewform?usp=send_form"
+  },
+  "https://forms.gle/X92aHfzi9XKi58UC8": {
+   "at": "2026-11-20",
+   "final": "https://docs.google.com/forms/d/e/1FAIpQLSe_34qWto-cwHgqCttkXNndRVtE1q82miplRdhqAsu0gfIMIA/viewform",
+   "status": "form",
+   "to": "https://docs.google.com/forms/d/e/1FAIpQLSe_34qWto-cwHgqCttkXNndRVtE1q82miplRdhqAsu0gfIMIA/viewform?usp=send_form"
   },
   "https://forms.gle/XTCzBTCRhGouXVqY8": {
    "at": "2026-11-19",
@@ -9665,6 +9672,12 @@
    "final": null,
    "status": "not_form",
    "to": "https://www.youtube.com/watch?v=6-6DgBGZqbg"
+  },
+  "https://url.kr/x3bhyu": {
+   "at": "2026-11-20",
+   "final": null,
+   "status": "not_form",
+   "to": "https://www.youtube.com/watch?v=fkb1nBa85lk"
   },
   "https://url.kr/y7v7i3": {
    "at": "2026-11-09",
@@ -24053,6 +24066,12 @@
    "final": null,
    "status": "not_form",
    "to": "https://www.eventhouse.kr/login/index.php?gourl=https%3A%2F%2Fwww.eventhouse.kr%2Fsite%2Ffgo.php%3Ffnum%3D320747%26go%3D4&fnum=320747"
+  },
+  "https://www.eventhouse.kr/site/fgo.php?fnum=320748&go=4": {
+   "at": "2026-11-20",
+   "final": null,
+   "status": "not_form",
+   "to": "https://www.eventhouse.kr/login/index.php?gourl=https%3A%2F%2Fwww.eventhouse.kr%2Fsite%2Ffgo.php%3Ffnum%3D320748%26go%3D4&fnum=320748"
   }
  },
  "touredu": {
