@@ -1,213 +1,6 @@
 [
  {
   "active": 2334,
-  "added": 53,
-  "at": "2026-11-10T00:33:42+09:00",
-  "broken": 0,
-  "dates": 0,
-  "elec": 55,
-  "form": {
-   "direct": 3,
-   "page_err": 0,
-   "page_found": 1,
-   "pages": 4,
-   "short_ok": 1
-  },
-  "links": {
-   "checked": 60,
-   "dead": 0,
-   "error": 0,
-   "ok": 59,
-   "skip": 7
-  },
-  "merged": 516,
-  "originals": 0,
-  "prizeFill": {
-   "left": 49,
-   "page": 0,
-   "page_err": 0,
-   "pages": 0,
-   "text": 0,
-   "title": 0,
-   "truncated": {
-    "checked": 0,
-    "err": 0,
-    "restored": 0
-   }
-  },
-  "proof": 380,
-  "pruned": 0,
-  "quality": {
-   "excluded": 0,
-   "flagged": 12,
-   "merged": 0
-  },
-  "rejected": 0,
-  "requests": 198,
-  "restricted": {
-   "restricted": 2376,
-   "review": 12
-  },
-  "sec": 472.0,
-  "seeded": 0,
-  "sources": {
-   "busan": {
-    "listed": 4,
-    "merged": 4,
-    "new": 0,
-    "requests": 1,
-    "sec": 2.6,
-    "skipped": 0,
-    "status": "ok"
-   },
-   "contestkorea": {
-    "listed": 37,
-    "merged": 0,
-    "new": 0,
-    "requests": 5,
-    "sec": 9.7,
-    "skipped": 0,
-    "status": "ok"
-   },
-   "danawa": {
-    "listed": 12,
-    "merged": 12,
-    "new": 0,
-    "requests": 2,
-    "sec": 2.4,
-    "skipped": 0,
-    "status": "ok"
-   },
-   "eventhouse": {
-    "listed": 400,
-    "merged": 232,
-    "new": 0,
-    "requests": 10,
-    "sec": 11.8,
-    "skipped": 2,
-    "status": "ok"
-   },
-   "eventhouse_search": {
-    "listed": 24,
-    "merged": 22,
-    "new": 0,
-    "requests": 18,
-    "sec": 17.9,
-    "skipped": 2,
-    "status": "ok"
-   },
-   "events_kr": {
-    "listed": 195,
-    "merged": 0,
-    "new": 0,
-    "requests": 10,
-    "sec": 10.6,
-    "skipped": 0,
-    "status": "ok"
-   },
-   "gangnam": {
-    "status": "off"
-   },
-   "korissue": {
-    "listed": 417,
-    "merged": 142,
-    "new": 0,
-    "requests": 5,
-    "sec": 5.9,
-    "skipped": 2,
-    "status": "ok"
-   },
-   "korissue_orgs": {
-    "listed": 530,
-    "merged": 44,
-    "new": 0,
-    "requests": 81,
-    "sec": 121.2,
-    "skipped": 10,
-    "status": "ok"
-   },
-   "mohw": {
-    "listed": 12,
-    "merged": 0,
-    "new": 0,
-    "requests": 1,
-    "sec": 3.3,
-    "skipped": 0,
-    "status": "ok"
-   },
-   "mrblog": {
-    "listed": 30,
-    "merged": 5,
-    "new": 20,
-    "requests": 1,
-    "sec": 2.2,
-    "skipped": 5,
-    "status": "ok"
-   },
-   "naver": {
-    "reason": "NAVER_CLIENT_ID/SECRET 없음",
-    "status": "unconfigured"
-   },
-   "reviewnote": {
-    "listed": 83,
-    "merged": 47,
-    "new": 33,
-    "requests": 1,
-    "sec": 1.5,
-    "skipped": 3,
-    "status": "ok"
-   },
-   "sbs": {
-    "listed": 16,
-    "merged": 8,
-    "new": 0,
-    "requests": 1,
-    "sec": 1.6,
-    "skipped": 8,
-    "status": "ok"
-   },
-   "telegram": {
-    "reason": "수집할 공개 채널 목록이 비어 있음",
-    "status": "unconfigured"
-   },
-   "touredu": {
-    "listed": 2,
-    "merged": 0,
-    "new": 0,
-    "requests": 1,
-    "sec": 1.9,
-    "skipped": 0,
-    "status": "ok"
-   },
-   "wevity": {
-    "listed": 1,
-    "merged": 0,
-    "new": 0,
-    "requests": 2,
-    "sec": 4.5,
-    "skipped": 0,
-    "status": "ok"
-   },
-   "youtube": {
-    "reason": "YT_API_KEY 없음",
-    "status": "unconfigured"
-   }
-  },
-  "total": 4854,
-  "verify": {
-   "checked": 132,
-   "due": 1495,
-   "failed": 0,
-   "future_fixed": 126,
-   "no_request": 12,
-   "rendered": 25,
-   "requests": 120,
-   "stale_ended": 0
-  },
-  "viaLeft": 454
- },
- {
-  "active": 2334,
   "added": 0,
   "at": "2026-11-10T01:34:40+09:00",
   "broken": 0,
@@ -47282,5 +47075,185 @@
    "stale_ended": 0
   },
   "viaLeft": 495
+ },
+ {
+  "active": 2933,
+  "added": 1,
+  "at": "2026-11-21T00:49:34+09:00",
+  "broken": 0,
+  "dates": 0,
+  "elec": 74,
+  "form": {
+   "direct": 9,
+   "eh_checked": 0,
+   "eh_found": 0,
+   "page_err": 4,
+   "page_found": 0,
+   "pages": 10,
+   "short_ok": 8
+  },
+  "formDedupe": 1,
+  "links": {
+   "checked": 60,
+   "dead": 0,
+   "error": 0,
+   "ok": 60,
+   "skip": 0
+  },
+  "merged": 380,
+  "originals": 0,
+  "prizeFill": {
+   "left": 229,
+   "page": 0,
+   "page_err": 0,
+   "pages": 1,
+   "text": 0,
+   "title": 0,
+   "truncated": {
+    "checked": 0,
+    "err": 0,
+    "restored": 0
+   }
+  },
+  "proof": 679,
+  "pruned": 1,
+  "quality": {
+   "excluded": 0,
+   "flagged": 25,
+   "merged": 0
+  },
+  "rejected": 0,
+  "requests": 287,
+  "restricted": {
+   "restricted": 4561,
+   "review": 24
+  },
+  "sec": 723.9,
+  "seeded": 0,
+  "shifted": {
+   "ended": 0,
+   "realigned": 0
+  },
+  "sources": {
+   "busan": {
+    "listed": 2,
+    "merged": 2,
+    "new": 0,
+    "requests": 1,
+    "sec": 2.8,
+    "skipped": 0,
+    "status": "ok"
+   },
+   "contestkorea": {
+    "listed": 51,
+    "merged": 0,
+    "new": 0,
+    "requests": 6,
+    "sec": 11.6,
+    "skipped": 0,
+    "status": "ok"
+   },
+   "danawa": {
+    "listed": 12,
+    "merged": 12,
+    "new": 0,
+    "requests": 2,
+    "sec": 2.3,
+    "skipped": 0,
+    "status": "ok"
+   },
+   "eventhouse": {
+    "error": "AttributeError: 'NoneType' object has no attribute 'group'",
+    "status": "error",
+    "trace": "gregators.py\", line 214, in eventhouse\n    rows = _eh_page(f, page_file, page)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/tikkeul/tikkeul/collector/sources/aggregators.py\", line 125, in _eh_page\n    return _eh_rows(f, f\"{EH}{page_file}?p=1&page={page}\")\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/tikkeul/tikkeul/collector/sources/aggregators.py\", line 133, in _eh_rows\n    no = re.search(r\"no=(\\d+)\", a[0]).group(1) if a else None\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'NoneType' object has no attribute 'group'\n"
+   },
+   "eventhouse_search": {
+    "error": "AttributeError: 'NoneType' object has no attribute 'group'",
+    "status": "error",
+    "trace": "line.py\", line 523, in main\n    r = fn(f, state, sc)\n        ^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/tikkeul/tikkeul/collector/sources/aggregators.py\", line 190, in eventhouse_search\n    rows = _eh_rows(f, f\"{EH}index.php?\" + urlencode({**q, \"page\": page}))\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/tikkeul/tikkeul/collector/sources/aggregators.py\", line 133, in _eh_rows\n    no = re.search(r\"no=(\\d+)\", a[0]).group(1) if a else None\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'NoneType' object has no attribute 'group'\n"
+   },
+   "events_kr": {
+    "listed": 200,
+    "merged": 0,
+    "new": 0,
+    "requests": 10,
+    "sec": 10.6,
+    "skipped": 0,
+    "status": "ok"
+   },
+   "gangnam": {
+    "status": "off"
+   },
+   "gonggongevent": {
+    "status": "wait"
+   },
+   "korissue": {
+    "listed": 448,
+    "merged": 154,
+    "new": 1,
+    "requests": 5,
+    "sec": 6.0,
+    "skipped": 0,
+    "status": "ok"
+   },
+   "korissue_orgs": {
+    "listed": 1550,
+    "merged": 212,
+    "new": 0,
+    "requests": 200,
+    "sec": 302.7,
+    "skipped": 0,
+    "status": "ok"
+   },
+   "mohw": {
+    "listed": 12,
+    "merged": 0,
+    "new": 0,
+    "requests": 1,
+    "sec": 2.0,
+    "skipped": 0,
+    "status": "ok"
+   },
+   "mrblog": {
+    "status": "wait"
+   },
+   "naver": {
+    "reason": "NAVER_CLIENT_ID/SECRET 없음",
+    "status": "unconfigured"
+   },
+   "reviewnote": {
+    "status": "wait"
+   },
+   "sbs": {
+    "status": "wait"
+   },
+   "telegram": {
+    "reason": "수집할 공개 채널 목록이 비어 있음",
+    "status": "unconfigured"
+   },
+   "touredu": {
+    "status": "wait"
+   },
+   "wevity": {
+    "status": "wait"
+   },
+   "youtube": {
+    "status": "wait"
+   },
+   "yuvent": {
+    "status": "wait"
+   }
+  },
+  "total": 8545,
+  "verify": {
+   "checked": 189,
+   "due": 511,
+   "failed": 0,
+   "no_request": 84,
+   "rendered": 20,
+   "requests": 112,
+   "stale_ended": 0
+  },
+  "viaLeft": 370
  }
 ]
