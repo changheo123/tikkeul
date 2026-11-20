@@ -3257,6 +3257,7 @@
    "269": "skip:이벤트 신호 없음",
    "27": "ek-bc33ea4e26",
    "270": "ek-29350804a1",
+   "271": "ek-ef7de0b7de",
    "28": "ek-0a57cb53ba",
    "29": "ek-7719a1c782",
    "30": "ek-22d200f867",
@@ -7705,16 +7706,16 @@
   }
  },
  "lastOk": {
-  "busan": "2026-11-20T16:04:49+09:00",
+  "busan": "2026-11-20T17:52:40+09:00",
   "contestkorea": "2026-11-20T16:58:09+09:00",
   "danawa": "2026-11-20T16:58:09+09:00",
-  "eventhouse": "2026-11-20T16:04:49+09:00",
+  "eventhouse": "2026-11-20T17:52:40+09:00",
   "eventhouse_search": "2026-11-20T16:58:09+09:00",
-  "events_kr": "2026-11-20T16:04:49+09:00",
+  "events_kr": "2026-11-20T17:52:40+09:00",
   "gonggongevent": "2026-11-20T16:58:09+09:00",
-  "korissue": "2026-11-20T16:04:49+09:00",
-  "korissue_orgs": "2026-11-20T16:04:49+09:00",
-  "mohw": "2026-11-20T16:04:49+09:00",
+  "korissue": "2026-11-20T17:52:40+09:00",
+  "korissue_orgs": "2026-11-20T17:52:40+09:00",
+  "mohw": "2026-11-20T17:52:40+09:00",
   "mrblog": "2026-11-20T16:58:09+09:00",
   "reviewnote": "2026-11-20T16:58:09+09:00",
   "sbs": "2026-11-20T16:58:09+09:00",
@@ -7723,16 +7724,16 @@
   "yuvent": "2026-11-20T16:58:09+09:00"
  },
  "lastRun": {
-  "busan": "2026-11-20T16:04:49+09:00",
+  "busan": "2026-11-20T17:52:40+09:00",
   "contestkorea": "2026-11-20T16:58:09+09:00",
   "danawa": "2026-11-20T16:58:09+09:00",
-  "eventhouse": "2026-11-20T16:04:49+09:00",
+  "eventhouse": "2026-11-20T17:52:40+09:00",
   "eventhouse_search": "2026-11-20T16:58:09+09:00",
-  "events_kr": "2026-11-20T16:04:49+09:00",
+  "events_kr": "2026-11-20T17:52:40+09:00",
   "gonggongevent": "2026-11-20T16:58:09+09:00",
-  "korissue": "2026-11-20T16:04:49+09:00",
-  "korissue_orgs": "2026-11-20T16:04:49+09:00",
-  "mohw": "2026-11-20T16:04:49+09:00",
+  "korissue": "2026-11-20T17:52:40+09:00",
+  "korissue_orgs": "2026-11-20T17:52:40+09:00",
+  "mohw": "2026-11-20T17:52:40+09:00",
   "mrblog": "2026-11-20T16:58:09+09:00",
   "naver": "2026-11-20T16:58:09+09:00",
   "reviewnote": "2026-11-20T16:58:09+09:00",
@@ -7747,9 +7748,7 @@
   "busan": {},
   "contestkorea": {},
   "danawa": {},
-  "eventhouse": {
-   "318949": "유료 조건: 유료"
-  },
+  "eventhouse": {},
   "eventhouse_search": {
    "318949": "유료 조건: 유료"
   },
@@ -8390,6 +8389,12 @@
    "final": "https://docs.google.com/forms/d/e/1FAIpQLSfvOC0Rg1UdlA9K2j2ya07U9KUHWn0IN_5frhwSHoG-y1vmOg/viewform",
    "status": "form",
    "to": "https://docs.google.com/forms/d/e/1FAIpQLSfvOC0Rg1UdlA9K2j2ya07U9KUHWn0IN_5frhwSHoG-y1vmOg/viewform?usp=send_form"
+  },
+  "https://forms.gle/bLwLzjJebFPyECVj9": {
+   "at": "2026-11-20",
+   "final": "https://docs.google.com/forms/d/e/1FAIpQLScU3zr02XqZ_vGvBw92fm-rFjvwacWCpFIKU0HK-cD7si407g/viewform",
+   "status": "form",
+   "to": "https://docs.google.com/forms/d/e/1FAIpQLScU3zr02XqZ_vGvBw92fm-rFjvwacWCpFIKU0HK-cD7si407g/viewform?usp=send_form"
   },
   "https://forms.gle/bpPzVVtDY6HP7B8o9": {
    "at": "2026-11-09",

@@ -27006,6 +27006,20 @@
    "verification_reason": "특정 게시물이 아닌 계정 주소라 이벤트와의 연결을 확인하지 못함",
    "verification_status": "unverified"
   },
+  "ek-ef7de0b7de": {
+   "candidate_url": "https://docs.google.com/forms/d/e/1FAIpQLScU3zr02XqZ_vGvBw92fm-rFjvwacWCpFIKU0HK-cD7si407g/viewform",
+   "destination_checked": false,
+   "entry_type": "form",
+   "entry_url": null,
+   "last_checked_at": "2026-11-20",
+   "link_evidence": "form_content",
+   "original_url": null,
+   "verification_code": "form_date_differs",
+   "verification_evidence_url": "https://docs.google.com/forms/d/e/1FAIpQLScU3zr02XqZ_vGvBw92fm-rFjvwacWCpFIKU0HK-cD7si407g/viewform",
+   "verification_grade": "B",
+   "verification_reason": "폼 제목은 이벤트와 일치하지만 기간 표기가 수집 정보와 다름",
+   "verification_status": "needs_review"
+  },
   "ek-f37062d9a6": {
    "candidate_url": null,
    "destination_checked": false,
