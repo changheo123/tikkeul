@@ -26418,6 +26418,20 @@
    "verification_reason": "접근이 제한된 폼이라 내용을 확인하지 못함 (이벤트 글에 적힌 폼)",
    "verification_status": "needs_review"
   },
+  "ek-1407c2b75f": {
+   "candidate_url": "https://docs.google.com/forms/d/e/1FAIpQLScmCcLG9A95_6UnyAJYWk9sQ6I3z8GQ8c3a6VWVk6YGtmIgMQ/viewform",
+   "destination_checked": false,
+   "entry_type": "form",
+   "entry_url": null,
+   "last_checked_at": "2026-11-21",
+   "link_evidence": "event_text",
+   "original_url": null,
+   "verification_code": "form_forbidden",
+   "verification_evidence_url": null,
+   "verification_grade": "B",
+   "verification_reason": "접근이 제한된 폼이라 내용을 확인하지 못함 (이벤트 글에 적힌 폼)",
+   "verification_status": "needs_review"
+  },
   "ek-19187dc98d": {
    "candidate_url": "https://www.instagram.com/p/DfWep9fJ5Ww/?utm_source=ig_web_button_share_sheet",
    "destination_checked": false,
@@ -103837,6 +103851,10 @@
   },
   "https://docs.google.com/forms/d/e/1FAIpQLScjyCT39N8hjqtSjkdC7dqpsHmZdoEZYs5u7O9dwvnxKbcymg/viewform": {
    "at": "2026-11-09",
+   "status": "forbidden"
+  },
+  "https://docs.google.com/forms/d/e/1FAIpQLScmCcLG9A95_6UnyAJYWk9sQ6I3z8GQ8c3a6VWVk6YGtmIgMQ/viewform": {
+   "at": "2026-11-21",
    "status": "forbidden"
   },
   "https://docs.google.com/forms/d/e/1FAIpQLScmOG8AnQOXlT6sEQoq8P9jH9z4KwhzHP930rgFHnkHVUiexg/viewform": {
