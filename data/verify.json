@@ -44366,6 +44366,20 @@
    "verification_reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)",
    "verification_status": "needs_review"
   },
+  "rn-27489e54c0": {
+   "candidate_url": "https://www.reviewnote.co.kr/campaigns/1559487",
+   "destination_checked": false,
+   "entry_type": "website",
+   "entry_url": null,
+   "last_checked_at": "2026-11-21",
+   "link_evidence": "source_row",
+   "original_url": null,
+   "verification_code": "login",
+   "verification_evidence_url": null,
+   "verification_grade": "B",
+   "verification_reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)",
+   "verification_status": "needs_review"
+  },
   "rn-276181c694": {
    "candidate_url": null,
    "destination_checked": false,
@@ -46997,6 +47011,20 @@
    "verification_grade": "C",
    "verification_reason": "페이지와 이벤트의 일치를 확인하지 못함",
    "verification_status": "unverified"
+  },
+  "rn-334d4b8a7a": {
+   "candidate_url": "https://www.reviewnote.co.kr/campaigns/1559486",
+   "destination_checked": false,
+   "entry_type": "website",
+   "entry_url": null,
+   "last_checked_at": "2026-11-21",
+   "link_evidence": "source_row",
+   "original_url": null,
+   "verification_code": "login",
+   "verification_evidence_url": null,
+   "verification_grade": "B",
+   "verification_reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)",
+   "verification_status": "needs_review"
   },
   "rn-335de2a49a": {
    "candidate_url": "https://www.reviewnote.co.kr/campaigns/1529040",
@@ -67746,6 +67774,20 @@
    "verification_reason": "페이지와 이벤트의 일치를 확인하지 못함",
    "verification_status": "unverified"
   },
+  "rn-9cb7753a55": {
+   "candidate_url": "https://www.reviewnote.co.kr/campaigns/1559483",
+   "destination_checked": false,
+   "entry_type": "website",
+   "entry_url": null,
+   "last_checked_at": "2026-11-21",
+   "link_evidence": "source_row",
+   "original_url": null,
+   "verification_code": "login",
+   "verification_evidence_url": null,
+   "verification_grade": "B",
+   "verification_reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)",
+   "verification_status": "needs_review"
+  },
   "rn-9cc66c27cc": {
    "candidate_url": null,
    "destination_checked": false,
@@ -80850,6 +80892,20 @@
    "verification_reason": "페이지와 이벤트의 일치를 확인하지 못함",
    "verification_status": "unverified"
   },
+  "rn-e273402803": {
+   "candidate_url": "https://www.reviewnote.co.kr/campaigns/1559565",
+   "destination_checked": false,
+   "entry_type": "website",
+   "entry_url": null,
+   "last_checked_at": "2026-11-21",
+   "link_evidence": "source_row",
+   "original_url": null,
+   "verification_code": "login",
+   "verification_evidence_url": null,
+   "verification_grade": "B",
+   "verification_reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)",
+   "verification_status": "needs_review"
+  },
   "rn-e27c7ca57a": {
    "candidate_url": "https://www.reviewnote.co.kr/campaigns/1538796",
    "destination_checked": false,
@@ -90442,6 +90498,20 @@
   },
   "yv-b8d824e674": {
    "candidate_url": "https://www.youtube.com/watch?v=rZSiavdotik",
+   "destination_checked": false,
+   "entry_type": "youtube",
+   "entry_url": null,
+   "last_checked_at": "2026-11-21",
+   "link_evidence": "source_row",
+   "original_url": null,
+   "verification_code": "sns_no_fetch",
+   "verification_evidence_url": null,
+   "verification_grade": "B",
+   "verification_reason": "이벤트 글에 적힌 게시물이지만 약관·robots상 내용을 읽을 수 없음",
+   "verification_status": "needs_review"
+  },
+  "yv-b92d2e8890": {
+   "candidate_url": "https://www.youtube.com/watch?v=7JYEs6bMF9M",
    "destination_checked": false,
    "entry_type": "youtube",
    "entry_url": null,
@@ -113690,6 +113760,22 @@
    "status": "login"
   },
   "https://www.reviewnote.co.kr/campaigns/1559380": {
+   "at": "2026-11-21",
+   "status": "login"
+  },
+  "https://www.reviewnote.co.kr/campaigns/1559483": {
+   "at": "2026-11-21",
+   "status": "login"
+  },
+  "https://www.reviewnote.co.kr/campaigns/1559486": {
+   "at": "2026-11-21",
+   "status": "login"
+  },
+  "https://www.reviewnote.co.kr/campaigns/1559487": {
+   "at": "2026-11-21",
+   "status": "login"
+  },
+  "https://www.reviewnote.co.kr/campaigns/1559565": {
    "at": "2026-11-21",
    "status": "login"
   }
