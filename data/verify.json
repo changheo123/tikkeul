@@ -26768,6 +26768,20 @@
    "verification_reason": "이벤트 글에 적힌 게시물이지만 약관·robots상 내용을 읽을 수 없음",
    "verification_status": "needs_review"
   },
+  "ek-6d363479c9": {
+   "candidate_url": "https://docs.google.com/forms/d/e/1FAIpQLSfDir6eUfGCQLYxAlde1Z2TEbuKHs0EfBgoVNYBh5bLN01yTA/viewform",
+   "destination_checked": false,
+   "entry_type": "form",
+   "entry_url": null,
+   "last_checked_at": "2026-11-21",
+   "link_evidence": "event_text",
+   "original_url": null,
+   "verification_code": "form_forbidden",
+   "verification_evidence_url": null,
+   "verification_grade": "B",
+   "verification_reason": "접근이 제한된 폼이라 내용을 확인하지 못함 (이벤트 글에 적힌 폼)",
+   "verification_status": "needs_review"
+  },
   "ek-7f03f3f2fe": {
    "candidate_url": null,
    "destination_checked": false,
@@ -104049,6 +104063,10 @@
   },
   "https://docs.google.com/forms/d/e/1FAIpQLSfAaO-opVUqctjBQT624Uc07k2690siIzyb1q5PadP3cZm2vg/viewform": {
    "at": "2026-11-18",
+   "status": "forbidden"
+  },
+  "https://docs.google.com/forms/d/e/1FAIpQLSfDir6eUfGCQLYxAlde1Z2TEbuKHs0EfBgoVNYBh5bLN01yTA/viewform": {
+   "at": "2026-11-21",
    "status": "forbidden"
   },
   "https://docs.google.com/forms/d/e/1FAIpQLSfE4L1V1ShbKaLXqYLuMekgwwJzKq1CeNXLmZtT5v4VqyKlaQ/viewform": {
