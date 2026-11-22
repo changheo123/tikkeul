@@ -8,7 +8,7 @@ import sys
 from pathlib import Path
 
 from collector.common import now_kst
-from collector import agentfeed, cleanup, feed
+from collector import agentfeed, cleanup, feed, notices
 from collector.enrich import enrich
 
 ROOT = Path(__file__).resolve().parent
@@ -177,8 +177,11 @@ def main():
     for aid, oid in state.get("alias", {}).items():
         aliases.setdefault(oid, set()).add(aid)
     raw = {i: e.get("rawText") for i, e in db["events"].items() if e.get("rawText")}
-    af = agentfeed.build(events, raw, aliases, site_url(), today, now.isoformat(timespec="seconds"))
+    nstore = notices.load(ROOT / "data" / "notices.json")  # 원문 공지에서 저장한 응모 조건 문장
+    af = agentfeed.build(events, raw, aliases, site_url(), today, now.isoformat(timespec="seconds"), nstore)
     assert af["feed/events.json"]["count"] == len(live), "에이전트 피드 건수 불일치"
+    assert af["feed/active-lite.json"]["count"] == len(live), "경량 피드 건수 불일치"
+    assert all(r["auto_ok"] is True for r in af["feed/auto.json"]["events"]), "auto.json에 auto_ok=true가 아닌 이벤트"
     for r in af["feed/events.json"]["events"]:
         assert r["notice_url"].startswith("http") and r["entry_methods"] and r["announce_methods"], f"에이전트 피드 필수값 누락: {r['id']}"
         assert set(r["entry_methods"]) <= set(agentfeed.ENTRY_METHODS) and set(r["announce_methods"]) <= set(agentfeed.ANNOUNCE_METHODS), r["id"]

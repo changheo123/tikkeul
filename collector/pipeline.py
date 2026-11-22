@@ -13,7 +13,7 @@ from pathlib import Path
 
 from lxml import html as LH
 
-from . import backfill, cleanup, electronics, forms, proof, restrict, verify
+from . import backfill, cleanup, electronics, forms, notices, proof, restrict, verify
 from .common import Fetcher, norm_date, now_kst, today_kst
 from .extract import norm_url, norm_title, is_show_invite, pay_required
 from .sources import events_kr, public_boards, api_sources, aggregators, experience, contest_boards, open_sources
@@ -576,12 +576,18 @@ def main(argv=None):
         verified = verify.run(db, vstore, today, {**cfg, "verify_pages_per_run": 0} if a.no_links else cfg)
     except Exception as e:
         verified = {"error": hide_secrets(f"{type(e).__name__}: {e}")[:200]}
+    # 원문 공지 읽기: 새 이벤트·출처 주소가 바뀐 이벤트만 예산 안에서(실패해도 수집 결과는 저장)
+    nstore = notices.load(DATA / "notices.json")
+    try:
+        noticed = notices.run(db, nstore, today, {**cfg, "notice_pages_per_run": 0} if a.no_links else cfg)
+    except Exception as e:
+        noticed = {"error": hide_secrets(f"{type(e).__name__}: {e}")[:200]}
     links = {} if a.no_links else check_links(f, db, today, cfg.get("link_checks_per_run", 25))
     quality = audit(db, today)
     active = sum(1 for e in db["events"].values() if e.get("status") == "active")
     run.update({"added": stats["added"], "merged": stats["merged"], "rejected": stats["rejected"], "pruned": pruned,
                 "shifted": shifted, "formDedupe": deduped,
-                "links": links, "quality": quality, "form": form, "restricted": restricted, "dates": dates, "broken": broken, "elec": elec, "proof": proofs, "originals": originals, "prizeFill": prize_fill, "verify": verified, "viaLeft": sum(1 for e in db["events"].values() if e.get("status") == "active" and AGG_URL.search(e.get("url") or "")), "active": active, "total": len(db["events"]), "requests": f.count,
+                "links": links, "quality": quality, "form": form, "restricted": restricted, "dates": dates, "broken": broken, "elec": elec, "proof": proofs, "originals": originals, "prizeFill": prize_fill, "verify": verified, "notices": noticed, "viaLeft": sum(1 for e in db["events"].values() if e.get("status") == "active" and AGG_URL.search(e.get("url") or "")), "active": active, "total": len(db["events"]), "requests": f.count,
                 "sec": round(time.time() - t0, 1)})
 
     # 안전장치: 진행 중 건수가 이전의 절반 아래로 급감하면 저장하지 않고 실패로 끝낸다(기존 사이트 유지)
@@ -602,6 +608,7 @@ def main(argv=None):
     dump(DATA / "db.json", db)
     dump(DATA / "state.json", state)
     dump(DATA / "verify.json", vstore)
+    dump(DATA / "notices.json", nstore)
     runs.append(run)
     dump(DATA / "runs.json", runs[-300:])
     print(json.dumps({k: v for k, v in run.items() if k != "sources"}, ensure_ascii=False))

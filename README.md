@@ -18,7 +18,8 @@ GitHub Actions(수집·빌드)와 GitHub Pages(호스팅)만 써서 월 운영�
 | `data/runs.json` | 실행 로그(최근 300회), 사이트의 `data/status.json`으로도 공개 |
 | `data/overrides.json` | 관리자 승인·반려·수정 |
 | `config/sources.json` | 출처 켜기/끄기, 수집 주기, 검색어, 텔레그램 채널 |
-| `collector/agentfeed.py` | AI 에이전트용 피드(`feed/`): 진행 중 전체·일자별 신규·Atom·JSON Schema. 문서는 `web/feed/README.md` |
+| `collector/agentfeed.py` | AI 에이전트용 피드(`feed/`): 진행 중 전체·일자별 신규·Atom·JSON Schema·경량 피드. 문서는 `web/feed/README.md` |
+| `collector/notices.py` | 원문 공지 읽기: 새 이벤트·공지 주소가 바뀐 이벤트의 공지를 한 번 읽어 응모 조건 문장만 `data/notices.json`에 저장(실행당 80건·120초·동시 4호스트·호스트당 2초 간격 상한) |
 
 ## 에이전트·프로그램용 피드
 
@@ -27,6 +28,7 @@ GitHub Actions(수집·빌드)와 GitHub Pages(호스팅)만 써서 월 운영�
 - `https://changheo123.github.io/tikkeul/feed/events.json` — 진행 중 전체
 - `…/feed/new/YYYY-MM-DD.json` — 그날 처음 등록된 이벤트(최근 30일), 목록은 `…/feed/new/index.json`
 - `…/feed/atom.xml` — 새 이벤트 Atom, `…/feed/schema.json` — JSON Schema, `…/feed/README.md` — 필드 설명
+- `…/feed/auto.json` — 진행 중이고 `auto_ok=true`인 것만, `…/feed/active-lite.json` — 진행 중 전체의 최소 필드(점수·순위 없음)
 - 사이트 루트 `llms.txt`와 `index.html`의 `<link rel="alternate">`로도 찾을 수 있다
 - 기존 `data/feed.json`(schema 1.0)은 그대로 유지한다
 

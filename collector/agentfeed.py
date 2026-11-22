@@ -7,9 +7,10 @@ from urllib.parse import urlparse
 from xml.sax.saxutils import escape
 
 from .conditions import conditions, steps
+from . import notices as N
 from .enrich import prize_items
 
-SCHEMA_VERSION = "2.0"
+SCHEMA_VERSION = "2.1"  # 2.1: evidence·requirements, feed/auto.json·feed/active-lite.json 추가
 TZ = "+09:00"
 NEW_DAYS = 30  # feed/new/에 남기는 일자 파일 수
 ATOM_MAX = 100
@@ -151,9 +152,10 @@ def limits(e, text, cond):
 
 
 # ---- 자동 응모 판단 ----
-def auto_ok(e, cond, entry, methods, text):
+def auto_ok(e, cond, entry, methods, text, req=None, notice_read=None):
     """(값, 막는 이유 목록). true=사람 계정·로그인·인증 없이 검증된 폼 주소로 응모가 끝나는 것이 확인됨.
-    false=자동 응모를 막는 조건이 확인됨. null=판단할 근거가 부족함. 이벤트 약관 허락을 뜻하지 않는다."""
+    false=자동 응모를 막는 조건이 확인됨. null=판단할 근거가 부족함. 이벤트 약관 허락을 뜻하지 않는다.
+    notice_read=False면(공지를 아직 못 읽음) 근거 부족 사유에 notice_not_read를 더한다."""
     blockers = []
     if _NO_MACRO.search(text):
         blockers.append("terms_forbid_automation")
@@ -169,6 +171,8 @@ def auto_ok(e, cond, entry, methods, text):
         blockers.append("review_required")
     if (cond.get("eligibility") or {}).get("restricted"):
         blockers.append("eligibility_restricted")
+    if (req or {}).get("purchase"):
+        blockers.append("purchase_required")
     if blockers:
         return False, blockers
     form = bool(entry.get("form_kind"))  # 검증된 응모 주소 자체가 폼이어야 한다
@@ -181,6 +185,8 @@ def auto_ok(e, cond, entry, methods, text):
         missing.append("not_a_form")
     if not cond.get("steps_known"):
         missing.append("steps_unknown")
+    if notice_read is False:
+        missing.append("notice_not_read")
     return None, missing
 
 
@@ -197,16 +203,77 @@ def added(e):
     return on, e.get("addedAt")  # addedAt은 등록 시각 기록을 시작한 뒤 들어온 이벤트에만 있다
 
 
-def item(e, raw_text, aliases):
-    text = " ".join([e.get("title") or "", *(e.get("steps") or []), *(e.get("needs") or []), raw_text or ""])
+def requirements(cond, nf):
+    """경량 피드용 요구 조건 요약. 값은 conditions·공지 근거에서만(모르면 null)."""
+    proof = [cond.get("proof_required"), cond.get("photo_required")]
+    login = [cond.get("login_required"), cond.get("signup_required")]
+    return {
+        "login": True if True in login else (False if login[0] is False else None),
+        "sns_account": cond.get("sns_account_required"),
+        "proof_or_photo": True if True in proof else (False if proof == [False, False] else None),
+        "purchase": True if nf.get("purchase_required") else (False if cond.get("free_confirmed") else None),
+        "personal_info": cond.get("personal_info"),
+        "form_fields": nf.get("form_fields"),
+        "visit": cond.get("visit_required"),
+        "review": cond.get("review_required"),
+        "eligibility_restricted": (cond.get("eligibility") or {}).get("restricted"),
+    }
+
+
+def item(e, raw_text, aliases, notice=None):
+    """notice: (공지 문장 또는 None, {status, url, fetched_on}) — notices.text_for의 결과. None이면 공지를 쓰지 않는다.
+    공지 근거는 수집한 글에 값이 없을 때(null·unknown)만 채우고, 채운 것은 evidence.facts에 근거 문장과 함께 남긴다."""
+    ntext, nmeta = notice if notice else (None, None)
+    base = " ".join([e.get("title") or "", *(e.get("steps") or []), *(e.get("needs") or []), raw_text or ""])
+    text = base + (" " + ntext if ntext else "")
+    nf, found = N.facts(ntext)
+    used = set()
+    if not e.get("steps") and nf.get("steps"):
+        e = dict(e, steps=nf["steps"])  # 수집한 글에 절차가 없을 때만 공지의 '참여 방법'을 절차로 쓴다
+        used.add("steps")
     st = steps(e)
+    for s in st if "steps" in used else []:
+        s["source"] = "notice"
     cond = conditions(dict(e, rawText=raw_text))
+    if "steps" in used:
+        # 공지 절차로 다시 계산해도 수집한 글로 이미 정해진 true/false는 그대로 둔다(공지는 빈 값만 채운다)
+        for k, v in conditions(dict(e, steps=[], rawText=raw_text)).items():
+            if isinstance(v, bool) and k != "steps_known":
+                cond[k] = v
+    for key, val in (("login_required", nf.get("login_required")), ("proof_required", nf.get("proof_required")),
+                     ("personal_info", nf.get("form_fields"))):
+        if val is not None and cond.get(key) is None:
+            cond[key] = val
+            used.add(key)
+    used |= {k for k in ("purchase_required", "form_fields") if nf.get(k)}
+    req = requirements(cond, nf)
     g = e.get("verification_grade")
     eurl = e.get("entry_url") if g == "A" else e.get("candidate_url") if g == "B" else None
     entry = {"url": eurl, "type": e.get("entry_type") if eurl else None, "grade": g, "verified": g == "A",
              "form_kind": form_kind(eurl), "reason": e.get("verification_reason")}
     methods = entry_methods(e, st, entry)
-    ok, why = auto_ok(e, cond, entry, methods, text)
+    ok, why = auto_ok(e, cond, entry, methods, text, req, None if nmeta is None else bool(ntext))
+    if ntext and not _NO_MACRO.search(base) and (m := _NO_MACRO.search(ntext)):
+        found.append({"field": "terms_forbid_automation", "value": True, "source": "notice", "quote": N._quote(ntext, m)})
+        used.add("terms_forbid_automation")
+    ann = announce_methods(base)
+    if ann == ["unknown"] and ntext:
+        got, quote = N.announce(ntext)  # 공지 문장은 더 엄격한 규칙으로(발표·당첨자 연락 문장만)
+        if got:
+            ann = got
+            found.append({"field": "announce_methods", "value": got, "source": "notice", "quote": quote})
+            used.add("announce_methods")
+    lim = limits(e, text, cond)
+    if ntext:
+        lim0 = limits(e, base, cond)
+        for k in ("per_person_limit", "per_day_limit", "duplicate_entry_allowed", "duplicate_win_allowed"):
+            if lim0[k] is None and lim[k] is not None:
+                found.append({"field": "limits." + k, "value": lim[k], "source": "notice", "quote": None})
+                used.add("limits." + k)
+    evidence = {
+        "notice": nmeta or {"status": "not_used", "url": None, "fetched_on": None},
+        "facts": [f for f in found if f["field"] in used],
+    }
     on, at = added(e)
     items = prize_items(e)
     notice = e.get("original_url") or e.get("url")
@@ -238,22 +305,43 @@ def item(e, raw_text, aliases):
         "ends_at": _at(e.get("end"), e.get("endTime"), end=True),
         "ends_at_time_known": bool(e.get("end") and e.get("endTime")),
         "announce_at": _at(e.get("announce")),
-        "announce_methods": announce_methods(text),
+        "announce_methods": ann,
         "selection": e.get("mode"),
-        "limits": limits(e, text, cond),
+        "limits": lim,
         "steps": st,
         "conditions": cond,
+        "requirements": req,
+        "evidence": evidence,
     }
 
 
-def build(events, raw, aliases, site, today, generated_at):
-    """events: build.py의 enrich된 이벤트(진행 중+종료). 반환: {상대 경로: 내용(dict 또는 str)}"""
+def lite(r):
+    """feed/active-lite.json 한 줄: 응모 여부를 거르는 데 필요한 최소 값. 점수·순위는 없다."""
+    return {"id": r["id"], "entry_type": r["entry"]["type"], "entry_methods": r["entry_methods"], "entry_url": r["entry_url"],
+            "ends_at": r["ends_at"], "auto_ok": r["auto_ok"], "auto_blockers": r["auto_blockers"], "requirements": r["requirements"]}
+
+
+def auto_row(r):
+    """feed/auto.json 한 줄: lite + 폼을 채우는 데 필요한 값(절차·입력 항목·응모 횟수·발표 방법·공지 주소)."""
+    return lite(r) | {"title": r["title"], "notice_url": r["notice_url"], "prize_name": r["prize"]["name"],
+                      "steps": [s["text"] for s in r["steps"]], "per_person_limit": r["limits"]["per_person_limit"],
+                      "announce_methods": r["announce_methods"], "evidence": r["evidence"]}
+
+
+def build(events, raw, aliases, site, today, generated_at, notice_store=None):
+    """events: build.py의 enrich된 이벤트(진행 중+종료). notice_store: data/notices.json(없으면 공지 근거를 쓰지 않음).
+    반환: {상대 경로: 내용(dict 또는 str)}"""
     live = [x for x in events if x.get("status") != "ended" and (not x.get("end") or x["end"] >= today)]
-    rows = {x["id"]: item(x, raw.get(x["id"]), aliases) for x in events}
+    rows = {x["id"]: item(x, raw.get(x["id"]), aliases, N.text_for(notice_store, x) if notice_store is not None else None)
+            for x in events}
     head = {"schema": "tikkeul.agent-feed", "schema_version": SCHEMA_VERSION, "schema_url": site + "feed/schema.json",
             "docs_url": site + "feed/README.md", "generated_at": generated_at, "timezone": "Asia/Seoul", "site": site}
     feed_live = sorted((rows[x["id"]] for x in live), key=lambda r: (r["ends_at"] or "9999", r["id"]))
     out = {"feed/events.json": head | {"count": len(feed_live), "events": feed_live}}
+    lhead = head | {"schema": "tikkeul.agent-feed.lite", "schema_url": site + "feed/lite.schema.json", "full_feed_url": site + "feed/events.json"}
+    autos = [auto_row(r) for r in feed_live if r["auto_ok"] is True]
+    out["feed/auto.json"] = lhead | {"count": len(autos), "events": autos}
+    out["feed/active-lite.json"] = lhead | {"count": len(feed_live), "events": [lite(r) for r in feed_live]}
     start = dt.date.fromisoformat(today) - dt.timedelta(days=NEW_DAYS - 1)
     days = []
     for i in range(NEW_DAYS):
@@ -265,6 +353,7 @@ def build(events, raw, aliases, site, today, generated_at):
     newest = sorted(rows.values(), key=lambda r: (r["added_at"] or (r["added_on"] or "") + "T00:00:00" + TZ, r["id"]), reverse=True)[:ATOM_MAX]
     out["feed/atom.xml"] = atom(newest, site, generated_at)
     out["feed/schema.json"] = SCHEMA
+    out["feed/lite.schema.json"] = LITE_SCHEMA
     return out
 
 
@@ -292,6 +381,26 @@ _S = {"type": ["string", "null"]}
 _B = {"type": ["boolean", "null"]}
 _I = {"type": ["integer", "null"]}
 _DT = {"type": ["string", "null"], "format": "date-time", "description": "ISO 8601, 한국 시간(+09:00)"}
+BLOCKERS = {"type": "array", "items": {"enum": ["terms_forbid_automation", "login_required", "sns_action_required", "proof_or_photo_required",
+                                               "visit_required", "review_required", "eligibility_restricted", "purchase_required",
+                                               "entry_url_not_verified", "not_a_form", "steps_unknown", "notice_not_read"]},
+            "description": "auto_ok가 false면 막는 조건, null이면 부족한 근거. purchase_required·notice_not_read는 2.1에서 추가"}
+REQUIREMENTS = {"type": "object", "description": "응모 요구 조건 요약(2.1). true=필요함이 확인됨, false=필요 없음이 확인됨, null=확인 안 됨",
+                "properties": {
+                    "login": {**_B, "description": "로그인·회원가입 필요"}, "sns_account": {**_B, "description": "SNS 계정 필요"},
+                    "proof_or_photo": {**_B, "description": "인증샷·캡처·사진 제출 필요"},
+                    "purchase": {**_B, "description": "구매·결제 필요(공지 문장 근거). false는 무료 확인분만"},
+                    "personal_info": {"type": ["array", "null"], "items": {"type": "string"}, "description": "요구 개인정보(name·phone·address·email·birth·sns_id)"},
+                    "form_fields": {"type": ["array", "null"], "items": {"type": "string"}, "description": "공지에 적힌 입력 항목(위와 같은 키)"},
+                    "visit": _B, "review": _B, "eligibility_restricted": _B}}
+EVIDENCE = {"type": "object", "description": "공지(원문) 읽기 결과와 공지에서 채운 값의 근거(2.1)", "properties": {
+    "notice": {"type": "object", "properties": {
+        "status": {"enum": ["ok", "mismatch", "empty", "error", "too_many", "blocked", "robots", "forbidden", "login", "not_found",
+                            "non_html", "list_page", "skipped_policy", "no_url", "pending", "not_used"],
+                   "description": "ok=읽고 이 이벤트의 글로 확인됨, mismatch=다른 글로 보여 쓰지 않음, skipped_policy=SNS·로그인 전용·폼이라 읽지 않음, pending=아직 차례가 안 됨"},
+        "url": _S, "fetched_on": {"type": ["string", "null"], "format": "date"}}},
+    "facts": {"type": "array", "description": "공지에서 채운 값. 수집한 글에 값이 없을 때만 채운다", "items": {"type": "object", "properties": {
+        "field": {"type": "string"}, "value": {}, "source": {"const": "notice"}, "quote": {**_S, "description": "근거 문장(짧게)"}}}}}}
 EVENT = {
     "type": "object",
     "required": ["id", "status", "added_on", "added_at", "title", "entry_methods", "auto_ok", "entry_url", "notice_url",
@@ -308,10 +417,7 @@ EVENT = {
         "entry_methods": {"type": "array", "minItems": 1, "items": {"enum": ENTRY_METHODS},
                           "description": "응모 방식(복수). 근거가 없으면 [\"unknown\"]. web_form은 폼 종류를 모르는 웹 신청·퀴즈·설문"},
         "auto_ok": {**_B, "description": "true: 검증된 폼 주소로 로그인·SNS·인증 없이 응모가 끝남이 확인됨. false: 막는 조건이 확인됨. null: 근거 부족. 약관상 허락을 뜻하지 않는다"},
-        "auto_blockers": {"type": "array", "items": {"enum": ["terms_forbid_automation", "login_required", "sns_action_required", "proof_or_photo_required",
-                                                              "visit_required", "review_required", "eligibility_restricted",
-                                                              "entry_url_not_verified", "not_a_form", "steps_unknown"]},
-                          "description": "auto_ok가 false면 막는 조건, null이면 부족한 근거"},
+        "auto_blockers": BLOCKERS,
         "entry_url": {**_S, "description": "실제 응모 주소(폼·게시물). 검증 등급 A·B일 때만, 아니면 null"},
         "entry": {"type": "object", "properties": {
             "url": _S, "type": {"enum": ["form", "website", "instagram", "youtube", "blog", "other", "unknown", None]},
@@ -338,7 +444,10 @@ EVENT = {
                 "public_account_required": _B, "min_followers": _I, "event_only_account_excluded": _B}}}},
         "steps": {"type": "array", "items": {"type": "object", "properties": {
             "order": {"type": "integer"}, "text": {"type": "string"}, "actions": {"type": "array", "items": {"type": "string"}},
-            "platform": {"enum": ["instagram", "youtube", "x", "naver_blog", None]}}}},
+            "platform": {"enum": ["instagram", "youtube", "x", "naver_blog", None]},
+            "source": {"const": "notice", "description": "있으면 공지의 '참여 방법'에서 가져온 절차(수집한 글에 절차가 없을 때)"}}}},
+        "requirements": REQUIREMENTS,
+        "evidence": EVIDENCE,
         "conditions": {"type": "object", "description": "참여 조건. 값이 null이면 확인 안 됨(없음이 아님). 키 목록은 data/feed.schema.json의 conditions와 같다"},
     },
 }
@@ -359,4 +468,29 @@ SCHEMA = {
         "days": {"type": "array", "description": "feed/new/index.json에서만"},
     },
     "$defs": {"event": EVENT},
+}
+
+LITE = {"type": "object", "required": ["id", "entry_type", "entry_methods", "entry_url", "ends_at", "auto_ok", "auto_blockers", "requirements"],
+        "properties": {"id": EVENT["properties"]["id"], "entry_type": EVENT["properties"]["entry"]["properties"]["type"],
+                       "entry_methods": EVENT["properties"]["entry_methods"], "entry_url": EVENT["properties"]["entry_url"],
+                       "ends_at": EVENT["properties"]["ends_at"], "auto_ok": EVENT["properties"]["auto_ok"],
+                       "auto_blockers": BLOCKERS, "requirements": REQUIREMENTS,
+                       "title": {"type": "string"}, "notice_url": {"type": "string"}, "prize_name": _S,
+                       "steps": {"type": "array", "items": {"type": "string"}}, "per_person_limit": _I,
+                       "announce_methods": EVENT["properties"]["announce_methods"], "evidence": EVIDENCE}}
+LITE_SCHEMA = {
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "tikkeul.agent-feed.lite/" + SCHEMA_VERSION,
+    "title": "티끌모아 티끌 경량 피드(feed/auto.json, feed/active-lite.json)",
+    "description": "진행 중 이벤트의 최소 값. 점수·순위 없음(마감 가까운 순). 자세한 값은 같은 id로 feed/events.json에서.",
+    "type": "object",
+    "required": ["schema", "schema_version", "generated_at", "count", "events"],
+    "properties": {
+        "schema": {"const": "tikkeul.agent-feed.lite"},
+        "schema_version": {"type": "string", "pattern": "^2\."},
+        "generated_at": {"type": "string", "format": "date-time"},
+        "count": {"type": "integer"},
+        "events": {"type": "array", "items": {"$ref": "#/$defs/lite"}},
+    },
+    "$defs": {"lite": LITE},
 }

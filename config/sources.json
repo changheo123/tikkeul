@@ -192,5 +192,9 @@
   "verify_sec": 240,
   "verify_min_interval_sec": 1.5,
   "verify_render_per_run": 25,
-  "verify_render_sec": 120
+  "verify_render_sec": 120,
+  "notice_pages_per_run": 80,
+  "notice_sec": 120,
+  "notice_workers": 4,
+  "notice_min_interval_sec": 2.0
 }
