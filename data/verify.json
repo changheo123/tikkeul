@@ -8148,6 +8148,20 @@
    "verification_reason": "모음 사이트의 응모 링크가 로그인 전용이라 원문을 확인하지 못함",
    "verification_status": "unverified"
   },
+  "eh-de17a5248c": {
+   "candidate_url": null,
+   "destination_checked": false,
+   "entry_type": "unknown",
+   "entry_url": null,
+   "last_checked_at": "2026-11-23",
+   "link_evidence": null,
+   "original_url": null,
+   "verification_code": "aggregator_login",
+   "verification_evidence_url": null,
+   "verification_grade": "C",
+   "verification_reason": "모음 사이트의 응모 링크가 로그인 전용이라 원문을 확인하지 못함",
+   "verification_status": "unverified"
+  },
   "eh-deb2d5327b": {
    "candidate_url": null,
    "destination_checked": false,
@@ -10155,7 +10169,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -10169,7 +10183,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -10617,7 +10631,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -10659,7 +10673,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -10827,7 +10841,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -10869,7 +10883,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -10921,18 +10935,18 @@
    "verification_status": "needs_review"
   },
   "rn-04f0f730f0": {
-   "candidate_url": null,
+   "candidate_url": "https://www.reviewnote.co.kr/campaigns/1535550",
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-16",
-   "link_evidence": null,
+   "last_checked_at": "2026-11-23",
+   "link_evidence": "source_row",
    "original_url": null,
-   "verification_code": "mismatch",
-   "verification_evidence_url": "https://www.reviewnote.co.kr/campaigns/1535550",
-   "verification_grade": "C",
-   "verification_reason": "페이지와 이벤트의 일치를 확인하지 못함",
-   "verification_status": "unverified"
+   "verification_code": "login",
+   "verification_evidence_url": null,
+   "verification_grade": "B",
+   "verification_reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)",
+   "verification_status": "needs_review"
   },
   "rn-0536049a2d": {
    "candidate_url": null,
@@ -10991,25 +11005,25 @@
    "verification_status": "unverified"
   },
   "rn-05b9956ee4": {
-   "candidate_url": null,
+   "candidate_url": "https://www.reviewnote.co.kr/campaigns/1540183",
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-16",
-   "link_evidence": null,
+   "last_checked_at": "2026-11-23",
+   "link_evidence": "source_row",
    "original_url": null,
-   "verification_code": "mismatch",
-   "verification_evidence_url": "https://www.reviewnote.co.kr/campaigns/1540183",
-   "verification_grade": "C",
-   "verification_reason": "페이지와 이벤트의 일치를 확인하지 못함",
-   "verification_status": "unverified"
+   "verification_code": "login",
+   "verification_evidence_url": null,
+   "verification_grade": "B",
+   "verification_reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)",
+   "verification_status": "needs_review"
   },
   "rn-0608e04866": {
    "candidate_url": "https://www.reviewnote.co.kr/campaigns/1544803",
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -11331,7 +11345,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -11345,7 +11359,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -11387,7 +11401,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -11513,7 +11527,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -11597,7 +11611,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -11877,7 +11891,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -11891,7 +11905,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -11947,7 +11961,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -12003,7 +12017,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -12213,7 +12227,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -12237,18 +12251,18 @@
    "verification_status": "unverified"
   },
   "rn-1615d1614b": {
-   "candidate_url": null,
+   "candidate_url": "https://www.reviewnote.co.kr/campaigns/1547908",
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-16",
-   "link_evidence": null,
+   "last_checked_at": "2026-11-23",
+   "link_evidence": "source_row",
    "original_url": null,
-   "verification_code": "mismatch",
-   "verification_evidence_url": "https://www.reviewnote.co.kr/campaigns/1547908",
-   "verification_grade": "C",
-   "verification_reason": "페이지와 이벤트의 일치를 확인하지 못함",
-   "verification_status": "unverified"
+   "verification_code": "login",
+   "verification_evidence_url": null,
+   "verification_grade": "B",
+   "verification_reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)",
+   "verification_status": "needs_review"
   },
   "rn-1645068ebc": {
    "candidate_url": null,
@@ -12297,7 +12311,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -12381,7 +12395,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -12493,7 +12507,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -12591,7 +12605,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -12605,7 +12619,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -12703,7 +12717,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -12717,7 +12731,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -12731,7 +12745,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -12759,7 +12773,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -12913,7 +12927,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -12937,18 +12951,18 @@
    "verification_status": "needs_review"
   },
   "rn-1fbcb13629": {
-   "candidate_url": null,
+   "candidate_url": "https://www.reviewnote.co.kr/campaigns/1541883",
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-16",
-   "link_evidence": null,
+   "last_checked_at": "2026-11-23",
+   "link_evidence": "source_row",
    "original_url": null,
-   "verification_code": "mismatch",
-   "verification_evidence_url": "https://www.reviewnote.co.kr/campaigns/1541883",
-   "verification_grade": "C",
-   "verification_reason": "페이지와 이벤트의 일치를 확인하지 못함",
-   "verification_status": "unverified"
+   "verification_code": "login",
+   "verification_evidence_url": null,
+   "verification_grade": "B",
+   "verification_reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)",
+   "verification_status": "needs_review"
   },
   "rn-1fdde2efd0": {
    "candidate_url": null,
@@ -12965,18 +12979,18 @@
    "verification_status": "unverified"
   },
   "rn-1fff50669d": {
-   "candidate_url": null,
+   "candidate_url": "https://www.reviewnote.co.kr/campaigns/1538646",
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-16",
-   "link_evidence": null,
+   "last_checked_at": "2026-11-23",
+   "link_evidence": "source_row",
    "original_url": null,
-   "verification_code": "mismatch",
-   "verification_evidence_url": "https://www.reviewnote.co.kr/campaigns/1538646",
-   "verification_grade": "C",
-   "verification_reason": "페이지와 이벤트의 일치를 확인하지 못함",
-   "verification_status": "unverified"
+   "verification_code": "login",
+   "verification_evidence_url": null,
+   "verification_grade": "B",
+   "verification_reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)",
+   "verification_status": "needs_review"
   },
   "rn-20172f88c3": {
    "candidate_url": "https://www.reviewnote.co.kr/campaigns/1542978",
@@ -13039,7 +13053,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -13137,7 +13151,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -13147,18 +13161,18 @@
    "verification_status": "needs_review"
   },
   "rn-2210209336": {
-   "candidate_url": null,
+   "candidate_url": "https://www.reviewnote.co.kr/campaigns/1542203",
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-16",
-   "link_evidence": null,
+   "last_checked_at": "2026-11-23",
+   "link_evidence": "source_row",
    "original_url": null,
-   "verification_code": "mismatch",
-   "verification_evidence_url": "https://www.reviewnote.co.kr/campaigns/1542203",
-   "verification_grade": "C",
-   "verification_reason": "페이지와 이벤트의 일치를 확인하지 못함",
-   "verification_status": "unverified"
+   "verification_code": "login",
+   "verification_evidence_url": null,
+   "verification_grade": "B",
+   "verification_reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)",
+   "verification_status": "needs_review"
   },
   "rn-225126016f": {
    "candidate_url": null,
@@ -13277,7 +13291,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -13333,7 +13347,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -13473,7 +13487,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -13515,7 +13529,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -13585,7 +13599,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -13753,7 +13767,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -13795,7 +13809,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -13823,7 +13837,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -14425,7 +14439,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -14635,7 +14649,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -14831,7 +14845,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -14897,18 +14911,18 @@
    "verification_status": "unverified"
   },
   "rn-33fd01353f": {
-   "candidate_url": null,
+   "candidate_url": "https://www.reviewnote.co.kr/campaigns/1541295",
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-16",
-   "link_evidence": null,
+   "last_checked_at": "2026-11-23",
+   "link_evidence": "source_row",
    "original_url": null,
-   "verification_code": "mismatch",
-   "verification_evidence_url": "https://www.reviewnote.co.kr/campaigns/1541295",
-   "verification_grade": "C",
-   "verification_reason": "페이지와 이벤트의 일치를 확인하지 못함",
-   "verification_status": "unverified"
+   "verification_code": "login",
+   "verification_evidence_url": null,
+   "verification_grade": "B",
+   "verification_reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)",
+   "verification_status": "needs_review"
   },
   "rn-340dc250ad": {
    "candidate_url": "https://www.reviewnote.co.kr/campaigns/1560034",
@@ -14999,7 +15013,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -15083,7 +15097,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -15195,7 +15209,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -15223,7 +15237,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -15261,18 +15275,18 @@
    "verification_status": "unverified"
   },
   "rn-37851c98d5": {
-   "candidate_url": null,
+   "candidate_url": "https://www.reviewnote.co.kr/campaigns/1541294",
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-16",
-   "link_evidence": null,
+   "last_checked_at": "2026-11-23",
+   "link_evidence": "source_row",
    "original_url": null,
-   "verification_code": "mismatch",
-   "verification_evidence_url": "https://www.reviewnote.co.kr/campaigns/1541294",
-   "verification_grade": "C",
-   "verification_reason": "페이지와 이벤트의 일치를 확인하지 못함",
-   "verification_status": "unverified"
+   "verification_code": "login",
+   "verification_evidence_url": null,
+   "verification_grade": "B",
+   "verification_reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)",
+   "verification_status": "needs_review"
   },
   "rn-37e08ce8e5": {
    "candidate_url": null,
@@ -15419,7 +15433,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -15461,7 +15475,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -15503,7 +15517,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -15559,7 +15573,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -15713,7 +15727,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -15891,18 +15905,18 @@
    "verification_status": "needs_review"
   },
   "rn-3e7e922a4d": {
-   "candidate_url": null,
+   "candidate_url": "https://www.reviewnote.co.kr/campaigns/1541026",
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-16",
-   "link_evidence": null,
+   "last_checked_at": "2026-11-23",
+   "link_evidence": "source_row",
    "original_url": null,
-   "verification_code": "mismatch",
-   "verification_evidence_url": "https://www.reviewnote.co.kr/campaigns/1541026",
-   "verification_grade": "C",
-   "verification_reason": "페이지와 이벤트의 일치를 확인하지 못함",
-   "verification_status": "unverified"
+   "verification_code": "login",
+   "verification_evidence_url": null,
+   "verification_grade": "B",
+   "verification_reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)",
+   "verification_status": "needs_review"
   },
   "rn-3e855ad8a9": {
    "candidate_url": null,
@@ -16119,7 +16133,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -16217,7 +16231,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -16343,7 +16357,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -16399,7 +16413,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -16651,7 +16665,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -16819,7 +16833,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -17043,7 +17057,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -17057,7 +17071,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -17081,18 +17095,18 @@
    "verification_status": "needs_review"
   },
   "rn-4cd4825c2b": {
-   "candidate_url": null,
+   "candidate_url": "https://www.reviewnote.co.kr/campaigns/1541239",
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-16",
-   "link_evidence": null,
+   "last_checked_at": "2026-11-23",
+   "link_evidence": "source_row",
    "original_url": null,
-   "verification_code": "mismatch",
-   "verification_evidence_url": "https://www.reviewnote.co.kr/campaigns/1541239",
-   "verification_grade": "C",
-   "verification_reason": "페이지와 이벤트의 일치를 확인하지 못함",
-   "verification_status": "unverified"
+   "verification_code": "login",
+   "verification_evidence_url": null,
+   "verification_grade": "B",
+   "verification_reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)",
+   "verification_status": "needs_review"
   },
   "rn-4ce01c105f": {
    "candidate_url": null,
@@ -17179,18 +17193,18 @@
    "verification_status": "unverified"
   },
   "rn-4e4c77fac9": {
-   "candidate_url": null,
+   "candidate_url": "https://www.reviewnote.co.kr/campaigns/1541313",
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-16",
-   "link_evidence": null,
+   "last_checked_at": "2026-11-23",
+   "link_evidence": "source_row",
    "original_url": null,
-   "verification_code": "mismatch",
-   "verification_evidence_url": "https://www.reviewnote.co.kr/campaigns/1541313",
-   "verification_grade": "C",
-   "verification_reason": "페이지와 이벤트의 일치를 확인하지 못함",
-   "verification_status": "unverified"
+   "verification_code": "login",
+   "verification_evidence_url": null,
+   "verification_grade": "B",
+   "verification_reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)",
+   "verification_status": "needs_review"
   },
   "rn-4e5b622f1e": {
    "candidate_url": "https://www.reviewnote.co.kr/campaigns/1541103",
@@ -17253,7 +17267,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -17295,7 +17309,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -17435,7 +17449,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -17459,18 +17473,18 @@
    "verification_status": "unverified"
   },
   "rn-50aa731918": {
-   "candidate_url": null,
+   "candidate_url": "https://www.reviewnote.co.kr/campaigns/1542185",
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-16",
-   "link_evidence": null,
+   "last_checked_at": "2026-11-23",
+   "link_evidence": "source_row",
    "original_url": null,
-   "verification_code": "mismatch",
-   "verification_evidence_url": "https://www.reviewnote.co.kr/campaigns/1542185",
-   "verification_grade": "C",
-   "verification_reason": "페이지와 이벤트의 일치를 확인하지 못함",
-   "verification_status": "unverified"
+   "verification_code": "login",
+   "verification_evidence_url": null,
+   "verification_grade": "B",
+   "verification_reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)",
+   "verification_status": "needs_review"
   },
   "rn-50b507654b": {
    "candidate_url": null,
@@ -17533,7 +17547,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -17827,7 +17841,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -17869,7 +17883,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -17925,7 +17939,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -18037,7 +18051,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -18177,7 +18191,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -18303,7 +18317,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -18411,18 +18425,18 @@
    "verification_status": "needs_review"
   },
   "rn-5c1ca5c6f6": {
-   "candidate_url": null,
+   "candidate_url": "https://www.reviewnote.co.kr/campaigns/1547914",
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-16",
-   "link_evidence": null,
+   "last_checked_at": "2026-11-23",
+   "link_evidence": "source_row",
    "original_url": null,
-   "verification_code": "mismatch",
-   "verification_evidence_url": "https://www.reviewnote.co.kr/campaigns/1547914",
-   "verification_grade": "C",
-   "verification_reason": "페이지와 이벤트의 일치를 확인하지 못함",
-   "verification_status": "unverified"
+   "verification_code": "login",
+   "verification_evidence_url": null,
+   "verification_grade": "B",
+   "verification_reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)",
+   "verification_status": "needs_review"
   },
   "rn-5c294db7e7": {
    "candidate_url": "https://www.reviewnote.co.kr/campaigns/1547888",
@@ -18779,7 +18793,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -18821,7 +18835,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -18929,18 +18943,18 @@
    "verification_status": "needs_review"
   },
   "rn-621b5dc0cd": {
-   "candidate_url": null,
+   "candidate_url": "https://www.reviewnote.co.kr/campaigns/1537038",
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-16",
-   "link_evidence": null,
+   "last_checked_at": "2026-11-23",
+   "link_evidence": "source_row",
    "original_url": null,
-   "verification_code": "mismatch",
-   "verification_evidence_url": "https://www.reviewnote.co.kr/campaigns/1537038",
-   "verification_grade": "C",
-   "verification_reason": "페이지와 이벤트의 일치를 확인하지 못함",
-   "verification_status": "unverified"
+   "verification_code": "login",
+   "verification_evidence_url": null,
+   "verification_grade": "B",
+   "verification_reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)",
+   "verification_status": "needs_review"
   },
   "rn-62268c895d": {
    "candidate_url": null,
@@ -18971,18 +18985,18 @@
    "verification_status": "unverified"
   },
   "rn-62c25113e1": {
-   "candidate_url": null,
+   "candidate_url": "https://www.reviewnote.co.kr/campaigns/1538647",
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-16",
-   "link_evidence": null,
+   "last_checked_at": "2026-11-23",
+   "link_evidence": "source_row",
    "original_url": null,
-   "verification_code": "mismatch",
-   "verification_evidence_url": "https://www.reviewnote.co.kr/campaigns/1538647",
-   "verification_grade": "C",
-   "verification_reason": "페이지와 이벤트의 일치를 확인하지 못함",
-   "verification_status": "unverified"
+   "verification_code": "login",
+   "verification_evidence_url": null,
+   "verification_grade": "B",
+   "verification_reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)",
+   "verification_status": "needs_review"
   },
   "rn-62c3641aa2": {
    "candidate_url": null,
@@ -18999,18 +19013,18 @@
    "verification_status": "unverified"
   },
   "rn-6379ffdb4e": {
-   "candidate_url": null,
+   "candidate_url": "https://www.reviewnote.co.kr/campaigns/1542723",
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-16",
-   "link_evidence": null,
+   "last_checked_at": "2026-11-23",
+   "link_evidence": "source_row",
    "original_url": null,
-   "verification_code": "mismatch",
-   "verification_evidence_url": "https://www.reviewnote.co.kr/campaigns/1542723",
-   "verification_grade": "C",
-   "verification_reason": "페이지와 이벤트의 일치를 확인하지 못함",
-   "verification_status": "unverified"
+   "verification_code": "login",
+   "verification_evidence_url": null,
+   "verification_grade": "B",
+   "verification_reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)",
+   "verification_status": "needs_review"
   },
   "rn-637d93b610": {
    "candidate_url": "https://www.reviewnote.co.kr/campaigns/1549192",
@@ -19143,7 +19157,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -19185,7 +19199,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -19325,7 +19339,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -19395,7 +19409,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -19521,7 +19535,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -19605,7 +19619,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -19643,18 +19657,18 @@
    "verification_status": "needs_review"
   },
   "rn-6b1428043e": {
-   "candidate_url": null,
+   "candidate_url": "https://www.reviewnote.co.kr/campaigns/1547923",
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-16",
-   "link_evidence": null,
+   "last_checked_at": "2026-11-23",
+   "link_evidence": "source_row",
    "original_url": null,
-   "verification_code": "mismatch",
-   "verification_evidence_url": "https://www.reviewnote.co.kr/campaigns/1547923",
-   "verification_grade": "C",
-   "verification_reason": "페이지와 이벤트의 일치를 확인하지 못함",
-   "verification_status": "unverified"
+   "verification_code": "login",
+   "verification_evidence_url": null,
+   "verification_grade": "B",
+   "verification_reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)",
+   "verification_status": "needs_review"
   },
   "rn-6b2feae782": {
    "candidate_url": "https://www.reviewnote.co.kr/campaigns/1546780",
@@ -19689,7 +19703,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -19759,7 +19773,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -19857,7 +19871,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -19885,7 +19899,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -19899,7 +19913,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -19969,7 +19983,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -19983,7 +19997,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -20161,18 +20175,18 @@
    "verification_status": "needs_review"
   },
   "rn-71ca2d2633": {
-   "candidate_url": null,
+   "candidate_url": "https://www.reviewnote.co.kr/campaigns/1542418",
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-16",
-   "link_evidence": null,
+   "last_checked_at": "2026-11-23",
+   "link_evidence": "source_row",
    "original_url": null,
-   "verification_code": "mismatch",
-   "verification_evidence_url": "https://www.reviewnote.co.kr/campaigns/1542418",
-   "verification_grade": "C",
-   "verification_reason": "페이지와 이벤트의 일치를 확인하지 못함",
-   "verification_status": "unverified"
+   "verification_code": "login",
+   "verification_evidence_url": null,
+   "verification_grade": "B",
+   "verification_reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)",
+   "verification_status": "needs_review"
   },
   "rn-71eba86c66": {
    "candidate_url": "https://www.reviewnote.co.kr/campaigns/1541228",
@@ -20683,7 +20697,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -20739,7 +20753,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -20921,7 +20935,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -21075,7 +21089,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -21099,18 +21113,18 @@
    "verification_status": "unverified"
   },
   "rn-7e3e995b5e": {
-   "candidate_url": null,
+   "candidate_url": "https://www.reviewnote.co.kr/campaigns/1541328",
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-16",
-   "link_evidence": null,
+   "last_checked_at": "2026-11-23",
+   "link_evidence": "source_row",
    "original_url": null,
-   "verification_code": "mismatch",
-   "verification_evidence_url": "https://www.reviewnote.co.kr/campaigns/1541328",
-   "verification_grade": "C",
-   "verification_reason": "페이지와 이벤트의 일치를 확인하지 못함",
-   "verification_status": "unverified"
+   "verification_code": "login",
+   "verification_evidence_url": null,
+   "verification_grade": "B",
+   "verification_reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)",
+   "verification_status": "needs_review"
   },
   "rn-7e88faac6b": {
    "candidate_url": null,
@@ -21271,7 +21285,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -21407,18 +21421,18 @@
    "verification_status": "unverified"
   },
   "rn-833a5d6648": {
-   "candidate_url": null,
+   "candidate_url": "https://www.reviewnote.co.kr/campaigns/1539213",
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-16",
-   "link_evidence": null,
+   "last_checked_at": "2026-11-23",
+   "link_evidence": "source_row",
    "original_url": null,
-   "verification_code": "mismatch",
-   "verification_evidence_url": "https://www.reviewnote.co.kr/campaigns/1539213",
-   "verification_grade": "C",
-   "verification_reason": "페이지와 이벤트의 일치를 확인하지 못함",
-   "verification_status": "unverified"
+   "verification_code": "login",
+   "verification_evidence_url": null,
+   "verification_grade": "B",
+   "verification_reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)",
+   "verification_status": "needs_review"
   },
   "rn-833c5bc796": {
    "candidate_url": "https://www.reviewnote.co.kr/campaigns/1555514",
@@ -21533,18 +21547,18 @@
    "verification_status": "unverified"
   },
   "rn-8450c39f37": {
-   "candidate_url": null,
+   "candidate_url": "https://www.reviewnote.co.kr/campaigns/1547917",
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-16",
-   "link_evidence": null,
+   "last_checked_at": "2026-11-23",
+   "link_evidence": "source_row",
    "original_url": null,
-   "verification_code": "mismatch",
-   "verification_evidence_url": "https://www.reviewnote.co.kr/campaigns/1547917",
-   "verification_grade": "C",
-   "verification_reason": "페이지와 이벤트의 일치를 확인하지 못함",
-   "verification_status": "unverified"
+   "verification_code": "login",
+   "verification_evidence_url": null,
+   "verification_grade": "B",
+   "verification_reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)",
+   "verification_status": "needs_review"
   },
   "rn-846384d821": {
    "candidate_url": null,
@@ -21565,7 +21579,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -21621,7 +21635,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -21649,7 +21663,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-16",
+   "last_checked_at": "2026-11-23",
    "link_evidence": null,
    "original_url": null,
    "verification_code": "mismatch",
@@ -21691,7 +21705,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -21957,7 +21971,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -22027,7 +22041,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-16",
+   "last_checked_at": "2026-11-23",
    "link_evidence": null,
    "original_url": null,
    "verification_code": "mismatch",
@@ -22083,7 +22097,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -22279,7 +22293,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -22433,7 +22447,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -22461,7 +22475,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -22615,7 +22629,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -22685,7 +22699,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -22713,7 +22727,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -22783,7 +22797,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -22839,7 +22853,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -22867,7 +22881,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -22993,7 +23007,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -23147,7 +23161,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -23189,7 +23203,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -23231,7 +23245,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-16",
+   "last_checked_at": "2026-11-23",
    "link_evidence": null,
    "original_url": null,
    "verification_code": "mismatch",
@@ -23301,7 +23315,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -23357,7 +23371,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -23371,7 +23385,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -23399,7 +23413,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "partial_match",
    "original_url": null,
    "verification_code": "partial",
@@ -23469,7 +23483,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-16",
+   "last_checked_at": "2026-11-23",
    "link_evidence": null,
    "original_url": null,
    "verification_code": "mismatch",
@@ -23581,7 +23595,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -23623,7 +23637,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -23777,7 +23791,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -23931,7 +23945,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -24015,7 +24029,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-16",
+   "last_checked_at": "2026-11-23",
    "link_evidence": null,
    "original_url": null,
    "verification_code": "mismatch",
@@ -24267,7 +24281,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -24281,7 +24295,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -24309,7 +24323,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -24449,7 +24463,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -24729,7 +24743,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -24967,7 +24981,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -25219,7 +25233,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -25289,7 +25303,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-16",
+   "last_checked_at": "2026-11-23",
    "link_evidence": null,
    "original_url": null,
    "verification_code": "mismatch",
@@ -25457,7 +25471,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -25597,7 +25611,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -25709,7 +25723,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-16",
+   "last_checked_at": "2026-11-23",
    "link_evidence": null,
    "original_url": null,
    "verification_code": "mismatch",
@@ -25877,7 +25891,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -25905,7 +25919,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -26017,7 +26031,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -26129,7 +26143,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -26213,7 +26227,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -26255,7 +26269,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -26283,7 +26297,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-16",
+   "last_checked_at": "2026-11-23",
    "link_evidence": null,
    "original_url": null,
    "verification_code": "mismatch",
@@ -26367,7 +26381,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -26409,7 +26423,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-16",
+   "last_checked_at": "2026-11-23",
    "link_evidence": null,
    "original_url": null,
    "verification_code": "mismatch",
@@ -26493,7 +26507,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -26507,7 +26521,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-16",
+   "last_checked_at": "2026-11-23",
    "link_evidence": null,
    "original_url": null,
    "verification_code": "mismatch",
@@ -26521,7 +26535,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-16",
+   "last_checked_at": "2026-11-23",
    "link_evidence": null,
    "original_url": null,
    "verification_code": "mismatch",
@@ -26591,7 +26605,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -26605,7 +26619,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -26731,7 +26745,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -26773,7 +26787,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -26885,7 +26899,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-16",
+   "last_checked_at": "2026-11-23",
    "link_evidence": null,
    "original_url": null,
    "verification_code": "mismatch",
@@ -26899,7 +26913,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -27025,7 +27039,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -27137,7 +27151,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -27179,7 +27193,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-16",
+   "last_checked_at": "2026-11-23",
    "link_evidence": null,
    "original_url": null,
    "verification_code": "mismatch",
@@ -27375,7 +27389,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -27389,7 +27403,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -27417,7 +27431,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -27501,7 +27515,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -27515,7 +27529,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -27683,7 +27697,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-16",
+   "last_checked_at": "2026-11-23",
    "link_evidence": null,
    "original_url": null,
    "verification_code": "mismatch",
@@ -28103,7 +28117,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-16",
+   "last_checked_at": "2026-11-23",
    "link_evidence": null,
    "original_url": null,
    "verification_code": "mismatch",
@@ -28117,7 +28131,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -28145,7 +28159,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -28187,7 +28201,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -28285,7 +28299,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -28369,7 +28383,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -28383,7 +28397,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-16",
+   "last_checked_at": "2026-11-23",
    "link_evidence": null,
    "original_url": null,
    "verification_code": "mismatch",
@@ -28439,7 +28453,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -28481,7 +28495,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -28565,7 +28579,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -28607,7 +28621,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -28691,7 +28705,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -28761,7 +28775,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-16",
+   "last_checked_at": "2026-11-23",
    "link_evidence": null,
    "original_url": null,
    "verification_code": "mismatch",
@@ -28845,7 +28859,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-16",
+   "last_checked_at": "2026-11-23",
    "link_evidence": null,
    "original_url": null,
    "verification_code": "mismatch",
@@ -29111,7 +29125,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -29181,7 +29195,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -29195,7 +29209,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -29321,7 +29335,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -29391,7 +29405,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-16",
+   "last_checked_at": "2026-11-23",
    "link_evidence": null,
    "original_url": null,
    "verification_code": "mismatch",
@@ -29419,7 +29433,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -29545,7 +29559,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-16",
+   "last_checked_at": "2026-11-23",
    "link_evidence": null,
    "original_url": null,
    "verification_code": "mismatch",
@@ -29559,7 +29573,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -29671,7 +29685,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -29951,7 +29965,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -29979,7 +29993,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -30301,7 +30315,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -30483,7 +30497,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -30511,7 +30525,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -30525,7 +30539,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-16",
+   "last_checked_at": "2026-11-23",
    "link_evidence": null,
    "original_url": null,
    "verification_code": "mismatch",
@@ -30567,7 +30581,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -30707,7 +30721,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -30721,7 +30735,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -30763,7 +30777,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-16",
+   "last_checked_at": "2026-11-23",
    "link_evidence": null,
    "original_url": null,
    "verification_code": "mismatch",
@@ -30791,7 +30805,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -30875,7 +30889,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -30917,7 +30931,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -30959,7 +30973,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-16",
+   "last_checked_at": "2026-11-23",
    "link_evidence": null,
    "original_url": null,
    "verification_code": "mismatch",
@@ -31001,7 +31015,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -31029,7 +31043,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-16",
+   "last_checked_at": "2026-11-23",
    "link_evidence": null,
    "original_url": null,
    "verification_code": "mismatch",
@@ -31071,7 +31085,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-16",
+   "last_checked_at": "2026-11-23",
    "link_evidence": null,
    "original_url": null,
    "verification_code": "mismatch",
@@ -31197,7 +31211,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-16",
+   "last_checked_at": "2026-11-23",
    "link_evidence": null,
    "original_url": null,
    "verification_code": "mismatch",
@@ -31435,7 +31449,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -31491,7 +31505,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -31631,7 +31645,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -31645,7 +31659,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -31897,7 +31911,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -31995,7 +32009,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -32135,7 +32149,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-16",
+   "last_checked_at": "2026-11-23",
    "link_evidence": null,
    "original_url": null,
    "verification_code": "mismatch",
@@ -32163,7 +32177,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -32205,7 +32219,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -32247,7 +32261,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-20",
+   "last_checked_at": "2026-11-23",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -32373,7 +32387,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-16",
+   "last_checked_at": "2026-11-23",
    "link_evidence": null,
    "original_url": null,
    "verification_code": "mismatch",
@@ -43126,6 +43140,15 @@
     "reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)"
    }
   ],
+  "rn-04f0f730f0": [
+   {
+    "at": "2026-11-23",
+    "field": "verification_grade",
+    "new": "B",
+    "old": "C",
+    "reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)"
+   }
+  ],
   "rn-05253f19e1": [
    {
     "at": "2026-11-17",
@@ -43156,6 +43179,15 @@
   "rn-05a3de7302": [
    {
     "at": "2026-11-18",
+    "field": "verification_grade",
+    "new": "B",
+    "old": "C",
+    "reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)"
+   }
+  ],
+  "rn-05b9956ee4": [
+   {
+    "at": "2026-11-23",
     "field": "verification_grade",
     "new": "B",
     "old": "C",
@@ -43740,6 +43772,15 @@
     "reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)"
    }
   ],
+  "rn-1615d1614b": [
+   {
+    "at": "2026-11-23",
+    "field": "verification_grade",
+    "new": "B",
+    "old": "C",
+    "reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)"
+   }
+  ],
   "rn-16c54020dc": [
    {
     "at": "2026-11-17",
@@ -44125,6 +44166,15 @@
     "reason": "페이지와 이벤트의 일치를 확인하지 못함"
    }
   ],
+  "rn-1fbcb13629": [
+   {
+    "at": "2026-11-23",
+    "field": "verification_grade",
+    "new": "B",
+    "old": "C",
+    "reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)"
+   }
+  ],
   "rn-1fe36f969a": [
    {
     "at": "2026-11-19",
@@ -44139,6 +44189,15 @@
     "new": "C",
     "old": "B",
     "reason": "페이지와 이벤트의 일치를 확인하지 못함"
+   }
+  ],
+  "rn-1fff50669d": [
+   {
+    "at": "2026-11-23",
+    "field": "verification_grade",
+    "new": "B",
+    "old": "C",
+    "reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)"
    }
   ],
   "rn-2087cb171e": [
@@ -44180,6 +44239,15 @@
     "new": "C",
     "old": "B",
     "reason": "페이지와 이벤트의 일치를 확인하지 못함"
+   }
+  ],
+  "rn-2210209336": [
+   {
+    "at": "2026-11-23",
+    "field": "verification_grade",
+    "new": "B",
+    "old": "C",
+    "reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)"
    }
   ],
   "rn-2218f7032c": [
@@ -44884,6 +44952,15 @@
     "reason": "페이지와 이벤트의 일치를 확인하지 못함"
    }
   ],
+  "rn-33fd01353f": [
+   {
+    "at": "2026-11-23",
+    "field": "verification_grade",
+    "new": "B",
+    "old": "C",
+    "reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)"
+   }
+  ],
   "rn-34915c0c53": [
    {
     "at": "2026-11-20",
@@ -44955,6 +45032,15 @@
     "new": "C",
     "old": "B",
     "reason": "페이지와 이벤트의 일치를 확인하지 못함"
+   }
+  ],
+  "rn-37851c98d5": [
+   {
+    "at": "2026-11-23",
+    "field": "verification_grade",
+    "new": "B",
+    "old": "C",
+    "reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)"
    }
   ],
   "rn-3808f1fc55": [
@@ -45247,6 +45333,15 @@
     "new": "C",
     "old": "B",
     "reason": "페이지와 이벤트의 일치를 확인하지 못함"
+   }
+  ],
+  "rn-3e7e922a4d": [
+   {
+    "at": "2026-11-23",
+    "field": "verification_grade",
+    "new": "B",
+    "old": "C",
+    "reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)"
    }
   ],
   "rn-3e855ad8a9": [
@@ -45648,9 +45743,27 @@
     "reason": "페이지와 이벤트의 일치를 확인하지 못함"
    }
   ],
+  "rn-4cd4825c2b": [
+   {
+    "at": "2026-11-23",
+    "field": "verification_grade",
+    "new": "B",
+    "old": "C",
+    "reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)"
+   }
+  ],
   "rn-4d278f66bd": [
    {
     "at": "2026-11-17",
+    "field": "verification_grade",
+    "new": "B",
+    "old": "C",
+    "reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)"
+   }
+  ],
+  "rn-4e4c77fac9": [
+   {
+    "at": "2026-11-23",
     "field": "verification_grade",
     "new": "B",
     "old": "C",
@@ -45735,6 +45848,15 @@
     "new": "C",
     "old": "B",
     "reason": "페이지와 이벤트의 일치를 확인하지 못함"
+   }
+  ],
+  "rn-50aa731918": [
+   {
+    "at": "2026-11-23",
+    "field": "verification_grade",
+    "new": "B",
+    "old": "C",
+    "reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)"
    }
   ],
   "rn-50ffb1771c": [
@@ -46073,6 +46195,15 @@
     "reason": "페이지와 이벤트의 일치를 확인하지 못함"
    }
   ],
+  "rn-5c1ca5c6f6": [
+   {
+    "at": "2026-11-23",
+    "field": "verification_grade",
+    "new": "B",
+    "old": "C",
+    "reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)"
+   }
+  ],
   "rn-5da9cf547d": [
    {
     "at": "2026-11-20",
@@ -46249,6 +46380,15 @@
     "reason": "페이지와 이벤트의 일치를 확인하지 못함"
    }
   ],
+  "rn-621b5dc0cd": [
+   {
+    "at": "2026-11-23",
+    "field": "verification_grade",
+    "new": "B",
+    "old": "C",
+    "reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)"
+   }
+  ],
   "rn-624f373daa": [
    {
     "at": "2026-11-22",
@@ -46279,6 +46419,24 @@
     "new": "C",
     "old": "B",
     "reason": "페이지와 이벤트의 일치를 확인하지 못함"
+   }
+  ],
+  "rn-62c25113e1": [
+   {
+    "at": "2026-11-23",
+    "field": "verification_grade",
+    "new": "B",
+    "old": "C",
+    "reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)"
+   }
+  ],
+  "rn-6379ffdb4e": [
+   {
+    "at": "2026-11-23",
+    "field": "verification_grade",
+    "new": "B",
+    "old": "C",
+    "reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)"
    }
   ],
   "rn-63bb8b9bc1": [
@@ -46473,6 +46631,15 @@
     "reason": "페이지와 이벤트의 일치를 확인하지 못함"
    }
   ],
+  "rn-6b1428043e": [
+   {
+    "at": "2026-11-23",
+    "field": "verification_grade",
+    "new": "B",
+    "old": "C",
+    "reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)"
+   }
+  ],
   "rn-6b654a7427": [
    {
     "at": "2026-11-20",
@@ -46640,6 +46807,15 @@
     "new": "C",
     "old": "B",
     "reason": "페이지와 이벤트의 일치를 확인하지 못함"
+   }
+  ],
+  "rn-71ca2d2633": [
+   {
+    "at": "2026-11-23",
+    "field": "verification_grade",
+    "new": "B",
+    "old": "C",
+    "reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)"
    }
   ],
   "rn-7203c49eef": [
@@ -47026,6 +47202,15 @@
     "reason": "페이지와 이벤트의 일치를 확인하지 못함"
    }
   ],
+  "rn-7e3e995b5e": [
+   {
+    "at": "2026-11-23",
+    "field": "verification_grade",
+    "new": "B",
+    "old": "C",
+    "reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)"
+   }
+  ],
   "rn-7e57c8a380": [
    {
     "at": "2026-11-19",
@@ -47218,6 +47403,15 @@
     "reason": "페이지와 이벤트의 일치를 확인하지 못함"
    }
   ],
+  "rn-833a5d6648": [
+   {
+    "at": "2026-11-23",
+    "field": "verification_grade",
+    "new": "B",
+    "old": "C",
+    "reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)"
+   }
+  ],
   "rn-83bcddb76f": [
    {
     "at": "2026-11-21",
@@ -47264,6 +47458,15 @@
     "new": "C",
     "old": "B",
     "reason": "페이지와 이벤트의 일치를 확인하지 못함"
+   }
+  ],
+  "rn-8450c39f37": [
+   {
+    "at": "2026-11-23",
+    "field": "verification_grade",
+    "new": "B",
+    "old": "C",
+    "reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)"
    }
   ],
   "rn-8565e19948": [
@@ -56352,7 +56555,7 @@
    "status": "login"
   },
   "https://www.reviewnote.co.kr/campaigns/1533985": {
-   "at": "2026-11-14",
+   "at": "2026-11-23",
    "status": "login"
   },
   "https://www.reviewnote.co.kr/campaigns/1533991": {
@@ -56695,6 +56898,10 @@
    "at": "2026-11-12",
    "status": "login"
   },
+  "https://www.reviewnote.co.kr/campaigns/1535550": {
+   "at": "2026-11-23",
+   "status": "login"
+  },
   "https://www.reviewnote.co.kr/campaigns/1535586": {
    "at": "2026-11-09",
    "status": "login"
@@ -56852,7 +57059,7 @@
    "status": "login"
   },
   "https://www.reviewnote.co.kr/campaigns/1536318": {
-   "at": "2026-11-14",
+   "at": "2026-11-23",
    "status": "login"
   },
   "https://www.reviewnote.co.kr/campaigns/1536351": {
@@ -56941,6 +57148,10 @@
   },
   "https://www.reviewnote.co.kr/campaigns/1537010": {
    "at": "2026-11-12",
+   "status": "login"
+  },
+  "https://www.reviewnote.co.kr/campaigns/1537038": {
+   "at": "2026-11-23",
    "status": "login"
   },
   "https://www.reviewnote.co.kr/campaigns/1537051": {
@@ -57187,6 +57398,14 @@
    "at": "2026-11-22",
    "status": "login"
   },
+  "https://www.reviewnote.co.kr/campaigns/1538646": {
+   "at": "2026-11-23",
+   "status": "login"
+  },
+  "https://www.reviewnote.co.kr/campaigns/1538647": {
+   "at": "2026-11-23",
+   "status": "login"
+  },
   "https://www.reviewnote.co.kr/campaigns/1538662": {
    "at": "2026-11-13",
    "status": "login"
@@ -57245,6 +57464,10 @@
   },
   "https://www.reviewnote.co.kr/campaigns/1539081": {
    "at": "2026-11-22",
+   "status": "login"
+  },
+  "https://www.reviewnote.co.kr/campaigns/1539213": {
+   "at": "2026-11-23",
    "status": "login"
   },
   "https://www.reviewnote.co.kr/campaigns/1539242": {
@@ -57475,6 +57698,10 @@
    "at": "2026-11-17",
    "status": "login"
   },
+  "https://www.reviewnote.co.kr/campaigns/1540183": {
+   "at": "2026-11-23",
+   "status": "login"
+  },
   "https://www.reviewnote.co.kr/campaigns/1540201": {
    "at": "2026-11-17",
    "status": "login"
@@ -57692,7 +57919,7 @@
    "status": "login"
   },
   "https://www.reviewnote.co.kr/campaigns/1540954": {
-   "at": "2026-11-14",
+   "at": "2026-11-23",
    "status": "login"
   },
   "https://www.reviewnote.co.kr/campaigns/1540956": {
@@ -57741,6 +57968,10 @@
   },
   "https://www.reviewnote.co.kr/campaigns/1540997": {
    "at": "2026-11-15",
+   "status": "login"
+  },
+  "https://www.reviewnote.co.kr/campaigns/1541026": {
+   "at": "2026-11-23",
    "status": "login"
   },
   "https://www.reviewnote.co.kr/campaigns/1541038": {
@@ -57919,6 +58150,10 @@
    "at": "2026-11-15",
    "status": "login"
   },
+  "https://www.reviewnote.co.kr/campaigns/1541239": {
+   "at": "2026-11-23",
+   "status": "login"
+  },
   "https://www.reviewnote.co.kr/campaigns/1541241": {
    "at": "2026-11-16",
    "status": "login"
@@ -57943,6 +58178,14 @@
    "at": "2026-11-15",
    "status": "login"
   },
+  "https://www.reviewnote.co.kr/campaigns/1541294": {
+   "at": "2026-11-23",
+   "status": "login"
+  },
+  "https://www.reviewnote.co.kr/campaigns/1541295": {
+   "at": "2026-11-23",
+   "status": "login"
+  },
   "https://www.reviewnote.co.kr/campaigns/1541297": {
    "at": "2026-11-17",
    "status": "login"
@@ -57955,12 +58198,20 @@
    "at": "2026-11-16",
    "status": "login"
   },
+  "https://www.reviewnote.co.kr/campaigns/1541313": {
+   "at": "2026-11-23",
+   "status": "login"
+  },
   "https://www.reviewnote.co.kr/campaigns/1541315": {
    "at": "2026-11-16",
    "status": "login"
   },
   "https://www.reviewnote.co.kr/campaigns/1541323": {
    "at": "2026-11-16",
+   "status": "login"
+  },
+  "https://www.reviewnote.co.kr/campaigns/1541328": {
+   "at": "2026-11-23",
    "status": "login"
   },
   "https://www.reviewnote.co.kr/campaigns/1541335": {
@@ -58135,6 +58386,10 @@
    "at": "2026-11-16",
    "status": "login"
   },
+  "https://www.reviewnote.co.kr/campaigns/1541883": {
+   "at": "2026-11-23",
+   "status": "login"
+  },
   "https://www.reviewnote.co.kr/campaigns/1541888": {
    "at": "2026-11-12",
    "status": "login"
@@ -58267,6 +58522,14 @@
    "at": "2026-11-17",
    "status": "login"
   },
+  "https://www.reviewnote.co.kr/campaigns/1542185": {
+   "at": "2026-11-23",
+   "status": "login"
+  },
+  "https://www.reviewnote.co.kr/campaigns/1542203": {
+   "at": "2026-11-23",
+   "status": "login"
+  },
   "https://www.reviewnote.co.kr/campaigns/1542223": {
    "at": "2026-11-16",
    "status": "login"
@@ -58301,6 +58564,10 @@
   },
   "https://www.reviewnote.co.kr/campaigns/1542395": {
    "at": "2026-11-17",
+   "status": "login"
+  },
+  "https://www.reviewnote.co.kr/campaigns/1542418": {
+   "at": "2026-11-23",
    "status": "login"
   },
   "https://www.reviewnote.co.kr/campaigns/1542458": {
@@ -58345,6 +58612,10 @@
   },
   "https://www.reviewnote.co.kr/campaigns/1542653": {
    "at": "2026-11-12",
+   "status": "login"
+  },
+  "https://www.reviewnote.co.kr/campaigns/1542723": {
+   "at": "2026-11-23",
    "status": "login"
   },
   "https://www.reviewnote.co.kr/campaigns/1542797": {
@@ -59140,7 +59411,7 @@
    "status": "login"
   },
   "https://www.reviewnote.co.kr/campaigns/1546579": {
-   "at": "2026-11-14",
+   "at": "2026-11-23",
    "status": "login"
   },
   "https://www.reviewnote.co.kr/campaigns/1546583": {
@@ -59611,12 +59882,28 @@
    "at": "2026-11-18",
    "status": "login"
   },
+  "https://www.reviewnote.co.kr/campaigns/1547908": {
+   "at": "2026-11-23",
+   "status": "login"
+  },
   "https://www.reviewnote.co.kr/campaigns/1547910": {
    "at": "2026-11-16",
    "status": "login"
   },
+  "https://www.reviewnote.co.kr/campaigns/1547914": {
+   "at": "2026-11-23",
+   "status": "login"
+  },
+  "https://www.reviewnote.co.kr/campaigns/1547917": {
+   "at": "2026-11-23",
+   "status": "login"
+  },
   "https://www.reviewnote.co.kr/campaigns/1547922": {
    "at": "2026-11-18",
+   "status": "login"
+  },
+  "https://www.reviewnote.co.kr/campaigns/1547923": {
+   "at": "2026-11-23",
    "status": "login"
   },
   "https://www.reviewnote.co.kr/campaigns/1547929": {
