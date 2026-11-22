@@ -1,6 +1,9 @@
-# 이미 끝난 행사의 연도 밀림을 되돌리고, 같은 응모 폼은 하나로 합친다
+# 이미 끝난 행사의 연도 밀림을 되돌리고, 같은 응모 폼은 하나로 합친다. 오래된 종료 이벤트는 보관 파일로 옮긴다
 import datetime as dt
+import json
+import os
 import re
+from pathlib import Path
 
 from .common import instagram_posted_in, sub_years
 from . import forms
@@ -130,3 +133,73 @@ def dedupe_forms(db):
             e["status"], e["excluded"] = "merged", keep["id"]
             merged += 1
     return merged
+
+
+ARCHIVE_DAYS = 7       # 마감 후 이 기간이 지난 종료 이벤트는 보관 파일로 옮긴다
+NO_END_DAYS = 30       # 마감일 없는 종료 이벤트는 마지막으로 본 날 기준
+SHORTLINK_DAYS = 30    # 단축 링크 확인 결과 캐시 보존 기간
+
+
+def _archive_month(e):
+    return (e.get("end") or e.get("lastSeen") or e.get("firstSeen") or "0000-00")[:7]
+
+
+def _write_json(path, obj):
+    tmp = path.with_suffix(".tmp")
+    tmp.write_text(json.dumps(obj, ensure_ascii=False, indent=0, sort_keys=True) + "\n", encoding="utf-8")
+    os.replace(tmp, path)
+
+
+def archive_ended(db, state, vstore, today, archive_dir):
+    """마감 후 오래 지난 종료 이벤트를 월별 보관 파일(archive_dir/ended-YYYY-MM.json)로 옮긴다.
+    삭제가 아니라 이동이며, 보관 파일에 먼저 쓴 뒤에만 DB에서 뺀다. 진행 중 이벤트는 건드리지 않는다.
+    함께 정리: 사라진 이벤트의 검증 결과 캐시, 오래된 단축 링크 캐시, 대상이 사라진 별칭."""
+    t = dt.date.fromisoformat(today)
+    cut, cut_no_end = (t - dt.timedelta(days=ARCHIVE_DAYS)).isoformat(), (t - dt.timedelta(days=NO_END_DAYS)).isoformat()
+    res = {"archived": 0, "files": 0, "verify_pruned": 0, "shortlinks_pruned": 0, "alias_pruned": 0}
+    move = {}
+    for k, e in db["events"].items():
+        if e.get("status") != "ended":
+            continue
+        old = (e["end"] < cut) if e.get("end") else ((e.get("lastSeen") or e.get("firstSeen") or "9999") < cut_no_end)
+        if old:
+            move.setdefault(_archive_month(e), {})[k] = e
+    if move:
+        archive_dir = Path(archive_dir)
+        archive_dir.mkdir(parents=True, exist_ok=True)
+        for month, rows in sorted(move.items()):
+            path = archive_dir / f"ended-{month}.json"
+            data = json.loads(path.read_text(encoding="utf-8")) if path.exists() else {"events": {}}
+            data["events"].update(rows)
+            _write_json(path, data)
+            res["files"] += 1
+        for rows in move.values():
+            for k in rows:
+                del db["events"][k]
+                res["archived"] += 1
+    keep = set(db["events"])
+    for k in [k for k in vstore.get("events", {}) if k not in keep or db["events"][k].get("status") != "active"]:
+        del vstore["events"][k]  # 검증 결과는 진행 중 이벤트에만 쓰는 캐시(변경 이력은 history에 남김)
+        res["verify_pruned"] += 1
+    short = state.get("shortlinks", {})
+    scut = (t - dt.timedelta(days=SHORTLINK_DAYS)).isoformat()
+    for u in [u for u, c in short.items() if (c.get("at") or "0000") < scut]:
+        del short[u]
+        res["shortlinks_pruned"] += 1
+    alias = state.get("alias", {})
+    for a in [a for a, oid in alias.items() if oid not in keep]:
+        del alias[a]
+        res["alias_pruned"] += 1
+    return res
+
+
+def load_archive(archive_dir, since):
+    """보관 파일 중 마감(또는 마지막 확인)이 since 이후인 이벤트. 사이트의 종료 목록·저장 목록에 쓴다."""
+    out = []
+    for path in sorted(Path(archive_dir).glob("ended-*.json")):
+        if path.stem[6:] < since[:7]:
+            continue
+        for e in json.loads(path.read_text(encoding="utf-8"))["events"].values():
+            if (e.get("end") or e.get("lastSeen") or "") >= since:
+                out.append(e)
+    return out

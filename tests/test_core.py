@@ -765,3 +765,83 @@ def test_safety_abort(tmp_path, monkeypatch):
 if __name__ == "__main__":
     import pytest
     sys.exit(pytest.main([__file__, "-q"]))
+
+
+
+def test_eventhouse_number_moved_to_data_attribute():
+    """11-20 이벤트하우스가 글 번호를 href='#' + data-event-no로 옮겨 수집이 멈췄던 문제."""
+    from lxml import html as H
+    from collector.sources import aggregators as A
+    new = H.fromstring("""<div class='list_row' onclick="site_go('d1',320746,0);"><div class='list_no'><a href='#' class='eh-number-popup' data-event-no='320746'>814</a></div></div>""")
+    old = H.fromstring("""<div class='list_row'><div class='list_no'><a href='view.php?no=319574'>1</a></div></div>""")
+    click = H.fromstring("""<div class='list_row' onclick="site_go('d1', 300001, 0);"><div class='list_no'><a href='#'>1</a></div></div>""")
+    none = H.fromstring("""<div class='list_row'><div class='list_no'><a href='#'>1</a></div></div>""")
+    assert A._eh_no(new) == "320746" and A._eh_no(old) == "319574" and A._eh_no(click) == "300001" and A._eh_no(none) is None
+
+
+def _arch_db():
+    e = lambda i, st, end, **k: {"id": i, "status": st, "end": end, "title": i, "url": "https://a.example/" + i, **k}
+    return {"events": {
+        "old": e("old", "ended", "2026-11-01"), "recent": e("recent", "ended", "2026-11-18"), "live": e("live", "active", "2026-11-30"),
+        "noend_old": e("noend_old", "ended", None, lastSeen="2026-10-01"), "noend_new": e("noend_new", "ended", None, lastSeen="2026-11-20"),
+        "merged": e("merged", "merged", "2026-10-01"), "oldlive": e("oldlive", "active", "2026-10-01"),
+    }}
+
+
+def test_archive_moves_old_ended_without_loss(tmp_path):
+    import json
+    from collector import cleanup as C
+    db = _arch_db()
+    state = {"shortlinks": {"https://bit.ly/a": {"at": "2026-10-01"}, "https://bit.ly/b": {"at": "2026-11-20"}}, "alias": {"x-1": "old", "y-1": "live"}}
+    vstore = {"events": {"old": {}, "live": {}, "recent": {}, "gone": {}}, "history": {"old": [{"field": "x"}]}}
+    before = {k: dict(v) for k, v in db["events"].items()}
+    r = C.archive_ended(db, state, vstore, "2026-11-22", tmp_path)
+    assert set(db["events"]) == {"recent", "live", "noend_new", "merged", "oldlive"}  # 진행 중·최근 종료·병합 기록은 남긴다
+    files = sorted(p.name for p in tmp_path.glob("*.json"))
+    arch = {k: v for p in tmp_path.glob("*.json") for k, v in json.loads(p.read_text(encoding="utf-8"))["events"].items()}
+    assert files == ["ended-2026-10.json", "ended-2026-11.json"] and set(arch) == {"old", "noend_old"}
+    assert arch["old"] == before["old"] and arch["noend_old"] == before["noend_old"]  # 내용 그대로 보관
+    assert set(vstore["events"]) == {"live"} and vstore["history"] == {"old": [{"field": "x"}]}  # 이력은 남긴다
+    assert set(state["shortlinks"]) == {"https://bit.ly/b"} and state["alias"] == {"y-1": "live"}
+    assert r["archived"] == 2 and r["verify_pruned"] == 3 and r["shortlinks_pruned"] == 1 and r["alias_pruned"] == 1
+    # 다시 실행해도 보관 파일은 그대로(중복·유실 없음), 이후 보관분은 같은 달 파일에 합쳐진다
+    db["events"]["recent"]["end"] = "2026-11-02"
+    C.archive_ended(db, state, vstore, "2026-11-22", tmp_path)
+    arch2 = {k: v for p in tmp_path.glob("*.json") for k, v in json.loads(p.read_text(encoding="utf-8"))["events"].items()}
+    assert set(arch2) == {"old", "noend_old", "recent"}
+    got = C.load_archive(tmp_path, "2026-10-15")
+    assert {e["id"] for e in got} == {"old", "recent"}  # 최근 60일 등 기간으로 골라 읽기
+
+
+def test_archive_never_touches_active(tmp_path):
+    from collector import cleanup as C
+    db = {"events": {"a": {"id": "a", "status": "active", "end": "2020-01-01"}}}
+    C.archive_ended(db, {}, {"events": {}}, "2026-11-22", tmp_path)
+    assert "a" in db["events"] and not list(tmp_path.glob("*.json"))
+
+
+
+def test_eventhouse_ajax_list_rows():
+    """상세가 비동기로 바뀐 목록: 목록 줄의 참여 방식·마감일·당첨자 수만 쓰고 경품명은 지어내지 않는다."""
+    import datetime as dt
+    from collector.sources import aggregators as A
+    from lxml import html as H
+    end = dt.date.today() + dt.timedelta(days=10)
+    page = f"""<html><head><meta charset='utf-8'></head><body>
+    <div class='list_row' onclick="site_go('d1',320710,0);"><div class='list_no'><a href='#' data-event-no='320710'>811</a></div>
+    <div class='list_cates'>설문/투표 </div><div class='list_subject' id='sj4'><img src='./img/list/list_1.gif'> [<strong>국립중앙도서관</strong>] 누리집 이용 만족도 설문조사하고 커피 받자 이벤트!! <sup title='당첨자수'> 100</sup></div>
+    <div class='list_day'>{end.month:02}/{end.day:02}</div><div class='list_gift'>기프티콘</div></div><div class='list_detail eh-ajax-slot' id='d1' hidden></div>
+    </body></html>""".encode("utf-8")
+
+    class F:
+        def doc(self, url, encoding=None):
+            assert encoding == "utf-8"
+            return H.fromstring(page.decode(encoding))
+
+    rows = A._eh_rows(F(), "x")
+    assert len(rows) == 1 and rows[0][0] == "320710" and rows[0][2]["응모형태"] == "설문/투표" and rows[0][2]["당첨자수"] == "100"
+    events, seen, skipped = [], [], {}
+    assert A._eh_add(*rows[0][:3], "web", dt.date.today(), events, seen, skipped)
+    e = events[0]
+    assert e["id"].startswith("eh-") and e["org"] == "국립중앙도서관" and e["end"] == end.isoformat() and e["kind"] == "설문"
+    assert e["prize"] is None and e["count"] == 100 and "기프티콘" not in (e.get("prize") or "")  # 분류명(기프티콘)을 경품명으로 쓰지 않는다

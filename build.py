@@ -8,6 +8,7 @@ import sys
 from pathlib import Path
 
 from collector.common import now_kst
+from collector import cleanup
 from collector.enrich import enrich
 
 ROOT = Path(__file__).resolve().parent
@@ -100,7 +101,7 @@ def main():
         # 상단 안내의 건수는 기본 화면 기준(참여 제한 이벤트 제외)
         "approved": sum(1 for x in live if not x.get("cand") and x.get("is_restricted") is not True),
         "candidates": sum(1 for x in live if x.get("cand") and x.get("is_restricted") is not True),
-        "shown": len(live), "ended": len(events) - len(live),
+        "shown": len(live), "ended": 0,
         "withForm": sum(1 for x in live if x.get("form_url")),
         "withEntry": sum(1 for x in live if x.get("entry_url") or x.get("candidate_url")),
         "grades": {g: sum(1 for x in live if x.get("verification_grade") == g) for g in "ABC"},
@@ -117,7 +118,7 @@ def main():
     # 첫 화면에는 기본 노출 이벤트만 싣고, 나머지는 필요할 때 불러온다
     live_ids = {x["id"] for x in live}
     # 메인 피드(events.json)는 진행 중만. 종료는 archive.json. 첫 화면에는 검증에 쓰는 값만 싣는다
-    slim = lambda x: {k: v for k, v in x.items() if k not in ("listUrl", "isAuto", "excluded", "verification_evidence_url", "verification_status", "verified_at", "last_checked_at", "link_evidence", "destination_checked")}
+    slim = lambda x: {k: v for k, v in x.items() if (v is not None or k == "tb") and k not in ("listUrl", "isAuto", "excluded", "verification_evidence_url", "verification_status", "verified_at", "last_checked_at", "link_evidence", "destination_checked")}
     main = [slim(x) for x in live if x.get("is_restricted") is not True and x.get("grade") != "X"]
     main_ids = {x["id"] for x in main}
     extra = [slim(x) for x in live if x["id"] not in main_ids]
@@ -125,7 +126,15 @@ def main():
     ENDED_KEYS = ("id", "title", "org", "end", "url", "status", "grade", "kind", "plats", "pub", "elec", "card", "pcats", "pmain", "prize", "original_url")
     ended = [{k: x.get(k) for k in ENDED_KEYS} for x in events if x["id"] not in live_ids]
     assert len(main) + len(extra) + len(ended) == len(events), "분리 파일 건수 불일치"
-    meta["mainCount"], meta["extraCount"] = len(main), len(extra)
+    # 보관 파일로 옮긴 최근 60일 종료 이벤트도 종료·저장 목록에 싣는다(예전에 저장한 기록이 그대로 보이도록)
+    since = (now_kst().date() - dt.timedelta(days=60)).isoformat()
+    seen_ids = {x["id"] for x in ended} | live_ids
+    for e in cleanup.load_archive(ROOT / "data" / "archive", since):
+        if e["id"] not in seen_ids:
+            x = enrich(e)
+            ended.append({k: x.get(k) for k in ENDED_KEYS})
+    ended.sort(key=lambda x: x.get("end") or "", reverse=True)
+    meta["mainCount"], meta["extraCount"], meta["ended"] = len(main), len(extra), len(ended)
 
     # 검증 1: DB의 진행 중·종료 건수와 사이트 데이터 건수가 같아야 한다
     n_db = sum(1 for e in db["events"].values() if e.get("status") in ("active", "ended"))

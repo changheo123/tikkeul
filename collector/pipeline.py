@@ -591,6 +591,11 @@ def main(argv=None):
 
     db.pop("_ix", None)
     db["meta"] = {"updated": now.isoformat(timespec="seconds")}
+    # 오래된 종료 이벤트는 월별 보관 파일로 옮기고 캐시를 정리한다(급감 안전장치를 통과한 뒤에만)
+    try:
+        run["archive"] = cleanup.archive_ended(db, state, vstore, today, DATA / "archive")
+    except Exception as e:
+        run["archive"] = {"error": hide_secrets(f"{type(e).__name__}: {e}")[:200]}
     dump(DATA / "db.json", db)
     dump(DATA / "state.json", state)
     dump(DATA / "verify.json", vstore)

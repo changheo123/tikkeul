@@ -125,12 +125,24 @@ def _eh_page(f, page_file, page):
     return _eh_rows(f, f"{EH}{page_file}?p=1&page={page}")
 
 
+def _eh_no(row):
+    """목록 한 줄의 글 번호. 사이트가 위치를 바꿔 와서(11-20 href='#' + data-event-no) 여러 곳을 차례로 본다."""
+    for a in row.xpath(".//div[contains(@class,'list_no')]//a"):
+        if (a.get("data-event-no") or "").isdigit():
+            return a.get("data-event-no")
+        m = re.search(r"[?&]no=(\d+)", a.get("href") or "")
+        if m:
+            return m.group(1)
+    m = re.search(r"site_go\(\s*'[^']*'\s*,\s*(\d+)", row.get("onclick") or "")
+    return m.group(1) if m else None
+
+
 def _eh_rows(f, url):
-    d = f.doc(url)
+    # 서버는 euc_kr이라고 알리지만 본문과 meta는 UTF-8이다(11-20 개편 뒤)
+    d = f.doc(url, encoding="utf-8")
     rows = []
     for row in d.xpath("//div[contains(@class,'list_row')]"):
-        a = row.xpath(".//div[@class='list_no']/a/@href")
-        no = re.search(r"no=(\d+)", a[0]).group(1) if a else None
+        no = _eh_no(row)
         det = row.getnext()
         if not no or det is None or "list_detail" not in (det.get("class") or ""):
             continue
@@ -140,6 +152,13 @@ def _eh_rows(f, url):
             v = text_of((td.xpath("./div[contains(@class,'td_r')]") or [None])[0])
             if k:
                 fields[k] = clean(v)
+        if not fields:
+            # 11-20 개편 뒤 상세 칸은 누를 때 따로 불러온다. 비공개 호출은 쓰지 않고 목록 줄에 보이는 값만 쓴다
+            pick = lambda xp: clean(" ".join(row.xpath(xp)))
+            fields = {"응모형태": pick(".//div[contains(@class,'list_cates')]//text()"),
+                      "응모기간": pick(".//div[contains(@class,'list_day')]//text()"),
+                      "당첨자수": pick(".//sup[@title='당첨자수']//text()")}
+            fields = {k: v for k, v in fields.items() if v}
         # 목록의 숨은 칸에 1등 외 전체 경품이 들어 있다
         fields["전체경품"] = [clean(x) for x in det.xpath(".//div[contains(@class,'div_gift_sort')]//li/text()") if clean(x)]
         subj = clean(" ".join(row.xpath(".//div[contains(@class,'list_subject')]//text()")))
@@ -150,13 +169,15 @@ def _eh_rows(f, url):
 
 def _eh_add(no, subj, fd, plat, today, events, seen, skipped):
     """목록 항목 하나를 이벤트로 만든다. 진행 중이면 True."""
-    ds = find_dates(fd.get("응모기간", ""))
+    period_text = fd.get("응모기간", "")
+    # 목록에는 '11/26'처럼 연도 없이 마감일만 나온다. 오늘 기준 앞뒤 6개월 안으로 연도를 맞춘다
+    ds = find_dates(period_text) if re.search(r"20\d{2}", period_text) else guess_year_dates(period_text)
     start, end = (ds[0], ds[1]) if len(ds) >= 2 else (None, ds[0] if ds else None)
     if end and end < today:
         return False
     m = re.match(r"\[([^\]]+)\]\s*(.+?)\s*(\d[\d,]*)?$", subj)
     title = m.group(2) if m else subj
-    org = fd.get("주최회사") or (m.group(1) if m else None)
+    org = clean(fd.get("주최회사") or (m.group(1) if m else "")) or None
     kind, reason = map_form(fd.get("응모형태"))
     if reason == "유료":
         skipped[no] = "유료 응모형태"
@@ -172,6 +193,8 @@ def _eh_add(no, subj, fd, plat, today, events, seen, skipped):
         ev["tags"].append("원문 미확인")
         if fd.get("전체경품"):
             ev["prizeAll"] = [tidy_prize(x) for x in fd["전체경품"]]
+        if fd.get("당첨자수", "").replace(",", "").isdigit() and not ev.get("count"):
+            ev["count"] = int(fd["당첨자수"].replace(",", "")) or None
         events.append(ev)
         seen.append(ev["id"])
     else:
