@@ -1,123 +1,5 @@
 [
  {
-  "active": 2596,
-  "added": 0,
-  "at": "2026-11-11T09:28:02+09:00",
-  "broken": 0,
-  "dates": 0,
-  "elec": 60,
-  "form": {
-   "direct": 0,
-   "page_err": 0,
-   "page_found": 0,
-   "pages": 0,
-   "short_ok": 0
-  },
-  "links": {
-   "checked": 60,
-   "dead": 0,
-   "error": 0,
-   "ok": 60,
-   "skip": 0
-  },
-  "merged": 0,
-  "originals": 0,
-  "prizeFill": {
-   "left": 47,
-   "page": 0,
-   "page_err": 0,
-   "pages": 0,
-   "text": 0,
-   "title": 0,
-   "truncated": {
-    "checked": 0,
-    "err": 0,
-    "restored": 0
-   }
-  },
-  "proof": 440,
-  "pruned": 0,
-  "quality": {
-   "excluded": 0,
-   "flagged": 19,
-   "merged": 0
-  },
-  "rejected": 0,
-  "requests": 60,
-  "restricted": {
-   "restricted": 2616,
-   "review": 14
-  },
-  "sec": 61.1,
-  "seeded": 0,
-  "sources": {
-   "busan": {
-    "status": "wait"
-   },
-   "contestkorea": {
-    "status": "wait"
-   },
-   "danawa": {
-    "status": "wait"
-   },
-   "eventhouse": {
-    "status": "wait"
-   },
-   "eventhouse_search": {
-    "status": "wait"
-   },
-   "events_kr": {
-    "status": "wait"
-   },
-   "gangnam": {
-    "status": "off"
-   },
-   "korissue": {
-    "status": "wait"
-   },
-   "korissue_orgs": {
-    "status": "wait"
-   },
-   "mohw": {
-    "status": "wait"
-   },
-   "mrblog": {
-    "status": "wait"
-   },
-   "naver": {
-    "status": "wait"
-   },
-   "reviewnote": {
-    "status": "wait"
-   },
-   "sbs": {
-    "status": "wait"
-   },
-   "telegram": {
-    "status": "wait"
-   },
-   "touredu": {
-    "status": "wait"
-   },
-   "wevity": {
-    "status": "wait"
-   },
-   "youtube": {
-    "status": "wait"
-   }
-  },
-  "total": 5388,
-  "verify": {
-   "checked": 0,
-   "due": 0,
-   "failed": 0,
-   "no_request": 0,
-   "rendered": 0,
-   "requests": 0
-  },
-  "viaLeft": 558
- },
- {
   "active": 2609,
   "added": 13,
   "at": "2026-11-11T10:18:30+09:00",
@@ -47760,6 +47642,141 @@
    "rendered": 10,
    "requests": 10,
    "stale_ended": 0
+  },
+  "viaLeft": 359
+ },
+ {
+  "active": 2917,
+  "added": 0,
+  "at": "2026-11-22T09:03:28+09:00",
+  "broken": 0,
+  "dates": 0,
+  "elec": 74,
+  "form": {
+   "direct": 0,
+   "eh_checked": 0,
+   "eh_found": 0,
+   "page_err": 0,
+   "page_found": 0,
+   "pages": 0,
+   "short_ok": 0
+  },
+  "formDedupe": 0,
+  "links": {
+   "checked": 60,
+   "dead": 0,
+   "error": 0,
+   "ok": 60,
+   "skip": 0
+  },
+  "merged": 0,
+  "originals": 0,
+  "prizeFill": {
+   "left": 257,
+   "page": 0,
+   "page_err": 0,
+   "pages": 0,
+   "text": 0,
+   "title": 0,
+   "truncated": {
+    "checked": 0,
+    "err": 0,
+    "restored": 0
+   }
+  },
+  "proof": 683,
+  "pruned": 0,
+  "quality": {
+   "excluded": 0,
+   "flagged": 29,
+   "merged": 0
+  },
+  "rejected": 0,
+  "requests": 62,
+  "restricted": {
+   "restricted": 4678,
+   "review": 24
+  },
+  "sec": 73.8,
+  "seeded": 0,
+  "shifted": {
+   "ended": 0,
+   "realigned": 0
+  },
+  "sources": {
+   "busan": {
+    "status": "wait"
+   },
+   "contestkorea": {
+    "status": "wait"
+   },
+   "danawa": {
+    "status": "wait"
+   },
+   "eventhouse": {
+    "error": "AttributeError: 'NoneType' object has no attribute 'group'",
+    "status": "error",
+    "trace": "gregators.py\", line 214, in eventhouse\n    rows = _eh_page(f, page_file, page)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/tikkeul/tikkeul/collector/sources/aggregators.py\", line 125, in _eh_page\n    return _eh_rows(f, f\"{EH}{page_file}?p=1&page={page}\")\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/tikkeul/tikkeul/collector/sources/aggregators.py\", line 133, in _eh_rows\n    no = re.search(r\"no=(\\d+)\", a[0]).group(1) if a else None\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'NoneType' object has no attribute 'group'\n"
+   },
+   "eventhouse_search": {
+    "error": "AttributeError: 'NoneType' object has no attribute 'group'",
+    "status": "error",
+    "trace": "line.py\", line 523, in main\n    r = fn(f, state, sc)\n        ^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/tikkeul/tikkeul/collector/sources/aggregators.py\", line 190, in eventhouse_search\n    rows = _eh_rows(f, f\"{EH}index.php?\" + urlencode({**q, \"page\": page}))\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/tikkeul/tikkeul/collector/sources/aggregators.py\", line 133, in _eh_rows\n    no = re.search(r\"no=(\\d+)\", a[0]).group(1) if a else None\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'NoneType' object has no attribute 'group'\n"
+   },
+   "events_kr": {
+    "status": "wait"
+   },
+   "gangnam": {
+    "status": "off"
+   },
+   "gonggongevent": {
+    "status": "wait"
+   },
+   "korissue": {
+    "status": "wait"
+   },
+   "korissue_orgs": {
+    "status": "wait"
+   },
+   "mohw": {
+    "status": "wait"
+   },
+   "mrblog": {
+    "status": "wait"
+   },
+   "naver": {
+    "status": "wait"
+   },
+   "reviewnote": {
+    "status": "wait"
+   },
+   "sbs": {
+    "status": "wait"
+   },
+   "telegram": {
+    "status": "wait"
+   },
+   "touredu": {
+    "status": "wait"
+   },
+   "wevity": {
+    "status": "wait"
+   },
+   "youtube": {
+    "status": "wait"
+   },
+   "yuvent": {
+    "status": "wait"
+   }
+  },
+  "total": 8704,
+  "verify": {
+   "checked": 0,
+   "due": 0,
+   "failed": 0,
+   "no_request": 0,
+   "rendered": 0,
+   "requests": 0
   },
   "viaLeft": 359
  }
