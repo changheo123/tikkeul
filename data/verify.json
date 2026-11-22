@@ -13174,6 +13174,20 @@
    "verification_reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)",
    "verification_status": "needs_review"
   },
+  "mb-f9776acc39": {
+   "candidate_url": "https://www.mrblog.net/campaigns/1154430",
+   "destination_checked": false,
+   "entry_type": "website",
+   "entry_url": null,
+   "last_checked_at": "2026-11-22",
+   "link_evidence": "source_row",
+   "original_url": null,
+   "verification_code": "login",
+   "verification_evidence_url": null,
+   "verification_grade": "B",
+   "verification_reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)",
+   "verification_status": "needs_review"
+  },
   "mb-f9beb3c07b": {
    "candidate_url": "https://www.mrblog.net/campaigns/1153128",
    "destination_checked": false,
@@ -32836,6 +32850,20 @@
    "entry_type": "website",
    "entry_url": null,
    "last_checked_at": "2026-11-21",
+   "link_evidence": "source_row",
+   "original_url": null,
+   "verification_code": "login",
+   "verification_evidence_url": null,
+   "verification_grade": "B",
+   "verification_reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)",
+   "verification_status": "needs_review"
+  },
+  "rn-d08dfe880e": {
+   "candidate_url": "https://www.reviewnote.co.kr/campaigns/1560150",
+   "destination_checked": false,
+   "entry_type": "website",
+   "entry_url": null,
+   "last_checked_at": "2026-11-22",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -57810,6 +57838,10 @@
    "at": "2026-11-21",
    "status": "login"
   },
+  "https://www.mrblog.net/campaigns/1154430": {
+   "at": "2026-11-22",
+   "status": "login"
+  },
   "https://www.openfiscaldata.go.kr/op/ko/pc/UOPKOPCA03?pageIndex=1&ofdBrdId=NOTICE&ofdBrdiSeq=51613&brdiTitNm=&title=공지사항": {
    "at": "2026-11-17",
    "status": "robots"
@@ -65043,6 +65075,10 @@
    "status": "login"
   },
   "https://www.reviewnote.co.kr/campaigns/1560131": {
+   "at": "2026-11-22",
+   "status": "login"
+  },
+  "https://www.reviewnote.co.kr/campaigns/1560150": {
    "at": "2026-11-22",
    "status": "login"
   }
