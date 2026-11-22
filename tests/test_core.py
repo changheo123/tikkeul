@@ -845,3 +845,59 @@ def test_eventhouse_ajax_list_rows():
     e = events[0]
     assert e["id"].startswith("eh-") and e["org"] == "국립중앙도서관" and e["end"] == end.isoformat() and e["kind"] == "설문"
     assert e["prize"] is None and e["count"] == 100 and "기프티콘" not in (e.get("prize") or "")  # 분류명(기프티콘)을 경품명으로 쓰지 않는다
+
+
+
+def _cond(**k):
+    from collector.conditions import conditions
+    from collector.enrich import enrich
+    base = {"id": "x", "title": "이벤트", "tags": [], "needs": [], "steps": [], "reasons": [], "kind": "기타", "url": "https://a.example/1"}
+    return conditions(enrich({**base, **k}))
+
+
+def test_steps_are_split_into_actions():
+    from collector.conditions import steps
+    st = steps({"steps": ["팔로우·좋아요·공유", "클리퍼 삼행시 댓글", "정보 폼제출", "인증샷 제출"]})
+    assert [s["actions"] for s in st] == [["follow", "like", "share"], ["comment"], ["form"], ["proof"]]
+    assert st[0]["order"] == 1 and st[1]["text"] == "클리퍼 삼행시 댓글"
+
+
+def test_conditions_true_false_only_with_evidence():
+    c = _cond(steps=["팔로우", "공백 빼고 10글자 응원 댓글"], url="https://www.instagram.com/p/A/")
+    assert c["steps_known"] and c["follow_required"] is True and c["comment_required"] is True and c["share_required"] is False
+    assert c["sns_account_required"] is True and c["sns_platforms"] == ["insta"]
+    # 절차를 모르면 '없음'이 아니라 null
+    c = _cond(steps=[])
+    assert c["steps_known"] is False and c["follow_required"] is None and c["comment_required"] is None and c["one_entry_per_person"] is None
+    assert c["login_required"] is None and c["personal_info"] is None
+
+
+def test_conditions_details():
+    c = _cond(needs=["다나와 회원 로그인 후 응모"], rawText="1인 1회 응모 가능. 이름, 연락처, 배송지 주소를 입력해 주세요. 만 14세 이상 참여",
+              steps=["퀴즈 정답 입력"], tags=["로그인 필요"])
+    assert c["login_required"] is True and c["one_entry_per_person"] is True and c["quiz"] is True
+    assert c["personal_info"] == ["name", "phone", "address"] and c["eligibility"]["age"] == ["만14세이상"]
+    assert _cond(rawText="이벤트 기간 동안 중복 응모 가능")["one_entry_per_person"] is False
+    c = _cond(is_restricted=True, restriction_reason="서울 거주자만 참여", tags=["방문 필요"])
+    assert c["eligibility"]["restricted"] is True and c["eligibility"]["reason"] == "서울 거주자만 참여" and c["visit_required"] is True
+    assert "automation" not in " ".join(c)  # 자동 참여 금지 감지는 넣지 않는다(사용자 결정)
+
+
+def test_feed_item_and_schema_rules():
+    from collector import feed
+    from collector.enrich import enrich
+    e = enrich({"id": "eh-1", "title": "설문하고 커피 받자", "org": "기관", "tags": [], "needs": [], "steps": ["설문", "폼 제출"], "reasons": [], "kind": "설문",
+                "url": "https://www.eventhouse.kr/site/view.php?no=1", "original_url": "https://org.example/n/1", "end": "2026-11-30", "endTime": "23:59",
+                "prize": "스타벅스 아메리카노 10명", "count": 10, "verification_grade": "B", "candidate_url": "https://form.naver.com/response/X",
+                "entry_type": "form", "verification_reason": "로그인 필요", "destination_checked": False, "src": "eh", "firstSeen": "2026-11-20"})
+    meta = {"sources": [{"key": "eventhouse", "label": "이벤트하우스", "st": "on", "last": "2026-11-22T10:00:00+09:00"}, {"key": None, "label": "x", "st": "no"}]}
+    fd = feed.build([e], meta, "https://changheo123.github.io/tikkeul/", "2026-11-22", "2026-11-22T11:00:00+09:00")
+    x = fd["events"][0]
+    assert fd["schema_version"] == "1.0" and fd["count"] == 1 and fd["schema_url"].endswith("data/feed.schema.json") and len(fd["sources"]) == 1
+    assert x["entry"] == {"url": "https://form.naver.com/response/X", "type": "form", "grade": "B", "verified": False, "destination_checked": False, "reason": "로그인 필요"}
+    assert x["notice_url"] == "https://org.example/n/1" and x["period"]["days_left"] == 8 and x["period"]["end_time"] == "23:59"
+    assert x["prize"]["name"] and x["prize"]["winners"] == 10 and x["steps"][1]["actions"] == ["form"]
+    req = feed.SCHEMA["properties"]["events"]["items"]["required"]
+    assert all(k in x for k in req) and set(x["conditions"]) <= set(feed.SCHEMA["properties"]["events"]["items"]["properties"]["conditions"]["properties"])
+    c = dict(e, verification_grade="C", candidate_url=None)
+    assert feed.item(c, "2026-11-22")["entry"]["url"] is None  # C등급은 응모 주소를 싣지 않는다

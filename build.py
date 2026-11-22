@@ -8,7 +8,7 @@ import sys
 from pathlib import Path
 
 from collector.common import now_kst
-from collector import cleanup
+from collector import cleanup, feed
 from collector.enrich import enrich
 
 ROOT = Path(__file__).resolve().parent
@@ -162,7 +162,14 @@ def main():
             f'{page.split("<header", 1)[0]}</head>\n<body>\n<header{page.split("<header", 1)[1]}\n</body></html>\n')
     (tmp / "index.html").write_text(html, encoding="utf-8")
     current = [x for x in events if x["id"] in live_ids]
+    # 기계용 피드: 진행 중 전체(기본 목록 밖의 제한 이벤트도 표시값과 함께). 스키마를 같이 공개한다
+    fd = feed.build(live, meta, site_url(), today, now.isoformat(timespec="seconds"))
+    assert fd["count"] == len(live) and all(x["notice_url"].startswith("http") for x in fd["events"]), "피드 검증 실패"
+    assert all((x["entry"]["url"] is None) == (x["entry"]["grade"] not in ("A", "B")) for x in fd["events"]), "피드 응모 주소 규칙 위반"
+    (tmp_feed := json.dumps(fd, ensure_ascii=False, separators=(",", ":")))
     (tmp / "data" / "events.json").write_text(json.dumps({"meta": meta, "events": current}, ensure_ascii=False, indent=1), encoding="utf-8")
+    (tmp / "data" / "feed.json").write_text(tmp_feed, encoding="utf-8")
+    (tmp / "data" / "feed.schema.json").write_text(json.dumps(feed.SCHEMA, ensure_ascii=False, indent=1), encoding="utf-8")
     (tmp / "data" / "extra.json").write_text(json.dumps({"events": extra}, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
     archive = json.dumps({"events": ended}, ensure_ascii=False, separators=(",", ":"))
     # 같은 사이트(_site/data)에 둔다. 새 화면은 archive.json, 기존 주소 data/ended.json 도 그대로 연다
