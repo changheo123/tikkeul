@@ -1,0 +1,10 @@
+# 티끌모아 티끌
+
+> 무료 경품·댓글·퀴즈·설문 이벤트를 매시간 모아 보여 주는 한국어 사이트. 화면은 JS로 그려지므로 프로그램은 아래 JSON 피드를 쓰세요.
+
+## 기계용 피드
+- [진행 중 이벤트 전체](__SITE_URL__feed/events.json): 고정 스키마 JSON, 한국 시간(+09:00)
+- [일자별 신규 이벤트 목록](__SITE_URL__feed/new/index.json): feed/new/YYYY-MM-DD.json
+- [새 이벤트 Atom](__SITE_URL__feed/atom.xml)
+- [JSON Schema](__SITE_URL__feed/schema.json)
+- [피드 문서](__SITE_URL__feed/README.md): 필드 뜻, null 규칙, 응모 방식·발표 방법 열거값, auto_ok 판단 기준

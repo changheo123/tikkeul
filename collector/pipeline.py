@@ -153,6 +153,9 @@ def merge(db, ev, today, stats):
             return None  # 오래 지난 종료 행사는 새로 넣지 않는다
         ev.update({"srcUrls": [u for u in {ev["url"], ev.get("listUrl")} if u], "firstSeen": today, "lastSeen": today,
                    "status": "ended" if force else "active"})
+        now = now_kst()
+        if now.date().isoformat() == today:  # 첫 등록 시각(에이전트 피드 added_at). 날짜가 다른 재처리에서는 기록하지 않는다
+            ev["addedAt"] = now.isoformat(timespec="seconds")
         if force:
             ev["ended_reason"] = "출처에서 이미 마감된 행사"
         db["events"][ev["id"]] = ev

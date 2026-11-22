@@ -8,7 +8,7 @@ import sys
 from pathlib import Path
 
 from collector.common import now_kst
-from collector import cleanup, feed
+from collector import agentfeed, cleanup, feed
 from collector.enrich import enrich
 
 ROOT = Path(__file__).resolve().parent
@@ -118,7 +118,7 @@ def main():
     # 첫 화면에는 기본 노출 이벤트만 싣고, 나머지는 필요할 때 불러온다
     live_ids = {x["id"] for x in live}
     # 메인 피드(events.json)는 진행 중만. 종료는 archive.json. 첫 화면에는 검증에 쓰는 값만 싣는다
-    slim = lambda x: {k: v for k, v in x.items() if (v is not None or k == "tb") and k not in ("listUrl", "isAuto", "excluded", "verification_evidence_url", "verification_status", "verified_at", "last_checked_at", "link_evidence", "destination_checked")}
+    slim = lambda x: {k: v for k, v in x.items() if (v is not None or k == "tb") and k not in ("listUrl", "isAuto", "excluded", "verification_evidence_url", "verification_status", "verified_at", "last_checked_at", "link_evidence", "destination_checked", "addedAt")}
     main = [slim(x) for x in live if x.get("is_restricted") is not True and x.get("grade") != "X"]
     main_ids = {x["id"] for x in main}
     extra = [slim(x) for x in live if x["id"] not in main_ids]
@@ -159,6 +159,8 @@ def main():
             '<link rel="icon" type="image/png" href="assets/icon-192.png">\n'
             '<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">\n'
             '<link rel="manifest" href="assets/site.webmanifest">\n'
+            '<link rel="alternate" type="application/json" title="이벤트 피드(JSON)" href="feed/events.json">\n'
+            '<link rel="alternate" type="application/atom+xml" title="새 이벤트(Atom)" href="feed/atom.xml">\n'
             f'{page.split("<header", 1)[0]}</head>\n<body>\n<header{page.split("<header", 1)[1]}\n</body></html>\n')
     (tmp / "index.html").write_text(html, encoding="utf-8")
     current = [x for x in events if x["id"] in live_ids]
@@ -170,6 +172,22 @@ def main():
     (tmp / "data" / "events.json").write_text(json.dumps({"meta": meta, "events": current}, ensure_ascii=False, indent=1), encoding="utf-8")
     (tmp / "data" / "feed.json").write_text(tmp_feed, encoding="utf-8")
     (tmp / "data" / "feed.schema.json").write_text(json.dumps(feed.SCHEMA, ensure_ascii=False, indent=1), encoding="utf-8")
+    # 에이전트 피드(feed/): 진행 중 전체·일자별 신규·Atom·스키마·문서. 화면 HTML을 읽지 않고 쓰도록 한다
+    aliases = {}
+    for aid, oid in state.get("alias", {}).items():
+        aliases.setdefault(oid, set()).add(aid)
+    raw = {i: e.get("rawText") for i, e in db["events"].items() if e.get("rawText")}
+    af = agentfeed.build(events, raw, aliases, site_url(), today, now.isoformat(timespec="seconds"))
+    assert af["feed/events.json"]["count"] == len(live), "에이전트 피드 건수 불일치"
+    for r in af["feed/events.json"]["events"]:
+        assert r["notice_url"].startswith("http") and r["entry_methods"] and r["announce_methods"], f"에이전트 피드 필수값 누락: {r['id']}"
+        assert set(r["entry_methods"]) <= set(agentfeed.ENTRY_METHODS) and set(r["announce_methods"]) <= set(agentfeed.ANNOUNCE_METHODS), r["id"]
+        assert (r["entry_url"] is None) == (r["entry"]["grade"] not in ("A", "B")), f"에이전트 피드 응모 주소 규칙 위반: {r['id']}"
+    (tmp / "feed" / "new").mkdir(parents=True)
+    for rel, body in af.items():
+        (tmp / rel).write_text(body if isinstance(body, str) else json.dumps(body, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
+    shutil.copy(ROOT / "web" / "feed" / "README.md", tmp / "feed" / "README.md")
+    (tmp / "llms.txt").write_text((ROOT / "web" / "llms.txt").read_text(encoding="utf-8").replace("__SITE_URL__", site_url()), encoding="utf-8")
     (tmp / "data" / "extra.json").write_text(json.dumps({"events": extra}, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
     archive = json.dumps({"events": ended}, ensure_ascii=False, separators=(",", ":"))
     # 같은 사이트(_site/data)에 둔다. 새 화면은 archive.json, 기존 주소 data/ended.json 도 그대로 연다

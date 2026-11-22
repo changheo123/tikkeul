@@ -18,6 +18,17 @@ GitHub Actions(수집·빌드)와 GitHub Pages(호스팅)만 써서 월 운영�
 | `data/runs.json` | 실행 로그(최근 300회), 사이트의 `data/status.json`으로도 공개 |
 | `data/overrides.json` | 관리자 승인·반려·수정 |
 | `config/sources.json` | 출처 켜기/끄기, 수집 주기, 검색어, 텔레그램 채널 |
+| `collector/agentfeed.py` | AI 에이전트용 피드(`feed/`): 진행 중 전체·일자별 신규·Atom·JSON Schema. 문서는 `web/feed/README.md` |
+
+## 에이전트·프로그램용 피드
+
+화면은 JS로 그려지므로 프로그램은 HTML 대신 아래 정적 JSON을 쓴다(매시간 갱신, 한국 시간 `+09:00`).
+
+- `https://changheo123.github.io/tikkeul/feed/events.json` — 진행 중 전체
+- `…/feed/new/YYYY-MM-DD.json` — 그날 처음 등록된 이벤트(최근 30일), 목록은 `…/feed/new/index.json`
+- `…/feed/atom.xml` — 새 이벤트 Atom, `…/feed/schema.json` — JSON Schema, `…/feed/README.md` — 필드 설명
+- 사이트 루트 `llms.txt`와 `index.html`의 `<link rel="alternate">`로도 찾을 수 있다
+- 기존 `data/feed.json`(schema 1.0)은 그대로 유지한다
 
 ## 관리자 작업(GitHub 웹에서 파일 편집)
 
