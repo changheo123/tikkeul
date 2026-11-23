@@ -677,9 +677,9 @@
    "v": 1
   },
   "eh-3e28f4b7f2": {
-   "at": "2026-11-22",
+   "at": "2026-11-24",
    "status": "error",
-   "tries": 1,
+   "tries": 2,
    "url": "https://gn.go.kr/www/addQestnarRspnsWebView.do?key=3067&lctreNo=&pageIndex=1&pageUnit=10&qestnarGroupNo=162&qestnarNo=1025&searchCnd=all",
    "v": 1
   },
@@ -692,10 +692,11 @@
    "v": 1
   },
   "eh-4201ce2727": {
-   "at": "2026-11-22",
-   "status": "error",
-   "tries": 1,
-   "url": "https://busan.go.kr/nbnews/1763293",
+   "at": "2026-11-24",
+   "final": null,
+   "status": "ok",
+   "text": "온라인 시민참여플랫폼 시민열린마루 참여이벤트 개최 : 부산소식 : 새소식 : 통합 공지사항 : 부산광역시\n온라인 시민참여플랫폼 시민열린마루 참여이벤트 개최 : 부산소식 : 새소식 : 통합 공지사항\nBusan is good 부산이라 좋다. 해양수도 부산의 주요소식, 시민참여, 행정서비스 안내\n공유하기 열기\n카카오톡\n온라인 시민참여플랫폼 시민열린마루 참여이벤트 개최\n전화번호",
+   "url": "https://www.busan.go.kr/nbnews/1763293",
    "v": 1
   },
   "eh-475c25b0e0": {
@@ -812,9 +813,9 @@
    "v": 1
   },
   "eh-748992fda7": {
-   "at": "2026-11-22",
+   "at": "2026-11-24",
    "status": "error",
-   "tries": 1,
+   "tries": 2,
    "url": "https://www.koreanair.com/contents/promotion/list/2026/hij2026?pageNum=1",
    "v": 1
   },
@@ -1054,9 +1055,9 @@
    "v": 1
   },
   "eh-ccfd1aad4f": {
-   "at": "2026-11-22",
+   "at": "2026-11-24",
    "status": "error",
-   "tries": 1,
+   "tries": 2,
    "url": "https://www.koreanair.com/contents/promotion/list/2026/mel2026?pageNum=1",
    "v": 1
   },
