@@ -1439,6 +1439,8 @@
    "281": "ek-d8502b7d77",
    "282": "ek-267b976f6f",
    "283": "ek-3032a4beba",
+   "284": "ek-7f35419a05",
+   "285": "ek-367ac64a16",
    "29": "ek-7719a1c782",
    "30": "ek-22d200f867",
    "31": "ek-632667547e",
@@ -1519,8 +1521,8 @@
   "events_kr": 0,
   "gangnam": 1,
   "gonggongevent": 0,
-  "korissue": 40,
-  "korissue_orgs": 38,
+  "korissue": 41,
+  "korissue_orgs": 39,
   "mohw": 0,
   "mrblog": 0,
   "reviewnote": 0,
@@ -6402,16 +6404,16 @@
   }
  },
  "lastOk": {
-  "busan": "2026-11-24T08:17:57+09:00",
+  "busan": "2026-11-24T10:05:42+09:00",
   "contestkorea": "2026-11-24T09:12:21+09:00",
   "danawa": "2026-11-24T09:12:21+09:00",
-  "eventhouse": "2026-11-24T08:17:57+09:00",
+  "eventhouse": "2026-11-24T10:05:42+09:00",
   "eventhouse_search": "2026-11-24T07:24:24+09:00",
-  "events_kr": "2026-11-24T08:17:57+09:00",
+  "events_kr": "2026-11-24T10:05:42+09:00",
   "gonggongevent": "2026-11-24T07:24:24+09:00",
   "korissue": "2026-11-22T21:35:01+09:00",
   "korissue_orgs": "2026-11-22T23:22:53+09:00",
-  "mohw": "2026-11-24T08:17:57+09:00",
+  "mohw": "2026-11-24T10:05:42+09:00",
   "mrblog": "2026-11-24T07:24:24+09:00",
   "reviewnote": "2026-11-24T07:24:24+09:00",
   "sbs": "2026-11-24T07:24:24+09:00",
@@ -6420,16 +6422,16 @@
   "yuvent": "2026-11-24T07:24:24+09:00"
  },
  "lastRun": {
-  "busan": "2026-11-24T08:17:57+09:00",
+  "busan": "2026-11-24T10:05:42+09:00",
   "contestkorea": "2026-11-24T09:12:21+09:00",
   "danawa": "2026-11-24T09:12:21+09:00",
-  "eventhouse": "2026-11-24T08:17:57+09:00",
+  "eventhouse": "2026-11-24T10:05:42+09:00",
   "eventhouse_search": "2026-11-24T07:24:24+09:00",
-  "events_kr": "2026-11-24T08:17:57+09:00",
+  "events_kr": "2026-11-24T10:05:42+09:00",
   "gonggongevent": "2026-11-24T07:24:24+09:00",
   "korissue": "2026-11-22T21:35:01+09:00",
   "korissue_orgs": "2026-11-22T23:22:53+09:00",
-  "mohw": "2026-11-24T08:17:57+09:00",
+  "mohw": "2026-11-24T10:05:42+09:00",
   "mrblog": "2026-11-24T07:24:24+09:00",
   "naver": "2026-11-24T09:12:21+09:00",
   "reviewnote": "2026-11-24T07:24:24+09:00",
@@ -24417,6 +24419,126 @@
    "final": null,
    "status": "not_form",
    "to": "https://www.eventhouse.kr/login/index.php?gourl=https%3A%2F%2Fwww.eventhouse.kr%2Fsite%2Ffgo.php%3Ffnum%3D320992%26go%3D4&fnum=320992"
+  },
+  "https://www.eventhouse.kr/site/fgo.php?fnum=320993&go=4": {
+   "at": "2026-11-24",
+   "final": null,
+   "status": "not_form",
+   "to": "https://www.eventhouse.kr/login/index.php?gourl=https%3A%2F%2Fwww.eventhouse.kr%2Fsite%2Ffgo.php%3Ffnum%3D320993%26go%3D4&fnum=320993"
+  },
+  "https://www.eventhouse.kr/site/fgo.php?fnum=320994&go=4": {
+   "at": "2026-11-24",
+   "final": null,
+   "status": "not_form",
+   "to": "https://www.eventhouse.kr/login/index.php?gourl=https%3A%2F%2Fwww.eventhouse.kr%2Fsite%2Ffgo.php%3Ffnum%3D320994%26go%3D4&fnum=320994"
+  },
+  "https://www.eventhouse.kr/site/fgo.php?fnum=320995&go=4": {
+   "at": "2026-11-24",
+   "final": null,
+   "status": "not_form",
+   "to": "https://www.eventhouse.kr/login/index.php?gourl=https%3A%2F%2Fwww.eventhouse.kr%2Fsite%2Ffgo.php%3Ffnum%3D320995%26go%3D4&fnum=320995"
+  },
+  "https://www.eventhouse.kr/site/fgo.php?fnum=320996&go=4": {
+   "at": "2026-11-24",
+   "final": null,
+   "status": "not_form",
+   "to": "https://www.eventhouse.kr/login/index.php?gourl=https%3A%2F%2Fwww.eventhouse.kr%2Fsite%2Ffgo.php%3Ffnum%3D320996%26go%3D4&fnum=320996"
+  },
+  "https://www.eventhouse.kr/site/fgo.php?fnum=320997&go=4": {
+   "at": "2026-11-24",
+   "final": null,
+   "status": "not_form",
+   "to": "https://www.eventhouse.kr/login/index.php?gourl=https%3A%2F%2Fwww.eventhouse.kr%2Fsite%2Ffgo.php%3Ffnum%3D320997%26go%3D4&fnum=320997"
+  },
+  "https://www.eventhouse.kr/site/fgo.php?fnum=320998&go=4": {
+   "at": "2026-11-24",
+   "final": null,
+   "status": "not_form",
+   "to": "https://www.eventhouse.kr/login/index.php?gourl=https%3A%2F%2Fwww.eventhouse.kr%2Fsite%2Ffgo.php%3Ffnum%3D320998%26go%3D4&fnum=320998"
+  },
+  "https://www.eventhouse.kr/site/fgo.php?fnum=320999&go=4": {
+   "at": "2026-11-24",
+   "final": null,
+   "status": "not_form",
+   "to": "https://www.eventhouse.kr/login/index.php?gourl=https%3A%2F%2Fwww.eventhouse.kr%2Fsite%2Ffgo.php%3Ffnum%3D320999%26go%3D4&fnum=320999"
+  },
+  "https://www.eventhouse.kr/site/fgo.php?fnum=321000&go=4": {
+   "at": "2026-11-24",
+   "final": null,
+   "status": "not_form",
+   "to": "https://www.eventhouse.kr/login/index.php?gourl=https%3A%2F%2Fwww.eventhouse.kr%2Fsite%2Ffgo.php%3Ffnum%3D321000%26go%3D4&fnum=321000"
+  },
+  "https://www.eventhouse.kr/site/fgo.php?fnum=321001&go=4": {
+   "at": "2026-11-24",
+   "final": null,
+   "status": "not_form",
+   "to": "https://www.eventhouse.kr/login/index.php?gourl=https%3A%2F%2Fwww.eventhouse.kr%2Fsite%2Ffgo.php%3Ffnum%3D321001%26go%3D4&fnum=321001"
+  },
+  "https://www.eventhouse.kr/site/fgo.php?fnum=321002&go=4": {
+   "at": "2026-11-24",
+   "final": null,
+   "status": "not_form",
+   "to": "https://www.eventhouse.kr/login/index.php?gourl=https%3A%2F%2Fwww.eventhouse.kr%2Fsite%2Ffgo.php%3Ffnum%3D321002%26go%3D4&fnum=321002"
+  },
+  "https://www.eventhouse.kr/site/fgo.php?fnum=321003&go=4": {
+   "at": "2026-11-24",
+   "final": null,
+   "status": "not_form",
+   "to": "https://www.eventhouse.kr/login/index.php?gourl=https%3A%2F%2Fwww.eventhouse.kr%2Fsite%2Ffgo.php%3Ffnum%3D321003%26go%3D4&fnum=321003"
+  },
+  "https://www.eventhouse.kr/site/fgo.php?fnum=321004&go=4": {
+   "at": "2026-11-24",
+   "final": null,
+   "status": "not_form",
+   "to": "https://www.eventhouse.kr/login/index.php?gourl=https%3A%2F%2Fwww.eventhouse.kr%2Fsite%2Ffgo.php%3Ffnum%3D321004%26go%3D4&fnum=321004"
+  },
+  "https://www.eventhouse.kr/site/fgo.php?fnum=321005&go=4": {
+   "at": "2026-11-24",
+   "final": null,
+   "status": "not_form",
+   "to": "https://www.eventhouse.kr/login/index.php?gourl=https%3A%2F%2Fwww.eventhouse.kr%2Fsite%2Ffgo.php%3Ffnum%3D321005%26go%3D4&fnum=321005"
+  },
+  "https://www.eventhouse.kr/site/fgo.php?fnum=321006&go=4": {
+   "at": "2026-11-24",
+   "final": null,
+   "status": "not_form",
+   "to": "https://www.eventhouse.kr/login/index.php?gourl=https%3A%2F%2Fwww.eventhouse.kr%2Fsite%2Ffgo.php%3Ffnum%3D321006%26go%3D4&fnum=321006"
+  },
+  "https://www.eventhouse.kr/site/fgo.php?fnum=321007&go=4": {
+   "at": "2026-11-24",
+   "final": null,
+   "status": "not_form",
+   "to": "https://www.eventhouse.kr/login/index.php?gourl=https%3A%2F%2Fwww.eventhouse.kr%2Fsite%2Ffgo.php%3Ffnum%3D321007%26go%3D4&fnum=321007"
+  },
+  "https://www.eventhouse.kr/site/fgo.php?fnum=321008&go=4": {
+   "at": "2026-11-24",
+   "final": null,
+   "status": "not_form",
+   "to": "https://www.eventhouse.kr/login/index.php?gourl=https%3A%2F%2Fwww.eventhouse.kr%2Fsite%2Ffgo.php%3Ffnum%3D321008%26go%3D4&fnum=321008"
+  },
+  "https://www.eventhouse.kr/site/fgo.php?fnum=321009&go=4": {
+   "at": "2026-11-24",
+   "final": null,
+   "status": "not_form",
+   "to": "https://www.eventhouse.kr/login/index.php?gourl=https%3A%2F%2Fwww.eventhouse.kr%2Fsite%2Ffgo.php%3Ffnum%3D321009%26go%3D4&fnum=321009"
+  },
+  "https://www.eventhouse.kr/site/fgo.php?fnum=321010&go=4": {
+   "at": "2026-11-24",
+   "final": null,
+   "status": "not_form",
+   "to": "https://www.eventhouse.kr/login/index.php?gourl=https%3A%2F%2Fwww.eventhouse.kr%2Fsite%2Ffgo.php%3Ffnum%3D321010%26go%3D4&fnum=321010"
+  },
+  "https://www.eventhouse.kr/site/fgo.php?fnum=321011&go=4": {
+   "at": "2026-11-24",
+   "final": null,
+   "status": "not_form",
+   "to": "https://www.eventhouse.kr/login/index.php?gourl=https%3A%2F%2Fwww.eventhouse.kr%2Fsite%2Ffgo.php%3Ffnum%3D321011%26go%3D4&fnum=321011"
+  },
+  "https://www.eventhouse.kr/site/fgo.php?fnum=321012&go=4": {
+   "at": "2026-11-24",
+   "final": null,
+   "status": "not_form",
+   "to": "https://www.eventhouse.kr/login/index.php?gourl=https%3A%2F%2Fwww.eventhouse.kr%2Fsite%2Ffgo.php%3Ffnum%3D321012%26go%3D4&fnum=321012"
   }
  },
  "touredu": {
