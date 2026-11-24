@@ -1446,7 +1446,7 @@
   "https://vo.la/O5a6KCv": "https://m.blog.naver.com/ok_hira/224442524892"
  },
  "fails": {
-  "busan": 20,
+  "busan": 21,
   "contestkorea": 0,
   "danawa": 0,
   "eventhouse": 0,
@@ -1454,8 +1454,8 @@
   "events_kr": 0,
   "gangnam": 1,
   "gonggongevent": 0,
-  "korissue": 62,
-  "korissue_orgs": 60,
+  "korissue": 63,
+  "korissue_orgs": 61,
   "mohw": 0,
   "mrblog": 0,
   "reviewnote": 0,
@@ -6341,39 +6341,39 @@
   "contestkorea": "2026-11-25T03:18:14+09:00",
   "danawa": "2026-11-25T03:18:14+09:00",
   "eventhouse": "2026-11-25T04:14:10+09:00",
-  "eventhouse_search": "2026-11-25T01:21:52+09:00",
+  "eventhouse_search": "2026-11-25T05:09:06+09:00",
   "events_kr": "2026-11-25T04:14:10+09:00",
-  "gonggongevent": "2026-11-25T01:21:52+09:00",
+  "gonggongevent": "2026-11-25T05:09:06+09:00",
   "korissue": "2026-11-22T21:35:01+09:00",
   "korissue_orgs": "2026-11-22T23:22:53+09:00",
   "mohw": "2026-11-25T04:14:10+09:00",
-  "mrblog": "2026-11-25T01:21:52+09:00",
-  "reviewnote": "2026-11-25T01:21:52+09:00",
-  "sbs": "2026-11-25T01:21:52+09:00",
-  "touredu": "2026-11-25T01:21:52+09:00",
+  "mrblog": "2026-11-25T05:09:06+09:00",
+  "reviewnote": "2026-11-25T05:09:06+09:00",
+  "sbs": "2026-11-25T05:09:06+09:00",
+  "touredu": "2026-11-25T05:09:06+09:00",
   "wevity": "2026-11-25T03:18:14+09:00",
-  "yuvent": "2026-11-25T01:21:52+09:00"
+  "yuvent": "2026-11-25T05:09:06+09:00"
  },
  "lastRun": {
   "busan": "2026-11-24T10:05:42+09:00",
   "contestkorea": "2026-11-25T03:18:14+09:00",
   "danawa": "2026-11-25T03:18:14+09:00",
   "eventhouse": "2026-11-25T04:14:10+09:00",
-  "eventhouse_search": "2026-11-25T01:21:52+09:00",
+  "eventhouse_search": "2026-11-25T05:09:06+09:00",
   "events_kr": "2026-11-25T04:14:10+09:00",
-  "gonggongevent": "2026-11-25T01:21:52+09:00",
+  "gonggongevent": "2026-11-25T05:09:06+09:00",
   "korissue": "2026-11-22T21:35:01+09:00",
   "korissue_orgs": "2026-11-22T23:22:53+09:00",
   "mohw": "2026-11-25T04:14:10+09:00",
-  "mrblog": "2026-11-25T01:21:52+09:00",
+  "mrblog": "2026-11-25T05:09:06+09:00",
   "naver": "2026-11-25T03:18:14+09:00",
-  "reviewnote": "2026-11-25T01:21:52+09:00",
-  "sbs": "2026-11-25T01:21:52+09:00",
+  "reviewnote": "2026-11-25T05:09:06+09:00",
+  "sbs": "2026-11-25T05:09:06+09:00",
   "telegram": "2026-11-25T03:18:14+09:00",
-  "touredu": "2026-11-25T01:21:52+09:00",
+  "touredu": "2026-11-25T05:09:06+09:00",
   "wevity": "2026-11-25T03:18:14+09:00",
-  "youtube": "2026-11-25T01:21:52+09:00",
-  "yuvent": "2026-11-25T01:21:52+09:00"
+  "youtube": "2026-11-25T05:09:06+09:00",
+  "yuvent": "2026-11-25T05:09:06+09:00"
  },
  "lastSkipped": {
   "busan": {},
@@ -6420,8 +6420,8 @@
   "korissue_orgs": {},
   "mohw": {},
   "mrblog": {
-   "1154740": "유료 조건: 결제,페이백",
-   "1155163": "유료 조건: 결제,페이백"
+   "1155159": "유료 조건: 결제,페이백",
+   "1155531": "유료 조건: 결제,페이백"
   },
   "reviewnote": {
    "1558522": "유료 조건: 구매",
@@ -6444,11 +6444,7 @@
   "touredu": {},
   "wevity": {},
   "yuvent": {
-   "cmwt9v4xe0spq012rx2z69p73": "유료 조건: 구매,멤버십 가입",
-   "cmwtfx5n90zmc012napys1h7a": "유료 조건: 구매",
-   "cmwtg6lox10rt012ndwi1kp8y": "유료 조건: 구매",
    "cmwtzlltp172p012rp6gkokih": "유료 조건: 구매",
-   "cmwtzqm1e17tr012rwrithkbm": "이벤트 신호 없음",
    "cmwtzqxyw17v9012rg7wvopyv": "경품·마감·폼 없음",
    "cmwtzsh3g183q012rzdktg6nu": "기간·경품·참여 방법 모두 확인 안 됨",
    "cmwu096of1apt012r36lq4qe2": "유료 조건: 구매",
@@ -6466,7 +6462,18 @@
    "cmwuq7pyr1pum012r14p6zp3a": "유료 조건: 멤버십 가입",
    "cmwuvdflt1sdb012nkt1k5h0u": "유료 조건: 결제,구매",
    "cmwuvm9fe1tjh012nspzfptk1": "경품·마감·폼 없음",
-   "cmwuvqan51u2y012nr2gbct5z": "유료 조건: 구매"
+   "cmwuvqan51u2y012nr2gbct5z": "유료 조건: 구매",
+   "cmwv3yjbd1x97012nfkqy42ld": "경품·마감·폼 없음",
+   "cmwv47o8f1yl1012nrqv48w1n": "기간·경품·참여 방법 모두 확인 안 됨",
+   "cmwv4ba891z4f012nc1snpx3e": "기간·경품·참여 방법 모두 확인 안 됨",
+   "cmwv4bqi21z6f012neajbicv3": "기간·경품·참여 방법 모두 확인 안 됨",
+   "cmwv4c87u1z8q012nw2ai0epq": "경품·마감·폼 없음",
+   "cmwv4hfwe1zya012n2rsoh4rs": "유료 조건: 구매",
+   "cmwv4hl631zyp012nnvahuu84": "이벤트 신호 없음",
+   "cmwv4ihir202u012nl4umzfld": "경품·마감·폼 없음",
+   "cmwv4k7fm20bn012nr5wjglkh": "이벤트 신호 없음",
+   "cmwv4pju8212p012nybp25jb0": "유료 조건: 구매",
+   "cmwv4px8b213z012njdw0paus": "유료 조건: 구매"
   }
  },
  "mohw": {
