@@ -11175,16 +11175,16 @@
   "ek-065f8e41a2": {
    "candidate_url": null,
    "destination_checked": false,
-   "entry_type": "form",
-   "entry_url": "https://docs.google.com/forms/d/e/1FAIpQLSfrejm4Mh3cx02U67drWpHOwR36st5xhX-daKXVNbwOg3iEZg/viewform",
-   "last_checked_at": "2026-11-19",
-   "link_evidence": "official_notice",
-   "original_url": "https://www.youtube.com/watch?v=SBPzcdtYSfo",
-   "verification_code": "official_form",
-   "verification_evidence_url": "https://www.youtube.com/watch?v=SBPzcdtYSfo",
-   "verification_grade": "A",
-   "verification_reason": "공식 공지에서 폼으로 직접 연결 (폼 내용은 약관·로그인으로 확인 불가)",
-   "verification_status": "verified"
+   "entry_type": "website",
+   "entry_url": null,
+   "last_checked_at": "2026-11-26",
+   "link_evidence": null,
+   "original_url": null,
+   "verification_code": "mismatch",
+   "verification_evidence_url": "https://www.youtube.com/watch?v=SBPzcdtYSfo&feature=youtu.be",
+   "verification_grade": "C",
+   "verification_reason": "페이지와 이벤트의 일치를 확인하지 못함",
+   "verification_status": "unverified"
   },
   "ek-09d66f6e54": {
    "candidate_url": "https://www.parents.go.kr/usr/wap/detail.do?app=10170&seq=8211618",
@@ -12563,7 +12563,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-19",
+   "last_checked_at": "2026-11-26",
    "link_evidence": null,
    "original_url": null,
    "verification_code": "mismatch",
@@ -12577,7 +12577,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-19",
+   "last_checked_at": "2026-11-26",
    "link_evidence": null,
    "original_url": null,
    "verification_code": "mismatch",
@@ -12717,7 +12717,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-19",
+   "last_checked_at": "2026-11-26",
    "link_evidence": null,
    "original_url": null,
    "verification_code": "mismatch",
@@ -13039,7 +13039,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-19",
+   "last_checked_at": "2026-11-26",
    "link_evidence": null,
    "original_url": null,
    "verification_code": "mismatch",
@@ -13053,7 +13053,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-19",
+   "last_checked_at": "2026-11-26",
    "link_evidence": null,
    "original_url": null,
    "verification_code": "mismatch",
@@ -13585,7 +13585,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-19",
+   "last_checked_at": "2026-11-26",
    "link_evidence": null,
    "original_url": null,
    "verification_code": "mismatch",
@@ -13879,7 +13879,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-19",
+   "last_checked_at": "2026-11-26",
    "link_evidence": null,
    "original_url": null,
    "verification_code": "mismatch",
@@ -14551,7 +14551,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-19",
+   "last_checked_at": "2026-11-26",
    "link_evidence": null,
    "original_url": null,
    "verification_code": "mismatch",
@@ -14719,7 +14719,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-19",
+   "last_checked_at": "2026-11-26",
    "link_evidence": null,
    "original_url": null,
    "verification_code": "mismatch",
@@ -15499,18 +15499,18 @@
    "verification_status": "needs_review"
   },
   "rn-26b8698c30": {
-   "candidate_url": "https://www.reviewnote.co.kr/campaigns/1543360",
+   "candidate_url": null,
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-23",
-   "link_evidence": "source_row",
+   "last_checked_at": "2026-11-26",
+   "link_evidence": null,
    "original_url": null,
-   "verification_code": "login",
-   "verification_evidence_url": null,
-   "verification_grade": "B",
-   "verification_reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)",
-   "verification_status": "needs_review"
+   "verification_code": "mismatch",
+   "verification_evidence_url": "https://www.reviewnote.co.kr/campaigns/1543360",
+   "verification_grade": "C",
+   "verification_reason": "페이지와 이벤트의 일치를 확인하지 못함",
+   "verification_status": "unverified"
   },
   "rn-272708a9fe": {
    "candidate_url": null,
@@ -15643,7 +15643,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-19",
+   "last_checked_at": "2026-11-26",
    "link_evidence": null,
    "original_url": null,
    "verification_code": "mismatch",
@@ -15713,7 +15713,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-19",
+   "last_checked_at": "2026-11-26",
    "link_evidence": null,
    "original_url": null,
    "verification_code": "mismatch",
@@ -15741,7 +15741,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-23",
+   "last_checked_at": "2026-11-26",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -16175,7 +16175,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-19",
+   "last_checked_at": "2026-11-26",
    "link_evidence": null,
    "original_url": null,
    "verification_code": "mismatch",
@@ -16371,7 +16371,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-23",
+   "last_checked_at": "2026-11-26",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -16721,7 +16721,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-19",
+   "last_checked_at": "2026-11-26",
    "link_evidence": null,
    "original_url": null,
    "verification_code": "mismatch",
@@ -16819,7 +16819,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-19",
+   "last_checked_at": "2026-11-26",
    "link_evidence": null,
    "original_url": null,
    "verification_code": "mismatch",
@@ -17141,7 +17141,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-23",
+   "last_checked_at": "2026-11-26",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -17253,7 +17253,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-19",
+   "last_checked_at": "2026-11-26",
    "link_evidence": null,
    "original_url": null,
    "verification_code": "mismatch",
@@ -17337,7 +17337,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-19",
+   "last_checked_at": "2026-11-26",
    "link_evidence": null,
    "original_url": null,
    "verification_code": "mismatch",
@@ -17491,7 +17491,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-23",
+   "last_checked_at": "2026-11-26",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -17533,7 +17533,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-23",
+   "last_checked_at": "2026-11-26",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -17617,7 +17617,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-23",
+   "last_checked_at": "2026-11-26",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -18009,7 +18009,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-19",
+   "last_checked_at": "2026-11-26",
    "link_evidence": null,
    "original_url": null,
    "verification_code": "mismatch",
@@ -18415,7 +18415,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-23",
+   "last_checked_at": "2026-11-26",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -18499,7 +18499,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-23",
+   "last_checked_at": "2026-11-26",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -18597,7 +18597,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-23",
+   "last_checked_at": "2026-11-26",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -18723,7 +18723,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-19",
+   "last_checked_at": "2026-11-26",
    "link_evidence": null,
    "original_url": null,
    "verification_code": "mismatch",
@@ -18905,7 +18905,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-19",
+   "last_checked_at": "2026-11-26",
    "link_evidence": null,
    "original_url": null,
    "verification_code": "mismatch",
@@ -19045,7 +19045,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-23",
+   "last_checked_at": "2026-11-26",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -19115,7 +19115,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-19",
+   "last_checked_at": "2026-11-26",
    "link_evidence": null,
    "original_url": null,
    "verification_code": "mismatch",
@@ -19283,7 +19283,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-23",
+   "last_checked_at": "2026-11-26",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -19311,7 +19311,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-23",
+   "last_checked_at": "2026-11-26",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -19479,7 +19479,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-19",
+   "last_checked_at": "2026-11-26",
    "link_evidence": null,
    "original_url": null,
    "verification_code": "mismatch",
@@ -19717,7 +19717,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-23",
+   "last_checked_at": "2026-11-26",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -20151,7 +20151,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-23",
+   "last_checked_at": "2026-11-26",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -20529,7 +20529,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-19",
+   "last_checked_at": "2026-11-26",
    "link_evidence": null,
    "original_url": null,
    "verification_code": "mismatch",
@@ -20557,7 +20557,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-19",
+   "last_checked_at": "2026-11-26",
    "link_evidence": null,
    "original_url": null,
    "verification_code": "mismatch",
@@ -20599,7 +20599,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-23",
+   "last_checked_at": "2026-11-26",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -20823,7 +20823,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-19",
+   "last_checked_at": "2026-11-26",
    "link_evidence": null,
    "original_url": null,
    "verification_code": "mismatch",
@@ -21061,7 +21061,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-19",
+   "last_checked_at": "2026-11-26",
    "link_evidence": null,
    "original_url": null,
    "verification_code": "mismatch",
@@ -21145,7 +21145,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-23",
+   "last_checked_at": "2026-11-26",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -21201,7 +21201,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-23",
+   "last_checked_at": "2026-11-26",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -21495,7 +21495,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-19",
+   "last_checked_at": "2026-11-26",
    "link_evidence": null,
    "original_url": null,
    "verification_code": "mismatch",
@@ -21635,7 +21635,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-23",
+   "last_checked_at": "2026-11-26",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -21705,7 +21705,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-19",
+   "last_checked_at": "2026-11-26",
    "link_evidence": null,
    "original_url": null,
    "verification_code": "mismatch",
@@ -21761,7 +21761,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-23",
+   "last_checked_at": "2026-11-26",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -21929,7 +21929,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-23",
+   "last_checked_at": "2026-11-26",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -22097,7 +22097,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-23",
+   "last_checked_at": "2026-11-26",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -22167,7 +22167,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-23",
+   "last_checked_at": "2026-11-26",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -22279,7 +22279,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-23",
+   "last_checked_at": "2026-11-26",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -22321,7 +22321,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-23",
+   "last_checked_at": "2026-11-26",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -22447,7 +22447,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-23",
+   "last_checked_at": "2026-11-26",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -22713,7 +22713,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-19",
+   "last_checked_at": "2026-11-26",
    "link_evidence": null,
    "original_url": null,
    "verification_code": "mismatch",
@@ -22923,7 +22923,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-19",
+   "last_checked_at": "2026-11-26",
    "link_evidence": null,
    "original_url": null,
    "verification_code": "mismatch",
@@ -23091,7 +23091,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-19",
+   "last_checked_at": "2026-11-26",
    "link_evidence": null,
    "original_url": null,
    "verification_code": "mismatch",
@@ -23105,7 +23105,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-19",
+   "last_checked_at": "2026-11-26",
    "link_evidence": null,
    "original_url": null,
    "verification_code": "mismatch",
@@ -23119,7 +23119,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-19",
+   "last_checked_at": "2026-11-26",
    "link_evidence": null,
    "original_url": null,
    "verification_code": "mismatch",
@@ -23231,7 +23231,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-23",
+   "last_checked_at": "2026-11-26",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -23301,7 +23301,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-19",
+   "last_checked_at": "2026-11-26",
    "link_evidence": null,
    "original_url": null,
    "verification_code": "mismatch",
@@ -23385,7 +23385,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-23",
+   "last_checked_at": "2026-11-26",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -23987,7 +23987,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-23",
+   "last_checked_at": "2026-11-26",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -24029,7 +24029,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-19",
+   "last_checked_at": "2026-11-26",
    "link_evidence": null,
    "original_url": null,
    "verification_code": "mismatch",
@@ -24183,7 +24183,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-19",
+   "last_checked_at": "2026-11-26",
    "link_evidence": null,
    "original_url": null,
    "verification_code": "mismatch",
@@ -24305,25 +24305,25 @@
    "verification_status": "unverified"
   },
   "rn-846dc098b0": {
-   "candidate_url": "https://www.reviewnote.co.kr/campaigns/1545608",
+   "candidate_url": null,
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-23",
-   "link_evidence": "source_row",
+   "last_checked_at": "2026-11-26",
+   "link_evidence": null,
    "original_url": null,
-   "verification_code": "login",
-   "verification_evidence_url": null,
-   "verification_grade": "B",
-   "verification_reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)",
-   "verification_status": "needs_review"
+   "verification_code": "mismatch",
+   "verification_evidence_url": "https://www.reviewnote.co.kr/campaigns/1545608",
+   "verification_grade": "C",
+   "verification_reason": "페이지와 이벤트의 일치를 확인하지 못함",
+   "verification_status": "unverified"
   },
   "rn-847684eafc": {
    "candidate_url": null,
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-19",
+   "last_checked_at": "2026-11-26",
    "link_evidence": null,
    "original_url": null,
    "verification_code": "mismatch",
@@ -24337,7 +24337,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-19",
+   "last_checked_at": "2026-11-26",
    "link_evidence": null,
    "original_url": null,
    "verification_code": "mismatch",
@@ -24431,18 +24431,18 @@
    "verification_status": "needs_review"
   },
   "rn-851c124caa": {
-   "candidate_url": "https://www.reviewnote.co.kr/campaigns/1541548",
+   "candidate_url": null,
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-23",
-   "link_evidence": "source_row",
+   "last_checked_at": "2026-11-26",
+   "link_evidence": null,
    "original_url": null,
-   "verification_code": "login",
-   "verification_evidence_url": null,
-   "verification_grade": "B",
-   "verification_reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)",
-   "verification_status": "needs_review"
+   "verification_code": "mismatch",
+   "verification_evidence_url": "https://www.reviewnote.co.kr/campaigns/1541548",
+   "verification_grade": "C",
+   "verification_reason": "페이지와 이벤트의 일치를 확인하지 못함",
+   "verification_status": "unverified"
   },
   "rn-8570135427": {
    "candidate_url": null,
@@ -24561,7 +24561,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-19",
+   "last_checked_at": "2026-11-26",
    "link_evidence": null,
    "original_url": null,
    "verification_code": "mismatch",
@@ -25079,7 +25079,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-19",
+   "last_checked_at": "2026-11-26",
    "link_evidence": null,
    "original_url": null,
    "verification_code": "mismatch",
@@ -25093,7 +25093,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-19",
+   "last_checked_at": "2026-11-26",
    "link_evidence": null,
    "original_url": null,
    "verification_code": "mismatch",
@@ -25145,18 +25145,18 @@
    "verification_status": "needs_review"
   },
   "rn-8d61fc07da": {
-   "candidate_url": "https://www.reviewnote.co.kr/campaigns/1551002",
+   "candidate_url": null,
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-23",
-   "link_evidence": "source_row",
+   "last_checked_at": "2026-11-26",
+   "link_evidence": null,
    "original_url": null,
-   "verification_code": "login",
-   "verification_evidence_url": null,
-   "verification_grade": "B",
-   "verification_reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)",
-   "verification_status": "needs_review"
+   "verification_code": "mismatch",
+   "verification_evidence_url": "https://www.reviewnote.co.kr/campaigns/1551002",
+   "verification_grade": "C",
+   "verification_reason": "페이지와 이벤트의 일치를 확인하지 못함",
+   "verification_status": "unverified"
   },
   "rn-8d70fc603e": {
    "candidate_url": null,
@@ -25313,39 +25313,39 @@
    "verification_status": "unverified"
   },
   "rn-8efeee248b": {
-   "candidate_url": "https://www.reviewnote.co.kr/campaigns/1544337",
+   "candidate_url": null,
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-23",
-   "link_evidence": "source_row",
+   "last_checked_at": "2026-11-26",
+   "link_evidence": null,
    "original_url": null,
-   "verification_code": "login",
-   "verification_evidence_url": null,
-   "verification_grade": "B",
-   "verification_reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)",
-   "verification_status": "needs_review"
+   "verification_code": "mismatch",
+   "verification_evidence_url": "https://www.reviewnote.co.kr/campaigns/1544337",
+   "verification_grade": "C",
+   "verification_reason": "페이지와 이벤트의 일치를 확인하지 못함",
+   "verification_status": "unverified"
   },
   "rn-8f7fd4b260": {
-   "candidate_url": "https://www.reviewnote.co.kr/campaigns/1544036",
+   "candidate_url": null,
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-23",
-   "link_evidence": "source_row",
+   "last_checked_at": "2026-11-26",
+   "link_evidence": null,
    "original_url": null,
-   "verification_code": "login",
-   "verification_evidence_url": null,
-   "verification_grade": "B",
-   "verification_reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)",
-   "verification_status": "needs_review"
+   "verification_code": "mismatch",
+   "verification_evidence_url": "https://www.reviewnote.co.kr/campaigns/1544036",
+   "verification_grade": "C",
+   "verification_reason": "페이지와 이벤트의 일치를 확인하지 못함",
+   "verification_status": "unverified"
   },
   "rn-8fb30be6f6": {
    "candidate_url": null,
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-19",
+   "last_checked_at": "2026-11-26",
    "link_evidence": null,
    "original_url": null,
    "verification_code": "mismatch",
@@ -25359,7 +25359,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-19",
+   "last_checked_at": "2026-11-26",
    "link_evidence": null,
    "original_url": null,
    "verification_code": "mismatch",
@@ -25439,18 +25439,18 @@
    "verification_status": "needs_review"
   },
   "rn-913987c9c9": {
-   "candidate_url": "https://www.reviewnote.co.kr/campaigns/1536959",
+   "candidate_url": null,
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-23",
-   "link_evidence": "source_row",
+   "last_checked_at": "2026-11-26",
+   "link_evidence": null,
    "original_url": null,
-   "verification_code": "login",
-   "verification_evidence_url": null,
-   "verification_grade": "B",
-   "verification_reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)",
-   "verification_status": "needs_review"
+   "verification_code": "mismatch",
+   "verification_evidence_url": "https://www.reviewnote.co.kr/campaigns/1536959",
+   "verification_grade": "C",
+   "verification_reason": "페이지와 이벤트의 일치를 확인하지 못함",
+   "verification_status": "unverified"
   },
   "rn-9151478e1a": {
    "candidate_url": null,
@@ -25523,25 +25523,25 @@
    "verification_status": "needs_review"
   },
   "rn-9202d75666": {
-   "candidate_url": "https://www.reviewnote.co.kr/campaigns/1550673",
+   "candidate_url": null,
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-23",
-   "link_evidence": "source_row",
+   "last_checked_at": "2026-11-26",
+   "link_evidence": null,
    "original_url": null,
-   "verification_code": "login",
-   "verification_evidence_url": null,
-   "verification_grade": "B",
-   "verification_reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)",
-   "verification_status": "needs_review"
+   "verification_code": "mismatch",
+   "verification_evidence_url": "https://www.reviewnote.co.kr/campaigns/1550673",
+   "verification_grade": "C",
+   "verification_reason": "페이지와 이벤트의 일치를 확인하지 못함",
+   "verification_status": "unverified"
   },
   "rn-920d908981": {
    "candidate_url": null,
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-19",
+   "last_checked_at": "2026-11-26",
    "link_evidence": null,
    "original_url": null,
    "verification_code": "mismatch",
@@ -25607,18 +25607,18 @@
    "verification_status": "needs_review"
   },
   "rn-925e6f8fcb": {
-   "candidate_url": "https://www.reviewnote.co.kr/campaigns/1545579",
+   "candidate_url": null,
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-23",
-   "link_evidence": "source_row",
+   "last_checked_at": "2026-11-26",
+   "link_evidence": null,
    "original_url": null,
-   "verification_code": "login",
-   "verification_evidence_url": null,
-   "verification_grade": "B",
-   "verification_reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)",
-   "verification_status": "needs_review"
+   "verification_code": "mismatch",
+   "verification_evidence_url": "https://www.reviewnote.co.kr/campaigns/1545579",
+   "verification_grade": "C",
+   "verification_reason": "페이지와 이벤트의 일치를 확인하지 못함",
+   "verification_status": "unverified"
   },
   "rn-92b6957394": {
    "candidate_url": null,
@@ -25653,7 +25653,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-19",
+   "last_checked_at": "2026-11-26",
    "link_evidence": null,
    "original_url": null,
    "verification_code": "mismatch",
@@ -25667,7 +25667,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-23",
+   "last_checked_at": "2026-11-26",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -25999,18 +25999,18 @@
    "verification_status": "unverified"
   },
   "rn-95a354b182": {
-   "candidate_url": "https://www.reviewnote.co.kr/campaigns/1543535",
+   "candidate_url": null,
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-23",
-   "link_evidence": "source_row",
+   "last_checked_at": "2026-11-26",
+   "link_evidence": null,
    "original_url": null,
-   "verification_code": "login",
-   "verification_evidence_url": null,
-   "verification_grade": "B",
-   "verification_reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)",
-   "verification_status": "needs_review"
+   "verification_code": "mismatch",
+   "verification_evidence_url": "https://www.reviewnote.co.kr/campaigns/1543535",
+   "verification_grade": "C",
+   "verification_reason": "페이지와 이벤트의 일치를 확인하지 못함",
+   "verification_status": "unverified"
   },
   "rn-95f532bc2e": {
    "candidate_url": "https://www.reviewnote.co.kr/campaigns/1547857",
@@ -26209,18 +26209,18 @@
    "verification_status": "needs_review"
   },
   "rn-98325dad4a": {
-   "candidate_url": "https://www.reviewnote.co.kr/campaigns/1543715",
+   "candidate_url": null,
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-23",
-   "link_evidence": "source_row",
+   "last_checked_at": "2026-11-26",
+   "link_evidence": null,
    "original_url": null,
-   "verification_code": "login",
-   "verification_evidence_url": null,
-   "verification_grade": "B",
-   "verification_reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)",
-   "verification_status": "needs_review"
+   "verification_code": "mismatch",
+   "verification_evidence_url": "https://www.reviewnote.co.kr/campaigns/1543715",
+   "verification_grade": "C",
+   "verification_reason": "페이지와 이벤트의 일치를 확인하지 못함",
+   "verification_status": "unverified"
   },
   "rn-983bf969df": {
    "candidate_url": "https://www.reviewnote.co.kr/campaigns/1541357",
@@ -26437,7 +26437,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-19",
+   "last_checked_at": "2026-11-26",
    "link_evidence": null,
    "original_url": null,
    "verification_code": "mismatch",
@@ -26461,18 +26461,18 @@
    "verification_status": "needs_review"
   },
   "rn-9a9e375bab": {
-   "candidate_url": "https://www.reviewnote.co.kr/campaigns/1543882",
+   "candidate_url": null,
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-23",
-   "link_evidence": "source_row",
+   "last_checked_at": "2026-11-26",
+   "link_evidence": null,
    "original_url": null,
-   "verification_code": "login",
-   "verification_evidence_url": null,
-   "verification_grade": "B",
-   "verification_reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)",
-   "verification_status": "needs_review"
+   "verification_code": "mismatch",
+   "verification_evidence_url": "https://www.reviewnote.co.kr/campaigns/1543882",
+   "verification_grade": "C",
+   "verification_reason": "페이지와 이벤트의 일치를 확인하지 못함",
+   "verification_status": "unverified"
   },
   "rn-9aa2452efe": {
    "candidate_url": "https://www.reviewnote.co.kr/campaigns/1546237",
@@ -26671,18 +26671,18 @@
    "verification_status": "needs_review"
   },
   "rn-9cf0aa756c": {
-   "candidate_url": "https://www.reviewnote.co.kr/campaigns/1540173",
+   "candidate_url": null,
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-23",
-   "link_evidence": "source_row",
+   "last_checked_at": "2026-11-26",
+   "link_evidence": null,
    "original_url": null,
-   "verification_code": "login",
-   "verification_evidence_url": null,
-   "verification_grade": "B",
-   "verification_reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)",
-   "verification_status": "needs_review"
+   "verification_code": "mismatch",
+   "verification_evidence_url": "https://www.reviewnote.co.kr/campaigns/1540173",
+   "verification_grade": "C",
+   "verification_reason": "페이지와 이벤트의 일치를 확인하지 못함",
+   "verification_status": "unverified"
   },
   "rn-9d1e56be98": {
    "candidate_url": null,
@@ -26703,7 +26703,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-19",
+   "last_checked_at": "2026-11-26",
    "link_evidence": null,
    "original_url": null,
    "verification_code": "mismatch",
@@ -26759,7 +26759,7 @@
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-19",
+   "last_checked_at": "2026-11-26",
    "link_evidence": null,
    "original_url": null,
    "verification_code": "mismatch",
@@ -26769,18 +26769,18 @@
    "verification_status": "unverified"
   },
   "rn-9e81508fb3": {
-   "candidate_url": "https://www.reviewnote.co.kr/campaigns/1544934",
+   "candidate_url": null,
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-23",
-   "link_evidence": "source_row",
+   "last_checked_at": "2026-11-26",
+   "link_evidence": null,
    "original_url": null,
-   "verification_code": "login",
-   "verification_evidence_url": null,
-   "verification_grade": "B",
-   "verification_reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)",
-   "verification_status": "needs_review"
+   "verification_code": "mismatch",
+   "verification_evidence_url": "https://www.reviewnote.co.kr/campaigns/1544934",
+   "verification_grade": "C",
+   "verification_reason": "페이지와 이벤트의 일치를 확인하지 못함",
+   "verification_status": "unverified"
   },
   "rn-9e8caa633c": {
    "candidate_url": "https://www.reviewnote.co.kr/campaigns/1547783",
@@ -27133,18 +27133,18 @@
    "verification_status": "needs_review"
   },
   "rn-a215ffbf4f": {
-   "candidate_url": "https://www.reviewnote.co.kr/campaigns/1515647",
+   "candidate_url": null,
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-23",
-   "link_evidence": "source_row",
+   "last_checked_at": "2026-11-26",
+   "link_evidence": null,
    "original_url": null,
-   "verification_code": "login",
-   "verification_evidence_url": null,
-   "verification_grade": "B",
-   "verification_reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)",
-   "verification_status": "needs_review"
+   "verification_code": "mismatch",
+   "verification_evidence_url": "https://www.reviewnote.co.kr/campaigns/1515647",
+   "verification_grade": "C",
+   "verification_reason": "페이지와 이벤트의 일치를 확인하지 못함",
+   "verification_status": "unverified"
   },
   "rn-a2218dded4": {
    "candidate_url": "https://www.reviewnote.co.kr/campaigns/1560131",
@@ -27175,18 +27175,18 @@
    "verification_status": "unverified"
   },
   "rn-a29113fb7c": {
-   "candidate_url": "https://www.reviewnote.co.kr/campaigns/1541765",
+   "candidate_url": null,
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-23",
-   "link_evidence": "source_row",
+   "last_checked_at": "2026-11-26",
+   "link_evidence": null,
    "original_url": null,
-   "verification_code": "login",
-   "verification_evidence_url": null,
-   "verification_grade": "B",
-   "verification_reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)",
-   "verification_status": "needs_review"
+   "verification_code": "mismatch",
+   "verification_evidence_url": "https://www.reviewnote.co.kr/campaigns/1541765",
+   "verification_grade": "C",
+   "verification_reason": "페이지와 이벤트의 일치를 확인하지 못함",
+   "verification_status": "unverified"
   },
   "rn-a2a974d69c": {
    "candidate_url": "https://www.reviewnote.co.kr/campaigns/1535272",
@@ -27357,18 +27357,18 @@
    "verification_status": "needs_review"
   },
   "rn-a51f21003e": {
-   "candidate_url": "https://www.reviewnote.co.kr/campaigns/1542872",
+   "candidate_url": null,
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-23",
-   "link_evidence": "source_row",
+   "last_checked_at": "2026-11-26",
+   "link_evidence": null,
    "original_url": null,
-   "verification_code": "login",
-   "verification_evidence_url": null,
-   "verification_grade": "B",
-   "verification_reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)",
-   "verification_status": "needs_review"
+   "verification_code": "mismatch",
+   "verification_evidence_url": "https://www.reviewnote.co.kr/campaigns/1542872",
+   "verification_grade": "C",
+   "verification_reason": "페이지와 이벤트의 일치를 확인하지 못함",
+   "verification_status": "unverified"
   },
   "rn-a53dfe856d": {
    "candidate_url": "https://www.reviewnote.co.kr/campaigns/1550083",
@@ -27665,18 +27665,18 @@
    "verification_status": "needs_review"
   },
   "rn-a7c03e4c97": {
-   "candidate_url": "https://www.reviewnote.co.kr/campaigns/1550595",
+   "candidate_url": null,
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-23",
-   "link_evidence": "source_row",
+   "last_checked_at": "2026-11-26",
+   "link_evidence": null,
    "original_url": null,
-   "verification_code": "login",
-   "verification_evidence_url": null,
-   "verification_grade": "B",
-   "verification_reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)",
-   "verification_status": "needs_review"
+   "verification_code": "mismatch",
+   "verification_evidence_url": "https://www.reviewnote.co.kr/campaigns/1550595",
+   "verification_grade": "C",
+   "verification_reason": "페이지와 이벤트의 일치를 확인하지 못함",
+   "verification_status": "unverified"
   },
   "rn-a820e09abb": {
    "candidate_url": "https://www.reviewnote.co.kr/campaigns/1549264",
@@ -27889,18 +27889,18 @@
    "verification_status": "unverified"
   },
   "rn-aa73bb44fa": {
-   "candidate_url": "https://www.reviewnote.co.kr/campaigns/1527029",
+   "candidate_url": null,
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-23",
-   "link_evidence": "source_row",
+   "last_checked_at": "2026-11-26",
+   "link_evidence": null,
    "original_url": null,
-   "verification_code": "login",
-   "verification_evidence_url": null,
-   "verification_grade": "B",
-   "verification_reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)",
-   "verification_status": "needs_review"
+   "verification_code": "mismatch",
+   "verification_evidence_url": "https://www.reviewnote.co.kr/campaigns/1527029",
+   "verification_grade": "C",
+   "verification_reason": "페이지와 이벤트의 일치를 확인하지 못함",
+   "verification_status": "unverified"
   },
   "rn-aa8570b18d": {
    "candidate_url": "https://www.reviewnote.co.kr/campaigns/1551539",
@@ -28365,18 +28365,18 @@
    "verification_status": "needs_review"
   },
   "rn-afbe7eedf2": {
-   "candidate_url": "https://www.reviewnote.co.kr/campaigns/1543758",
+   "candidate_url": null,
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-23",
-   "link_evidence": "source_row",
+   "last_checked_at": "2026-11-26",
+   "link_evidence": null,
    "original_url": null,
-   "verification_code": "login",
-   "verification_evidence_url": null,
-   "verification_grade": "B",
-   "verification_reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)",
-   "verification_status": "needs_review"
+   "verification_code": "mismatch",
+   "verification_evidence_url": "https://www.reviewnote.co.kr/campaigns/1543758",
+   "verification_grade": "C",
+   "verification_reason": "페이지와 이벤트의 일치를 확인하지 못함",
+   "verification_status": "unverified"
   },
   "rn-afc54c1da3": {
    "candidate_url": null,
@@ -28547,18 +28547,18 @@
    "verification_status": "unverified"
   },
   "rn-b13e1cc50e": {
-   "candidate_url": "https://www.reviewnote.co.kr/campaigns/1543462",
+   "candidate_url": null,
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-23",
-   "link_evidence": "source_row",
+   "last_checked_at": "2026-11-26",
+   "link_evidence": null,
    "original_url": null,
-   "verification_code": "login",
-   "verification_evidence_url": null,
-   "verification_grade": "B",
-   "verification_reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)",
-   "verification_status": "needs_review"
+   "verification_code": "mismatch",
+   "verification_evidence_url": "https://www.reviewnote.co.kr/campaigns/1543462",
+   "verification_grade": "C",
+   "verification_reason": "페이지와 이벤트의 일치를 확인하지 못함",
+   "verification_status": "unverified"
   },
   "rn-b149089d3f": {
    "candidate_url": "https://www.reviewnote.co.kr/campaigns/1560568",
@@ -28911,18 +28911,18 @@
    "verification_status": "needs_review"
   },
   "rn-b4a0b80596": {
-   "candidate_url": "https://www.reviewnote.co.kr/campaigns/1544818",
+   "candidate_url": null,
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-23",
-   "link_evidence": "source_row",
+   "last_checked_at": "2026-11-26",
+   "link_evidence": null,
    "original_url": null,
-   "verification_code": "login",
-   "verification_evidence_url": null,
-   "verification_grade": "B",
-   "verification_reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)",
-   "verification_status": "needs_review"
+   "verification_code": "mismatch",
+   "verification_evidence_url": "https://www.reviewnote.co.kr/campaigns/1544818",
+   "verification_grade": "C",
+   "verification_reason": "페이지와 이벤트의 일치를 확인하지 못함",
+   "verification_status": "unverified"
   },
   "rn-b4b5f56867": {
    "candidate_url": "https://www.reviewnote.co.kr/campaigns/1541349",
@@ -29023,18 +29023,18 @@
    "verification_status": "needs_review"
   },
   "rn-b5dae3c2e9": {
-   "candidate_url": "https://www.reviewnote.co.kr/campaigns/1550607",
+   "candidate_url": null,
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-23",
-   "link_evidence": "source_row",
+   "last_checked_at": "2026-11-26",
+   "link_evidence": null,
    "original_url": null,
-   "verification_code": "login",
-   "verification_evidence_url": null,
-   "verification_grade": "B",
-   "verification_reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)",
-   "verification_status": "needs_review"
+   "verification_code": "mismatch",
+   "verification_evidence_url": "https://www.reviewnote.co.kr/campaigns/1550607",
+   "verification_grade": "C",
+   "verification_reason": "페이지와 이벤트의 일치를 확인하지 못함",
+   "verification_status": "unverified"
   },
   "rn-b5ea7776d1": {
    "candidate_url": "https://www.reviewnote.co.kr/campaigns/1543354",
@@ -29177,18 +29177,18 @@
    "verification_status": "needs_review"
   },
   "rn-b7a1a95cbc": {
-   "candidate_url": "https://www.reviewnote.co.kr/campaigns/1544675",
+   "candidate_url": null,
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-23",
-   "link_evidence": "source_row",
+   "last_checked_at": "2026-11-26",
+   "link_evidence": null,
    "original_url": null,
-   "verification_code": "login",
-   "verification_evidence_url": null,
-   "verification_grade": "B",
-   "verification_reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)",
-   "verification_status": "needs_review"
+   "verification_code": "mismatch",
+   "verification_evidence_url": "https://www.reviewnote.co.kr/campaigns/1544675",
+   "verification_grade": "C",
+   "verification_reason": "페이지와 이벤트의 일치를 확인하지 못함",
+   "verification_status": "unverified"
   },
   "rn-b7aa3f4c48": {
    "candidate_url": "https://www.reviewnote.co.kr/campaigns/1547910",
@@ -29331,18 +29331,18 @@
    "verification_status": "needs_review"
   },
   "rn-b8d3cfdd20": {
-   "candidate_url": "https://www.reviewnote.co.kr/campaigns/1544591",
+   "candidate_url": null,
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-23",
-   "link_evidence": "source_row",
+   "last_checked_at": "2026-11-26",
+   "link_evidence": null,
    "original_url": null,
-   "verification_code": "login",
-   "verification_evidence_url": null,
-   "verification_grade": "B",
-   "verification_reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)",
-   "verification_status": "needs_review"
+   "verification_code": "mismatch",
+   "verification_evidence_url": "https://www.reviewnote.co.kr/campaigns/1544591",
+   "verification_grade": "C",
+   "verification_reason": "페이지와 이벤트의 일치를 확인하지 못함",
+   "verification_status": "unverified"
   },
   "rn-b8ebb142db": {
    "candidate_url": "https://www.reviewnote.co.kr/campaigns/1561096",
@@ -29737,18 +29737,18 @@
    "verification_status": "needs_review"
   },
   "rn-bd11dc061e": {
-   "candidate_url": "https://www.reviewnote.co.kr/campaigns/1541755",
+   "candidate_url": null,
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-23",
-   "link_evidence": "source_row",
+   "last_checked_at": "2026-11-26",
+   "link_evidence": null,
    "original_url": null,
-   "verification_code": "login",
-   "verification_evidence_url": null,
-   "verification_grade": "B",
-   "verification_reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)",
-   "verification_status": "needs_review"
+   "verification_code": "mismatch",
+   "verification_evidence_url": "https://www.reviewnote.co.kr/campaigns/1541755",
+   "verification_grade": "C",
+   "verification_reason": "페이지와 이벤트의 일치를 확인하지 못함",
+   "verification_status": "unverified"
   },
   "rn-bd1fa291df": {
    "candidate_url": "https://www.reviewnote.co.kr/campaigns/1552147",
@@ -29919,18 +29919,18 @@
    "verification_status": "unverified"
   },
   "rn-be8db50ca4": {
-   "candidate_url": "https://www.reviewnote.co.kr/campaigns/1543400",
+   "candidate_url": null,
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-23",
-   "link_evidence": "source_row",
+   "last_checked_at": "2026-11-26",
+   "link_evidence": null,
    "original_url": null,
-   "verification_code": "login",
-   "verification_evidence_url": null,
-   "verification_grade": "B",
-   "verification_reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)",
-   "verification_status": "needs_review"
+   "verification_code": "mismatch",
+   "verification_evidence_url": "https://www.reviewnote.co.kr/campaigns/1543400",
+   "verification_grade": "C",
+   "verification_reason": "페이지와 이벤트의 일치를 확인하지 못함",
+   "verification_status": "unverified"
   },
   "rn-bef3b36f2b": {
    "candidate_url": null,
@@ -30031,18 +30031,18 @@
    "verification_status": "unverified"
   },
   "rn-bfa73b5bc4": {
-   "candidate_url": "https://www.reviewnote.co.kr/campaigns/1541365",
+   "candidate_url": null,
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-23",
-   "link_evidence": "source_row",
+   "last_checked_at": "2026-11-26",
+   "link_evidence": null,
    "original_url": null,
-   "verification_code": "login",
-   "verification_evidence_url": null,
-   "verification_grade": "B",
-   "verification_reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)",
-   "verification_status": "needs_review"
+   "verification_code": "mismatch",
+   "verification_evidence_url": "https://www.reviewnote.co.kr/campaigns/1541365",
+   "verification_grade": "C",
+   "verification_reason": "페이지와 이벤트의 일치를 확인하지 못함",
+   "verification_status": "unverified"
   },
   "rn-bfb9a2ba7a": {
    "candidate_url": "https://www.reviewnote.co.kr/campaigns/1549670",
@@ -30269,18 +30269,18 @@
    "verification_status": "needs_review"
   },
   "rn-c203b4c60f": {
-   "candidate_url": "https://www.reviewnote.co.kr/campaigns/1543624",
+   "candidate_url": null,
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-23",
-   "link_evidence": "source_row",
+   "last_checked_at": "2026-11-26",
+   "link_evidence": null,
    "original_url": null,
-   "verification_code": "login",
-   "verification_evidence_url": null,
-   "verification_grade": "B",
-   "verification_reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)",
-   "verification_status": "needs_review"
+   "verification_code": "mismatch",
+   "verification_evidence_url": "https://www.reviewnote.co.kr/campaigns/1543624",
+   "verification_grade": "C",
+   "verification_reason": "페이지와 이벤트의 일치를 확인하지 못함",
+   "verification_status": "unverified"
   },
   "rn-c20471226f": {
    "candidate_url": "https://www.reviewnote.co.kr/campaigns/1552989",
@@ -30521,18 +30521,18 @@
    "verification_status": "needs_review"
   },
   "rn-c478dfea0e": {
-   "candidate_url": "https://www.reviewnote.co.kr/campaigns/1510813",
+   "candidate_url": null,
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-23",
-   "link_evidence": "source_row",
+   "last_checked_at": "2026-11-26",
+   "link_evidence": null,
    "original_url": null,
-   "verification_code": "login",
-   "verification_evidence_url": null,
-   "verification_grade": "B",
-   "verification_reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)",
-   "verification_status": "needs_review"
+   "verification_code": "mismatch",
+   "verification_evidence_url": "https://www.reviewnote.co.kr/campaigns/1510813",
+   "verification_grade": "C",
+   "verification_reason": "페이지와 이벤트의 일치를 확인하지 못함",
+   "verification_status": "unverified"
   },
   "rn-c493a01d75": {
    "candidate_url": "https://www.reviewnote.co.kr/campaigns/1551643",
@@ -30563,18 +30563,18 @@
    "verification_status": "needs_review"
   },
   "rn-c522f0592c": {
-   "candidate_url": "https://www.reviewnote.co.kr/campaigns/1545489",
+   "candidate_url": null,
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-23",
-   "link_evidence": "source_row",
+   "last_checked_at": "2026-11-26",
+   "link_evidence": null,
    "original_url": null,
-   "verification_code": "login",
-   "verification_evidence_url": null,
-   "verification_grade": "B",
-   "verification_reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)",
-   "verification_status": "needs_review"
+   "verification_code": "mismatch",
+   "verification_evidence_url": "https://www.reviewnote.co.kr/campaigns/1545489",
+   "verification_grade": "C",
+   "verification_reason": "페이지와 이벤트의 일치를 확인하지 못함",
+   "verification_status": "unverified"
   },
   "rn-c552df1dfc": {
    "candidate_url": "https://www.reviewnote.co.kr/campaigns/1547874",
@@ -31305,18 +31305,18 @@
    "verification_status": "unverified"
   },
   "rn-ce3ccceea7": {
-   "candidate_url": "https://www.reviewnote.co.kr/campaigns/1541297",
+   "candidate_url": null,
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-23",
-   "link_evidence": "source_row",
+   "last_checked_at": "2026-11-26",
+   "link_evidence": null,
    "original_url": null,
-   "verification_code": "login",
-   "verification_evidence_url": null,
-   "verification_grade": "B",
-   "verification_reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)",
-   "verification_status": "needs_review"
+   "verification_code": "mismatch",
+   "verification_evidence_url": "https://www.reviewnote.co.kr/campaigns/1541297",
+   "verification_grade": "C",
+   "verification_reason": "페이지와 이벤트의 일치를 확인하지 못함",
+   "verification_status": "unverified"
   },
   "rn-ce422d16b3": {
    "candidate_url": null,
@@ -31347,18 +31347,18 @@
    "verification_status": "needs_review"
   },
   "rn-ce741c1a0c": {
-   "candidate_url": "https://www.reviewnote.co.kr/campaigns/1545628",
+   "candidate_url": null,
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-23",
-   "link_evidence": "source_row",
+   "last_checked_at": "2026-11-26",
+   "link_evidence": null,
    "original_url": null,
-   "verification_code": "login",
-   "verification_evidence_url": null,
-   "verification_grade": "B",
-   "verification_reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)",
-   "verification_status": "needs_review"
+   "verification_code": "mismatch",
+   "verification_evidence_url": "https://www.reviewnote.co.kr/campaigns/1545628",
+   "verification_grade": "C",
+   "verification_reason": "페이지와 이벤트의 일치를 확인하지 못함",
+   "verification_status": "unverified"
   },
   "rn-ce859aa633": {
    "candidate_url": null,
@@ -31459,18 +31459,18 @@
    "verification_status": "needs_review"
   },
   "rn-cf57ae13ae": {
-   "candidate_url": "https://www.reviewnote.co.kr/campaigns/1540201",
+   "candidate_url": null,
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-23",
-   "link_evidence": "source_row",
+   "last_checked_at": "2026-11-26",
+   "link_evidence": null,
    "original_url": null,
-   "verification_code": "login",
-   "verification_evidence_url": null,
-   "verification_grade": "B",
-   "verification_reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)",
-   "verification_status": "needs_review"
+   "verification_code": "mismatch",
+   "verification_evidence_url": "https://www.reviewnote.co.kr/campaigns/1540201",
+   "verification_grade": "C",
+   "verification_reason": "페이지와 이벤트의 일치를 확인하지 못함",
+   "verification_status": "unverified"
   },
   "rn-cf8b71979f": {
    "candidate_url": "https://www.reviewnote.co.kr/campaigns/1558551",
@@ -31641,18 +31641,18 @@
    "verification_status": "needs_review"
   },
   "rn-d0fa528782": {
-   "candidate_url": "https://www.reviewnote.co.kr/campaigns/1544807",
+   "candidate_url": null,
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-23",
-   "link_evidence": "source_row",
+   "last_checked_at": "2026-11-26",
+   "link_evidence": null,
    "original_url": null,
-   "verification_code": "login",
-   "verification_evidence_url": null,
-   "verification_grade": "B",
-   "verification_reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)",
-   "verification_status": "needs_review"
+   "verification_code": "mismatch",
+   "verification_evidence_url": "https://www.reviewnote.co.kr/campaigns/1544807",
+   "verification_grade": "C",
+   "verification_reason": "페이지와 이벤트의 일치를 확인하지 못함",
+   "verification_status": "unverified"
   },
   "rn-d130c4e805": {
    "candidate_url": "https://www.reviewnote.co.kr/campaigns/1554937",
@@ -31753,18 +31753,18 @@
    "verification_status": "needs_review"
   },
   "rn-d1c3387614": {
-   "candidate_url": "https://www.reviewnote.co.kr/campaigns/1541814",
+   "candidate_url": null,
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-23",
-   "link_evidence": "source_row",
+   "last_checked_at": "2026-11-26",
+   "link_evidence": null,
    "original_url": null,
-   "verification_code": "login",
-   "verification_evidence_url": null,
-   "verification_grade": "B",
-   "verification_reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)",
-   "verification_status": "needs_review"
+   "verification_code": "mismatch",
+   "verification_evidence_url": "https://www.reviewnote.co.kr/campaigns/1541814",
+   "verification_grade": "C",
+   "verification_reason": "페이지와 이벤트의 일치를 확인하지 못함",
+   "verification_status": "unverified"
   },
   "rn-d1c5fa3146": {
    "candidate_url": null,
@@ -31907,18 +31907,18 @@
    "verification_status": "unverified"
   },
   "rn-d313b36150": {
-   "candidate_url": "https://www.reviewnote.co.kr/campaigns/1550647",
+   "candidate_url": null,
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-23",
-   "link_evidence": "source_row",
+   "last_checked_at": "2026-11-26",
+   "link_evidence": null,
    "original_url": null,
-   "verification_code": "login",
-   "verification_evidence_url": null,
-   "verification_grade": "B",
-   "verification_reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)",
-   "verification_status": "needs_review"
+   "verification_code": "mismatch",
+   "verification_evidence_url": "https://www.reviewnote.co.kr/campaigns/1550647",
+   "verification_grade": "C",
+   "verification_reason": "페이지와 이벤트의 일치를 확인하지 못함",
+   "verification_status": "unverified"
   },
   "rn-d35b83d282": {
    "candidate_url": null,
@@ -32635,18 +32635,18 @@
    "verification_status": "unverified"
   },
   "rn-db1594d441": {
-   "candidate_url": "https://www.reviewnote.co.kr/campaigns/1545442",
+   "candidate_url": null,
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-23",
-   "link_evidence": "source_row",
+   "last_checked_at": "2026-11-26",
+   "link_evidence": null,
    "original_url": null,
-   "verification_code": "login",
-   "verification_evidence_url": null,
-   "verification_grade": "B",
-   "verification_reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)",
-   "verification_status": "needs_review"
+   "verification_code": "mismatch",
+   "verification_evidence_url": "https://www.reviewnote.co.kr/campaigns/1545442",
+   "verification_grade": "C",
+   "verification_reason": "페이지와 이벤트의 일치를 확인하지 못함",
+   "verification_status": "unverified"
   },
   "rn-db1b50e4f0": {
    "candidate_url": null,
@@ -32733,18 +32733,18 @@
    "verification_status": "needs_review"
   },
   "rn-dcdeeb0183": {
-   "candidate_url": "https://www.reviewnote.co.kr/campaigns/1544239",
+   "candidate_url": null,
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-23",
-   "link_evidence": "source_row",
+   "last_checked_at": "2026-11-26",
+   "link_evidence": null,
    "original_url": null,
-   "verification_code": "login",
-   "verification_evidence_url": null,
-   "verification_grade": "B",
-   "verification_reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)",
-   "verification_status": "needs_review"
+   "verification_code": "mismatch",
+   "verification_evidence_url": "https://www.reviewnote.co.kr/campaigns/1544239",
+   "verification_grade": "C",
+   "verification_reason": "페이지와 이벤트의 일치를 확인하지 못함",
+   "verification_status": "unverified"
   },
   "rn-dcf876b650": {
    "candidate_url": "https://www.reviewnote.co.kr/campaigns/1561044",
@@ -32971,18 +32971,18 @@
    "verification_status": "unverified"
   },
   "rn-e121437575": {
-   "candidate_url": "https://www.reviewnote.co.kr/campaigns/1537628",
+   "candidate_url": null,
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-23",
-   "link_evidence": "source_row",
+   "last_checked_at": "2026-11-26",
+   "link_evidence": null,
    "original_url": null,
-   "verification_code": "login",
-   "verification_evidence_url": null,
-   "verification_grade": "B",
-   "verification_reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)",
-   "verification_status": "needs_review"
+   "verification_code": "mismatch",
+   "verification_evidence_url": "https://www.reviewnote.co.kr/campaigns/1537628",
+   "verification_grade": "C",
+   "verification_reason": "페이지와 이벤트의 일치를 확인하지 못함",
+   "verification_status": "unverified"
   },
   "rn-e14fac1f67": {
    "candidate_url": "https://www.reviewnote.co.kr/campaigns/1550234",
@@ -33671,18 +33671,18 @@
    "verification_status": "unverified"
   },
   "rn-e805745098": {
-   "candidate_url": "https://www.reviewnote.co.kr/campaigns/1544706",
+   "candidate_url": null,
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-23",
-   "link_evidence": "source_row",
+   "last_checked_at": "2026-11-26",
+   "link_evidence": null,
    "original_url": null,
-   "verification_code": "login",
-   "verification_evidence_url": null,
-   "verification_grade": "B",
-   "verification_reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)",
-   "verification_status": "needs_review"
+   "verification_code": "mismatch",
+   "verification_evidence_url": "https://www.reviewnote.co.kr/campaigns/1544706",
+   "verification_grade": "C",
+   "verification_reason": "페이지와 이벤트의 일치를 확인하지 못함",
+   "verification_status": "unverified"
   },
   "rn-e822a79768": {
    "candidate_url": null,
@@ -33853,18 +33853,18 @@
    "verification_status": "needs_review"
   },
   "rn-e9b9e8a51a": {
-   "candidate_url": "https://www.reviewnote.co.kr/campaigns/1543398",
+   "candidate_url": null,
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-23",
-   "link_evidence": "source_row",
+   "last_checked_at": "2026-11-26",
+   "link_evidence": null,
    "original_url": null,
-   "verification_code": "login",
-   "verification_evidence_url": null,
-   "verification_grade": "B",
-   "verification_reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)",
-   "verification_status": "needs_review"
+   "verification_code": "mismatch",
+   "verification_evidence_url": "https://www.reviewnote.co.kr/campaigns/1543398",
+   "verification_grade": "C",
+   "verification_reason": "페이지와 이벤트의 일치를 확인하지 못함",
+   "verification_status": "unverified"
   },
   "rn-e9d40a6a1d": {
    "candidate_url": "https://www.reviewnote.co.kr/campaigns/1555067",
@@ -34861,18 +34861,18 @@
    "verification_status": "needs_review"
   },
   "rn-f278f68312": {
-   "candidate_url": "https://www.reviewnote.co.kr/campaigns/1541878",
+   "candidate_url": null,
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-23",
-   "link_evidence": "source_row",
+   "last_checked_at": "2026-11-26",
+   "link_evidence": null,
    "original_url": null,
-   "verification_code": "login",
-   "verification_evidence_url": null,
-   "verification_grade": "B",
-   "verification_reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)",
-   "verification_status": "needs_review"
+   "verification_code": "mismatch",
+   "verification_evidence_url": "https://www.reviewnote.co.kr/campaigns/1541878",
+   "verification_grade": "C",
+   "verification_reason": "페이지와 이벤트의 일치를 확인하지 못함",
+   "verification_status": "unverified"
   },
   "rn-f27921c6bb": {
    "candidate_url": "https://www.reviewnote.co.kr/campaigns/1552988",
@@ -35113,18 +35113,18 @@
    "verification_status": "unverified"
   },
   "rn-f5a708083e": {
-   "candidate_url": "https://www.reviewnote.co.kr/campaigns/1537051",
+   "candidate_url": null,
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-23",
-   "link_evidence": "source_row",
+   "last_checked_at": "2026-11-26",
+   "link_evidence": null,
    "original_url": null,
-   "verification_code": "login",
-   "verification_evidence_url": null,
-   "verification_grade": "B",
-   "verification_reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)",
-   "verification_status": "needs_review"
+   "verification_code": "mismatch",
+   "verification_evidence_url": "https://www.reviewnote.co.kr/campaigns/1537051",
+   "verification_grade": "C",
+   "verification_reason": "페이지와 이벤트의 일치를 확인하지 못함",
+   "verification_status": "unverified"
   },
   "rn-f5b2f9b5c7": {
    "candidate_url": null,
@@ -35561,18 +35561,18 @@
    "verification_status": "needs_review"
   },
   "rn-f9314a3523": {
-   "candidate_url": "https://www.reviewnote.co.kr/campaigns/1117681",
+   "candidate_url": null,
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-23",
-   "link_evidence": "source_row",
+   "last_checked_at": "2026-11-26",
+   "link_evidence": null,
    "original_url": null,
-   "verification_code": "login",
-   "verification_evidence_url": null,
-   "verification_grade": "B",
-   "verification_reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)",
-   "verification_status": "needs_review"
+   "verification_code": "mismatch",
+   "verification_evidence_url": "https://www.reviewnote.co.kr/campaigns/1117681",
+   "verification_grade": "C",
+   "verification_reason": "페이지와 이벤트의 일치를 확인하지 못함",
+   "verification_status": "unverified"
   },
   "rn-f9368d2dd0": {
    "candidate_url": "https://www.reviewnote.co.kr/campaigns/1558966",
@@ -35813,18 +35813,18 @@
    "verification_status": "unverified"
   },
   "rn-fb14240d19": {
-   "candidate_url": "https://www.reviewnote.co.kr/campaigns/1543893",
+   "candidate_url": null,
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-23",
-   "link_evidence": "source_row",
+   "last_checked_at": "2026-11-26",
+   "link_evidence": null,
    "original_url": null,
-   "verification_code": "login",
-   "verification_evidence_url": null,
-   "verification_grade": "B",
-   "verification_reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)",
-   "verification_status": "needs_review"
+   "verification_code": "mismatch",
+   "verification_evidence_url": "https://www.reviewnote.co.kr/campaigns/1543893",
+   "verification_grade": "C",
+   "verification_reason": "페이지와 이벤트의 일치를 확인하지 못함",
+   "verification_status": "unverified"
   },
   "rn-fb6a21a151": {
    "candidate_url": "https://www.reviewnote.co.kr/campaigns/1548641",
@@ -35869,18 +35869,18 @@
    "verification_status": "unverified"
   },
   "rn-fbb0032219": {
-   "candidate_url": "https://www.reviewnote.co.kr/campaigns/1524850",
+   "candidate_url": null,
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-23",
-   "link_evidence": "source_row",
+   "last_checked_at": "2026-11-26",
+   "link_evidence": null,
    "original_url": null,
-   "verification_code": "login",
-   "verification_evidence_url": null,
-   "verification_grade": "B",
-   "verification_reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)",
-   "verification_status": "needs_review"
+   "verification_code": "mismatch",
+   "verification_evidence_url": "https://www.reviewnote.co.kr/campaigns/1524850",
+   "verification_grade": "C",
+   "verification_reason": "페이지와 이벤트의 일치를 확인하지 못함",
+   "verification_status": "unverified"
   },
   "rn-fc18b497c9": {
    "candidate_url": null,
@@ -35897,18 +35897,18 @@
    "verification_status": "unverified"
   },
   "rn-fc22a2e008": {
-   "candidate_url": "https://www.reviewnote.co.kr/campaigns/1552409",
+   "candidate_url": null,
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
-   "last_checked_at": "2026-11-23",
-   "link_evidence": "source_row",
+   "last_checked_at": "2026-11-26",
+   "link_evidence": null,
    "original_url": null,
-   "verification_code": "login",
-   "verification_evidence_url": null,
-   "verification_grade": "B",
-   "verification_reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)",
-   "verification_status": "needs_review"
+   "verification_code": "mismatch",
+   "verification_evidence_url": "https://www.reviewnote.co.kr/campaigns/1552409",
+   "verification_grade": "C",
+   "verification_reason": "페이지와 이벤트의 일치를 확인하지 못함",
+   "verification_status": "unverified"
   },
   "rn-fc8e0ef0bd": {
    "candidate_url": null,
@@ -46924,6 +46924,36 @@
     "reason": "이벤트 글에 적힌 게시물이지만 약관·robots상 내용을 읽을 수 없음"
    }
   ],
+  "ek-065f8e41a2": [
+   {
+    "at": "2026-11-26",
+    "field": "entry_url",
+    "new": null,
+    "old": "https://docs.google.com/forms/d/e/1FAIpQLSfrejm4Mh3cx02U67drWpHOwR36st5xhX-daKXVNbwOg3iEZg/viewform",
+    "reason": "페이지와 이벤트의 일치를 확인하지 못함"
+   },
+   {
+    "at": "2026-11-26",
+    "field": "original_url",
+    "new": null,
+    "old": "https://www.youtube.com/watch?v=SBPzcdtYSfo",
+    "reason": "페이지와 이벤트의 일치를 확인하지 못함"
+   },
+   {
+    "at": "2026-11-26",
+    "field": "entry_type",
+    "new": "website",
+    "old": "form",
+    "reason": "페이지와 이벤트의 일치를 확인하지 못함"
+   },
+   {
+    "at": "2026-11-26",
+    "field": "verification_grade",
+    "new": "C",
+    "old": "A",
+    "reason": "페이지와 이벤트의 일치를 확인하지 못함"
+   }
+  ],
   "ek-4f0f5c96ca": [
    {
     "at": "2026-11-18",
@@ -51465,6 +51495,22 @@
    },
    {
     "at": "2026-11-21",
+    "field": "verification_grade",
+    "new": "C",
+    "old": "B",
+    "reason": "페이지와 이벤트의 일치를 확인하지 못함"
+   }
+  ],
+  "rn-26b8698c30": [
+   {
+    "at": "2026-11-26",
+    "field": "candidate_url",
+    "new": null,
+    "old": "https://www.reviewnote.co.kr/campaigns/1543360",
+    "reason": "페이지와 이벤트의 일치를 확인하지 못함"
+   },
+   {
+    "at": "2026-11-26",
     "field": "verification_grade",
     "new": "C",
     "old": "B",
@@ -56043,6 +56089,22 @@
     "reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)"
    }
   ],
+  "rn-846dc098b0": [
+   {
+    "at": "2026-11-26",
+    "field": "candidate_url",
+    "new": null,
+    "old": "https://www.reviewnote.co.kr/campaigns/1545608",
+    "reason": "페이지와 이벤트의 일치를 확인하지 못함"
+   },
+   {
+    "at": "2026-11-26",
+    "field": "verification_grade",
+    "new": "C",
+    "old": "B",
+    "reason": "페이지와 이벤트의 일치를 확인하지 못함"
+   }
+  ],
   "rn-84ec1cf08b": [
    {
     "at": "2026-11-24",
@@ -56050,6 +56112,22 @@
     "new": "B",
     "old": "C",
     "reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)"
+   }
+  ],
+  "rn-851c124caa": [
+   {
+    "at": "2026-11-26",
+    "field": "candidate_url",
+    "new": null,
+    "old": "https://www.reviewnote.co.kr/campaigns/1541548",
+    "reason": "페이지와 이벤트의 일치를 확인하지 못함"
+   },
+   {
+    "at": "2026-11-26",
+    "field": "verification_grade",
+    "new": "C",
+    "old": "B",
+    "reason": "페이지와 이벤트의 일치를 확인하지 못함"
    }
   ],
   "rn-8565e19948": [
@@ -56413,6 +56491,22 @@
     "reason": "페이지와 이벤트의 일치를 확인하지 못함"
    }
   ],
+  "rn-8d61fc07da": [
+   {
+    "at": "2026-11-26",
+    "field": "candidate_url",
+    "new": null,
+    "old": "https://www.reviewnote.co.kr/campaigns/1551002",
+    "reason": "페이지와 이벤트의 일치를 확인하지 못함"
+   },
+   {
+    "at": "2026-11-26",
+    "field": "verification_grade",
+    "new": "C",
+    "old": "B",
+    "reason": "페이지와 이벤트의 일치를 확인하지 못함"
+   }
+  ],
   "rn-8d7169543f": [
    {
     "at": "2026-11-22",
@@ -56502,6 +56596,22 @@
     "reason": "페이지와 이벤트의 일치를 확인하지 못함"
    }
   ],
+  "rn-8efeee248b": [
+   {
+    "at": "2026-11-26",
+    "field": "candidate_url",
+    "new": null,
+    "old": "https://www.reviewnote.co.kr/campaigns/1544337",
+    "reason": "페이지와 이벤트의 일치를 확인하지 못함"
+   },
+   {
+    "at": "2026-11-26",
+    "field": "verification_grade",
+    "new": "C",
+    "old": "B",
+    "reason": "페이지와 이벤트의 일치를 확인하지 못함"
+   }
+  ],
   "rn-8f19fdc445": [
    {
     "at": "2026-11-21",
@@ -56576,6 +56686,22 @@
    },
    {
     "at": "2026-11-21",
+    "field": "verification_grade",
+    "new": "C",
+    "old": "B",
+    "reason": "페이지와 이벤트의 일치를 확인하지 못함"
+   }
+  ],
+  "rn-8f7fd4b260": [
+   {
+    "at": "2026-11-26",
+    "field": "candidate_url",
+    "new": null,
+    "old": "https://www.reviewnote.co.kr/campaigns/1544036",
+    "reason": "페이지와 이벤트의 일치를 확인하지 못함"
+   },
+   {
+    "at": "2026-11-26",
     "field": "verification_grade",
     "new": "C",
     "old": "B",
@@ -56719,6 +56845,22 @@
     "reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)"
    }
   ],
+  "rn-913987c9c9": [
+   {
+    "at": "2026-11-26",
+    "field": "candidate_url",
+    "new": null,
+    "old": "https://www.reviewnote.co.kr/campaigns/1536959",
+    "reason": "페이지와 이벤트의 일치를 확인하지 못함"
+   },
+   {
+    "at": "2026-11-26",
+    "field": "verification_grade",
+    "new": "C",
+    "old": "B",
+    "reason": "페이지와 이벤트의 일치를 확인하지 못함"
+   }
+  ],
   "rn-9168736825": [
    {
     "at": "2026-11-17",
@@ -56760,6 +56902,22 @@
     "reason": "페이지와 이벤트의 일치를 확인하지 못함"
    }
   ],
+  "rn-9202d75666": [
+   {
+    "at": "2026-11-26",
+    "field": "candidate_url",
+    "new": null,
+    "old": "https://www.reviewnote.co.kr/campaigns/1550673",
+    "reason": "페이지와 이벤트의 일치를 확인하지 못함"
+   },
+   {
+    "at": "2026-11-26",
+    "field": "verification_grade",
+    "new": "C",
+    "old": "B",
+    "reason": "페이지와 이벤트의 일치를 확인하지 못함"
+   }
+  ],
   "rn-9220e92d0b": [
    {
     "at": "2026-11-23",
@@ -56786,6 +56944,22 @@
    },
    {
     "at": "2026-11-24",
+    "field": "verification_grade",
+    "new": "C",
+    "old": "B",
+    "reason": "페이지와 이벤트의 일치를 확인하지 못함"
+   }
+  ],
+  "rn-925e6f8fcb": [
+   {
+    "at": "2026-11-26",
+    "field": "candidate_url",
+    "new": null,
+    "old": "https://www.reviewnote.co.kr/campaigns/1545579",
+    "reason": "페이지와 이벤트의 일치를 확인하지 못함"
+   },
+   {
+    "at": "2026-11-26",
     "field": "verification_grade",
     "new": "C",
     "old": "B",
@@ -56952,6 +57126,22 @@
     "reason": "페이지와 이벤트의 일치를 확인하지 못함"
    }
   ],
+  "rn-95a354b182": [
+   {
+    "at": "2026-11-26",
+    "field": "candidate_url",
+    "new": null,
+    "old": "https://www.reviewnote.co.kr/campaigns/1543535",
+    "reason": "페이지와 이벤트의 일치를 확인하지 못함"
+   },
+   {
+    "at": "2026-11-26",
+    "field": "verification_grade",
+    "new": "C",
+    "old": "B",
+    "reason": "페이지와 이벤트의 일치를 확인하지 못함"
+   }
+  ],
   "rn-95d65a2e2c": [
    {
     "at": "2026-11-24",
@@ -57057,6 +57247,22 @@
     "reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)"
    }
   ],
+  "rn-98325dad4a": [
+   {
+    "at": "2026-11-26",
+    "field": "candidate_url",
+    "new": null,
+    "old": "https://www.reviewnote.co.kr/campaigns/1543715",
+    "reason": "페이지와 이벤트의 일치를 확인하지 못함"
+   },
+   {
+    "at": "2026-11-26",
+    "field": "verification_grade",
+    "new": "C",
+    "old": "B",
+    "reason": "페이지와 이벤트의 일치를 확인하지 못함"
+   }
+  ],
   "rn-98d41d9d33": [
    {
     "at": "2026-11-24",
@@ -57132,6 +57338,22 @@
     "reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)"
    }
   ],
+  "rn-9a9e375bab": [
+   {
+    "at": "2026-11-26",
+    "field": "candidate_url",
+    "new": null,
+    "old": "https://www.reviewnote.co.kr/campaigns/1543882",
+    "reason": "페이지와 이벤트의 일치를 확인하지 못함"
+   },
+   {
+    "at": "2026-11-26",
+    "field": "verification_grade",
+    "new": "C",
+    "old": "B",
+    "reason": "페이지와 이벤트의 일치를 확인하지 못함"
+   }
+  ],
   "rn-9b7aea803f": [
    {
     "at": "2026-11-20",
@@ -57190,6 +57412,22 @@
    },
    {
     "at": "2026-11-23",
+    "field": "verification_grade",
+    "new": "C",
+    "old": "B",
+    "reason": "페이지와 이벤트의 일치를 확인하지 못함"
+   }
+  ],
+  "rn-9cf0aa756c": [
+   {
+    "at": "2026-11-26",
+    "field": "candidate_url",
+    "new": null,
+    "old": "https://www.reviewnote.co.kr/campaigns/1540173",
+    "reason": "페이지와 이벤트의 일치를 확인하지 못함"
+   },
+   {
+    "at": "2026-11-26",
     "field": "verification_grade",
     "new": "C",
     "old": "B",
@@ -57286,6 +57524,22 @@
    },
    {
     "at": "2026-11-22",
+    "field": "verification_grade",
+    "new": "C",
+    "old": "B",
+    "reason": "페이지와 이벤트의 일치를 확인하지 못함"
+   }
+  ],
+  "rn-9e81508fb3": [
+   {
+    "at": "2026-11-26",
+    "field": "candidate_url",
+    "new": null,
+    "old": "https://www.reviewnote.co.kr/campaigns/1544934",
+    "reason": "페이지와 이벤트의 일치를 확인하지 못함"
+   },
+   {
+    "at": "2026-11-26",
     "field": "verification_grade",
     "new": "C",
     "old": "B",
@@ -57438,6 +57692,38 @@
     "reason": "페이지와 이벤트의 일치를 확인하지 못함"
    }
   ],
+  "rn-a215ffbf4f": [
+   {
+    "at": "2026-11-26",
+    "field": "candidate_url",
+    "new": null,
+    "old": "https://www.reviewnote.co.kr/campaigns/1515647",
+    "reason": "페이지와 이벤트의 일치를 확인하지 못함"
+   },
+   {
+    "at": "2026-11-26",
+    "field": "verification_grade",
+    "new": "C",
+    "old": "B",
+    "reason": "페이지와 이벤트의 일치를 확인하지 못함"
+   }
+  ],
+  "rn-a29113fb7c": [
+   {
+    "at": "2026-11-26",
+    "field": "candidate_url",
+    "new": null,
+    "old": "https://www.reviewnote.co.kr/campaigns/1541765",
+    "reason": "페이지와 이벤트의 일치를 확인하지 못함"
+   },
+   {
+    "at": "2026-11-26",
+    "field": "verification_grade",
+    "new": "C",
+    "old": "B",
+    "reason": "페이지와 이벤트의 일치를 확인하지 못함"
+   }
+  ],
   "rn-a29b85bae9": [
    {
     "at": "2026-11-19",
@@ -57489,6 +57775,22 @@
    },
    {
     "at": "2026-11-22",
+    "field": "verification_grade",
+    "new": "C",
+    "old": "B",
+    "reason": "페이지와 이벤트의 일치를 확인하지 못함"
+   }
+  ],
+  "rn-a51f21003e": [
+   {
+    "at": "2026-11-26",
+    "field": "candidate_url",
+    "new": null,
+    "old": "https://www.reviewnote.co.kr/campaigns/1542872",
+    "reason": "페이지와 이벤트의 일치를 확인하지 못함"
+   },
+   {
+    "at": "2026-11-26",
     "field": "verification_grade",
     "new": "C",
     "old": "B",
@@ -57591,6 +57893,22 @@
     "new": "B",
     "old": "C",
     "reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)"
+   }
+  ],
+  "rn-a7c03e4c97": [
+   {
+    "at": "2026-11-26",
+    "field": "candidate_url",
+    "new": null,
+    "old": "https://www.reviewnote.co.kr/campaigns/1550595",
+    "reason": "페이지와 이벤트의 일치를 확인하지 못함"
+   },
+   {
+    "at": "2026-11-26",
+    "field": "verification_grade",
+    "new": "C",
+    "old": "B",
+    "reason": "페이지와 이벤트의 일치를 확인하지 못함"
    }
   ],
   "rn-a852cf8ee8": [
@@ -57739,6 +58057,22 @@
     "new": "B",
     "old": "C",
     "reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)"
+   }
+  ],
+  "rn-aa73bb44fa": [
+   {
+    "at": "2026-11-26",
+    "field": "candidate_url",
+    "new": null,
+    "old": "https://www.reviewnote.co.kr/campaigns/1527029",
+    "reason": "페이지와 이벤트의 일치를 확인하지 못함"
+   },
+   {
+    "at": "2026-11-26",
+    "field": "verification_grade",
+    "new": "C",
+    "old": "B",
+    "reason": "페이지와 이벤트의 일치를 확인하지 못함"
    }
   ],
   "rn-aaaa8b064e": [
@@ -57985,6 +58319,22 @@
     "reason": "페이지와 이벤트의 일치를 확인하지 못함"
    }
   ],
+  "rn-afbe7eedf2": [
+   {
+    "at": "2026-11-26",
+    "field": "candidate_url",
+    "new": null,
+    "old": "https://www.reviewnote.co.kr/campaigns/1543758",
+    "reason": "페이지와 이벤트의 일치를 확인하지 못함"
+   },
+   {
+    "at": "2026-11-26",
+    "field": "verification_grade",
+    "new": "C",
+    "old": "B",
+    "reason": "페이지와 이벤트의 일치를 확인하지 못함"
+   }
+  ],
   "rn-afdf43d2ac": [
    {
     "at": "2026-11-22",
@@ -58083,6 +58433,22 @@
     "new": "B",
     "old": "C",
     "reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)"
+   }
+  ],
+  "rn-b13e1cc50e": [
+   {
+    "at": "2026-11-26",
+    "field": "candidate_url",
+    "new": null,
+    "old": "https://www.reviewnote.co.kr/campaigns/1543462",
+    "reason": "페이지와 이벤트의 일치를 확인하지 못함"
+   },
+   {
+    "at": "2026-11-26",
+    "field": "verification_grade",
+    "new": "C",
+    "old": "B",
+    "reason": "페이지와 이벤트의 일치를 확인하지 못함"
    }
   ],
   "rn-b20868dc59": [
@@ -58231,6 +58597,22 @@
     "reason": "페이지와 이벤트의 일치를 확인하지 못함"
    }
   ],
+  "rn-b4a0b80596": [
+   {
+    "at": "2026-11-26",
+    "field": "candidate_url",
+    "new": null,
+    "old": "https://www.reviewnote.co.kr/campaigns/1544818",
+    "reason": "페이지와 이벤트의 일치를 확인하지 못함"
+   },
+   {
+    "at": "2026-11-26",
+    "field": "verification_grade",
+    "new": "C",
+    "old": "B",
+    "reason": "페이지와 이벤트의 일치를 확인하지 못함"
+   }
+  ],
   "rn-b4fbb75c01": [
    {
     "at": "2026-11-23",
@@ -58257,6 +58639,22 @@
    },
    {
     "at": "2026-11-20",
+    "field": "verification_grade",
+    "new": "C",
+    "old": "B",
+    "reason": "페이지와 이벤트의 일치를 확인하지 못함"
+   }
+  ],
+  "rn-b5dae3c2e9": [
+   {
+    "at": "2026-11-26",
+    "field": "candidate_url",
+    "new": null,
+    "old": "https://www.reviewnote.co.kr/campaigns/1550607",
+    "reason": "페이지와 이벤트의 일치를 확인하지 못함"
+   },
+   {
+    "at": "2026-11-26",
     "field": "verification_grade",
     "new": "C",
     "old": "B",
@@ -58336,6 +58734,22 @@
     "reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)"
    }
   ],
+  "rn-b7a1a95cbc": [
+   {
+    "at": "2026-11-26",
+    "field": "candidate_url",
+    "new": null,
+    "old": "https://www.reviewnote.co.kr/campaigns/1544675",
+    "reason": "페이지와 이벤트의 일치를 확인하지 못함"
+   },
+   {
+    "at": "2026-11-26",
+    "field": "verification_grade",
+    "new": "C",
+    "old": "B",
+    "reason": "페이지와 이벤트의 일치를 확인하지 못함"
+   }
+  ],
   "rn-b896868cab": [
    {
     "at": "2026-11-20",
@@ -58346,6 +58760,22 @@
    },
    {
     "at": "2026-11-20",
+    "field": "verification_grade",
+    "new": "C",
+    "old": "B",
+    "reason": "페이지와 이벤트의 일치를 확인하지 못함"
+   }
+  ],
+  "rn-b8d3cfdd20": [
+   {
+    "at": "2026-11-26",
+    "field": "candidate_url",
+    "new": null,
+    "old": "https://www.reviewnote.co.kr/campaigns/1544591",
+    "reason": "페이지와 이벤트의 일치를 확인하지 못함"
+   },
+   {
+    "at": "2026-11-26",
     "field": "verification_grade",
     "new": "C",
     "old": "B",
@@ -58482,6 +58912,22 @@
     "reason": "페이지와 이벤트의 일치를 확인하지 못함"
    }
   ],
+  "rn-bd11dc061e": [
+   {
+    "at": "2026-11-26",
+    "field": "candidate_url",
+    "new": null,
+    "old": "https://www.reviewnote.co.kr/campaigns/1541755",
+    "reason": "페이지와 이벤트의 일치를 확인하지 못함"
+   },
+   {
+    "at": "2026-11-26",
+    "field": "verification_grade",
+    "new": "C",
+    "old": "B",
+    "reason": "페이지와 이벤트의 일치를 확인하지 못함"
+   }
+  ],
   "rn-bd6128027f": [
    {
     "at": "2026-11-24",
@@ -58513,6 +58959,22 @@
     "field": "candidate_url",
     "new": null,
     "old": "https://www.reviewnote.co.kr/campaigns/1530186",
+    "reason": "페이지와 이벤트의 일치를 확인하지 못함"
+   },
+   {
+    "at": "2026-11-26",
+    "field": "verification_grade",
+    "new": "C",
+    "old": "B",
+    "reason": "페이지와 이벤트의 일치를 확인하지 못함"
+   }
+  ],
+  "rn-be8db50ca4": [
+   {
+    "at": "2026-11-26",
+    "field": "candidate_url",
+    "new": null,
+    "old": "https://www.reviewnote.co.kr/campaigns/1543400",
     "reason": "페이지와 이벤트의 일치를 확인하지 못함"
    },
    {
@@ -58558,6 +59020,22 @@
    },
    {
     "at": "2026-11-20",
+    "field": "verification_grade",
+    "new": "C",
+    "old": "B",
+    "reason": "페이지와 이벤트의 일치를 확인하지 못함"
+   }
+  ],
+  "rn-bfa73b5bc4": [
+   {
+    "at": "2026-11-26",
+    "field": "candidate_url",
+    "new": null,
+    "old": "https://www.reviewnote.co.kr/campaigns/1541365",
+    "reason": "페이지와 이벤트의 일치를 확인하지 못함"
+   },
+   {
+    "at": "2026-11-26",
     "field": "verification_grade",
     "new": "C",
     "old": "B",
@@ -58622,6 +59100,22 @@
    },
    {
     "at": "2026-11-24",
+    "field": "verification_grade",
+    "new": "C",
+    "old": "B",
+    "reason": "페이지와 이벤트의 일치를 확인하지 못함"
+   }
+  ],
+  "rn-c203b4c60f": [
+   {
+    "at": "2026-11-26",
+    "field": "candidate_url",
+    "new": null,
+    "old": "https://www.reviewnote.co.kr/campaigns/1543624",
+    "reason": "페이지와 이벤트의 일치를 확인하지 못함"
+   },
+   {
+    "at": "2026-11-26",
     "field": "verification_grade",
     "new": "C",
     "old": "B",
@@ -58708,6 +59202,22 @@
     "reason": "페이지와 이벤트의 일치를 확인하지 못함"
    }
   ],
+  "rn-c478dfea0e": [
+   {
+    "at": "2026-11-26",
+    "field": "candidate_url",
+    "new": null,
+    "old": "https://www.reviewnote.co.kr/campaigns/1510813",
+    "reason": "페이지와 이벤트의 일치를 확인하지 못함"
+   },
+   {
+    "at": "2026-11-26",
+    "field": "verification_grade",
+    "new": "C",
+    "old": "B",
+    "reason": "페이지와 이벤트의 일치를 확인하지 못함"
+   }
+  ],
   "rn-c4933186fa": [
    {
     "at": "2026-11-17",
@@ -58724,6 +59234,22 @@
     "new": "ended",
     "old": "active",
     "reason": "페이지의 기간이 지난 행사로 확인됨"
+   }
+  ],
+  "rn-c522f0592c": [
+   {
+    "at": "2026-11-26",
+    "field": "candidate_url",
+    "new": null,
+    "old": "https://www.reviewnote.co.kr/campaigns/1545489",
+    "reason": "페이지와 이벤트의 일치를 확인하지 못함"
+   },
+   {
+    "at": "2026-11-26",
+    "field": "verification_grade",
+    "new": "C",
+    "old": "B",
+    "reason": "페이지와 이벤트의 일치를 확인하지 못함"
    }
   ],
   "rn-c55f83bd74": [
@@ -59036,6 +59562,22 @@
     "reason": "페이지와 이벤트의 일치를 확인하지 못함"
    }
   ],
+  "rn-ce3ccceea7": [
+   {
+    "at": "2026-11-26",
+    "field": "candidate_url",
+    "new": null,
+    "old": "https://www.reviewnote.co.kr/campaigns/1541297",
+    "reason": "페이지와 이벤트의 일치를 확인하지 못함"
+   },
+   {
+    "at": "2026-11-26",
+    "field": "verification_grade",
+    "new": "C",
+    "old": "B",
+    "reason": "페이지와 이벤트의 일치를 확인하지 못함"
+   }
+  ],
   "rn-ce5efb73be": [
    {
     "at": "2026-11-17",
@@ -59043,6 +59585,22 @@
     "new": "B",
     "old": "C",
     "reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)"
+   }
+  ],
+  "rn-ce741c1a0c": [
+   {
+    "at": "2026-11-26",
+    "field": "candidate_url",
+    "new": null,
+    "old": "https://www.reviewnote.co.kr/campaigns/1545628",
+    "reason": "페이지와 이벤트의 일치를 확인하지 못함"
+   },
+   {
+    "at": "2026-11-26",
+    "field": "verification_grade",
+    "new": "C",
+    "old": "B",
+    "reason": "페이지와 이벤트의 일치를 확인하지 못함"
    }
   ],
   "rn-ce916924ef": [
@@ -59064,6 +59622,22 @@
    },
    {
     "at": "2026-11-24",
+    "field": "verification_grade",
+    "new": "C",
+    "old": "B",
+    "reason": "페이지와 이벤트의 일치를 확인하지 못함"
+   }
+  ],
+  "rn-cf57ae13ae": [
+   {
+    "at": "2026-11-26",
+    "field": "candidate_url",
+    "new": null,
+    "old": "https://www.reviewnote.co.kr/campaigns/1540201",
+    "reason": "페이지와 이벤트의 일치를 확인하지 못함"
+   },
+   {
+    "at": "2026-11-26",
     "field": "verification_grade",
     "new": "C",
     "old": "B",
@@ -59175,6 +59749,22 @@
     "reason": "페이지와 이벤트의 일치를 확인하지 못함"
    }
   ],
+  "rn-d0fa528782": [
+   {
+    "at": "2026-11-26",
+    "field": "candidate_url",
+    "new": null,
+    "old": "https://www.reviewnote.co.kr/campaigns/1544807",
+    "reason": "페이지와 이벤트의 일치를 확인하지 못함"
+   },
+   {
+    "at": "2026-11-26",
+    "field": "verification_grade",
+    "new": "C",
+    "old": "B",
+    "reason": "페이지와 이벤트의 일치를 확인하지 못함"
+   }
+  ],
   "rn-d16131be98": [
    {
     "at": "2026-11-25",
@@ -59191,6 +59781,22 @@
     "new": "B",
     "old": "C",
     "reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)"
+   }
+  ],
+  "rn-d1c3387614": [
+   {
+    "at": "2026-11-26",
+    "field": "candidate_url",
+    "new": null,
+    "old": "https://www.reviewnote.co.kr/campaigns/1541814",
+    "reason": "페이지와 이벤트의 일치를 확인하지 못함"
+   },
+   {
+    "at": "2026-11-26",
+    "field": "verification_grade",
+    "new": "C",
+    "old": "B",
+    "reason": "페이지와 이벤트의 일치를 확인하지 못함"
    }
   ],
   "rn-d1d21181aa": [
@@ -59228,6 +59834,22 @@
    },
    {
     "at": "2026-11-25",
+    "field": "verification_grade",
+    "new": "C",
+    "old": "B",
+    "reason": "페이지와 이벤트의 일치를 확인하지 못함"
+   }
+  ],
+  "rn-d313b36150": [
+   {
+    "at": "2026-11-26",
+    "field": "candidate_url",
+    "new": null,
+    "old": "https://www.reviewnote.co.kr/campaigns/1550647",
+    "reason": "페이지와 이벤트의 일치를 확인하지 못함"
+   },
+   {
+    "at": "2026-11-26",
     "field": "verification_grade",
     "new": "C",
     "old": "B",
@@ -59489,6 +60111,22 @@
     "reason": "페이지와 이벤트의 일치를 확인하지 못함"
    }
   ],
+  "rn-db1594d441": [
+   {
+    "at": "2026-11-26",
+    "field": "candidate_url",
+    "new": null,
+    "old": "https://www.reviewnote.co.kr/campaigns/1545442",
+    "reason": "페이지와 이벤트의 일치를 확인하지 못함"
+   },
+   {
+    "at": "2026-11-26",
+    "field": "verification_grade",
+    "new": "C",
+    "old": "B",
+    "reason": "페이지와 이벤트의 일치를 확인하지 못함"
+   }
+  ],
   "rn-db2708f60a": [
    {
     "at": "2026-11-23",
@@ -59499,6 +60137,22 @@
    },
    {
     "at": "2026-11-23",
+    "field": "verification_grade",
+    "new": "C",
+    "old": "B",
+    "reason": "페이지와 이벤트의 일치를 확인하지 못함"
+   }
+  ],
+  "rn-dcdeeb0183": [
+   {
+    "at": "2026-11-26",
+    "field": "candidate_url",
+    "new": null,
+    "old": "https://www.reviewnote.co.kr/campaigns/1544239",
+    "reason": "페이지와 이벤트의 일치를 확인하지 못함"
+   },
+   {
+    "at": "2026-11-26",
     "field": "verification_grade",
     "new": "C",
     "old": "B",
@@ -59627,6 +60281,22 @@
    },
    {
     "at": "2026-11-19",
+    "field": "verification_grade",
+    "new": "C",
+    "old": "B",
+    "reason": "페이지와 이벤트의 일치를 확인하지 못함"
+   }
+  ],
+  "rn-e121437575": [
+   {
+    "at": "2026-11-26",
+    "field": "candidate_url",
+    "new": null,
+    "old": "https://www.reviewnote.co.kr/campaigns/1537628",
+    "reason": "페이지와 이벤트의 일치를 확인하지 못함"
+   },
+   {
+    "at": "2026-11-26",
     "field": "verification_grade",
     "new": "C",
     "old": "B",
@@ -59905,6 +60575,22 @@
     "reason": "페이지와 이벤트의 일치를 확인하지 못함"
    }
   ],
+  "rn-e805745098": [
+   {
+    "at": "2026-11-26",
+    "field": "candidate_url",
+    "new": null,
+    "old": "https://www.reviewnote.co.kr/campaigns/1544706",
+    "reason": "페이지와 이벤트의 일치를 확인하지 못함"
+   },
+   {
+    "at": "2026-11-26",
+    "field": "verification_grade",
+    "new": "C",
+    "old": "B",
+    "reason": "페이지와 이벤트의 일치를 확인하지 못함"
+   }
+  ],
   "rn-e822a79768": [
    {
     "at": "2026-11-25",
@@ -59979,6 +60665,22 @@
    },
    {
     "at": "2026-11-24",
+    "field": "verification_grade",
+    "new": "C",
+    "old": "B",
+    "reason": "페이지와 이벤트의 일치를 확인하지 못함"
+   }
+  ],
+  "rn-e9b9e8a51a": [
+   {
+    "at": "2026-11-26",
+    "field": "candidate_url",
+    "new": null,
+    "old": "https://www.reviewnote.co.kr/campaigns/1543398",
+    "reason": "페이지와 이벤트의 일치를 확인하지 못함"
+   },
+   {
+    "at": "2026-11-26",
     "field": "verification_grade",
     "new": "C",
     "old": "B",
@@ -60414,6 +61116,22 @@
     "reason": "페이지와 이벤트의 일치를 확인하지 못함"
    }
   ],
+  "rn-f278f68312": [
+   {
+    "at": "2026-11-26",
+    "field": "candidate_url",
+    "new": null,
+    "old": "https://www.reviewnote.co.kr/campaigns/1541878",
+    "reason": "페이지와 이벤트의 일치를 확인하지 못함"
+   },
+   {
+    "at": "2026-11-26",
+    "field": "verification_grade",
+    "new": "C",
+    "old": "B",
+    "reason": "페이지와 이벤트의 일치를 확인하지 못함"
+   }
+  ],
   "rn-f28cdb9c70": [
    {
     "at": "2026-11-21",
@@ -60456,6 +61174,22 @@
    },
    {
     "at": "2026-11-25",
+    "field": "verification_grade",
+    "new": "C",
+    "old": "B",
+    "reason": "페이지와 이벤트의 일치를 확인하지 못함"
+   }
+  ],
+  "rn-f5a708083e": [
+   {
+    "at": "2026-11-26",
+    "field": "candidate_url",
+    "new": null,
+    "old": "https://www.reviewnote.co.kr/campaigns/1537051",
+    "reason": "페이지와 이벤트의 일치를 확인하지 못함"
+   },
+   {
+    "at": "2026-11-26",
     "field": "verification_grade",
     "new": "C",
     "old": "B",
@@ -60599,6 +61333,22 @@
     "reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)"
    }
   ],
+  "rn-f9314a3523": [
+   {
+    "at": "2026-11-26",
+    "field": "candidate_url",
+    "new": null,
+    "old": "https://www.reviewnote.co.kr/campaigns/1117681",
+    "reason": "페이지와 이벤트의 일치를 확인하지 못함"
+   },
+   {
+    "at": "2026-11-26",
+    "field": "verification_grade",
+    "new": "C",
+    "old": "B",
+    "reason": "페이지와 이벤트의 일치를 확인하지 못함"
+   }
+  ],
   "rn-f94a1061cc": [
    {
     "at": "2026-11-25",
@@ -60697,6 +61447,22 @@
     "reason": "페이지와 이벤트의 일치를 확인하지 못함"
    }
   ],
+  "rn-fb14240d19": [
+   {
+    "at": "2026-11-26",
+    "field": "candidate_url",
+    "new": null,
+    "old": "https://www.reviewnote.co.kr/campaigns/1543893",
+    "reason": "페이지와 이벤트의 일치를 확인하지 못함"
+   },
+   {
+    "at": "2026-11-26",
+    "field": "verification_grade",
+    "new": "C",
+    "old": "B",
+    "reason": "페이지와 이벤트의 일치를 확인하지 못함"
+   }
+  ],
   "rn-fb52518cfa": [
    {
     "at": "2026-11-21",
@@ -60745,6 +61511,22 @@
     "reason": "페이지와 이벤트의 일치를 확인하지 못함"
    }
   ],
+  "rn-fbb0032219": [
+   {
+    "at": "2026-11-26",
+    "field": "candidate_url",
+    "new": null,
+    "old": "https://www.reviewnote.co.kr/campaigns/1524850",
+    "reason": "페이지와 이벤트의 일치를 확인하지 못함"
+   },
+   {
+    "at": "2026-11-26",
+    "field": "verification_grade",
+    "new": "C",
+    "old": "B",
+    "reason": "페이지와 이벤트의 일치를 확인하지 못함"
+   }
+  ],
   "rn-fbb4ea82f4": [
    {
     "at": "2026-11-24",
@@ -60755,6 +61537,22 @@
    },
    {
     "at": "2026-11-24",
+    "field": "verification_grade",
+    "new": "C",
+    "old": "B",
+    "reason": "페이지와 이벤트의 일치를 확인하지 못함"
+   }
+  ],
+  "rn-fc22a2e008": [
+   {
+    "at": "2026-11-26",
+    "field": "candidate_url",
+    "new": null,
+    "old": "https://www.reviewnote.co.kr/campaigns/1552409",
+    "reason": "페이지와 이벤트의 일치를 확인하지 못함"
+   },
+   {
+    "at": "2026-11-26",
     "field": "verification_grade",
     "new": "C",
     "old": "B",
@@ -66144,7 +66942,7 @@
    "status": "login"
   },
   "https://www.reviewnote.co.kr/campaigns/1519751": {
-   "at": "2026-11-17",
+   "at": "2026-11-26",
    "status": "login"
   },
   "https://www.reviewnote.co.kr/campaigns/1519869": {
@@ -69584,7 +70382,7 @@
    "status": "login"
   },
   "https://www.reviewnote.co.kr/campaigns/1541763": {
-   "at": "2026-11-17",
+   "at": "2026-11-26",
    "status": "login"
   },
   "https://www.reviewnote.co.kr/campaigns/1541765": {
@@ -69764,7 +70562,7 @@
    "status": "login"
   },
   "https://www.reviewnote.co.kr/campaigns/1542008": {
-   "at": "2026-11-17",
+   "at": "2026-11-26",
    "status": "login"
   },
   "https://www.reviewnote.co.kr/campaigns/1542043": {
@@ -69848,7 +70646,7 @@
    "status": "login"
   },
   "https://www.reviewnote.co.kr/campaigns/1542470": {
-   "at": "2026-11-17",
+   "at": "2026-11-26",
    "status": "login"
   },
   "https://www.reviewnote.co.kr/campaigns/1542489": {
@@ -69972,7 +70770,7 @@
    "status": "login"
   },
   "https://www.reviewnote.co.kr/campaigns/1543192": {
-   "at": "2026-11-17",
+   "at": "2026-11-26",
    "status": "login"
   },
   "https://www.reviewnote.co.kr/campaigns/1543225": {
@@ -69996,7 +70794,7 @@
    "status": "login"
   },
   "https://www.reviewnote.co.kr/campaigns/1543370": {
-   "at": "2026-11-17",
+   "at": "2026-11-26",
    "status": "login"
   },
   "https://www.reviewnote.co.kr/campaigns/1543374": {
@@ -70032,7 +70830,7 @@
    "status": "login"
   },
   "https://www.reviewnote.co.kr/campaigns/1543409": {
-   "at": "2026-11-17",
+   "at": "2026-11-26",
    "status": "login"
   },
   "https://www.reviewnote.co.kr/campaigns/1543413": {
@@ -70060,7 +70858,7 @@
    "status": "login"
   },
   "https://www.reviewnote.co.kr/campaigns/1543471": {
-   "at": "2026-11-17",
+   "at": "2026-11-26",
    "status": "login"
   },
   "https://www.reviewnote.co.kr/campaigns/1543477": {
@@ -70068,7 +70866,7 @@
    "status": "login"
   },
   "https://www.reviewnote.co.kr/campaigns/1543495": {
-   "at": "2026-11-17",
+   "at": "2026-11-26",
    "status": "login"
   },
   "https://www.reviewnote.co.kr/campaigns/1543525": {
@@ -70084,11 +70882,11 @@
    "status": "login"
   },
   "https://www.reviewnote.co.kr/campaigns/1543563": {
-   "at": "2026-11-17",
+   "at": "2026-11-26",
    "status": "login"
   },
   "https://www.reviewnote.co.kr/campaigns/1543589": {
-   "at": "2026-11-17",
+   "at": "2026-11-26",
    "status": "login"
   },
   "https://www.reviewnote.co.kr/campaigns/1543624": {
@@ -70160,7 +70958,7 @@
    "status": "login"
   },
   "https://www.reviewnote.co.kr/campaigns/1543845": {
-   "at": "2026-11-17",
+   "at": "2026-11-26",
    "status": "login"
   },
   "https://www.reviewnote.co.kr/campaigns/1543846": {
@@ -70320,7 +71118,7 @@
    "status": "login"
   },
   "https://www.reviewnote.co.kr/campaigns/1544026": {
-   "at": "2026-11-17",
+   "at": "2026-11-26",
    "status": "login"
   },
   "https://www.reviewnote.co.kr/campaigns/1544036": {
@@ -70332,7 +71130,7 @@
    "status": "login"
   },
   "https://www.reviewnote.co.kr/campaigns/1544153": {
-   "at": "2026-11-17",
+   "at": "2026-11-26",
    "status": "login"
   },
   "https://www.reviewnote.co.kr/campaigns/1544239": {
@@ -70352,7 +71150,7 @@
    "status": "login"
   },
   "https://www.reviewnote.co.kr/campaigns/1544499": {
-   "at": "2026-11-17",
+   "at": "2026-11-26",
    "status": "login"
   },
   "https://www.reviewnote.co.kr/campaigns/1544512": {
@@ -70376,7 +71174,7 @@
    "status": "login"
   },
   "https://www.reviewnote.co.kr/campaigns/1544590": {
-   "at": "2026-11-17",
+   "at": "2026-11-26",
    "status": "login"
   },
   "https://www.reviewnote.co.kr/campaigns/1544591": {
@@ -70412,7 +71210,7 @@
    "status": "login"
   },
   "https://www.reviewnote.co.kr/campaigns/1544786": {
-   "at": "2026-11-17",
+   "at": "2026-11-26",
    "status": "login"
   },
   "https://www.reviewnote.co.kr/campaigns/1544801": {
@@ -70428,7 +71226,7 @@
    "status": "login"
   },
   "https://www.reviewnote.co.kr/campaigns/1544811": {
-   "at": "2026-11-17",
+   "at": "2026-11-26",
    "status": "login"
   },
   "https://www.reviewnote.co.kr/campaigns/1544818": {
@@ -70436,7 +71234,7 @@
    "status": "login"
   },
   "https://www.reviewnote.co.kr/campaigns/1544822": {
-   "at": "2026-11-17",
+   "at": "2026-11-26",
    "status": "login"
   },
   "https://www.reviewnote.co.kr/campaigns/1544826": {
@@ -70448,7 +71246,7 @@
    "status": "login"
   },
   "https://www.reviewnote.co.kr/campaigns/1544995": {
-   "at": "2026-11-17",
+   "at": "2026-11-26",
    "status": "login"
   },
   "https://www.reviewnote.co.kr/campaigns/1545035": {
@@ -70484,7 +71282,7 @@
    "status": "login"
   },
   "https://www.reviewnote.co.kr/campaigns/1545282": {
-   "at": "2026-11-17",
+   "at": "2026-11-26",
    "status": "login"
   },
   "https://www.reviewnote.co.kr/campaigns/1545330": {
@@ -71668,7 +72466,7 @@
    "status": "login"
   },
   "https://www.reviewnote.co.kr/campaigns/1550580": {
-   "at": "2026-11-17",
+   "at": "2026-11-26",
    "status": "login"
   },
   "https://www.reviewnote.co.kr/campaigns/1550595": {
@@ -71748,7 +72546,7 @@
    "status": "login"
   },
   "https://www.reviewnote.co.kr/campaigns/1550986": {
-   "at": "2026-11-17",
+   "at": "2026-11-26",
    "status": "login"
   },
   "https://www.reviewnote.co.kr/campaigns/1551002": {
@@ -71760,7 +72558,7 @@
    "status": "login"
   },
   "https://www.reviewnote.co.kr/campaigns/1551127": {
-   "at": "2026-11-17",
+   "at": "2026-11-26",
    "status": "login"
   },
   "https://www.reviewnote.co.kr/campaigns/1551134": {
