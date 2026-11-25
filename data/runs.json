@@ -1,159 +1,5 @@
 [
  {
-  "active": 2569,
-  "added": 0,
-  "at": "2026-11-15T02:01:30+09:00",
-  "broken": 0,
-  "dates": 0,
-  "elec": 60,
-  "form": {
-   "direct": 1,
-   "page_err": 0,
-   "page_found": 0,
-   "pages": 0,
-   "short_ok": 0
-  },
-  "links": {
-   "checked": 60,
-   "dead": 0,
-   "error": 0,
-   "ok": 60,
-   "skip": 0
-  },
-  "merged": 695,
-  "originals": 0,
-  "prizeFill": {
-   "left": 48,
-   "page": 0,
-   "page_err": 0,
-   "pages": 0,
-   "text": 0,
-   "title": 0,
-   "truncated": {
-    "checked": 0,
-    "err": 0,
-    "restored": 0
-   }
-  },
-  "proof": 521,
-  "pruned": 0,
-  "quality": {
-   "excluded": 0,
-   "flagged": 30,
-   "merged": 0
-  },
-  "rejected": 0,
-  "requests": 285,
-  "restricted": {
-   "restricted": 3284,
-   "review": 17
-  },
-  "sec": 393.3,
-  "seeded": 0,
-  "sources": {
-   "busan": {
-    "listed": 3,
-    "merged": 3,
-    "new": 0,
-    "requests": 1,
-    "sec": 2.0,
-    "skipped": 0,
-    "status": "ok"
-   },
-   "contestkorea": {
-    "status": "wait"
-   },
-   "danawa": {
-    "status": "wait"
-   },
-   "eventhouse": {
-    "listed": 400,
-    "merged": 271,
-    "new": 0,
-    "requests": 10,
-    "sec": 11.4,
-    "skipped": 0,
-    "status": "ok"
-   },
-   "eventhouse_search": {
-    "status": "wait"
-   },
-   "events_kr": {
-    "listed": 200,
-    "merged": 0,
-    "new": 0,
-    "requests": 10,
-    "sec": 10.5,
-    "skipped": 0,
-    "status": "ok"
-   },
-   "gangnam": {
-    "status": "off"
-   },
-   "korissue": {
-    "listed": 407,
-    "merged": 380,
-    "new": 0,
-    "requests": 5,
-    "sec": 5.8,
-    "skipped": 4,
-    "status": "ok"
-   },
-   "korissue_orgs": {
-    "listed": 803,
-    "merged": 41,
-    "new": 0,
-    "requests": 198,
-    "sec": 299.1,
-    "skipped": 22,
-    "status": "ok"
-   },
-   "mohw": {
-    "listed": 12,
-    "merged": 0,
-    "new": 0,
-    "requests": 1,
-    "sec": 2.8,
-    "skipped": 0,
-    "status": "ok"
-   },
-   "mrblog": {
-    "status": "wait"
-   },
-   "naver": {
-    "status": "wait"
-   },
-   "reviewnote": {
-    "status": "wait"
-   },
-   "sbs": {
-    "status": "wait"
-   },
-   "telegram": {
-    "status": "wait"
-   },
-   "touredu": {
-    "status": "wait"
-   },
-   "wevity": {
-    "status": "wait"
-   },
-   "youtube": {
-    "status": "wait"
-   }
-  },
-  "total": 6379,
-  "verify": {
-   "checked": 0,
-   "due": 0,
-   "failed": 0,
-   "no_request": 0,
-   "rendered": 0,
-   "requests": 0
-  },
-  "viaLeft": 376
- },
- {
   "active": 2598,
   "added": 29,
   "at": "2026-11-15T02:59:16+09:00",
@@ -50858,6 +50704,203 @@
    "no_request": 0,
    "rendered": 0,
    "requests": 0
+  },
+  "viaLeft": 625
+ },
+ {
+  "active": 3250,
+  "added": 17,
+  "archive": {
+   "alias_pruned": 0,
+   "archived": 0,
+   "files": 0,
+   "shortlinks_pruned": 0,
+   "verify_pruned": 0
+  },
+  "at": "2026-11-25T23:41:15+09:00",
+  "broken": 0,
+  "dates": 0,
+  "elec": 38,
+  "form": {
+   "direct": 0,
+   "eh_checked": 0,
+   "eh_found": 0,
+   "page_err": 0,
+   "page_found": 0,
+   "pages": 0,
+   "short_ok": 4
+  },
+  "formDedupe": 0,
+  "links": {
+   "checked": 60,
+   "dead": 0,
+   "error": 0,
+   "ok": 60,
+   "skip": 12
+  },
+  "merged": 172,
+  "notices": {
+   "due": 0,
+   "failed": 0,
+   "fetched": 0,
+   "ok": 0,
+   "pruned": 0,
+   "sec": 0.0,
+   "skipped_budget": 0
+  },
+  "originals": 0,
+  "prizeFill": {
+   "left": 316,
+   "page": 0,
+   "page_err": 0,
+   "pages": 0,
+   "text": 0,
+   "title": 0,
+   "truncated": {
+    "checked": 0,
+    "err": 0,
+    "restored": 0
+   }
+  },
+  "proof": 386,
+  "pruned": 0,
+  "quality": {
+   "excluded": 0,
+   "flagged": 31,
+   "merged": 0
+  },
+  "rejected": 0,
+  "requests": 95,
+  "restricted": {
+   "restricted": 3155,
+   "review": 21
+  },
+  "sec": 215.4,
+  "seeded": 0,
+  "shifted": {
+   "ended": 0,
+   "realigned": 0
+  },
+  "sources": {
+   "busan": {
+    "error": "ConnectTimeout: HTTPSConnectionPool(host='www.busan.go.kr', port=443): Max retries exceeded with url: /minwon/eventresult (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.busan.go.kr', port=443) at 0x75c54b829fd0>, 'Connection to www.busan.go.kr timed out. (connect timeout=20)'))",
+    "status": "error",
+    "trace": "kages/requests/sessions.py\", line 784, in send\n    r = adapter.send(request, **kwargs)\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/requests/adapters.py\", line 717, in send\n    raise ConnectTimeout(e, request=request)\nrequests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='www.busan.go.kr', port=443): Max retries exceeded with url: /minwon/eventresult (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.busan.go.kr', port=443) at 0x75c54b829fd0>, 'Connection to www.busan.go.kr timed out. (connect timeout=20)'))\n"
+   },
+   "contestkorea": {
+    "status": "wait"
+   },
+   "danawa": {
+    "status": "wait"
+   },
+   "eventhouse": {
+    "status": "wait"
+   },
+   "eventhouse_search": {
+    "listed": 30,
+    "merged": 30,
+    "new": 0,
+    "requests": 20,
+    "sec": 22.1,
+    "skipped": 0,
+    "status": "ok"
+   },
+   "events_kr": {
+    "status": "wait"
+   },
+   "gangnam": {
+    "status": "off"
+   },
+   "gonggongevent": {
+    "listed": 60,
+    "merged": 14,
+    "new": 0,
+    "requests": 3,
+    "sec": 3.8,
+    "skipped": 46,
+    "status": "ok"
+   },
+   "korissue": {
+    "error": "HTTPError: 403 Client Error: Forbidden for url: https://korissue.mycafe24.com/?option=1",
+    "status": "error",
+    "trace": "keul/tikkeul/collector/sources/aggregators.py\", line 335, in korissue\n    listed += _kor_page(f.doc(f\"{KOR}?option={opt}\"), state, events, skipped, seen)\n                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/tikkeul/tikkeul/collector/common.py\", line 84, in doc\n    r.raise_for_status()\n  File \"/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/requests/models.py\", line 1167, in raise_for_status\n    raise HTTPError(http_error_msg, response=self)\nrequests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://korissue.mycafe24.com/?option=1\n"
+   },
+   "korissue_orgs": {
+    "error": "HTTPError: 403 Client Error: Forbidden for url: https://korissue.mycafe24.com/?parent=1034&keyword=%EA%B5%AD%EB%AF%BC%EA%B1%B4%EA%B0%95%EB%B3%B4%ED%97%98%EA%B3%B5..",
+    "status": "error",
+    "trace": "ts[pid]['kw']}\"), state, events, skipped, seen)\n                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/tikkeul/tikkeul/collector/common.py\", line 84, in doc\n    r.raise_for_status()\n  File \"/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/requests/models.py\", line 1167, in raise_for_status\n    raise HTTPError(http_error_msg, response=self)\nrequests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://korissue.mycafe24.com/?parent=1034&keyword=%EA%B5%AD%EB%AF%BC%EA%B1%B4%EA%B0%95%EB%B3%B4%ED%97%98%EA%B3%B5..\n"
+   },
+   "mohw": {
+    "status": "wait"
+   },
+   "mrblog": {
+    "listed": 30,
+    "merged": 25,
+    "new": 4,
+    "requests": 1,
+    "sec": 2.0,
+    "skipped": 1,
+    "status": "ok"
+   },
+   "naver": {
+    "status": "wait"
+   },
+   "reviewnote": {
+    "listed": 91,
+    "merged": 79,
+    "new": 1,
+    "requests": 1,
+    "sec": 0.9,
+    "skipped": 11,
+    "status": "ok"
+   },
+   "sbs": {
+    "listed": 17,
+    "merged": 7,
+    "new": 0,
+    "requests": 1,
+    "sec": 1.5,
+    "skipped": 10,
+    "status": "ok"
+   },
+   "telegram": {
+    "status": "wait"
+   },
+   "touredu": {
+    "listed": 3,
+    "merged": 0,
+    "new": 0,
+    "requests": 1,
+    "sec": 1.9,
+    "skipped": 0,
+    "status": "ok"
+   },
+   "wevity": {
+    "status": "wait"
+   },
+   "youtube": {
+    "reason": "YT_API_KEY 없음",
+    "status": "unconfigured"
+   },
+   "yuvent": {
+    "listed": 60,
+    "merged": 17,
+    "new": 12,
+    "requests": 3,
+    "sec": 6.4,
+    "skipped": 31,
+    "status": "ok"
+   }
+  },
+  "total": 5511,
+  "verify": {
+   "checked": 17,
+   "due": 17,
+   "failed": 0,
+   "no_request": 7,
+   "rendered": 1,
+   "requests": 10,
+   "stale_ended": 0
   },
   "viaLeft": 625
  }
