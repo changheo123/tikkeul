@@ -5,6 +5,7 @@
   "ck-105ffe27b8": "eh-ccb3f157fa",
   "ck-14a6dde0b9": "ek-b4ef7df17d",
   "ck-1580bd2a10": "eh-0899d08bcd",
+  "ck-16337e1fe0": "ek-6b0f4d9990",
   "ck-35d21fd29a": "eh-7ac40bd97e",
   "ck-3e0aa4e910": "te-d2e6962ed4",
   "ck-6df513872f": "eh-2b56dbe7f7",
@@ -1171,11 +1172,18 @@
    "13289": "ck-c4198d13e5",
    "13293": "ck-045dd0b4e0",
    "13294": "ck-b7a03a4272",
-   "13295": "ck-3c8ceebc25"
+   "13295": "ck-3c8ceebc25",
+   "13298": "ck-5a8b40c68f",
+   "13299": "ck-ededbf303c",
+   "13300": "ck-16337e1fe0",
+   "13302": "ck-155c9eecf0",
+   "13303": "ck-8121c732fe",
+   "13304": "skip:유료 조건: 결제",
+   "13305": "ck-5445196ebc"
   }
  },
  "eventhouse": {
-  "lastFull": 1795569613.258629,
+  "lastFull": 1795594495.837357,
   "prizeAllDone": true,
   "prizeFixDone": true
  },
@@ -1386,6 +1394,8 @@
    "290": "ek-9d323717c1",
    "291": "ek-3717862a00",
    "292": "skip:이벤트 신호 없음",
+   "293": "ek-05580caed3",
+   "294": "skip:이벤트 신호 없음",
    "30": "ek-22d200f867",
    "31": "ek-632667547e",
    "32": "ek-cb4e5208b4",
@@ -1457,7 +1467,7 @@
   "https://vo.la/O5a6KCv": "https://m.blog.naver.com/ok_hira/224442524892"
  },
  "fails": {
-  "busan": 33,
+  "busan": 34,
   "contestkorea": 0,
   "danawa": 0,
   "eventhouse": 0,
@@ -1465,8 +1475,8 @@
   "events_kr": 0,
   "gangnam": 1,
   "gonggongevent": 0,
-  "korissue": 75,
-  "korissue_orgs": 73,
+  "korissue": 76,
+  "korissue_orgs": 74,
   "mohw": 0,
   "mrblog": 0,
   "reviewnote": 0,
@@ -6349,15 +6359,15 @@
  },
  "lastOk": {
   "busan": "2026-11-24T10:05:42+09:00",
-  "contestkorea": "2026-11-25T14:29:15+09:00",
-  "danawa": "2026-11-25T14:29:15+09:00",
-  "eventhouse": "2026-11-25T15:23:49+09:00",
+  "contestkorea": "2026-11-25T17:14:41+09:00",
+  "danawa": "2026-11-25T17:14:41+09:00",
+  "eventhouse": "2026-11-25T17:14:41+09:00",
   "eventhouse_search": "2026-11-25T16:18:38+09:00",
-  "events_kr": "2026-11-25T15:23:49+09:00",
+  "events_kr": "2026-11-25T17:14:41+09:00",
   "gonggongevent": "2026-11-25T16:18:38+09:00",
   "korissue": "2026-11-22T21:35:01+09:00",
   "korissue_orgs": "2026-11-22T23:22:53+09:00",
-  "mohw": "2026-11-25T15:23:49+09:00",
+  "mohw": "2026-11-25T17:14:41+09:00",
   "mrblog": "2026-11-25T16:18:38+09:00",
   "reviewnote": "2026-11-25T16:18:38+09:00",
   "sbs": "2026-11-25T16:18:38+09:00",
@@ -6367,20 +6377,20 @@
  },
  "lastRun": {
   "busan": "2026-11-24T10:05:42+09:00",
-  "contestkorea": "2026-11-25T14:29:15+09:00",
-  "danawa": "2026-11-25T14:29:15+09:00",
-  "eventhouse": "2026-11-25T15:23:49+09:00",
+  "contestkorea": "2026-11-25T17:14:41+09:00",
+  "danawa": "2026-11-25T17:14:41+09:00",
+  "eventhouse": "2026-11-25T17:14:41+09:00",
   "eventhouse_search": "2026-11-25T16:18:38+09:00",
-  "events_kr": "2026-11-25T15:23:49+09:00",
+  "events_kr": "2026-11-25T17:14:41+09:00",
   "gonggongevent": "2026-11-25T16:18:38+09:00",
   "korissue": "2026-11-22T21:35:01+09:00",
   "korissue_orgs": "2026-11-22T23:22:53+09:00",
-  "mohw": "2026-11-25T15:23:49+09:00",
+  "mohw": "2026-11-25T17:14:41+09:00",
   "mrblog": "2026-11-25T16:18:38+09:00",
-  "naver": "2026-11-25T14:29:15+09:00",
+  "naver": "2026-11-25T17:14:41+09:00",
   "reviewnote": "2026-11-25T16:18:38+09:00",
   "sbs": "2026-11-25T16:18:38+09:00",
-  "telegram": "2026-11-25T14:29:15+09:00",
+  "telegram": "2026-11-25T17:14:41+09:00",
   "touredu": "2026-11-25T16:18:38+09:00",
   "wevity": "2026-11-25T15:23:49+09:00",
   "youtube": "2026-11-25T16:18:38+09:00",
@@ -6388,13 +6398,18 @@
  },
  "lastSkipped": {
   "busan": {},
-  "contestkorea": {},
+  "contestkorea": {
+   "13304": "유료 조건: 결제"
+  },
   "danawa": {},
   "eventhouse": {
+   "320842": "유료 조건: 구매",
    "321087": "유료 조건: 결제"
   },
   "eventhouse_search": {},
-  "events_kr": {},
+  "events_kr": {
+   "294": "이벤트 신호 없음"
+  },
   "gonggongevent": {
    "11월 10일 마감｜이천시 청년 신혼부부 전월세 대출이자 최대 200만 ": "종료·안내 글",
    "11월 10일 마감｜한국언론진흥재단 미디어 AI 플랫폼 퀴즈｜커피 쿠폰 ": "종료·안내 글",
@@ -7013,6 +7028,12 @@
    "status": "form",
    "to": "https://docs.google.com/forms/d/e/1FAIpQLScktH0D6p5XqII-YaMYx9NSnXgjVqJLa-jitesqG9cL43ukPg/viewform?usp=send_form"
   },
+  "https://forms.gle/NG9HDBYHe1RdjApj7": {
+   "at": "2026-11-25",
+   "final": "https://docs.google.com/forms/d/e/1FAIpQLSfaEAVb93cG5vqYHTgR0JRklePIAjFZUdNgJVzNLzL5olYKLQ/viewform",
+   "status": "form",
+   "to": "https://docs.google.com/forms/d/e/1FAIpQLSfaEAVb93cG5vqYHTgR0JRklePIAjFZUdNgJVzNLzL5olYKLQ/viewform?usp=send_form"
+  },
   "https://forms.gle/NjwLGduumHpkkWZu9": {
    "at": "2026-11-11",
    "final": "https://docs.google.com/forms/d/e/1FAIpQLSdqj5P_5pXMSrPvIt-v6xszVsX205uuqnR65mmLDzEVFq_iYw/viewform",
@@ -7193,6 +7214,12 @@
    "status": "form",
    "to": "https://docs.google.com/forms/d/e/1FAIpQLScyOHNQ0m1kKy8APfYPyIVc2OitKc6qsxtm3HC9lAK3LqCV1Q/viewform?usp=send_form"
   },
+  "https://forms.gle/bq1npXWUCfeQ2ZEC6": {
+   "at": "2026-11-25",
+   "final": "https://docs.google.com/forms/d/e/1FAIpQLSdMCkzpJisvRT9zgETMDFZocFRwQpAhheas5E9Dz4do9XPVKw/viewform",
+   "status": "form",
+   "to": "https://docs.google.com/forms/d/e/1FAIpQLSdMCkzpJisvRT9zgETMDFZocFRwQpAhheas5E9Dz4do9XPVKw/viewform?usp=send_form"
+  },
   "https://forms.gle/c5o4G7LqemmNgATT8": {
    "at": "2026-11-16",
    "final": "https://docs.google.com/forms/d/e/1FAIpQLSdZvYMHQIJOKdUod7NN2y1XgrBgDIYOwBHEIKAcTNwUa41s_g/viewform",
@@ -7354,6 +7381,12 @@
    "final": "https://docs.google.com/forms/d/e/1FAIpQLSc7_U7HeppKKwgjqIbAMPFUXCLKWtgL_ikh4dL98sOApHRhkw/viewform",
    "status": "form",
    "to": "https://docs.google.com/forms/d/e/1FAIpQLSc7_U7HeppKKwgjqIbAMPFUXCLKWtgL_ikh4dL98sOApHRhkw/viewform?usp=send_form"
+  },
+  "https://forms.gle/miBhNcurPKhHtmZR6": {
+   "at": "2026-11-25",
+   "final": "https://docs.google.com/forms/d/e/1FAIpQLSeM8DDa4i2cHnB2QhA3wVifKKDNmqvDYbYu-khyR07gHUhJkg/viewform",
+   "status": "form",
+   "to": "https://docs.google.com/forms/d/e/1FAIpQLSeM8DDa4i2cHnB2QhA3wVifKKDNmqvDYbYu-khyR07gHUhJkg/viewform?usp=send_form"
   },
   "https://forms.gle/n6Biwur3kRHETHuU7": {
    "at": "2026-11-24",
