@@ -817,6 +817,7 @@
   "mb-88f4aee72c": "mb-efbb2ad2ea",
   "mb-96375a3117": "mb-dbbf3fb6e4",
   "mb-9bf89e2aa2": "mb-004f1e0486",
+  "mb-de095ef78e": "mb-10c7307949",
   "mb-ea9b92b9e8": "mb-3947d770e7",
   "mb-ef08f2a261": "mb-3947d770e7",
   "mb-fd1d9b084b": "mb-073af4c188",
@@ -1060,6 +1061,7 @@
   "yv-0b2c32e953": "eh-2278d6a3b4",
   "yv-1689f9cc51": "yv-c30d68c93f",
   "yv-3094d57c73": "yv-55bf67d181",
+  "yv-4f9c0e9b61": "yv-c43a577192",
   "yv-5e712d6d7e": "yv-1fab427f7f",
   "yv-78e565750e": "yv-a53cc3c1a6",
   "yv-86f5caf95e": "yv-af2b5c22eb",
@@ -1467,7 +1469,7 @@
   "https://vo.la/O5a6KCv": "https://m.blog.naver.com/ok_hira/224442524892"
  },
  "fails": {
-  "busan": 36,
+  "busan": 37,
   "contestkorea": 0,
   "danawa": 0,
   "eventhouse": 0,
@@ -1475,8 +1477,8 @@
   "events_kr": 0,
   "gangnam": 1,
   "gonggongevent": 0,
-  "korissue": 78,
-  "korissue_orgs": 76,
+  "korissue": 79,
+  "korissue_orgs": 77,
   "mohw": 0,
   "mrblog": 0,
   "reviewnote": 0,
@@ -6359,48 +6361,46 @@
  },
  "lastOk": {
   "busan": "2026-11-24T10:05:42+09:00",
-  "contestkorea": "2026-11-25T17:14:41+09:00",
-  "danawa": "2026-11-25T17:14:41+09:00",
+  "contestkorea": "2026-11-25T20:00:54+09:00",
+  "danawa": "2026-11-25T20:00:54+09:00",
   "eventhouse": "2026-11-25T19:06:05+09:00",
-  "eventhouse_search": "2026-11-25T16:18:38+09:00",
+  "eventhouse_search": "2026-11-25T20:00:54+09:00",
   "events_kr": "2026-11-25T19:06:05+09:00",
-  "gonggongevent": "2026-11-25T16:18:38+09:00",
+  "gonggongevent": "2026-11-25T20:00:54+09:00",
   "korissue": "2026-11-22T21:35:01+09:00",
   "korissue_orgs": "2026-11-22T23:22:53+09:00",
   "mohw": "2026-11-25T19:06:05+09:00",
-  "mrblog": "2026-11-25T16:18:38+09:00",
-  "reviewnote": "2026-11-25T16:18:38+09:00",
-  "sbs": "2026-11-25T16:18:38+09:00",
-  "touredu": "2026-11-25T16:18:38+09:00",
+  "mrblog": "2026-11-25T20:00:54+09:00",
+  "reviewnote": "2026-11-25T20:00:54+09:00",
+  "sbs": "2026-11-25T20:00:54+09:00",
+  "touredu": "2026-11-25T20:00:54+09:00",
   "wevity": "2026-11-25T15:23:49+09:00",
-  "yuvent": "2026-11-25T16:18:38+09:00"
+  "yuvent": "2026-11-25T20:00:54+09:00"
  },
  "lastRun": {
   "busan": "2026-11-24T10:05:42+09:00",
-  "contestkorea": "2026-11-25T17:14:41+09:00",
-  "danawa": "2026-11-25T17:14:41+09:00",
+  "contestkorea": "2026-11-25T20:00:54+09:00",
+  "danawa": "2026-11-25T20:00:54+09:00",
   "eventhouse": "2026-11-25T19:06:05+09:00",
-  "eventhouse_search": "2026-11-25T16:18:38+09:00",
+  "eventhouse_search": "2026-11-25T20:00:54+09:00",
   "events_kr": "2026-11-25T19:06:05+09:00",
-  "gonggongevent": "2026-11-25T16:18:38+09:00",
+  "gonggongevent": "2026-11-25T20:00:54+09:00",
   "korissue": "2026-11-22T21:35:01+09:00",
   "korissue_orgs": "2026-11-22T23:22:53+09:00",
   "mohw": "2026-11-25T19:06:05+09:00",
-  "mrblog": "2026-11-25T16:18:38+09:00",
-  "naver": "2026-11-25T17:14:41+09:00",
-  "reviewnote": "2026-11-25T16:18:38+09:00",
-  "sbs": "2026-11-25T16:18:38+09:00",
-  "telegram": "2026-11-25T17:14:41+09:00",
-  "touredu": "2026-11-25T16:18:38+09:00",
+  "mrblog": "2026-11-25T20:00:54+09:00",
+  "naver": "2026-11-25T20:00:54+09:00",
+  "reviewnote": "2026-11-25T20:00:54+09:00",
+  "sbs": "2026-11-25T20:00:54+09:00",
+  "telegram": "2026-11-25T20:00:54+09:00",
+  "touredu": "2026-11-25T20:00:54+09:00",
   "wevity": "2026-11-25T15:23:49+09:00",
-  "youtube": "2026-11-25T16:18:38+09:00",
-  "yuvent": "2026-11-25T16:18:38+09:00"
+  "youtube": "2026-11-25T20:00:54+09:00",
+  "yuvent": "2026-11-25T20:00:54+09:00"
  },
  "lastSkipped": {
   "busan": {},
-  "contestkorea": {
-   "13304": "유료 조건: 결제"
-  },
+  "contestkorea": {},
   "danawa": {},
   "eventhouse": {
    "321087": "유료 조건: 결제"
@@ -6443,25 +6443,20 @@
   "korissue_orgs": {},
   "mohw": {},
   "mrblog": {
-   "1154740": "유료 조건: 결제,페이백",
+   "1155159": "유료 조건: 결제,페이백",
+   "1155529": "유료 조건: 결제,페이백",
    "1155972": "유료 조건: 결제,페이백"
   },
   "reviewnote": {
-   "1557439": "유료 조건: 페이백",
-   "1558522": "유료 조건: 구매",
-   "1558797": "유료 조건: 구매",
    "1558984": "유료 조건: 페이백",
-   "1559340": "유료 조건: 페이백",
-   "1559352": "유료 조건: 구매",
    "1559397": "유료 조건: 페이백",
    "1559528": "유료 조건: 결제",
-   "1559574": "유료 조건: 구매",
    "1559660": "유료 조건: 구매",
-   "1559670": "유료 조건: 결제",
-   "1560060": "유료 조건: 결제",
    "1560090": "유료 조건: 페이백",
-   "1560220": "유료 조건: 페이백",
    "1560223": "유료 조건: 구매",
+   "1561059": "유료 조건: 구매",
+   "1561171": "유료 조건: 구매",
+   "1561302": "유료 조건: 구매",
    "1567011": "유료 조건: 페이백",
    "1567148": "유료 조건: 페이백"
   },
@@ -6495,20 +6490,20 @@
    "cmwvlbj3k27v9012nebye0ec1": "경품·마감·폼 없음",
    "cmwvnp5jf24u0012rjqywfyo3": "이벤트 신호 없음",
    "cmwvnrckr255w012r83n9ybs5": "기간·경품·참여 방법 모두 확인 안 됨",
-   "cmwvntzwi25kc012rftmcdymb": "기간·경품·참여 방법 모두 확인 안 됨",
-   "cmwvny5he268h012rjqg4n7yz": "경품·마감·폼 없음",
-   "cmwvo0hcc26le012rwrhm1kfv": "이벤트 신호 없음",
    "cmwvo0yih26no012rb7u6yt6p": "기간·경품·참여 방법 모두 확인 안 됨",
    "cmwvo12z626np012r5u3nz30w": "기간·경품·참여 방법 모두 확인 안 됨",
-   "cmwvo19co26o3012r9iu076tu": "경품·마감·폼 없음",
-   "cmwvo6l9127ip012rbxtuaqm6": "경품·마감·폼 없음",
-   "cmwvo9hna27zv012rvztqo75c": "경품·마감·폼 없음",
-   "cmwvocsip28ji012rs16gy5el": "기간·경품·참여 방법 모두 확인 안 됨",
    "cmwvoeotq28tk012rieu29o4n": "유료 조건: 구매",
-   "cmwvoexew28uu012r2lbi9etm": "기간·경품·참여 방법 모두 확인 안 됨",
-   "cmwvoezbq28uv012rtam7kwhx": "기간·경품·참여 방법 모두 확인 안 됨",
-   "cmwvof2gg28uw012rtr4p64le": "기간·경품·참여 방법 모두 확인 안 됨",
-   "cmwvofcah28w0012r299ico5g": "유료 조건: 구매"
+   "cmwvuh2qb2f7z012nvg2avzj9": "유료 조건: 구매",
+   "cmwvun7rm2fsh012nvrogcjru": "유료 조건: 결제",
+   "cmwvuoos62fsy012nmtcpmg6k": "유료 조건: 구매",
+   "cmwvuts8w2ftc012n0nx5a5x6": "경품·마감·폼 없음",
+   "cmwvwbpei29vw012r5wg4t2rj": "기간·경품·참여 방법 모두 확인 안 됨",
+   "cmwvwdzkg2a96012rvpgnan6b": "유료 조건: 유료",
+   "cmwvwvjmd2cx5012r1ntsliuw": "유료 조건: 유료",
+   "cmwvx37lo2dp9012r75t6fcbt": "유료 조건: 구매",
+   "cmwvx8o892dpp012rl5cnganh": "마감",
+   "cmwvx8ve52dps012rcacgrzdh": "유료 조건: 구매",
+   "cmwvxa7ui2dpv012rx7m8zk0w": "유료 조건: 구매"
   }
  },
  "mohw": {
@@ -6779,6 +6774,12 @@
    "status": "form",
    "to": "https://docs.google.com/forms/d/e/1FAIpQLScklOUR32oJo1CXsbKVoddBbQxNbiODHeO_jAslQ-qkpR7UdA/viewform?usp=send_form"
   },
+  "https://forms.gle/87oG6ki1zHvvDzhb9": {
+   "at": "2026-11-25",
+   "final": "https://docs.google.com/forms/d/e/1FAIpQLSfcNg4bJa_PMR2cKYx8Q740DNCVVaGCAv4dsupMC16U5B6jpw/viewform",
+   "status": "form",
+   "to": "https://docs.google.com/forms/d/e/1FAIpQLSfcNg4bJa_PMR2cKYx8Q740DNCVVaGCAv4dsupMC16U5B6jpw/viewform?usp=send_form"
+  },
   "https://forms.gle/8edzgpAtedDZcs6NA": {
    "at": "2026-11-16",
    "final": "https://docs.google.com/forms/d/e/1FAIpQLSeJWOc5C8llGSagWP62JJc2oOgCgFuX2G2Yn38yVotlDEDarQ/viewform",
@@ -6845,6 +6846,12 @@
    "status": "form",
    "to": "https://docs.google.com/forms/d/e/1FAIpQLSfO5Mkv1XZH3umVVrzfSwmsdPUKBS3EPxp3Qm-4X5IZ_gtxSA/viewform?usp=send_form"
   },
+  "https://forms.gle/CH1bcCYf3csSgLoB9": {
+   "at": "2026-11-25",
+   "final": "https://docs.google.com/forms/d/e/1FAIpQLSeNvlnKObhuX94ujAQMDlfnG8LW2aJrJ48Pwt1LDsZ5HnzKUQ/viewform",
+   "status": "form",
+   "to": "https://docs.google.com/forms/d/e/1FAIpQLSeNvlnKObhuX94ujAQMDlfnG8LW2aJrJ48Pwt1LDsZ5HnzKUQ/viewform?usp=send_form"
+  },
   "https://forms.gle/CgFKFoZzv1U3XxD36": {
    "at": "2026-11-16",
    "final": "https://docs.google.com/forms/d/e/1FAIpQLSeMqHsbNmR059NdjdIndrHZ9Ksm_qOuxn5C1wcNtIvTCurFYw/viewform",
@@ -6874,6 +6881,12 @@
    "final": "https://docs.google.com/forms/d/e/1FAIpQLSeQzOU0QsT6TnRuhj3HCBpIPHfokw53V-_ICMNen66A4O8q7Q/viewform",
    "status": "form",
    "to": "https://docs.google.com/forms/d/e/1FAIpQLSeQzOU0QsT6TnRuhj3HCBpIPHfokw53V-_ICMNen66A4O8q7Q/viewform?usp=send_form"
+  },
+  "https://forms.gle/DoUGZhWPScLo7fmg7": {
+   "at": "2026-11-25",
+   "final": "https://docs.google.com/forms/d/e/1FAIpQLSdcuyHRJ_PaIARpdPDi1SHHBqYNWchiiY4RCvHSsRHySwBH5w/viewform",
+   "status": "form",
+   "to": "https://docs.google.com/forms/d/e/1FAIpQLSdcuyHRJ_PaIARpdPDi1SHHBqYNWchiiY4RCvHSsRHySwBH5w/viewform?usp=send_form"
   },
   "https://forms.gle/E2a6udF761guPAPk6": {
    "at": "2026-11-09",
@@ -25436,7 +25449,8 @@
    "14071": "te-8b7359bfda",
    "14170": "te-31eb31bf7d",
    "14395": "te-f8b19ccece",
-   "14567": "te-d2e6962ed4"
+   "14567": "te-d2e6962ed4",
+   "14604": "te-200e3b0b9d"
   }
  },
  "wevity": {
