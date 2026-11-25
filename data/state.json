@@ -1467,7 +1467,7 @@
   "https://vo.la/O5a6KCv": "https://m.blog.naver.com/ok_hira/224442524892"
  },
  "fails": {
-  "busan": 35,
+  "busan": 36,
   "contestkorea": 0,
   "danawa": 0,
   "eventhouse": 0,
@@ -1475,8 +1475,8 @@
   "events_kr": 0,
   "gangnam": 1,
   "gonggongevent": 0,
-  "korissue": 77,
-  "korissue_orgs": 75,
+  "korissue": 78,
+  "korissue_orgs": 76,
   "mohw": 0,
   "mrblog": 0,
   "reviewnote": 0,
@@ -6361,13 +6361,13 @@
   "busan": "2026-11-24T10:05:42+09:00",
   "contestkorea": "2026-11-25T17:14:41+09:00",
   "danawa": "2026-11-25T17:14:41+09:00",
-  "eventhouse": "2026-11-25T17:14:41+09:00",
+  "eventhouse": "2026-11-25T19:06:05+09:00",
   "eventhouse_search": "2026-11-25T16:18:38+09:00",
-  "events_kr": "2026-11-25T17:14:41+09:00",
+  "events_kr": "2026-11-25T19:06:05+09:00",
   "gonggongevent": "2026-11-25T16:18:38+09:00",
   "korissue": "2026-11-22T21:35:01+09:00",
   "korissue_orgs": "2026-11-22T23:22:53+09:00",
-  "mohw": "2026-11-25T17:14:41+09:00",
+  "mohw": "2026-11-25T19:06:05+09:00",
   "mrblog": "2026-11-25T16:18:38+09:00",
   "reviewnote": "2026-11-25T16:18:38+09:00",
   "sbs": "2026-11-25T16:18:38+09:00",
@@ -6379,13 +6379,13 @@
   "busan": "2026-11-24T10:05:42+09:00",
   "contestkorea": "2026-11-25T17:14:41+09:00",
   "danawa": "2026-11-25T17:14:41+09:00",
-  "eventhouse": "2026-11-25T17:14:41+09:00",
+  "eventhouse": "2026-11-25T19:06:05+09:00",
   "eventhouse_search": "2026-11-25T16:18:38+09:00",
-  "events_kr": "2026-11-25T17:14:41+09:00",
+  "events_kr": "2026-11-25T19:06:05+09:00",
   "gonggongevent": "2026-11-25T16:18:38+09:00",
   "korissue": "2026-11-22T21:35:01+09:00",
   "korissue_orgs": "2026-11-22T23:22:53+09:00",
-  "mohw": "2026-11-25T17:14:41+09:00",
+  "mohw": "2026-11-25T19:06:05+09:00",
   "mrblog": "2026-11-25T16:18:38+09:00",
   "naver": "2026-11-25T17:14:41+09:00",
   "reviewnote": "2026-11-25T16:18:38+09:00",
@@ -6403,13 +6403,10 @@
   },
   "danawa": {},
   "eventhouse": {
-   "320842": "유료 조건: 구매",
    "321087": "유료 조건: 결제"
   },
   "eventhouse_search": {},
-  "events_kr": {
-   "294": "이벤트 신호 없음"
-  },
+  "events_kr": {},
   "gonggongevent": {
    "11월 10일 마감｜이천시 청년 신혼부부 전월세 대출이자 최대 200만 ": "종료·안내 글",
    "11월 10일 마감｜한국언론진흥재단 미디어 AI 플랫폼 퀴즈｜커피 쿠폰 ": "종료·안내 글",
@@ -25387,6 +25384,48 @@
    "final": null,
    "status": "not_form",
    "to": "https://www.eventhouse.kr/login/index.php?gourl=https%3A%2F%2Fwww.eventhouse.kr%2Fsite%2Ffgo.php%3Ffnum%3D321137%26go%3D4&fnum=321137"
+  },
+  "https://www.eventhouse.kr/site/fgo.php?fnum=321138&go=4": {
+   "at": "2026-11-25",
+   "final": null,
+   "status": "not_form",
+   "to": "https://www.eventhouse.kr/login/index.php?gourl=https%3A%2F%2Fwww.eventhouse.kr%2Fsite%2Ffgo.php%3Ffnum%3D321138%26go%3D4&fnum=321138"
+  },
+  "https://www.eventhouse.kr/site/fgo.php?fnum=321139&go=4": {
+   "at": "2026-11-25",
+   "final": null,
+   "status": "not_form",
+   "to": "https://www.eventhouse.kr/login/index.php?gourl=https%3A%2F%2Fwww.eventhouse.kr%2Fsite%2Ffgo.php%3Ffnum%3D321139%26go%3D4&fnum=321139"
+  },
+  "https://www.eventhouse.kr/site/fgo.php?fnum=321140&go=4": {
+   "at": "2026-11-25",
+   "final": null,
+   "status": "not_form",
+   "to": "https://www.eventhouse.kr/login/index.php?gourl=https%3A%2F%2Fwww.eventhouse.kr%2Fsite%2Ffgo.php%3Ffnum%3D321140%26go%3D4&fnum=321140"
+  },
+  "https://www.eventhouse.kr/site/fgo.php?fnum=321141&go=4": {
+   "at": "2026-11-25",
+   "final": null,
+   "status": "not_form",
+   "to": "https://www.eventhouse.kr/login/index.php?gourl=https%3A%2F%2Fwww.eventhouse.kr%2Fsite%2Ffgo.php%3Ffnum%3D321141%26go%3D4&fnum=321141"
+  },
+  "https://www.eventhouse.kr/site/fgo.php?fnum=321142&go=4": {
+   "at": "2026-11-25",
+   "final": null,
+   "status": "not_form",
+   "to": "https://www.eventhouse.kr/login/index.php?gourl=https%3A%2F%2Fwww.eventhouse.kr%2Fsite%2Ffgo.php%3Ffnum%3D321142%26go%3D4&fnum=321142"
+  },
+  "https://www.eventhouse.kr/site/fgo.php?fnum=321143&go=4": {
+   "at": "2026-11-25",
+   "final": null,
+   "status": "not_form",
+   "to": "https://www.eventhouse.kr/login/index.php?gourl=https%3A%2F%2Fwww.eventhouse.kr%2Fsite%2Ffgo.php%3Ffnum%3D321143%26go%3D4&fnum=321143"
+  },
+  "https://www.eventhouse.kr/site/fgo.php?fnum=321144&go=4": {
+   "at": "2026-11-25",
+   "final": null,
+   "status": "not_form",
+   "to": "https://www.eventhouse.kr/login/index.php?gourl=https%3A%2F%2Fwww.eventhouse.kr%2Fsite%2Ffgo.php%3Ffnum%3D321144%26go%3D4&fnum=321144"
   }
  },
  "touredu": {
