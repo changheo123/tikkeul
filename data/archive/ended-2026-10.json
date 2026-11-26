@@ -36211,6 +36211,56 @@
 "url": "https://culture.mpva.go.kr/actv/cult/180",
 "who": null
 },
+"nh-3120785123": {
+"announce": null,
+"cand": false,
+"checked": null,
+"count": null,
+"elec": [],
+"elec_models": [],
+"end": null,
+"endTime": null,
+"firstSeen": "2026-10-27",
+"form_url": null,
+"freeNote": null,
+"grade": "A",
+"id": "nh-3120785123",
+"is_restricted": false,
+"kind": "기타",
+"lastSeen": "2026-10-27",
+"linkChecked": "2026-10-31",
+"linkFail": 0,
+"linkStatus": "ok",
+"max": null,
+"min": null,
+"mode": null,
+"needs": [
+"주최 원문 미확인(목록 정보만)"
+],
+"needs_proof": false,
+"org": "안산시",
+"place": null,
+"prize": null,
+"proof_reason": null,
+"reasons": [],
+"restriction_note": null,
+"restriction_reason": null,
+"src": "ledger",
+"srcUrls": [
+"https://www.ansan.go.kr/ansantalktalk/content/participation/event.html?fidx=26026&page=1&pg=vv"
+],
+"start": null,
+"status": "ended",
+"steps": [
+"공식 이벤트 목록에 10월호 제목과 9월 30일 게시 확인; 상세 열기 두 차례 오류로 참여 조건 미확인"
+],
+"tags": [
+"원문 미확인"
+],
+"title": "2026년 10월 시정소식지 독자참여 이벤트~!",
+"url": "https://www.ansan.go.kr/ansantalktalk/content/participation/event.html?fidx=26026&page=1&pg=vv",
+"who": null
+},
 "nh-344420e5ad": {
 "announce": null,
 "cand": false,
@@ -36261,6 +36311,106 @@
 "url": "https://today.shinhanlife.co.kr/om/WqJpNLHaY178Vep/omevtsm030m.mdv?eid=7R8xVXKCgrJBbT3fDNsqNFb9zVcJdfoYp&vid=86035152",
 "who": null
 },
+"nh-411fe13932": {
+"announce": null,
+"cand": false,
+"checked": null,
+"count": null,
+"elec": [],
+"elec_models": [],
+"end": null,
+"endTime": null,
+"firstSeen": "2026-10-27",
+"form_url": null,
+"freeNote": null,
+"grade": "A",
+"id": "nh-411fe13932",
+"is_restricted": false,
+"kind": "기타",
+"lastSeen": "2026-10-27",
+"linkChecked": "2026-10-31",
+"linkFail": 0,
+"linkStatus": "ok",
+"max": null,
+"min": null,
+"mode": null,
+"needs": [
+"주최 원문 미확인(목록 정보만)"
+],
+"needs_proof": false,
+"org": "서울특별시의회",
+"place": null,
+"prize": null,
+"proof_reason": null,
+"reasons": [],
+"restriction_note": null,
+"restriction_reason": null,
+"src": "ledger",
+"srcUrls": [
+"https://webzine.smc.seoul.kr/2026/10/event.html"
+],
+"start": null,
+"status": "ended",
+"steps": [
+"공식 10월호의 독자 이벤트 입구 확인; 안내가 외부 iframe이고 해당 화면 열기 오류로 행사 세부 내용 미확인"
+],
+"tags": [
+"원문 미확인"
+],
+"title": "월간 서울의회 2026년 10월호 독자 이벤트",
+"url": "https://webzine.smc.seoul.kr/2026/10/event.html",
+"who": null
+},
+"nh-43a8442a51": {
+"announce": null,
+"cand": false,
+"checked": "2026-10-19",
+"count": null,
+"elec": [],
+"elec_models": [],
+"end": null,
+"endTime": null,
+"firstSeen": "2026-10-19",
+"form_url": null,
+"freeNote": null,
+"grade": "A",
+"id": "nh-43a8442a51",
+"is_restricted": false,
+"kind": "퀴즈",
+"lastSeen": "2026-10-27",
+"linkChecked": "2026-10-31",
+"linkFail": 0,
+"linkStatus": "ok",
+"max": null,
+"min": null,
+"mode": null,
+"needs": [
+"세부 미확인: 원문은 열었지만 기간·경품·응모 방법 중 일부를 못 읽음"
+],
+"needs_proof": false,
+"org": "서울특별시 서초구",
+"place": null,
+"prize": null,
+"proof_reason": null,
+"reasons": [],
+"restriction_note": null,
+"restriction_reason": null,
+"src": "ledger",
+"srcUrls": [
+"https://seocho.newstool.co.kr/view.php?aid=18396&eid=9058"
+],
+"start": null,
+"status": "ended",
+"steps": [
+"소식지 카드뉴스를 읽고 공식 연결 네이버폼에서 정답 제출; 상세 경품·기간·대상 조건은 아직 미확인"
+],
+"tags": [
+"세부 미확인"
+],
+"title": "서초통계 2026년 10월호 퀴즈 이벤트 — 경력과 전문성을 새로운 일의 기회로!",
+"url": "https://seocho.newstool.co.kr/view.php?aid=18396&eid=9058",
+"who": null
+},
 "nh-4afbcea1c5": {
 "announce": null,
 "cand": false,
@@ -36309,6 +36459,59 @@
 ],
 "title": "2026년도 아이디어 전달해 海 대국민 소통 이벤트",
 "url": "https://www.icpa.or.kr/article/view.do?articleKey=32892&boardKey=213&currentPageNo=1&menuKey=3988",
+"who": null
+},
+"nh-5281c6c1c6": {
+"announce": null,
+"cand": false,
+"checked": null,
+"count": null,
+"elec": [],
+"elec_models": [],
+"end": null,
+"endTime": null,
+"firstSeen": "2026-10-27",
+"form_url": null,
+"freeNote": null,
+"grade": "A",
+"id": "nh-5281c6c1c6",
+"is_restricted": false,
+"issues": [
+"원문 링크 접속"
+],
+"kind": "퀴즈",
+"lastSeen": "2026-10-27",
+"linkChecked": "2026-10-31",
+"linkFail": 0,
+"linkStatus": "error ConnectTimeout",
+"max": null,
+"min": null,
+"mode": null,
+"needs": [
+"주최 원문 미확인(목록 정보만)"
+],
+"needs_proof": false,
+"org": "인천육아종합지원센터",
+"place": null,
+"prize": null,
+"proof_reason": null,
+"reasons": [],
+"restriction_note": null,
+"restriction_reason": null,
+"src": "ledger",
+"srcUrls": [
+"https://incheon.childcare.go.kr/ccef/community/notice/NoticeSlPL.jsp?BBSGB=1006"
+],
+"start": null,
+"status": "ended",
+"steps": [
+"공식 검색 결과에서 10월 퀴즈 제목 확인; 직접 읽은 목록은 9월 회차까지만 노출되어 상세·현재 접수 여부 미확인"
+],
+"tags": [
+"원문 미확인"
+],
+"title": "2026년 10월 보육퀴즈(영유아 심폐소생술)",
+"url": "https://incheon.childcare.go.kr/ccef/community/notice/NoticeSlPL.jsp?BBSGB=1006",
 "who": null
 },
 "nh-5c99996f5e": {
@@ -36467,6 +36670,210 @@
 "url": "https://www.youtube.com/watch?v=lJHw2DP1w1k",
 "who": null
 },
+"nh-826063ce83": {
+"announce": null,
+"cand": false,
+"checked": "2026-10-19",
+"count": null,
+"elec": [],
+"elec_models": [],
+"end": null,
+"endTime": null,
+"firstSeen": "2026-10-19",
+"form_url": null,
+"freeNote": null,
+"grade": "A",
+"id": "nh-826063ce83",
+"is_restricted": false,
+"kind": "기타",
+"lastSeen": "2026-10-27",
+"linkChecked": "2026-10-31",
+"linkFail": 0,
+"linkStatus": "ok",
+"max": null,
+"min": null,
+"mode": null,
+"needs": [
+"세부 미확인: 원문은 열었지만 기간·경품·응모 방법 중 일부를 못 읽음"
+],
+"needs_proof": false,
+"org": "경기도",
+"place": null,
+"prize": null,
+"proof_reason": null,
+"reasons": [],
+"restriction_note": null,
+"restriction_reason": null,
+"src": "ledger",
+"srcUrls": [
+"https://www.gg.go.kr/myggd/event.php"
+],
+"start": null,
+"status": "ended",
+"steps": [
+"10월호 기사 속 숨은 이미지 개수를 찾아 공식 연결 네이버폼으로 응모; 폼 본문이 비어 기간·경품·추가 조건 미확인"
+],
+"tags": [
+"세부 미확인"
+],
+"title": "나의 경기도 2026년 10월호 웹진 단독 이벤트 — 이미지를 찾아라!",
+"url": "https://www.gg.go.kr/myggd/event.php",
+"who": null
+},
+"nh-8403d1d4b3": {
+"announce": null,
+"cand": false,
+"checked": null,
+"count": null,
+"elec": [],
+"elec_models": [],
+"end": null,
+"endTime": null,
+"firstSeen": "2026-10-27",
+"form_url": null,
+"freeNote": null,
+"grade": "A",
+"id": "nh-8403d1d4b3",
+"is_restricted": false,
+"issues": [
+"원문 링크 접속"
+],
+"kind": "기타",
+"lastSeen": "2026-10-27",
+"linkChecked": "2026-10-31",
+"linkStatus": "error SSLError",
+"max": null,
+"min": null,
+"mode": null,
+"needs": [
+"주최 원문 미확인(목록 정보만)"
+],
+"needs_proof": false,
+"org": "제주관광공사",
+"place": null,
+"prize": null,
+"proof_reason": null,
+"reasons": [],
+"restriction_note": null,
+"restriction_reason": null,
+"src": "ledger",
+"srcUrls": [
+"https://data.ijto.or.kr/bbs/BBSMSTR_000000000080/view.do?nttId=H000000000854Xo8xQ2w"
+],
+"start": null,
+"status": "ended",
+"steps": [
+"공식 검색 결과에서 퀴즈 공지 확인; 원문 열기 도구 오류와 제목·본문 기간 상충으로 상세 검증 보류"
+],
+"tags": [
+"원문 미확인"
+],
+"title": "2026년 10월 제주 관광 데이터 한 판! — 더 많이 더 적게",
+"url": "https://data.ijto.or.kr/bbs/BBSMSTR_000000000080/view.do?nttId=H000000000854Xo8xQ2w",
+"who": null
+},
+"nh-9ed07ec325": {
+"announce": null,
+"cand": false,
+"checked": null,
+"count": null,
+"elec": [],
+"elec_models": [],
+"end": null,
+"endTime": null,
+"firstSeen": "2026-10-27",
+"form_url": null,
+"freeNote": null,
+"grade": "A",
+"id": "nh-9ed07ec325",
+"is_restricted": false,
+"issues": [
+"원문 링크 접속"
+],
+"kind": "퀴즈",
+"lastSeen": "2026-10-27",
+"linkChecked": "2026-10-31",
+"linkStatus": "error SSLError",
+"max": null,
+"min": null,
+"mode": null,
+"needs": [
+"주최 원문 미확인(목록 정보만)"
+],
+"needs_proof": false,
+"org": "울산광역시교육청",
+"place": null,
+"prize": null,
+"proof_reason": null,
+"reasons": [],
+"restriction_note": null,
+"restriction_reason": null,
+"src": "ledger",
+"srcUrls": [
+"https://use.go.kr/user/quiz/BD_selectQuiz.do?q_regSn=64"
+],
+"start": null,
+"status": "ended",
+"steps": [
+"공식 검색 결과에서 진행중인 청렴퀴즈 제목 확인; 상세 열기 두 차례 오류로 날짜·상품·대상 조건을 확정하지 않음"
+],
+"tags": [
+"원문 미확인"
+],
+"title": "2026년 10월 청렴퀴즈",
+"url": "https://use.go.kr/user/quiz/BD_selectQuiz.do?q_regSn=64",
+"who": null
+},
+"nh-a0226c4f56": {
+"announce": null,
+"cand": false,
+"checked": null,
+"count": null,
+"elec": [],
+"elec_models": [],
+"end": null,
+"endTime": null,
+"firstSeen": "2026-10-27",
+"form_url": null,
+"freeNote": null,
+"grade": "A",
+"id": "nh-a0226c4f56",
+"is_restricted": false,
+"kind": "퀴즈",
+"lastSeen": "2026-10-27",
+"linkChecked": "2026-10-31",
+"linkFail": 0,
+"linkStatus": "ok",
+"max": null,
+"min": null,
+"mode": null,
+"needs": [
+"주최 원문 미확인(목록 정보만)"
+],
+"needs_proof": false,
+"org": "국가통계포털 KOSIS",
+"place": null,
+"prize": null,
+"proof_reason": null,
+"reasons": [],
+"restriction_note": null,
+"restriction_reason": null,
+"src": "ledger",
+"srcUrls": [
+"https://kosis.kr/survey/survey37.do"
+],
+"start": null,
+"status": "ended",
+"steps": [
+"공식 검색 결과에는 2026년 10월 퀴즈, 직접 연 동일 주소에는 2025년 8월 퀴즈가 표시됨; 캡차 이미지가 보여 추가 탐색 중단"
+],
+"tags": [
+"원문 미확인"
+],
+"title": "2026년 10월 통계찾기 퀴즈 이벤트",
+"url": "https://kosis.kr/survey/survey37.do",
+"who": null
+},
 "nh-a166afe260": {
 "announce": null,
 "cand": false,
@@ -36518,6 +36925,56 @@
 ],
 "title": "주식생활 다섯 글자 댓글 챌린지",
 "url": "https://www.instagram.com/p/Dd-WB--SAWk/",
+"who": null
+},
+"nh-a251703b9c": {
+"announce": null,
+"cand": false,
+"checked": null,
+"count": null,
+"elec": [],
+"elec_models": [],
+"end": null,
+"endTime": null,
+"firstSeen": "2026-10-27",
+"form_url": null,
+"freeNote": null,
+"grade": "A",
+"id": "nh-a251703b9c",
+"is_restricted": false,
+"kind": "기타",
+"lastSeen": "2026-10-27",
+"linkChecked": "2026-10-31",
+"linkFail": 0,
+"linkStatus": "ok",
+"max": null,
+"min": null,
+"mode": null,
+"needs": [
+"주최 원문 미확인(목록 정보만)"
+],
+"needs_proof": false,
+"org": "울산광역시",
+"place": null,
+"prize": null,
+"proof_reason": null,
+"reasons": [],
+"restriction_note": null,
+"restriction_reason": null,
+"src": "ledger",
+"srcUrls": [
+"https://webzine.ulsan.go.kr/news/list.do?pageIndex=7"
+],
+"start": null,
+"status": "ended",
+"steps": [
+"공식 검색 결과의 헬로울산 목록에서 10월 회차 확인; 목록 열기 시간초과로 참여 절차·기간·경품 미확인"
+],
+"tags": [
+"원문 미확인"
+],
+"title": "헬로울산 2026년 10월 이벤트 — 좋아해♥",
+"url": "https://webzine.ulsan.go.kr/news/list.do?pageIndex=7",
 "who": null
 },
 "nh-a60f58e395": {
