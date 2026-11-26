@@ -61,6 +61,7 @@
   "ek-42d2a6ad49": "ck-3c749b8b07",
   "ek-68b5193fd0": "ek-6d363479c9",
   "ek-9ffd1ae121": "ek-1e7b95c561",
+  "ek-cc8cd1ceed": "ck-6c44ae301c",
   "ek-dc685e2c3f": "e183",
   "ek-f333160e6b": "ek-6d363479c9",
   "gg-37dc8620ef": "mo-574b3f54aa",
@@ -1311,6 +1312,9 @@
    "292": "skip:이벤트 신호 없음",
    "293": "ek-05580caed3",
    "294": "skip:이벤트 신호 없음",
+   "295": "ek-a02b857f2e",
+   "296": "ek-cc8cd1ceed",
+   "297": "skip:이벤트 신호 없음",
    "30": "ek-22d200f867",
    "31": "ek-632667547e",
    "32": "ek-cb4e5208b4",
@@ -1382,7 +1386,7 @@
   "https://vo.la/O5a6KCv": "https://m.blog.naver.com/ok_hira/224442524892"
  },
  "fails": {
-  "busan": 53,
+  "busan": 54,
   "contestkorea": 0,
   "danawa": 0,
   "eventhouse": 0,
@@ -1390,8 +1394,8 @@
   "events_kr": 0,
   "gangnam": 1,
   "gonggongevent": 0,
-  "korissue": 95,
-  "korissue_orgs": 93,
+  "korissue": 96,
+  "korissue_orgs": 94,
   "mohw": 0,
   "mrblog": 0,
   "reviewnote": 0,
@@ -6275,14 +6279,14 @@
  "lastOk": {
   "busan": "2026-11-24T10:05:42+09:00",
   "contestkorea": "2026-11-26T09:57:40+09:00",
-  "danawa": "2026-11-26T09:01:03+09:00",
-  "eventhouse": "2026-11-26T09:57:40+09:00",
+  "danawa": "2026-11-26T11:47:45+09:00",
+  "eventhouse": "2026-11-26T11:47:45+09:00",
   "eventhouse_search": "2026-11-26T10:50:32+09:00",
-  "events_kr": "2026-11-26T09:57:40+09:00",
+  "events_kr": "2026-11-26T11:47:45+09:00",
   "gonggongevent": "2026-11-26T10:50:32+09:00",
   "korissue": "2026-11-22T21:35:01+09:00",
   "korissue_orgs": "2026-11-22T23:22:53+09:00",
-  "mohw": "2026-11-26T09:57:40+09:00",
+  "mohw": "2026-11-26T11:47:45+09:00",
   "mrblog": "2026-11-26T10:50:32+09:00",
   "reviewnote": "2026-11-26T10:50:32+09:00",
   "sbs": "2026-11-26T10:50:32+09:00",
@@ -6293,14 +6297,14 @@
  "lastRun": {
   "busan": "2026-11-24T10:05:42+09:00",
   "contestkorea": "2026-11-26T09:57:40+09:00",
-  "danawa": "2026-11-26T09:01:03+09:00",
-  "eventhouse": "2026-11-26T09:57:40+09:00",
+  "danawa": "2026-11-26T11:47:45+09:00",
+  "eventhouse": "2026-11-26T11:47:45+09:00",
   "eventhouse_search": "2026-11-26T10:50:32+09:00",
-  "events_kr": "2026-11-26T09:57:40+09:00",
+  "events_kr": "2026-11-26T11:47:45+09:00",
   "gonggongevent": "2026-11-26T10:50:32+09:00",
   "korissue": "2026-11-22T21:35:01+09:00",
   "korissue_orgs": "2026-11-22T23:22:53+09:00",
-  "mohw": "2026-11-26T09:57:40+09:00",
+  "mohw": "2026-11-26T11:47:45+09:00",
   "mrblog": "2026-11-26T10:50:32+09:00",
   "naver": "2026-11-26T09:57:40+09:00",
   "reviewnote": "2026-11-26T10:50:32+09:00",
@@ -6320,7 +6324,9 @@
    "321225": "유료 조건: 구매"
   },
   "eventhouse_search": {},
-  "events_kr": {},
+  "events_kr": {
+   "297": "이벤트 신호 없음"
+  },
   "gonggongevent": {
    "11월 10일 마감｜한국언론진흥재단 미디어 AI 플랫폼 퀴즈｜커피 쿠폰 ": "종료·안내 글",
    "11월 10일 신청 시작｜전세사기 피해자 최소보장제｜보증금 3분의 1 최": "마감이 없는 안내 글",
@@ -25991,6 +25997,12 @@
    "final": null,
    "status": "not_form",
    "to": "https://www.eventhouse.kr/login/index.php?gourl=https%3A%2F%2Fwww.eventhouse.kr%2Fsite%2Ffgo.php%3Ffnum%3D321249%26go%3D4&fnum=321249"
+  },
+  "https://www.eventhouse.kr/site/fgo.php?fnum=321250&go=4": {
+   "at": "2026-11-26",
+   "final": null,
+   "status": "not_form",
+   "to": "https://www.eventhouse.kr/login/index.php?gourl=https%3A%2F%2Fwww.eventhouse.kr%2Fsite%2Ffgo.php%3Ffnum%3D321250%26go%3D4&fnum=321250"
   }
  },
  "touredu": {
