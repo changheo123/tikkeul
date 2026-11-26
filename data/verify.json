@@ -12992,6 +12992,20 @@
    "verification_reason": "폼 내용은 이벤트와 일치하지만 공식 공지의 직접 연결은 확인하지 못함",
    "verification_status": "needs_review"
   },
+  "ek-bbcbb1e844": {
+   "candidate_url": "https://www.instagram.com/p/DgHrEmBD3Wc/?img_index=1",
+   "destination_checked": false,
+   "entry_type": "instagram",
+   "entry_url": null,
+   "last_checked_at": "2026-11-26",
+   "link_evidence": "source_row",
+   "original_url": null,
+   "verification_code": "sns_no_fetch",
+   "verification_evidence_url": null,
+   "verification_grade": "B",
+   "verification_reason": "이벤트 글에 적힌 게시물이지만 약관·robots상 내용을 읽을 수 없음",
+   "verification_status": "needs_review"
+  },
   "ek-cd0613ba91": {
    "candidate_url": "https://docs.google.com/forms/d/e/1FAIpQLSeEaEMtLgJFRwHCiMzlbY49U3-SlUkSEMUFR3FgHa_Tb6E56A/viewform",
    "destination_checked": false,
