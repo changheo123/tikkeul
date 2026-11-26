@@ -1,156 +1,6 @@
 [
  {
   "active": 2371,
-  "added": 35,
-  "at": "2026-11-16T02:50:06+09:00",
-  "broken": 0,
-  "dates": 0,
-  "elec": 60,
-  "form": {
-   "direct": 0,
-   "page_err": 0,
-   "page_found": 0,
-   "pages": 0,
-   "short_ok": 0
-  },
-  "links": {
-   "checked": 60,
-   "dead": 0,
-   "error": 0,
-   "ok": 60,
-   "skip": 0
-  },
-  "merged": 94,
-  "originals": 0,
-  "prizeFill": {
-   "left": 36,
-   "page": 0,
-   "page_err": 0,
-   "pages": 0,
-   "text": 0,
-   "title": 0,
-   "truncated": {
-    "checked": 0,
-    "err": 0,
-    "restored": 0
-   }
-  },
-  "proof": 525,
-  "pruned": 0,
-  "quality": {
-   "excluded": 0,
-   "flagged": 25,
-   "merged": 0
-  },
-  "rejected": 0,
-  "requests": 82,
-  "restricted": {
-   "restricted": 3451,
-   "review": 17
-  },
-  "sec": 156.0,
-  "seeded": 0,
-  "sources": {
-   "busan": {
-    "status": "wait"
-   },
-   "contestkorea": {
-    "status": "wait"
-   },
-   "danawa": {
-    "status": "wait"
-   },
-   "eventhouse": {
-    "status": "wait"
-   },
-   "eventhouse_search": {
-    "listed": 19,
-    "merged": 18,
-    "new": 0,
-    "requests": 18,
-    "sec": 20.1,
-    "skipped": 1,
-    "status": "ok"
-   },
-   "events_kr": {
-    "status": "wait"
-   },
-   "gangnam": {
-    "status": "off"
-   },
-   "korissue": {
-    "status": "wait"
-   },
-   "korissue_orgs": {
-    "status": "wait"
-   },
-   "mohw": {
-    "status": "wait"
-   },
-   "mrblog": {
-    "listed": 29,
-    "merged": 10,
-    "new": 14,
-    "requests": 1,
-    "sec": 3.2,
-    "skipped": 5,
-    "status": "ok"
-   },
-   "naver": {
-    "status": "wait"
-   },
-   "reviewnote": {
-    "listed": 85,
-    "merged": 59,
-    "new": 21,
-    "requests": 1,
-    "sec": 0.6,
-    "skipped": 5,
-    "status": "ok"
-   },
-   "sbs": {
-    "listed": 15,
-    "merged": 7,
-    "new": 0,
-    "requests": 1,
-    "sec": 1.6,
-    "skipped": 8,
-    "status": "ok"
-   },
-   "telegram": {
-    "status": "wait"
-   },
-   "touredu": {
-    "listed": 2,
-    "merged": 0,
-    "new": 0,
-    "requests": 1,
-    "sec": 1.6,
-    "skipped": 0,
-    "status": "ok"
-   },
-   "wevity": {
-    "status": "wait"
-   },
-   "youtube": {
-    "reason": "YT_API_KEY 없음",
-    "status": "unconfigured"
-   }
-  },
-  "total": 6587,
-  "verify": {
-   "checked": 35,
-   "due": 35,
-   "failed": 0,
-   "no_request": 0,
-   "rendered": 21,
-   "requests": 35,
-   "stale_ended": 0
-  },
-  "viaLeft": 341
- },
- {
-  "active": 2371,
   "added": 0,
   "at": "2026-11-16T03:44:24+09:00",
   "broken": 0,
@@ -51703,6 +51553,231 @@
    "no_request": 182,
    "rendered": 22,
    "requests": 93,
+   "stale_ended": 0
+  },
+  "viaLeft": 605
+ },
+ {
+  "active": 3036,
+  "added": 44,
+  "archive": {
+   "alias_pruned": 0,
+   "archived": 0,
+   "files": 0,
+   "shortlinks_pruned": 0,
+   "verify_pruned": 0
+  },
+  "at": "2026-11-27T01:27:41+09:00",
+  "broken": 0,
+  "dates": 0,
+  "elec": 38,
+  "form": {
+   "direct": 0,
+   "eh_checked": 0,
+   "eh_found": 0,
+   "page_err": 0,
+   "page_found": 0,
+   "pages": 0,
+   "short_ok": 2
+  },
+  "formDedupe": 0,
+  "links": {
+   "checked": 60,
+   "dead": 0,
+   "error": 0,
+   "ok": 60,
+   "skip": 17
+  },
+  "merged": 427,
+  "notices": {
+   "due": 0,
+   "failed": 0,
+   "fetched": 0,
+   "ok": 0,
+   "pruned": 0,
+   "sec": 0.0,
+   "skipped_budget": 0
+  },
+  "originals": 0,
+  "prizeFill": {
+   "left": 334,
+   "page": 0,
+   "page_err": 0,
+   "pages": 0,
+   "text": 0,
+   "title": 5,
+   "truncated": {
+    "checked": 0,
+    "err": 0,
+    "restored": 0
+   }
+  },
+  "proof": 391,
+  "pruned": 0,
+  "quality": {
+   "excluded": 0,
+   "flagged": 30,
+   "merged": 0
+  },
+  "rejected": 0,
+  "requests": 115,
+  "restricted": {
+   "restricted": 2984,
+   "review": 20
+  },
+  "sec": 331.6,
+  "seeded": 0,
+  "shifted": {
+   "ended": 0,
+   "realigned": 0
+  },
+  "sources": {
+   "busan": {
+    "listed": 2,
+    "merged": 2,
+    "new": 0,
+    "requests": 1,
+    "sec": 5.0,
+    "skipped": 0,
+    "status": "ok"
+   },
+   "contestkorea": {
+    "status": "wait"
+   },
+   "danawa": {
+    "listed": 0,
+    "merged": 0,
+    "new": 0,
+    "requests": 1,
+    "sec": 2.4,
+    "skipped": 0,
+    "status": "ok"
+   },
+   "eventhouse": {
+    "listed": 400,
+    "merged": 278,
+    "new": 0,
+    "requests": 10,
+    "sec": 12.0,
+    "skipped": 1,
+    "status": "ok"
+   },
+   "eventhouse_search": {
+    "listed": 25,
+    "merged": 25,
+    "new": 0,
+    "requests": 20,
+    "sec": 20.1,
+    "skipped": 0,
+    "status": "ok"
+   },
+   "events_kr": {
+    "listed": 200,
+    "merged": 0,
+    "new": 0,
+    "requests": 10,
+    "sec": 10.6,
+    "skipped": 0,
+    "status": "ok"
+   },
+   "gangnam": {
+    "status": "off"
+   },
+   "gonggongevent": {
+    "listed": 60,
+    "merged": 14,
+    "new": 0,
+    "requests": 3,
+    "sec": 3.6,
+    "skipped": 46,
+    "status": "ok"
+   },
+   "korissue": {
+    "error": "HTTPError: 403 Client Error: Forbidden for url: https://korissue.mycafe24.com/?option=1",
+    "status": "error",
+    "trace": "keul/tikkeul/collector/sources/aggregators.py\", line 335, in korissue\n    listed += _kor_page(f.doc(f\"{KOR}?option={opt}\"), state, events, skipped, seen)\n                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/tikkeul/tikkeul/collector/common.py\", line 84, in doc\n    r.raise_for_status()\n  File \"/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/requests/models.py\", line 1167, in raise_for_status\n    raise HTTPError(http_error_msg, response=self)\nrequests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://korissue.mycafe24.com/?option=1\n"
+   },
+   "korissue_orgs": {
+    "error": "HTTPError: 403 Client Error: Forbidden for url: https://korissue.mycafe24.com/?parent=10877&keyword=CJ%EA%B7%B8%EB%A3%B9",
+    "status": "error",
+    "trace": "ge(f.doc(f\"{KOR}?parent={pid}&keyword={parents[pid]['kw']}\"), state, events, skipped, seen)\n                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/tikkeul/tikkeul/collector/common.py\", line 84, in doc\n    r.raise_for_status()\n  File \"/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/requests/models.py\", line 1167, in raise_for_status\n    raise HTTPError(http_error_msg, response=self)\nrequests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://korissue.mycafe24.com/?parent=10877&keyword=CJ%EA%B7%B8%EB%A3%B9\n"
+   },
+   "mohw": {
+    "listed": 12,
+    "merged": 0,
+    "new": 0,
+    "requests": 1,
+    "sec": 3.1,
+    "skipped": 0,
+    "status": "ok"
+   },
+   "mrblog": {
+    "listed": 29,
+    "merged": 9,
+    "new": 18,
+    "requests": 1,
+    "sec": 1.9,
+    "skipped": 2,
+    "status": "ok"
+   },
+   "naver": {
+    "status": "wait"
+   },
+   "reviewnote": {
+    "listed": 87,
+    "merged": 71,
+    "new": 9,
+    "requests": 1,
+    "sec": 0.7,
+    "skipped": 7,
+    "status": "ok"
+   },
+   "sbs": {
+    "listed": 17,
+    "merged": 7,
+    "new": 0,
+    "requests": 1,
+    "sec": 0.9,
+    "skipped": 10,
+    "status": "ok"
+   },
+   "telegram": {
+    "status": "wait"
+   },
+   "touredu": {
+    "listed": 3,
+    "merged": 0,
+    "new": 0,
+    "requests": 1,
+    "sec": 1.5,
+    "skipped": 0,
+    "status": "ok"
+   },
+   "wevity": {
+    "status": "wait"
+   },
+   "youtube": {
+    "reason": "YT_API_KEY 없음",
+    "status": "unconfigured"
+   },
+   "yuvent": {
+    "listed": 60,
+    "merged": 21,
+    "new": 17,
+    "requests": 3,
+    "sec": 5.6,
+    "skipped": 22,
+    "status": "ok"
+   }
+  },
+  "total": 5300,
+  "verify": {
+   "checked": 138,
+   "due": 358,
+   "failed": 0,
+   "no_request": 18,
+   "rendered": 25,
+   "requests": 120,
    "stale_ended": 0
   },
   "viaLeft": 605
