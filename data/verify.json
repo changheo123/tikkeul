@@ -14420,6 +14420,20 @@
    "verification_reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)",
    "verification_status": "needs_review"
   },
+  "mb-8865d2c7c2": {
+   "candidate_url": "https://www.mrblog.net/campaigns/1155525",
+   "destination_checked": false,
+   "entry_type": "website",
+   "entry_url": null,
+   "last_checked_at": "2026-11-27",
+   "link_evidence": "source_row",
+   "original_url": null,
+   "verification_code": "login",
+   "verification_evidence_url": null,
+   "verification_grade": "B",
+   "verification_reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)",
+   "verification_status": "needs_review"
+  },
   "mb-89e6e8e7c6": {
    "candidate_url": "https://www.mrblog.net/campaigns/1154833",
    "destination_checked": false,
@@ -14758,6 +14772,20 @@
   },
   "mb-f44dc1f9b9": {
    "candidate_url": "https://www.mrblog.net/campaigns/1154838",
+   "destination_checked": false,
+   "entry_type": "website",
+   "entry_url": null,
+   "last_checked_at": "2026-11-27",
+   "link_evidence": "source_row",
+   "original_url": null,
+   "verification_code": "login",
+   "verification_evidence_url": null,
+   "verification_grade": "B",
+   "verification_reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)",
+   "verification_status": "needs_review"
+  },
+  "mb-fa4266e10b": {
+   "candidate_url": "https://www.mrblog.net/campaigns/1154896",
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
@@ -25676,6 +25704,20 @@
    "verification_reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)",
    "verification_status": "needs_review"
   },
+  "rn-688219b673": {
+   "candidate_url": "https://www.reviewnote.co.kr/campaigns/1563012",
+   "destination_checked": false,
+   "entry_type": "website",
+   "entry_url": null,
+   "last_checked_at": "2026-11-27",
+   "link_evidence": "source_row",
+   "original_url": null,
+   "verification_code": "login",
+   "verification_evidence_url": null,
+   "verification_grade": "B",
+   "verification_reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)",
+   "verification_status": "needs_review"
+  },
   "rn-6899e34e62": {
    "candidate_url": null,
    "destination_checked": false,
@@ -25864,6 +25906,20 @@
    "entry_type": "website",
    "entry_url": null,
    "last_checked_at": "2026-11-26",
+   "link_evidence": "source_row",
+   "original_url": null,
+   "verification_code": "login",
+   "verification_evidence_url": null,
+   "verification_grade": "B",
+   "verification_reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)",
+   "verification_status": "needs_review"
+  },
+  "rn-6abfb7ea8b": {
+   "candidate_url": "https://www.reviewnote.co.kr/campaigns/1565847",
+   "destination_checked": false,
+   "entry_type": "website",
+   "entry_url": null,
+   "last_checked_at": "2026-11-27",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "login",
@@ -33194,6 +33250,20 @@
    "verification_reason": "페이지와 이벤트의 일치를 확인하지 못함",
    "verification_status": "unverified"
   },
+  "rn-b1273d19f8": {
+   "candidate_url": "https://www.reviewnote.co.kr/campaigns/1566577",
+   "destination_checked": false,
+   "entry_type": "website",
+   "entry_url": null,
+   "last_checked_at": "2026-11-27",
+   "link_evidence": "source_row",
+   "original_url": null,
+   "verification_code": "login",
+   "verification_evidence_url": null,
+   "verification_grade": "B",
+   "verification_reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)",
+   "verification_status": "needs_review"
+  },
   "rn-b13e1cc50e": {
    "candidate_url": null,
    "destination_checked": false,
@@ -35660,6 +35730,20 @@
   },
   "rn-c7e2dda9f4": {
    "candidate_url": "https://www.reviewnote.co.kr/campaigns/1555825",
+   "destination_checked": false,
+   "entry_type": "website",
+   "entry_url": null,
+   "last_checked_at": "2026-11-27",
+   "link_evidence": "source_row",
+   "original_url": null,
+   "verification_code": "login",
+   "verification_evidence_url": null,
+   "verification_grade": "B",
+   "verification_reason": "로그인이 필요한 페이지 (이벤트 글에 적힌 주소)",
+   "verification_status": "needs_review"
+  },
+  "rn-c7ebe8de7b": {
+   "candidate_url": "https://www.reviewnote.co.kr/campaigns/1566573",
    "destination_checked": false,
    "entry_type": "website",
    "entry_url": null,
@@ -42140,6 +42224,20 @@
    "verification_reason": "접근이 제한된 폼이라 내용을 확인하지 못함 (이벤트 글에 적힌 폼)",
    "verification_status": "needs_review"
   },
+  "yv-180851d6c0": {
+   "candidate_url": "https://www.youtube.com/watch?v=BmAWioGo_JQ",
+   "destination_checked": false,
+   "entry_type": "youtube",
+   "entry_url": null,
+   "last_checked_at": "2026-11-27",
+   "link_evidence": "source_row",
+   "original_url": null,
+   "verification_code": "sns_no_fetch",
+   "verification_evidence_url": null,
+   "verification_grade": "B",
+   "verification_reason": "이벤트 글에 적힌 게시물이지만 약관·robots상 내용을 읽을 수 없음",
+   "verification_status": "needs_review"
+  },
   "yv-187285d89e": {
    "candidate_url": "https://www.youtube.com/watch?v=8fDMMJRCtqs",
    "destination_checked": false,
@@ -42952,6 +43050,20 @@
    "verification_reason": "이벤트 글에 적힌 게시물이지만 약관·robots상 내용을 읽을 수 없음",
    "verification_status": "needs_review"
   },
+  "yv-382f35df40": {
+   "candidate_url": "https://www.youtube.com/watch?v=KsEla4dd8ho",
+   "destination_checked": false,
+   "entry_type": "youtube",
+   "entry_url": null,
+   "last_checked_at": "2026-11-27",
+   "link_evidence": "source_row",
+   "original_url": null,
+   "verification_code": "sns_no_fetch",
+   "verification_evidence_url": null,
+   "verification_grade": "B",
+   "verification_reason": "이벤트 글에 적힌 게시물이지만 약관·robots상 내용을 읽을 수 없음",
+   "verification_status": "needs_review"
+  },
   "yv-38c66c4193": {
    "candidate_url": "https://www.youtube.com/watch?v=Z89afAol7wQ",
    "destination_checked": false,
@@ -43028,6 +43140,20 @@
    "entry_type": "youtube",
    "entry_url": null,
    "last_checked_at": "2026-11-25",
+   "link_evidence": "source_row",
+   "original_url": null,
+   "verification_code": "sns_no_fetch",
+   "verification_evidence_url": null,
+   "verification_grade": "B",
+   "verification_reason": "이벤트 글에 적힌 게시물이지만 약관·robots상 내용을 읽을 수 없음",
+   "verification_status": "needs_review"
+  },
+  "yv-3c3eeb4488": {
+   "candidate_url": "https://www.youtube.com/watch?v=K9lfeYLgJFo",
+   "destination_checked": false,
+   "entry_type": "youtube",
+   "entry_url": null,
+   "last_checked_at": "2026-11-27",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "sns_no_fetch",
@@ -43342,6 +43468,20 @@
    "verification_evidence_url": null,
    "verification_grade": "B",
    "verification_reason": "이벤트 글에 적힌 게시물이지만 약관·robots상 내용을 읽을 수 없음",
+   "verification_status": "needs_review"
+  },
+  "yv-4d0e6bc005": {
+   "candidate_url": "https://docs.google.com/forms/d/e/1FAIpQLSdUVkb02yz9r4ukBB_VOM6ncNowiCNhlDQibN-Pn6JX6VVHgg/viewform",
+   "destination_checked": false,
+   "entry_type": "form",
+   "entry_url": null,
+   "last_checked_at": "2026-11-27",
+   "link_evidence": "partial_match",
+   "original_url": null,
+   "verification_code": "form_partial",
+   "verification_evidence_url": "https://docs.google.com/forms/d/e/1FAIpQLSdUVkb02yz9r4ukBB_VOM6ncNowiCNhlDQibN-Pn6JX6VVHgg/viewform",
+   "verification_grade": "B",
+   "verification_reason": "폼 내용이 이벤트와 일부 일치",
    "verification_status": "needs_review"
   },
   "yv-4da77bdb81": {
@@ -44506,6 +44646,20 @@
    "verification_reason": "접근이 제한된 폼이라 내용을 확인하지 못함 (이벤트 글에 적힌 폼)",
    "verification_status": "needs_review"
   },
+  "yv-84385513f3": {
+   "candidate_url": "https://www.youtube.com/watch?v=K7qR0zA5P3Y",
+   "destination_checked": false,
+   "entry_type": "youtube",
+   "entry_url": null,
+   "last_checked_at": "2026-11-27",
+   "link_evidence": "source_row",
+   "original_url": null,
+   "verification_code": "sns_no_fetch",
+   "verification_evidence_url": null,
+   "verification_grade": "B",
+   "verification_reason": "이벤트 글에 적힌 게시물이지만 약관·robots상 내용을 읽을 수 없음",
+   "verification_status": "needs_review"
+  },
   "yv-85111d1d4f": {
    "candidate_url": "https://www.youtube.com/watch?v=d6djb52CDYA",
    "destination_checked": false,
@@ -45500,6 +45654,20 @@
    "verification_reason": "이벤트 글에 적힌 게시물이지만 약관·robots상 내용을 읽을 수 없음",
    "verification_status": "needs_review"
   },
+  "yv-ad4dbd7b89": {
+   "candidate_url": "https://www.youtube.com/watch?v=7hjkV3fz0rw",
+   "destination_checked": false,
+   "entry_type": "youtube",
+   "entry_url": null,
+   "last_checked_at": "2026-11-27",
+   "link_evidence": "source_row",
+   "original_url": null,
+   "verification_code": "sns_no_fetch",
+   "verification_evidence_url": null,
+   "verification_grade": "B",
+   "verification_reason": "이벤트 글에 적힌 게시물이지만 약관·robots상 내용을 읽을 수 없음",
+   "verification_status": "needs_review"
+  },
   "yv-ad9c9007a2": {
    "candidate_url": "https://www.youtube.com/watch?v=9OtDWwpeZ98",
    "destination_checked": false,
@@ -46088,6 +46256,20 @@
    "verification_reason": "이벤트 글에 적힌 게시물이지만 약관·robots상 내용을 읽을 수 없음",
    "verification_status": "needs_review"
   },
+  "yv-c6e7266787": {
+   "candidate_url": "https://www.youtube.com/watch?v=5R8K4bS_EiE",
+   "destination_checked": false,
+   "entry_type": "youtube",
+   "entry_url": null,
+   "last_checked_at": "2026-11-27",
+   "link_evidence": "source_row",
+   "original_url": null,
+   "verification_code": "sns_no_fetch",
+   "verification_evidence_url": null,
+   "verification_grade": "B",
+   "verification_reason": "이벤트 글에 적힌 게시물이지만 약관·robots상 내용을 읽을 수 없음",
+   "verification_status": "needs_review"
+  },
   "yv-c78c2baad3": {
    "candidate_url": "https://www.youtube.com/watch?v=D-cvOQaLgyg",
    "destination_checked": false,
@@ -46178,6 +46360,20 @@
    "entry_type": "youtube",
    "entry_url": null,
    "last_checked_at": "2026-11-25",
+   "link_evidence": "source_row",
+   "original_url": null,
+   "verification_code": "sns_no_fetch",
+   "verification_evidence_url": null,
+   "verification_grade": "B",
+   "verification_reason": "이벤트 글에 적힌 게시물이지만 약관·robots상 내용을 읽을 수 없음",
+   "verification_status": "needs_review"
+  },
+  "yv-caa73eea48": {
+   "candidate_url": "https://www.youtube.com/watch?v=Q_C7y3AKDm0",
+   "destination_checked": false,
+   "entry_type": "youtube",
+   "entry_url": null,
+   "last_checked_at": "2026-11-27",
    "link_evidence": "source_row",
    "original_url": null,
    "verification_code": "sns_no_fetch",
@@ -46748,6 +46944,20 @@
   },
   "yv-e70d4f2a19": {
    "candidate_url": "https://docs.google.com/forms/d/e/1FAIpQLScSxlALTRIbEUiYnBTTb8Y38WAr88UHEqgBoo0Lwx0VX-y5rQ/viewform",
+   "destination_checked": false,
+   "entry_type": "form",
+   "entry_url": null,
+   "last_checked_at": "2026-11-27",
+   "link_evidence": "event_text",
+   "original_url": null,
+   "verification_code": "form_forbidden",
+   "verification_evidence_url": null,
+   "verification_grade": "B",
+   "verification_reason": "접근이 제한된 폼이라 내용을 확인하지 못함 (이벤트 글에 적힌 폼)",
+   "verification_status": "needs_review"
+  },
+  "yv-e7d9947d8a": {
+   "candidate_url": "https://docs.google.com/forms/d/e/1FAIpQLSfaQQooxFtAs6_IwEj0Gn03IhQpCbyhn_bIjlKmz2d7SFTNHQ/viewform",
    "destination_checked": false,
    "entry_type": "form",
    "entry_url": null,
@@ -71094,6 +71304,10 @@
    "at": "2026-11-25",
    "status": "forbidden"
   },
+  "https://docs.google.com/forms/d/e/1FAIpQLSfaQQooxFtAs6_IwEj0Gn03IhQpCbyhn_bIjlKmz2d7SFTNHQ/viewform": {
+   "at": "2026-11-27",
+   "status": "forbidden"
+  },
   "https://docs.google.com/forms/d/e/1FAIpQLSfb8uM4H6JhiXw0DweRb1XDtA-1QSK1t8sIZqXD1rgJiSZ7Rg/viewform": {
    "at": "2026-11-18",
    "status": "forbidden"
@@ -74526,6 +74740,10 @@
    "at": "2026-11-27",
    "status": "login"
   },
+  "https://www.mrblog.net/campaigns/1154896": {
+   "at": "2026-11-27",
+   "status": "login"
+  },
   "https://www.mrblog.net/campaigns/1154900": {
    "at": "2026-11-27",
    "status": "login"
@@ -74643,6 +74861,10 @@
    "status": "login"
   },
   "https://www.mrblog.net/campaigns/1155492": {
+   "at": "2026-11-27",
+   "status": "login"
+  },
+  "https://www.mrblog.net/campaigns/1155525": {
    "at": "2026-11-27",
    "status": "login"
   },
@@ -84114,6 +84336,10 @@
    "at": "2026-11-27",
    "status": "login"
   },
+  "https://www.reviewnote.co.kr/campaigns/1563012": {
+   "at": "2026-11-27",
+   "status": "login"
+  },
   "https://www.reviewnote.co.kr/campaigns/1563015": {
    "at": "2026-11-26",
    "status": "login"
@@ -84354,6 +84580,10 @@
    "at": "2026-11-27",
    "status": "login"
   },
+  "https://www.reviewnote.co.kr/campaigns/1565847": {
+   "at": "2026-11-27",
+   "status": "login"
+  },
   "https://www.reviewnote.co.kr/campaigns/1565950": {
    "at": "2026-11-27",
    "status": "login"
@@ -84455,6 +84685,14 @@
    "status": "login"
   },
   "https://www.reviewnote.co.kr/campaigns/1566563": {
+   "at": "2026-11-27",
+   "status": "login"
+  },
+  "https://www.reviewnote.co.kr/campaigns/1566573": {
+   "at": "2026-11-27",
+   "status": "login"
+  },
+  "https://www.reviewnote.co.kr/campaigns/1566577": {
    "at": "2026-11-27",
    "status": "login"
   },

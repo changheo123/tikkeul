@@ -1338,7 +1338,7 @@
   "https://vo.la/O5a6KCv": "https://m.blog.naver.com/ok_hira/224442524892"
  },
  "fails": {
-  "busan": 7,
+  "busan": 8,
   "contestkorea": 0,
   "danawa": 0,
   "eventhouse": 0,
@@ -1346,8 +1346,8 @@
   "events_kr": 0,
   "gangnam": 1,
   "gonggongevent": 0,
-  "korissue": 137,
-  "korissue_orgs": 135,
+  "korissue": 138,
+  "korissue_orgs": 136,
   "mohw": 0,
   "mrblog": 0,
   "reviewnote": 0,
@@ -6233,39 +6233,39 @@
   "contestkorea": "2026-11-27T22:39:05+09:00",
   "danawa": "2026-11-27T21:44:42+09:00",
   "eventhouse": "2026-11-27T22:39:05+09:00",
-  "eventhouse_search": "2026-11-27T20:04:30+09:00",
+  "eventhouse_search": "2026-11-27T23:34:16+09:00",
   "events_kr": "2026-11-27T22:39:05+09:00",
-  "gonggongevent": "2026-11-27T20:04:30+09:00",
+  "gonggongevent": "2026-11-27T23:34:16+09:00",
   "korissue": "2026-11-22T21:35:01+09:00",
   "korissue_orgs": "2026-11-22T23:22:53+09:00",
   "mohw": "2026-11-27T22:39:05+09:00",
-  "mrblog": "2026-11-27T20:04:30+09:00",
-  "reviewnote": "2026-11-27T20:04:30+09:00",
-  "sbs": "2026-11-27T20:04:30+09:00",
-  "touredu": "2026-11-27T20:04:30+09:00",
+  "mrblog": "2026-11-27T23:34:16+09:00",
+  "reviewnote": "2026-11-27T23:34:16+09:00",
+  "sbs": "2026-11-27T23:34:16+09:00",
+  "touredu": "2026-11-27T23:34:16+09:00",
   "wevity": "2026-11-27T19:09:19+09:00",
-  "yuvent": "2026-11-27T20:04:30+09:00"
+  "yuvent": "2026-11-27T23:34:16+09:00"
  },
  "lastRun": {
   "busan": "2026-11-27T15:32:33+09:00",
   "contestkorea": "2026-11-27T22:39:05+09:00",
   "danawa": "2026-11-27T21:44:42+09:00",
   "eventhouse": "2026-11-27T22:39:05+09:00",
-  "eventhouse_search": "2026-11-27T20:04:30+09:00",
+  "eventhouse_search": "2026-11-27T23:34:16+09:00",
   "events_kr": "2026-11-27T22:39:05+09:00",
-  "gonggongevent": "2026-11-27T20:04:30+09:00",
+  "gonggongevent": "2026-11-27T23:34:16+09:00",
   "korissue": "2026-11-22T21:35:01+09:00",
   "korissue_orgs": "2026-11-22T23:22:53+09:00",
   "mohw": "2026-11-27T22:39:05+09:00",
-  "mrblog": "2026-11-27T20:04:30+09:00",
+  "mrblog": "2026-11-27T23:34:16+09:00",
   "naver": "2026-11-27T22:39:05+09:00",
-  "reviewnote": "2026-11-27T20:04:30+09:00",
-  "sbs": "2026-11-27T20:04:30+09:00",
+  "reviewnote": "2026-11-27T23:34:16+09:00",
+  "sbs": "2026-11-27T23:34:16+09:00",
   "telegram": "2026-11-27T22:39:05+09:00",
-  "touredu": "2026-11-27T20:04:30+09:00",
+  "touredu": "2026-11-27T23:34:16+09:00",
   "wevity": "2026-11-27T19:09:19+09:00",
-  "youtube": "2026-11-27T20:04:30+09:00",
-  "yuvent": "2026-11-27T20:04:30+09:00"
+  "youtube": "2026-11-27T23:34:16+09:00",
+  "yuvent": "2026-11-27T23:34:16+09:00"
  },
  "lastSkipped": {
   "busan": {},
@@ -6311,7 +6311,8 @@
   "mohw": {},
   "mrblog": {
    "1154908": "유료 조건: 결제",
-   "1155163": "유료 조건: 결제,페이백"
+   "1155159": "유료 조건: 결제,페이백",
+   "1155972": "유료 조건: 결제,페이백"
   },
   "reviewnote": {
    "1564239": "유료 조건: 결제,주문 시",
@@ -6321,7 +6322,6 @@
    "1566032": "유료 조건: 구매",
    "1566399": "유료 조건: 페이백",
    "1566540": "유료 조건: 구매",
-   "1566618": "유료 조건: 페이백",
    "1571238": "유료 조건: 페이백"
   },
   "sbs": {
@@ -6339,35 +6339,36 @@
   "touredu": {},
   "wevity": {},
   "yuvent": {
-   "cmwxhtags39n5012n9168cpwb": "유료 조건: 유료",
-   "cmwxj188z3dld012n8qyswawo": "유료 조건: 결제",
-   "cmwxqto063gpv012np6qmfach": "경품·마감·폼 없음",
-   "cmwxqw3883h1n012nlcq5hybv": "경품·마감·폼 없음",
-   "cmwy8xzyg3s0r012nq3a8pgg0": "유료 조건: 구매",
-   "cmwygp58c3vvq012nelhnfbqk": "기간·경품·참여 방법 모두 확인 안 됨",
-   "cmwygrpge3w6w012nxy8ijhm9": "기간·경품·참여 방법 모두 확인 안 됨",
-   "cmwygsvxf3wc5012ntgv7c4i8": "기간·경품·참여 방법 모두 확인 안 됨",
-   "cmwyh3afh3wwb012nydleceum": "유료 조건: 구매",
-   "cmwyp80ie40ne012nlbh324hi": "유료 조건: 구매",
    "cmwype55441fl012n1ce3jp4t": "기간·경품·참여 방법 모두 확인 안 됨",
-   "cmwypfcuk41l6012n07w6rz3k": "기간·경품·참여 방법 모두 확인 안 됨",
-   "cmwypkp9f41pu012nbm6tgi71": "유료 조건: 구매",
    "cmwyr1ces3ulh012rxup41w7z": "경품·마감·폼 없음",
-   "cmwyr23q93upk012r2tugakwp": "유료 조건: 입금,페이백",
-   "cmwyr27503upw012rrozp162h": "기간·경품·참여 방법 모두 확인 안 됨",
-   "cmwyr2euv3uqu012rujoyoc4k": "기간·경품·참여 방법 모두 확인 안 됨",
-   "cmwyr2hmc3uqw012rkldp6xix": "기간·경품·참여 방법 모두 확인 안 됨",
-   "cmwyr69hq3v6w012rkgeraysm": "이벤트 신호 없음",
-   "cmwyr705c3vaa012rnhq0dxq8": "경품·마감·폼 없음",
-   "cmwyr83yv3vg8012rjljy40cn": "이벤트 신호 없음",
-   "cmwyr8kft3vic012rc1l9o5db": "경품·마감·폼 없음",
-   "cmwyr9vil3vp5012rlcgit5eq": "기간·경품·참여 방법 모두 확인 안 됨",
-   "cmwyrarzu3vtf012rze3hg38l": "이벤트 신호 없음",
    "cmwyrc2d23vzw012r59cnmcv7": "경품·마감·폼 없음",
-   "cmwyrcwr93w40012rh7dtb7uw": "기간·경품·참여 방법 모두 확인 안 됨",
    "cmwyrtjfp3yew012rm9khhr6c": "경품·마감·폼 없음",
    "cmwyrzxvh3zby012rbpdolwa1": "기간·경품·참여 방법 모두 확인 안 됨",
-   "cmwys001f3zc1012rgt4c6vhu": "기간·경품·참여 방법 모두 확인 안 됨"
+   "cmwyx1qh841v7012n05f7kun5": "유료 조건: 구매,유료",
+   "cmwyx2jmg41yv012ng0t8x92s": "유료 조건: 결제,구매",
+   "cmwyx7xwo42mc012np8r2iste": "유료 조건: 구매",
+   "cmwyxevwc43cm012ngdc6f0ma": "유료 조건: 구매",
+   "cmwyxi5ov43q4012nv996k81c": "기간·경품·참여 방법 모두 확인 안 됨",
+   "cmwyxidf543qs012njw7g6bov": "유료 조건: 유료",
+   "cmwyxlwvi4437012nhc8u6pvb": "유료 조건: 구매",
+   "cmwyxncls4497012nwnpa4cmg": "경품·마감·폼 없음",
+   "cmwyxo7j144ch012nn4ghh6gs": "기간·경품·참여 방법 모두 확인 안 됨",
+   "cmwyy54uo46gb012nc43j2kab": "유료 조건: 구매,원 이상 구매,유료",
+   "cmwyy8iut46nq012nvy1bmzii": "유료 조건: 유료",
+   "cmwyyd0di46o0012n8ct6kk8j": "기간·경품·참여 방법 모두 확인 안 됨",
+   "cmwyzm2sh3zgt012rslorfgh1": "경품·마감·폼 없음",
+   "cmwyzrohf406o012ricn27oez": "유료 조건: 구매",
+   "cmwyzv8j540o8012r720pbcvf": "이벤트 신호 없음",
+   "cmwyzxjar4101012ryrg1k9t7": "기간·경품·참여 방법 모두 확인 안 됨",
+   "cmwz0b76h432t012rh78v0dhq": "경품·마감·폼 없음",
+   "cmwz0ci5h439u012ry84kx3gv": "경품·마감·폼 없음",
+   "cmwz0dboc43e6012rmuifgv6s": "기간·경품·참여 방법 모두 확인 안 됨",
+   "cmwz0dfvc43e7012r1sudel29": "기간·경품·참여 방법 모두 확인 안 됨",
+   "cmwz0eonx43kg012r4uqwyxxc": "이벤트 신호 없음",
+   "cmwz0g07943qv012rxtu8eld0": "경품·마감·폼 없음",
+   "cmwz0hvei440c012r6id8c3r8": "기간·경품·참여 방법 모두 확인 안 됨",
+   "cmwz0isqb445b012r2kb5tt14": "유료 조건: 구매",
+   "cmwz0qp96446o012rj9kwvssv": "이벤트 신호 없음"
   }
  },
  "mohw": {
@@ -6524,6 +6525,18 @@
    "status": "not_form",
    "to": "https://youtube.com/playlist?list=PLkXlkkFenJ_aPD4u_xU7aBT6P0HAIN_rm&si=CJZ3K4hloa3tF5v0"
   },
+  "https://bit.ly/4ja57Lz": {
+   "at": "2026-11-27",
+   "final": null,
+   "status": "not_form",
+   "to": "https://www.youtube.com/channel/UCtKa2DIM5Ibhho-MTo7q_Nw?sub_confirmation=1"
+  },
+  "https://bit.ly/4ldWRg8": {
+   "at": "2026-11-27",
+   "final": null,
+   "status": "not_form",
+   "to": "https://www.youtube.com/@TESLCODE?sub_confirmation=1"
+  },
   "https://bit.ly/4t0PKK1": {
    "at": "2026-11-25",
    "final": "https://docs.google.com/forms/d/e/1FAIpQLSeik5c7z-SAEfz_HdmZAKLAuoCWRVXSjD089Kq4yHpfN_EJ5g/viewform",
@@ -6655,6 +6668,12 @@
    "final": "https://docs.google.com/forms/d/e/1FAIpQLScNPojz6_YPVsR4N0U0TC9NMR67dMabGYdWfBbU6kv6xP1iuQ/viewform",
    "status": "form",
    "to": "https://docs.google.com/forms/d/e/1FAIpQLScNPojz6_YPVsR4N0U0TC9NMR67dMabGYdWfBbU6kv6xP1iuQ/viewform?usp=send_form"
+  },
+  "https://forms.gle/7QQzpz6cLnsqyViX9": {
+   "at": "2026-11-27",
+   "final": "https://docs.google.com/forms/d/e/1FAIpQLSfaQQooxFtAs6_IwEj0Gn03IhQpCbyhn_bIjlKmz2d7SFTNHQ/viewform",
+   "status": "form",
+   "to": "https://docs.google.com/forms/d/e/1FAIpQLSfaQQooxFtAs6_IwEj0Gn03IhQpCbyhn_bIjlKmz2d7SFTNHQ/viewform?usp=send_form"
   },
   "https://forms.gle/7nxHapmDxkVwCQti8": {
    "at": "2026-11-20",
@@ -7213,6 +7232,12 @@
    "final": "https://docs.google.com/forms/d/e/1FAIpQLSeik5c7z-SAEfz_HdmZAKLAuoCWRVXSjD089Kq4yHpfN_EJ5g/viewform",
    "status": "form",
    "to": "https://docs.google.com/forms/d/e/1FAIpQLSeik5c7z-SAEfz_HdmZAKLAuoCWRVXSjD089Kq4yHpfN_EJ5g/viewform"
+  },
+  "https://forms.gle/g1Dqok34oB4e4SH98": {
+   "at": "2026-11-27",
+   "final": "https://docs.google.com/forms/d/e/1FAIpQLSdUVkb02yz9r4ukBB_VOM6ncNowiCNhlDQibN-Pn6JX6VVHgg/viewform",
+   "status": "form",
+   "to": "https://docs.google.com/forms/d/e/1FAIpQLSdUVkb02yz9r4ukBB_VOM6ncNowiCNhlDQibN-Pn6JX6VVHgg/viewform?usp=send_form"
   },
   "https://forms.gle/g1on7pKpU4PMqjpN9": {
    "at": "2026-11-16",
