@@ -685,6 +685,7 @@
   "rn-0ffdb23f2c": "rn-893e8af67d",
   "rn-10646e8c48": "rn-98d41d9d33",
   "rn-1235fb866e": "rn-885cfbc045",
+  "rn-134e45daa8": "rn-e492456b6d",
   "rn-147d323d7b": "rn-c18eb0fbeb",
   "rn-1711182a95": "rn-93ba05e64e",
   "rn-17da954c55": "rn-d14def68ed",
@@ -707,6 +708,7 @@
   "rn-2716cec93f": "rn-137f53a66d",
   "rn-273c9f2dcb": "rn-1ba9c87da8",
   "rn-27cce14203": "rn-5c961acc11",
+  "rn-286d3c09f4": "rn-42b2f7284b",
   "rn-299d683c7d": "rn-6a857efc46",
   "rn-2c4fe82426": "rn-fdb8e1cbc6",
   "rn-2d2b7be737": "rn-264c88ea6f",
@@ -784,6 +786,7 @@
   "rn-7a3287b961": "rn-2a272fe312",
   "rn-7b54df1edd": "rn-28c5a1baf1",
   "rn-7cf031095f": "rn-2daff05e03",
+  "rn-7d19e3ffbf": "rn-59595783d5",
   "rn-7d2d8d05bd": "rn-fab4f6e09b",
   "rn-7d6f7beb63": "rn-9cf0aa756c",
   "rn-7df9f47471": "rn-75d3980c91",
@@ -1335,7 +1338,7 @@
   "https://vo.la/O5a6KCv": "https://m.blog.naver.com/ok_hira/224442524892"
  },
  "fails": {
-  "busan": 3,
+  "busan": 4,
   "contestkorea": 0,
   "danawa": 0,
   "eventhouse": 0,
@@ -1343,8 +1346,8 @@
   "events_kr": 0,
   "gangnam": 1,
   "gonggongevent": 0,
-  "korissue": 133,
-  "korissue_orgs": 131,
+  "korissue": 134,
+  "korissue_orgs": 132,
   "mohw": 0,
   "mrblog": 0,
   "reviewnote": 0,
@@ -6227,42 +6230,42 @@
  },
  "lastOk": {
   "busan": "2026-11-27T15:32:33+09:00",
-  "contestkorea": "2026-11-27T17:20:11+09:00",
+  "contestkorea": "2026-11-27T20:04:30+09:00",
   "danawa": "2026-11-27T19:09:19+09:00",
   "eventhouse": "2026-11-27T19:09:19+09:00",
-  "eventhouse_search": "2026-11-27T16:26:15+09:00",
+  "eventhouse_search": "2026-11-27T20:04:30+09:00",
   "events_kr": "2026-11-27T19:09:19+09:00",
-  "gonggongevent": "2026-11-27T16:26:15+09:00",
+  "gonggongevent": "2026-11-27T20:04:30+09:00",
   "korissue": "2026-11-22T21:35:01+09:00",
   "korissue_orgs": "2026-11-22T23:22:53+09:00",
   "mohw": "2026-11-27T19:09:19+09:00",
-  "mrblog": "2026-11-27T16:26:15+09:00",
-  "reviewnote": "2026-11-27T16:26:15+09:00",
-  "sbs": "2026-11-27T16:26:15+09:00",
-  "touredu": "2026-11-27T16:26:15+09:00",
+  "mrblog": "2026-11-27T20:04:30+09:00",
+  "reviewnote": "2026-11-27T20:04:30+09:00",
+  "sbs": "2026-11-27T20:04:30+09:00",
+  "touredu": "2026-11-27T20:04:30+09:00",
   "wevity": "2026-11-27T19:09:19+09:00",
-  "yuvent": "2026-11-27T16:26:15+09:00"
+  "yuvent": "2026-11-27T20:04:30+09:00"
  },
  "lastRun": {
   "busan": "2026-11-27T15:32:33+09:00",
-  "contestkorea": "2026-11-27T17:20:11+09:00",
+  "contestkorea": "2026-11-27T20:04:30+09:00",
   "danawa": "2026-11-27T19:09:19+09:00",
   "eventhouse": "2026-11-27T19:09:19+09:00",
-  "eventhouse_search": "2026-11-27T16:26:15+09:00",
+  "eventhouse_search": "2026-11-27T20:04:30+09:00",
   "events_kr": "2026-11-27T19:09:19+09:00",
-  "gonggongevent": "2026-11-27T16:26:15+09:00",
+  "gonggongevent": "2026-11-27T20:04:30+09:00",
   "korissue": "2026-11-22T21:35:01+09:00",
   "korissue_orgs": "2026-11-22T23:22:53+09:00",
   "mohw": "2026-11-27T19:09:19+09:00",
-  "mrblog": "2026-11-27T16:26:15+09:00",
-  "naver": "2026-11-27T17:20:11+09:00",
-  "reviewnote": "2026-11-27T16:26:15+09:00",
-  "sbs": "2026-11-27T16:26:15+09:00",
-  "telegram": "2026-11-27T17:20:11+09:00",
-  "touredu": "2026-11-27T16:26:15+09:00",
+  "mrblog": "2026-11-27T20:04:30+09:00",
+  "naver": "2026-11-27T20:04:30+09:00",
+  "reviewnote": "2026-11-27T20:04:30+09:00",
+  "sbs": "2026-11-27T20:04:30+09:00",
+  "telegram": "2026-11-27T20:04:30+09:00",
+  "touredu": "2026-11-27T20:04:30+09:00",
   "wevity": "2026-11-27T19:09:19+09:00",
-  "youtube": "2026-11-27T16:26:15+09:00",
-  "yuvent": "2026-11-27T16:26:15+09:00"
+  "youtube": "2026-11-27T20:04:30+09:00",
+  "yuvent": "2026-11-27T20:04:30+09:00"
  },
  "lastSkipped": {
   "busan": {},
@@ -6312,7 +6315,7 @@
   "mohw": {},
   "mrblog": {
    "1154908": "유료 조건: 결제",
-   "1155529": "유료 조건: 결제,페이백"
+   "1155163": "유료 조건: 결제,페이백"
   },
   "reviewnote": {
    "1564239": "유료 조건: 결제,주문 시",
@@ -6320,6 +6323,9 @@
    "1565390": "유료 조건: 구매",
    "1565569": "유료 조건: 구매",
    "1566032": "유료 조건: 구매",
+   "1566399": "유료 조건: 페이백",
+   "1566540": "유료 조건: 구매",
+   "1566618": "유료 조건: 페이백",
    "1571238": "유료 조건: 페이백"
   },
   "sbs": {
@@ -6337,15 +6343,8 @@
   "touredu": {},
   "wevity": {},
   "yuvent": {
-   "cmwxc0f6g33ut012rous0fa2e": "공연초대",
-   "cmwxhl5b338px012nyioc1zx1": "유료 조건: 구매",
    "cmwxhtags39n5012n9168cpwb": "유료 조건: 유료",
-   "cmwxhyt5d3a9l012nuukcpajz": "유료 조건: 구매,유료,주문 시",
-   "cmwxi99vx3bds012nzsafcs3l": "유료 조건: 유료",
-   "cmwxidrzq3buv012nl98o7awv": "유료 조건: 구매",
-   "cmwxiy2xq3dkz012n8yu0yg3w": "유료 조건: 구매,원 이상 구매,유료",
    "cmwxj188z3dld012n8qyswawo": "유료 조건: 결제",
-   "cmwxj3an23dlk012n0rtsijo3": "유료 조건: 구매",
    "cmwxqto063gpv012np6qmfach": "경품·마감·폼 없음",
    "cmwxqw3883h1n012nlcq5hybv": "경품·마감·폼 없음",
    "cmwy8xzyg3s0r012nq3a8pgg0": "유료 조건: 구매",
@@ -6353,10 +6352,26 @@
    "cmwygrpge3w6w012nxy8ijhm9": "기간·경품·참여 방법 모두 확인 안 됨",
    "cmwygsvxf3wc5012ntgv7c4i8": "기간·경품·참여 방법 모두 확인 안 됨",
    "cmwyh3afh3wwb012nydleceum": "유료 조건: 구매",
-   "cmwyiil5g3q2h012rh1yczbmf": "경품·마감·폼 없음",
-   "cmwyivhos3ry4012rvywrjp90": "기간·경품·참여 방법 모두 확인 안 됨",
-   "cmwyj2jho3t2t012r8en9r5t6": "유료 조건: 구매,멤버십 가입",
-   "cmwyjape73ugv012rz5zsb6t2": "유료 조건: 입금"
+   "cmwyp80ie40ne012nlbh324hi": "유료 조건: 구매",
+   "cmwype55441fl012n1ce3jp4t": "기간·경품·참여 방법 모두 확인 안 됨",
+   "cmwypfcuk41l6012n07w6rz3k": "기간·경품·참여 방법 모두 확인 안 됨",
+   "cmwypkp9f41pu012nbm6tgi71": "유료 조건: 구매",
+   "cmwyr1ces3ulh012rxup41w7z": "경품·마감·폼 없음",
+   "cmwyr23q93upk012r2tugakwp": "유료 조건: 입금,페이백",
+   "cmwyr27503upw012rrozp162h": "기간·경품·참여 방법 모두 확인 안 됨",
+   "cmwyr2euv3uqu012rujoyoc4k": "기간·경품·참여 방법 모두 확인 안 됨",
+   "cmwyr2hmc3uqw012rkldp6xix": "기간·경품·참여 방법 모두 확인 안 됨",
+   "cmwyr69hq3v6w012rkgeraysm": "이벤트 신호 없음",
+   "cmwyr705c3vaa012rnhq0dxq8": "경품·마감·폼 없음",
+   "cmwyr83yv3vg8012rjljy40cn": "이벤트 신호 없음",
+   "cmwyr8kft3vic012rc1l9o5db": "경품·마감·폼 없음",
+   "cmwyr9vil3vp5012rlcgit5eq": "기간·경품·참여 방법 모두 확인 안 됨",
+   "cmwyrarzu3vtf012rze3hg38l": "이벤트 신호 없음",
+   "cmwyrc2d23vzw012r59cnmcv7": "경품·마감·폼 없음",
+   "cmwyrcwr93w40012rh7dtb7uw": "기간·경품·참여 방법 모두 확인 안 됨",
+   "cmwyrtjfp3yew012rm9khhr6c": "경품·마감·폼 없음",
+   "cmwyrzxvh3zby012rbpdolwa1": "기간·경품·참여 방법 모두 확인 안 됨",
+   "cmwys001f3zc1012rgt4c6vhu": "기간·경품·참여 방법 모두 확인 안 됨"
   }
  },
  "mohw": {
@@ -7245,6 +7260,12 @@
    "status": "form",
    "to": "https://docs.google.com/forms/d/e/1FAIpQLSdMpgvHQ9B6Qoc6rH2fqohAZAWM3lX3_Pku4YLp74JmZLxdwQ/viewform?usp=send_form"
   },
+  "https://forms.gle/h39MHw7NERB9eDu4A": {
+   "at": "2026-11-27",
+   "final": "https://docs.google.com/forms/d/e/1FAIpQLSdHe3YDU9uvgH-8-Izpl3Hy4xVuVjRZUuEuCqVkZUQHQMIQFg/viewform",
+   "status": "form",
+   "to": "https://docs.google.com/forms/d/e/1FAIpQLSdHe3YDU9uvgH-8-Izpl3Hy4xVuVjRZUuEuCqVkZUQHQMIQFg/viewform?usp=send_form"
+  },
   "https://forms.gle/hRm1s6pGs5NKVdXb9": {
    "at": "2026-11-24",
    "final": "https://docs.google.com/forms/d/e/1FAIpQLSfRDs3ExVdCA8YdFGiWIDd5QJCJl8SZdwHN-jkMDAQXhczZHQ/viewform",
@@ -7562,6 +7583,12 @@
    "final": "https://form.naver.com/response/EGTGK1t5Xt2",
    "status": "form",
    "to": "https://form.naver.com/response/EGTGK1t5Xt2"
+  },
+  "https://naver.me/539Fp1hZ": {
+   "at": "2026-11-27",
+   "final": "https://form.naver.com/response/FsqPz8sWgtm",
+   "status": "form",
+   "to": "https://form.naver.com/response/FsqPz8sWgtm"
   },
   "https://naver.me/56Xxc5za": {
    "at": "2026-11-27",
@@ -8270,6 +8297,12 @@
    "final": "https://form.naver.com/response/8WGNOzhwJyP",
    "status": "form",
    "to": "https://form.naver.com/response/8WGNOzhwJyP"
+  },
+  "https://naver.me/Gi0S4y8T": {
+   "at": "2026-11-27",
+   "final": "https://form.naver.com/response/5Ao7Yny4SjH",
+   "status": "form",
+   "to": "https://form.naver.com/response/5Ao7Yny4SjH"
   },
   "https://naver.me/GjyPgE0T": {
    "at": "2026-11-14",
